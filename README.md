@@ -1,5 +1,5 @@
 # fsoft2025_1DA_2
-PROJETO FSOFT 2025 - Gestão de Frotas de Veículos Automóveis
+PROJETO FSOFT 2025 - Gestão de Frotas de Veículos Automóveis (FleetManager)
 
 - Alunos:
   - Dinis Gonçalves (1241099)
