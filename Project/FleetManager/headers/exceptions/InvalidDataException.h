@@ -1,0 +1,8 @@
+//
+// Created by lucas on 15/05/2025.
+//
+
+#ifndef INVALIDDATAEXCEPTION_H
+#define INVALIDDATAEXCEPTION_H
+
+#endif //INVALIDDATAEXCEPTION_H

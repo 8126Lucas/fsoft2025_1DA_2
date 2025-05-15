@@ -1,0 +1,8 @@
+//
+// Created by lucas on 15/05/2025.
+//
+
+#ifndef DUPLICATEDDATAEXCEPTION_H
+#define DUPLICATEDDATAEXCEPTION_H
+
+#endif //DUPLICATEDDATAEXCEPTION_H
