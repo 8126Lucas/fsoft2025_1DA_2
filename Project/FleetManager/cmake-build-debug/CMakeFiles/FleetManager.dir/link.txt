@@ -1,0 +1,1 @@
+/usr/bin/c++ -g CMakeFiles/FleetManager.dir/main.cpp.o CMakeFiles/FleetManager.dir/sources/exceptions/NonExistingDataException.cpp.o CMakeFiles/FleetManager.dir/sources/exceptions/DuplicatedDataException.cpp.o CMakeFiles/FleetManager.dir/sources/exceptions/InvalidDataException.cpp.o CMakeFiles/FleetManager.dir/sources/controllers/Controller.cpp.o -o FleetManager

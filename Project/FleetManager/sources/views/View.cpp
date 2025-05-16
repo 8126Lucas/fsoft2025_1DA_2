@@ -23,7 +23,7 @@ int View::menuEnterprise() {
     cout << "4. Financial Manager\n";
     cout << "5. Order Manager\n\n";
     cout << "0. Exit\n\n";
-    op = Utils::getInt("Your Option: ");
+    op = Utils::getInt("Your Option");
   } while(op < 0 || op > 5);
   return op;
 }
@@ -50,7 +50,7 @@ int View::menuVehicle() {
     cout << "13. Add Vehicle To Storage\n";
     cout << "14. Remove Vehicle From Storage\n\n";
     cout << "0. Go Back\n\n";
-    op = Utils::getInt("Your Option: ");
+    op = Utils::getInt("Your Option");
   } while(op < 0 || op > 14);
   return op;
 }
@@ -65,7 +65,7 @@ int View::menuDriver() {
     cout << "4. List Available Driver\n";
     cout << "5. Add Vacation\n\n";
     cout << "0. Go Back\n\n";
-    op = Utils::getInt("Your Option: ");
+    op = Utils::getInt("Your Option");
   } while(op < 0 || op > 5);
   return op;
 }
@@ -80,7 +80,7 @@ int View::menuTrip() {
     cout << "4. List Uncompleted Trips\n";
     cout << "5. List Completed Trips\n\n";
     cout << "0. Go Back\n\n";
-    op = Utils::getInt("Your Option: ");
+    op = Utils::getInt("Your Option");
   } while(op < 0 || op > 5);
   return op;
 }
@@ -99,7 +99,7 @@ int View::menuFinancial() {
     cout << "6. List Transactions\n";
     cout << "7. Show Balance\n\n";
     cout << "0. Go Back\n\n";
-    op = Utils::getInt("Your Option: ");
+    op = Utils::getInt("Your Option");
   } while(op < 0 || op > 7);
   return op;
 }
@@ -115,7 +115,7 @@ int View::menuOrder() {
     cout << "5. List Completed Orders\n";
     cout << "6. List Orders By Type\n\n";
     cout << "0. Go Back\n\n";
-    op = Utils::getInt("Your Option: ");
+    op = Utils::getInt("Your Option");
   } while(op < 0 || op > 6);
   return op;
 }
