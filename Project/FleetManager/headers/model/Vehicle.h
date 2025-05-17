@@ -19,6 +19,7 @@ enum CATEGORY {
 class Vehicle {
   private:
     CATEGORY category;
+  protected:
     string brand;
     string model;
     int year;
