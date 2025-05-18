@@ -2,8 +2,8 @@
 // Created by dinis on 5/18/25.
 //
 
-#ifndef ORDER_H
-#define ORDER_H
+#ifndef HEADERS_MODEL_ORDER_H
+#define HEADERS_MODEL_ORDER_H
 #include "date.h"
 #include <string>
 enum ORDERSTATUS{
@@ -39,4 +39,4 @@ class Order {
 
 
 }
-#endif //ORDER_H
+#endif //HEADERS_MODEL_ORDER_H
