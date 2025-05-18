@@ -49,5 +49,50 @@ void VehicleContainer::remove(string &licensePlate) {
 }
 
 list<Vehicle> VehicleContainer::list() {
+    list<Vehicle> newList(this->vehicles);
+    return newList;
+}
 
+list<Vehicle> VehicleContainer::list(bool available) {
+    list<Vehicle> newList;
+    list<Vehicle>::iterator it = this->vehicles.begin();
+    for (; it != this->vehicles.end(); ++it) {
+        if (it->available == true) {
+            newList.push_back(*it);
+        }
+    }
+    return newList;
+}
+
+void VehicleContainer::update(string &licensePlate, const Insurance insurance) {
+    list<Vehicle>::iterator it = search(licensePlate);
+    if (it != this->vehicles.end()) {
+        it->insurance = insurance;
+    }
+    else {
+        string msg = "Vehicle (insurance): " + licensePlate;
+        throw NonExistingDataException(msg);
+    }
+}
+
+void VehicleContainer::update(string &licensePlate, const Inspection inspection) {
+    list<Vehicle>::iterator it = search(licensePlate);
+    if (it != this->vehicles.end()) {
+        it->inspection = inspection;
+    }
+    else {
+        string msg = "Vehicle (inspection): " + licensePlate;
+        throw NonExistingDataException(msg);
+    }
+}
+
+void VehicleContainer::update(string &licensePlate, const VehicleStorageLocation vsl) {
+    list<Vehicle>::iterator it = search(licensePlate);
+    if (it != this->vehicles.end()) {
+        it->vsl = vsl;
+    }
+    else {
+        string msg = "Vehicle (vsl): " + licensePlate;
+        throw NonExistingDataException(msg);
+    }
 }

@@ -6,8 +6,16 @@
 #include "Utils.h"
 #include "VehicleContainer.h"
 
+Vehicle::Vehicle() {}
+
+Vehicle::Vehicle(CATEGORY category, string &brand, string &model, int year, string &licensePlate,
+                double mileage, double fuel, bool available = true) {
+    Vehicle::addVehicle();
+}
+
+
 void Vehicle::addVehicle() {
-    Vehicle vehicle;
+    Vehicle vehicle = Vehicle();
 
     vehicle.category = static_cast<CATEGORY>(Utils::getInt("Category"));
     vehicle.brand = Utils::getString("Brand");
@@ -16,14 +24,16 @@ void Vehicle::addVehicle() {
     vehicle.licensePlate = Utils::getString("License Plate");
     vehicle.mileage = Utils::getDouble("Mileage");
     vehicle.fuel = Utils::getDouble("Fuel");
+    vehicle.available = true;
 
-    vehicle = Vehicle(category, brand, model, year, licensePlate, mileage, fuel);
+    vehicle = Vehicle(category, brand, model, year, licensePlate, mileage, fuel, available = true);
 
     VehicleContainer::add(vehicle);
 }
 
 void Vehicle::removeVehicle() {
-
+    string licensePlate = Utils::getString("License Plate");
+    VehicleContainer::remove(licensePlate);
 }
 
 string &Vehicle::getLicensePlate() {

@@ -27,3 +27,14 @@ void VSLContainer::add(VehicleStorageLocation &location) {
         throw DuplicatedDataException(msg);
     }
 }
+
+void VSLContainer::remove(int id) {
+    list<VehicleStorageLocation>::iterator it = search(id);
+    if (it != this->locations.end()) {
+        this->locations.erase(it);
+    }
+    else {
+        string msg = "Storage Location: " + to_string(id);
+        throw NonExistingDataException(msg);
+    }
+}
