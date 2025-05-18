@@ -2,7 +2,20 @@
 // Created by lucas on 15/05/2025.
 //
 
-#ifndef INVALIDDATAEXCEPTION_H
-#define INVALIDDATAEXCEPTION_H
+#ifndef HEADERS_EXCEPTIONS_INVALIDDATAEXCEPTION_H
+#define HEADERS_EXCEPTIONS_INVALIDDATAEXCEPTION_H
+#include <exception>
+#include <string>
 
-#endif //INVALIDDATAEXCEPTION_H
+using namespace std;
+
+class InvalidDataException : public exception {
+private:
+    string data;
+public:
+    InvalidDataException(string data);
+    const char *what();
+};
+
+
+#endif //HEADERS_EXCEPTIONS_INVALIDDATAEXCEPTION_H

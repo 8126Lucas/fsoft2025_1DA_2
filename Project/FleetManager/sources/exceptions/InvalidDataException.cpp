@@ -3,3 +3,11 @@
 //
 
 #include "InvalidDataException.h"
+
+InvalidDataException::InvalidDataException(string data) {
+    this->data = "!! Error: \"" + data + "\" is invalid !!";
+}
+
+const char *InvalidDataException::what() {
+    return this->data.c_str();
+}

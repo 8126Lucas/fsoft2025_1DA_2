@@ -17,9 +17,8 @@ enum CATEGORY {
 };
 
 class Vehicle {
-  private:
-    CATEGORY category;
   protected:
+    CATEGORY category;
     string brand;
     string model;
     int year;
@@ -31,6 +30,8 @@ class Vehicle {
     VehicleStorageLocation vsl;
 
   public:
+    Vehicle();
+
     Vehicle(CATEGORY category, string brand, string model, int year, string licensePlate,
             double mileage, double fuel);
 
@@ -52,6 +53,9 @@ class Vehicle {
     void inspectionAlert();
     void fuelAlert();
     bool isAvailable();
+
+    bool operator == (const string &string) const;
+
 };
 
 #endif //HEADERS_MODEL_VEHICLE_H

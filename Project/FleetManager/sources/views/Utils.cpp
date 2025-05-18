@@ -5,6 +5,8 @@
 #include "Utils.h"
 #include <iostream>
 #include <limits>
+#include <list>
+#include "Vehicle.h"
 
 using namespace std;
 
