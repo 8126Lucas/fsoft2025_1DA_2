@@ -17,7 +17,7 @@ private:
 
 public:
     Vehicle *get(string &licensePlate);
-    void add(const Vehicle &vehicle);
+    void add(Vehicle &vehicle);
     void remove(string &licensePlate);
     list<Vehicle> list();
 };

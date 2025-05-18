@@ -3,3 +3,7 @@
 //
 
 #include "VehicleStorageLocation.h"
+
+int VehicleStorageLocation::getID() {
+    return id;
+}

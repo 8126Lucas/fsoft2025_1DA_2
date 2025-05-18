@@ -15,6 +15,7 @@ class VSLContainer {
 private:
     list<VehicleStorageLocation> locations;
     tuple<VehicleStorageLocation, Vehicle> vehicleLocations;
+    list<VehicleStorageLocation>::iterator search(int id);
 
 public:
     void add(const VehicleStorageLocation &location);

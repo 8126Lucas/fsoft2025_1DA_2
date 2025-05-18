@@ -46,6 +46,8 @@ class Vehicle {
     void listVehicles();
     void listAvailableVehilces();
 
+    string &getLicensePlate();
+
     void addFuel();
     bool isFuelEnough();
     void updateMileage();

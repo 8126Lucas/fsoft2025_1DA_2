@@ -25,3 +25,7 @@ void Vehicle::addVehicle() {
 void Vehicle::removeVehicle() {
 
 }
+
+string &Vehicle::getLicensePlate() {
+    return licensePlate;
+}

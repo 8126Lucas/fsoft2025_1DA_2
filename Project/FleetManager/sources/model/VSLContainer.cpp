@@ -3,3 +3,27 @@
 //
 
 #include "VSLContainer.h"
+#include "DuplicatedDataException.h"
+#include "NonExistingDataException.h"
+#include "Utils.h"
+
+list<VehicleStorageLocation>::iterator VSLContainer::search(int id) {
+    list<VehicleStorageLocation>::iterator it = this->locations.begin();
+    for (; it != this->locations.end(); ++it) {
+        if ((*it) == id) {
+            return it;
+        }
+    }
+    return it;
+}
+
+void VSLContainer::add(VehicleStorageLocation &location) {
+    list<VehicleStorageLocation>::iterator it = search(location.getID());
+    if (it == this->locations.end()) {
+        this->locations.push_back(location);
+    }
+    else {
+        string msg = "Storage Location: " + to_string(location.getID());
+        throw DuplicatedDataException(msg);
+    }
+}
