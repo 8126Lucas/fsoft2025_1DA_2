@@ -1,4 +1,4 @@
-#ifdef HEADERS_MODEL_INSURANCE_H
+#ifndef HEADERS_MODEL_INSURANCE_H
 #define HEADERS_MODEL_INSPECTION_H
 
 #include "Vehicle.h"
