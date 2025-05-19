@@ -21,4 +21,4 @@ class Date {
       void setDate(int day, int month, int year);
       void getDate(int& day, int& month, int& year);
 
-#endif //DATE_H
+#endif //HEADERS_MODEL_DATE_H
