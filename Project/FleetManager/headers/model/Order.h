@@ -6,6 +6,9 @@
 #define HEADERS_MODEL_ORDER_H
 #include "Date.h"
 #include <string>
+
+using namespace std;
+
 enum ORDERSTATUS{
   UNCOMPLETED = 0,
   COMPLETED = 1
@@ -24,7 +27,7 @@ class Order {
     ORDERSTATUS status;
   public:
     Order(int orderId, int clientId, Date date, string sourceAdress, string destinationAdress,
-          double cargoSpace, double cargoWeight, double ShippingValue,orderStatus status);
+          double cargoSpace, double cargoWeight, double ShippingValue,ORDERSTATUS status);
     ~Order();
 
     Order addOrder();
