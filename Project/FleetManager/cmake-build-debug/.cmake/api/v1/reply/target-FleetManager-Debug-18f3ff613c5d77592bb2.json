@@ -2,10 +2,7 @@
 	"artifacts" : 
 	[
 		{
-			"path" : "FleetManager.exe"
-		},
-		{
-			"path" : "FleetManager.pdb"
+			"path" : "FleetManager"
 		}
 	],
 	"backtrace" : 1,
@@ -70,35 +67,35 @@
 			[
 				{
 					"backtrace" : 2,
-					"path" : "C:/Projects/fsoft2025_1DA_2/Project/FleetManager/headers/controllers"
+					"path" : "/home/dinis/CLionProjects/fsoft2025_1DA_2/Project/FleetManager/headers/controllers"
 				},
 				{
 					"backtrace" : 2,
-					"path" : "C:/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/controllers"
+					"path" : "/home/dinis/CLionProjects/fsoft2025_1DA_2/Project/FleetManager/sources/controllers"
 				},
 				{
 					"backtrace" : 3,
-					"path" : "C:/Projects/fsoft2025_1DA_2/Project/FleetManager/headers/exceptions"
+					"path" : "/home/dinis/CLionProjects/fsoft2025_1DA_2/Project/FleetManager/headers/exceptions"
 				},
 				{
 					"backtrace" : 3,
-					"path" : "C:/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/exceptions"
+					"path" : "/home/dinis/CLionProjects/fsoft2025_1DA_2/Project/FleetManager/sources/exceptions"
 				},
 				{
 					"backtrace" : 4,
-					"path" : "C:/Projects/fsoft2025_1DA_2/Project/FleetManager/headers/model"
+					"path" : "/home/dinis/CLionProjects/fsoft2025_1DA_2/Project/FleetManager/headers/model"
 				},
 				{
 					"backtrace" : 4,
-					"path" : "C:/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/model"
+					"path" : "/home/dinis/CLionProjects/fsoft2025_1DA_2/Project/FleetManager/sources/model"
 				},
 				{
 					"backtrace" : 5,
-					"path" : "C:/Projects/fsoft2025_1DA_2/Project/FleetManager/headers/views"
+					"path" : "/home/dinis/CLionProjects/fsoft2025_1DA_2/Project/FleetManager/headers/views"
 				},
 				{
 					"backtrace" : 5,
-					"path" : "C:/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/views"
+					"path" : "/home/dinis/CLionProjects/fsoft2025_1DA_2/Project/FleetManager/sources/views"
 				}
 			],
 			"language" : "CXX",
@@ -132,16 +129,12 @@
 			{
 				"fragment" : "",
 				"role" : "flags"
-			},
-			{
-				"fragment" : "-lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32",
-				"role" : "libraries"
 			}
 		],
 		"language" : "CXX"
 	},
 	"name" : "FleetManager",
-	"nameOnDisk" : "FleetManager.exe",
+	"nameOnDisk" : "FleetManager",
 	"paths" : 
 	{
 		"build" : ".",
