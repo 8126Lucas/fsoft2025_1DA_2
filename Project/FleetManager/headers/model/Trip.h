@@ -1,5 +1,5 @@
-#ifndef HEADERS_MODEL_INSURANCE_H
-#define HEADERS_MODEL_INSPECTION_H
+#ifndef HEADERS_MODEL_TRIP_H
+#define HEADERS_MODEL_TRIP_H
 
 #include "Vehicle.h"
 
@@ -46,4 +46,4 @@ class Trip: {
 
 
 
-#endif //HEADERS_MODEL_INSPECTION_H
+#endif //HEADERS_MODEL_TRIP_H

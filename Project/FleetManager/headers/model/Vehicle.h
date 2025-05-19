@@ -43,10 +43,7 @@ class Vehicle {
 
     ~Vehicle();
 
-    void addVehicle();
-    void removeVehicle();
-    void listVehicles();
-    void listAvailableVehicles();
+
 
     string &getLicensePlate();
 
