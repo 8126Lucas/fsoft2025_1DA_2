@@ -4,11 +4,11 @@
 
 #ifndef HEADERS_MODEL_ORDER_H
 #define HEADERS_MODEL_ORDER_H
-#include "date.h"
+#include "Date.h"
 #include <string>
 enum ORDERSTATUS{
-  Uncompleted =0
-  Completed = 1
+  UNCOMPLETED = 0,
+  COMPLETED = 1
 };
 class Order {
   protected:

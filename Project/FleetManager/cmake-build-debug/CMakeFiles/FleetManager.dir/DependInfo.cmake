@@ -8,11 +8,11 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "C:/Projects/fsoft2025_1DA_2/Project/FleetManager/main.cpp" "CMakeFiles/FleetManager.dir/main.cpp.obj" "gcc" "CMakeFiles/FleetManager.dir/main.cpp.obj.d"
-  "C:/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/controllers/Controller.cpp" "CMakeFiles/FleetManager.dir/sources/controllers/Controller.cpp.obj" "gcc" "CMakeFiles/FleetManager.dir/sources/controllers/Controller.cpp.obj.d"
-  "C:/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/exceptions/DuplicatedDataException.cpp" "CMakeFiles/FleetManager.dir/sources/exceptions/DuplicatedDataException.cpp.obj" "gcc" "CMakeFiles/FleetManager.dir/sources/exceptions/DuplicatedDataException.cpp.obj.d"
-  "C:/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/exceptions/InvalidDataException.cpp" "CMakeFiles/FleetManager.dir/sources/exceptions/InvalidDataException.cpp.obj" "gcc" "CMakeFiles/FleetManager.dir/sources/exceptions/InvalidDataException.cpp.obj.d"
-  "C:/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/exceptions/NonExistingDataException.cpp" "CMakeFiles/FleetManager.dir/sources/exceptions/NonExistingDataException.cpp.obj" "gcc" "CMakeFiles/FleetManager.dir/sources/exceptions/NonExistingDataException.cpp.obj.d"
+  "/home/dinis/CLionProjects/fsoft2025_1DA_2/Project/FleetManager/main.cpp" "CMakeFiles/FleetManager.dir/main.cpp.o" "gcc" "CMakeFiles/FleetManager.dir/main.cpp.o.d"
+  "/home/dinis/CLionProjects/fsoft2025_1DA_2/Project/FleetManager/sources/controllers/Controller.cpp" "CMakeFiles/FleetManager.dir/sources/controllers/Controller.cpp.o" "gcc" "CMakeFiles/FleetManager.dir/sources/controllers/Controller.cpp.o.d"
+  "/home/dinis/CLionProjects/fsoft2025_1DA_2/Project/FleetManager/sources/exceptions/DuplicatedDataException.cpp" "CMakeFiles/FleetManager.dir/sources/exceptions/DuplicatedDataException.cpp.o" "gcc" "CMakeFiles/FleetManager.dir/sources/exceptions/DuplicatedDataException.cpp.o.d"
+  "/home/dinis/CLionProjects/fsoft2025_1DA_2/Project/FleetManager/sources/exceptions/InvalidDataException.cpp" "CMakeFiles/FleetManager.dir/sources/exceptions/InvalidDataException.cpp.o" "gcc" "CMakeFiles/FleetManager.dir/sources/exceptions/InvalidDataException.cpp.o.d"
+  "/home/dinis/CLionProjects/fsoft2025_1DA_2/Project/FleetManager/sources/exceptions/NonExistingDataException.cpp" "CMakeFiles/FleetManager.dir/sources/exceptions/NonExistingDataException.cpp.o" "gcc" "CMakeFiles/FleetManager.dir/sources/exceptions/NonExistingDataException.cpp.o.d"
   )
 
 # Targets to which this target links which contain Fortran sources.
