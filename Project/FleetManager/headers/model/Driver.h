@@ -2,8 +2,8 @@
 // Created by vitor on 5/16/25.
 //
 
-#ifndef DRIVER_H
-#define DRIVER_H
+#ifndef HEADERS_MODEL_DRIVER_H
+#define HEADERS_MODEL_DRIVER_H
 
 #include <string>
 #include <vector>
@@ -33,4 +33,4 @@ public:
     void listAvailableDrivers();
 };
 
-#endif //DRIVER_H
+#endif //HEADERS_MODEL_DRIVER_H

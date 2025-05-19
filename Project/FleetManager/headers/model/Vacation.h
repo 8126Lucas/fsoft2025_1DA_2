@@ -2,8 +2,8 @@
 // Created by ruben on 17/05/2025.
 //
 
-#ifndef VACATION_H
-#define VACATION_H
+#ifndef HEADERS_MODEL_VACATION_H
+#define HEADERS_MODEL_VACATION_H
 
 #include "date.h"
 #include <vector>
@@ -25,4 +25,4 @@ public:
     int getRemainingDays();
 };
 
-#endif //VACATION_H
+#endif //HEADERS_MODEL_VACATION_H
