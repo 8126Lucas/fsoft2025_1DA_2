@@ -67,7 +67,7 @@ list<Vehicle> VehicleContainer::list(bool available) {
 void VehicleContainer::update(string &licensePlate, const Insurance insurance) {
     list<Vehicle>::iterator it = search(licensePlate);
     if (it != this->vehicles.end()) {
-        it->insurance = insurance;
+        it->setInsurance(insurance);
     }
     else {
         string msg = "Vehicle (insurance): " + licensePlate;
@@ -78,7 +78,7 @@ void VehicleContainer::update(string &licensePlate, const Insurance insurance) {
 void VehicleContainer::update(string &licensePlate, const Inspection inspection) {
     list<Vehicle>::iterator it = search(licensePlate);
     if (it != this->vehicles.end()) {
-        it->inspection = inspection;
+        it->setInspection(inspection);
     }
     else {
         string msg = "Vehicle (inspection): " + licensePlate;
@@ -89,7 +89,7 @@ void VehicleContainer::update(string &licensePlate, const Inspection inspection)
 void VehicleContainer::update(string &licensePlate, const VehicleStorageLocation vsl) {
     list<Vehicle>::iterator it = search(licensePlate);
     if (it != this->vehicles.end()) {
-        it->vsl = vsl;
+        it->setVSL(vsl);
     }
     else {
         string msg = "Vehicle (vsl): " + licensePlate;

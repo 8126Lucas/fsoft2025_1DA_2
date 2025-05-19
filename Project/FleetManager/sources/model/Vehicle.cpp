@@ -39,3 +39,16 @@ void Vehicle::removeVehicle() {
 string &Vehicle::getLicensePlate() {
     return licensePlate;
 }
+
+void Vehicle::setInsurance(const Insurance insurance) {
+    this->insurance = insurance;
+}
+
+void Vehicle::setInspection(const Inspection inspection) {
+    this->inspection = inspection;
+}
+
+void Vehicle::setVSL(const VehicleStorageLocation vsl) {
+    this->vsl = vsl;
+}
+

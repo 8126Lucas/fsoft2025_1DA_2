@@ -25,27 +25,26 @@ class Vehicle {
     string licensePlate;
     double mileage;
     double fuel;
-
-  public:
     bool available;
     Insurance insurance;
     Inspection inspection;
     VehicleStorageLocation vsl;
+
+  public:
 
     Vehicle();
 
     Vehicle(CATEGORY category, string &brand, string &model, int year, string &licensePlate,
             double mileage, double fuel, bool available = true);
 
-    // Vehicle(CATEGORY category, string brand, string model, int year, string licensePlate,
-    //         double mileage, double fuel, bool available = true, Insurance insurance, Inspection inspection,
-    //         VehicleStorageLocation vsl);
-
     ~Vehicle();
 
 
 
     string &getLicensePlate();
+    void setInsurance(Insurance insurance);
+    void setInspection(Inspection inspection);
+    void setVSL(const VehicleStorageLocation vsl);
 
     void addFuel();
     bool isFuelEnough();
