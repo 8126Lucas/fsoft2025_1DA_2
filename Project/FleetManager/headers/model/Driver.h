@@ -15,7 +15,7 @@ protected:
     std::string license;
     int age;
     int timeToRetire;
-    bool vacationStatus;
+    bool available;
 
 public:
     Driver(int id, std::string license, int age);

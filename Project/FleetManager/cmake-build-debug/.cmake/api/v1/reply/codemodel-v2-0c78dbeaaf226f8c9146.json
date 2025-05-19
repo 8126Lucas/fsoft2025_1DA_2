@@ -39,7 +39,7 @@
 				{
 					"directoryIndex" : 0,
 					"id" : "FleetManager::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-FleetManager-Debug-57ef3dd230c5adde0459.json",
+					"jsonFile" : "target-FleetManager-Debug-504c98f41684524aa329.json",
 					"name" : "FleetManager",
 					"projectIndex" : 0
 				}
@@ -49,8 +49,8 @@
 	"kind" : "codemodel",
 	"paths" : 
 	{
-		"build" : "C:/Users/lucas/Desktop/fsoft2025_1DA_2/Project/FleetManager/cmake-build-debug",
-		"source" : "C:/Users/lucas/Desktop/fsoft2025_1DA_2/Project/FleetManager"
+		"build" : "C:/Projects/fsoft2025_1DA_2/Project/FleetManager/cmake-build-debug",
+		"source" : "C:/Projects/fsoft2025_1DA_2/Project/FleetManager"
 	},
 	"version" : 
 	{
