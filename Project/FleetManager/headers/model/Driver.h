@@ -26,6 +26,12 @@ public:
     Vacation addVacation(const Vacation &vacation);
 
     int getId();
+
+    /*driver.cpp
+    int &driver::getId() {
+        return id;
+    }*/
+
     bool isAvailable();
 };
 
