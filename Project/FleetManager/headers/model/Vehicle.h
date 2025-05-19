@@ -34,14 +34,16 @@ class Vehicle {
 
     Vehicle();
 
-    Vehicle(CATEGORY category, string &brand, string &model, int year, string &licensePlate,
-            double mileage, double fuel, bool available = true);
+    Vehicle(const CATEGORY category, const string &brand, const string &model, const int year, const string &licensePlate,
+            const double mileage, const double fuel, const bool available = true);
 
     ~Vehicle();
 
-
+    void addVehicle();
+    void removeVehicle();
 
     string &getLicensePlate();
+    bool getAvailability() const;
     void setInsurance(Insurance insurance);
     void setInspection(Inspection inspection);
     void setVSL(const VehicleStorageLocation vsl);

@@ -3,23 +3,37 @@
 //
 
 #include "VehicleView.h"
+#include "InvalidDataException.h"
 #include "Utils.h"
 #include "Vehicle.h"
 #include "VehicleContainer.h"
 
-void VehicleView::addVehicle() {
+Vehicle VehicleView::getVehicle() {
     Vehicle vehicle = Vehicle();
 
-    vehicle.category = static_cast<CATEGORY>(Utils::getInt("Category"));
-    vehicle.brand = Utils::getString("Brand");
-    vehicle.model = Utils::getString("Model");
-    vehicle.year = Utils::getInt("Year");
-    vehicle.licensePlate = Utils::getString("License Plate");
-    vehicle.mileage = Utils::getDouble("Mileage");
-    vehicle.fuel = Utils::getDouble("Fuel");
-    vehicle.available = true;
+    bool flag_error = false;
 
-    vehicle = Vehicle(category, brand, model, year, licensePlate, mileage, fuel, available = true);
+    do {
+        try {
+            flag_error = false;
+            CATEGORY category = static_cast<CATEGORY>(Utils::getInt("Category"));
+            string brand = Utils::getString("Brand");
+            string model = Utils::getString("Model");
+            int year = Utils::getInt("Year");
+            string licensePlate = Utils::getString("License Plate");
+            double mileage = Utils::getDouble("Mileage");
+            double fuel = Utils::getDouble("Fuel");
+            bool available = true;
+            vehicle = Vehicle(category, brand, model, year, licensePlate, mileage, fuel, available = true);
+        } catch (InvalidDataException &error) {
+            flag_error = true;
+        }
+    } while (flag_error);
 
-    VehicleContainer::add(vehicle);
+    return vehicle;
+}
+
+string VehicleView::getLicensePlate() {
+    string licensePlate = Utils::getString("License Plate");
+    return licensePlate;
 }

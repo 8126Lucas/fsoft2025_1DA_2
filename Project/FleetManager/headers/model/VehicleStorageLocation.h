@@ -17,6 +17,7 @@ class VehicleStorageLocation {
     int currentVehicleCount;
 
   public:
+    VehicleStorageLocation();
     VehicleStorageLocation(int id, string name, string address, int capacity,
                            int currentVehicleCount = 0);
 
@@ -30,7 +31,7 @@ class VehicleStorageLocation {
     void removeVehicleFromStorage();
     int getAvailableSpace();
 
-    int getID();
+    int getID() const;
 
     bool operator == (int id) const;
 };

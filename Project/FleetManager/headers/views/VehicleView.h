@@ -5,14 +5,14 @@
 #ifndef HEADERS_VIEWS_VEHICLEVIEW_H
 #define HEADERS_VIEWS_VEHICLEVIEW_H
 #include <list>
-#include "Student.h"
+#include "Vehicle.h"
 
-class StudentView {
+class VehicleView {
 public:
-    void addVehicle();
-    void removeVehicle();
-    void listVehicles();
-    void listAvailableVehicles();
+    static Vehicle getVehicle();
+    static string getLicensePlate();
+    static void printVehicle(Vehicle *vehicle);
+    static void printVehicles(list<Vehicle> &vehicles);
 };
 
 #endif //HEADERS_VIEWS_VEHICLEVIEW_H

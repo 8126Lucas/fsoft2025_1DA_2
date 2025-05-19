@@ -32,7 +32,10 @@ set(EXCEPTIONS_SOURCE_FILES
         ${PROJECT_HEADERS_EXCEPTIONS_DIR}/DuplicatedDataException.h
         ${PROJECT_SOURCES_EXCEPTIONS_DIR}/DuplicatedDataException.cpp
         ${PROJECT_HEADERS_EXCEPTIONS_DIR}/InvalidDataException.h
-        ${PROJECT_SOURCES_EXCEPTIONS_DIR}/InvalidDataException.cpp)
+        ${PROJECT_SOURCES_EXCEPTIONS_DIR}/InvalidDataException.cpp
+        headers/model/Enterprise.h
+        headers/model/VehicleStorageLocation.h
+        headers/views/VehicleStorageLocationView.h)
 
 set(PROJECT_HEADERS_MODEL_DIR
         ${PROJECT_HEADERS_DIR}/model)

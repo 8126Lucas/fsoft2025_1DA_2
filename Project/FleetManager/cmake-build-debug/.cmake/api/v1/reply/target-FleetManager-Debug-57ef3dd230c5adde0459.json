@@ -2,7 +2,10 @@
 	"artifacts" : 
 	[
 		{
-			"path" : "FleetManager"
+			"path" : "FleetManager.exe"
+		},
+		{
+			"path" : "FleetManager.pdb"
 		}
 	],
 	"backtrace" : 1,
@@ -25,7 +28,7 @@
 			{
 				"command" : 0,
 				"file" : 0,
-				"line" : 55,
+				"line" : 58,
 				"parent" : 0
 			},
 			{
@@ -43,13 +46,13 @@
 			{
 				"command" : 1,
 				"file" : 0,
-				"line" : 41,
+				"line" : 44,
 				"parent" : 0
 			},
 			{
 				"command" : 1,
 				"file" : 0,
-				"line" : 50,
+				"line" : 53,
 				"parent" : 0
 			}
 		]
@@ -67,35 +70,35 @@
 			[
 				{
 					"backtrace" : 2,
-					"path" : "/home/lucas/GitHubProjects/fsoft2025_1DA_2/Project/FleetManager/headers/controllers"
+					"path" : "C:/Users/lucas/Desktop/fsoft2025_1DA_2/Project/FleetManager/headers/controllers"
 				},
 				{
 					"backtrace" : 2,
-					"path" : "/home/lucas/GitHubProjects/fsoft2025_1DA_2/Project/FleetManager/sources/controllers"
+					"path" : "C:/Users/lucas/Desktop/fsoft2025_1DA_2/Project/FleetManager/sources/controllers"
 				},
 				{
 					"backtrace" : 3,
-					"path" : "/home/lucas/GitHubProjects/fsoft2025_1DA_2/Project/FleetManager/headers/exceptions"
+					"path" : "C:/Users/lucas/Desktop/fsoft2025_1DA_2/Project/FleetManager/headers/exceptions"
 				},
 				{
 					"backtrace" : 3,
-					"path" : "/home/lucas/GitHubProjects/fsoft2025_1DA_2/Project/FleetManager/sources/exceptions"
+					"path" : "C:/Users/lucas/Desktop/fsoft2025_1DA_2/Project/FleetManager/sources/exceptions"
 				},
 				{
 					"backtrace" : 4,
-					"path" : "/home/lucas/GitHubProjects/fsoft2025_1DA_2/Project/FleetManager/headers/model"
+					"path" : "C:/Users/lucas/Desktop/fsoft2025_1DA_2/Project/FleetManager/headers/model"
 				},
 				{
 					"backtrace" : 4,
-					"path" : "/home/lucas/GitHubProjects/fsoft2025_1DA_2/Project/FleetManager/sources/model"
+					"path" : "C:/Users/lucas/Desktop/fsoft2025_1DA_2/Project/FleetManager/sources/model"
 				},
 				{
 					"backtrace" : 5,
-					"path" : "/home/lucas/GitHubProjects/fsoft2025_1DA_2/Project/FleetManager/headers/views"
+					"path" : "C:/Users/lucas/Desktop/fsoft2025_1DA_2/Project/FleetManager/headers/views"
 				},
 				{
 					"backtrace" : 5,
-					"path" : "/home/lucas/GitHubProjects/fsoft2025_1DA_2/Project/FleetManager/sources/views"
+					"path" : "C:/Users/lucas/Desktop/fsoft2025_1DA_2/Project/FleetManager/sources/views"
 				}
 			],
 			"language" : "CXX",
@@ -113,7 +116,7 @@
 				2,
 				4,
 				6,
-				8
+				11
 			]
 		}
 	],
@@ -129,12 +132,16 @@
 			{
 				"fragment" : "",
 				"role" : "flags"
+			},
+			{
+				"fragment" : "-lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32",
+				"role" : "libraries"
 			}
 		],
 		"language" : "CXX"
 	},
 	"name" : "FleetManager",
-	"nameOnDisk" : "FleetManager",
+	"nameOnDisk" : "FleetManager.exe",
 	"paths" : 
 	{
 		"build" : ".",
@@ -150,7 +157,7 @@
 				2,
 				4,
 				6,
-				8
+				11
 			]
 		},
 		{
@@ -160,7 +167,10 @@
 				1,
 				3,
 				5,
-				7
+				7,
+				8,
+				9,
+				10
 			]
 		}
 	],
@@ -204,6 +214,21 @@
 			"compileGroupIndex" : 0,
 			"path" : "sources/exceptions/InvalidDataException.cpp",
 			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"path" : "headers/model/Enterprise.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"path" : "headers/model/VehicleStorageLocation.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"path" : "headers/views/VehicleStorageLocationView.h",
+			"sourceGroupIndex" : 1
 		},
 		{
 			"backtrace" : 1,

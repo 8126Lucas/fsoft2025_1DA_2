@@ -4,8 +4,9 @@
 
 #ifndef HEADERS_MODEL_INSURANCE_H
 #define HEADERS_MODEL_INSURANCE_H
+#include "Date.h"
 #include "Vehicle.h"
-#include "date.h"
+
 
 using namespace std;
 
@@ -13,13 +14,14 @@ class Insurance {
   private:
     int id;
     Vehicle vehicle;
-    date startDate; //mudar classe para letra maiúscula
-    date endDate; //mudar classe para letra maiúscula
+    Date startDate;
+    Date endDate;
     double monthlyCost;
     // pensar como fazer o atributo "today"
 
   public:
-    Insurance(int id, Vehicle vehicle, date startDate, date endDate, double monthlyCost);
+    Insurance();
+    Insurance(int id, Vehicle vehicle, Date startDate, Date endDate, double monthlyCost);
 
     ~Insurance();
 

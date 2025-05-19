@@ -5,39 +5,43 @@
 #include "Vehicle.h"
 #include "Utils.h"
 #include "VehicleContainer.h"
+#include "VehicleView.h"
 
-Vehicle::Vehicle() {}
-
-Vehicle::Vehicle(CATEGORY category, string &brand, string &model, int year, string &licensePlate,
-                double mileage, double fuel, bool available = true) {
-    Vehicle::addVehicle();
+Vehicle::Vehicle() : category(), year(0), mileage(0), fuel(0), available(true) {
 }
+
+Vehicle::Vehicle(const CATEGORY category, const string &brand, const string &model, const int year,
+                 const string &licensePlate, const double mileage, const double fuel,
+                 const bool available) {
+    this->category = category;
+    this->brand = brand;
+    this->model = model;
+    this->year = year;
+    this->licensePlate = licensePlate;
+    this->mileage = mileage;
+    this->fuel = fuel;
+    this->available = available;
+}
+
+Vehicle::~Vehicle() {}
 
 
 void Vehicle::addVehicle() {
-    Vehicle vehicle = Vehicle();
-
-    vehicle.category = static_cast<CATEGORY>(Utils::getInt("Category"));
-    vehicle.brand = Utils::getString("Brand");
-    vehicle.model = Utils::getString("Model");
-    vehicle.year = Utils::getInt("Year");
-    vehicle.licensePlate = Utils::getString("License Plate");
-    vehicle.mileage = Utils::getDouble("Mileage");
-    vehicle.fuel = Utils::getDouble("Fuel");
-    vehicle.available = true;
-
-    vehicle = Vehicle(category, brand, model, year, licensePlate, mileage, fuel, available = true);
-
+    Vehicle vehicle = VehicleView::getVehicle();
     VehicleContainer::add(vehicle);
 }
 
 void Vehicle::removeVehicle() {
-    string licensePlate = Utils::getString("License Plate");
+    string licensePlate = VehicleView::getLicensePlate();
     VehicleContainer::remove(licensePlate);
 }
 
 string &Vehicle::getLicensePlate() {
     return licensePlate;
+}
+
+bool Vehicle::getAvailability() const {
+    return available;
 }
 
 void Vehicle::setInsurance(const Insurance insurance) {

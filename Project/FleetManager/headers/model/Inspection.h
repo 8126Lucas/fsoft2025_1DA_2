@@ -12,12 +12,13 @@ class Inspection {
   private:
     int id;
     Vehicle vehicle;
-    date date_date;
+    Date date;
     double cost;
-    date today;
+    Date today;
 
   public:
-    Inspection(int id, Vehicle vehicle, date date_date, double cost);
+    Inspection();
+    Inspection(int id, Vehicle vehicle, Date date, double cost);
 
     ~Inspection();
 

@@ -1,0 +1,40 @@
+//
+// Created by lucas on 19/05/2025.
+//
+
+#ifndef HEADERS_MODEL_ENTERPRISE_H
+#define HEADERS_MODEL_ENTERPRISE_H
+#include <string>
+#include "VehicleContainer.h"
+#include "VSLContainer.h"
+#include "TripContainer.h"
+#include "DriverContainer.h"
+#include "OrderContainer.h"
+
+using namespace std;
+
+class Enterprise {
+private:
+    string name;
+    VehicleContainer vehicleC;
+    VSLContainer vslC;
+    TripContainer tripC;
+    DriverContainer driverC;
+    OrderContainer orderC;
+
+public:
+    Enterprise();
+    Enterprise(const string &name);
+    Enterprise(const Enterprise &enterprise);
+
+    const string &getName() const;
+    void setName(const string &name);
+
+    VehicleContainer &getVehicleContainer();
+    VSLContainer &getVSLContainer();
+    TripContainer &getTripContainer();
+    DriverContainer &getDriverContainer();
+    OrderContainer &getOrderContainer();
+};
+
+#endif //HEADERS_MODEL_ENTERPRISE_H
