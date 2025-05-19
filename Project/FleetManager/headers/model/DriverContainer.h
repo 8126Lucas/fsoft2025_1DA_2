@@ -6,19 +6,24 @@
 #define HEADERS_MODEL_DRIVERCONTAINER_H
 
 #include <vector>
+#include <list>
 #include "Driver.h"
+
+using namespace std; //list
 
 class DriverContainer {
 private:
-    //vetor para armazenar todos os condutores cadastrados no sistema
-    std::vector<Driver> drivers;
+    list<Driver> driver;
+    list<Driver>::iterator search(int &id);
 
 public:
+    Driver *get(int &id);
     void add(Driver &driver);
-    void remove(int driverId);
-    void list();
-    //Provisório
-    void listAvailableDrivers() const;
+    void remove(int id);
+    list<Driver> list();
+    list<Driver> list(bool available);
+
+    void update(int id, Vacation vacation);
 };
 
 #endif //HEADERS_MODEL_DRIVERCONTAINER_H

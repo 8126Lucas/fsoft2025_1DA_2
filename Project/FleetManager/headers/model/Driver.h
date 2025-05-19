@@ -16,8 +16,6 @@ protected:
     int age;
     int timeToRetire;
     bool vacationStatus;
-    //vetor para armazenar todas as férias
-    std::vector<Vacation> vacations;
 
 public:
     Driver(int id, std::string license, int age);
@@ -28,9 +26,7 @@ public:
     Vacation addVacation(const Vacation &vacation);
 
     int getId();
-    bool isActive();
-
-    void listAvailableDrivers();
+    bool isAvailable();
 };
 
 #endif //HEADERS_MODEL_DRIVER_H
