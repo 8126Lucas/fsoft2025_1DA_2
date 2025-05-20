@@ -23,7 +23,7 @@ public:
     list<Vehicle> list(bool available);
     void update(string &licensePlate, Insurance insurance);
     void update(string &licensePlate, Inspection inspection);
-    void update(string &licensePlate, const VehicleStorageLocation vsl);
+    void update(string &licensePlate, VehicleStorageLocation vsl);
 };
 
 #endif //HEADERS_MODEL_VEHICLECONTAINER_H

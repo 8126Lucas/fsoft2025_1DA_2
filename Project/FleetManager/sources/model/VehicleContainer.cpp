@@ -86,7 +86,7 @@ void VehicleContainer::update(string &licensePlate, const Inspection inspection)
     }
 }
 
-void VehicleContainer::update(string &licensePlate, const VehicleStorageLocation vsl) {
+void VehicleContainer::update(string &licensePlate, VehicleStorageLocation vsl) {
     list<Vehicle>::iterator it = search(licensePlate);
     if (it != this->vehicles.end()) {
         it->setVSL(vsl);

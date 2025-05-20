@@ -17,7 +17,7 @@ list<VehicleStorageLocation>::iterator VSLContainer::search(int id) {
     return it;
 }
 
-void VSLContainer::add(VehicleStorageLocation &location) {
+void VSLContainer::add(const VehicleStorageLocation &location) {
     list<VehicleStorageLocation>::iterator it = search(location.getID());
     if (it == this->locations.end()) {
         this->locations.push_back(location);
