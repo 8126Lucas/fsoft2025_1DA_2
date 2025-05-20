@@ -11,6 +11,12 @@
 
 using namespace std;
 
+enum class Status {
+    Available = 1,
+    OnVacation = 2,
+    Retired = 3,
+};
+
 class Driver {
 private:
     int id;
@@ -19,24 +25,28 @@ private:
     int timeToRetire;
     bool available;
     bool vacationStatus;
+    Status driverStatus;
 
 public:
     Driver();
 
-    Driver(int id, string license, int age);
+    Driver(int id, string license, int age, bool available = true, bool vacationStatus = false);
 
     ~Driver();
 
     void addDriver();
     void removeDriver();
 
-    int &getId();
+    int  getId() const;
     bool getAvailability() const;
+
     void setVacation(Vacation vacation);
 
     int calculateTimeToRetire();
     void vacationAlert();
-    bool isAvailable();
+    bool isAvailable() const;
+
+    bool operator == (int id) const;
 };
 
 #endif //HEADERS_MODEL_DRIVER_H

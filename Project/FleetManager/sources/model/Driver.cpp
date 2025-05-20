@@ -6,14 +6,14 @@
 #include "Utils.h"
 #include "DriverContainer.h"
 #include "DriverView.h"
+#include "Vacation.h"
 
 Driver::Driver() : id(), available(true) {}
 
-Driver::Driver(const int &id, const string &license, const int &age, const bool available) {
+Driver::Driver(int id, string &license, int age) : available(true), vacationStatus(false){
     this->id = id;
     this->license = license;
     this->age= age;
-    this->available = available;
 }
 
 Driver::~Driver() {}
