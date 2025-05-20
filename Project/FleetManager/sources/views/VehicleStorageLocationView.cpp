@@ -26,6 +26,8 @@ VehicleStorageLocation VehicleStorageLocationView::getVSL() {
             flag_error = true;
         }
     } while (flag_error);
+
+    return vsl;
 }
 
 int VehicleStorageLocationView::getID() {

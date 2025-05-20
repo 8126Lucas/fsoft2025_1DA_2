@@ -11,8 +11,10 @@ class VehicleView {
 public:
     static Vehicle getVehicle();
     static string getLicensePlate();
-    static void printVehicle(Vehicle *vehicle);
-    static void printVehicles(list<Vehicle> &vehicles);
+    static void printVehicle(const Vehicle *vehicle);
+    static void printListVehicles(list<Vehicle> &vehicles);
+
+    static double addFuel();
 };
 
 #endif //HEADERS_VIEWS_VEHICLEVIEW_H

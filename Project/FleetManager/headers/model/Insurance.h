@@ -25,6 +25,8 @@ class Insurance {
 
     ~Insurance();
 
+    int getID() const;
+
     Insurance addInsurance();
     void removeInsurance();
     bool isExpired();

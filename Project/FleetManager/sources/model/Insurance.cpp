@@ -3,3 +3,7 @@
 //
 
 #include "Insurance.h"
+
+int Insurance::getID() const {
+    return id;
+}

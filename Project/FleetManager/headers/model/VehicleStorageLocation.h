@@ -31,9 +31,11 @@ class VehicleStorageLocation {
     void removeVehicleFromStorage();
     int getAvailableSpace();
 
+    void incrementVehicleCount();
+
     int getID() const;
 
-    bool operator == (int id) const;
+    bool operator== (int id) const;
 };
 
 #endif //HEADERS_MODEL_VEHICLESTORAGELOCATION_H

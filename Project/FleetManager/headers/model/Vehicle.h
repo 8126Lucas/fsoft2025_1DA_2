@@ -8,6 +8,7 @@
 #include "VehicleStorageLocation.h"
 #include "Inspection.h"
 #include "Insurance.h"
+#include "Trip.h"
 
 using namespace std;
 
@@ -42,21 +43,31 @@ class Vehicle {
     void addVehicle();
     void removeVehicle();
 
-    string &getLicensePlate();
+    CATEGORY getCategory() const;
+    string getBrand() const;
+    string getModel() const;
+    int getYear() const;
+    string getLicensePlate() const;
+    double getMileage() const;
+    double getFuel() const;
     bool getAvailability() const;
+    int getInsurance() const;
+    int getInspection() const;
+    int getVSL() const;
+
     void setInsurance(Insurance insurance);
     void setInspection(Inspection inspection);
-    void setVSL(const VehicleStorageLocation vsl);
+    void setVSL(const VehicleStorageLocation &vsl);
 
     void addFuel();
-    bool isFuelEnough();
-    void updateMileage();
-    void insuranceAlert();
-    void inspectionAlert();
-    void fuelAlert();
-    bool isAvailable();
+    bool isFuelEnough(); // Criar variável fuelPerKm?
+    void updateMileage(Trip &trip);
+    void insuranceAlert(); // Preciso de criar o today
+    void inspectionAlert(); // Preciso de criar o today
+    void fuelAlert(); // Criar variável fuelPerKm?
+    bool isAvailable() const;
 
-    bool operator == (const string &string) const;
+    bool operator== (const string &string) const;
 
 };
 

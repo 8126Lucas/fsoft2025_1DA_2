@@ -36,12 +36,48 @@ void Vehicle::removeVehicle() {
     VehicleContainer::remove(licensePlate);
 }
 
-string &Vehicle::getLicensePlate() {
+CATEGORY Vehicle::getCategory() const {
+    return category;
+}
+
+string Vehicle::getBrand() const {
+    return brand;
+}
+
+string Vehicle::getModel() const {
+    return model;
+}
+
+int Vehicle::getYear() const {
+    return year;
+}
+
+string Vehicle::getLicensePlate() const {
     return licensePlate;
+}
+
+double Vehicle::getMileage() const {
+    return mileage;
+}
+
+double Vehicle::getFuel() const {
+    return fuel;
 }
 
 bool Vehicle::getAvailability() const {
     return available;
+}
+
+int Vehicle::getInsurance() const {
+    return insurance.getID();
+}
+
+int Vehicle::getInspection() const {
+    return inspection.getID();
+}
+
+int Vehicle::getVSL() const {
+    return vsl.getID();
 }
 
 void Vehicle::setInsurance(const Insurance insurance) {
@@ -52,7 +88,21 @@ void Vehicle::setInspection(const Inspection inspection) {
     this->inspection = inspection;
 }
 
-void Vehicle::setVSL(const VehicleStorageLocation vsl) {
+void Vehicle::setVSL(const VehicleStorageLocation &vsl) {
     this->vsl = vsl;
 }
 
+void Vehicle::addFuel() {
+    const double addedFuel = VehicleView::addFuel();
+    this->fuel += addedFuel;
+}
+
+void Vehicle::updateMileage(Trip &trip) {
+    // O Vítor precisa de fazer um getKilometers()
+    this->mileage += trip.getKilometers();
+}
+
+bool Vehicle::isAvailable() const {
+    if (this->available) {return true;}
+    return false;
+}

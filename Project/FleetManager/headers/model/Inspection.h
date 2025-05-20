@@ -22,6 +22,8 @@ class Inspection {
 
     ~Inspection();
 
+    int getID() const;
+
     Inspection addInspection();
     void removeInspection();
     bool isExpired();
