@@ -7,7 +7,7 @@
 
 #include <string>
 #include <vector>
-//#include "Vacation.h"
+#include "Vacation.h"
 
 using namespace std;
 
@@ -21,17 +21,22 @@ private:
     bool vacationStatus;
 
 public:
+    Driver();
+
     Driver(int id, string license, int age);
 
+    ~Driver();
+
+    void addDriver();
+    void removeDriver();
+
+    int &getId();
+    bool getAvailability() const;
+    void setVacation(Vacation vacation);
+
     int calculateTimeToRetire();
-
-    int getId();
+    void vacationAlert();
     bool isAvailable();
-
-    /*driver.cpp
-    int &driver::getId() {
-        return id;
-    }*/
 };
 
 #endif //HEADERS_MODEL_DRIVER_H

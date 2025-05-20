@@ -47,4 +47,14 @@ void DriverContainer::remove(int id) {
   }
 }
 
+list<Driver> DriverContainer::list(bool available) {
+  list<Driver> newList;
+  list<Driver>::iterator it = this->drivers.begin();
+  for (; it != this->drivers.end(); ++it) {
+    if (it->getAvailability() == true) {
+      newList.push_back(*it);
+    }
+  }
+  return newList;
+}
 //update da vacation

@@ -7,9 +7,9 @@
 #include "DriverContainer.h"
 #include "DriverView.h"
 
-Driver::driver() : id(), available(true) {}
+Driver::Driver() : id(), available(true) {}
 
-Driver::driver(const int &id, const string &license, const int &age, const bool available) {
+Driver::Driver(const int &id, const string &license, const int &age, const bool available) {
     this->id = id;
     this->license = license;
     this->age= age;
@@ -17,3 +17,25 @@ Driver::driver(const int &id, const string &license, const int &age, const bool 
 }
 
 Driver::~Driver() {}
+
+void Driver::addDriver() {
+    Driver driver = DriverView::getDriver();
+    DriverContainer::add(driver);
+}
+
+void Driver::removeDriver() {
+    int id = DriverView::getId();
+    DriverContainer::remove(id);
+}
+
+string &Driver::getId() {
+    return id;
+}
+
+bool Driver::getAvailability() const {
+    return available;
+}
+
+void Driver::setVacation(const Vacation vacation) {
+    this->vacation = vacation;
+}
