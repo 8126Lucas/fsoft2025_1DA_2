@@ -28,8 +28,8 @@ void Driver::removeDriver() {
     DriverContainer::remove(id);
 }
 
-string &Driver::getId() {
-    return id;
+int Driver::getId() {
+    return id; // alterado declaração de string para INT.
 }
 
 bool Driver::getAvailability() const {
