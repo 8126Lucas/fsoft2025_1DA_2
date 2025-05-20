@@ -11,22 +11,23 @@ using namespace std;
 
 enum ORDERSTATUS{
   UNCOMPLETED = 0,
-  COMPLETED = 1
+  IN_PROGRESS = 1,
+  COMPLETED = 2,
 };
 class Order {
   protected:
     int orderId;
     int clientId;
     DATE date;//ver a date
-    string sourceAdress;
-    string destinationAdress;
+    string sourceAddress;
+    string destinationAddress;
     double cargoSpace;
     double cargoWeight;
     double ShippingValue;
   private:
     ORDERSTATUS status;
   public:
-    Order(int orderId, int clientId, Date date, string sourceAdress, string destinationAdress,
+    Order(int orderId, int clientId, Date date, string sourceAddress, string destinationAddress,
           double cargoSpace, double cargoWeight, double ShippingValue,ORDERSTATUS status);
     ~Order();
 
@@ -39,7 +40,9 @@ class Order {
     void listCompletedOrders();
     void listOrdersByClient();
 
+    int getOrderId();
+    int getClientId();
+  //adicionar o resto dps
 
-
-}
+};
 #endif //HEADERS_MODEL_ORDER_H

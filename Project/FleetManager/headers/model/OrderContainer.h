@@ -19,6 +19,8 @@ class OrderContainer {
     void remove(int &orderId);
     list<Order> list();
     list<Order> list(ORDERSTATUS status );
+    list<Order> list(int &clientId );
     void complete(int &orderId);
-}
+
+};
 #endif //HEADERS_MODEL_ORDERCONTAINER_H
