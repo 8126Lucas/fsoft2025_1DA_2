@@ -5,13 +5,12 @@
 #ifndef HEADERS_MODEL_VACATION_H
 #define HEADERS_MODEL_VACATION_H
 
-#include "date.h"
-#include <vector>
+#include "Date.h"
 #include "Driver.h"
 
 class Vacation {
 private:
-    Driver driver;
+    Driver *driver;
     Date startDate;
     Date endDate;
     Date today;
@@ -20,7 +19,8 @@ private:
 public:
     Vacation(Driver driver, const Date& start, const Date& end, const Date& today);
 
-    //funções auxiliares
+    Vacation addVacation();
+
     bool isActive();
     int getRemainingDays();
 };

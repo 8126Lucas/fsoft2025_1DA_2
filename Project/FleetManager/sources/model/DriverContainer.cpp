@@ -19,16 +19,16 @@ list<Driver>::iterator DriverContainer::search(int id) {
 
 Driver *DriverContainer::get(int id) {
   list<Driver>::iterator it = search(id);
-  if(it != this->vehicle.end()) {
+  if(it != this->drivers.end()) {
     return &(*it);
   }
   return NULL;
 }
 
 void DriverContainer::add(Driver &driver) {
-  list<Driver>::iterator it = search(id);
+  list<Driver>::iterator it = search(driver);
   if (it != this->drivers.end()) {
-    this->drivers.erase(it);
+    this->drivers.push_back(driver);
   }
   else {
     string msg = "Driver: " + driver.getId();
@@ -36,8 +36,8 @@ void DriverContainer::add(Driver &driver) {
   }
 }
 
-void DriverContainer::remove(int &id) {
-  list<Driber>::iterator it = search(id);
+void DriverContainer::remove(int id) {
+  list<Driver>::iterator it = search(id);
   if (it != this->drivers.end()) {
     this->drivers.erase(it);
   }

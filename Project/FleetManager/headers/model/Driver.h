@@ -7,32 +7,31 @@
 
 #include <string>
 #include <vector>
-#include "Vacation.h"
+//#include "Vacation.h"
+
+using namespace std;
 
 class Driver {
-protected:
+private:
     int id;
-    std::string license;
+    string license;
     int age;
     int timeToRetire;
     bool available;
+    bool vacationStatus;
 
 public:
-    Driver(int id, std::string license, int age);
+    Driver(int id, string license, int age);
 
     int calculateTimeToRetire();
-    bool vacationAlert;
-
-    Vacation addVacation(const Vacation &vacation);
 
     int getId();
+    bool isAvailable();
 
     /*driver.cpp
     int &driver::getId() {
         return id;
     }*/
-
-    bool isAvailable();
 };
 
 #endif //HEADERS_MODEL_DRIVER_H

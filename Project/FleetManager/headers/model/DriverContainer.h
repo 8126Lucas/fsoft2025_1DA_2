@@ -8,16 +8,18 @@
 #include <vector>
 #include <list>
 #include "Driver.h"
+#include "Vacation.h"
 
 using namespace std; //list
 
 class DriverContainer {
 private:
     list<Driver> drivers;
-    list<Driver>::iterator search(int &id);
+    list<Driver>::iterator search(Driver &driver);
+    list<Driver>::iterator search(int id);
 
 public:
-    Driver *get(int &id);
+    Driver *get(int id);
     void add(Driver &driver);
     void remove(int id);
     list<Driver> list();
