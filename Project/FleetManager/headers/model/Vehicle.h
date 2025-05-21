@@ -36,7 +36,7 @@ class Vehicle {
     Vehicle();
 
     Vehicle(const CATEGORY category, const string &brand, const string &model, const int year, const string &licensePlate,
-            const double mileage, const double fuel, const bool available = true);
+            double mileage, double fuel, bool available = true);
 
     ~Vehicle();
 
@@ -58,6 +58,7 @@ class Vehicle {
     void setInsurance(Insurance insurance);
     void setInspection(Inspection inspection);
     void setVSL(const VehicleStorageLocation &vsl);
+    void setAvailability(bool availability);
 
     void addFuel();
     bool isFuelEnough(Trip &trip);

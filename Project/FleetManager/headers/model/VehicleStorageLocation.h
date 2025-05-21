@@ -5,6 +5,9 @@
 #ifndef HEADERS_MODEL_VEHICLESTORAGELOCATION_H
 #define HEADERS_MODEL_VEHICLESTORAGELOCATION_H
 #include <string>
+#include <list>
+
+#include "Vehicle.h"
 
 using namespace std;
 
@@ -24,16 +27,20 @@ class VehicleStorageLocation {
     ~VehicleStorageLocation();
 
     VehicleStorageLocation addStorageLocation();
-    void removeStorageLocation();
-    void listStorageLocations();
+    int removeStorageLocation();
+    void listStorageLocations(list<VehicleStorageLocation> &listVSL);
     void listStoredVehicles();
-    void addVehicleToStorage();
+    void addVehicleToStorage(Vehicle *vehicle);
     void removeVehicleFromStorage();
     int getAvailableSpace();
 
     void incrementVehicleCount();
 
     int getID() const;
+    string getName() const;
+    string getAddress() const;
+    int getCapacity() const;
+    int getVehicleCount() const;
 
     bool operator== (int id) const;
 };

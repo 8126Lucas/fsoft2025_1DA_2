@@ -4,6 +4,7 @@
 
 #include "VehicleStorageLocation.h"
 
+#include "Vehicle.h"
 #include "VehicleStorageLocationView.h"
 
 VehicleStorageLocation::VehicleStorageLocation(): id(0), capacity(0), currentVehicleCount(0) {}
@@ -20,8 +21,15 @@ VehicleStorageLocation::VehicleStorageLocation(int id, string name, string addre
 VehicleStorageLocation::~VehicleStorageLocation() {}
 
 VehicleStorageLocation VehicleStorageLocation::addStorageLocation() {
-    VehicleStorageLocation vsl = VehicleStorageLocationView::getVSL();
-    return vsl;
+    return VehicleStorageLocationView::getVSL();;
+}
+
+int VehicleStorageLocation::removeStorageLocation() {
+    return VehicleStorageLocationView::getID();
+}
+
+void VehicleStorageLocation::listStorageLocations(list<VehicleStorageLocation> &listVSL) {
+    VehicleStorageLocationView::printListVSL(listVSL);
 }
 
 
@@ -36,4 +44,20 @@ void VehicleStorageLocation::incrementVehicleCount() {
 
 int VehicleStorageLocation::getID() const {
     return id;
+}
+
+string VehicleStorageLocation::getName() const {
+    return name;
+}
+
+string VehicleStorageLocation::getAddress() const {
+    return address;
+}
+
+int VehicleStorageLocation::getCapacity() const {
+    return capacity;
+}
+
+int VehicleStorageLocation::getVehicleCount() const {
+    return currentVehicleCount;
 }

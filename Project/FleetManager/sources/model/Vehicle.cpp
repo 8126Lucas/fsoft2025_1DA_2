@@ -11,8 +11,7 @@ Vehicle::Vehicle() : category(), year(0), mileage(0), fuel(0), available(true) {
 }
 
 Vehicle::Vehicle(const CATEGORY category, const string &brand, const string &model, const int year,
-                 const string &licensePlate, const double mileage, const double fuel,
-                 const bool available) {
+                 const string &licensePlate, double mileage, double fuel, bool available) {
     this->category = category;
     this->brand = brand;
     this->model = model;
@@ -82,19 +81,27 @@ int Vehicle::getVSL() const {
 
 void Vehicle::setInsurance(const Insurance insurance) {
     this->insurance = insurance;
+    // update container
 }
 
 void Vehicle::setInspection(const Inspection inspection) {
     this->inspection = inspection;
+    // update container
 }
 
 void Vehicle::setVSL(const VehicleStorageLocation &vsl) {
     this->vsl = vsl;
+    // update container
+}
+
+void Vehicle::setAvailability(bool available) {
+    this->available = available;
 }
 
 void Vehicle::addFuel() {
     const double addedFuel = VehicleView::addFuel();
     this->fuel += addedFuel;
+    // update container
 }
 
 bool Vehicle::isFuelEnough(Trip &trip) {
@@ -106,6 +113,7 @@ bool Vehicle::isFuelEnough(Trip &trip) {
 void Vehicle::updateMileage(Trip &trip) {
     // O Vítor precisa de fazer um getKilometers()
     this->mileage += trip.getKilometers();
+    // update container
 }
 
 void Vehicle::insuranceAlert() {

@@ -12,6 +12,7 @@ public:
     static VehicleStorageLocation getVSL();
     static int getID();
     static void printVSL(VehicleStorageLocation *vsl);
-    static void printVSLs(list<VehicleStorageLocation> &vsls);
+    static void printListVSL(list<VehicleStorageLocation> &listVSL);
+    tuple<VehicleStorageLocation, Vehicle> addVehicle();
 };
 #endif //HEADERS_VIEW_VEHICLESTORAGELOCATIONVIEW_H

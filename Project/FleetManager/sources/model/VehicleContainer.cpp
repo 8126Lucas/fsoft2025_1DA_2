@@ -96,3 +96,36 @@ void VehicleContainer::update(string &licensePlate, VehicleStorageLocation vsl) 
         throw NonExistingDataException(msg);
     }
 }
+
+void VehicleContainer::updateFuel(string &licensePlate) {
+    list<Vehicle>::iterator it = search(licensePlate);
+    if (it != this->vehicles.end()) {
+        it->addFuel();
+    }
+    else {
+        string msg = "Vehicle (fuel): " + licensePlate;
+        throw NonExistingDataException(msg);
+    }
+}
+
+void VehicleContainer::updateMileage(string &licensePlate, Trip &trip) {
+    list<Vehicle>::iterator it = search(licensePlate);
+    if (it != this->vehicles.end()) {
+        it->updateMileage(trip);
+    }
+    else {
+        string msg = "Vehicle (mileage): " + licensePlate;
+        throw NonExistingDataException(msg);
+    }
+}
+
+void VehicleContainer::updateAvailability(string &licensePlate, bool available) {
+    list<Vehicle>::iterator it = search(licensePlate);
+    if (it != this->vehicles.end()) {
+        it->setAvailability(available);
+    }
+    else {
+        string msg = "Vehicle (mileage): " + licensePlate;
+        throw NonExistingDataException(msg);
+    }
+}

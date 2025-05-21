@@ -24,6 +24,9 @@ public:
     void update(string &licensePlate, Insurance insurance);
     void update(string &licensePlate, Inspection inspection);
     void update(string &licensePlate, VehicleStorageLocation vsl);
+    void updateFuel(string &licensePlate);
+    void updateMileage(string &licensePlate, Trip &trip);
+    void updateAvailability(string &licensePlate, bool available);
 };
 
 #endif //HEADERS_MODEL_VEHICLECONTAINER_H
