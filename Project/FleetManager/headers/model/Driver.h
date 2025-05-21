@@ -11,10 +11,10 @@
 
 using namespace std;
 
-enum class Status {
+enum class STATUS {
     Available = 1,
     OnVacation = 2,
-    Retired = 3,
+    DayOff = 3,
 };
 
 class Driver {
@@ -25,7 +25,7 @@ private:
     int timeToRetire;
     bool available;
     bool vacationStatus;
-    Status driverStatus;
+    STATUS driverStatus;
 
 public:
     Driver();

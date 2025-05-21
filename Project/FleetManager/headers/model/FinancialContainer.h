@@ -7,14 +7,31 @@
 
 #include <vector>
 #include <list>
+#include "Expense.h"
+#include "Revenue.h"
 
 using namespace std;
 
 class FinancialContainer {
 private:
+    list<Expense> expenses;
+    list<Expense>::iterator search(Expense &expense);
+    list<Expense>::iterator searchExpense(int id);
 
+    list<Revenue> revenues;
+    list<Revenue>::iterator search(Revenue &revenue);
+    list<Revenue>::iterator searchRevenue(int id);
 public:
+    Expense *getExpenseId(int id);
+    void addExpense(Expense &expense);
+    void removeExpense(Expense &expense);
+    list<Expense> listExpense();
+    list<Expense> listExpensesByType(TYPE type);
 
+    Revenue *getRevenueId(int id);
+    void addRevenue(Revenue &revenue);
+    void removeRevenue(Revenue &revenue);
+    list<Revenue> listRevenue();
 };
 
 #endif //HEADERS_MODEL_FINANCIALCONTAINER_H

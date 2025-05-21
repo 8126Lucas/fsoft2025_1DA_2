@@ -19,7 +19,7 @@ enum class TYPE{
 class Expense {
 protected:
     int id;
-    Trip id; //acho que é preciso alterar id de Trip.h para tripId
+    Trip trip;
     Date date;
     double amount;
     TYPE type;
