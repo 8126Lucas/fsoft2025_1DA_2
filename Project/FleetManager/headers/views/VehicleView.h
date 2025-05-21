@@ -15,6 +15,9 @@ public:
     static void printListVehicles(list<Vehicle> &vehicles);
 
     static double addFuel();
+    static void insuranceAlert(Vehicle &vehicle);
+    static void inspectionAlert(Vehicle &vehicle);
+    static void fuelAlert(Vehicle &vehicle);
 };
 
 #endif //HEADERS_VIEWS_VEHICLEVIEW_H

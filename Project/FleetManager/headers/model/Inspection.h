@@ -26,8 +26,9 @@ class Inspection {
 
     Inspection addInspection();
     void removeInspection();
-    bool isExpired();
-    int getReaminingDays();
+    bool isDued();
+    int getRemainingDays() const;
+    void updateToday();
 };
 
 #endif //HEADERS_MODEL_INSPECTION_H

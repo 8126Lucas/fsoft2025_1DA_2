@@ -1,0 +1,118 @@
+//
+// Created by lucas on 21/05/2025.
+//
+
+#include "Date.h"
+#include "InvalidDataException.h"
+#include <string>
+#include <ctime>
+
+using namespace std;
+
+bool Date::isLeapYear(int year) {
+    if (year % 400 == 0) {return true;}
+    if (year % 100 == 0) {return false;}
+    if (year % 4 == 0) {return true;}
+    return false;
+}
+
+bool Date::isValid(int day, int month, int year) {
+    bool is = true;
+    if (day <= 0 || day >= 31 || month <= 0 || month >= 12) {
+        is = false;
+    }
+    else {
+        switch (month) {
+            case 2:
+                if (isLeapYear(year)) {
+                    if (day > 29) {is = false;}
+                }
+                else {
+                    if (day > 28) {is = false;}
+                }
+                break;
+            case 4:
+            case 6:
+            case 9:
+            case 11:
+                if (day > 30) {is = false;}
+                break;
+        }
+    }
+    return is;
+}
+
+Date::Date() {
+    const Date date = getToday();
+    setDate(date.day, date.month, date.year);
+}
+
+Date::Date(int day, int month, int year) {
+    setDate(day, month, year);
+}
+
+Date::Date(const Date &date) {
+    setDate(date.day, date.month, date.year);
+}
+
+void Date::setDate(int day, int month, int year) {
+    if (isValid(day, month, year)) {
+        this->day = day;
+        this->month = month;
+        this->year = year;
+    }
+    else {
+        string msg = to_string(day) + "/" + to_string(month) + "/" + to_string(year);
+        throw InvalidDataException(msg);
+    }
+}
+
+void Date::getDate(int &day, int &month, int &year) const {
+    day = this->day;
+    month = this->month;
+    year = this->year;
+}
+
+Date Date::getToday() {
+    time_t timeNow;
+    time(&timeNow);
+    struct tm *localTime = localtime(&timeNow);
+    Date date = Date(localTime->tm_year + 1900, localTime->tm_mon + 1,
+                localTime->tm_mday);
+    return date;
+}
+
+tm Date::mk_tm(int day, int month, int year) const {
+    tm time = {0};
+    time.tm_mday = day;
+    time.tm_mon = month - 1;
+    time.tm_year = year - 1900;
+    return time;
+}
+
+bool Date::operator== (const Date &date) const {
+    if (this->year == date.year && this->month == date.month && this->day == date.day) {
+        return true;
+    }
+    return false;
+}
+bool Date::operator> (const Date &date) const {
+    if (this->year > date.year) {return true;}
+    if (this->month > date.month) {return true;}
+    if (this->day > date.day) {return true;}
+    return false;
+}
+bool Date::operator< (const Date &date) const {
+    if (*this == date) {return false;}
+    if (*this > date) {return false;}
+    return true;
+}
+
+int Date::operator- (const Date &date) const {
+    const int secondsPerDay = 60*60*24;
+    tm today = mk_tm(date.day, date.month, date.year);
+    tm existingDate = mk_tm(this->day, this->month, this->year);
+    const time_t timeToday = mktime(&today);
+    const time_t timeExistingDate = mktime(&existingDate);
+    return difftime(timeToday, timeExistingDate) / secondsPerDay;
+}

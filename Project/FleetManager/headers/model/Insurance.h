@@ -17,7 +17,7 @@ class Insurance {
     Date startDate;
     Date endDate;
     double monthlyCost;
-    // pensar como fazer o atributo "today"
+    Date today = Date::getToday();
 
   public:
     Insurance();
@@ -30,7 +30,8 @@ class Insurance {
     Insurance addInsurance();
     void removeInsurance();
     bool isExpired();
-    int getRemainingDays();
+    int getRemainingDays() const;
+    void updateToday();
 };
 
 

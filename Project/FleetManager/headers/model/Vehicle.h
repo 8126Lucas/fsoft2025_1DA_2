@@ -60,11 +60,11 @@ class Vehicle {
     void setVSL(const VehicleStorageLocation &vsl);
 
     void addFuel();
-    bool isFuelEnough(); // Criar variável fuelPerKm?
+    bool isFuelEnough(Trip &trip);
     void updateMileage(Trip &trip);
-    void insuranceAlert(); // Preciso de criar o today
-    void inspectionAlert(); // Preciso de criar o today
-    void fuelAlert(); // Criar variável fuelPerKm?
+    void insuranceAlert();
+    void inspectionAlert();
+    void fuelAlert(Trip &trip);
     bool isAvailable() const;
 
     bool operator== (const string &string) const;

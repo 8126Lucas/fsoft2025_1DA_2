@@ -97,10 +97,35 @@ void Vehicle::addFuel() {
     this->fuel += addedFuel;
 }
 
+bool Vehicle::isFuelEnough(Trip &trip) {
+    // O Vítor precisa e fazer um getFuel()
+    if (this->fuel > trip.getFuel()) {return true;}
+    return false;
+}
+
 void Vehicle::updateMileage(Trip &trip) {
     // O Vítor precisa de fazer um getKilometers()
     this->mileage += trip.getKilometers();
 }
+
+void Vehicle::insuranceAlert() {
+    if (this->insurance.isExpired()) {
+        VehicleView::insuranceAlert(*this);
+    }
+}
+
+void Vehicle::inspectionAlert() {
+    if (this->inspection.isDued()) {
+        VehicleView::inspectionAlert(*this);
+    }
+}
+
+void Vehicle::fuelAlert(Trip &trip) {
+    if (!this->isFuelEnough(trip)) {
+        VehicleView::fuelAlert(*this);
+    }
+}
+
 
 bool Vehicle::isAvailable() const {
     if (this->available) {return true;}
