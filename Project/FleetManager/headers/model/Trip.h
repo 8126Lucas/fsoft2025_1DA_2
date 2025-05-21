@@ -15,7 +15,6 @@ class Trip
 {
 private:
   STATE state;
-protected:
   int order;
   double kilometers;
   double fuel;
@@ -26,8 +25,11 @@ protected:
   int id;
 
 public:
+  Trip();
+
   Trip(STATE state=SUPRESSED, int order, double kilometers, double fuel, double fuelCost,double fines, double cost,
        double tolls);
+
   ~Trip();
 
   Trip trip(Trip &trip);

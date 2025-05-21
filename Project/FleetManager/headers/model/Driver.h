@@ -30,6 +30,7 @@ private:
 public:
     Driver();
 
+    Driver(int id, string &license, int age);
     Driver(int id, string license, int age, bool available = true, bool vacationStatus = false);
 
     ~Driver();

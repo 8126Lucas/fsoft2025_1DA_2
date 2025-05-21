@@ -10,14 +10,14 @@
 #include "Date.h"
 #include "Trip.h"
 
-enum class TYPE{
+enum TYPE{
     Fuel = 1,
     Inspection = 2,
     Insurance = 3,
-  };
+};
 
 class Expense {
-protected:
+private:
     int id;
     Trip trip;
     Date date;
