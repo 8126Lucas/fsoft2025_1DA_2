@@ -38,3 +38,7 @@ void VSLContainer::remove(int id) {
         throw NonExistingDataException(msg);
     }
 }
+
+list<VehicleStorageLocation> VSLContainer::list() {
+    return locations;
+}
