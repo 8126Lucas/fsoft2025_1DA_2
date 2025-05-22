@@ -8,6 +8,10 @@ int Insurance::getID() const {
     return id;
 }
 
+Insurance Insurance::addInsurance() {
+
+}
+
 bool Insurance::isExpired() {
     this->updateToday();
     if (this->endDate < this->today) {return true;}
