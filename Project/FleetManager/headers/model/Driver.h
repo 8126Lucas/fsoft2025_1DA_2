@@ -38,16 +38,24 @@ public:
     void addDriver();
     void removeDriver();
 
-    int  getId() const;
+    int getId();
+    string getLicense() const;
+    int getAge() const;
+    STATUS getDriverStatus() const;
     bool getAvailability() const;
+    int getVacation() const;
 
     void setVacation(Vacation vacation);
+    void setAvailability();
 
     int calculateTimeToRetire();
+    void updateTimeToRetire();
     void vacationAlert();
     bool isAvailable() const;
 
     bool operator == (int id) const;
+
+    void setAvailability(bool available);
 };
 
 #endif //HEADERS_MODEL_DRIVER_H

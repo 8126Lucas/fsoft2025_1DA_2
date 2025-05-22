@@ -5,17 +5,14 @@
 #ifndef HEADERS_MODEL_DRIVERCONTAINER_H
 #define HEADERS_MODEL_DRIVERCONTAINER_H
 
-#include <vector>
 #include <list>
 #include "Driver.h"
-#include "Vacation.h"
 
-using namespace std; //list
+using namespace std;
 
 class DriverContainer {
 private:
     list<Driver> drivers;
-    list<Driver>::iterator search(Driver &driver);
     list<Driver>::iterator search(int id);
 
 public:
@@ -24,8 +21,10 @@ public:
     void remove(int id);
     list<Driver> list();
     list<Driver> list(bool available);
-
     void update(int id, Vacation vacation);
+    void updateTimeToRetire(int id);
+
+    void updateAvailability(int id, bool available);
 };
 
 #endif //HEADERS_MODEL_DRIVERCONTAINER_H

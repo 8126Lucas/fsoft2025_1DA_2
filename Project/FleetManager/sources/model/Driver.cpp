@@ -18,6 +18,7 @@ Driver::Driver(int id, string &license, int age) : available(true), vacationStat
 
 Driver::~Driver() {}
 
+/*
 void Driver::addDriver() {
     Driver driver = DriverView::getDriver();
     DriverContainer::add(driver);
@@ -27,9 +28,10 @@ void Driver::removeDriver() {
     int id = DriverView::getId();
     DriverContainer::remove(id);
 }
+*/
 
 int Driver::getId() {
-    return id; // alterado declaração de string para INT.
+    return id;
 }
 
 bool Driver::getAvailability() const {

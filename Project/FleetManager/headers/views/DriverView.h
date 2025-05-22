@@ -13,6 +13,9 @@ public:
     static int getId();
     static void printDriver(Driver *driver);
     static void printDrivers(list<Driver> &drivers);
+
+    static void vacationAlert(Driver &driver);
+    static void retireAlert(Driver &driver);
 };
 
 #endif //HEADERS_VIEWS_DRIVERVIEW_H

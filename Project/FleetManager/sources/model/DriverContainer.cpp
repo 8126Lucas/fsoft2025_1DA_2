@@ -26,25 +26,33 @@ Driver *DriverContainer::get(int id) {
 }
 
 void DriverContainer::add(Driver &driver) {
-  list<Driver>::iterator it = search(driver);
+  list<Driver>::iterator it = search(driver.getId());
   if (it != this->drivers.end()) {
-    this->drivers.push_back(driver);
-  }
-  else {
-    string msg = "Driver: " + driver.getId();
+    string msg = "Driver already exists: ID" + to_string(driver.getId());
     throw DuplicatedDataException(msg);
   }
+  this->drivers.push_back(driver);
 }
+
 
 void DriverContainer::remove(int id) {
   list<Driver>::iterator it = search(id);
   if (it != this->drivers.end()) {
     this->drivers.erase(it);
   }
-  else {
-    string msg = "Driver: " + id;
+  else if (this->drivers.empty()) {
+    string msg = "No drivers in the list.";
     throw NonExistingDataException(msg);
   }
+  else {
+    string msg = "Driver not found: ID" + to_string(id);
+    throw NonExistingDataException(msg);
+  }
+}
+
+list<Driver> DriverContainer::list() {
+  list<Driver> newList(this->drivers);
+  return newList;
 }
 
 list<Driver> DriverContainer::list(bool available) {
@@ -57,4 +65,36 @@ list<Driver> DriverContainer::list(bool available) {
   }
   return newList;
 }
-//update da vacation
+
+void DriverContainer::update(int id, const Vacation vacation) {
+  list<Driver>::iterator it = search(id);
+  if (it != this->drivers.end()) {
+    it->setVacation(vacation);
+  }
+  else {
+    string msg = "Cannot update driver: Driver not found with ID" + to_string(id);
+    throw NonExistingDataException(msg);
+  }
+}
+
+void DriverContainer::updateTimeToRetire(int id) {
+  list<Driver>::iterator it = search(id);
+  if (it != this->drivers.end()) {
+    it->updateTimeToRetire();
+  }
+  else {
+    string msg = "Cannot update retirement time: Driver not found with ID" + to_string(id);
+    throw NonExistingDataException(msg);
+  }
+}
+
+void DriverContainer::updateAvailability(int id, bool available) {
+  list<Driver>::iterator it = search(id);
+  if (it != this->drivers.end()) {
+    it->setAvailability(available);
+  }
+  else {
+    string msg = "Cannot update availability: Driver not found with ID" + id;
+    throw NonExistingDataException(msg);
+  }
+}
