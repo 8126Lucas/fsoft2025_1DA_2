@@ -4,8 +4,29 @@
 
 #include "Inspection.h"
 
+Inspection::Inspection(): id(0), cost(0) {
+}
+
+Inspection::Inspection(int id, Vehicle *vehicle, Date &date, double cost) {
+    this->id = id;
+    this->vehicle = *vehicle;
+    this->date = date;
+    this->cost = cost;
+}
+
+Inspection::~Inspection() {}
 
 int Inspection::getID() const {
+    return id;
+}
+
+Inspection Inspection::addInspection(InspectionView inspectionView) {
+    Inspection inspection = inspectionView.addInspection();
+    return inspection;
+}
+
+int Inspection::removeInspection(InspectionView inspectionView) {
+    int id = inspectionView.removeInspection();
     return id;
 }
 

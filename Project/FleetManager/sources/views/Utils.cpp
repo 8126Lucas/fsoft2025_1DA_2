@@ -4,8 +4,12 @@
 
 #include "Utils.h"
 #include <iostream>
+#include <sstream>
 #include <limits>
 #include <list>
+#include <vector>
+
+#include "InvalidDataException.h"
 #include "Vehicle.h"
 
 using namespace std;
@@ -53,4 +57,126 @@ string Utils::getString(const string &label) {
   cout << label << ": ";
   getline(cin, input);
   return input;
+}
+
+Date Utils::getDate(const string &label) {
+  Date date;
+  string input;
+  char seperator = '/';
+  vector<int> numbers;
+  std::stringstream stream(input);
+  string item;
+  bool flag_error = false;
+  cout << label <<" (DD/MM/YYYY): ";
+  do {
+    flag_error = false;
+    numbers.clear();
+    getline(cin, input);
+
+    while (getline(stream, item, seperator)) {
+      try {
+        numbers.push_back(stoi(item));
+      } catch (InvalidDataException &error) {
+        flag_error = true;
+        break;
+      }
+    }
+    if (numbers.size() == 3) {
+      if (!date.setDate(numbers[0], numbers[1], numbers[2])) {
+        flag_error = true;
+        break;
+      }
+    }
+    else {flag_error = true;}
+  } while (flag_error);
+
+  return date;
+}
+
+Vehicle *Utils::getVehicle(const string &label) {
+  string licensePlate = getString(label);
+  Vehicle *vehicle = VehicleContainer::get(licensePlate);
+  return vehicle;
+}
+
+Vehicle Utils::setVehicle() {
+  Vehicle vehicle;
+  bool flag_error = false;
+  do {
+    try {
+      flag_error = false;
+      CATEGORY category = static_cast<CATEGORY>(Utils::getInt("Category (1 - Truck / 2 - Van)"));
+      string brand = Utils::getString("Brand");
+      string model = Utils::getString("Model");
+      int year = Utils::getInt("Year");
+      string licensePlate = Utils::getString("License Plate");
+      double mileage = Utils::getDouble("Mileage");
+      double fuel = Utils::getDouble("Fuel");
+      bool available = true;
+      vehicle = Vehicle(category, brand, model, year, licensePlate, mileage, fuel, available = true);
+    } catch (InvalidDataException &error) {
+      flag_error = true;
+    }
+  } while (flag_error);
+
+  return vehicle;
+}
+
+VehicleStorageLocation Utils::setVSL() {
+  VehicleStorageLocation vsl = VehicleStorageLocation();
+  bool flag_error = false;
+  do {
+    try {
+      flag_error = false;
+      int id = Utils::getInt("ID");
+      string name = Utils::getString("Name");
+      string address = Utils::getString("Address");
+      int capacity = Utils::getInt("Capacity");
+      int currentVehicleCount = 0;
+      vsl = VehicleStorageLocation(id, name, address, capacity, currentVehicleCount);
+    } catch (InvalidDataException &error) {
+      flag_error = true;
+    }
+  } while (flag_error);
+
+  return vsl;
+}
+
+Insurance Utils::setInsurance() {
+  Insurance insurance = Insurance();
+  bool flag_error = false;
+  do {
+    try {
+      flag_error = false;
+      int id = Utils::getInt("Insurance ID");
+      Vehicle *vehicle = Utils::getVehicle("Vehicle's License Plate");
+      Date startDate = Utils::getDate("Start Date");
+      Date endDate = Utils::getDate("End Date");
+      double monthlyCost = Utils::getDouble("Monthly Cost");
+      insurance = Insurance(id, vehicle, startDate, endDate, monthlyCost);
+    } catch (InvalidDataException &error) {
+      flag_error = true;
+    }
+  } while (flag_error);
+
+  return insurance;
+}
+
+Inspection Utils::setInspection() {
+  Inspection inspection = Inspection();
+  bool flag_error = false;
+  do {
+    try {
+      flag_error = false;
+      int id = Utils::getInt("Inspection ID");
+      Vehicle *vehicle = Utils::getVehicle("Vehicle's License Plate");
+      Date date = Utils::getDate("Date");
+      double cost = Utils::getDouble("Cost");
+      inspection = Inspection(id, vehicle, date, cost);
+    } catch (InvalidDataException &error) {
+      flag_error = true;
+    }
+  } while (flag_error);
+
+  return inspection;
 }

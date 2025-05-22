@@ -4,12 +4,33 @@
 
 #include "Insurance.h"
 
+#include "InsuranceView.h"
+#include "VehicleView.h"
+
+Insurance::Insurance(): id(0), vehicle(nullptr), monthlyCost(0) {}
+
+Insurance::Insurance(int id, Vehicle *vehicle, Date &startDate, Date &endDate, double monthlyCost) {
+    this->id = id;
+    this->vehicle = vehicle;
+    this->startDate = startDate;
+    this->endDate = endDate;
+    this->monthlyCost = monthlyCost;
+}
+
+Insurance::~Insurance() {}
+
 int Insurance::getID() const {
     return id;
 }
 
-Insurance Insurance::addInsurance() {
+Insurance Insurance::addInsurance(InsuranceView insuranceView) {
+    Insurance insurance = insuranceView.addInsurance();
+    return insurance;
+}
 
+int Insurance::removeInsurance(InsuranceView insuranceView) {
+    int id = insuranceView.removeInsurance();
+    return id;
 }
 
 bool Insurance::isExpired() {

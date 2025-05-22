@@ -12,28 +12,14 @@
 
 using namespace std;
 
-Vehicle VehicleView::getVehicle() {
-    Vehicle vehicle = Vehicle();
+Vehicle VehicleView::addVehicle() {
+    Vehicle vehicle = Utils::setVehicle();
+    return vehicle;
+}
 
-    bool flag_error = false;
-
-    do {
-        try {
-            flag_error = false;
-            CATEGORY category = static_cast<CATEGORY>(Utils::getInt("Category"));
-            string brand = Utils::getString("Brand");
-            string model = Utils::getString("Model");
-            int year = Utils::getInt("Year");
-            string licensePlate = Utils::getString("License Plate");
-            double mileage = Utils::getDouble("Mileage");
-            double fuel = Utils::getDouble("Fuel");
-            bool available = true;
-            vehicle = Vehicle(category, brand, model, year, licensePlate, mileage, fuel, available = true);
-        } catch (InvalidDataException &error) {
-            flag_error = true;
-        }
-    } while (flag_error);
-
+Vehicle *VehicleView::getVehicle(VehicleContainer *container) {
+    string licensePlate = getLicensePlate();
+    Vehicle *vehicle = container->get(licensePlate);
     return vehicle;
 }
 

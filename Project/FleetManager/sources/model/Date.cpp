@@ -55,16 +55,15 @@ Date::Date(const Date &date) {
     setDate(date.day, date.month, date.year);
 }
 
-void Date::setDate(int day, int month, int year) {
-    if (isValid(day, month, year)) {
-        this->day = day;
-        this->month = month;
-        this->year = year;
-    }
-    else {
+bool Date::setDate(int day, int month, int year) {
+    if (!isValid(day, month, year)) {
         string msg = to_string(day) + "/" + to_string(month) + "/" + to_string(year);
         throw InvalidDataException(msg);
     }
+    this->day = day;
+    this->month = month;
+    this->year = year;
+    return true;
 }
 
 void Date::getDate(int &day, int &month, int &year) const {

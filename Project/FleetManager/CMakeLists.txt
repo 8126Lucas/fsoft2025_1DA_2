@@ -44,25 +44,27 @@ include_directories(
         ${PROJECT_SOURCES_MODEL_DIR})
 set(MODEL_SOURCE_FILES
         ${PROJECT_HEADERS_MODEL_DIR}/Date.h
-        # ${PROJECT_SOURCES_MODEL_DIR}/Date.cpp
+        ${PROJECT_SOURCES_MODEL_DIR}/Date.cpp
         ${PROJECT_HEADERS_MODEL_DIR}/Driver.h
         ${PROJECT_SOURCES_MODEL_DIR}/Driver.cpp
         ${PROJECT_HEADERS_MODEL_DIR}/DriverContainer.h
         ${PROJECT_SOURCES_MODEL_DIR}/DriverContainer.cpp
         ${PROJECT_HEADERS_MODEL_DIR}/Enterprise.h
         ${PROJECT_SOURCES_MODEL_DIR}/Enterprise.cpp
+        ${PROJECT_HEADERS_MODEL_DIR}/Expense.h
+        ${PROJECT_SOURCES_MODEL_DIR}/Expense.cpp
         ${PROJECT_HEADERS_MODEL_DIR}/Inspection.h
         ${PROJECT_SOURCES_MODEL_DIR}/Inspection.cpp
         ${PROJECT_HEADERS_MODEL_DIR}/Insurance.h
         ${PROJECT_SOURCES_MODEL_DIR}/Insurance.cpp
         ${PROJECT_HEADERS_MODEL_DIR}/Order.h
-        # ${PROJECT_SOURCES_MODEL_DIR}/Order.cpp
+        ${PROJECT_SOURCES_MODEL_DIR}/Order.cpp
         ${PROJECT_HEADERS_MODEL_DIR}/OrderContainer.h
-        # ${PROJECT_SOURCES_MODEL_DIR}/OrderContainer.cpp
+        ${PROJECT_SOURCES_MODEL_DIR}/OrderContainer.cpp
         ${PROJECT_HEADERS_MODEL_DIR}/Trip.h
-        # ${PROJECT_SOURCES_MODEL_DIR}/Trip.cpp
-        # ${PROJECT_HEADERS_MODEL_DIR}/TripContainer.h
-        # ${PROJECT_SOURCES_MODEL_DIR}/TripContainer.cpp
+        ${PROJECT_SOURCES_MODEL_DIR}/Trip.cpp
+        ${PROJECT_HEADERS_MODEL_DIR}/TripContainer.h
+        ${PROJECT_SOURCES_MODEL_DIR}/TripContainer.cpp
         ${PROJECT_HEADERS_MODEL_DIR}/Truck.h
         ${PROJECT_SOURCES_MODEL_DIR}/Truck.cpp
         ${PROJECT_HEADERS_MODEL_DIR}/Vacation.h
@@ -90,6 +92,14 @@ include_directories(
 set(VIEWS_SOURCE_FILES
         ${PROJECT_HEADERS_VIEWS_DIR}/DriverView.h
         # ${PROJECT_SOURCES_VIEWS_DIR}/DriverView.cpp
+        ${PROJECT_HEADERS_VIEWS_DIR}/FinancialView.h
+        # ${PROJECT_SOURCES_VIEWS_DIR}/FinancialView.cpp
+        # ${PROJECT_HEADERS_VIEWS_DIR}/InspectionView.h
+        # ${PROJECT_SOURCES_VIEWS_DIR}/InspectionView.cpp
+        ${PROJECT_HEADERS_VIEWS_DIR}/InsuranceView.h
+        ${PROJECT_SOURCES_VIEWS_DIR}/InsuranceView.cpp
+        ${PROJECT_HEADERS_VIEWS_DIR}/OrderView.h
+        # ${PROJECT_SOURCES_VIEWS_DIR}/OrderView.cpp
         ${PROJECT_HEADERS_VIEWS_DIR}/Utils.h
         ${PROJECT_SOURCES_VIEWS_DIR}/Utils.cpp
         ${PROJECT_HEADERS_VIEWS_DIR}/VehicleStorageLocationView.h

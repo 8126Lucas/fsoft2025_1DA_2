@@ -14,23 +14,7 @@
 using namespace std;
 
 VehicleStorageLocation VehicleStorageLocationView::getVSL() {
-    VehicleStorageLocation vsl = VehicleStorageLocation();
-
-    bool flag_error = false;
-    do {
-        try {
-            flag_error = false;
-            int id = Utils::getInt("ID");
-            string name = Utils::getString("Name");
-            string address = Utils::getString("Address");
-            int capacity = Utils::getInt("Capacity");
-            int currentVehicleCount = 0;
-            vsl = VehicleStorageLocation(id, name, address, capacity, currentVehicleCount);
-        } catch (InvalidDataException &error) {
-            flag_error = true;
-        }
-    } while (flag_error);
-
+    VehicleStorageLocation vsl = Utils::setVSL();
     return vsl;
 }
 

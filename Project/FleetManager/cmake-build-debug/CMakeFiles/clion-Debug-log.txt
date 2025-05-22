@@ -1,16 +1,4 @@
-/home/dinis/Downloads/clion/clion-2024.3.4/bin/cmake/linux/x64/bin/cmake -DCMAKE_BUILD_TYPE=Debug -G "Unix Makefiles" -S /home/dinis/CLionProjects/fsoft2025_1DA_2/Project/FleetManager -B /home/dinis/CLionProjects/fsoft2025_1DA_2/Project/FleetManager/cmake-build-debug
--- The C compiler identification is GNU 14.2.0
--- The CXX compiler identification is GNU 14.2.0
--- Detecting C compiler ABI info
--- Detecting C compiler ABI info - done
--- Check for working C compiler: /usr/bin/cc - skipped
--- Detecting C compile features
--- Detecting C compile features - done
--- Detecting CXX compiler ABI info
--- Detecting CXX compiler ABI info - done
--- Check for working CXX compiler: /usr/bin/c++ - skipped
--- Detecting CXX compile features
--- Detecting CXX compile features - done
--- Configuring done (0.5s)
--- Generating done (0.0s)
--- Build files have been written to: /home/dinis/CLionProjects/fsoft2025_1DA_2/Project/FleetManager/cmake-build-debug
+"C:\Program Files (x86)\JetBrains\CLion 2024.3.4\bin\cmake\win\x64\bin\cmake.exe" -DCMAKE_BUILD_TYPE=Debug "-DCMAKE_MAKE_PROGRAM=C:/Program Files (x86)/JetBrains/CLion 2024.3.4/bin/ninja/win/x64/ninja.exe" -G Ninja -S C:\Users\lucas\Desktop\fsoft2025_1DA_2\Project\FleetManager -B C:\Users\lucas\Desktop\fsoft2025_1DA_2\Project\FleetManager\cmake-build-debug
+-- Configuring done (0.3s)
+-- Generating done (0.1s)
+-- Build files have been written to: C:/Users/lucas/Desktop/fsoft2025_1DA_2/Project/FleetManager/cmake-build-debug

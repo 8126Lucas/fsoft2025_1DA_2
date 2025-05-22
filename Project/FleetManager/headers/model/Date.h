@@ -19,7 +19,7 @@ public:
       Date();
       Date(int day, int month, int year);
       Date(const Date &date);
-      void setDate(int day, int month, int year);
+      bool setDate(int day, int month, int year);
       void getDate(int &day, int &month, int &year) const;
 
 

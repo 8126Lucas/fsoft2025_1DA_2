@@ -6,10 +6,12 @@
 #define HEADERS_VIEWS_VEHICLEVIEW_H
 #include <list>
 #include "Vehicle.h"
+#include "VehicleContainer.h"
 
 class VehicleView {
 public:
-    static Vehicle getVehicle();
+    static Vehicle addVehicle();
+    Vehicle *getVehicle(VehicleContainer *container);
     static string getLicensePlate();
     static void printVehicle(const Vehicle *vehicle);
     static void printListVehicles(list<Vehicle> &vehicles);
