@@ -18,7 +18,6 @@ Driver::Driver(int id, string &license, int age) : available(true), vacationStat
 
 Driver::~Driver() {}
 
-/*
 void Driver::addDriver() {
     Driver driver = DriverView::getDriver();
     DriverContainer::add(driver);
@@ -28,16 +27,68 @@ void Driver::removeDriver() {
     int id = DriverView::getId();
     DriverContainer::remove(id);
 }
-*/
 
 int Driver::getId() {
     return id;
+}
+
+string Driver::getLicense() {
+    return license;
+}
+
+int Driver::getAge() {
+    return age;
+}
+
+STATUS Driver::getDriverStatus() {
+    return driverStatus;
 }
 
 bool Driver::getAvailability() const {
     return available;
 }
 
+int Driver::getVacation() {
+    return vacation.getId();
+}
+
 void Driver::setVacation(const Vacation vacation) {
     this->vacation = vacation;
+}
+
+void Driver::setAvailability(bool available) {
+    this->available = available;
+}
+
+void Driver::updateTimeToRetire() {
+    const int retirementAge = 65;
+    if (age >= retirementAge) {
+        this->timeToRetire = 0;
+    } else {
+        this->timeToRetire = retirementAge - age;
+    }
+}
+
+
+/* Por no Vacation.cpp
+bool Vacation::isOnVacation() {
+    this->updateToday();
+    if (this->endDate < this->today) {return true;}
+    if (this->endDate == this->today) {return true;}
+    return false;
+}
+*/
+
+void Driver::vacationAlert() {
+    if (this->vacation.isOnVacation()) {
+        DriverView::vacationAlert(*this);
+    }
+}
+void Driver::retirementAlert() {
+
+}
+
+bool Vehicle::isAvailable() const {
+    if (this->available) {return true;}
+    return false;
 }

@@ -11,7 +11,7 @@
 
 using namespace std;
 
-enum class STATUS {
+enum STATUS {
     Available = 1,
     OnVacation = 2,
     DayOff = 3,
@@ -26,6 +26,7 @@ private:
     bool available;
     bool vacationStatus;
     STATUS driverStatus;
+    Vacation vacation;
 
 public:
     Driver();
@@ -46,16 +47,14 @@ public:
     int getVacation() const;
 
     void setVacation(Vacation vacation);
-    void setAvailability();
+    void setAvailability(bool available);
 
-    int calculateTimeToRetire();
     void updateTimeToRetire();
     void vacationAlert();
+    void retirementAlert();
     bool isAvailable() const;
 
     bool operator == (int id) const;
-
-    void setAvailability(bool available);
 };
 
 #endif //HEADERS_MODEL_DRIVER_H

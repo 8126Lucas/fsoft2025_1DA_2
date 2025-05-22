@@ -22,13 +22,13 @@ private:
     list<Revenue>::iterator search(Revenue &revenue);
     list<Revenue>::iterator searchRevenue(int id);
 public:
-    Expense *getExpenseId(int id);
+    Expense *getExpense(int id);
     void addExpense(Expense &expense);
     void removeExpense(Expense &expense);
     list<Expense> listExpense();
     list<Expense> listExpensesByType(TYPE type);
 
-    Revenue *getRevenueId(int id);
+    Revenue *getRevenue(int id);
     void addRevenue(Revenue &revenue);
     void removeRevenue(Revenue &revenue);
     list<Revenue> listRevenue();

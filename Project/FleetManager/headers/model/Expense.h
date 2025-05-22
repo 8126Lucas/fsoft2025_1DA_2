@@ -32,10 +32,14 @@ public:
     ~Expense();
 
     Expense recordExpense();
+    void addExpense();
+    void removeExpense();
 
-    //Provisório
-    void listExpenses();
-    void listExpensesByType();
+    int getId();
+    Trip getTrip() const;
+    Date getDate() const;
+    double getAmount() const;
+    TYPE getType() const;
 };
 
 #endif //HEADERS_MODEL_EXPENSE_H

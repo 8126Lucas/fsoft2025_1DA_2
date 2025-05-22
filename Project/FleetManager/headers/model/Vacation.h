@@ -10,6 +10,7 @@
 
 class Vacation {
 private:
+    int id;
     Driver *driver;
     Date startDate;
     Date endDate;
@@ -17,10 +18,11 @@ private:
     bool status;
 
 public:
-    Vacation(Driver driver, const Date& start, const Date& end, const Date& today);
+    Vacation(Driver *driver, const Date& start, const Date& end, const Date& today);
 
     Vacation addVacation();
 
+    int getId();
     bool isActive();
     int getRemainingDays();
 };

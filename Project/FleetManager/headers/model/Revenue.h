@@ -25,10 +25,13 @@ public:
     ~Revenue();
 
     Revenue recordRevenue();
+    void addRevenue();
+    void removeRevenue();
 
-    //Provisório
-    void listRevenues();
-    void listAllRevenues();
+    int getId();
+    Order getOrder() const;
+    Date getDate() const;
+    double getAmount() const;
 };
 
 #endif //HEADERS_MODEL_REVENUE_H
