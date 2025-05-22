@@ -14,7 +14,7 @@ enum STATE{
 class Trip
 {
 private:
-  STATE state;
+  STATE state = SUPRESSED;
   int order;
   double kilometers;
   double fuel;
@@ -27,7 +27,7 @@ private:
 public:
   Trip();
 
-  Trip(STATE state=SUPRESSED, int order, double kilometers, double fuel, double fuelCost,double fines, double cost,
+  Trip(int order, double kilometers, double fuel, double fuelCost,double fines, double cost,
        double tolls);
 
   ~Trip();
@@ -36,9 +36,10 @@ public:
   void startTrip(Trip &trip);
 
   double calculateCost();
-  double addFuelCost();
-  double addToll();
-  double addFines();
+  double getFuelCost();
+  double getTolls();
+  double getFines();
+  double getKM();
 
   void completeTrip(Trip &trip);
 

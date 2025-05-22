@@ -8,6 +8,22 @@
 
 using namespace std;
 
+Trip::Trip() :  id(), kilometers(0), fuel(0) {
+}
+
+Trip::Trip(int order, double kilometers, double fuel, double fuelCost,double fines, double cost,
+       double tolls){
+
+  this->order = order;
+  this->kilometers = kilometers;
+  this->fuel = fuel;
+  this->fuelCost = fuelCost;
+  this->fines = fines;
+  this->cost = cost;
+  this->tolls = tolls;
+
+}
+
 int Trip::getID() {
   return this->id;
 }
@@ -28,6 +44,24 @@ void Trip::completeTrip(Trip &trip){
   trip.state = DELIVERED;
 }
 
+double Trip::getKM() {
+  return kilometers;
+}
 
+double Trip::getFines(){
+  return fines;
+}
+
+double Trip::getTolls(){
+  return tolls;
+}
+
+double Trip::getFuelCost(){
+  return fuelCost;
+}
+
+double Trip::calculateCost(){
+  return cost;
+}
 
 
