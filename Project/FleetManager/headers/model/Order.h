@@ -10,15 +10,14 @@
 using namespace std;
 
 enum ORDERSTATUS{
-  UNCOMPLETED = 0,
-  IN_PROGRESS = 1,
-  COMPLETED = 2,
+  IN_PROGRESS = 0,//removido uncompleted
+  COMPLETED = 1,
 };
 class Order {
   protected:
     int orderId;
     int clientId;
-    DATE date;//ver a date
+    Date date;
     string sourceAddress;
     string destinationAddress;
     double cargoSpace;
@@ -27,22 +26,32 @@ class Order {
   private:
     ORDERSTATUS status;
   public:
+    Order();
+
     Order(int orderId, int clientId, Date date, string sourceAddress, string destinationAddress,
           double cargoSpace, double cargoWeight, double ShippingValue,ORDERSTATUS status);
     ~Order();
 
-    Order addOrder();
-    void removeOrder();
+    Order addOrder(Order order);
+    void removeOrder(int orderId);
+    void completeOrder(int orderId);
 
-    void completeOrder();
-
-    void listUncompletedOrders();
-    void listCompletedOrders();
-    void listOrdersByClient();
+    void listOrders();
+    void listOrdersByCompletion();
+    void listOrdersByClient(int clientId);
 
     int getOrderId();
     int getClientId();
-  //adicionar o resto dps
+    string getSourceAddress();
+    string getDestinationAddress();
+    double getCargoSpace();
+    double getCargoWeight();
+    double getShippingValue();
+    ORDERSTATUS getStatus();
+
+    void setStatus(ORDERSTATUS status);
+
+    bool operator==(int id) const;
 
 };
 #endif //HEADERS_MODEL_ORDER_H

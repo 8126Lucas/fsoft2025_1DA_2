@@ -7,10 +7,10 @@
 #include "Utils.h"
 #include "Orderview.h"
 
-Order::Order() : orderId(),clientId(),status(UNCOMPLETED) {}
+Order::Order() : orderId(),clientId(),status(IN_PROGRESS) {}
 
-Order::Order(const int &orderId, const int &clientId,const DATE &date,const string &sourceAddress,const string &destinationAddress,
-             const double &cargoSpace,const double &cargoWeight,const double &ShippingValue,const ORDERSTATUS &status) {
+Order::Order(const int orderId, const int clientId,const Date date,const string sourceAddress,const string destinationAddress,
+             const double cargoSpace,const double cargoWeight,const double ShippingValue,const ORDERSTATUS status) {
     this->orderId = orderId;
     this->clientId = clientId;
     this->date = date;//cena do date
@@ -25,17 +25,24 @@ Order::Order(const int &orderId, const int &clientId,const DATE &date,const stri
 
 Order::~Order() {}
 
-Order Order::addOrder() {
-    Order order = OrderView::getOrder();
+Order Order::addOrder(Order order) {
     OrderContainer::add(order);
 }
 
-void Order::removeOrder() {
-    int OrderId = OrderView::getorderId();
-    OrderContainer::remove(OrderId);
+void Order::removeOrder(int id) {
+    OrderContainer::remove(id);
 }
 
-void Order::completeOrder() {
-    int OrderId = OrderView::getorderId();
-    OrderContainer::complete(OrderId);
+void Order::completeOrder(int id) {
+    OrderContainer::complete(orderId);
+}
+void Order::listOrders() {
+    OrderContainer::list();
+}
+void Order::listOrdersByCompletion() {
+  list<Order> listUncompleted;
+  list<Order> listCompleted;
+  auto result = OrderContainer::listCompletion();
+  listUncompleted = result.first;
+  listCompleted = result.second;
 }

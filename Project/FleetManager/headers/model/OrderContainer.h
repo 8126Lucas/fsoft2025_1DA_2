@@ -12,15 +12,16 @@ using namespace std;
 class OrderContainer {
   private:
     list<Order> orders;
-    list<Order>::iterator search(int &orderId);
+    list<Order>::iterator search(int orderId);
   public:
-    Order *get(int &orderId);
-    void add(Order &order);
-    void remove(int &orderId);
+    Order *get(int orderId);
+    void add(Order &order);//static
+    void remove(int orderId);
     list<Order> list();
-    list<Order> list(ORDERSTATUS status );
-    list<Order> list(int &clientId );
-    void complete(int &orderId);
+    std::pair<std::list<Order>, std::list<Order>> listCompletion();
+    std::list<Order> listClient(int clientId );
+    void complete(int orderId);
+  //void set(void param)
 
 };
 #endif //HEADERS_MODEL_ORDERCONTAINER_H
