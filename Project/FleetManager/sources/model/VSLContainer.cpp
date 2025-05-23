@@ -39,6 +39,18 @@ void VSLContainer::remove(int id) {
     }
 }
 
+void VSLContainer::update(const VehicleStorageLocation &location) {
+    list<VehicleStorageLocation>::iterator it = search(location.getID());
+    if (it != this->locations.end()) {
+        this->locations.erase(it);
+        this->locations.push_back(location);
+    }
+    else {
+        string msg = "Storage Location: " + to_string(location.getID());
+        throw NonExistingDataException(msg);
+    }
+}
+
 list<VehicleStorageLocation> VSLContainer::list() {
     return locations;
 }

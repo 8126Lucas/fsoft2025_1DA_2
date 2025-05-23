@@ -6,6 +6,7 @@
 #define HEADERS_MODEL_VEHICLESTORAGELOCATION_H
 #include <string>
 #include <list>
+#include <unordered_map>
 
 #include "Vehicle.h"
 
@@ -18,6 +19,8 @@ class VehicleStorageLocation {
     string address;
     int capacity;
     int currentVehicleCount;
+    unordered_map<int, Vehicle *> vehicles;
+
 
   public:
     VehicleStorageLocation();

@@ -10,8 +10,7 @@
 
 using namespace std;
 
-View::View() {
-}
+View::View() {}
 
 int View::menuEnterprise() {
   int op = -1;

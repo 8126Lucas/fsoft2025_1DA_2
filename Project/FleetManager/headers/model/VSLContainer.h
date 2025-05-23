@@ -14,15 +14,13 @@ using namespace std;
 class VSLContainer {
 private:
     list<VehicleStorageLocation> locations;
-    list<tuple<VehicleStorageLocation, Vehicle>> vehicleLocations;
     list<VehicleStorageLocation>::iterator search(int id);
 
 public:
     void add(const VehicleStorageLocation &location);
     void remove(int id);
+    void update(const VehicleStorageLocation &location);
     list<VehicleStorageLocation> list();
-
-    void addVehicle(tuple<VehicleStorageLocation, Vehicle> vehicleLocations);
 };
 
 #endif //HEADERS_MODEL_VSLCONTAINER_H

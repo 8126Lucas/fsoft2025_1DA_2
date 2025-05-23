@@ -5,7 +5,7 @@
 #include "Insurance.h"
 
 #include "InsuranceView.h"
-#include "VehicleView.h"
+
 
 Insurance::Insurance(): id(0), vehicle(nullptr), monthlyCost(0) {}
 

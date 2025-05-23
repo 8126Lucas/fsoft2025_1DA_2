@@ -20,7 +20,7 @@ int Inspection::getID() const {
     return id;
 }
 
-Inspection Inspection::addInspection(InspectionView inspectionView) {
+Inspection Inspection::addInspection(InspectionView inspectionView) const {
     Inspection inspection = inspectionView.addInspection();
     return inspection;
 }

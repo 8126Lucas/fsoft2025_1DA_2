@@ -5,12 +5,16 @@
 #ifndef HEADERS_MODEL_VEHICLE_H
 #define HEADERS_MODEL_VEHICLE_H
 #include <string>
-#include "VehicleStorageLocation.h"
+
 #include "Inspection.h"
 #include "Insurance.h"
+#include "VehicleStorageLocation.h"
 #include "Trip.h"
 
 using namespace std;
+
+class Insurance;
+class Inspection;
 
 enum CATEGORY {
   TRUCK = 1,
@@ -35,13 +39,13 @@ class Vehicle {
 
     Vehicle();
 
-    Vehicle(const CATEGORY category, const string &brand, const string &model, const int year, const string &licensePlate,
+    Vehicle(CATEGORY category, const string &brand, const string &model, int year, const string &licensePlate,
             double mileage, double fuel, bool available = true);
 
     ~Vehicle();
 
-    void addVehicle();
-    void removeVehicle();
+    Vehicle addVehicle();
+    string removeVehicle();
 
     CATEGORY getCategory() const;
     string getBrand() const;

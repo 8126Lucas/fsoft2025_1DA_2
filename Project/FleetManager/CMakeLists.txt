@@ -94,11 +94,11 @@ set(VIEWS_SOURCE_FILES
         # ${PROJECT_SOURCES_VIEWS_DIR}/DriverView.cpp
         ${PROJECT_HEADERS_VIEWS_DIR}/FinancialView.h
         # ${PROJECT_SOURCES_VIEWS_DIR}/FinancialView.cpp
-        # ${PROJECT_HEADERS_VIEWS_DIR}/InspectionView.h
-        # ${PROJECT_SOURCES_VIEWS_DIR}/InspectionView.cpp
+        ${PROJECT_HEADERS_VIEWS_DIR}/InspectionView.h
+        ${PROJECT_SOURCES_VIEWS_DIR}/InspectionView.cpp
         ${PROJECT_HEADERS_VIEWS_DIR}/InsuranceView.h
         ${PROJECT_SOURCES_VIEWS_DIR}/InsuranceView.cpp
-        ${PROJECT_HEADERS_VIEWS_DIR}/OrderView.h
+        # ${PROJECT_HEADERS_VIEWS_DIR}/OrderView.h
         # ${PROJECT_SOURCES_VIEWS_DIR}/OrderView.cpp
         ${PROJECT_HEADERS_VIEWS_DIR}/Utils.h
         ${PROJECT_SOURCES_VIEWS_DIR}/Utils.cpp

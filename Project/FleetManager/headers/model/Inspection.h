@@ -25,8 +25,8 @@ class Inspection {
 
     int getID() const;
 
-    Inspection addInspection(InspectionView inspectionView);
-    int removeInspection(InspectionView inspectionView);
+    Inspection addInspection(InspectionView inspectionView) const;
+    static int removeInspection(InspectionView inspectionView);
     bool isDued();
     int getRemainingDays() const;
     void updateToday();

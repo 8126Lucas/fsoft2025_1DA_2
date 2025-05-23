@@ -76,16 +76,16 @@ double VehicleView::addFuel() {
 }
 
 void VehicleView::insuranceAlert(Vehicle &vehicle) {
-    cout << "!!! ATENTION !!!\n";
+    cout << "!!! ATTENTION !!!\n";
     cout << "The vehicle " << vehicle.getLicensePlate() << "does not insurance active!\n";
 }
 
 void VehicleView::inspectionAlert(Vehicle &vehicle) {
-    cout << "!!! ATENTION !!!\n";
+    cout << "!!! ATTENTION !!!\n";
     cout << "The vehicle " << vehicle.getLicensePlate() << "is pending inspection!\n";
 }
 
 void VehicleView::fuelAlert(Vehicle &vehicle) {
-    cout << "!!! ATENTION !!!\n";
+    cout << "!!! ATTENTION !!!\n";
     cout << "The vehicle " << vehicle.getLicensePlate() << "does not have enough fuel!\n";
 }

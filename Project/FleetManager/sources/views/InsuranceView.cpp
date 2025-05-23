@@ -5,8 +5,6 @@
 #include "InsuranceView.h"
 #include "Utils.h"
 
-
-
 Insurance InsuranceView::addInsurance() {
     Insurance insurance = Utils::setInsurance();
     return insurance;

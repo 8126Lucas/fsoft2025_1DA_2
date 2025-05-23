@@ -5,12 +5,12 @@
 #ifndef HEADERS_MODEL_INSURANCE_H
 #define HEADERS_MODEL_INSURANCE_H
 #include "Date.h"
-#include "InsuranceView.h"
 #include "Vehicle.h"
-#include "VehicleContainer.h"
 
 
 using namespace std;
+
+class InsuranceView;
 
 class Insurance {
   private:
@@ -29,8 +29,9 @@ class Insurance {
 
     int getID() const;
 
-    Insurance addInsurance(InsuranceView insuranceView);
-    int removeInsurance(InsuranceView insuranceView);
+    static Insurance addInsurance(InsuranceView insuranceView);
+    static int removeInsurance(InsuranceView insuranceView);
+    static Insurance updateInsurance(InsuranceView insuranceView);
     bool isExpired();
     int getRemainingDays() const;
     void updateToday();

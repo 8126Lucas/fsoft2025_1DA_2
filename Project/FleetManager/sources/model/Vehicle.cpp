@@ -25,14 +25,14 @@ Vehicle::Vehicle(const CATEGORY category, const string &brand, const string &mod
 Vehicle::~Vehicle() {}
 
 
-void Vehicle::addVehicle() {
-    Vehicle vehicle = VehicleView::getVehicle();
-    VehicleContainer::add(vehicle);
+Vehicle Vehicle::addVehicle() {
+    Vehicle vehicle = Utils::setVehicle();
+    return vehicle;
 }
 
-void Vehicle::removeVehicle() {
+string Vehicle::removeVehicle() {
     string licensePlate = VehicleView::getLicensePlate();
-    VehicleContainer::remove(licensePlate);
+    return licensePlate;
 }
 
 CATEGORY Vehicle::getCategory() const {
@@ -111,8 +111,7 @@ bool Vehicle::isFuelEnough(Trip &trip) {
 }
 
 void Vehicle::updateMileage(Trip &trip) {
-    // O Vítor precisa de fazer um getKilometers()
-    this->mileage += trip.getKilometers();
+    this->mileage += trip.getKM();
     // update container
 }
 
