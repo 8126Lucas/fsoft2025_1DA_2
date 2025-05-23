@@ -69,16 +69,6 @@ void Driver::updateTimeToRetire() {
     }
 }
 
-
-/* Por no Vacation.cpp
-bool Vacation::isOnVacation() {
-    this->updateToday();
-    if (this->endDate < this->today) {return true;}
-    if (this->endDate == this->today) {return true;}
-    return false;
-}
-*/
-
 void Driver::vacationAlert() {
     if (this->vacation.isOnVacation()) {
         DriverView::vacationAlert(*this);
