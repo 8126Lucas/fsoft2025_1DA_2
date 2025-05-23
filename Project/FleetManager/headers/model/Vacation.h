@@ -7,7 +7,8 @@
 
 #include "Date.h"
 #include "VacationView.h"
-#include "Driver.h"
+
+class Driver;
 
 class Vacation {
 private:
@@ -19,12 +20,18 @@ private:
     bool status;
 
 public:
+    Vacation();
+    Vacation(int id, Driver *driver, const Date startDate, const Date endDate, bool status);
     Vacation(Driver *driver, const Date& start, const Date& end, const Date& today);
 
     Vacation addVacation(VacationView vacationView);
     int removeVacation(VacationView vacationView);
 
-    int getId();
+    int getId() const;
+    Driver getDriver() const;
+    Date getStartDate() const;
+    Date getEndDate() const;
+    bool getStatus() const;
     bool isOnVacation();
     int getRemainingDays() const;
     void updateToday();

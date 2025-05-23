@@ -31,11 +31,10 @@ public:
 
     ~Expense();
 
-    Expense recordExpense();
-    void addExpense();
+    Expense recordExpense(int id, Trip trip, Date date, double amount, TYPE type);
     void removeExpense();
 
-    int getId();
+    int getId() const;
     Trip getTrip() const;
     Date getDate() const;
     double getAmount() const;

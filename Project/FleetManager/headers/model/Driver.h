@@ -7,9 +7,12 @@
 
 #include <string>
 #include <vector>
+
 #include "Vacation.h"
 
 using namespace std;
+
+class Vacation;
 
 enum STATUS {
     Available = 1,
@@ -44,7 +47,7 @@ public:
     int getAge() const;
     STATUS getDriverStatus() const;
     bool getAvailability() const;
-    int getVacation() const;
+    bool getVacationStatus() const;
 
     void setVacation(Vacation vacation);
     void setAvailability(bool available);

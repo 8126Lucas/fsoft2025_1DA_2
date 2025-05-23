@@ -8,7 +8,7 @@ Vacation::Vacation() : id(), driver(nullptr), status(false) {}
 
 Vacation::Vacation(int id, Driver *driver, Date startDate, Date endDate, bool status) : status(true) {
   this->id = id;
-  this->driver = *driver;
+  this->driver = driver;
   this->startDate = startDate;
   this->endDate = endDate;
 }
@@ -25,8 +25,24 @@ int Vacation::removeVacation(VacationView vacationView) {
     return id;
 }
 
-int Inspection::getID() const {
+int Vacation::getId() const {
     return id;
+}
+
+Driver Vacation::getDriver() const {
+  return driver;
+}
+
+Date Vacation::getStartDate() const {
+  return startDate;
+}
+
+Date Vacation::getEndDate() const {
+  return endDate;
+}
+
+bool Vacation::getStatus() const {
+  return status;
 }
 
 bool Vacation::isOnVacation() {

@@ -32,15 +32,15 @@ int Driver::getId() {
     return id;
 }
 
-string Driver::getLicense() {
+string Driver::getLicense() const {
     return license;
 }
 
-int Driver::getAge() {
+int Driver::getAge() const {
     return age;
 }
 
-STATUS Driver::getDriverStatus() {
+STATUS Driver::getDriverStatus() const {
     return driverStatus;
 }
 
@@ -48,7 +48,7 @@ bool Driver::getAvailability() const {
     return available;
 }
 
-int Driver::getVacation() {
+bool Driver::getVacationStatus() const {
     return vacation.getId();
 }
 

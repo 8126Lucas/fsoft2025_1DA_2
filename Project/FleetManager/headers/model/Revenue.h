@@ -24,11 +24,10 @@ public:
 
     ~Revenue();
 
-    Revenue recordRevenue();
-    void addRevenue();
+    Revenue recordRevenue(int id, Order order, Date date, double amount);
     void removeRevenue();
 
-    int getId();
+    int getId() const;
     Order getOrder() const;
     Date getDate() const;
     double getAmount() const;
