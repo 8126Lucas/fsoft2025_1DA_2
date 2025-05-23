@@ -5,7 +5,8 @@
 #include "Order.h"
 #include "OrderContainer.h"
 #include "Utils.h"
-#include "Orderview.h"
+#include "OrderView.h"
+#include "Date.h"
 
 Order::Order() : orderId(),clientId(),status(IN_PROGRESS) {}
 
@@ -34,15 +35,59 @@ void Order::removeOrder(int id) {
 }
 
 void Order::completeOrder(int id) {
-    OrderContainer::complete(orderId);
+    OrderContainer::complete(id);
 }
 void Order::listOrders() {
     OrderContainer::list();
 }
-void Order::listOrdersByCompletion() {
+/*void Order::listOrdersByCompletion() {
   list<Order> listUncompleted;
   list<Order> listCompleted;
   auto result = OrderContainer::listCompletion();
   listUncompleted = result.first;
   listCompleted = result.second;
+}*/
+
+void Order::listCompletedOrders() {
+    OrderContainer::listCompleted();
+}
+
+void Order::listUncompletedOrders() {
+    OrderContainer::listUncompleted();
+}
+
+int Order::getOrderId() {
+    return orderId;
+}
+
+int Order::getClientId() {
+    return clientId;
+}
+
+Date Order::getDate() {
+    return date;
+}
+
+string Order::getSourceAddress() {
+    return sourceAddress;
+}
+
+string Order::getDestinationAddress() {
+    return destinationAddress;
+}
+
+double Order::getCargoSpace() {
+    return cargoSpace;
+}
+
+double Order::getCargoWeight() {
+    return cargoWeight;
+}
+
+double Order::getShippingValue() {
+    return ShippingValue;
+}
+
+ORDERSTATUS Order::getStatus() {
+    return status;
 }

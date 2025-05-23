@@ -59,7 +59,24 @@ list<Order> OrderContainer::list() {
     return newList;
 }
 
-std::pair<std::list<Order>, std::list<Order>> OrderContainer::listCompletion() {
+std::list<Order> OrderContainer::listUncompleted(){
+    ::list<Order> listUncompleted;
+    ::list<Order>::iterator it = this->orders.begin();
+    for (; it != this->orders.end(); ++it) {
+        if (it->getStatus() == IN_PROGRESS) listUncompleted.push_back(*it);
+    }
+    return listUncompleted;
+}
+
+std::list<Order> OrderContainer::listCompleted(){
+    ::list<Order> listCompleted;
+    ::list<Order>::iterator it = this->orders.begin();
+    for (; it != this->orders.end(); ++it) {
+        if (it->getStatus() == COMPLETED) listCompleted.push_back(*it);
+    }
+    return listCompleted;
+}
+/*std::pair<std::list<Order>, std::list<Order>> OrderContainer::listCompletion() {
     ::list<Order> listUncompleted;
     ::list<Order> listCompleted;
     ::list<Order>::iterator it = this->orders.begin();
@@ -69,7 +86,7 @@ std::pair<std::list<Order>, std::list<Order>> OrderContainer::listCompletion() {
     }
     return std::make_pair(listUncompleted, listCompleted);
 }
-
+*/
 std::list<Order> OrderContainer::listClient(int clientId){
     ::list<Order> listClient;
     ::list<Order>::iterator it = this->orders.begin();

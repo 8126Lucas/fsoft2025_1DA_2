@@ -18,8 +18,10 @@ class OrderContainer {
     void add(Order &order);//static
     void remove(int orderId);
     list<Order> list();
-    std::pair<std::list<Order>, std::list<Order>> listCompletion();
-    std::list<Order> listClient(int clientId );
+    // std::pair<std::list<Order>, std::list<Order>> listCompletion();
+    std::list<Order> listCompleted();
+    std::list<Order> listUncompleted();
+    std::list<Order> listClient(int clientID);
     void complete(int orderId);
   //void set(void param)
 

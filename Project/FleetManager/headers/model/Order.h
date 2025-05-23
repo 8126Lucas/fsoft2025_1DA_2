@@ -37,9 +37,11 @@ class Order {
     void completeOrder(int orderId);
 
     void listOrders();
-    void listOrdersByCompletion();
+    //void listOrdersByCompletion();
+    void listCompletedOrders();
+    void listUncompletedOrders();
     void listOrdersByClient(int clientId);
-
+    Date getDate();
     int getOrderId();
     int getClientId();
     string getSourceAddress();
