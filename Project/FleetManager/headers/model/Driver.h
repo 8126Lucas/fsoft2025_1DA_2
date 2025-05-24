@@ -14,28 +14,20 @@ using namespace std;
 
 class Vacation;
 
-enum STATUS {
-    Available = 1,
-    OnVacation = 2,
-    DayOff = 3,
-};
-
 class Driver {
 private:
     int id;
-    string license;
+    char license;
     int age;
     int timeToRetire;
     bool available;
-    bool vacationStatus;
-    STATUS driverStatus;
     Vacation vacation;
 
 public:
     Driver();
 
-    Driver(int id, string &license, int age);
-    Driver(int id, string license, int age, bool available = true, bool vacationStatus = false);
+    Driver(int id, char &license, int age);
+    Driver(int id, char license, int age, bool available = true, bool vacationStatus = false);
 
     ~Driver();
 
@@ -43,19 +35,20 @@ public:
     void removeDriver();
 
     int getId();
-    string getLicense() const;
+    char getLicense() const;
     int getAge() const;
-    STATUS getDriverStatus() const;
+    int getTimeToRetire() const;
+
     bool getAvailability() const;
-    bool getVacationStatus() const;
+    bool getVacationId() const;
 
     void setVacation(Vacation vacation);
     void setAvailability(bool available);
 
-    void updateTimeToRetire();
     void vacationAlert();
     void retirementAlert();
     bool isAvailable() const;
+    void printDriverStatus(const Driver *driver);
 
     bool operator == (int id) const;
 };

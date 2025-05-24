@@ -9,13 +9,14 @@
 
 class DriverView {
 public:
-    static Driver getDriver();
+    static Driver addDriver();
+    static Driver getDriver(DriverContainer *container);
     static int getId();
     static void printDriver(Driver *driver);
     static void printDrivers(list<Driver> &drivers);
 
     static void vacationAlert(Driver &driver);
-    static void retireAlert(Driver &driver);
+    static void retirementAlert(Driver &driver);
 };
 
 #endif //HEADERS_VIEWS_DRIVERVIEW_H
