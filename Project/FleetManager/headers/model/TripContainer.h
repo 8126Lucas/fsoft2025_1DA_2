@@ -8,6 +8,7 @@
 #include "Driver.h"
 #include <list>
 
+
 class TripContainer {
 private:
     list<Trip> trips;
@@ -17,9 +18,10 @@ public:
     void start(Trip &trip);
     void complete(Trip &trip);
     void failed(Trip &trip);
+    void updateState(int id, STATE state);
     list<Trip> list();
-    list<Trip> list(Driver &driver);
-    list<Trip> list(STATE state);
+    std::list<Trip> list(Driver &driver);
+    std::list<Trip> list(STATE state);
 
 };
 

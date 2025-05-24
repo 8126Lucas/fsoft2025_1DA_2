@@ -2,6 +2,8 @@
 #define HEADERS_MODEL_TRIP_H
 
 #include "Vehicle.h"
+#include "Driver.h"
+#include "Order.h"
 
 
 enum STATE{
@@ -15,7 +17,8 @@ class Trip
 {
 private:
   STATE state = SUPRESSED;
-  int order;
+  Order order;
+  Driver driver;
   double kilometers;
   double fuel;
   double fuelCost;
@@ -23,6 +26,7 @@ private:
   double cost;
   double tolls;
   int id;
+
 
 public:
   Trip();
@@ -32,24 +36,33 @@ public:
 
   ~Trip();
 
+
   Trip trip(Trip &trip);
-  void startTrip(Trip &trip);
 
   double calculateCost();
   double getFuelCost();
   double getTolls();
   double getFines();
   double getKM();
+  double getFuel();
 
+  void createTrip(Trip &trip);
+  void startTrip(Trip &trip);
   void completeTrip(Trip &trip);
-
+  void failedTrip(Trip &trip);
   void listTripsByDriver();
   void listUncompletedTrips();
   void listCompletedTrips();
+  void setState(STATE newState);
+  void updateState(int id, STATE newState);
 
   int getID();
-  void setState(STATE state);
+
+
   STATE getState();
+
+  Driver getDriver();
+
 
   bool operator==(const int int) const;
 };

@@ -32,16 +32,24 @@ STATE Trip::getState(){
   return this->state;
 }
 
-void Trip::setState(STATE s){
-  this->state = s; //Valor do estado que for inserido
+void Trip::setState(STATE newState){
+  this->state = newState; //Valor do estado que for inserido
 }
 
+void Trip::createTrip(Trip &Trip)
+{
+
+}
 void Trip::startTrip(Trip &trip) {
   trip.state = INCOMING;
 }
 
 void Trip::completeTrip(Trip &trip){
   trip.state = DELIVERED;
+}
+
+void Trip::failedTrip(Trip &trip){
+  trip.state = FAILED;
 }
 
 double Trip::getKM() {
@@ -60,8 +68,15 @@ double Trip::getFuelCost(){
   return fuelCost;
 }
 
+double Trip::getFuel()
+{
+  return fuel;
+}
+
 double Trip::calculateCost(){
   return cost;
 }
+
+
 
 

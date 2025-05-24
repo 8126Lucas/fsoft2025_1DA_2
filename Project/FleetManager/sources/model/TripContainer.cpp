@@ -49,7 +49,7 @@ list<Trip> TripContainer::list(){
 
 list<Trip> TripContainer::list(Driver &driver){
   std::list<Trip> driverList;
-  std::list<Trip>::iterator it = search(driver.getId());
+  std::list<Trip>::iterator it = this->trips.begin();
   for(; it != this->trips.end(); ++it) {
     if(*it == driver.getId()) {
       driverList.push_back(*it);
@@ -57,3 +57,28 @@ list<Trip> TripContainer::list(Driver &driver){
   }
   return driverList;
 }
+
+list<Trip> TripContainer::list(STATE state){
+  std::list<Trip> Trips;
+  std::list<Trip>::iterator it = search(state);
+  for(; it != this->trips.end(); ++it){
+    if (it->getState() == state){
+      Trips.push_back(*it);}
+  }
+}
+
+/*void TripContainer::updateState(int id, STATE newState)  --
+{
+  list<Trip>::iterator it = search(id);
+  if (it != this->trips.end())
+  {
+    it->setState(newState);
+  }else{
+    string msg = "Trip does not exists.";
+  }
+}*/
+
+
+
+
+
