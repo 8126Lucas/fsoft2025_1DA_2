@@ -46,8 +46,12 @@ void VehicleStorageLocationView::printListVSL(list<VehicleStorageLocation> &list
     }
 }
 
-tuple<int, Vehicle *> VehicleStorageLocationView::addVehicle(VehicleContainer *container) {
+void VehicleStorageLocationView::printListStoredVehicles(VehicleStorageLocation vsl) {
+    VehicleView::printListVehicles(vsl.getStoredVehicles());
+}
+
+pair<int, Vehicle *> VehicleStorageLocationView::addVehicle(VehicleContainer *container) {
     Vehicle *vehicle = VehicleView::getVehicle(container);
     int vslID = getID();
-    return tuple<int, Vehicle *>(vslID, vehicle);
+    return {vslID, vehicle};
 }

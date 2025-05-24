@@ -5,7 +5,7 @@
 #ifndef HEADERS_VIEW_VEHICLESTORAGELOCATIONVIEW_H
 #define HEADERS_VIEW_VEHICLESTORAGELOCATIONVIEW_H
 #include <list>
-#include <tuple>
+#include <utility>
 #include "VehicleContainer.h"
 #include "VehicleStorageLocation.h"
 
@@ -15,6 +15,7 @@ public:
     static int getID();
     static void printVSL(VehicleStorageLocation *vsl);
     static void printListVSL(list<VehicleStorageLocation> &listVSL);
-    tuple<int, Vehicle *> addVehicle(VehicleContainer *container);
+    static void printListStoredVehicles(VehicleStorageLocation vsl);
+    static pair<int, Vehicle *> addVehicle(VehicleContainer *container);
 };
 #endif //HEADERS_VIEW_VEHICLESTORAGELOCATIONVIEW_H

@@ -7,8 +7,8 @@
 #include <string>
 #include <list>
 #include <unordered_map>
-
 #include "Vehicle.h"
+#include "VehicleContainer.h"
 
 using namespace std;
 
@@ -19,7 +19,7 @@ class VehicleStorageLocation {
     string address;
     int capacity;
     int currentVehicleCount;
-    unordered_map<int, Vehicle *> vehicles;
+    unordered_map<int, list<Vehicle *>> vehicles;
 
 
   public:
@@ -29,13 +29,15 @@ class VehicleStorageLocation {
 
     ~VehicleStorageLocation();
 
-    VehicleStorageLocation addStorageLocation();
-    int removeStorageLocation();
-    void listStorageLocations(list<VehicleStorageLocation> &listVSL);
-    void listStoredVehicles();
-    void addVehicleToStorage(Vehicle *vehicle);
-    void removeVehicleFromStorage();
-    int getAvailableSpace();
+    static VehicleStorageLocation addStorageLocation();
+
+    static int removeStorageLocation();
+
+    static void listStorageLocations(list<VehicleStorageLocation> &listVSL);
+    void listStoredVehicles() const;
+    void addVehicleToStorage(VehicleContainer *container);
+    void removeVehicleFromStorage(VehicleContainer *container);
+    int getAvailableSpace() const;
 
     void incrementVehicleCount();
 
@@ -44,6 +46,7 @@ class VehicleStorageLocation {
     string getAddress() const;
     int getCapacity() const;
     int getVehicleCount() const;
+    list<Vehicle *> getStoredVehicles() const;
 
     bool operator== (int id) const;
 };

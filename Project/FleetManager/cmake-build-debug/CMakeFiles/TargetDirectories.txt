@@ -1,3 +1,3 @@
-C:/Projects/fsoft2025_1DA_2/Project/FleetManager/cmake-build-debug/CMakeFiles/FleetManager.dir
-C:/Projects/fsoft2025_1DA_2/Project/FleetManager/cmake-build-debug/CMakeFiles/edit_cache.dir
-C:/Projects/fsoft2025_1DA_2/Project/FleetManager/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+C:/Users/lucas/Desktop/fsoft2025_1DA_2/Project/FleetManager/cmake-build-debug/CMakeFiles/FleetManager.dir
+C:/Users/lucas/Desktop/fsoft2025_1DA_2/Project/FleetManager/cmake-build-debug/CMakeFiles/edit_cache.dir
+C:/Users/lucas/Desktop/fsoft2025_1DA_2/Project/FleetManager/cmake-build-debug/CMakeFiles/rebuild_cache.dir

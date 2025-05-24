@@ -4,6 +4,9 @@
 
 #include "VehicleStorageLocation.h"
 
+#include <algorithm>
+
+#include "NonExistingDataException.h"
 #include "Vehicle.h"
 #include "VehicleStorageLocationView.h"
 
@@ -21,7 +24,7 @@ VehicleStorageLocation::VehicleStorageLocation(int id, string name, string addre
 VehicleStorageLocation::~VehicleStorageLocation() {}
 
 VehicleStorageLocation VehicleStorageLocation::addStorageLocation() {
-    return VehicleStorageLocationView::getVSL();;
+    return VehicleStorageLocationView::getVSL();
 }
 
 int VehicleStorageLocation::removeStorageLocation() {
@@ -32,9 +35,52 @@ void VehicleStorageLocation::listStorageLocations(list<VehicleStorageLocation> &
     VehicleStorageLocationView::printListVSL(listVSL);
 }
 
+void VehicleStorageLocation::listStoredVehicles() const {
+    VehicleStorageLocationView::printListStoredVehicles(*this);
+}
 
+void VehicleStorageLocation::addVehicleToStorage(VehicleContainer *container) {
+    bool flag_error = false;
+    do {
+        pair<int, Vehicle *> pair = VehicleStorageLocationView::addVehicle(container);
+        try {
+            flag_error = false;
+            this->vehicles[pair.first].push_back(pair.second);
+        } catch (NonExistingDataException &error) {
+            flag_error = true;
+        }
+    } while (flag_error);
+}
 
-int VehicleStorageLocation::getAvailableSpace() {
+void VehicleStorageLocation::removeVehicleFromStorage(VehicleContainer *container) {
+    bool flag_error = false;
+    do {
+        pair<int, Vehicle *> pair = VehicleStorageLocationView::addVehicle(container);
+        try {
+            flag_error = false;
+            unordered_map<int, list<Vehicle *>>::iterator mapIT = this->vehicles.find(pair.first);
+            if (mapIT != this->vehicles.end()) {
+                list<Vehicle *>::iterator vehicleIT = find(mapIT->second.begin(), mapIT->second.end(), pair.second);
+                if (vehicleIT != mapIT->second.end()) {
+                    mapIT->second.erase(vehicleIT);
+                }
+                else {
+                    string msg = "Vehicle " + pair.second->getLicensePlate() + " is not at Vehicle Storage Location "
+                                + to_string(pair.first) +"!\n";
+                    throw NonExistingDataException(msg);
+                }
+            }
+            else {
+                string msg = "Vehicle Storage Location " + to_string(pair.first) + " does not exist!\n";
+                throw NonExistingDataException(msg);
+            }
+        } catch (NonExistingDataException &error) {
+            flag_error = true;
+        }
+    } while (flag_error);
+}
+
+int VehicleStorageLocation::getAvailableSpace() const {
     return this->capacity - this->currentVehicleCount;
 }
 
@@ -60,4 +106,8 @@ int VehicleStorageLocation::getCapacity() const {
 
 int VehicleStorageLocation::getVehicleCount() const {
     return currentVehicleCount;
+}
+
+list<Vehicle *> VehicleStorageLocation::getStoredVehicles() const {
+    return vehicles.at(id);
 }
