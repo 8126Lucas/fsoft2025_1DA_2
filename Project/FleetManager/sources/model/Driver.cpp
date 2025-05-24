@@ -10,7 +10,7 @@
 
 Driver::Driver() : id(), available(true) {}
 
-Driver::Driver(int id, string &license, int age) : available(true), vacationStatus(false){
+Driver::Driver(int id, char &license, int age) : available(true) {
     this->id = id;
     this->license = license;
     this->age= age;
@@ -19,7 +19,7 @@ Driver::Driver(int id, string &license, int age) : available(true), vacationStat
 Driver::~Driver() {}
 
 void Driver::addDriver() {
-    Driver driver = DriverView::getDriver();
+    Driver driver = DriverView::getDriver(DriverContainer *container);
     DriverContainer::add(driver);
 }
 
@@ -32,7 +32,7 @@ int Driver::getId() {
     return id;
 }
 
-string Driver::getLicense() const {
+char Driver::getLicense() const {
     return license;
 }
 
@@ -40,15 +40,11 @@ int Driver::getAge() const {
     return age;
 }
 
-STATUS Driver::getDriverStatus() const {
-    return driverStatus;
-}
-
 bool Driver::getAvailability() const {
     return available;
 }
 
-bool Driver::getVacationStatus() const {
+bool Driver::getVacationId() const {
     return vacation.getId();
 }
 
@@ -60,13 +56,12 @@ void Driver::setAvailability(bool available) {
     this->available = available;
 }
 
-void Driver::updateTimeToRetire() {
+int Driver::getTimeToRetire() const {
     const int retirementAge = 65;
     if (age >= retirementAge) {
-        this->timeToRetire = 0;
-    } else {
-        this->timeToRetire = retirementAge - age;
+        return 0;
     }
+    return retirementAge - age;
 }
 
 void Driver::vacationAlert() {
@@ -74,8 +69,11 @@ void Driver::vacationAlert() {
         DriverView::vacationAlert(*this);
     }
 }
-void Driver::retirementAlert() {
 
+void Driver::retirementAlert() {
+    if (this->age >= 65) {
+        DriverView::retirementAlert(*this);
+    }
 }
 
 bool Vehicle::isAvailable() const {
