@@ -11,9 +11,11 @@
 #include "Trip.h"
 
 enum TYPE{
-    Fuel = 1,
-    Inspection = 2,
-    Insurance = 3,
+    FUEL = 1,
+    INSPECTION = 2,
+    INSURANCCE = 3,
+    TOLL = 4,
+    FINE = 5,
 };
 
 class Expense {

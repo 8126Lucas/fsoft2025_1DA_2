@@ -10,7 +10,7 @@
 class DriverView {
 public:
     static Driver addDriver();
-    static Driver getDriver(DriverContainer *container);
+    static Driver *getDriver(DriverContainer *container);
     static int getId();
     static void printDriver(Driver *driver);
     static void printDrivers(list<Driver> &drivers);

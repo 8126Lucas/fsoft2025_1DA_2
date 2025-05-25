@@ -10,12 +10,14 @@
 
 class FinancialView {
 public:
-    static Expense getExpense();
-    static Revenue getRevenue();
+    static Expense recordExpense();
+    static Expense getExpense(FinancialContainer *container);
+    static Revenue recordRevenue();
+    static Revenue getRevenue(FinancialContainer *container);
     static int getExpenseId();
     static int getRevenueId();
-    static void printExpense(Expense *expense);
-    static void printRevenue(Revenue *revenue);
+    static void printExpense(const Expense *expense);
+    static void printRevenue(const Revenue *revenue);
     static void printExpenses(list<Expense> &expenses);
     static void printRevenues(list<Revenue> &revenues);
 };
