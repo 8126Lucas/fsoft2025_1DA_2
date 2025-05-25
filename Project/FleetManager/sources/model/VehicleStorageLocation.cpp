@@ -108,6 +108,10 @@ int VehicleStorageLocation::getVehicleCount() const {
     return currentVehicleCount;
 }
 
-list<Vehicle *> VehicleStorageLocation::getStoredVehicles() const {
+unordered_map<int, list<Vehicle *>> VehicleStorageLocation::getVehicles() const {
+    return vehicles;
+}
+
+list<Vehicle *> VehicleStorageLocation::getStoredVehicles(int id) const {
     return vehicles.at(id);
 }

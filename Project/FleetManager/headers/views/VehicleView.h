@@ -11,6 +11,9 @@
 class VehicleView {
 public:
     static Vehicle addVehicle();
+
+    string removeVehicle();
+
     static Vehicle *getVehicle(VehicleContainer *container);
     static string getLicensePlate();
     static void printVehicle(const Vehicle *vehicle);

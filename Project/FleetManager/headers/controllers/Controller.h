@@ -12,6 +12,7 @@
 #include "OrderView.h"
 #include "TripView.h"
 #include "VehicleView.h"
+#include "VehicleStorageLocationView.h"
 #include "View.h"
 
 class Controller {
@@ -25,6 +26,7 @@ private:
     OrderView orderView;
     TripView tripView;
     VehicleView vehicleView;
+    VehicleStorageLocationView vslView;
     void runDriver();
     void runFinancial();
     void runOrder();

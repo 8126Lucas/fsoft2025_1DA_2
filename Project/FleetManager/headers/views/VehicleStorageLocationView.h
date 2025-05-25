@@ -8,14 +8,20 @@
 #include <utility>
 #include "VehicleContainer.h"
 #include "VehicleStorageLocation.h"
+#include "VSLContainer.h"
 
 class VehicleStorageLocationView {
 public:
-    static VehicleStorageLocation getVSL();
+    static VehicleStorageLocation addVSL();
+    static int removeVSL();
     static int getID();
     static void printVSL(VehicleStorageLocation *vsl);
     static void printListVSL(list<VehicleStorageLocation> &listVSL);
-    static void printListStoredVehicles(VehicleStorageLocation vsl);
-    static pair<int, Vehicle *> addVehicle(VehicleContainer *container);
+    static void printListStoredVehicles(const VehicleStorageLocation &vsl);
+    static VehicleStorageLocation *getVSL(VSLContainer *container);
+    static pair<int, Vehicle *> getVehicleVSLPair(VSLContainer *containerVSL, VehicleContainer *containerVehicle);
+
+    static void addVehicleToStorage(VSLContainer *containerVSL, VehicleContainer *containerVehicle);
+    static void removeVehicleFromStorage(VSLContainer *containerVSL, VehicleContainer *containerVehicle)
 };
 #endif //HEADERS_VIEW_VEHICLESTORAGELOCATIONVIEW_H

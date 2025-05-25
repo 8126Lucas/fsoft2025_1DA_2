@@ -54,3 +54,11 @@ void VSLContainer::update(const VehicleStorageLocation &location) {
 list<VehicleStorageLocation> VSLContainer::list() {
     return locations;
 }
+
+VehicleStorageLocation *VSLContainer::get(int id) {
+    list<VehicleStorageLocation>::iterator it = search(id);
+    if (it != this->locations.end()) {
+        return &(*it);
+    }
+    return NULL;
+}

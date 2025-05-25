@@ -20,6 +20,10 @@ int Inspection::getID() const {
     return id;
 }
 
+Vehicle Inspection::getVehicle() const {
+    return vehicle;
+}
+
 Inspection Inspection::addInspection(InspectionView inspectionView) const {
     Inspection inspection = inspectionView.addInspection();
     return inspection;

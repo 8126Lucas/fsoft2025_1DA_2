@@ -1,4 +1,4 @@
-    //
+//
 // Created by lucas on 18/05/2025.
 //
 
@@ -15,6 +15,11 @@ using namespace std;
 Vehicle VehicleView::addVehicle() {
     Vehicle vehicle = Utils::setVehicle();
     return vehicle;
+}
+
+string VehicleView::removeVehicle() {
+    string licensePlate = Utils::getString("License Plate");
+    return licensePlate;
 }
 
 Vehicle *VehicleView::getVehicle(VehicleContainer *container) {
@@ -64,6 +69,7 @@ void VehicleView::printVehicle(const Vehicle *vehicle) {
 }
 
 void VehicleView::printListVehicles(list<Vehicle> &vehicles) {
+    cout << "\n*** List of Vehicles: " << vehicles.size() << " ***\n\n";
     list<Vehicle>::iterator it = vehicles.begin();
     for (; it != vehicles.end(); ++it) {
         printVehicle(&*it);

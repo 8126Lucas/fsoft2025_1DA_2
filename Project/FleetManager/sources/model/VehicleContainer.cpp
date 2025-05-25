@@ -57,7 +57,7 @@ list<Vehicle> VehicleContainer::list(bool available) {
     list<Vehicle> newList;
     list<Vehicle>::iterator it = this->vehicles.begin();
     for (; it != this->vehicles.end(); ++it) {
-        if (it->getAvailability() == true) {
+        if (it->getAvailability() == available) {
             newList.push_back(*it);
         }
     }

@@ -21,6 +21,8 @@ public:
     void remove(int id);
     void update(const VehicleStorageLocation &location);
     list<VehicleStorageLocation> list();
+
+    VehicleStorageLocation *get(int id);
 };
 
 #endif //HEADERS_MODEL_VSLCONTAINER_H

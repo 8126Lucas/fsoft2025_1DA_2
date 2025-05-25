@@ -5,6 +5,7 @@
 #include "Insurance.h"
 
 #include "InsuranceView.h"
+#include "Vehicle.h"
 
 
 Insurance::Insurance(): id(0), vehicle(nullptr), monthlyCost(0) {}
@@ -21,6 +22,10 @@ Insurance::~Insurance() {}
 
 int Insurance::getID() const {
     return id;
+}
+
+Vehicle Insurance::getVehicle() const {
+    return *vehicle;
 }
 
 Insurance Insurance::addInsurance(InsuranceView insuranceView) {

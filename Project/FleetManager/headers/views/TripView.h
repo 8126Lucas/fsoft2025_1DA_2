@@ -8,13 +8,13 @@
 #include "Trip.h"
 
 
-Class TripView {
+class TripView {
 public:
     static Trip addTrip();
     static Trip removeTrip();
     static Trip startTrip();
     static Trip endTrip();
-    static void Trip updateTrip();
+    static void updateTrip();
     static void listTripsByDriver(Trip *trip);
     static int getId();
 

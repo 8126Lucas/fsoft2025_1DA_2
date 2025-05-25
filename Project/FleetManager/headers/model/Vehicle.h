@@ -55,9 +55,16 @@ class Vehicle {
     double getMileage() const;
     double getFuel() const;
     bool getAvailability() const;
-    int getInsurance() const;
-    int getInspection() const;
-    int getVSL() const;
+
+    int getInsuranceID() const;
+
+    int getInspectionID() const;
+
+    int getVSLID() const;
+
+    Insurance getInsurance() const;
+    Inspection getInspection() const;
+    VehicleStorageLocation getVSL() const;
 
     void setInsurance(Insurance insurance);
     void setInspection(Inspection inspection);

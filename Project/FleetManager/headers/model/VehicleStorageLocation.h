@@ -46,7 +46,8 @@ class VehicleStorageLocation {
     string getAddress() const;
     int getCapacity() const;
     int getVehicleCount() const;
-    list<Vehicle *> getStoredVehicles() const;
+    unordered_map<int, list<Vehicle *>> getVehicles() const;
+    list<Vehicle *> getStoredVehicles(int id) const;
 
     bool operator== (int id) const;
 };

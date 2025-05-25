@@ -24,6 +24,7 @@ class Inspection {
     ~Inspection();
 
     int getID() const;
+    Vehicle getVehicle() const;
 
     Inspection addInspection(InspectionView inspectionView) const;
     static int removeInspection(InspectionView inspectionView);

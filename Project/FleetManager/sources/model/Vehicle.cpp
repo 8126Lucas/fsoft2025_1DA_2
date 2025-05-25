@@ -66,32 +66,41 @@ double Vehicle::getFuel() const {
 bool Vehicle::getAvailability() const {
     return available;
 }
+Insurance Vehicle::getInsurance() const {
+    return insurance;
+}
 
-int Vehicle::getInsurance() const {
+Inspection Vehicle::getInspection() const {
+    return inspection;
+}
+
+VehicleStorageLocation Vehicle::getVSL() const {
+    return vsl;
+}
+
+int Vehicle::getInsuranceID() const {
     return insurance.getID();
 }
 
-int Vehicle::getInspection() const {
+int Vehicle::getInspectionID() const {
     return inspection.getID();
 }
 
-int Vehicle::getVSL() const {
+int Vehicle::getVSLID() const {
     return vsl.getID();
 }
 
 void Vehicle::setInsurance(const Insurance insurance) {
     this->insurance = insurance;
-    // update container
 }
 
 void Vehicle::setInspection(const Inspection inspection) {
     this->inspection = inspection;
-    // update container
+
 }
 
 void Vehicle::setVSL(const VehicleStorageLocation &vsl) {
     this->vsl = vsl;
-    // update container
 }
 
 void Vehicle::setAvailability(bool available) {

@@ -35,22 +35,21 @@ int View::menuVehicle() {
     cout << "2. Remove Vehicle\n";
     cout << "3. List Vehicles\n";
     cout << "4. List Available Vehicles\n";
+    cout << "5. List Unavailable Vehicles\n";
     cout << "-------------------------------\n";
-    cout << "5. Add Insurance\n";
-    cout << "6. Remove Insurance\n";
-    cout << "7. Add Inspection\n";
-    cout << "8. Remove Inspection\n";
+    cout << "6. Add Insurance\n";
+    cout << "7. Add Inspection\n";;
     cout << "-------------------------------\n";
-    cout << "9. Add Storage Location\n";
-    cout << "10. Remove Storage Location\n";
-    cout << "11. List Storage Locations\n";
-    cout << "12. List Stored Vehicles\n";
+    cout << "8. Add Storage Location\n";
+    cout << "9. Remove Storage Location\n";
+    cout << "10. List Storage Locations\n";
+    cout << "11. List Stored Vehicles\n";
     cout << "-------------------------------\n";
-    cout << "13. Add Vehicle To Storage\n";
-    cout << "14. Remove Vehicle From Storage\n\n";
+    cout << "12. Add Vehicle To Storage\n";
+    cout << "13. Remove Vehicle From Storage\n\n";
     cout << "0. Go Back\n\n";
     op = Utils::getInt("Your Option");
-  } while(op < 0 || op > 14);
+  } while(op < 0 || op > 13);
   return op;
 }
 
