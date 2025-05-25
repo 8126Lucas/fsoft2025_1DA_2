@@ -31,8 +31,9 @@ private:
 public:
   Trip();
 
-  Trip(int order, double kilometers, double fuel, double fuelCost,double fines, double cost,
+  Trip(Order order, double kilometers, double fuel, double fuelCost,double fines, double cost,
        double tolls);
+  Trip(int id, Date date,Order order, Driver driver, Vechicle vehicle);
 
   ~Trip();
 

@@ -11,7 +11,7 @@ using namespace std;
 Trip::Trip() :  id(), kilometers(0), fuel(0) {
 }
 
-Trip::Trip(int order, double kilometers, double fuel, double fuelCost,double fines, double cost,
+Trip::Trip(Order order, double kilometers, double fuel, double fuelCost,double fines, double cost,
        double tolls){
 
   this->order = order;

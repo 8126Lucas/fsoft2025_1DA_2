@@ -180,3 +180,26 @@ Inspection Utils::setInspection() {
 
   return inspection;
 }
+
+Trip *Utils::getOrder(int order &label){ // verificar depois
+  int order = getInt(label);
+  Trip *trip = TripContainer::get(order);
+  return order;
+}
+
+Trip utils::setTrip() {
+  Trip trip = Trip();
+  bool flag_error = false;
+    do{
+      try{
+        flag_error = false;
+        int id = Utils::getInt("Trip ID");
+        Date date = utils::getDate("Date");
+        int order = Utils::getOrder("Order ID");)
+        string driver = Utils::getDriver("Driver");
+        string vehicle = Utils::getVehicle("Vehicle's License Plate");
+      }
+    }
+
+}
+

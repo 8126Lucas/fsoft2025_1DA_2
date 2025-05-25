@@ -59,11 +59,11 @@ list<Trip> TripContainer::list(Driver &driver){
 }
 
 list<Trip> TripContainer::list(STATE state){
-  std::list<Trip> Trips;
-  std::list<Trip>::iterator it = search(state);
+  std::list<Trip> trips;
+  std::list<Trip>::iterator it = trips.begin();
   for(; it != this->trips.end(); ++it){
     if (it->getState() == state){
-      Trips.push_back(*it);}
+      trips.push_back(*it);}
   }
 }
 
