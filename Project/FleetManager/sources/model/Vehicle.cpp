@@ -3,7 +3,11 @@
 //
 
 #include "Vehicle.h"
+
+#include "InvalidDataException.h"
+#include "Truck.h"
 #include "Utils.h"
+#include "Van.h"
 #include "VehicleContainer.h"
 #include "VehicleView.h"
 
@@ -25,10 +29,6 @@ Vehicle::Vehicle(const CATEGORY category, const string &brand, const string &mod
 Vehicle::~Vehicle() {}
 
 
-Vehicle Vehicle::addVehicle() {
-    Vehicle vehicle = Utils::setVehicle();
-    return vehicle;
-}
 
 string Vehicle::removeVehicle() {
     string licensePlate = VehicleView::getLicensePlate();
@@ -88,6 +88,34 @@ int Vehicle::getInspectionID() const {
 
 int Vehicle::getVSLID() const {
     return vsl.getID();
+}
+
+void Vehicle::setCategory(const CATEGORY category) {
+    this->category = category;
+}
+
+void Vehicle::setBrand(const string &brand) {
+    this->brand = brand;
+}
+
+void Vehicle::setModel(const string &model) {
+    this->model = model;
+}
+
+void Vehicle::setYear(const int year) {
+    this->year = year;
+}
+
+void Vehicle::setLicensePlate(const string &licensePlate) {
+    this->licensePlate = licensePlate;
+}
+
+void Vehicle::setMileage(const double mileage) {
+    this->mileage = mileage;
+}
+
+void Vehicle::setFuel(const double fuel) {
+    this->fuel = fuel;
 }
 
 void Vehicle::setInsurance(const Insurance insurance) {

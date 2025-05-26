@@ -3,3 +3,11 @@
 //
 
 #include "Truck.h"
+
+bool Truck::canCarryLoad() {
+
+}
+
+void Truck::setWeightCapacity(double weightCapacity) {
+    this->weightCapacity = weightCapacity;
+}

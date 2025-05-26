@@ -14,6 +14,8 @@ class Van : public Vehicle {
     double spaceCapacity;
 
   public:
+    Van();
+
     Van(string brand, string model, int year, string licensePlate,
          double mileage, double fuel, double spaceCapacity);
 
@@ -24,5 +26,7 @@ class Van : public Vehicle {
     ~Van();
 
     bool canCarryLoad();
+
+    void setSpaceCapacity(double spaceCapacity);
 };
 #endif //HEADERS_MODEL_VAN_H

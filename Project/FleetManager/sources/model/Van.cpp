@@ -3,3 +3,8 @@
 //
 
 #include "Van.h"
+
+void Van::setSpaceCapacity(double spaceCapacity) {
+    this->spaceCapacity = spaceCapacity;
+}
+

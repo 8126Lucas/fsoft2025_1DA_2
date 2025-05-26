@@ -14,15 +14,19 @@ class Truck : public Vehicle {
     double weightCapacity;
 
   public:
-    Truck(string brand, string model, int year, string licensePlate,
+    Truck();
+
+    Truck(CATEGORY category, string brand, string model, int year, string licensePlate,
          double mileage, double fuel, double weightCapacity);
 
-    Truck(string brand, string model, int year, string licensePlate,
+    Truck(CATEGORY category, string brand, string model, int year, string licensePlate,
           double mileage, double fuel, double weightCapacity, Insurance insurance,
           Inspection inspection, VehicleStorageLocation vsl);
 
     ~Truck();
 
-    bool canCarryLoad();
+    bool canCarryLoad(Trip &trip);
+
+    void setWeightCapacity(double weightCapacity);
 };
 #endif //HEADERS_MODEL_TRUCK_H

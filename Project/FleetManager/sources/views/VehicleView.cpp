@@ -6,16 +6,74 @@
 #include "VehicleView.h"
 #include "InvalidDataException.h"
 #include "NonExistingDataException.h"
+#include "Truck.h"
 #include "Utils.h"
+#include "Van.h"
 #include "Vehicle.h"
 #include "VehicleContainer.h"
 
 using namespace std;
 
-Vehicle VehicleView::addVehicle() {
-    Vehicle vehicle = Utils::setVehicle();
-    return vehicle;
+Truck VehicleView::addTruck() {
+    Truck truck = Truck();
+    bool flag_error = false;
+    do {
+        try {
+            flag_error = false;
+            string brand = Utils::getString("Brand");
+            string model = Utils::getString("Model");
+            int year = Utils::getInt("Year");
+            string licensePlate = Utils::getString("License Plate");
+            double mileage = Utils::getDouble("Mileage");
+            double fuel = Utils::getDouble("Fuel");
+            double weightCapacity = Utils::getDouble("Weight Capacity");
+
+            truck.setCategory(TRUCK);
+            truck.setBrand(brand);
+            truck.setModel(model);
+            truck.setYear(year);
+            truck.setLicensePlate(licensePlate);
+            truck.setMileage(mileage);
+            truck.setFuel(fuel);
+            truck.setWeightCapacity(weightCapacity);
+            truck.setAvailability(true);
+        } catch (InvalidDataException &error) {
+            flag_error = true;
+        }
+    } while (flag_error);
+    return truck;
 }
+
+Van VehicleView::addVan() {
+    Van van = Van();
+    bool flag_error = false;
+    do {
+        try {
+            flag_error = false;
+            string brand = Utils::getString("Brand");
+            string model = Utils::getString("Model");
+            int year = Utils::getInt("Year");
+            string licensePlate = Utils::getString("License Plate");
+            double mileage = Utils::getDouble("Mileage");
+            double fuel = Utils::getDouble("Fuel");
+            double spaceCapacity = Utils::getDouble("Space Capacity");
+
+            van.setCategory(VAN);
+            van.setBrand(brand);
+            van.setModel(model);
+            van.setYear(year);
+            van.setLicensePlate(licensePlate);
+            van.setMileage(mileage);
+            van.setFuel(fuel);
+            van.setSpaceCapacity(spaceCapacity);
+            van.setAvailability(true);
+        } catch (InvalidDataException &error) {
+            flag_error = true;
+        }
+    } while (flag_error);
+    return van;
+}
+
 
 string VehicleView::removeVehicle() {
     string licensePlate = Utils::getString("License Plate");

@@ -5,12 +5,16 @@
 #ifndef HEADERS_VIEWS_VEHICLEVIEW_H
 #define HEADERS_VIEWS_VEHICLEVIEW_H
 #include <list>
+
+#include "Truck.h"
+#include "Van.h"
 #include "Vehicle.h"
 #include "VehicleContainer.h"
 
 class VehicleView {
 public:
-    static Vehicle addVehicle();
+    Truck addTruck();
+    Van addVan();
 
     string removeVehicle();
 
