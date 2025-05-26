@@ -11,6 +11,7 @@
 #include <type_traits>
 
 #include "InvalidDataException.h"
+#include "TripContainer.h"
 #include "Truck.h"
 #include "Van.h"
 #include "Vehicle.h"
@@ -96,9 +97,9 @@ Date Utils::getDate(const string &label) {
   return date;
 }
 
-Vehicle *Utils::getVehicle(const string &label) {
+Vehicle *Utils::getVehicle(VehicleContainer &container, const string &label) {
   string licensePlate = getString(label);
-  Vehicle *vehicle = VehicleContainer::get(licensePlate);
+  Vehicle *vehicle = container.get(licensePlate);
   return vehicle;
 }
 

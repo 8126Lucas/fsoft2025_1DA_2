@@ -5,7 +5,9 @@
 #ifndef HEADERS_MODEL_DATE_H
 #define HEADERS_MODEL_DATE_H
 #include <ctime>
+#include <iostream>
 
+using namespace std;
 
 class Date {
 private:
@@ -26,10 +28,15 @@ public:
       static Date getToday();
       tm mk_tm(int day, int month, int year) const;
 
+      int getDay() const;
+      int getMonth() const;
+      int getYear() const;
+
       bool operator==(const Date &date) const;
       bool operator>(const Date &date) const;
       bool operator<(const Date &date) const;
       int operator-(const Date & date) const;
+      ostream &operator<<(ostream &stream, const Date &date);
 
 
 };

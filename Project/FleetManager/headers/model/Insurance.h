@@ -28,11 +28,16 @@ class Insurance {
     ~Insurance();
 
     int getID() const;
-
     Vehicle getVehicle() const;
+    Date getEndDate() const;
+    double getMonthlyCost() const;
 
-    static Insurance addInsurance(InsuranceView insuranceView);
-    static int removeInsurance(InsuranceView insuranceView);
+    void setID(int id);
+    void setVehicle(Vehicle *vehicle);
+    void setStartDate(Date &startDate);
+    void setEndDate(Date endDate);
+    void setMonthlyCost(double monthlyCost);
+
     bool isExpired();
     int getRemainingDays() const;
     void updateToday();

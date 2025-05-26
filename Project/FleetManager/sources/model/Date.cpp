@@ -89,6 +89,18 @@ tm Date::mk_tm(int day, int month, int year) const {
     return time;
 }
 
+int Date::getDay() const {
+    return this->day;
+}
+
+int Date::getMonth() const {
+    return this->month;
+}
+
+int Date::getYear() const {
+    return this->year;
+}
+
 bool Date::operator== (const Date &date) const {
     if (this->year == date.year && this->month == date.month && this->day == date.day) {
         return true;
@@ -114,4 +126,9 @@ int Date::operator- (const Date &date) const {
     const time_t timeToday = mktime(&today);
     const time_t timeExistingDate = mktime(&existingDate);
     return difftime(timeToday, timeExistingDate) / secondsPerDay;
+}
+
+ostream &Date::operator<< (ostream &stream, const Date &date) {
+    stream << date.day << "/" << date.month << "/" << date.year;
+    return stream;
 }

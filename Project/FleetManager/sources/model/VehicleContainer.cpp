@@ -3,14 +3,24 @@
 //
 
 #include "VehicleContainer.h"
-    #include "DuplicatedDataException.h"
-    #include "NonExistingDataException.h"
+#include "DuplicatedDataException.h"
+#include "NonExistingDataException.h"
 #include "Utils.h"
 
 
-list<Vehicle>::iterator VehicleContainer::search(string &licensePlate) {
-    list<Vehicle>::iterator it = this->vehicles.begin();
-    for (; it != this->vehicles.end(); ++it) {
+list<Truck>::iterator VehicleContainer::searchTruck(const string &licensePlate) {
+    list<Truck>::iterator it = this->trucks.begin();
+    for (; it != this->trucks.end(); ++it) {
+        if ((*it) == licensePlate) {
+            return it;
+        }
+    }
+    return it;
+}
+
+list<Van>::iterator VehicleContainer::searchVan(const string &licensePlate) {
+    list<Van>::iterator it = this->vans.begin();
+    for (; it != this->vans.end(); ++it) {
         if ((*it) == licensePlate) {
             return it;
         }
@@ -19,28 +29,60 @@ list<Vehicle>::iterator VehicleContainer::search(string &licensePlate) {
 }
 
 Vehicle *VehicleContainer::get(string &licensePlate) {
-    list<Vehicle>::iterator it = search(licensePlate);
-    if (it != this->vehicles.end()) {
+    Truck *truck = getTruck(licensePlate);
+    Van *van = getVan(licensePlate);
+    if (truck == NULL && van != NULL) {return van;}
+    if (truck != NULL && van == NULL) {return truck;}
+    return NULL;
+}
+
+Truck *VehicleContainer::getTruck(string &licensePlate) {
+    list<Truck>::iterator it = searchTruck(licensePlate);
+    if (it != this->trucks.end()) {
         return &(*it);
     }
     return NULL;
 }
 
-void VehicleContainer::add(Vehicle &vehicle) {
-    list<Vehicle>::iterator it = search(vehicle.getLicensePlate());
-    if (it == this->vehicles.end()) {
-        this->vehicles.push_back(vehicle);
+Van *VehicleContainer::getVan(string &licensePlate) {
+    list<Van>::iterator it = searchVan(licensePlate);
+    if (it != this->vans.end()) {
+        return &(*it);
+    }
+    return NULL;
+}
+
+
+void VehicleContainer::add(Truck &truck) {
+    list<Truck>::iterator it = searchTruck(truck.getLicensePlate());
+    if (it == this->trucks.end()) {
+        this->trucks.push_back(truck);
     }
     else {
-        string msg = "Vehicle: " + vehicle.getLicensePlate();
+        string msg = "Vehicle (Truck): " + truck.getLicensePlate();
         throw DuplicatedDataException(msg);
     }
 }
 
-void VehicleContainer::remove(string &licensePlate) {
-    list<Vehicle>::iterator it = search(licensePlate);
-    if (it != this->vehicles.end()) {
-        this->vehicles.erase(it);
+void VehicleContainer::add(Van &van) {
+    list<Van>::iterator it = searchVan(van.getLicensePlate());
+    if (it == this->vans.end()) {
+        this->vans.push_back(van);
+    }
+    else {
+        string msg = "Vehicle (Van): " + van.getLicensePlate();
+        throw DuplicatedDataException(msg);
+    }
+}
+
+void VehicleContainer::remove(const string &licensePlate) {
+    const list<Truck>::iterator truckIT = searchTruck(licensePlate);
+    const list<Van>::iterator vanIT = searchVan(licensePlate);
+    if (truckIT != this->trucks.end()) {
+        this->trucks.erase(truckIT);
+    }
+    else if (vanIT != this->vans.end()) {
+        this->vans.erase(vanIT);
     }
     else {
         string msg = "Vehicle: " + licensePlate;
@@ -48,15 +90,31 @@ void VehicleContainer::remove(string &licensePlate) {
     }
 }
 
-list<Vehicle> VehicleContainer::list() {
-    list<Vehicle> newList(this->vehicles);
+list<Truck> VehicleContainer::listTrucks() {
+    list<Truck> newList(this->trucks);
     return newList;
 }
 
-list<Vehicle> VehicleContainer::list(bool available) {
-    list<Vehicle> newList;
-    list<Vehicle>::iterator it = this->vehicles.begin();
-    for (; it != this->vehicles.end(); ++it) {
+list<Truck> VehicleContainer::listTrucks(const bool available) {
+    list<Truck> newList;
+    list<Truck>::iterator it = this->trucks.begin();
+    for (; it != this->trucks.end(); ++it) {
+        if (it->getAvailability() == available) {
+            newList.push_back(*it);
+        }
+    }
+    return newList;
+}
+
+list<Van> VehicleContainer::listVans() {
+    list<Van> newList(this->vans);
+    return newList;
+}
+
+list<Van> VehicleContainer::listVans(bool available) {
+    list<Van> newList;
+    list<Van>::iterator it = this->vans.begin();
+    for (; it != this->vans.end(); ++it) {
         if (it->getAvailability() == available) {
             newList.push_back(*it);
         }
@@ -65,9 +123,13 @@ list<Vehicle> VehicleContainer::list(bool available) {
 }
 
 void VehicleContainer::update(string &licensePlate, const Insurance insurance) {
-    list<Vehicle>::iterator it = search(licensePlate);
-    if (it != this->vehicles.end()) {
-        it->setInsurance(insurance);
+    list<Truck>::iterator truckIT = searchTruck(licensePlate);
+    list<Van>::iterator vanIT = searchVan(licensePlate);
+    if (truckIT != this->trucks.end()) {
+        truckIT->setInsurance(insurance);
+    }
+    else if (vanIT != this->vans.end()) {
+        vanIT->setInsurance(insurance);
     }
     else {
         string msg = "Vehicle (insurance): " + licensePlate;
@@ -76,9 +138,13 @@ void VehicleContainer::update(string &licensePlate, const Insurance insurance) {
 }
 
 void VehicleContainer::update(string &licensePlate, const Inspection inspection) {
-    list<Vehicle>::iterator it = search(licensePlate);
-    if (it != this->vehicles.end()) {
-        it->setInspection(inspection);
+    list<Truck>::iterator truckIT = searchTruck(licensePlate);
+    list<Van>::iterator vanIT = searchVan(licensePlate);
+    if (truckIT != this->trucks.end()) {
+        truckIT->setInspection(inspection);
+    }
+    else if (vanIT != this->vans.end()) {
+        vanIT->setInspection(inspection);
     }
     else {
         string msg = "Vehicle (inspection): " + licensePlate;
@@ -87,20 +153,28 @@ void VehicleContainer::update(string &licensePlate, const Inspection inspection)
 }
 
 void VehicleContainer::update(string &licensePlate, VehicleStorageLocation vsl) {
-    list<Vehicle>::iterator it = search(licensePlate);
-    if (it != this->vehicles.end()) {
-        it->setVSL(vsl);
+    list<Truck>::iterator truckIT = searchTruck(licensePlate);
+    list<Van>::iterator vanIT = searchVan(licensePlate);
+    if (truckIT != this->trucks.end()) {
+        truckIT->setVSL(vsl);
+    }
+    else if (vanIT != this->vans.end()) {
+        vanIT->setVSL(vsl);
     }
     else {
-        string msg = "Vehicle (vsl): " + licensePlate;
+        string msg = "Vehicle (VSL): " + licensePlate;
         throw NonExistingDataException(msg);
     }
 }
 
 void VehicleContainer::updateFuel(string &licensePlate) {
-    list<Vehicle>::iterator it = search(licensePlate);
-    if (it != this->vehicles.end()) {
-        it->addFuel();
+    list<Truck>::iterator truckIT = searchTruck(licensePlate);
+    list<Van>::iterator vanIT = searchVan(licensePlate);
+    if (truckIT != this->trucks.end()) {
+        truckIT->addFuel();
+    }
+    else if (vanIT != this->vans.end()) {
+        vanIT->addFuel();
     }
     else {
         string msg = "Vehicle (fuel): " + licensePlate;
@@ -109,9 +183,13 @@ void VehicleContainer::updateFuel(string &licensePlate) {
 }
 
 void VehicleContainer::updateMileage(string &licensePlate, Trip &trip) {
-    list<Vehicle>::iterator it = search(licensePlate);
-    if (it != this->vehicles.end()) {
-        it->updateMileage(trip);
+    list<Truck>::iterator truckIT = searchTruck(licensePlate);
+    list<Van>::iterator vanIT = searchVan(licensePlate);
+    if (truckIT != this->trucks.end()) {
+        truckIT->updateMileage(trip);
+    }
+    else if (vanIT != this->vans.end()) {
+        vanIT->updateMileage(trip);
     }
     else {
         string msg = "Vehicle (mileage): " + licensePlate;
@@ -120,12 +198,16 @@ void VehicleContainer::updateMileage(string &licensePlate, Trip &trip) {
 }
 
 void VehicleContainer::updateAvailability(string &licensePlate, bool available) {
-    list<Vehicle>::iterator it = search(licensePlate);
-    if (it != this->vehicles.end()) {
-        it->setAvailability(available);
+    list<Truck>::iterator truckIT = searchTruck(licensePlate);
+    list<Van>::iterator vanIT = searchVan(licensePlate);
+    if (truckIT != this->trucks.end()) {
+        truckIT->setAvailability(available);
+    }
+    else if (vanIT != this->vans.end()) {
+        vanIT->setAvailability(available);
     }
     else {
-        string msg = "Vehicle (mileage): " + licensePlate;
+        string msg = "Vehicle (availability): " + licensePlate;
         throw NonExistingDataException(msg);
     }
 }

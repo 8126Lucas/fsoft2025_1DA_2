@@ -6,21 +6,32 @@
 #define HEADERS_MODEL_VEHICLECONTAINER_H
 
 #include <list>
+
+#include "Truck.h"
+#include "Van.h"
 #include "Vehicle.h"
 
 using namespace std;
 
 class VehicleContainer {
 private:
-    list<Vehicle> vehicles;
-    list<Vehicle>::iterator search(string &licensePlate);
+    list<Truck> trucks;
+    list<Van> vans;
+    list<Truck>::iterator searchTruck(const string &licensePlate);
+    list<Van>::iterator searchVan(const string &licensePlate);
 
 public:
     Vehicle *get(string &licensePlate);
-    void add(Vehicle &vehicle);
-    void remove(string &licensePlate);
-    list<Vehicle> list();
-    list<Vehicle> list(bool available);
+    Truck *getTruck(string &licensePlate);
+    Van *getVan(string &licensePlate);
+
+    void add(Truck &truck);
+    void add(Van &van);
+    void remove(const string &licensePlate);
+    list<Truck> listTrucks();
+    list<Truck> listTrucks(bool available);
+    list<Van> listVans();
+    list<Van> listVans(bool available);
     void update(string &licensePlate, Insurance insurance);
     void update(string &licensePlate, Inspection inspection);
     void update(string &licensePlate, VehicleStorageLocation vsl);

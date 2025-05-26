@@ -24,14 +24,24 @@ Vehicle Inspection::getVehicle() const {
     return vehicle;
 }
 
-Inspection Inspection::addInspection(InspectionView inspectionView) const {
-    Inspection inspection = inspectionView.addInspection();
-    return inspection;
+Date Inspection::getDate() const {
+    return date;
 }
 
-int Inspection::removeInspection(InspectionView inspectionView) {
-    int id = inspectionView.removeInspection();
-    return id;
+void Inspection::setID(int id) {
+    this->id = id;
+}
+
+void Inspection::setVehicle(Vehicle vehicle) {
+    this->vehicle = vehicle;
+}
+
+void Inspection::setDate(Date date) {
+    this->date = date;
+}
+
+void Inspection::setCost(double cost) {
+    this->cost = cost;
 }
 
 bool Inspection::isDued() {

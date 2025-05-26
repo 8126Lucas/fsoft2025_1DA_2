@@ -17,15 +17,11 @@ class Truck : public Vehicle {
     Truck();
 
     Truck(CATEGORY category, string brand, string model, int year, string licensePlate,
-         double mileage, double fuel, double weightCapacity);
-
-    Truck(CATEGORY category, string brand, string model, int year, string licensePlate,
-          double mileage, double fuel, double weightCapacity, Insurance insurance,
-          Inspection inspection, VehicleStorageLocation vsl);
+         double mileage, double fuel, double weightCapacity, bool available);
 
     ~Truck();
 
-    bool canCarryLoad(Trip &trip);
+    bool canCarryLoad(Order &order);
 
     void setWeightCapacity(double weightCapacity);
 };

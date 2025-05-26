@@ -28,14 +28,32 @@ Vehicle Insurance::getVehicle() const {
     return *vehicle;
 }
 
-Insurance Insurance::addInsurance(InsuranceView insuranceView) {
-    Insurance insurance = insuranceView.addInsurance();
-    return insurance;
+Date Insurance::getEndDate() const {
+    return endDate;
 }
 
-int Insurance::removeInsurance(InsuranceView insuranceView) {
-    int id = insuranceView.removeInsurance();
-    return id;
+double Insurance::getMonthlyCost() const {
+    return monthlyCost;
+}
+
+void Insurance::setID(int id) {
+    this->id = id;
+}
+
+void Insurance::setVehicle(Vehicle *vehicle) {
+    this->vehicle = vehicle;
+}
+
+void Insurance::setStartDate(Date &startDate) {
+    this->startDate = startDate;
+}
+
+void Insurance::setEndDate(Date endDate) {
+    this->endDate = endDate;
+}
+
+void Insurance::setMonthlyCost(double monthlyCost) {
+    this->monthlyCost = monthlyCost;
 }
 
 bool Insurance::isExpired() {

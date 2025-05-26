@@ -44,13 +44,11 @@ class Vehicle {
 
     ~Vehicle();
 
-    Vehicle addVehicle();
-    string removeVehicle();
-
     CATEGORY getCategory() const;
     string getBrand() const;
     string getModel() const;
     int getYear() const;
+
     string getLicensePlate() const;
     double getMileage() const;
     double getFuel() const;

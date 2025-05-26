@@ -86,52 +86,103 @@ Vehicle *VehicleView::getVehicle(VehicleContainer *container) {
     return vehicle;
 }
 
+Truck *VehicleView::getTruck(VehicleContainer *container) {
+    string licensePlate = getLicensePlate();
+    Truck *truck = container->getTruck(licensePlate);
+    return truck;
+}
+
+Van *VehicleView::getVan(VehicleContainer *container) {
+    string licensePlate = getLicensePlate();
+    Van *van = container->getVan(licensePlate);
+    return van;
+}
+
 string VehicleView::getLicensePlate() {
     string licensePlate = Utils::getString("License Plate");
     return licensePlate;
 }
 
-// void VehicleView::printCategory(const Vehicle *vehicle) {
-//     if (vehicle->getCategory() == 1) {
-//         cout << "Truck";
-//     }
-//     if (vehicle->getCategory() == 2) {
-//         cout << "Van";
-//     }
-// }
 
-void VehicleView::printVehicle(const Vehicle *vehicle) {
+ostream &operator<<(ostream &stream, const Date &date) {
+    stream << date.getDay() << "/" << date.getMonth() << "/" << date.getYear();
+    return stream;
+}
+
+void VehicleView::printTruck(const Truck *truck) {
     bool flag_error = false;
     do {
         try {
             flag_error = false;
-            cout << "*** Vehicle " << vehicle->getLicensePlate() << " ***\n";
-            cout << "Category: " << vehicle->getCategory() << endl;
-            cout << "Brand: " << vehicle->getBrand() << endl;
-            cout << "Model: " << vehicle->getModel() << endl;
-            cout << "License Plate: " << vehicle->getLicensePlate() << endl;
-            cout << "Year: " << vehicle->getYear() << endl;
-            cout << "Mileage: " << vehicle->getMileage() << endl;
-            cout << "Fuel (percentage): " << vehicle->getFuel() << endl;
-            if (vehicle->getAvailability()) {
+            cout << "*** Vehicle " << truck->getLicensePlate() << " ***\n";
+            cout << "Category: " << truck->getCategory() << endl;
+            cout << "Brand: " << truck->getBrand() << endl;
+            cout << "Model: " << truck->getModel() << endl;
+            cout << "License Plate: " << truck->getLicensePlate() << endl;
+            cout << "Year: " << truck->getYear() << endl;
+            cout << "Mileage: " << truck->getMileage() << endl;
+            cout << "Fuel (percentage): " << truck->getFuel() << endl;
+            if (truck->getAvailability()) {
                 cout << "Availability: available\n";
             }
             else {cout << "Availability: not available\n";}
-            cout << "Insurance (ID): " << vehicle->getInsurance() << endl;
-            cout << "Inspection (ID): " << vehicle->getInspection() << endl;
-            cout << "Storage Location (ID): " << vehicle->getVSL() << endl;
+            cout << "Insurance (ID): " << truck->getInsurance().getID() << endl;
+            cout << "Insurance (End Date): " << truck->getInsurance().getEndDate() << endl;
+            cout << "Insurance (Monthly Cost): " << truck->getInsurance().getMonthlyCost() << endl;
+            cout << "Inspection (ID): " << truck->getInspection().getID() << endl;
+            cout << "Inspection (Date): " << truck->getInspection().getDate() << endl;
+            cout << "Storage Location (ID): " << truck->getVSL().getID() << "\n\n";
         } catch (NonExistingDataException &error) {
             flag_error = true;
         }
     } while (flag_error);
 }
 
-void VehicleView::printListVehicles(list<Vehicle> &vehicles) {
-    cout << "\n*** List of Vehicles: " << vehicles.size() << " ***\n\n";
-    list<Vehicle>::iterator it = vehicles.begin();
-    for (; it != vehicles.end(); ++it) {
-        printVehicle(&*it);
+void VehicleView::printVan(const Van *van) {
+    bool flag_error = false;
+    do {
+        try {
+            flag_error = false;
+            cout << "*** Vehicle " << van->getLicensePlate() << " ***\n";
+            cout << "Category: " << van->getCategory() << endl;
+            cout << "Brand: " << van->getBrand() << endl;
+            cout << "Model: " << van->getModel() << endl;
+            cout << "License Plate: " << van->getLicensePlate() << endl;
+            cout << "Year: " << van->getYear() << endl;
+            cout << "Mileage: " << van->getMileage() << endl;
+            cout << "Fuel (percentage): " << van->getFuel() << endl;
+            if (van->getAvailability()) {
+                cout << "Availability: available\n";
+            }
+            else {cout << "Availability: not available\n";}
+            cout << "Insurance (ID): " << van->getInsurance().getID() << endl;
+            cout << "Insurance (End Date): " << van->getInsurance().getEndDate() << endl;
+            cout << "Insurance (Monthly Cost): " << van->getInsurance().getMonthlyCost() << endl;
+            cout << "Inspection (ID): " << van->getInspection().getID() << endl;
+            cout << "Inspection (Date): " << van->getInspection().getDate() << endl;
+            cout << "Storage Location (ID): " << van->getVSL().getID() << "\n\n";
+        } catch (NonExistingDataException &error) {
+            flag_error = true;
+        }
+    } while (flag_error);
+}
+
+void VehicleView::printListTrucks(list<Truck> &trucks) {
+    cout << "\n*** List of Trucks: " << trucks.size() << " ***\n\n";
+    list<Truck>::iterator it = trucks.begin();
+    for (; it != trucks.end(); ++it) {
+        printTruck(&*it);
     }
+    cout <<"\n**********************************\n\n";
+}
+
+void VehicleView::printListVans(list<Van> &vans) {
+    cout << "\n*** List of Vans: " << vans.size() << " ***\n\n";
+    list<Van>::iterator it = vans.begin();
+    for (; it != vans.end(); ++it) {
+        printVan(&*it);
+    }
+    cout <<"\n**********************************\n\n";
 }
 
 double VehicleView::addFuel() {
@@ -139,17 +190,32 @@ double VehicleView::addFuel() {
     return addedFuel;
 }
 
-void VehicleView::insuranceAlert(Vehicle &vehicle) {
-    cout << "!!! ATTENTION !!!\n";
-    cout << "The vehicle " << vehicle.getLicensePlate() << "does not insurance active!\n";
+void VehicleView::insuranceAlert(Truck &truck) {
+    cout << "\n!!! ATTENTION !!!\n";
+    cout << "The vehicle " << truck.getLicensePlate() << "does not insurance active!\n";
 }
 
-void VehicleView::inspectionAlert(Vehicle &vehicle) {
-    cout << "!!! ATTENTION !!!\n";
-    cout << "The vehicle " << vehicle.getLicensePlate() << "is pending inspection!\n";
+void VehicleView::insuranceAlert(Van &van) {
+    cout << "\n!!! ATTENTION !!!\n";
+    cout << "The vehicle " << van.getLicensePlate() << "does not insurance active!\n";
 }
 
-void VehicleView::fuelAlert(Vehicle &vehicle) {
-    cout << "!!! ATTENTION !!!\n";
-    cout << "The vehicle " << vehicle.getLicensePlate() << "does not have enough fuel!\n";
+void VehicleView::inspectionAlert(Truck &truck) {
+    cout << "\n!!! ATTENTION !!!\n";
+    cout << "The vehicle " << truck.getLicensePlate() << "is pending inspection!\n";
+}
+
+void VehicleView::inspectionAlert(Van &van) {
+    cout << "\n!!! ATTENTION !!!\n";
+    cout << "The vehicle " << van.getLicensePlate() << "is pending inspection!\n";
+}
+
+void VehicleView::fuelAlert(Truck &truck) {
+    cout << "\n!!! ATTENTION !!!\n";
+    cout << "The vehicle " << truck.getLicensePlate() << "does not have enough fuel!\n";
+}
+
+void VehicleView::fuelAlert(Van &van) {
+    cout << "\n!!! ATTENTION !!!\n";
+    cout << "The vehicle " << van.getLicensePlate() << "does not have enough fuel!\n";
 }

@@ -8,8 +8,8 @@
 
 class InspectionView {
 public:
-    Inspection addInspection();
-    int removeInspection();
+    static Inspection addInspection(VehicleContainer &container);
+    static int removeInspection();
 };
 
 

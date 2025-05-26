@@ -47,9 +47,18 @@ void Controller::runVehicle() {
                 run();
                 break;
             case 1: {
-                Vehicle vehicle = this->vehicleView.addVehicle();
-                VehicleContainer &container = this->model.getVehicleContainer();
-                container.add(vehicle);
+                int category = Utils::getInt("Category (Truck - 1 / Van - 2)");
+                if (category == 1) {
+                    Truck truck = this->vehicleView.addTruck();
+                    VehicleContainer &container = this->model.getVehicleContainer();
+                    container.add(truck);
+                }
+                if (category == 2) {
+                    Van van = this->vehicleView.addVan();
+                    VehicleContainer &container = this->model.getVehicleContainer();
+                    container.add(van);
+                }
+
             }
                 break;
             case 2: {
@@ -60,51 +69,49 @@ void Controller::runVehicle() {
                 break;
             case 3: {
                 VehicleContainer &container = this->model.getVehicleContainer();
-                list<Vehicle> vehicles = container.list();
-                if (!vehicles.empty()) {
-                    this->vehicleView.printListVehicles(vehicles);
-                }
-                else {
+                list<Truck> trucks = container.listTrucks();
+                list<Van> vans = container.listVans();
+                if (trucks.empty() && vans.empty()) {
                     cout << "THERE ARE NO VEHICLES IN THE RECORDS!\n";
                 }
-                break;
+                this->vehicleView.printListTrucks(trucks);
+                this->vehicleView.printListVans(vans);
             }
+                break;
             case 4: {
                 VehicleContainer &container = this->model.getVehicleContainer();
-                list<Vehicle> vehicles = container.list(true);
-                if (!vehicles.empty()) {
-                    this->vehicleView.printListVehicles(vehicles);
+                list<Truck> trucks = container.listTrucks(true);
+                list<Van> vans = container.listVans(true);
+                if (trucks.empty() && vans.empty()) {
+                    cout << "THERE ARE NO AVAILABLE VEHICLES IN THE RECORDS!\n";
                 }
-                else {
-                    cout << "THERE ARE NO AVAILABLE VEHICLES!\n";
-                }
-                break;
+                this->vehicleView.printListTrucks(trucks);
+                this->vehicleView.printListVans(vans);
             }
+                break;
             case 5: {
                 VehicleContainer &container = this->model.getVehicleContainer();
-                list<Vehicle> vehicles = container.list(false);
-                if (!vehicles.empty()) {
-                    this->vehicleView.printListVehicles(vehicles);
+                list<Truck> trucks = container.listTrucks(false);
+                list<Van> vans = container.listVans(false);
+                if (trucks.empty() && vans.empty()) {
+                    cout << "THERE ARE NO UNAVAILABLE VEHICLES IN THE RECORDS!\n";
                 }
-                else {
-                    cout << "THERE ARE NO UNAVAILABLE VEHICLES!\n";
-                }
-                break;
+                this->vehicleView.printListTrucks(trucks);
+                this->vehicleView.printListVans(vans);
             }
+                break;
             case 6: {
-                Insurance insurance = this->insuranceView.addInsurance();
-                string licensePlate = insurance.getVehicle().getLicensePlate();
                 VehicleContainer &container = this->model.getVehicleContainer();
+                Insurance insurance = this->insuranceView.addInsurance(container);
+                string licensePlate = insurance.getVehicle().getLicensePlate();
                 container.update(licensePlate, insurance);
-                // ver para update VSLContainer
             }
                 break;
             case 7: {
-                Inspection inspection = this->inspectionView.addInspection();
-                string licensePlate = inspection.getVehicle().getLicensePlate();
                 VehicleContainer &container = this->model.getVehicleContainer();
+                Inspection inspection = this->inspectionView.addInspection(container);
+                string licensePlate = inspection.getVehicle().getLicensePlate();
                 container.update(licensePlate, inspection);
-                // ver para update VSLContainer
             }
                 break;
             case 8: {
@@ -135,7 +142,6 @@ void Controller::runVehicle() {
                 int vslID = Utils::getInt("VSL ID");
                 VehicleStorageLocation *vsl = container.get(vslID);
                 this->vslView.printListStoredVehicles(*vsl);
-                // MUDAR PARA TER UMA LISTA ANTES DE DAR PRINT
             }
                 break;
             case 12: {

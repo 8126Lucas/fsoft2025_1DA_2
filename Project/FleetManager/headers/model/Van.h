@@ -16,17 +16,15 @@ class Van : public Vehicle {
   public:
     Van();
 
-    Van(string brand, string model, int year, string licensePlate,
-         double mileage, double fuel, double spaceCapacity);
-
-    Van(string brand, string model, int year, string licensePlate,
-          double mileage, double fuel, double spaceCapacity, Insurance insurance,
-          Inspection inspection, VehicleStorageLocation vsl);
+    Van(CATEGORY category, string brand, string model, int year, string licensePlate,
+         double mileage, double fuel, double spaceCapacity, bool available);
 
     ~Van();
 
-    bool canCarryLoad();
+    bool canCarryLoad(Order &order);
 
     void setSpaceCapacity(double spaceCapacity);
+
+
 };
 #endif //HEADERS_MODEL_VAN_H

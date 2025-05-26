@@ -15,18 +15,27 @@ class VehicleView {
 public:
     Truck addTruck();
     Van addVan();
-
     string removeVehicle();
 
     static Vehicle *getVehicle(VehicleContainer *container);
+    static Truck *getTruck(VehicleContainer *container);
+    static Van *getVan(VehicleContainer *container);
     static string getLicensePlate();
-    static void printVehicle(const Vehicle *vehicle);
-    static void printListVehicles(list<Vehicle> &vehicles);
+
+    static void printTruck(const Truck *truck);
+    static void printVan(const Van *van);
+    static void printListTrucks(list<Truck> &trucks);
+    static void printListVans(list<Van> &vans);
 
     static double addFuel();
-    static void insuranceAlert(Vehicle &vehicle);
-    static void inspectionAlert(Vehicle &vehicle);
-    static void fuelAlert(Vehicle &vehicle);
+    static void insuranceAlert(Truck &truck);
+    static void insuranceAlert(Van &van);
+    static void inspectionAlert(Truck &truck);
+    static void inspectionAlert(Van &van);
+    static void fuelAlert(Truck &truck);
+    static void fuelAlert(Van &van);
+
+    ostream &operator<<(ostream &stream, const Date &date);
 };
 
 #endif //HEADERS_VIEWS_VEHICLEVIEW_H

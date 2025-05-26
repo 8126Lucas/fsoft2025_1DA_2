@@ -29,17 +29,10 @@ class VehicleStorageLocation {
 
     ~VehicleStorageLocation();
 
-    static VehicleStorageLocation addStorageLocation();
-
-    static int removeStorageLocation();
-
-    static void listStorageLocations(list<VehicleStorageLocation> &listVSL);
-    void listStoredVehicles() const;
-    void addVehicleToStorage(VehicleContainer *container);
-    void removeVehicleFromStorage(VehicleContainer *container);
     int getAvailableSpace() const;
 
     void incrementVehicleCount();
+    void decrementVehicleCount();
 
     int getID() const;
     string getName() const;
@@ -48,6 +41,12 @@ class VehicleStorageLocation {
     int getVehicleCount() const;
     unordered_map<int, list<Vehicle *>> getVehicles() const;
     list<Vehicle *> getStoredVehicles(int id) const;
+
+    void setID(int id);
+    void setName(string name);
+    void setAddress(string address);
+    void setCapacity(int capacity);
+    void setCurrentVehicleCount(int currentVehicleCount);
 
     bool operator== (int id) const;
 };

@@ -22,6 +22,6 @@ public:
     static pair<int, Vehicle *> getVehicleVSLPair(VSLContainer *containerVSL, VehicleContainer *containerVehicle);
 
     static void addVehicleToStorage(VSLContainer *containerVSL, VehicleContainer *containerVehicle);
-    static void removeVehicleFromStorage(VSLContainer *containerVSL, VehicleContainer *containerVehicle)
+    static void removeVehicleFromStorage(VSLContainer *containerVSL, VehicleContainer *containerVehicle);
 };
 #endif //HEADERS_VIEW_VEHICLESTORAGELOCATIONVIEW_H

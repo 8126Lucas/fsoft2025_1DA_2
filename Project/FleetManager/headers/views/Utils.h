@@ -21,13 +21,9 @@ class Utils {
     static double getDouble(const string &label);
     static string getString(const string &label);
     static Date getDate(const string &label);
-    static Vehicle *getVehicle(const string &label);
-    static Vehicle setVehicle();
-    static VehicleStorageLocation setVSL();
+    static Vehicle *getVehicle(VehicleContainer &container, const string &label);
     static Driver setDriver();
     static Order setOrder();
-    static Insurance setInsurance();
-    static Inspection setInspection();
 };
 
 #endif //HEADERS_VIEWS_UTILS_H

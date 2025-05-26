@@ -14,7 +14,25 @@
 using namespace std;
 
 VehicleStorageLocation VehicleStorageLocationView::addVSL() {
-    VehicleStorageLocation vsl = Utils::setVSL();
+    VehicleStorageLocation vsl = VehicleStorageLocation();
+    bool flag_error = false;
+    do {
+        try {
+            flag_error = false;
+            int id = Utils::getInt("ID");
+            string name = Utils::getString("Name");
+            string address = Utils::getString("Address");
+            int capacity = Utils::getInt("Capacity");
+            vsl.setID(id);
+            vsl.setName(name);
+            vsl.setAddress(address);
+            vsl.setCapacity(capacity);
+            vsl.setCurrentVehicleCount(0);
+        } catch (InvalidDataException &error) {
+            flag_error = true;
+        }
+    } while (flag_error);
+
     return vsl;
 }
 
@@ -52,17 +70,17 @@ void VehicleStorageLocationView::printListVSL(list<VehicleStorageLocation> &list
 }
 
 void VehicleStorageLocationView::printListStoredVehicles(const VehicleStorageLocation &vsl) {
-    list<Vehicle *> vehiclesPtr = vsl.getStoredVehicles(vsl.getID());
-    list<Vehicle> vehicles;
-    list<Vehicle *>::iterator it = vehiclesPtr.begin();
-    for (; it != vehiclesPtr.end(); ++it) {
-        const Vehicle *oneVehicle = *it;
-        if (oneVehicle != NULL) {
-            const Vehicle &vehicle = *oneVehicle;
-            vehicles.push_back(vehicle);
+    list<Vehicle *> vehicles = vsl.getStoredVehicles(vsl.getID());
+    list<Vehicle *>::iterator it = vehicles.begin();
+    if (vehicles.empty()) {
+        cout << "There are no stored Vehicles at this Storage Location!\n";
+        return;
+    }
+    for (; it != vehicles.end(); ++it) {
+        if (*it != NULL) {
+            cout << "Vehicle: " << (*it)->getLicensePlate() << "\n";
         }
     }
-    VehicleView::printListVehicles(vehicles);
 }
 
 VehicleStorageLocation *VehicleStorageLocationView::getVSL(VSLContainer *container) {
@@ -83,9 +101,14 @@ void VehicleStorageLocationView::addVehicleToStorage(VSLContainer *containerVSL,
     do {
         pair<int, Vehicle *> pair = getVehicleVSLPair(containerVSL, containerVehicle);
         VehicleStorageLocation *vsl = containerVSL->get(pair.first);
+        if (vsl->getCapacity() == vsl->getVehicleCount()) {
+            cout << "The Storage Location is full!\n";
+            return;
+        }
         try {
             flag_error = false;
             vsl->getVehicles()[pair.first].push_back(pair.second);
+            vsl->incrementVehicleCount();
         } catch (NonExistingDataException &error) {
             flag_error = true;
         }
@@ -99,10 +122,15 @@ void VehicleStorageLocationView::removeVehicleFromStorage(VSLContainer *containe
         try {
             flag_error = false;
             VehicleStorageLocation *vsl = containerVSL->get(pair.first);
+            if (vsl->getVehicleCount() == 0) {
+                cout << "The Storage Location is empty!\n";
+                return;
+            }
             list<Vehicle *>::iterator it = vsl->getVehicles()[pair.first].begin();
             for (; it != vsl->getVehicles()[pair.first].end(); ++it) {
                 if ((*it) == pair.second) {
                     vsl->getVehicles()[pair.first].erase(it);
+                    vsl->decrementVehicleCount();
                 }
                 else {
                     string msg = "Vehicle " + pair.second->getLicensePlate() + " is not at Vehicle Storage Location "

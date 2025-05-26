@@ -25,9 +25,13 @@ class Inspection {
 
     int getID() const;
     Vehicle getVehicle() const;
+    Date getDate() const;
 
-    Inspection addInspection(InspectionView inspectionView) const;
-    static int removeInspection(InspectionView inspectionView);
+    void setID(int id);
+    void setVehicle(Vehicle vehicle);
+    void setDate(Date date);
+    void setCost(double cost);
+
     bool isDued();
     int getRemainingDays() const;
     void updateToday();

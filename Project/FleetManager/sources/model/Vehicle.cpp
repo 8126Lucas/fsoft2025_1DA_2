@@ -28,13 +28,6 @@ Vehicle::Vehicle(const CATEGORY category, const string &brand, const string &mod
 
 Vehicle::~Vehicle() {}
 
-
-
-string Vehicle::removeVehicle() {
-    string licensePlate = VehicleView::getLicensePlate();
-    return licensePlate;
-}
-
 CATEGORY Vehicle::getCategory() const {
     return category;
 }
