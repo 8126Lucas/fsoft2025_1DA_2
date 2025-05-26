@@ -105,64 +105,7 @@ Vehicle *Utils::getVehicle(const string &label) {
 
 
 
-VehicleStorageLocation Utils::setVSL() {
-  VehicleStorageLocation vsl = VehicleStorageLocation();
-  bool flag_error = false;
-  do {
-    try {
-      flag_error = false;
-      int id = Utils::getInt("ID");
-      string name = Utils::getString("Name");
-      string address = Utils::getString("Address");
-      int capacity = Utils::getInt("Capacity");
-      int currentVehicleCount = 0;
-      vsl = VehicleStorageLocation(id, name, address, capacity, currentVehicleCount);
-    } catch (InvalidDataException &error) {
-      flag_error = true;
-    }
-  } while (flag_error);
 
-  return vsl;
-}
-
-Insurance Utils::setInsurance() {
-  Insurance insurance = Insurance();
-  bool flag_error = false;
-  do {
-    try {
-      flag_error = false;
-      int id = Utils::getInt("Insurance ID");
-      Vehicle *vehicle = Utils::getVehicle("Vehicle's License Plate");
-      Date startDate = Utils::getDate("Start Date");
-      Date endDate = Utils::getDate("End Date");
-      double monthlyCost = Utils::getDouble("Monthly Cost");
-      insurance = Insurance(id, vehicle, startDate, endDate, monthlyCost);
-    } catch (InvalidDataException &error) {
-      flag_error = true;
-    }
-  } while (flag_error);
-
-  return insurance;
-}
-
-Inspection Utils::setInspection() {
-  Inspection inspection = Inspection();
-  bool flag_error = false;
-  do {
-    try {
-      flag_error = false;
-      int id = Utils::getInt("Inspection ID");
-      Vehicle *vehicle = Utils::getVehicle("Vehicle's License Plate");
-      Date date = Utils::getDate("Date");
-      double cost = Utils::getDouble("Cost");
-      inspection = Inspection(id, vehicle, date, cost);
-    } catch (InvalidDataException &error) {
-      flag_error = true;
-    }
-  } while (flag_error);
-
-  return inspection;
-}
 
 Trip *Utils::getOrder(int order &label){ // verificar depois
   int order = getInt(label);
