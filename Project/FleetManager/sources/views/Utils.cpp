@@ -8,8 +8,11 @@
 #include <limits>
 #include <list>
 #include <vector>
+#include <type_traits>
 
 #include "InvalidDataException.h"
+#include "Truck.h"
+#include "Van.h"
 #include "Vehicle.h"
 
 using namespace std;
@@ -99,28 +102,8 @@ Vehicle *Utils::getVehicle(const string &label) {
   return vehicle;
 }
 
-Vehicle Utils::setVehicle() {
-  Vehicle vehicle;
-  bool flag_error = false;
-  do {
-    try {
-      flag_error = false;
-      CATEGORY category = static_cast<CATEGORY>(Utils::getInt("Category (1 - Truck / 2 - Van)"));
-      string brand = Utils::getString("Brand");
-      string model = Utils::getString("Model");
-      int year = Utils::getInt("Year");
-      string licensePlate = Utils::getString("License Plate");
-      double mileage = Utils::getDouble("Mileage");
-      double fuel = Utils::getDouble("Fuel");
-      bool available = true;
-      vehicle = Vehicle(category, brand, model, year, licensePlate, mileage, fuel, available = true);
-    } catch (InvalidDataException &error) {
-      flag_error = true;
-    }
-  } while (flag_error);
 
-  return vehicle;
-}
+
 
 VehicleStorageLocation Utils::setVSL() {
   VehicleStorageLocation vsl = VehicleStorageLocation();
