@@ -34,13 +34,13 @@ public:
     void addDriver();
     void removeDriver();
 
-    int getId();
+    int getID();
     char getLicense() const;
     int getAge() const;
     int getTimeToRetire() const;
 
     bool getAvailability() const;
-    bool getVacationId() const;
+    bool getVacationID() const;
 
     void setVacation(Vacation vacation);
     void setAvailability(bool available);
@@ -48,7 +48,6 @@ public:
     void vacationAlert();
     void retirementAlert();
     bool isAvailable() const;
-    void printDriverStatus(const Driver *driver);
 
     bool operator == (int id) const;
 };

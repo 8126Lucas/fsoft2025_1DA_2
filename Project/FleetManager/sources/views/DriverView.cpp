@@ -18,13 +18,13 @@ Driver DriverView::addDriver() {
 }
 
 Driver *DriverView::getDriver(DriverContainer *container) {
-    int id = getId();
+    int id = getID();
     Driver *driver = container->get(id);
     return driver;
 }
 
-int DriverView::getId() {
-    int id = Utils::getInt("Id");
+int DriverView::getID() {
+    int id = Utils::getInt("ID");
     return id;
 }
 
@@ -33,7 +33,7 @@ void DriverView::printDriver(Driver *driver) {
     do {
         try {
             flag_error = false;
-            cout << "*** Driver " << driver->getId() << " ***\n";
+            cout << "*** Driver " << driver->getID() << " ***\n";
             cout << "License: " << driver->getLicense() << endl;
             cout << "Age: " << driver->getAge() << endl;
             cout << "Time to Retire: " << driver->getTimeToRetire() << endl;
@@ -41,7 +41,7 @@ void DriverView::printDriver(Driver *driver) {
                 cout << "Availability: available\n";
             }
             else {cout << "Availability: not available\n";}
-            cout << "Vacation (ID): " << driver->getVacationId() << endl;
+            cout << "Vacation (ID): " << driver->getVacationID() << endl;
         } catch (NonExistingDataException &error) {
             flag_error = true;
         }
@@ -57,10 +57,10 @@ void DriverView::printDrivers(list<Driver> &drivers) {
 
 void DriverView::vacationAlert(Driver &driver) {
     cout << "!!! ATTENTION !!!\n";
-    cout << "The driver " << driver.getId() << "is on vacation!\n";
+    cout << "The driver " << driver.getID() << "is on vacation!\n";
 }
 
 void DriverView::retirementAlert(Driver &driver) {
     cout << "!!! ATTENTION !!!\n";
-    cout << "The driver " << driver.getId() << "passed retirement age!\n";
+    cout << "The driver " << driver.getID() << "passed retirement age!\n";
 }

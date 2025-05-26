@@ -15,8 +15,8 @@ public:
     static Expense getExpense(FinancialContainer *container);
     static Revenue recordRevenue();
     static Revenue getRevenue(FinancialContainer *container);
-    static int getExpenseId();
-    static int getRevenueId();
+    static int getExpenseID();
+    static int getRevenueID();
     static void printExpense(const Expense *expense);
     static void printRevenue(const Revenue *revenue);
     static void printExpenses(list<Expense> &expenses);

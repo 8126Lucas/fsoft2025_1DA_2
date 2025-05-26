@@ -36,7 +36,7 @@ int Revenue::removeRevenue(RevenueView revenueView) {
     return id;
 }
 
-int Revenue::getId() const {
+int Revenue::getID() const {
     return id;
 }
 

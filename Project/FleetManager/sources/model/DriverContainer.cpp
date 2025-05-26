@@ -26,9 +26,9 @@ Driver *DriverContainer::get(int id) {
 }
 
 void DriverContainer::add(Driver &driver) {
-  list<Driver>::iterator it = search(driver.getId());
+  list<Driver>::iterator it = search(driver.getID());
   if (it != this->drivers.end()) {
-    string msg = "Driver (id): " + to_string(driver.getId());
+    string msg = "Driver (id): " + to_string(driver.getID());
     throw DuplicatedDataException(msg);
   }
   this->drivers.push_back(driver);
@@ -73,17 +73,6 @@ void DriverContainer::update(int id, const Vacation vacation) {
   }
   else {
     string msg = "Driver(id): " + to_string(id);
-    throw NonExistingDataException(msg);
-  }
-}
-
-void DriverContainer::updateTimeToRetire(int id) {
-  list<Driver>::iterator it = search(id);
-  if (it != this->drivers.end()) {
-    it->updateTimeToRetire();
-  }
-  else {
-    string msg = "Driver (id): " + to_string(id);
     throw NonExistingDataException(msg);
   }
 }

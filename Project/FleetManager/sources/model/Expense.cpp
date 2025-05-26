@@ -26,11 +26,11 @@ Expense Expense::recordExpense(int id, Trip trip, Date date, double amount, TYPE
 }
 
 int Expense::removeExpense() {
-    int id = FinancialView::getExpenseId();
+    int id = FinancialView::getExpenseID();
     return id;
 }
 
-int Expense::getId() const {
+int Expense::getID() const {
     return id;
 }
 

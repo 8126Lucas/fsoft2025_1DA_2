@@ -25,7 +25,7 @@ int Vacation::removeVacation(VacationView vacationView) {
     return id;
 }
 
-int Vacation::getId() const {
+int Vacation::getID() const {
     return id;
 }
 

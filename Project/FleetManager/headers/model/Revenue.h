@@ -27,7 +27,7 @@ public:
     Revenue recordRevenue(int id, Order order, Date date, double amount);
     void removeRevenue();
 
-    int getId() const;
+    int getID() const;
     Order getOrder() const;
     Date getDate() const;
     double getAmount() const;

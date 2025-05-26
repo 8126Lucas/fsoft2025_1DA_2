@@ -19,7 +19,7 @@ Expense FinancialView::recordExpense() {
 }
 
 Expense *FinancialView::getExpense(FinancialContainer *container) {
-    int id = getExpenseId();
+    int id = getExpenseID();
     Expense *expense = container->getExpense(id);
     return expense;
 }
@@ -30,28 +30,28 @@ Revenue FinancialView::recordRevenue() {
 }
 
 Revenue *FinancialView::getRevenue(FinancialContainer *container) {
-    int id = getRevenueId();
+    int id = getRevenueID();
     Revenue *revenue = container->getRevenue(id);
     return revenue;
 }
 
-int FinancialView::getExpenseId() {
-    int id = Utils::getInt("Id");
+int FinancialView::getExpenseID() {
+    int id = Utils::getInt("ID");
     return id;
 }
 
-int FinancialView::getRevenueId() {
-    int id = Utils::getInt("Id");
+int FinancialView::getRevenueID() {
+    int id = Utils::getInt("ID");
     return id;
 }
 
-void FinancialView::printExpense(Expense *expense) {
+void FinancialView::printExpense(const Expense *expense) {
     bool flag_error = false;
     do {
         try {
             flag_error = false;
-            cout << "*** Expense " << expense->getId() << " ***\n";
-            cout << "Trip: " << expense->getTrip() << endl;
+            cout << "*** Expense " << expense->getID() << " ***\n";
+            cout << "Trip: " << expense->getTrip().getID() << endl;
             cout << "Date: " << expense->getDate() << endl;
             cout << "Amount: " << expense->getAmount() << endl;
             if (expense->getType() == 1) {
@@ -71,13 +71,13 @@ void FinancialView::printExpense(Expense *expense) {
     } while (flag_error);
 }
 
-void FinancialView::printRevenue(Revenue *revenue) {
+void FinancialView::printRevenue(const Revenue *revenue) {
     bool flag_error = false;
     do {
         try {
             flag_error = false;
-            cout << "*** Revenue " << revenue->getId() << " ***\n";
-            cout << "Order: " << revenue->getOrder() << endl;
+            cout << "*** Revenue " << revenue->getID() << " ***\n";
+            cout << "Order: " << revenue->getOrder().getID() << endl;
             cout << "Date: " << revenue->getDate() << endl;
             cout << "Amount: " << revenue->getAmount() << endl;
         } catch (NonExistingDataException &error) {

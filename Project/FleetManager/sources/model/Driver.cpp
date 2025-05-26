@@ -24,11 +24,11 @@ void Driver::addDriver() {
 }
 
 void Driver::removeDriver() {
-    int id = DriverView::getId();
+    int id = DriverView::getID();
     DriverContainer::remove(id);
 }
 
-int Driver::getId() {
+int Driver::getID() {
     return id;
 }
 
@@ -44,8 +44,8 @@ bool Driver::getAvailability() const {
     return available;
 }
 
-bool Driver::getVacationId() const {
-    return vacation.getId();
+bool Driver::getVacationID() const {
+    return vacation.getID();
 }
 
 void Driver::setVacation(const Vacation vacation) {

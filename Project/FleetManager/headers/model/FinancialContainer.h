@@ -30,6 +30,10 @@ public:
     void addRevenue(Revenue &revenue);
     void removeRevenue(Revenue &revenue);
     list<Revenue> listRevenue();
+
+    double getExpenseTotal(Date startDate, Date endDate);
+    double getRevenueTotal(Date startDate, Date endDate);
+    double getBalance(Date startDate, Date endDate);
 };
 
 #endif //HEADERS_MODEL_FINANCIALCONTAINER_H

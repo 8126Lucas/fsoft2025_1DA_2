@@ -36,7 +36,7 @@ public:
     Expense recordExpense(int id, Trip trip, Date date, double amount, TYPE type);
     int removeExpense();
 
-    int getId() const;
+    int getID() const;
     Trip getTrip() const;
     Date getDate() const;
     double getAmount() const;

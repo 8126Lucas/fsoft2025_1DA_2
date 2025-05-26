@@ -10,7 +10,7 @@
 list<Expense>::iterator FinancialContainer::searchExpense(int id) {
     list<Expense>::iterator it = this->expenses.begin();
     for (; it != this->expenses.end(); ++it) {
-        if ((*it).getId() == id) {
+        if ((*it).getID() == id) {
             return it;
         }
     }
@@ -20,7 +20,7 @@ list<Expense>::iterator FinancialContainer::searchExpense(int id) {
 list<Revenue>::iterator FinancialContainer::searchRevenue(int id) {
     list<Revenue>::iterator it = this->revenues.begin();
     for (; it != this->revenues.end(); ++it) {
-        if ((*it).getId() == id) {
+        if ((*it).getID() == id) {
             return it;
         }
     }
@@ -36,21 +36,21 @@ Expense *FinancialContainer::getExpense(int id) {
 }
 
 void FinancialContainer::addExpense(Expense &expense) {
-    list<Expense>::iterator it = searchExpense(expense.getId());
+    list<Expense>::iterator it = searchExpense(expense.getID());
     if (it != this->expenses.end()) {
-        string msg = "Expense (id): " + to_string(expense.getId());
+        string msg = "Expense (id): " + to_string(expense.getID());
         throw DuplicatedDataException(msg);
     }
     this->expenses.push_back(expense);
 }
 
 void FinancialContainer::removeExpense(Expense &expense) {
-    list<Expense>::iterator it = searchExpense(expense.getId());
+    list<Expense>::iterator it = searchExpense(expense.getID());
     if (it != this->expenses.end()) {
         this->expenses.erase(it);
     }
     else {
-        string msg = "Expense (id): " + to_string(expense.getId());
+        string msg = "Expense (id): " + to_string(expense.getID());
         throw NonExistingDataException(msg);
     }
 }
@@ -75,21 +75,21 @@ Revenue *FinancialContainer::getRevenue(int id) {
 }
 
 void FinancialContainer::addRevenue(Revenue &revenue) {
-    list<Revenue>::iterator it = searchRevenue(revenue.getId());
+    list<Revenue>::iterator it = searchRevenue(revenue.getID());
     if (it != this->revenues.end()) {
-        string msg = "Revenue (id): " + to_string(revenue.getId());
+        string msg = "Revenue (id): " + to_string(revenue.getID());
         throw DuplicatedDataException(msg);
     }
     this->revenues.push_back(revenue);
 }
 
 void FinancialContainer::removeRevenue(Revenue &revenue) {
-    list<Revenue>::iterator it = searchRevenue(revenue.getId());
+    list<Revenue>::iterator it = searchRevenue(revenue.getID());
     if (it != this->revenues.end()) {
         this->revenues.erase(it);
     }
     else {
-        string msg = "Revenue (id): " + to_string(revenue.getId());
+        string msg = "Revenue (id): " + to_string(revenue.getID());
         throw NonExistingDataException(msg);
     }
 }
@@ -97,4 +97,39 @@ void FinancialContainer::removeRevenue(Revenue &revenue) {
 list<Revenue> FinancialContainer::listRevenue() {
     list<Revenue> newList(this->revenues);
     return newList;
+}
+
+double getExpensesTotal(Date startDate, Date endDate) {
+  double totalExpenses = 0;
+    for (int i = 0; i < this->expenses.size(); i++) {
+        if (startDate <= this->expenses[i].getDate() && this->expenses[i].getDate() <= endDate) {
+            totalExpenses += this->expenses[i].getAmount();
+        }
+    }
+    return totalExpenses;
+}
+
+double getRevenuesTotal(Date startDate, Date endDate) {
+    double totalRevenues = 0;
+    for (int i = 0; i < this->revenues.size(); i++) {
+        if (startDate <= this->revenues[i].getDate() && this->revenues[i].getDate() <= endDate) {
+            totalRevenues += this->revenues[i].getAmount();
+        }
+    }
+    return totalRevenues;
+}
+
+double getBalace(Date startDate, Date endDate) {
+    double totalExpenses, totalRevenues;
+    for (int i = 0; i < this->expenses.size(); i++) {
+        if (startDate <= this->expenses[i].getDate() && this->expenses[i].getDate() <= endDate) {
+          totalExpenses += this->expenses[i].getAmount();
+        }
+    }
+    for (int i = 0; i < this->revenues.size(); i++) {
+        if (startDate <= this->revenues[i].getDate() && this->revenues[i].getDate() <= endDate) {
+            totalRevenues += this->revenues[i].getAmount();
+        }
+    }
+    return totalRevenues - totalExpenses;
 }

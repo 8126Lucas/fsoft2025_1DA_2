@@ -22,7 +22,6 @@ public:
     list<Driver> list();
     list<Driver> list(bool available);
     void update(int id, Vacation vacation);
-    void updateTimeToRetire(int id);
 
     void updateAvailability(int id, bool available);
 };

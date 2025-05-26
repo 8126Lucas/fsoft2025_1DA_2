@@ -27,7 +27,7 @@ public:
     Vacation addVacation(VacationView vacationView);
     int removeVacation(VacationView vacationView);
 
-    int getId() const;
+    int getID() const;
     Driver getDriver() const;
     Date getStartDate() const;
     Date getEndDate() const;
