@@ -20,7 +20,7 @@ Expense FinancialView::recordExpense() {
 
 Expense *FinancialView::getExpense(FinancialContainer *container) {
     int id = getExpenseId();
-    Expense *expense = container->get(id);
+    Expense *expense = container->getExpense(id);
     return expense;
 }
 
@@ -31,7 +31,7 @@ Revenue FinancialView::recordRevenue() {
 
 Revenue *FinancialView::getRevenue(FinancialContainer *container) {
     int id = getRevenueId();
-    Revenue *revenue = container->get(id);
+    Revenue *revenue = container->getRevenue(id);
     return revenue;
 }
 

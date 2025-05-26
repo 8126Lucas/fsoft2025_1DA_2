@@ -13,7 +13,7 @@
 enum TYPE{
     FUEL = 1,
     INSPECTION = 2,
-    INSURANCCE = 3,
+    INSURANCE = 3,
     TOLL = 4,
     FINE = 5,
 };
@@ -34,7 +34,7 @@ public:
     ~Expense();
 
     Expense recordExpense(int id, Trip trip, Date date, double amount, TYPE type);
-    void removeExpense();
+    int removeExpense();
 
     int getId() const;
     Trip getTrip() const;

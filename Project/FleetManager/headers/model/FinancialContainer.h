@@ -15,11 +15,9 @@ using namespace std;
 class FinancialContainer {
 private:
     list<Expense> expenses;
-    list<Expense>::iterator search(Expense &expense);
     list<Expense>::iterator searchExpense(int id);
 
     list<Revenue> revenues;
-    list<Revenue>::iterator search(Revenue &revenue);
     list<Revenue>::iterator searchRevenue(int id);
 public:
     Expense *getExpense(int id);

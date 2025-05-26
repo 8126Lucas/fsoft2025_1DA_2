@@ -22,13 +22,11 @@ Expense::~Expense() {}
 Expense Expense::recordExpense(int id, Trip trip, Date date, double amount, TYPE type) {
     Expense expense(id, trip, date, amount, type);
 
-    FinancialContainer::addExpense(expense);
-
     return expense;
 }
 
-int Expense::removeExpense(ExpenseView expenseView) {
-    int id = expenseView.removeExpense();
+int Expense::removeExpense() {
+    int id = FinancialView::getExpenseId();
     return id;
 }
 

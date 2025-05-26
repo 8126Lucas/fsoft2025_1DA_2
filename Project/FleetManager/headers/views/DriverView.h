@@ -6,6 +6,7 @@
 #define HEADERS_VIEWS_DRIVERVIEW_H
 #include <list>
 #include "Driver.h"
+#include "DriverContainer.h"
 
 class DriverView {
 public:

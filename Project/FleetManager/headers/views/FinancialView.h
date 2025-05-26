@@ -7,6 +7,7 @@
 #include <list>
 #include "Expense.h"
 #include "Revenue.h"
+#include "FinancialContainer.h"
 
 class FinancialView {
 public:

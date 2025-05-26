@@ -28,7 +28,7 @@ Driver *DriverContainer::get(int id) {
 void DriverContainer::add(Driver &driver) {
   list<Driver>::iterator it = search(driver.getId());
   if (it != this->drivers.end()) {
-    string msg = "Driver already exists: ID" + to_string(driver.getId());
+    string msg = "Driver (id): " + to_string(driver.getId());
     throw DuplicatedDataException(msg);
   }
   this->drivers.push_back(driver);
@@ -41,11 +41,11 @@ void DriverContainer::remove(int id) {
     this->drivers.erase(it);
   }
   else if (this->drivers.empty()) {
-    string msg = "No drivers in the list.";
+    string msg = "Driver (id): ";
     throw NonExistingDataException(msg);
   }
   else {
-    string msg = "Driver not found: ID" + to_string(id);
+    string msg = "Driver (id): " + to_string(id);
     throw NonExistingDataException(msg);
   }
 }
@@ -72,7 +72,7 @@ void DriverContainer::update(int id, const Vacation vacation) {
     it->setVacation(vacation);
   }
   else {
-    string msg = "Cannot update driver: Driver not found with ID" + to_string(id);
+    string msg = "Driver(id): " + to_string(id);
     throw NonExistingDataException(msg);
   }
 }
@@ -83,7 +83,7 @@ void DriverContainer::updateTimeToRetire(int id) {
     it->updateTimeToRetire();
   }
   else {
-    string msg = "Cannot update retirement time: Driver not found with ID" + to_string(id);
+    string msg = "Driver (id): " + to_string(id);
     throw NonExistingDataException(msg);
   }
 }
@@ -94,7 +94,7 @@ void DriverContainer::updateAvailability(int id, bool available) {
     it->setAvailability(available);
   }
   else {
-    string msg = "Cannot update availability: Driver not found with ID" + id;
+    string msg = "Driver (id): " + id;
     throw NonExistingDataException(msg);
   }
 }
