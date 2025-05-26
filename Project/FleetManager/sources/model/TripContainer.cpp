@@ -7,12 +7,13 @@
 #include "Utils.h"
 #include "TripContainer.h"
 #include "DuplicatedDataException.h"
+#include "InvalidDataException.h"
 #include "NonExistingDataException.h"
 
 using namespace std;
 
 list<Trip>::iterator TripContainer::search(int id) {
-  std::list<Trip>::iterator it = this->trips.begin();
+  list<Trip>::iterator it = this->trips.begin();
   for(; it != this->trips.end(); ++it) {
     if((*it) == id) {
       return it; // foi encontrado o ID
@@ -21,7 +22,7 @@ list<Trip>::iterator TripContainer::search(int id) {
 };
 
 void TripContainer::add(Trip &trip) {
-    std::list<Trip>::iterator it = this->trips.begin();
+    list<Trip>::iterator it = this->trips.begin();
     if (it == this->trips.end()) {
       this->trips.push_back(trip);
     }else{
@@ -64,6 +65,15 @@ list<Trip> TripContainer::list(STATE state){
   for(; it != this->trips.end(); ++it){
     if (it->getState() == state){
       trips.push_back(*it);}
+  }
+}
+
+Trip *TripContainer::getTrip(const int id)
+{
+  list<Trip>::iterator it = search(id);
+  if (it != this->trips.end())
+  {
+    return &(*it);
   }
 }
 

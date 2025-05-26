@@ -12,27 +12,27 @@
 using namespace std;
 
 Trip TripView::addTrip(){
-    Trip trip = utils::setTrip();
+    Trip trip = Utils::setTrip();
     return trip;
 }
 
-Trip Tripview::getTrip(TripContainer *container){
+Trip TripView::getTrip(TripContainer *container){
     int id = getId();
-    Trip trip = container->getTrip(id);
-    return trip;
+    Trip *trip = container->getTrip(id);
+    return *trip;
 }
 
 int getId(){
-    int id = Utils::getId("TripID");
+    int id = Utils::getInt("Trip ID:");
     return id;
 }
 
-void TripView::printTrip(const Trip *trip){
+void TripView::printTrip(Trip *trip){
     bool flag_error = false;
     do {
         try {
             flag_error = false;
-            cout << "*** Trip " << trip->getId() << " *** \n";
+            cout << "*** Trip " << trip->getID() << " *** \n";
             cout << "Distance: " << trip->getKM() <<" KM \n";
             cout << "Fuel: " << trip->getFuel() << "\n";
             cout << "Tolls: " << trip->getTolls() << "€ \n";
@@ -43,4 +43,6 @@ void TripView::printTrip(const Trip *trip){
         }
     }while(flag_error);
 }
+
+
 

@@ -15,9 +15,11 @@ public:
     static Trip startTrip();
     static Trip endTrip();
     static void updateTrip();
-    static void listTripsByDriver(Trip *trip);
+    // static void listTripsByDriver(Trip *trip); Acho que para já não vai ser necessario
+    static void printTrip(Trip *trip);
     static int getId();
+    static Trip getTrip(TripContainer *container);
 
-}
+};
 
 #endif //HEADERS_VIEW_TRIPVIEW_H
