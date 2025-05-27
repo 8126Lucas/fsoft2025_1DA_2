@@ -30,7 +30,7 @@ int Vacation::getID() const {
 }
 
 Driver Vacation::getDriver() const {
-  return driver;
+  return *driver;
 }
 
 Date Vacation::getStartDate() const {
@@ -43,6 +43,27 @@ Date Vacation::getEndDate() const {
 
 bool Vacation::getStatus() const {
   return status;
+}
+
+
+void Vacation::setID(int id) {
+    this->id = id;
+}
+
+void Vacation::setDriver(Driver driver) {
+    this->driver = &driver;
+}
+
+void Vacation::setStartDate(Date startDate) {
+    this->startDate = startDate;
+}
+
+void Vacation::setEndDate(Date endDate) {
+    this->endDate = endDate;
+}
+
+void Vacation::setStatus(bool status) {
+    this->status = status;
 }
 
 bool Vacation::isOnVacation() {
