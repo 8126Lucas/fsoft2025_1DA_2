@@ -34,7 +34,7 @@ int Expense::getID() const {
     return id;
 }
 
-Trip Expense::getTrip() const {
+Trip Expense::getTrip() {
     return trip;
 }
 

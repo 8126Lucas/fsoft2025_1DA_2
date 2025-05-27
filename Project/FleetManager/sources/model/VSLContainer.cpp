@@ -10,7 +10,7 @@
 list<VehicleStorageLocation>::iterator VSLContainer::search(int id) {
     list<VehicleStorageLocation>::iterator it = this->locations.begin();
     for (; it != this->locations.end(); ++it) {
-        if ((*it) == id) {
+        if (it->getID() == id) {
             return it;
         }
     }
@@ -51,7 +51,7 @@ void VSLContainer::update(const VehicleStorageLocation &location) {
     }
 }
 
-list<VehicleStorageLocation> VSLContainer::list() {
+list<VehicleStorageLocation> VSLContainer::listVSL() {
     return locations;
 }
 

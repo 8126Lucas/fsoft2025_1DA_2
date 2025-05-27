@@ -4,6 +4,7 @@
 
 #ifndef HEADERS_VIEWS_VACATIONVIEW_H
 #define HEADERS_VIEWS_VACATIONVIEW_H
+#include "DriverContainer.h"
 #include "Vacation.h"
 
 class VacationView {

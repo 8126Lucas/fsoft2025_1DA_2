@@ -27,18 +27,18 @@ Order::Order(const int orderId, const int clientId,const Date date,const string 
 Order::~Order() {}
 
 Order Order::addOrder(Order order) {
-    OrderContainer::add(order);
+    return order;
 }
 
 void Order::removeOrder(int id) {
-    OrderContainer::remove(id);
+    id = 5;
 }
 
 void Order::completeOrder(int id) {
-    OrderContainer::complete(id);
+    id = 5;
 }
 void Order::listOrders() {
-    OrderContainer::list();
+
 }
 /*void Order::listOrdersByCompletion() {
   list<Order> listUncompleted;
@@ -49,11 +49,10 @@ void Order::listOrders() {
 }*/
 
 void Order::listCompletedOrders() {
-    OrderContainer::listCompleted();
 }
 
 void Order::listUncompletedOrders() {
-    OrderContainer::listUncompleted();
+
 }
 
 int Order::getOrderId() {
@@ -90,4 +89,8 @@ double Order::getShippingValue() {
 
 ORDERSTATUS Order::getStatus() {
     return status;
+}
+
+void Order::setStatus(ORDERSTATUS status) {
+    this->status = status;
 }

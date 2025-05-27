@@ -4,15 +4,17 @@
 
 #ifndef HEADERS_MODEL_INSPECTION_H
 #define HEADERS_MODEL_INSPECTION_H
-#include "InspectionView.h"
-#include "Vehicle.h"
+#include "Date.h"
+#include <string>
 
 using namespace std;
+
+class Vehicle;
 
 class Inspection {
   private:
     int id;
-    Vehicle vehicle;
+    Vehicle *vehicle;
     Date date;
     double cost;
     Date today = Date::getToday();
@@ -24,11 +26,11 @@ class Inspection {
     ~Inspection();
 
     int getID() const;
-    Vehicle getVehicle() const;
+    Vehicle *getVehicle() const;
     Date getDate() const;
 
     void setID(int id);
-    void setVehicle(Vehicle vehicle);
+    void setVehicle(Vehicle *vehicle);
     void setDate(Date date);
     void setCost(double cost);
 

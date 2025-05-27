@@ -31,8 +31,8 @@ public:
 
     ~Driver();
 
-    void addDriver();
-    void removeDriver();
+    // void addDriver();
+    // void removeDriver();
 
     int getID();
     char getLicense() const;

@@ -43,6 +43,8 @@ include_directories(
         ${PROJECT_HEADERS_MODEL_DIR}
         ${PROJECT_SOURCES_MODEL_DIR})
 set(MODEL_SOURCE_FILES
+        ${PROJECT_HEADERS_MODEL_DIR}/Vehicle.h
+        ${PROJECT_SOURCES_MODEL_DIR}/Vehicle.cpp
         ${PROJECT_HEADERS_MODEL_DIR}/Date.h
         ${PROJECT_SOURCES_MODEL_DIR}/Date.cpp
         ${PROJECT_HEADERS_MODEL_DIR}/Driver.h
@@ -68,11 +70,9 @@ set(MODEL_SOURCE_FILES
         ${PROJECT_HEADERS_MODEL_DIR}/Truck.h
         ${PROJECT_SOURCES_MODEL_DIR}/Truck.cpp
         ${PROJECT_HEADERS_MODEL_DIR}/Vacation.h
-        # ${PROJECT_SOURCES_MODEL_DIR}/Vacation.cpp
+        ${PROJECT_SOURCES_MODEL_DIR}/Vacation.cpp
         ${PROJECT_HEADERS_MODEL_DIR}/Van.h
         ${PROJECT_SOURCES_MODEL_DIR}/Van.cpp
-        ${PROJECT_HEADERS_MODEL_DIR}/Vehicle.h
-        ${PROJECT_SOURCES_MODEL_DIR}/Vehicle.cpp
         ${PROJECT_HEADERS_MODEL_DIR}/VehicleContainer.h
         ${PROJECT_SOURCES_MODEL_DIR}/VehicleContainer.cpp
         ${PROJECT_HEADERS_MODEL_DIR}/VehicleStorageLocation.h
@@ -91,15 +91,15 @@ include_directories(
         ${PROJECT_SOURCES_VIEWS_DIR})
 set(VIEWS_SOURCE_FILES
         ${PROJECT_HEADERS_VIEWS_DIR}/DriverView.h
-        # ${PROJECT_SOURCES_VIEWS_DIR}/DriverView.cpp
+        ${PROJECT_SOURCES_VIEWS_DIR}/DriverView.cpp
         ${PROJECT_HEADERS_VIEWS_DIR}/FinancialView.h
-        # ${PROJECT_SOURCES_VIEWS_DIR}/FinancialView.cpp
+        ${PROJECT_SOURCES_VIEWS_DIR}/FinancialView.cpp
         ${PROJECT_HEADERS_VIEWS_DIR}/InspectionView.h
         ${PROJECT_SOURCES_VIEWS_DIR}/InspectionView.cpp
         ${PROJECT_HEADERS_VIEWS_DIR}/InsuranceView.h
         ${PROJECT_SOURCES_VIEWS_DIR}/InsuranceView.cpp
-        # ${PROJECT_HEADERS_VIEWS_DIR}/OrderView.h
-        # ${PROJECT_SOURCES_VIEWS_DIR}/OrderView.cpp
+        ${PROJECT_HEADERS_VIEWS_DIR}/OrderView.h
+        ${PROJECT_SOURCES_VIEWS_DIR}/OrderView.cpp
         ${PROJECT_HEADERS_VIEWS_DIR}/Utils.h
         ${PROJECT_SOURCES_VIEWS_DIR}/Utils.cpp
         ${PROJECT_HEADERS_VIEWS_DIR}/VehicleStorageLocationView.h

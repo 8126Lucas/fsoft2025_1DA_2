@@ -4,8 +4,6 @@
 
 #ifndef HEADERS_MODEL_VACATION_H
 #define HEADERS_MODEL_VACATION_H
-#include "VacationView.h"
-#include "Driver.h"
 #include "Date.h"
 
 class Driver;
@@ -24,17 +22,14 @@ public:
     Vacation(int id, Driver *driver, Date startDate, Date endDate, bool status);
     ~Vacation();
 
-    Vacation addVacation(VacationView vacationView);
-    int removeVacation(VacationView vacationView);
-
     int getID() const;
-    Driver getDriver() const;
+    Driver *getDriver() const;
     Date getStartDate() const;
     Date getEndDate() const;
     bool getStatus() const;
 
     void setID(int id);
-    void setDriver(Driver driver);
+    void setDriver(Driver &driver);
     void setStartDate(Date startDate);
     void setEndDate(Date endDate);
     void setStatus(bool status);

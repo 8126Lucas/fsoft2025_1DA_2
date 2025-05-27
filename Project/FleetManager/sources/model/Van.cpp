@@ -14,6 +14,8 @@ Van::Van(CATEGORY category, string brand, string model, int year, string license
     this->spaceCapacity = spaceCapacity;
 }
 
+Van::~Van() {}
+
 bool Van::canCarryLoad(Order &order) {
     if (spaceCapacity > order.getCargoSpace()) {return true;}
     return false;

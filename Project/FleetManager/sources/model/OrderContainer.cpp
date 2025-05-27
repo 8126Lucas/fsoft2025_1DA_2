@@ -8,10 +8,12 @@
 #include "Utils.h"
 #include <utility>
 
+using namespace std;
+
 list<Order>::iterator OrderContainer::search(int orderId) {
-    ::list<Order>::iterator it = this->orders.begin();
+    list<Order>::iterator it = this->orders.begin();
     for (; it != this->orders.end(); ++it) {
-        if ((*it) == orderId) {
+        if (it->getOrderId() == orderId) {
             return it;
         }
     }
@@ -26,7 +28,7 @@ Order *OrderContainer::get(int orderId) {
     return NULL;
 }
 void OrderContainer::add(Order &order) {
-    ::list<Order>::iterator it = search(order.getorderId());
+    list<Order>::iterator it = search(order.getOrderId());
     if (it != this->orders.end()) {
         string msg = "order: " + to_string(order.getOrderId());
         throw DuplicatedDataException(msg);
@@ -37,7 +39,7 @@ void OrderContainer::add(Order &order) {
 }
 
 void OrderContainer::remove(int orderId) {
-    ::list<Order>::iterator it = search(orderId);
+    list<Order>::iterator it = search(orderId);
     if (it != this->orders.end()) {
         this->orders.erase(it);
     }
@@ -48,20 +50,20 @@ void OrderContainer::remove(int orderId) {
 }
 
 void OrderContainer::complete(int orderId) {
-    ::list<Order>::iterator it = search(orderId);
+    list<Order>::iterator it = search(orderId);
     if (it != this->orders.end()) {
-        (*it).setStatus(COMPLETED);//ver os sets
+        it->setStatus(COMPLETED);//ver os sets
     }
 }
 
-list<Order> OrderContainer::list() {
-    ::list<Order> newList(this->orders);
+list<Order> OrderContainer::listOrders() {
+    list<Order> newList(this->orders);
     return newList;
 }
 
 std::list<Order> OrderContainer::listUncompleted(){
-    ::list<Order> listUncompleted;
-    ::list<Order>::iterator it = this->orders.begin();
+    list<Order> listUncompleted;
+    list<Order>::iterator it = this->orders.begin();
     for (; it != this->orders.end(); ++it) {
         if (it->getStatus() == IN_PROGRESS) listUncompleted.push_back(*it);
     }
@@ -69,8 +71,8 @@ std::list<Order> OrderContainer::listUncompleted(){
 }
 
 std::list<Order> OrderContainer::listCompleted(){
-    ::list<Order> listCompleted;
-    ::list<Order>::iterator it = this->orders.begin();
+    list<Order> listCompleted;
+    list<Order>::iterator it = this->orders.begin();
     for (; it != this->orders.end(); ++it) {
         if (it->getStatus() == COMPLETED) listCompleted.push_back(*it);
     }
@@ -87,9 +89,9 @@ std::list<Order> OrderContainer::listCompleted(){
     return std::make_pair(listUncompleted, listCompleted);
 }
 */
-std::list<Order> OrderContainer::listClient(int clientId){
-    ::list<Order> listClient;
-    ::list<Order>::iterator it = this->orders.begin();
+list<Order> OrderContainer::listClient(int clientId){
+    list<Order> listClient;
+    list<Order>::iterator it = this->orders.begin();
     for (; it != this->orders.end(); ++it) {
         if (it->getClientId() == clientId) listClient.push_back(*it);
     }

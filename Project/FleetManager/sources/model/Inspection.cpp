@@ -9,7 +9,7 @@ Inspection::Inspection(): id(0), cost(0) {
 
 Inspection::Inspection(int id, Vehicle *vehicle, Date &date, double cost) {
     this->id = id;
-    this->vehicle = *vehicle;
+    this->vehicle = vehicle;
     this->date = date;
     this->cost = cost;
 }
@@ -20,7 +20,7 @@ int Inspection::getID() const {
     return id;
 }
 
-Vehicle Inspection::getVehicle() const {
+Vehicle *Inspection::getVehicle() const {
     return vehicle;
 }
 
@@ -32,7 +32,7 @@ void Inspection::setID(int id) {
     this->id = id;
 }
 
-void Inspection::setVehicle(Vehicle vehicle) {
+void Inspection::setVehicle(Vehicle *vehicle) {
     this->vehicle = vehicle;
 }
 

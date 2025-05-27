@@ -7,8 +7,9 @@
 #include <string>
 #include <list>
 #include <unordered_map>
-#include "Vehicle.h"
-#include "VehicleContainer.h"
+
+
+class Vehicle;
 
 using namespace std;
 

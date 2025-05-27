@@ -4,14 +4,18 @@
 
 #ifndef HEADERS_VIEWS_UTILS_H
 #define HEADERS_VIEWS_UTILS_H
+
 #include <string>
 #include "Vehicle.h"
+#include "VehicleContainer.h"
 #include "VehicleStorageLocation.h"
 #include "Driver.h"
 #include "Trip.h"
 #include "Order.h"
 #include "Insurance.h"
 #include "Inspection.h"
+#include "Expense.h"
+#include "Revenue.h"
 
 using namespace std;
 

@@ -17,7 +17,7 @@ class OrderContainer {
     Order *get(int orderId);
     void add(Order &order);//static
     void remove(int orderId);
-    list<Order> list();
+    list<Order> listOrders();
     // std::pair<std::list<Order>, std::list<Order>> listCompletion();
     std::list<Order> listCompleted();
     std::list<Order> listUncompleted();

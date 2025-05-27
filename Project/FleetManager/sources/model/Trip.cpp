@@ -24,12 +24,19 @@ Trip::Trip(Order order, double kilometers, double fuel, double fuelCost,double f
 
 }
 
+Trip::~Trip() {}
+
 int Trip::getID() {
   return this->id;
 }
 
 STATE Trip::getState(){
   return this->state;
+}
+
+Driver Trip::getDriver() {
+  Driver driver;
+  return driver;
 }
 
 void Trip::setState(STATE newState){

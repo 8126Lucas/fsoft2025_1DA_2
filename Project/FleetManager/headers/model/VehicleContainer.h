@@ -5,11 +5,14 @@
 #ifndef HEADERS_MODEL_VEHICLECONTAINER_H
 #define HEADERS_MODEL_VEHICLECONTAINER_H
 
-#include <list>
-
+#include "Trip.h"
+#include "VehicleStorageLocation.h"
+#include <string>
 #include "Truck.h"
 #include "Van.h"
-#include "Vehicle.h"
+#include "Inspection.h"
+#include "Insurance.h"
+#include <list>
 
 using namespace std;
 

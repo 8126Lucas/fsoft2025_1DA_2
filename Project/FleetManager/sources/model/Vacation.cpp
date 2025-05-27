@@ -15,22 +15,12 @@ Vacation::Vacation(int id, Driver *driver, Date startDate, Date endDate, bool st
 
 Vacation::~Vacation() {}
 
-Vacation Vacation::addVacation(VacationView vacationView) {
-    Vacation vacation = vacationView.addVacation();
-    return vacation;
-}
-
-int Vacation::removeVacation(VacationView vacationView) {
-    int id = vacationView.removeVacation();
-    return id;
-}
-
 int Vacation::getID() const {
     return id;
 }
 
-Driver Vacation::getDriver() const {
-  return *driver;
+Driver *Vacation::getDriver() const {
+  return driver;
 }
 
 Date Vacation::getStartDate() const {
@@ -50,7 +40,7 @@ void Vacation::setID(int id) {
     this->id = id;
 }
 
-void Vacation::setDriver(Driver driver) {
+void Vacation::setDriver(Driver &driver) {
     this->driver = &driver;
 }
 

@@ -4,8 +4,10 @@
 
 #ifndef HEADERS_MODEL_VAN_H
 #define HEADERS_MODEL_VAN_H
-#include <string>
+
 #include "Vehicle.h"
+#include "Order.h"
+#include <string>
 
 using namespace std;
 

@@ -11,7 +11,7 @@
 list<Truck>::iterator VehicleContainer::searchTruck(const string &licensePlate) {
     list<Truck>::iterator it = this->trucks.begin();
     for (; it != this->trucks.end(); ++it) {
-        if ((*it) == licensePlate) {
+        if (it->getLicensePlate() == licensePlate) {
             return it;
         }
     }
@@ -21,7 +21,7 @@ list<Truck>::iterator VehicleContainer::searchTruck(const string &licensePlate) 
 list<Van>::iterator VehicleContainer::searchVan(const string &licensePlate) {
     list<Van>::iterator it = this->vans.begin();
     for (; it != this->vans.end(); ++it) {
-        if ((*it) == licensePlate) {
+        if (it->getLicensePlate() == licensePlate) {
             return it;
         }
     }
@@ -141,10 +141,10 @@ void VehicleContainer::update(string &licensePlate, const Inspection inspection)
     list<Truck>::iterator truckIT = searchTruck(licensePlate);
     list<Van>::iterator vanIT = searchVan(licensePlate);
     if (truckIT != this->trucks.end()) {
-        truckIT->setInspection(inspection);
+        truckIT->setInspection(&inspection);
     }
     else if (vanIT != this->vans.end()) {
-        vanIT->setInspection(inspection);
+        vanIT->setInspection(&inspection);
     }
     else {
         string msg = "Vehicle (inspection): " + licensePlate;

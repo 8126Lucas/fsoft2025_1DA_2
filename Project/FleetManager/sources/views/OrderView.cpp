@@ -12,7 +12,7 @@
 using namespace std;
 
 Order OrderView::addOrder() {
-  Order order = Utils::setOrder();
+  Order order = Order();
   return order;
 }
 

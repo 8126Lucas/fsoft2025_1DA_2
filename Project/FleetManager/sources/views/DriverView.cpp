@@ -13,7 +13,7 @@
 using namespace std;
 
 Driver DriverView::addDriver() {
-    Driver driver = Utils::setDriver();
+    Driver driver = Driver();
     return driver;
 }
 

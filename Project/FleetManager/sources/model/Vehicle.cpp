@@ -64,7 +64,7 @@ Insurance Vehicle::getInsurance() const {
 }
 
 Inspection Vehicle::getInspection() const {
-    return inspection;
+    return *inspection;
 }
 
 VehicleStorageLocation Vehicle::getVSL() const {
@@ -76,7 +76,7 @@ int Vehicle::getInsuranceID() const {
 }
 
 int Vehicle::getInspectionID() const {
-    return inspection.getID();
+    return inspection->getID();
 }
 
 int Vehicle::getVSLID() const {
@@ -115,7 +115,7 @@ void Vehicle::setInsurance(const Insurance insurance) {
     this->insurance = insurance;
 }
 
-void Vehicle::setInspection(const Inspection inspection) {
+void Vehicle::setInspection(const Inspection *inspection) {
     this->inspection = inspection;
 
 }
@@ -135,31 +135,44 @@ void Vehicle::addFuel() {
 }
 
 bool Vehicle::isFuelEnough(Trip &trip) {
-    // O Vítor precisa e fazer um getFuel()
     if (this->fuel > trip.getFuel()) {return true;}
     return false;
 }
 
 void Vehicle::updateMileage(Trip &trip) {
     this->mileage += trip.getKM();
-    // update container
 }
 
 void Vehicle::insuranceAlert() {
     if (this->insurance.isExpired()) {
-        VehicleView::insuranceAlert(*this);
+        if (Truck *truck = dynamic_cast<Truck *>(this)) {
+            VehicleView::insuranceAlert(*truck);
+        }
+        else if (Van *van = dynamic_cast<Van *>(this)) {
+            VehicleView::insuranceAlert(*van);
+        }
     }
 }
 
 void Vehicle::inspectionAlert() {
-    if (this->inspection.isDued()) {
-        VehicleView::inspectionAlert(*this);
+    if (this->insurance.isExpired()) {
+        if (Truck *truck = dynamic_cast<Truck *>(this)) {
+            VehicleView::inspectionAlert(*truck);
+        }
+        else if (Van *van = dynamic_cast<Van *>(this)) {
+            VehicleView::inspectionAlert(*van);
+        }
     }
 }
 
 void Vehicle::fuelAlert(Trip &trip) {
     if (!this->isFuelEnough(trip)) {
-        VehicleView::fuelAlert(*this);
+        if (Truck *truck = dynamic_cast<Truck *>(this)) {
+            VehicleView::inspectionAlert(*truck);
+        }
+        else if (Van *van = dynamic_cast<Van *>(this)) {
+            VehicleView::inspectionAlert(*van);
+        }
     }
 }
 

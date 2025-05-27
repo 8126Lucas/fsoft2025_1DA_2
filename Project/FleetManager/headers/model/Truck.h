@@ -4,12 +4,14 @@
 
 #ifndef HEADERS_MODEL_TRUCK_H
 #define HEADERS_MODEL_TRUCK_H
-#include <string>
+
 #include "Vehicle.h"
+#include "Order.h"
+#include <string>
 
 using namespace std;
 
-class Truck : public Vehicle {
+class Truck: public Vehicle {
   private:
     double weightCapacity;
 

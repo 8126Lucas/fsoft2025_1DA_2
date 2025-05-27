@@ -4,22 +4,22 @@
 
 #ifndef HEADERS_MODEL_VEHICLE_H
 #define HEADERS_MODEL_VEHICLE_H
-#include <string>
 
-#include "Inspection.h"
-#include "Insurance.h"
 #include "VehicleStorageLocation.h"
-#include "Trip.h"
+#include "Insurance.h"
+#include <string>
 
 using namespace std;
 
-class Insurance;
-class Inspection;
 
 enum CATEGORY {
   TRUCK = 1,
   VAN = 2,
 };
+
+class Inspection;
+
+class Trip;
 
 class Vehicle {
   protected:
@@ -32,7 +32,7 @@ class Vehicle {
     double fuel;
     bool available;
     Insurance insurance;
-    Inspection inspection;
+    const Inspection *inspection;
     VehicleStorageLocation vsl;
 
   public:
@@ -42,7 +42,7 @@ class Vehicle {
     Vehicle(CATEGORY category, const string &brand, const string &model, int year, const string &licensePlate,
             double mileage, double fuel, bool available = true);
 
-    ~Vehicle();
+    virtual ~Vehicle();
 
     CATEGORY getCategory() const;
     string getBrand() const;
@@ -57,6 +57,7 @@ class Vehicle {
     int getInspectionID() const;
     int getVSLID() const;
     Insurance getInsurance() const;
+
     Inspection getInspection() const;
     VehicleStorageLocation getVSL() const;
 
@@ -68,7 +69,7 @@ class Vehicle {
     void setMileage(double mileage);
     void setFuel(double fuel);
     void setInsurance(Insurance insurance);
-    void setInspection(Inspection inspection);
+    void setInspection(const Inspection *inspection);
     void setVSL(const VehicleStorageLocation &vsl);
     void setAvailability(bool availability);
 

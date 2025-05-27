@@ -14,6 +14,8 @@ Truck::Truck(CATEGORY category, string brand, string model, int year, string lic
     this->weightCapacity = weightCapacity;
 }
 
+Truck::~Truck() {}
+
 bool Truck::canCarryLoad(Order &order) {
     if (weightCapacity > order.getCargoWeight()) {return true;}
     return false;

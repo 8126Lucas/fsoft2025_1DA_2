@@ -14,26 +14,25 @@
 using namespace std;
 
 Expense FinancialView::recordExpense() {
-    Expense expense = Utils::setExpense();
-    return expense;
+    return Expense();
 }
 
 Expense *FinancialView::getExpense(FinancialContainer *container) {
     int id = getExpenseID();
-    Expense *expense = container->getExpense(id);
-    return expense;
+    // Expense *expense = container->getExpense(id);
+    Expense expense = Expense();
+    return &expense;
 }
 
-Revenue FinancialView::recordRevenue() {
-    Revenue revenue = Utils::setRevenue();
-    return revenue;
+void FinancialView::recordRevenue() {
 }
 
-Revenue *FinancialView::getRevenue(FinancialContainer *container) {
-    int id = getRevenueID();
-    Revenue *revenue = container->getRevenue(id);
-    return revenue;
-}
+// void *FinancialView::getRevenue(FinancialContainer *container) {
+//     int id = getRevenueID();
+//     // Revenue *revenue = container->getRevenue(id);
+//     // Revenue revenue = Revenue();
+//     // return &revenue;
+// }
 
 int FinancialView::getExpenseID() {
     int id = Utils::getInt("ID");
@@ -45,7 +44,7 @@ int FinancialView::getRevenueID() {
     return id;
 }
 
-void FinancialView::printExpense(const Expense *expense) {
+void FinancialView::printExpense(Expense *expense) {
     bool flag_error = false;
     do {
         try {
@@ -76,10 +75,10 @@ void FinancialView::printRevenue(const Revenue *revenue) {
     do {
         try {
             flag_error = false;
-            cout << "*** Revenue " << revenue->getID() << " ***\n";
-            cout << "Order: " << revenue->getOrder().getID() << endl;
-            cout << "Date: " << revenue->getDate() << endl;
-            cout << "Amount: " << revenue->getAmount() << endl;
+            // cout << "*** Revenue " << revenue->getID() << " ***\n";
+            // cout << "Order: " << revenue->getOrder().getOrderId() << endl;
+            // cout << "Date: " << revenue->getDate() << endl;
+            // cout << "Amount: " << revenue->getAmount() << endl;
         } catch (NonExistingDataException &error) {
             flag_error = true;
         }

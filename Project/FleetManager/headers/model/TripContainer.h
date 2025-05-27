@@ -21,9 +21,9 @@ public:
     void failed(Trip &trip);
     void updateState(int id, STATE state);
     Trip *getTrip(int id);
-    list<Trip> list();
-    list<Trip> list(Driver &driver);
-    list<Trip> list(STATE state);
+    list<Trip> listTrips();
+    list<Trip> listTripsByDriver(Driver &driver);
+    list<Trip> listTripsByState(STATE state);
 
 };
 

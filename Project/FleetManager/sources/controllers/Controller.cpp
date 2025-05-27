@@ -103,14 +103,14 @@ void Controller::runVehicle() {
             case 6: {
                 VehicleContainer &container = this->model.getVehicleContainer();
                 Insurance insurance = this->insuranceView.addInsurance(container);
-                string licensePlate = insurance.getVehicle().getLicensePlate();
+                string licensePlate = insurance.getVehicle()->getLicensePlate();
                 container.update(licensePlate, insurance);
             }
                 break;
             case 7: {
                 VehicleContainer &container = this->model.getVehicleContainer();
                 Inspection inspection = this->inspectionView.addInspection(container);
-                string licensePlate = inspection.getVehicle().getLicensePlate();
+                string licensePlate = inspection.getVehicle()->getLicensePlate();
                 container.update(licensePlate, inspection);
             }
                 break;
@@ -128,7 +128,7 @@ void Controller::runVehicle() {
                 break;
             case 10: {
                 VSLContainer &container = this->model.getVSLContainer();
-                list<VehicleStorageLocation> locations = container.list();
+                list<VehicleStorageLocation> locations = container.listVSL();
                 if (!locations.empty()) {
                     this->vslView.printListVSL(locations);
                 }
@@ -161,3 +161,11 @@ void Controller::runVehicle() {
         }
     } while (op != 0);
 }
+
+void Controller::runDriver() {}
+
+void Controller::runTrip() {}
+
+void Controller::runFinancial() {}
+
+void Controller::runOrder() {}

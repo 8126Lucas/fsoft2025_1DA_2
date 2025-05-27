@@ -10,7 +10,7 @@
 list<Driver>::iterator DriverContainer::search(int id) {
   list<Driver>::iterator it = this->drivers.begin();
   for (; it != this->drivers.end(); ++it) {
-    if ((*it) == id) {
+    if (it->getID() == id) {
       return it;
     }
   }
@@ -50,12 +50,12 @@ void DriverContainer::remove(int id) {
   }
 }
 
-list<Driver> DriverContainer::list() {
+list<Driver> DriverContainer::listDrivers() {
   list<Driver> newList(this->drivers);
   return newList;
 }
 
-list<Driver> DriverContainer::list(bool available) {
+list<Driver> DriverContainer::listDrivers(bool available) {
   list<Driver> newList;
   list<Driver>::iterator it = this->drivers.begin();
   for (; it != this->drivers.end(); ++it) {

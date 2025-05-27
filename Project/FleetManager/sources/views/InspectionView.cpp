@@ -18,7 +18,7 @@ Inspection InspectionView::addInspection(VehicleContainer &container) {
             Date date = Utils::getDate("Date");
             double cost = Utils::getDouble("Cost");
             inspection.setID(id);
-            inspection.setVehicle(*vehicle);
+            inspection.setVehicle(vehicle);
             inspection.setDate(date);
             inspection.setCost(cost);
         } catch (InvalidDataException &error) {

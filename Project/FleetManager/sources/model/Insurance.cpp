@@ -24,8 +24,8 @@ int Insurance::getID() const {
     return id;
 }
 
-Vehicle Insurance::getVehicle() const {
-    return *vehicle;
+Vehicle *Insurance::getVehicle() const {
+    return vehicle;
 }
 
 Date Insurance::getEndDate() const {

@@ -37,7 +37,7 @@ public:
     int removeExpense();
 
     int getID() const;
-    Trip getTrip() const;
+    Trip getTrip();
     Date getDate() const;
     double getAmount() const;
     TYPE getType() const;

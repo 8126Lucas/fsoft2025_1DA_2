@@ -6,10 +6,13 @@
 #define HEADERS_VIEWS_VEHICLEVIEW_H
 #include <list>
 
+#include "Vehicle.h"
 #include "Truck.h"
 #include "Van.h"
-#include "Vehicle.h"
 #include "VehicleContainer.h"
+#include "Date.h"
+
+using namespace std;
 
 class VehicleView {
 public:
@@ -35,7 +38,6 @@ public:
     static void fuelAlert(Truck &truck);
     static void fuelAlert(Van &van);
 
-    ostream &operator<<(ostream &stream, const Date &date);
 };
 
 #endif //HEADERS_VIEWS_VEHICLEVIEW_H

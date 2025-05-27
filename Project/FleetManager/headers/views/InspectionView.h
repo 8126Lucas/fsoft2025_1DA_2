@@ -5,6 +5,7 @@
 #ifndef HEADERS_VIEWS_INSPECTIONVIEW_H
 #define HEADERS_VIEWS_INSPECTIONVIEW_H
 #include "Inspection.h"
+#include "VehicleContainer.h"
 
 class InspectionView {
 public:

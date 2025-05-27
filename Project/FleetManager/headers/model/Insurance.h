@@ -6,10 +6,8 @@
 #define HEADERS_MODEL_INSURANCE_H
 #include "Date.h"
 
-
 using namespace std;
 
-class InsuranceView;
 class Vehicle;
 
 class Insurance {
@@ -28,7 +26,7 @@ class Insurance {
     ~Insurance();
 
     int getID() const;
-    Vehicle getVehicle() const;
+    Vehicle *getVehicle() const;
     Date getEndDate() const;
     double getMonthlyCost() const;
 

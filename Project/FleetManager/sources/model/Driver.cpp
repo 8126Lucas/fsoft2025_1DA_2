@@ -18,15 +18,15 @@ Driver::Driver(int id, char &license, int age) : available(true) {
 
 Driver::~Driver() {}
 
-void Driver::addDriver() {
-    Driver driver = DriverView::getDriver(DriverContainer *container);
-    DriverContainer::add(driver);
-}
-
-void Driver::removeDriver() {
-    int id = DriverView::getID();
-    DriverContainer::remove(id);
-}
+// void Driver::addDriver() {
+//     Driver driver = DriverView::getDriver(DriverContainer *container);
+//     DriverContainer::add(driver);
+// }
+//
+// void Driver::removeDriver() {
+//     int id = DriverView::getID();
+//     DriverContainer::remove(id);
+// }
 
 int Driver::getID() {
     return id;
@@ -76,7 +76,7 @@ void Driver::retirementAlert() {
     }
 }
 
-bool Vehicle::isAvailable() const {
+bool Driver::isAvailable() const {
     if (this->available) {return true;}
     return false;
 }

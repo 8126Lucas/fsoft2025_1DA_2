@@ -3,9 +3,7 @@
 //
 
 #include "VehicleStorageLocation.h"
-
 #include <algorithm>
-
 #include "NonExistingDataException.h"
 #include "Vehicle.h"
 #include "VehicleStorageLocationView.h"

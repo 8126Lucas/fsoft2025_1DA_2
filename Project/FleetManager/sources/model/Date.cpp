@@ -128,7 +128,7 @@ int Date::operator- (const Date &date) const {
     return difftime(timeToday, timeExistingDate) / secondsPerDay;
 }
 
-ostream &Date::operator<< (ostream &stream, const Date &date) {
+ostream &operator<<(ostream &stream, const Date &date) {
     stream << date.day << "/" << date.month << "/" << date.year;
     return stream;
 }

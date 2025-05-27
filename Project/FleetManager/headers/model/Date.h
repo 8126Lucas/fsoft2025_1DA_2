@@ -36,7 +36,7 @@ public:
       bool operator>(const Date &date) const;
       bool operator<(const Date &date) const;
       int operator-(const Date & date) const;
-      ostream &operator<<(ostream &stream, const Date &date);
+      friend ostream &operator<<(ostream &stream, const Date &date);
 
 
 };

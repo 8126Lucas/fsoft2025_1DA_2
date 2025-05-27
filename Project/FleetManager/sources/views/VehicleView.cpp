@@ -4,13 +4,14 @@
 
 #include <iostream>
 #include "VehicleView.h"
+#include "Date.h"
 #include "InvalidDataException.h"
 #include "NonExistingDataException.h"
-#include "Truck.h"
-#include "Utils.h"
-#include "Van.h"
 #include "Vehicle.h"
+#include "Truck.h"
+#include "Van.h"
 #include "VehicleContainer.h"
+#include "Utils.h"
 
 using namespace std;
 
@@ -101,12 +102,6 @@ Van *VehicleView::getVan(VehicleContainer *container) {
 string VehicleView::getLicensePlate() {
     string licensePlate = Utils::getString("License Plate");
     return licensePlate;
-}
-
-
-ostream &operator<<(ostream &stream, const Date &date) {
-    stream << date.getDay() << "/" << date.getMonth() << "/" << date.getYear();
-    return stream;
 }
 
 void VehicleView::printTruck(const Truck *truck) {

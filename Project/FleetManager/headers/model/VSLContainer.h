@@ -20,7 +20,7 @@ public:
     void add(const VehicleStorageLocation &location);
     void remove(int id);
     void update(const VehicleStorageLocation &location);
-    list<VehicleStorageLocation> list();
+    list<VehicleStorageLocation> listVSL();
 
     VehicleStorageLocation *get(int id);
 };
