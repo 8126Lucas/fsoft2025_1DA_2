@@ -75,7 +75,8 @@ int View::menuTrip() {
     cout << "1. Create Trip\n";
     cout << "2. Start Trip\n";
     cout << "3. Complete Trip\n";
-    cout << "4. List Uncompleted Trips\n";
+    cout << "4. Fail Trip\n";
+    cout << "5. List Uncompleted Trips\n";
     cout << "5. List Completed Trips\n\n";
     cout << "0. Go Back\n\n";
     op = Utils::getInt("Your Option");

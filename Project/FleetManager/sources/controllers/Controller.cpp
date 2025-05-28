@@ -5,12 +5,11 @@
 #include "Controller.h"
 #include <iostream>
 #include "Utils.h"
+#include <list>
 
 using namespace std;
 
-Controller::Controller(Enterprise &enterprise) {
-    this->model = enterprise;
-}
+Controller::Controller(Enterprise &enterprise): model(enterprise) {}
 
 void Controller::run() {
     int op = -1;
@@ -162,9 +161,66 @@ void Controller::runVehicle() {
     } while (op != 0);
 }
 
-void Controller::runDriver() {}
+void Controller::runTrip() {
+    int op = -1;
+    do {
+        op = this->view.menuTrip();
+        switch (op) {
+            case 0:
+                run();
+                break;
+            case 1: {
+                OrderContainer &containerOrder = this->model.getOrderContainer();
 
-void Controller::runTrip() {}
+                Trip trip = this->tripView.addTrip(containerOrder);
+                TripContainer &containerTrip = this->model.getTripContainer();
+                containerTrip.add(trip);
+            }
+                break;
+            case 2: {
+                DriverContainer &containerDriver = this->model.getDriverContainer();
+                VehicleContainer &containerVehicle = this->model.getVehicleContainer();
+                TripContainer &containerTrip = this->model.getTripContainer();
+                int id = Utils::getInt("Trip ID");
+                Trip *trip = containerTrip.getTrip(id);
+                this->tripView.startTrip(trip, containerDriver, containerVehicle);
+                containerTrip.update(*trip);
+            }
+            case 3: {
+                DriverContainer &containerDriver = this->model.getDriverContainer();
+                VehicleContainer &containerVehicle = this->model.getVehicleContainer();
+                TripContainer &containerTrip = this->model.getTripContainer();
+                int id = Utils::getInt("Trip ID");
+                Trip *trip = containerTrip.getTrip(id);
+                this->tripView.endTrip(trip, containerDriver, containerVehicle);
+                containerTrip.update(*trip);
+            }
+            case 4: {
+                TripContainer &containerTrip = this->model.getTripContainer();
+                int id = Utils::getInt("Trip ID");
+                Trip *trip = containerTrip.getTrip(id);
+                this->tripView.failTrip(trip);
+                containerTrip.update(*trip);
+            }
+            case 5: {
+                TripContainer &containerTrip = this->model.getTripContainer();
+                list<Trip> listFailed = containerTrip.listTripsByState(FAILED);
+                list<Trip> listSupressed = containerTrip.listTripsByState(SUPRESSED);
+                list<Trip> listIncoming = containerTrip.listTripsByState(INCOMING);
+                this->tripView.printListTrips(listFailed);
+                this->tripView.printListTrips(listSupressed);
+                this->tripView.printListTrips(listIncoming);
+            }
+            case 6: {
+                TripContainer &containerTrip = this->model.getTripContainer();
+                list<Trip> listDelivered = containerTrip.listTripsByState(DELIVERED);
+                this->tripView.printListTrips(listDelivered);
+            }
+        }
+    } while (op != 0);
+}
+
+void Controller::runDriver() {}
 
 void Controller::runFinancial() {}
 

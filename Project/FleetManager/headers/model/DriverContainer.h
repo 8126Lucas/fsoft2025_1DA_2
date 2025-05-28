@@ -9,6 +9,7 @@
 #include "Driver.h"
 #include "Vacation.h"
 
+
 using namespace std;
 
 class DriverContainer {
@@ -23,7 +24,6 @@ public:
     list<Driver> listDrivers();
     list<Driver> listDrivers(bool available);
     void update(int id, Vacation vacation);
-
     void updateAvailability(int id, bool available);
 };
 

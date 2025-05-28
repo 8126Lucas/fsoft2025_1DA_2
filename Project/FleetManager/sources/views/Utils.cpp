@@ -15,6 +15,9 @@
 #include "Truck.h"
 #include "Van.h"
 #include "Vehicle.h"
+#include "OrderContainer.h"
+#include "DriverContainer.h"
+
 
 using namespace std;
 
@@ -103,10 +106,23 @@ Vehicle *Utils::getVehicle(VehicleContainer &container, const string &label) {
   return vehicle;
 }
 
+Order *Utils::getOrder(OrderContainer &container, const string &label) {
+  int id = getInt(label);
+  Order *order = container.get(id);
+  return order;
+}
 
+Driver *Utils::getDriver(DriverContainer &container, const string &label) {
+  int id = getInt(label);
+  Driver *driver = container.get(id);
+  return driver;
+}
 
-
-
+Trip *Utils::getTrip(TripContainer &container, const string &label) {
+  int id = getInt(label);
+  Trip *trip = container.getTrip(id);
+  return trip;
+}
 
 // Trip *Utils::getOrder(int order &label){ // verificar depois
 //   int order = getInt(label);

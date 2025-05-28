@@ -5,20 +5,25 @@
 #ifndef HEADERS_VIEW_TRIPVIEW_H
 #define HEADERS_VIEW_TRIPVIEW_H
 #include <list>
+
+#include "DriverContainer.h"
+#include "OrderContainer.h"
 #include "Trip.h"
+#include "VehicleContainer.h"
 
 
 class TripView {
 public:
-    static Trip addTrip();
-    static Trip removeTrip();
-    static Trip startTrip();
-    static Trip endTrip();
-    static void updateTrip();
+    Trip addTrip(OrderContainer &containerOrder);
+    Trip removeTrip();
+    void startTrip(Trip *trip, DriverContainer &containerDriver, VehicleContainer &containerVehicle);
+    void endTrip(Trip *trip, DriverContainer &containerDriver, VehicleContainer &containerVehicle);
+    void failTrip(Trip *trip);
     // static void listTripsByDriver(Trip *trip); Acho que para já não vai ser necessario
-    static void printTrip(Trip *trip);
-    static int getId();
-    static Trip getTrip(TripContainer *container);
+    void printTrip(Trip *trip);
+    void printListTrips(list<Trip> &trips);
+    int getId();
+    Trip getTrip(TripContainer *container);
 
 };
 

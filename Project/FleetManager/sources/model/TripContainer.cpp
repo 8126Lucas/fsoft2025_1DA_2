@@ -53,7 +53,7 @@ list<Trip> TripContainer::listTripsByDriver(Driver &driver){
   std::list<Trip> driverList;
   std::list<Trip>::iterator it = this->trips.begin();
   for(; it != this->trips.end(); ++it) {
-    if(it->getDriver().getID() == driver.getID()) {
+    if(it->getDriver()->getID() == driver.getID()) {
       driverList.push_back(*it);
     }
   }
@@ -78,6 +78,18 @@ Trip *TripContainer::getTrip(const int id)
     return &(*it);
   }
   return NULL;
+}
+
+void TripContainer::update(Trip &trip) {
+  list<Trip>::iterator it = search(trip.getID());
+  if (it != this->trips.end()) {
+    this->trips.erase(it);
+    this->trips.push_back(trip);
+  }
+  else {
+    string msg = "Trip: " + to_string(trip.getID());
+    throw NonExistingDataException(msg);
+  }
 }
 
 /*void TripContainer::updateState(int id, STATE newState)  --

@@ -100,6 +100,8 @@ set(VIEWS_SOURCE_FILES
         ${PROJECT_SOURCES_VIEWS_DIR}/InsuranceView.cpp
         ${PROJECT_HEADERS_VIEWS_DIR}/OrderView.h
         ${PROJECT_SOURCES_VIEWS_DIR}/OrderView.cpp
+        ${PROJECT_HEADERS_VIEWS_DIR}/TripView.h
+        ${PROJECT_SOURCES_VIEWS_DIR}/TripView.cpp
         ${PROJECT_HEADERS_VIEWS_DIR}/Utils.h
         ${PROJECT_SOURCES_VIEWS_DIR}/Utils.cpp
         ${PROJECT_HEADERS_VIEWS_DIR}/VehicleStorageLocationView.h
@@ -117,4 +119,3 @@ add_executable(
         ${MODEL_SOURCE_FILES}
         ${EXCEPTIONS_SOURCE_FILES}
         ${CONTROLLERS_SOURCE_FILES})
-

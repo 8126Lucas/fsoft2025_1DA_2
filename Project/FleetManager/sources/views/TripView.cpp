@@ -11,8 +11,30 @@
 
 using namespace std;
 
-Trip TripView::addTrip(){
-    Trip trip = Utils::setTrip();
+Trip TripView::addTrip(OrderContainer &containerOrder) {
+    Trip trip = Trip();
+    bool flag_error = false;
+    do {
+        try {
+            flag_error = false;
+            int tripID = Utils::getInt("Trip ID");
+            Order *order = Utils::getOrder(containerOrder , "Order ID");
+            double cost = Utils::getDouble("Cost");
+            trip.setState(SUPRESSED);
+            trip.setID(tripID);
+            trip.setOrder(order);
+            trip.setDriver(NULL);
+            trip.setVehicle(NULL);
+            trip.setKM(0);
+            trip.setFuel(0);
+            trip.setFuelCost(0);
+            trip.setFines(0);
+            trip.setTolls(0);
+            trip.setCost(cost);
+        }catch (InvalidDataException &error) {
+            flag_error = true;
+        }
+    }while (flag_error);
     return trip;
 }
 
@@ -22,8 +44,8 @@ Trip TripView::getTrip(TripContainer *container){
     return *trip;
 }
 
-int getId(){
-    int id = Utils::getInt("Trip ID:");
+int TripView::getId(){
+    int id = Utils::getInt("Trip ID");
     return id;
 }
 
@@ -37,12 +59,78 @@ void TripView::printTrip(Trip *trip){
             cout << "Fuel: " << trip->getFuel() << "\n";
             cout << "Tolls: " << trip->getTolls() << "€ \n";
             cout << "Fuel Cost: " << trip->getFuelCost() << "€\n";
-            cout << "Total Cost: " << trip->calculateCost() << "€\n";
+            cout << "Total Cost: " << trip->getCost() << "€\n";
         } catch(NonExistingDataException &error) {
             flag_error = true;
         }
     }while(flag_error);
 }
 
+void TripView::printListTrips(list<Trip> &trips) {
+    cout << "\n*** List of Trips: " << trips.size() << " ***\n\n";
+    list<Trip>::iterator it = trips.begin();
+    for (; it != trips.end(); ++it) {
+        printTrip(&*it);
+    }
+    cout << "\n\n";
+}
 
 
+
+void TripView::startTrip(Trip *trip, DriverContainer &containerDriver, VehicleContainer &containerVehicle) {
+    bool flag_error = false;
+    do {
+        try {
+            flag_error = false;
+            Driver *driver = Utils::getDriver(containerDriver , "Driver ID");
+            Vehicle *vehicle = Utils::getVehicle(containerVehicle , "Vehicle's License Plate");
+            trip->setState(INCOMING);
+            trip->setDriver(driver);
+            driver->setAvailability(false);
+            trip->setVehicle(vehicle);
+            vehicle->setAvailability(true);
+        }catch (InvalidDataException &error) {
+            flag_error = true;
+        }
+    }while (flag_error);
+}
+
+void TripView::endTrip(Trip *trip, DriverContainer &containerDriver, VehicleContainer &containerVehicle) {
+    bool flag_error = false;
+    do {
+        try {
+            flag_error = false;
+            double km = Utils::getDouble("Kilometers: ");
+            double fuel = Utils::getDouble("Fuel Spent (%): ");
+            double fuelCost = Utils::getDouble("Fuel Cost (€): ");
+            double fines = Utils::getDouble("Fines (€): ");
+            double tolls = Utils::getDouble("Tolls (€): ");
+            trip->setState(DELIVERED);
+            trip->setKM(km);
+            trip->setFuel(fuel);
+            trip->setFuelCost(fuelCost);
+            trip->setFines(fines);
+            trip->setTolls(tolls);
+
+            trip->getVehicle()->setAvailability(true);
+            trip->getDriver()->setAvailability(true);
+        }catch (InvalidDataException &error) {
+            flag_error = true;
+        }
+    }while (flag_error);
+}
+
+void TripView::failTrip(Trip *trip) {
+    bool flag_error = false;
+    do {
+        try {
+            trip->setState(FAILED);
+            trip->setCost(trip->getCost() * 1.05);
+            trip->getVehicle()->setAvailability(true);
+            trip->getDriver()->setAvailability(true);
+        }catch (InvalidDataException &error) {
+            flag_error = true;
+        }
+
+    }while (flag_error);
+}

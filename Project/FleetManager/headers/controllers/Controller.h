@@ -13,11 +13,12 @@
 #include "TripView.h"
 #include "VehicleView.h"
 #include "VehicleStorageLocationView.h"
+#include "VacationView.h"
 #include "View.h"
 
 class Controller {
 private:
-    Enterprise model;
+    Enterprise &model;
     View view;
     DriverView driverView;
     FinancialView financialView;
@@ -27,11 +28,13 @@ private:
     TripView tripView;
     VehicleView vehicleView;
     VehicleStorageLocationView vslView;
+    Vacation vacationView;
+
+    void runVehicle();
+    void runTrip();
     void runDriver();
     void runFinancial();
     void runOrder();
-    void runTrip();
-    void runVehicle();
 
 public:
     Controller(Enterprise &enterprise);

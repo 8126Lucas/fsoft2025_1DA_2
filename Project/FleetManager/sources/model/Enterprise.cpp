@@ -4,11 +4,11 @@
 
 #include "Enterprise.h"
 
-Enterprise::Enterprise() : vslC() {
+Enterprise::Enterprise() {
     this->name = "";
 }
 
-Enterprise::Enterprise(const string &name) : vslC() {
+Enterprise::Enterprise(const string &name) {
     this->name = name;
 }
 

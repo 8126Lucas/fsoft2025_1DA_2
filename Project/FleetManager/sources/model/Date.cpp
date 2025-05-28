@@ -76,8 +76,7 @@ Date Date::getToday() {
     time_t timeNow;
     time(&timeNow);
     struct tm *localTime = localtime(&timeNow);
-    Date date = Date(localTime->tm_year + 1900, localTime->tm_mon + 1,
-                localTime->tm_mday);
+    Date date = Date(localTime->tm_mday, localTime->tm_mon + 1, localTime->tm_year + 1900);
     return date;
 }
 

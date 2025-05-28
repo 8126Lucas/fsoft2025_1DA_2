@@ -16,6 +16,9 @@
 #include "Inspection.h"
 #include "Expense.h"
 #include "Revenue.h"
+#include "OrderContainer.h"
+#include "DriverContainer.h"
+#include "TripContainer.h"
 
 using namespace std;
 
@@ -26,8 +29,9 @@ class Utils {
     static string getString(const string &label);
     static Date getDate(const string &label);
     static Vehicle *getVehicle(VehicleContainer &container, const string &label);
-    static Driver setDriver();
-    static Order setOrder();
+    static Order *getOrder(OrderContainer &container, const string &label);
+    static Driver *getDriver(DriverContainer &container, const string &label);
+    static Trip *getTrip(TripContainer &container, const string &label);
 };
 
 #endif //HEADERS_VIEWS_UTILS_H

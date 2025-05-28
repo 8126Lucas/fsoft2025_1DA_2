@@ -14,12 +14,12 @@ enum STATE{
   FAILED = 0,
 };
 
-class Trip
-{
+class Trip {
 private:
-  STATE state = SUPRESSED;
-  Order order;
-  Driver driver;
+  STATE state;
+  int id;
+  Order *order;
+  Driver *driver;
   Vehicle *vehicle;
   double kilometers;
   double fuel;
@@ -27,44 +27,45 @@ private:
   double fines;
   double cost;
   double tolls;
-  int id;
 
 
 public:
   Trip();
 
-  Trip(Order order, double kilometers, double fuel, double fuelCost,double fines, double cost,
+  Trip(STATE state, int id, Order *order, double cost);
+
+  Trip(STATE state, int id, Order *order, Driver *driver, Vehicle *vehicle, double kilometers, double fuel, double fuelCost, double fines, double cost, double tolls);
+
+  Trip(Order *order, double kilometers, double fuel, double fuelCost,double fines, double cost,
        double tolls);
   Trip(int id, Date date,Order order, Driver driver, Vehicle vehicle);
 
   ~Trip();
 
 
-  // Trip(Trip &trip);
-
-  double calculateCost();
+  STATE getState();
+  int getID();
+  Driver *getDriver();
+  Vehicle *getVehicle();
+  double getCost();
   double getFuelCost();
   double getTolls();
   double getFines();
   double getKM();
   double getFuel();
 
-  void createTrip(Trip &trip);
-  void startTrip(Trip &trip);
-  void completeTrip(Trip &trip);
-  void failedTrip(Trip &trip);
-  void listTripsByDriver();
-  void listUncompletedTrips();
-  void listCompletedTrips();
   void setState(STATE newState);
-  void updateState(int id, STATE newState);
+  void setID(int id);
+  void setOrder(Order *order);
+  void setDriver(Driver *driver);
+  void setVehicle(Vehicle *vehicle);
+  void setKM(double kilometers);
+  void setFuel(double fuel);
+  void setFuelCost(double fuelCost);
+  void setFines(double fines);
+  void setCost(double cost);
+  void setTolls(double tolls);
 
-  int getID();
-
-
-  STATE getState();
-
-  Driver getDriver();
 
 
   bool operator==(const int id) const;

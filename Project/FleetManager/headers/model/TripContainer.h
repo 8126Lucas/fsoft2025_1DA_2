@@ -20,6 +20,8 @@ public:
     void complete(Trip &trip);
     void failed(Trip &trip);
     void updateState(int id, STATE state);
+    void update(Trip &trip);
+
     Trip *getTrip(int id);
     list<Trip> listTrips();
     list<Trip> listTripsByDriver(Driver &driver);
