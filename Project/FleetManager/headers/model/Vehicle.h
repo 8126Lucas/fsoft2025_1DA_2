@@ -31,9 +31,9 @@ class Vehicle {
     double mileage;
     double fuel;
     bool available;
-    Insurance insurance;
-    const Inspection *inspection;
-    VehicleStorageLocation vsl;
+    Insurance *insurance{};
+    Inspection *inspection{};
+    VehicleStorageLocation *vsl{};
 
   public:
 
@@ -56,10 +56,10 @@ class Vehicle {
     int getInsuranceID() const;
     int getInspectionID() const;
     int getVSLID() const;
-    Insurance getInsurance() const;
 
-    Inspection getInspection() const;
-    VehicleStorageLocation getVSL() const;
+    Inspection *getInspection() const;
+    Insurance *getInsurance() const;
+    VehicleStorageLocation *getVSL() const;
 
     void setCategory(CATEGORY category);
     void setBrand(const string &brand);
@@ -68,9 +68,9 @@ class Vehicle {
     void setLicensePlate(const string &licensePlate);
     void setMileage(double mileage);
     void setFuel(double fuel);
-    void setInsurance(Insurance insurance);
-    void setInspection(const Inspection *inspection);
-    void setVSL(const VehicleStorageLocation &vsl);
+    void setInsurance(Insurance *insurance);
+    void setInspection(Inspection *inspection);
+    void setVSL(VehicleStorageLocation *vsl);
     void setAvailability(bool availability);
 
     void addFuel();

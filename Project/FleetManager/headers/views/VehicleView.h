@@ -31,12 +31,12 @@ public:
     static void printListVans(list<Van> &vans);
 
     static double addFuel();
-    static void insuranceAlert(Truck &truck);
-    static void insuranceAlert(Van &van);
-    static void inspectionAlert(Truck &truck);
-    static void inspectionAlert(Van &van);
-    static void fuelAlert(Truck &truck);
-    static void fuelAlert(Van &van);
+    static void insuranceAlert(const Truck *truck);
+    static void insuranceAlert(const Van *van);
+    static void inspectionAlert(const Truck *truck);
+    static void inspectionAlert(const Van *van);
+    static void fuelAlert(const Truck *truck);
+    static void fuelAlert(const Van *van);
 
 };
 

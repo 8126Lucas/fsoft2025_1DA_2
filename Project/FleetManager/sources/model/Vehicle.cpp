@@ -59,20 +59,20 @@ double Vehicle::getFuel() const {
 bool Vehicle::getAvailability() const {
     return available;
 }
-Insurance Vehicle::getInsurance() const {
+Insurance *Vehicle::getInsurance() const {
     return insurance;
 }
 
-Inspection Vehicle::getInspection() const {
-    return *inspection;
+Inspection *Vehicle::getInspection() const {
+    return inspection;
 }
 
-VehicleStorageLocation Vehicle::getVSL() const {
+VehicleStorageLocation *Vehicle::getVSL() const {
     return vsl;
 }
 
 int Vehicle::getInsuranceID() const {
-    return insurance.getID();
+    return insurance->getID();
 }
 
 int Vehicle::getInspectionID() const {
@@ -80,7 +80,7 @@ int Vehicle::getInspectionID() const {
 }
 
 int Vehicle::getVSLID() const {
-    return vsl.getID();
+    return vsl->getID();
 }
 
 void Vehicle::setCategory(const CATEGORY category) {
@@ -111,16 +111,16 @@ void Vehicle::setFuel(const double fuel) {
     this->fuel = fuel;
 }
 
-void Vehicle::setInsurance(const Insurance insurance) {
+void Vehicle::setInsurance(Insurance *insurance) {
     this->insurance = insurance;
 }
 
-void Vehicle::setInspection(const Inspection *inspection) {
+void Vehicle::setInspection(Inspection *inspection) {
     this->inspection = inspection;
 
 }
 
-void Vehicle::setVSL(const VehicleStorageLocation &vsl) {
+void Vehicle::setVSL(VehicleStorageLocation *vsl) {
     this->vsl = vsl;
 }
 
@@ -144,7 +144,7 @@ void Vehicle::updateMileage(Trip &trip) {
 }
 
 void Vehicle::insuranceAlert() {
-    if (this->insurance.isExpired()) {
+    if (this->insurance->isExpired()) {
         if (Truck *truck = dynamic_cast<Truck *>(this)) {
             VehicleView::insuranceAlert(*truck);
         }
@@ -155,7 +155,7 @@ void Vehicle::insuranceAlert() {
 }
 
 void Vehicle::inspectionAlert() {
-    if (this->insurance.isExpired()) {
+    if (this->insurance->isExpired()) {
         if (Truck *truck = dynamic_cast<Truck *>(this)) {
             VehicleView::inspectionAlert(*truck);
         }
