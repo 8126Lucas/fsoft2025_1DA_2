@@ -12,16 +12,16 @@
 
 class VehicleStorageLocationView {
 public:
-    static VehicleStorageLocation addVSL();
-    static int removeVSL();
+    VehicleStorageLocation addVSL();
+    int removeVSL();
     static int getID();
-    static void printVSL(VehicleStorageLocation *vsl);
-    static void printListVSL(list<VehicleStorageLocation> &listVSL);
-    static void printListStoredVehicles(const VehicleStorageLocation &vsl);
+    void printVSL(VehicleStorageLocation *vsl);
+    void printListVSL(list<VehicleStorageLocation> &listVSL);
+    void printListStoredVehicles(const VehicleStorageLocation &vsl);
     static VehicleStorageLocation *getVSL(VSLContainer *container);
     static pair<int, Vehicle *> getVehicleVSLPair(VSLContainer *containerVSL, VehicleContainer *containerVehicle);
 
-    static void addVehicleToStorage(VSLContainer *containerVSL, VehicleContainer *containerVehicle);
-    static void removeVehicleFromStorage(VSLContainer *containerVSL, VehicleContainer *containerVehicle);
+    void addVehicleToStorage(VSLContainer *containerVSL, VehicleContainer *containerVehicle);
+    void removeVehicleFromStorage(VSLContainer *containerVSL, VehicleContainer *containerVehicle);
 };
 #endif //HEADERS_VIEW_VEHICLESTORAGELOCATIONVIEW_H

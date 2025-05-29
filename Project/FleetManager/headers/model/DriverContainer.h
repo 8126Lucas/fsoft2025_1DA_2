@@ -22,7 +22,8 @@ public:
     void add(Driver &driver);
     void remove(int id);
     list<Driver> listDrivers();
-    list<Driver> listDrivers(bool available);
+    list<Driver> listAvailableDrivers(bool available);
+
     void update(int id, Vacation vacation);
     void updateAvailability(int id, bool available);
 };

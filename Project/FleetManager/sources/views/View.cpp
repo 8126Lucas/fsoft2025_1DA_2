@@ -36,20 +36,23 @@ int View::menuVehicle() {
     cout << "3. List Vehicles\n";
     cout << "4. List Available Vehicles\n";
     cout << "5. List Unavailable Vehicles\n";
+    cout << "6. Fuel Vehicle\n";
     cout << "-------------------------------\n";
-    cout << "6. Add Insurance\n";
-    cout << "7. Add Inspection\n";;
+    cout << "7. Add Insurance\n";
+    cout << "8. Remove Insurance\n";
+    cout << "9. Add Inspection\n";
+    cout << "10. Remove Inspection\n";
     cout << "-------------------------------\n";
-    cout << "8. Add Storage Location\n";
-    cout << "9. Remove Storage Location\n";
-    cout << "10. List Storage Locations\n";
-    cout << "11. List Stored Vehicles\n";
+    cout << "11. Add Storage Location\n";
+    cout << "12. Remove Storage Location\n";
+    cout << "13. List Storage Locations\n";
+    cout << "14. List Stored Vehicles\n";
     cout << "-------------------------------\n";
-    cout << "12. Add Vehicle To Storage\n";
-    cout << "13. Remove Vehicle From Storage\n\n";
+    cout << "15. Add Vehicle To Storage\n";
+    cout << "16. Remove Vehicle From Storage\n\n";
     cout << "0. Go Back\n\n";
     op = Utils::getInt("Your Option");
-  } while(op < 0 || op > 13);
+  } while(op < 0 || op > 16);
   return op;
 }
 
@@ -60,11 +63,12 @@ int View::menuDriver() {
     cout << "1. Add Driver\n";
     cout << "2. Remove Driver\n";
     cout << "3. List Drivers\n";
-    cout << "4. List Available Driver\n";
-    cout << "5. Add Vacation\n\n";
+    cout << "4. List Available Drivers\n";
+    cout << "5. List Unavailable Drivers\n";
+    cout << "6. Add Vacation\n\n";
     cout << "0. Go Back\n\n";
     op = Utils::getInt("Your Option");
-  } while(op < 0 || op > 5);
+  } while(op < 0 || op > 6);
   return op;
 }
 
@@ -76,11 +80,13 @@ int View::menuTrip() {
     cout << "2. Start Trip\n";
     cout << "3. Complete Trip\n";
     cout << "4. Fail Trip\n";
-    cout << "5. List Uncompleted Trips\n";
-    cout << "5. List Completed Trips\n\n";
+    cout << "5. List Trips\n";
+    cout << "6. List Trips By Driver\n";
+    cout << "7. List Uncompleted Trips\n";
+    cout << "8. List Completed Trips\n\n";
     cout << "0. Go Back\n\n";
     op = Utils::getInt("Your Option");
-  } while(op < 0 || op > 5);
+  } while(op < 0 || op > 8);
   return op;
 }
 
@@ -89,17 +95,19 @@ int View::menuFinancial() {
   do {
     cout << "******* Financial Manager's Menu *******\n\n";
     cout << "1. Record Expense\n";
-    cout << "2. List Expenses\n";
-    cout << "3. List Expenses By Type\n";
+    cout << "2. Remove Expense\n";
+    cout << "3. List Expenses\n";
+    cout << "4. List Expenses By Type\n";
     cout << "-------------------------------\n";
-    cout << "4. Record Revenue\n";
-    cout << "5. List Revenue\n";
+    cout << "5. Record Revenue\n";
+    cout << "6. Remove Revenue\n";
+    cout << "7. List Revenue\n";
     cout << "-------------------------------\n";
-    cout << "6. List Transactions\n";
-    cout << "7. Show Balance\n\n";
+    cout << "8. List Transactions\n";
+    cout << "9. Show Balance\n\n";
     cout << "0. Go Back\n\n";
     op = Utils::getInt("Your Option");
-  } while(op < 0 || op > 7);
+  } while(op < 0 || op > 9);
   return op;
 }
 

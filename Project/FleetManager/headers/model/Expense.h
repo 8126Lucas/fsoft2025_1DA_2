@@ -21,7 +21,7 @@ enum TYPE{
 class Expense {
 private:
     int id;
-    Trip trip;
+    Trip *trip;
     Date date;
     double amount;
     TYPE type;
@@ -29,18 +29,21 @@ private:
 public:
     Expense();
 
-    Expense(int id, Trip trip, Date date, double amount, TYPE type);
+    Expense(int id, Trip *trip, Date date, double amount, TYPE type);
 
     ~Expense();
 
-    Expense recordExpense(int id, Trip trip, Date date, double amount, TYPE type);
-    int removeExpense();
-
     int getID() const;
-    Trip getTrip();
+    Trip *getTrip();
     Date getDate() const;
     double getAmount() const;
     TYPE getType() const;
+
+    void setID(int id);
+    void setTrip(Trip *trip);
+    void setDate(Date date);
+    void setAmount(double amount);
+    void setType(TYPE type);
 };
 
 #endif //HEADERS_MODEL_EXPENSE_H

@@ -37,7 +37,7 @@ class Insurance {
     void setMonthlyCost(double monthlyCost);
 
     bool isExpired();
-    int getRemainingDays() const;
+    int getRemainingDays();
     void updateToday();
 };
 

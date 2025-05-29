@@ -128,10 +128,8 @@ void Vehicle::setAvailability(bool available) {
     this->available = available;
 }
 
-void Vehicle::addFuel() {
-    const double addedFuel = VehicleView::addFuel();
+void Vehicle::addFuel(double addedFuel) {
     this->fuel += addedFuel;
-    // update container
 }
 
 bool Vehicle::isFuelEnough(Trip &trip) {
@@ -146,10 +144,10 @@ void Vehicle::updateMileage(Trip &trip) {
 void Vehicle::insuranceAlert() {
     if (this->insurance->isExpired()) {
         if (Truck *truck = dynamic_cast<Truck *>(this)) {
-            VehicleView::insuranceAlert(*truck);
+            VehicleView::insuranceAlert(truck);
         }
         else if (Van *van = dynamic_cast<Van *>(this)) {
-            VehicleView::insuranceAlert(*van);
+            VehicleView::insuranceAlert(van);
         }
     }
 }
@@ -157,10 +155,10 @@ void Vehicle::insuranceAlert() {
 void Vehicle::inspectionAlert() {
     if (this->insurance->isExpired()) {
         if (Truck *truck = dynamic_cast<Truck *>(this)) {
-            VehicleView::inspectionAlert(*truck);
+            VehicleView::inspectionAlert(truck);
         }
         else if (Van *van = dynamic_cast<Van *>(this)) {
-            VehicleView::inspectionAlert(*van);
+            VehicleView::inspectionAlert(van);
         }
     }
 }
@@ -168,10 +166,10 @@ void Vehicle::inspectionAlert() {
 void Vehicle::fuelAlert(Trip &trip) {
     if (!this->isFuelEnough(trip)) {
         if (Truck *truck = dynamic_cast<Truck *>(this)) {
-            VehicleView::inspectionAlert(*truck);
+            VehicleView::inspectionAlert(truck);
         }
         else if (Van *van = dynamic_cast<Van *>(this)) {
-            VehicleView::inspectionAlert(*van);
+            VehicleView::inspectionAlert(van);
         }
     }
 }

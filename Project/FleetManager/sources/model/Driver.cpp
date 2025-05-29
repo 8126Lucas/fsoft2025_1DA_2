@@ -44,12 +44,50 @@ bool Driver::getAvailability() const {
     return available;
 }
 
-bool Driver::getVacationID() const {
-    return vacation.getID();
+list<Vacation *> Driver::getVacations() {
+    return vacations;
 }
 
-void Driver::setVacation(const Vacation vacation) {
-    this->vacation = vacation;
+Vacation *Driver::getVacation() {
+    Date today = Date::getToday();
+    list<Vacation *>::iterator it = vacations.begin();
+    for (; it != vacations.end(); ++it) {
+        if (((*it)->getStartDate() < today || (*it)->getStartDate() == today) && ((*it)->getEndDate() > today || (*it)->getEndDate() == today)) {
+            return (*it);
+        }
+    }
+    return nullptr;
+}
+
+int Driver::getVacationID() {
+    Date today = Date::getToday();
+    list<Vacation *>::iterator it = vacations.begin();
+    for (; it != vacations.end(); ++it) {
+        if (((*it)->getStartDate() < today || (*it)->getStartDate() == today) && ((*it)->getEndDate() > today || (*it)->getEndDate() == today)) {
+            return (*it)->getID();
+        }
+    }
+    return 0;
+}
+
+void Driver::setID(int id) {
+    this->id = id;
+}
+
+void Driver::setLicense(char license) {
+    this->license = license;
+}
+
+void Driver::setAge(int age) {
+    this->age = age;
+}
+
+void Driver::setTimeToRetire(int age) {
+    this->timeToRetire = 65 - age;
+}
+
+void Driver::setVacation(Vacation *vacation) {
+    this->vacations.push_back(vacation);
 }
 
 void Driver::setAvailability(bool available) {
@@ -65,7 +103,7 @@ int Driver::getTimeToRetire() const {
 }
 
 void Driver::vacationAlert() {
-    if (this->vacation.isOnVacation()) {
+    if (this->getVacation()->isOnVacation()) {
         DriverView::vacationAlert(*this);
     }
 }

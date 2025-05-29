@@ -62,10 +62,11 @@ list<Trip> TripContainer::listTripsByDriver(Driver &driver){
 
 list<Trip> TripContainer::listTripsByState(STATE state){
   std::list<Trip> trips;
-  std::list<Trip>::iterator it = trips.begin();
+  std::list<Trip>::iterator it = this->trips.begin();
   for(; it != this->trips.end(); ++it){
     if (it->getState() == state){
-      trips.push_back(*it);}
+      trips.push_back(*it);
+    }
   }
   return trips;
 }

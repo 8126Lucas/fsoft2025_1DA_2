@@ -63,7 +63,8 @@ bool Insurance::isExpired() {
     return false;
 }
 
-int Insurance::getRemainingDays() const {
+int Insurance::getRemainingDays() {
+    this->updateToday();
     return this->endDate - this->today;
 }
 

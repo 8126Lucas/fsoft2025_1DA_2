@@ -27,6 +27,7 @@ class Utils {
     static int getInt(const string &label);
     static double getDouble(const string &label);
     static string getString(const string &label);
+    static char getChar(const string &label);
     static Date getDate(const string &label);
     static Vehicle *getVehicle(VehicleContainer &container, const string &label);
     static Order *getOrder(OrderContainer &container, const string &label);

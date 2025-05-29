@@ -9,32 +9,21 @@
 
 Expense::Expense() : amount(0) {}
 
-Expense::Expense(const int id, Trip trip, Date date, double amount, TYPE type) {
-    this->id = id;
-    this->trip = trip;
-    this->date = date;
-    this->amount = amount;
-    this->type = type;
-}
+// Expense::Expense(const int id, Trip trip, Date date, double amount, TYPE type) {
+//     this->id = id;
+//     this->trip = trip;
+//     this->date = date;
+//     this->amount = amount;
+//     this->type = type;
+// }
 
 Expense::~Expense() {}
-
-Expense Expense::recordExpense(int id, Trip trip, Date date, double amount, TYPE type) {
-    Expense expense(id, trip, date, amount, type);
-
-    return expense;
-}
-
-int Expense::removeExpense() {
-    int id = FinancialView::getExpenseID();
-    return id;
-}
 
 int Expense::getID() const {
     return id;
 }
 
-Trip Expense::getTrip() {
+Trip *Expense::getTrip() {
     return trip;
 }
 
@@ -48,4 +37,24 @@ double Expense::getAmount() const {
 
 TYPE Expense::getType() const {
     return type;
+}
+
+void Expense::setID(int id) {
+    this->id = id;
+}
+
+void Expense::setTrip(Trip *trip) {
+    this->trip = trip;
+}
+
+void Expense::setDate(Date date) {
+    this->date = date;
+}
+
+void Expense::setAmount(double amount) {
+    this->amount = amount;
+}
+
+void Expense::setType(TYPE type) {
+    this->type = type;
 }

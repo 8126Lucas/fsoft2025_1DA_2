@@ -28,7 +28,7 @@ private:
     TripView tripView;
     VehicleView vehicleView;
     VehicleStorageLocationView vslView;
-    Vacation vacationView;
+    VacationView vacationView;
 
     void runVehicle();
     void runTrip();

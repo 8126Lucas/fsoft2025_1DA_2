@@ -35,10 +35,10 @@ public:
     list<Truck> listTrucks(bool available);
     list<Van> listVans();
     list<Van> listVans(bool available);
-    void update(string &licensePlate, Insurance insurance);
-    void update(string &licensePlate, Inspection inspection);
-    void update(string &licensePlate, VehicleStorageLocation vsl);
-    void updateFuel(string &licensePlate);
+    void update(string &licensePlate, Insurance *insurance);
+    void update(string &licensePlate, Inspection *inspection);
+    void update(string &licensePlate, VehicleStorageLocation *vsl);
+    void updateFuel(string &licensePlate, double addedFuel);
     void updateMileage(string &licensePlate, Trip &trip);
     void updateAvailability(string &licensePlate, bool available);
 };

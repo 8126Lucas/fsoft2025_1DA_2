@@ -66,6 +66,12 @@ string Utils::getString(const string &label) {
   return input;
 }
 
+char Utils::getChar(const string &label) {
+  cout << label << ": ";
+  char input = getchar();
+  return input;
+}
+
 Date Utils::getDate(const string &label) {
   Date date;
   string input;

@@ -25,12 +25,12 @@ public:
     static Van *getVan(VehicleContainer *container);
     static string getLicensePlate();
 
-    static void printTruck(const Truck *truck);
-    static void printVan(const Van *van);
-    static void printListTrucks(list<Truck> &trucks);
-    static void printListVans(list<Van> &vans);
+    void printTruck(const Truck *truck);
+    void printVan(const Van *van);
+    void printListTrucks(list<Truck> &trucks);
+    void printListVans(list<Van> &vans);
 
-    static double addFuel();
+    double addFuel();
     static void insuranceAlert(const Truck *truck);
     static void insuranceAlert(const Van *van);
     static void inspectionAlert(const Truck *truck);

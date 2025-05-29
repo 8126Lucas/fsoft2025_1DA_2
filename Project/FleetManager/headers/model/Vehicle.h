@@ -73,7 +73,7 @@ class Vehicle {
     void setVSL(VehicleStorageLocation *vsl);
     void setAvailability(bool availability);
 
-    void addFuel();
+    void addFuel(double addedFuel);
     bool isFuelEnough(Trip &trip);
     void updateMileage(Trip &trip);
     void insuranceAlert();

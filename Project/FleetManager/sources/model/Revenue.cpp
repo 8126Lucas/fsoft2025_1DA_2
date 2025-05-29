@@ -10,7 +10,7 @@
 Revenue::Revenue() : id(0), amount(0) {
 }
 
-Revenue::Revenue(const int id, Order order, Date date, double amount) {
+Revenue::Revenue(const int id, Order *order, Date date, double amount) {
     this->id = id;
     this->order = order;
     this->date = date;
@@ -19,29 +19,11 @@ Revenue::Revenue(const int id, Order order, Date date, double amount) {
 
 Revenue::~Revenue() {}
 
-Revenue Revenue::recordRevenue(int id, Order order, Date date, double amount) {
-    Revenue revenue(id, order, date, amount);
-
-    FinancialContainer::addRevenue(revenue);
-
-    return revenue;
-}
-
-Revenue Revenue::addRevenue(RevenueView revenueView) {
-    Revenue revenue = revenueView.addRevenue();
-    return revenue;
-}
-
-int Revenue::removeRevenue(RevenueView revenueView) {
-    int id = revenueView.removeRevenue();
-    return id;
-}
-
 int Revenue::getID() const {
     return id;
 }
 
-Order Revenue::getOrder() const {
+Order *Revenue::getOrder() const {
     return order;
 }
 
@@ -51,4 +33,21 @@ Date Revenue::getDate() const {
 
 double Revenue::getAmount() const {
     return amount;
+}
+
+
+void Revenue::setID(int id) {
+    this->id = id;
+}
+
+void Revenue::setOrder(Order *order) {
+    this->order = order;
+}
+
+void Revenue::setDate(Date date) {
+    this->date = date;
+}
+
+void Revenue::setAmount(double amount) {
+    this->amount = amount;
 }

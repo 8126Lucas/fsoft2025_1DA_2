@@ -29,7 +29,7 @@ Inspection InspectionView::addInspection(VehicleContainer &container) {
     return inspection;
 }
 
-int InspectionView::removeInspection() {
-    const int id = Utils::getInt("Inspection ID");
-    return id;
+string InspectionView::removeInspection() {
+    string licensePlate = Utils::getString("Vehicle's License Plate");
+    return licensePlate;
 }

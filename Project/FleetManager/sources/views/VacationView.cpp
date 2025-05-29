@@ -13,16 +13,20 @@ Vacation VacationView::addVacation(DriverContainer &container) {
     do {
         try {
             flag_error = false;
+            Date today = Date::getToday();
             int id = Utils::getInt("Vacation ID");
             Driver *driver = Utils::getDriver(container, "Driver's ID");
-            Date startDate = Utils::getDate("startDate");
-            Date endDate = Utils::getDate("endDate");
-            bool status = Utils::getBool("Status");
+            Date startDate = Utils::getDate("Start Date");
+            Date endDate = Utils::getDate("End Date");
             vacation.setID(id);
             vacation.setDriver(*driver);
             vacation.setStartDate(startDate);
             vacation.setEndDate(endDate);
-            vacation.setStatus(status);
+            if (startDate > today || endDate < today) {
+                vacation.setStatus(false);
+            } else {
+                vacation.setStatus(true);
+            }
         } catch (InvalidDataException &error) {
             flag_error = true;
         }

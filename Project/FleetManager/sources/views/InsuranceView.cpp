@@ -18,7 +18,11 @@ Insurance InsuranceView::addInsurance(VehicleContainer &container) {
             Date startDate = Utils::getDate("Start Date");
             Date endDate = Utils::getDate("End Date");
             double monthlyCost = Utils::getDouble("Monthly Cost");
-            insurance = Insurance(id, vehicle, startDate, endDate, monthlyCost);
+            insurance.setID(id);
+            insurance.setVehicle(vehicle);
+            insurance.setStartDate(startDate);
+            insurance.setEndDate(endDate);
+            insurance.setMonthlyCost(monthlyCost);
         } catch (InvalidDataException &error) {
             flag_error = true;
         }
@@ -26,7 +30,7 @@ Insurance InsuranceView::addInsurance(VehicleContainer &container) {
     return insurance;
 }
 
-int InsuranceView::removeInsurance() {
-    const int id = Utils::getInt("Insurance ID");
-    return id;
+string InsuranceView::removeInsurance() {
+    string licensePlate = Utils::getString("Vehicle's License Plate");
+    return licensePlate;
 }

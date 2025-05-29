@@ -8,12 +8,16 @@
 #include "Expense.h"
 #include "Revenue.h"
 #include "FinancialContainer.h"
+#include "TripContainer.h"
+#include "OrderContainer.h"
 
 class FinancialView {
 public:
-    static Expense recordExpense();
+    static Expense recordExpense(TripContainer &containerTrip);
+    static int removeExpense();
     static Expense *getExpense(FinancialContainer *container);
-    static void recordRevenue();
+    static Revenue recordRevenue(OrderContainer &containerOrder);
+    static int removeRevenue();
     // static void *getRevenue(FinancialContainer *container);
     static int getExpenseID();
     static int getRevenueID();
@@ -21,6 +25,8 @@ public:
     static void printRevenue(const Revenue *revenue);
     static void printExpenses(list<Expense> &expenses);
     static void printRevenues(list<Revenue> &revenues);
+
+    void printBalance(FinancialContainer &containerFinancial, Date startDate, Date endDate);
 };
 
 #endif //HEADERS_VIEWS_FINANCIALVIEW_H

@@ -44,6 +44,10 @@ DriverContainer &Enterprise::getDriverContainer() {
     return this->driverC;
 }
 
+FinancialContainer &Enterprise::getFinancialContainer() {
+    return this->financialC;
+}
+
 OrderContainer &Enterprise::getOrderContainer() {
     return this->orderC;
 }

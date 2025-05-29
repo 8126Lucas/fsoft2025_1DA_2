@@ -4,7 +4,11 @@
 
 #include "Inspection.h"
 
-Inspection::Inspection(): id(0), cost(0) {
+Inspection::Inspection() {
+    this->id = 0;
+    this->vehicle = NULL;
+    this->cost = 0;
+
 }
 
 Inspection::Inspection(int id, Vehicle *vehicle, Date &date, double cost) {

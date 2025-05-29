@@ -122,7 +122,7 @@ list<Van> VehicleContainer::listVans(bool available) {
     return newList;
 }
 
-void VehicleContainer::update(string &licensePlate, const Insurance insurance) {
+void VehicleContainer::update(string &licensePlate, Insurance *insurance) {
     list<Truck>::iterator truckIT = searchTruck(licensePlate);
     list<Van>::iterator vanIT = searchVan(licensePlate);
     if (truckIT != this->trucks.end()) {
@@ -137,14 +137,14 @@ void VehicleContainer::update(string &licensePlate, const Insurance insurance) {
     }
 }
 
-void VehicleContainer::update(string &licensePlate, const Inspection inspection) {
+void VehicleContainer::update(string &licensePlate, Inspection *inspection) {
     list<Truck>::iterator truckIT = searchTruck(licensePlate);
     list<Van>::iterator vanIT = searchVan(licensePlate);
     if (truckIT != this->trucks.end()) {
-        truckIT->setInspection(&inspection);
+        truckIT->setInspection(inspection);
     }
     else if (vanIT != this->vans.end()) {
-        vanIT->setInspection(&inspection);
+        vanIT->setInspection(inspection);
     }
     else {
         string msg = "Vehicle (inspection): " + licensePlate;
@@ -152,7 +152,7 @@ void VehicleContainer::update(string &licensePlate, const Inspection inspection)
     }
 }
 
-void VehicleContainer::update(string &licensePlate, VehicleStorageLocation vsl) {
+void VehicleContainer::update(string &licensePlate, VehicleStorageLocation *vsl) {
     list<Truck>::iterator truckIT = searchTruck(licensePlate);
     list<Van>::iterator vanIT = searchVan(licensePlate);
     if (truckIT != this->trucks.end()) {
@@ -167,14 +167,14 @@ void VehicleContainer::update(string &licensePlate, VehicleStorageLocation vsl) 
     }
 }
 
-void VehicleContainer::updateFuel(string &licensePlate) {
+void VehicleContainer::updateFuel(string &licensePlate, double addedFuel) {
     list<Truck>::iterator truckIT = searchTruck(licensePlate);
     list<Van>::iterator vanIT = searchVan(licensePlate);
     if (truckIT != this->trucks.end()) {
-        truckIT->addFuel();
+        truckIT->addFuel(addedFuel);
     }
     else if (vanIT != this->vans.end()) {
-        vanIT->addFuel();
+        vanIT->addFuel(addedFuel);
     }
     else {
         string msg = "Vehicle (fuel): " + licensePlate;

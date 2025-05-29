@@ -14,7 +14,31 @@ using namespace std;
 
 Driver DriverView::addDriver() {
     Driver driver = Driver();
+    bool flag_error = false;
+    do {
+        try {
+            flag_error = false;
+            int id = Utils::getInt("ID");
+            char license = Utils::getChar("License");
+            int age = Utils::getInt("Age");
+
+            driver.setID(id);
+            driver.setLicense(license);
+            driver.setAge(age);
+            driver.setTimeToRetire(age);
+            driver.setVacation(nullptr);
+            driver.setAvailability(true);
+
+        } catch (InvalidDataException &error) {
+            flag_error = true;
+        }
+    } while (flag_error);
     return driver;
+}
+
+int DriverView::removeDriver() {
+    int id = Utils::getInt("Driver ID");
+    return id;
 }
 
 Driver *DriverView::getDriver(DriverContainer *container) {
@@ -41,7 +65,11 @@ void DriverView::printDriver(Driver *driver) {
                 cout << "Availability: available\n";
             }
             else {cout << "Availability: not available\n";}
-            cout << "Vacation (ID): " << driver->getVacationID() << endl;
+            if (driver->getVacation() != nullptr) {
+                cout << "Vacation (ID): " << driver->getVacationID() << endl;
+            } else {
+                cout << "Vacation: No vacation active\n";
+            }
         } catch (NonExistingDataException &error) {
             flag_error = true;
         }

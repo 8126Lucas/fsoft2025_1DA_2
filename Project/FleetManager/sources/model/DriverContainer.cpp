@@ -40,10 +40,6 @@ void DriverContainer::remove(int id) {
   if (it != this->drivers.end()) {
     this->drivers.erase(it);
   }
-  else if (this->drivers.empty()) {
-    string msg = "Driver (id): ";
-    throw NonExistingDataException(msg);
-  }
   else {
     string msg = "Driver (id): " + to_string(id);
     throw NonExistingDataException(msg);
@@ -55,21 +51,21 @@ list<Driver> DriverContainer::listDrivers() {
   return newList;
 }
 
-list<Driver> DriverContainer::listDrivers(bool available) {
+list<Driver> DriverContainer::listAvailableDrivers(bool available) {
   list<Driver> newList;
   list<Driver>::iterator it = this->drivers.begin();
   for (; it != this->drivers.end(); ++it) {
-    if (it->getAvailability() == true) {
+    if (it->getAvailability() == available) {
       newList.push_back(*it);
     }
   }
   return newList;
 }
 
-void DriverContainer::update(int id, const Vacation vacation) {
+void DriverContainer::update(int id, Vacation vacation) {
   list<Driver>::iterator it = search(id);
   if (it != this->drivers.end()) {
-    it->setVacation(vacation);
+    it->getVacations().push_back(&vacation);
   }
   else {
     string msg = "Driver(id): " + to_string(id);

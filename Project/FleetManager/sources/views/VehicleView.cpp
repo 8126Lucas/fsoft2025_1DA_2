@@ -131,7 +131,7 @@ void VehicleView::printTruck(const Truck *truck) {
             else {cout << "Availability: not available\n";}
             if (truck->getInspection() != NULL) {
                 cout << "Insurance (ID): " << truck->getInsurance()->getID() << endl;
-                cout << "Insurance (End Date): " << truck->getInsurance()->getEndDate() << endl;
+                cout << "Insurance (End Date): " << truck->getInsurance()->getEndDate()  << " (" << truck->getInsurance()->getRemainingDays() << " days remaining)" << endl;
                 cout << "Insurance (Monthly Cost): " << truck->getInsurance()->getMonthlyCost() << endl;
             }
             else {insuranceAlert(truck);}
@@ -142,6 +142,9 @@ void VehicleView::printTruck(const Truck *truck) {
             else {inspectionAlert(truck);}
             if (truck->getVSL() != NULL) {cout << "Storage Location (ID): " << truck->getVSL()->getID() << "\n\n";}
             else {cout << "Storage Location: no storage location\n\n";}
+
+            if (truck->getInsurance()->isExpired()) {cout << "!!! Insurance has expired !!!\n";}
+            if (truck->getInspection()->isDued()) {cout << "!!! Inspection is dued !!!\n";}
         } catch (NonExistingDataException &error) {
             flag_error = true;
         }
@@ -167,7 +170,7 @@ void VehicleView::printVan(const Van *van) {
             else {cout << "Availability: not available\n";}
             if (van->getInspection() != NULL) {
                 cout << "Insurance (ID): " << van->getInsurance()->getID() << endl;
-                cout << "Insurance (End Date): " << van->getInsurance()->getEndDate() << endl;
+                cout << "Insurance (End Date): " << van->getInsurance()->getEndDate() << " (" << van->getInsurance()->getRemainingDays() << " days remaining)" << endl;
                 cout << "Insurance (Monthly Cost): " << van->getInsurance()->getMonthlyCost() << endl;
             }
             else {insuranceAlert(van);}
@@ -178,6 +181,9 @@ void VehicleView::printVan(const Van *van) {
             else {inspectionAlert(van);}
             if (van->getVSL() != NULL) {cout << "Storage Location (ID): " << van->getVSL()->getID() << "\n\n";}
             else {cout << "Storage Location: no storage location\n\n";}
+
+            if (van->getInsurance()->isExpired()) {cout << "!!! Insurance has expired !!!\n";}
+            if (van->getInspection()->isDued()) {cout << "!!! Inspection is dued !!!\n";}
         } catch (NonExistingDataException &error) {
             flag_error = true;
         }

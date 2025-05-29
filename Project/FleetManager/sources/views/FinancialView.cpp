@@ -13,19 +13,69 @@
 
 using namespace std;
 
-Expense FinancialView::recordExpense() {
-    return Expense();
-}
-
-Expense *FinancialView::getExpense(FinancialContainer *container) {
-    int id = getExpenseID();
-    // Expense *expense = container->getExpense(id);
+Expense FinancialView::recordExpense(TripContainer &containerTrip) {
     Expense expense = Expense();
-    return &expense;
+    bool flag_error = false;
+    do {
+        try {
+            flag_error = false;
+            int id = Utils::getInt("ID");
+            Trip *trip = Utils::getTrip(containerTrip, "Trip ID");
+            Date date = Utils::getDate("Date");
+            double amount = Utils::getDouble("Amount");
+            TYPE type = static_cast<TYPE>(Utils::getInt("Type (FUEL/INSPECTION/INSURANCE/TOLL/FINE - 1->5)"));
+
+            expense.setID(id);
+            expense.setTrip(trip);
+            expense.setDate(date);
+            expense.setAmount(amount);
+            expense.setType(type);
+        } catch (InvalidDataException &error) {
+            flag_error = true;
+        }
+    } while (flag_error);
+    return expense;
 }
 
-void FinancialView::recordRevenue() {
+int FinancialView::removeExpense() {
+    int id = Utils::getInt("Expense ID");
+    return id;
 }
+
+Revenue FinancialView::recordRevenue(OrderContainer &containerOrder) {
+    Revenue revenue = Revenue();
+    bool flag_error = false;
+    do {
+        try {
+            flag_error = false;
+            int id = Utils::getInt("ID");
+            Order *order = Utils::getOrder(containerOrder, "Order ID");
+            Date date = Utils::getDate("Date");
+            double amount = Utils::getDouble("Amount");
+
+            revenue.setID(id);
+            revenue.setOrder(order);
+            revenue.setDate(date);
+            revenue.setAmount(amount);
+        } catch (InvalidDataException &error) {
+            flag_error = true;
+        }
+    } while (flag_error);
+    return revenue;
+}
+
+int FinancialView::removeRevenue() {
+    int id = Utils::getInt("Revenue ID");
+    return id;
+}
+
+// Expense *FinancialView::getExpense(FinancialContainer *container) {
+//     int id = getExpenseID();
+//     // Expense *expense = container->getExpense(id);
+//     Expense expense = Expense();
+//     return expense;
+// }
+
 
 // void *FinancialView::getRevenue(FinancialContainer *container) {
 //     int id = getRevenueID();
@@ -50,7 +100,7 @@ void FinancialView::printExpense(Expense *expense) {
         try {
             flag_error = false;
             cout << "*** Expense " << expense->getID() << " ***\n";
-            cout << "Trip: " << expense->getTrip().getID() << endl;
+            cout << "Trip: " << expense->getTrip()->getID() << endl;
             cout << "Date: " << expense->getDate() << endl;
             cout << "Amount: " << expense->getAmount() << endl;
             if (expense->getType() == 1) {
@@ -99,3 +149,11 @@ void FinancialView::printRevenues(list<Revenue> &revenues) {
     }
 }
 
+void FinancialView::printBalance(FinancialContainer &containerFinancial, Date startDate, Date endDate) {
+    double totalExpenses = containerFinancial.getExpensesTotal(startDate, endDate);
+    double totalRevenues = containerFinancial.getRevenuesTotal(startDate, endDate);
+    double balance = containerFinancial.getBalance(startDate, endDate);
+    cout << "\nTotal Expenses (" << startDate << "-" << endDate << "): " << totalExpenses << endl;
+    cout << "Total Revenues (" << startDate << "-" << endDate << "): " << totalRevenues << endl;
+    cout << "Balance (" << startDate << "-" << endDate << "): " << balance << endl;
+}

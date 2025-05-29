@@ -10,8 +10,8 @@
 
 class InsuranceView {
 public:
-    static Insurance addInsurance(VehicleContainer &container);
-    static int removeInsurance();
+    Insurance addInsurance(VehicleContainer &container);
+    string removeInsurance();
 };
 
 #endif //HEADERS_VIEWS_INSURANCEVIEW_H

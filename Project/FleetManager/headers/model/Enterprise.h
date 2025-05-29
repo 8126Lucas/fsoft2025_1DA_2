@@ -9,6 +9,7 @@
 #include "VSLContainer.h"
 #include "TripContainer.h"
 #include "DriverContainer.h"
+#include "FinancialContainer.h"
 #include "OrderContainer.h"
 
 using namespace std;
@@ -20,6 +21,7 @@ private:
     VSLContainer vslC;
     TripContainer tripC;
     DriverContainer driverC;
+    FinancialContainer financialC;
     OrderContainer orderC;
 
 public:
@@ -34,6 +36,7 @@ public:
     VSLContainer &getVSLContainer();
     TripContainer &getTripContainer();
     DriverContainer &getDriverContainer();
+    FinancialContainer &getFinancialContainer();
     OrderContainer &getOrderContainer();
 };
 

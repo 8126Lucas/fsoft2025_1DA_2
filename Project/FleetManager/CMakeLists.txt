@@ -55,6 +55,8 @@ set(MODEL_SOURCE_FILES
         ${PROJECT_SOURCES_MODEL_DIR}/Enterprise.cpp
         ${PROJECT_HEADERS_MODEL_DIR}/Expense.h
         ${PROJECT_SOURCES_MODEL_DIR}/Expense.cpp
+        ${PROJECT_HEADERS_MODEL_DIR}/FinancialContainer.h
+        ${PROJECT_SOURCES_MODEL_DIR}/FinancialContainer.cpp
         ${PROJECT_HEADERS_MODEL_DIR}/Inspection.h
         ${PROJECT_SOURCES_MODEL_DIR}/Inspection.cpp
         ${PROJECT_HEADERS_MODEL_DIR}/Insurance.h
@@ -63,6 +65,8 @@ set(MODEL_SOURCE_FILES
         ${PROJECT_SOURCES_MODEL_DIR}/Order.cpp
         ${PROJECT_HEADERS_MODEL_DIR}/OrderContainer.h
         ${PROJECT_SOURCES_MODEL_DIR}/OrderContainer.cpp
+        ${PROJECT_HEADERS_MODEL_DIR}/Revenue.h
+        ${PROJECT_SOURCES_MODEL_DIR}/Revenue.cpp
         ${PROJECT_HEADERS_MODEL_DIR}/Trip.h
         ${PROJECT_SOURCES_MODEL_DIR}/Trip.cpp
         ${PROJECT_HEADERS_MODEL_DIR}/TripContainer.h
@@ -104,6 +108,8 @@ set(VIEWS_SOURCE_FILES
         ${PROJECT_SOURCES_VIEWS_DIR}/TripView.cpp
         ${PROJECT_HEADERS_VIEWS_DIR}/Utils.h
         ${PROJECT_SOURCES_VIEWS_DIR}/Utils.cpp
+        ${PROJECT_HEADERS_VIEWS_DIR}/VacationView.h
+        ${PROJECT_SOURCES_VIEWS_DIR}/VacationView.cpp
         ${PROJECT_HEADERS_VIEWS_DIR}/VehicleStorageLocationView.h
         ${PROJECT_SOURCES_VIEWS_DIR}/VehicleStorageLocationView.cpp
         ${PROJECT_HEADERS_VIEWS_DIR}/VehicleView.h

@@ -6,7 +6,7 @@
 #define HEADERS_MODEL_DRIVER_H
 
 #include <string>
-#include <vector>
+#include <list>
 
 #include "Vacation.h"
 
@@ -21,7 +21,7 @@ private:
     int age;
     int timeToRetire;
     bool available;
-    Vacation vacation;
+    list<Vacation *> vacations;
 
 public:
     Driver();
@@ -38,11 +38,16 @@ public:
     char getLicense() const;
     int getAge() const;
     int getTimeToRetire() const;
-
+    list<Vacation *> getVacations();
+    Vacation *getVacation();
     bool getAvailability() const;
-    bool getVacationID() const;
+    int getVacationID();
 
-    void setVacation(Vacation vacation);
+    void setID(int id);
+    void setLicense(char license);
+    void setAge(int age);
+    void setTimeToRetire(int age);
+    void setVacation(Vacation *vacation);
     void setAvailability(bool available);
 
     void vacationAlert();

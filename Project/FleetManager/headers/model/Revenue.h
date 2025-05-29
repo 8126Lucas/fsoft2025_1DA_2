@@ -13,24 +13,26 @@
 class Revenue {
 protected:
     int id;
-    Order order;
+    Order *order;
     Date date;
     double amount;
 
 public:
     Revenue();
 
-    Revenue(int id, Order order, Date date, double amount);
+    Revenue(int id, Order *order, Date date, double amount);
 
     ~Revenue();
 
-    Revenue recordRevenue(int id, Order order, Date date, double amount);
-    void removeRevenue();
-
     int getID() const;
-    Order getOrder() const;
+    Order *getOrder() const;
     Date getDate() const;
     double getAmount() const;
+
+    void setID(int id);
+    void setOrder(Order *order);
+    void setDate(Date date);
+    void setAmount(double amount);
 };
 
 #endif //HEADERS_MODEL_REVENUE_H

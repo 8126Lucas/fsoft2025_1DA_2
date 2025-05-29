@@ -44,13 +44,13 @@ void FinancialContainer::addExpense(Expense &expense) {
     this->expenses.push_back(expense);
 }
 
-void FinancialContainer::removeExpense(Expense &expense) {
-    list<Expense>::iterator it = searchExpense(expense.getID());
+void FinancialContainer::removeExpense(int id) {
+    list<Expense>::iterator it = searchExpense(id);
     if (it != this->expenses.end()) {
         this->expenses.erase(it);
     }
     else {
-        string msg = "Expense (id): " + to_string(expense.getID());
+        string msg = "Expense (id): " + to_string(id);
         throw NonExistingDataException(msg);
     }
 }
@@ -60,9 +60,14 @@ list<Expense> FinancialContainer::listExpense() {
     return newList;
 }
 
-//acabar
 list<Expense> FinancialContainer::listExpensesByType(TYPE type) {
-    list<Expense> newList(this->expenses);
+    list<Expense> newList;
+    list<Expense>::iterator it = this->expenses.begin();
+    for (; it != this->expenses.end(); ++it) {
+        if (it->getType() == type) {
+            newList.push_back(*it);
+        }
+    }
     return newList;
 }
 
@@ -83,13 +88,13 @@ void FinancialContainer::addRevenue(Revenue &revenue) {
     this->revenues.push_back(revenue);
 }
 
-void FinancialContainer::removeRevenue(Revenue &revenue) {
-    list<Revenue>::iterator it = searchRevenue(revenue.getID());
+void FinancialContainer::removeRevenue(int id) {
+    list<Revenue>::iterator it = searchRevenue(id);
     if (it != this->revenues.end()) {
         this->revenues.erase(it);
     }
     else {
-        string msg = "Revenue (id): " + to_string(revenue.getID());
+        string msg = "Revenue (id): " + to_string(id);
         throw NonExistingDataException(msg);
     }
 }
@@ -99,36 +104,40 @@ list<Revenue> FinancialContainer::listRevenue() {
     return newList;
 }
 
-double getExpensesTotal(Date startDate, Date endDate) {
-  double totalExpenses = 0;
-    for (int i = 0; i < this->expenses.size(); i++) {
-        if (startDate <= this->expenses[i].getDate() && this->expenses[i].getDate() <= endDate) {
-            totalExpenses += this->expenses[i].getAmount();
+double FinancialContainer::getExpensesTotal(Date startDate, Date endDate) {
+    double totalExpenses = 0;
+    list<Expense>::iterator it = this->expenses.begin();
+    for (; it != this->expenses.end(); ++it) {
+        if ((startDate < it->getDate() || startDate == it->getDate()) && (it->getDate() < endDate || endDate == it->getDate())) {
+            totalExpenses += it->getAmount();
         }
     }
     return totalExpenses;
 }
 
-double getRevenuesTotal(Date startDate, Date endDate) {
+double FinancialContainer::getRevenuesTotal(Date startDate, Date endDate) {
     double totalRevenues = 0;
-    for (int i = 0; i < this->revenues.size(); i++) {
-        if (startDate <= this->revenues[i].getDate() && this->revenues[i].getDate() <= endDate) {
-            totalRevenues += this->revenues[i].getAmount();
+    list<Revenue>::iterator it = this->revenues.end();
+    for (; it != this->revenues.end(); ++it) {
+        if ((startDate < it->getDate() || startDate == it->getDate()) && (it->getDate() < endDate || endDate == it->getDate())) {
+            totalRevenues += it->getAmount();
         }
     }
     return totalRevenues;
 }
 
-double getBalace(Date startDate, Date endDate) {
-    double totalExpenses, totalRevenues;
-    for (int i = 0; i < this->expenses.size(); i++) {
-        if (startDate <= this->expenses[i].getDate() && this->expenses[i].getDate() <= endDate) {
-          totalExpenses += this->expenses[i].getAmount();
+double FinancialContainer::getBalance(Date startDate, Date endDate) {
+    double totalExpenses = 0, totalRevenues = 0;
+    list<Expense>::iterator expenseIT = this->expenses.begin();
+    list<Revenue>::iterator revenueIT = this->revenues.begin();
+    for (; expenseIT != expenses.end(); ++expenseIT) {
+        if ((startDate < expenseIT->getDate() || startDate == expenseIT->getDate()) && (expenseIT->getDate() < endDate || endDate == expenseIT->getDate())) {
+            totalExpenses += expenseIT->getAmount();
         }
     }
-    for (int i = 0; i < this->revenues.size(); i++) {
-        if (startDate <= this->revenues[i].getDate() && this->revenues[i].getDate() <= endDate) {
-            totalRevenues += this->revenues[i].getAmount();
+    for (; revenueIT != revenues.end(); ++revenueIT) {
+        if ((startDate < revenueIT->getDate() || startDate == revenueIT->getDate()) && (revenueIT->getDate() < endDate || endDate == revenueIT->getDate())) {
+            totalRevenues += revenueIT->getAmount();
         }
     }
     return totalRevenues - totalExpenses;

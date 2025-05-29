@@ -22,17 +22,17 @@ private:
 public:
     Expense *getExpense(int id);
     void addExpense(Expense &expense);
-    void removeExpense(Expense &expense);
+    void removeExpense(int id);
     list<Expense> listExpense();
     list<Expense> listExpensesByType(TYPE type);
 
     Revenue *getRevenue(int id);
     void addRevenue(Revenue &revenue);
-    void removeRevenue(Revenue &revenue);
+    void removeRevenue(int id);
     list<Revenue> listRevenue();
 
-    double getExpenseTotal(Date startDate, Date endDate);
-    double getRevenueTotal(Date startDate, Date endDate);
+    double getExpensesTotal(Date startDate, Date endDate);
+    double getRevenuesTotal(Date startDate, Date endDate);
     double getBalance(Date startDate, Date endDate);
 };
 
