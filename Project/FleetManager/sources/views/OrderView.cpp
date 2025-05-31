@@ -12,8 +12,35 @@
 using namespace std;
 
 Order OrderView::addOrder() {
-  Order order = Order();
-  return order;
+    Order order = Order();
+    bool flag_error = false;
+    do {
+        try {
+            flag_error = false;
+            int orderID = Utils::getInt("Order ID");
+            int clientID = Utils::getInt("Client ID");
+            Date date = Utils::getDate("Date");
+            string sourceAddress = Utils::getString("Source Address");
+            string destinationAddress = Utils::getString("Destination Address");
+            double cargoSpace = Utils::getDouble("Cargo Space");
+            double cargoWeight = Utils::getDouble("Cargo Weight");
+            double shippingValue = Utils::getDouble("Shipping Value");
+
+            order.setStatus(IN_PROGRESS);
+            order.setOrderID(orderID);
+            order.setClientID(clientID);
+            order.setDate(date);
+            order.setSourceAddress(sourceAddress);
+            order.setDestinationAddress(destinationAddress);
+            order.setCargoSpace(cargoSpace);
+            order.setCargoWeight(cargoWeight);
+            order.setShippingValue(shippingValue);
+        } catch (InvalidDataException &error) {
+            cout << error.what() << endl;
+            flag_error = true;
+        }
+    } while (flag_error);
+    return order;
 }
 
 Order *OrderView::getOrder(OrderContainer *container) {
@@ -27,22 +54,18 @@ void OrderView::printOrder(Order *order) {
     do {
         try {
             flag_error = false;
-            cout << "*** Order " << order->getOrderId() << " ***\n";
-            cout << "Client Id: " << order->getClientId() << endl;
+            cout << "*** Order " << order->getOrderID() << " ***\n";
+            cout << "Client ID: " << order->getClientID() << endl;
             cout << "Date: " << order->getDate() << endl;
             cout << "Source Address: " << order->getSourceAddress() << endl;
             cout << "Destination Address: " << order->getDestinationAddress() << endl;
-            cout << "Cargo Space (m³): " << order->getCargoSpace() << endl;
+            cout << "Cargo Space (m" + to_string(char(0x00B3)) + "): " << order->getCargoSpace() << endl;
             cout << "CargoWeight (Kg): " << order->getCargoWeight() << endl;
             cout << "ShippingValue (€): " << order->getShippingValue() << endl;
-            if (order->getStatus() == IN_PROGRESS ) {
-                cout << "Status: Not delivered\n";
-            }
-            else {cout << "Availability: Delivered\n";}
-            cout << "Delivered in Address: " << order->getSourceAddress() << endl;
-            cout << "In date: " << order->getDate() << endl;//ver esta cena do date para saber como usar a nova date
-            cout << "The Order Id was: " << order->getOrderId() << endl;
+            if (order->getStatus() == IN_PROGRESS ) {cout << "Status: Not delivered\n";}
+            else {cout << "Status: Delivered\n";}
         } catch (NonExistingDataException &error) {
+            cout << error.what() << endl;
             flag_error = true;
         }
     } while (flag_error);
@@ -53,5 +76,19 @@ void OrderView::printOrders(list<Order> &orders) {
   for (; it != orders.end(); ++it) {
     printOrder(&*it);
   }
+
+}
+
+void OrderView::completeOrder(Order *order) {
+    bool flag_error = false;
+    do {
+        try {
+            flag_error = false;
+            order->setStatus(COMPLETED);
+        }catch (InvalidDataException &error) {
+            cout << error.what() << endl;
+            flag_error = true;
+        }
+    }while (flag_error);
 
 }

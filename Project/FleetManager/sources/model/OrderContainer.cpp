@@ -10,32 +10,31 @@
 
 using namespace std;
 
-list<Order>::iterator OrderContainer::search(int orderId) {
+list<Order>::iterator OrderContainer::search(int orderID) {
     list<Order>::iterator it = this->orders.begin();
     for (; it != this->orders.end(); ++it) {
-        if (it->getOrderId() == orderId) {
+        if (it->getOrderID() == orderID) {
             return it;
         }
     }
     return orders.end();
 }
 
-Order *OrderContainer::get(int orderId) {
-    ::list<Order>::iterator it = search(orderId);
+Order *OrderContainer::get(int orderID) {
+    list<Order>::iterator it = search(orderID);
     if (it != this->orders.end()) {
         return &(*it);
     }
     throw NonExistingDataException("Order ID");
 }
+
 void OrderContainer::add(Order &order) {
-    list<Order>::iterator it = search(order.getOrderId());
+    list<Order>::iterator it = search(order.getOrderID());
     if (it != this->orders.end()) {
-        string msg = "order: " + to_string(order.getOrderId());
+        string msg = "Order: " + to_string(order.getOrderID());
         throw DuplicatedDataException(msg);
     }
-    else {
-        this->orders.push_back(order);
-    }
+    this->orders.push_back(order);
 }
 
 void OrderContainer::remove(int orderId) {
@@ -44,15 +43,16 @@ void OrderContainer::remove(int orderId) {
         this->orders.erase(it);
     }
     else {
-        string msg = "order: " + to_string(orderId);
+        string msg = "Order: " + to_string(orderId);
         throw NonExistingDataException(msg);
     }
 }
 
-void OrderContainer::complete(int orderId) {
-    list<Order>::iterator it = search(orderId);
+void OrderContainer::update(Order *order) {
+    list<Order>::iterator it = search(order->getOrderID());
     if (it != this->orders.end()) {
-        it->setStatus(COMPLETED);//ver os sets
+        this->orders.erase(it);
+        this->orders.push_back(*order);
     }
 }
 
@@ -65,7 +65,7 @@ std::list<Order> OrderContainer::listUncompleted(){
     list<Order> listUncompleted;
     list<Order>::iterator it = this->orders.begin();
     for (; it != this->orders.end(); ++it) {
-        if (it->getStatus() == IN_PROGRESS) listUncompleted.push_back(*it);
+        if (it->getStatus() == IN_PROGRESS) {listUncompleted.push_back(*it);}
     }
     return listUncompleted;
 }
@@ -74,28 +74,16 @@ std::list<Order> OrderContainer::listCompleted(){
     list<Order> listCompleted;
     list<Order>::iterator it = this->orders.begin();
     for (; it != this->orders.end(); ++it) {
-        if (it->getStatus() == COMPLETED) listCompleted.push_back(*it);
+        if (it->getStatus() == COMPLETED) {listCompleted.push_back(*it);}
     }
     return listCompleted;
 }
-/*std::pair<std::list<Order>, std::list<Order>> OrderContainer::listCompletion() {
-    ::list<Order> listUncompleted;
-    ::list<Order> listCompleted;
-    ::list<Order>::iterator it = this->orders.begin();
-    for (; it != this->orders.end(); ++it) {
-        if (it->getStatus() == IN_PROGRESS) listUncompleted.push_back(*it);
-        else listCompleted.push_back(*it);
-    }
-    return std::make_pair(listUncompleted, listCompleted);
-}
-*/
-list<Order> OrderContainer::listClient(int clientId){
-    list<Order> listClient;
+
+list<Order> OrderContainer::listOrdersByClient(int clientID){
+    list<Order> listOrder;
     list<Order>::iterator it = this->orders.begin();
     for (; it != this->orders.end(); ++it) {
-        if (it->getClientId() == clientId) listClient.push_back(*it);
+        if (it->getClientID() == clientID) {listOrder.push_back(*it);}
     }
-    return listClient;
+    return listOrder;
 }
-
-

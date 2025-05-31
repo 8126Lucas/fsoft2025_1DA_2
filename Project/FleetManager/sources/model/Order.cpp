@@ -8,59 +8,30 @@
 #include "OrderView.h"
 #include "Date.h"
 
-Order::Order() : orderId(),clientId(),status(IN_PROGRESS) {}
+Order::Order() : orderID(), clientID(), status(IN_PROGRESS) {}
 
 Order::Order(const int orderId, const int clientId,const Date date,const string sourceAddress,const string destinationAddress,
              const double cargoSpace,const double cargoWeight,const double ShippingValue,const ORDERSTATUS status) {
-    this->orderId = orderId;
-    this->clientId = clientId;
+    this->orderID = orderId;
+    this->clientID = clientId;
     this->date = date;//cena do date
     this->sourceAddress = sourceAddress;
     this->destinationAddress = destinationAddress;
     this->cargoSpace = cargoSpace;
     this->cargoWeight = cargoWeight;
-    this->ShippingValue = ShippingValue;
+    this->shippingValue = ShippingValue;
     this->status = status;
 
 }
 
 Order::~Order() {}
 
-Order Order::addOrder(Order order) {
-    return order;
+int Order::getOrderID() {
+    return orderID;
 }
 
-void Order::removeOrder(int id) {
-    id = 5;
-}
-
-void Order::completeOrder(int id) {
-    id = 5;
-}
-void Order::listOrders() {
-
-}
-/*void Order::listOrdersByCompletion() {
-  list<Order> listUncompleted;
-  list<Order> listCompleted;
-  auto result = OrderContainer::listCompletion();
-  listUncompleted = result.first;
-  listCompleted = result.second;
-}*/
-
-void Order::listCompletedOrders() {
-}
-
-void Order::listUncompletedOrders() {
-
-}
-
-int Order::getOrderId() {
-    return orderId;
-}
-
-int Order::getClientId() {
-    return clientId;
+int Order::getClientID() {
+    return clientID;
 }
 
 Date Order::getDate() {
@@ -84,13 +55,46 @@ double Order::getCargoWeight() {
 }
 
 double Order::getShippingValue() {
-    return ShippingValue;
+    return shippingValue;
 }
 
-ORDERSTATUS Order::getStatus() {
+STATUS Order::getStatus() {
     return status;
 }
 
-void Order::setStatus(ORDERSTATUS status) {
+void Order::setStatus(STATUS status) {
     this->status = status;
+}
+
+
+void Order::setOrderID(int orderID) {
+    this->orderID = orderID;
+}
+
+void Order::setClientID(int clientID) {
+    this->clientID = clientID;
+}
+
+void Order::setDate(Date date) {
+    this->date = date;
+}
+
+void Order::setSourceAddress(string sourceAddress) {
+    this->sourceAddress = sourceAddress;
+}
+
+void Order::setDestinationAddress(string destinationAddress) {
+    this->destinationAddress = destinationAddress;
+}
+
+void Order::setCargoWeight(double cargoweight) {
+    this->cargoWeight = cargoweight;
+}
+
+void Order::setCargoSpace(double cargoSpace){
+    this->cargoSpace = cargoSpace;
+}
+
+void Order::setShippingValue(double shippingValue) {
+    this->shippingValue = shippingValue;
 }

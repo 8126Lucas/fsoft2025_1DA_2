@@ -229,6 +229,7 @@ void Controller::runTrip() {
                 list<Trip> listTrips = containerTrip.listTripsByDriver(*driver);
                 this->tripView.printListTrips(listTrips);
             }
+                break;
             case 7: {
                 TripContainer &containerTrip = this->model.getTripContainer();
                 list<Trip> listFailed = containerTrip.listTripsByState(FAILED);
@@ -320,7 +321,8 @@ void Controller::runFinancial() {
             case 3: {
                 FinancialContainer &containerFinancial = this->model.getFinancialContainer();
                 list<Expense> listExpenses = containerFinancial.listExpense();
-                this->financialView.printExpenses(listExpenses);
+                if (listExpenses.empty()) {cout << "THERE ARE NO EXPENSES IN THE RECORDS" << endl;}
+                else {this->financialView.printExpenses(listExpenses);}
             }
                 break;
             case 4: {
@@ -328,23 +330,28 @@ void Controller::runFinancial() {
                 int type = Utils::getInt("Type (FUEL/INSPECTION/INSURANCE/TOLL/FINE)");
                 if (type == 1) {
                     list<Expense> listExpenses = containerFinancial.listExpensesByType(FUEL);
-                    this->financialView.printExpenses(listExpenses);
+                    if (listExpenses.empty()) {cout << "THERE ARE NO FUEL EXPENSES" << endl;}
+                    else {this->financialView.printExpenses(listExpenses);}
                 }
                 else if (type == 2) {
                     list<Expense> listExpenses = containerFinancial.listExpensesByType(INSPECTION);
-                    this->financialView.printExpenses(listExpenses);
+                    if (listExpenses.empty()) {cout << "THERE ARE NO INSPECTION EXPENSES" << endl;}
+                    else {this->financialView.printExpenses(listExpenses);}
                 }
                 else if (type == 3) {
                     list<Expense> listExpenses = containerFinancial.listExpensesByType(INSURANCE);
-                    this->financialView.printExpenses(listExpenses);
+                    if (listExpenses.empty()) {cout << "THERE ARE NO INSURANCE EXPENSES" << endl;}
+                    else {this->financialView.printExpenses(listExpenses);}
                 }
                 else if (type == 4) {
                     list<Expense> listExpenses = containerFinancial.listExpensesByType(TOLL);
-                    this->financialView.printExpenses(listExpenses);
+                    if (listExpenses.empty()) {cout << "THERE ARE NO TOLL EXPENSES" << endl;}
+                    else {this->financialView.printExpenses(listExpenses);}
                 }
                 else if (type == 5) {
                     list<Expense> listExpenses = containerFinancial.listExpensesByType(FINE);
-                    this->financialView.printExpenses(listExpenses);
+                    if (listExpenses.empty()) {cout << "THERE ARE NO FINE EXPENSES" << endl;}
+                    else {this->financialView.printExpenses(listExpenses);}
                 }
                 else {cout << "!!! Type does not exist !!!";}
             }
@@ -365,16 +372,17 @@ void Controller::runFinancial() {
             case 7: {
                 FinancialContainer &containerFinancial = this->model.getFinancialContainer();
                 list<Revenue> listRevenues = containerFinancial.listRevenue();
-                this->financialView.printRevenues(listRevenues);
+                if (listRevenues.empty()) {cout << "THERE ARE NO REVENUES IN THE RECORDS" << endl;}
+                else {this->financialView.printRevenues(listRevenues);}
             }
                 break;
             case 8: {
                 FinancialContainer &containerFinancial = this->model.getFinancialContainer();
                 list<Expense> listExpenses = containerFinancial.listExpense();
                 list<Revenue> listRevenues = containerFinancial.listRevenue();
-                cout << "\n******* Expenses *******\n";
+                cout << "\n******* Expenses: " + to_string(listExpenses.size()) + " *******\n";
                 this->financialView.printExpenses(listExpenses);
-                cout << "\n\n******* Revenues *******\n";
+                cout << "\n\n******* Revenues: " + to_string(listRevenues.size()) + " *******\n";
                 this->financialView.printRevenues(listRevenues);
             }
                 break;
@@ -389,4 +397,50 @@ void Controller::runFinancial() {
     } while (op != 0);
 }
 
-void Controller::runOrder() {}
+void Controller::runOrder() {
+    int op = -1;
+    do {
+        op = this->view.menuOrder();
+        switch (op) {
+            case 1: {
+                Order order = this->orderView.addOrder();
+                OrderContainer &containerOrder = this->model.getOrderContainer();
+                containerOrder.add(order);
+            }
+                break;
+            case 2: {
+                int id = Utils::getInt("Order ID");
+                OrderContainer &containerOrder = this->model.getOrderContainer();
+                containerOrder.remove(id);
+            }
+                break;
+            case 3: {
+                OrderContainer &containerOrder = this->model.getOrderContainer();
+                int id = Utils::getInt("Order ID");
+                Order *order = containerOrder.get(id);
+                this->orderView.completeOrder(order);
+                containerOrder.update(order);
+            }
+                break;
+            case 4: {
+                OrderContainer &containerOrder = this->model.getOrderContainer();
+                list<Order> listOrder = containerOrder.listUncompleted();
+                this->orderView.printOrders(listOrder);
+            }
+                break;
+            case 5: {
+                OrderContainer &containerOrder = this->model.getOrderContainer();
+                list<Order> listOrder = containerOrder.listCompleted();
+                this->orderView.printOrders(listOrder);
+            }
+                break;
+            case 6: {
+                int clientID = Utils::getInt("Client ID");
+                OrderContainer &containerOrder = this->model.getOrderContainer();
+                list<Order> listOrder = containerOrder.listOrdersByClient(clientID);
+                this->orderView.printOrders(listOrder);
+            }
+                break;
+        }
+    } while (op != 0);
+}

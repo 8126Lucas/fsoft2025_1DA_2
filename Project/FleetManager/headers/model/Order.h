@@ -9,51 +9,49 @@
 
 using namespace std;
 
-enum ORDERSTATUS{
-  IN_PROGRESS = 0,//removido uncompleted
+enum STATUS{
+  IN_PROGRESS = 0,
   COMPLETED = 1,
 };
 class Order {
-  protected:
-    int orderId;
-    int clientId;
+  private:
+    STATUS status;
+    int orderID;
+    int clientID;
     Date date;
     string sourceAddress;
     string destinationAddress;
     double cargoSpace;
     double cargoWeight;
-    double ShippingValue;
-  private:
-    ORDERSTATUS status;
+    double shippingValue;
   public:
     Order();
 
     Order(int orderId, int clientId, Date date, string sourceAddress, string destinationAddress,
           double cargoSpace, double cargoWeight, double ShippingValue,ORDERSTATUS status);
-    ~Order();
 
-    Order addOrder(Order order);
-    void removeOrder(int orderId);
-    void completeOrder(int orderId);
+  ~Order();
 
-    void listOrders();
-    //void listOrdersByCompletion();
-    void listCompletedOrders();
-    void listUncompletedOrders();
-    void listOrdersByClient(int clientId);
+
     Date getDate();
-    int getOrderId();
-    int getClientId();
+    int getOrderID();
+    int getClientID();
     string getSourceAddress();
     string getDestinationAddress();
     double getCargoSpace();
     double getCargoWeight();
     double getShippingValue();
-    ORDERSTATUS getStatus();
+    STATUS getStatus();
 
-    void setStatus(ORDERSTATUS status);
-
-    bool operator==(int id) const;
+    void setStatus(STATUS status);
+    void setOrderID(int orderID);
+    void setClientID(int clientID);
+    void setDate(Date date);
+    void setSourceAddress(string sourceAddress);
+    void setDestinationAddress(string destinationAddress);
+    void setCargoSpace(double cargoSpace);
+    void setCargoWeight(double cargoWeight);
+    void setShippingValue(double shippingValue);
 
 };
 #endif //HEADERS_MODEL_ORDER_H

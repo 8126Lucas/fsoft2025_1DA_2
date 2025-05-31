@@ -15,15 +15,15 @@ class OrderContainer {
     list<Order>::iterator search(int orderId);
   public:
     Order *get(int orderId);
-    void add(Order &order);//static
+    void add(Order &order);
     void remove(int orderId);
+    void update(Order *order);
     list<Order> listOrders();
-    // std::pair<std::list<Order>, std::list<Order>> listCompletion();
-    std::list<Order> listCompleted();
-    std::list<Order> listUncompleted();
-    std::list<Order> listClient(int clientID);
-    void complete(int orderId);
-  //void set(void param)
+
+    list<Order> listCompleted();
+    list<Order> listUncompleted();
+    list<Order> listOrdersByClient(int clientID);
+
 
 };
 #endif //HEADERS_MODEL_ORDERCONTAINER_H
