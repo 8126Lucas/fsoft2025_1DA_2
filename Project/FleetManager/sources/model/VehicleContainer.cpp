@@ -15,7 +15,7 @@ list<Truck>::iterator VehicleContainer::searchTruck(const string &licensePlate) 
             return it;
         }
     }
-    return it;
+    return trucks.end();
 }
 
 list<Van>::iterator VehicleContainer::searchVan(const string &licensePlate) {
@@ -25,15 +25,15 @@ list<Van>::iterator VehicleContainer::searchVan(const string &licensePlate) {
             return it;
         }
     }
-    return it;
+    return vans.end();
 }
 
 Vehicle *VehicleContainer::get(string &licensePlate) {
     Truck *truck = getTruck(licensePlate);
     Van *van = getVan(licensePlate);
-    if (truck == NULL && van != NULL) {return van;}
-    if (truck != NULL && van == NULL) {return truck;}
-    return NULL;
+    if (truck == nullptr && van != nullptr) {return van;}
+    if (truck != nullptr && van == nullptr) {return truck;}
+    throw NonExistingDataException("Vehicle's License Plate");
 }
 
 Truck *VehicleContainer::getTruck(string &licensePlate) {
@@ -41,7 +41,7 @@ Truck *VehicleContainer::getTruck(string &licensePlate) {
     if (it != this->trucks.end()) {
         return &(*it);
     }
-    return NULL;
+    throw NonExistingDataException("Truck's License Plate");
 }
 
 Van *VehicleContainer::getVan(string &licensePlate) {
@@ -49,7 +49,7 @@ Van *VehicleContainer::getVan(string &licensePlate) {
     if (it != this->vans.end()) {
         return &(*it);
     }
-    return NULL;
+    throw NonExistingDataException("Van's License Plate");
 }
 
 

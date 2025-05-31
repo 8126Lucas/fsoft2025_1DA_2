@@ -14,7 +14,7 @@ list<Driver>::iterator DriverContainer::search(int id) {
       return it;
     }
   }
-  return it;
+  return drivers.end();
 }
 
 Driver *DriverContainer::get(int id) {
@@ -22,7 +22,7 @@ Driver *DriverContainer::get(int id) {
   if(it != this->drivers.end()) {
     return &(*it);
   }
-  return NULL;
+  throw NonExistingDataException("Driver ID");
 }
 
 void DriverContainer::add(Driver &driver) {

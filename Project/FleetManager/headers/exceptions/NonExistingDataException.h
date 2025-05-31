@@ -4,17 +4,15 @@
 
 #ifndef HEADERS_EXCEPTIONS_NONEXISTINGDATAEXCEPTION_H
 #define HEADERS_EXCEPTIONS_NONEXISTINGDATAEXCEPTION_H
-#include <exception>
+#include <stdexcept>
 #include <string>
 
 using namespace std;
 
-class NonExistingDataException : public exception {
-private:
-    string data;
+class NonExistingDataException : public runtime_error {
 public:
-    NonExistingDataException(string data);
-    const char *what();
+    NonExistingDataException(const string &data);
+    const char *what() const noexcept override;
 };
 
 #endif //HEADERS_EXCEPTIONS_NONEXISTINGDATAEXCEPTION_H

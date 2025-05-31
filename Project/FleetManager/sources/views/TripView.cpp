@@ -32,6 +32,7 @@ Trip TripView::addTrip(OrderContainer &containerOrder) {
             trip.setTolls(0);
             trip.setCost(cost);
         }catch (InvalidDataException &error) {
+            cout << error.what() << endl;
             flag_error = true;
         }
     }while (flag_error);
@@ -61,6 +62,7 @@ void TripView::printTrip(Trip *trip){
             cout << "Fuel Cost: " << trip->getFuelCost() << "€\n";
             cout << "Total Cost: " << trip->getCost() << "€\n";
         } catch(NonExistingDataException &error) {
+            cout << error.what() << endl;
             flag_error = true;
         }
     }while(flag_error);
@@ -90,6 +92,7 @@ void TripView::startTrip(Trip *trip, DriverContainer &containerDriver, VehicleCo
             trip->setVehicle(vehicle);
             vehicle->setAvailability(true);
         }catch (InvalidDataException &error) {
+            cout << error.what() << endl;
             flag_error = true;
         }
     }while (flag_error);
@@ -115,6 +118,7 @@ void TripView::endTrip(Trip *trip, DriverContainer &containerDriver, VehicleCont
             trip->getVehicle()->setAvailability(true);
             trip->getDriver()->setAvailability(true);
         }catch (InvalidDataException &error) {
+            cout << error.what() << endl;
             flag_error = true;
         }
     }while (flag_error);
@@ -129,6 +133,7 @@ void TripView::failTrip(Trip *trip) {
             trip->getVehicle()->setAvailability(true);
             trip->getDriver()->setAvailability(true);
         }catch (InvalidDataException &error) {
+            cout << error.what() << endl;
             flag_error = true;
         }
 

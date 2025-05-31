@@ -17,7 +17,7 @@ list<Order>::iterator OrderContainer::search(int orderId) {
             return it;
         }
     }
-    return it;
+    return orders.end();
 }
 
 Order *OrderContainer::get(int orderId) {
@@ -25,7 +25,7 @@ Order *OrderContainer::get(int orderId) {
     if (it != this->orders.end()) {
         return &(*it);
     }
-    return NULL;
+    throw NonExistingDataException("Order ID");
 }
 void OrderContainer::add(Order &order) {
     list<Order>::iterator it = search(order.getOrderId());

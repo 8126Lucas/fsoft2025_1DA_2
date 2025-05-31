@@ -28,6 +28,7 @@ Vacation VacationView::addVacation(DriverContainer &container) {
                 vacation.setStatus(true);
             }
         } catch (InvalidDataException &error) {
+            cout << error.what() << endl;
             flag_error = true;
         }
     } while (flag_error);

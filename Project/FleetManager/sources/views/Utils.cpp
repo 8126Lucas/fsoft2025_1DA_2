@@ -9,7 +9,8 @@
 #include <list>
 #include <vector>
 #include <type_traits>
-
+#include <cctype>
+#include "NonExistingDataException.h"
 #include "InvalidDataException.h"
 #include "TripContainer.h"
 #include "Truck.h"
@@ -53,6 +54,12 @@ double Utils::getDouble(const string &label) {
       cin.ignore(std::numeric_limits<std::streamsize>::max(), '\n');
       flag_error = true;
     }
+    if (label == "Fuel (%)" && (number > 100.0 || number < 0.0)) {
+      cout << "That's not valid percentage! Please try again.\n";
+      cin.clear();
+      cin.ignore(std::numeric_limits<std::streamsize>::max(), '\n');
+      flag_error = true;
+    }
   } while(flag_error);
   cin.clear();
   cin.ignore(std::numeric_limits<std::streamsize>::max(), '\n');
@@ -67,9 +74,23 @@ string Utils::getString(const string &label) {
 }
 
 char Utils::getChar(const string &label) {
-  cout << label << ": ";
-  char input = getchar();
-  return input;
+  string input;
+  bool flag_error = false;
+  do {
+    cout << label << ": ";
+    cin >> input;
+    if (cin.fail() || input.length() != 1 || !isalpha(input[0])) {
+      cout << "That's not a character! Please enter a character.\n";
+      cin.clear();
+      cin.ignore(numeric_limits<streamsize>::max(), '\n');
+      flag_error = true;
+    }
+    else {
+      cin.ignore(numeric_limits<streamsize>::max(), '\n');
+      flag_error = false;
+    }
+  } while (flag_error);
+  return input[0];
 }
 
 Date Utils::getDate(const string &label) {
@@ -77,78 +98,105 @@ Date Utils::getDate(const string &label) {
   string input;
   char seperator = '/';
   vector<int> numbers;
-  std::stringstream stream(input);
-  string item;
+
   bool flag_error = false;
   cout << label <<" (DD/MM/YYYY): ";
   do {
     flag_error = false;
     numbers.clear();
     getline(cin, input);
+    stringstream stream(input);
+    string item;
 
     while (getline(stream, item, seperator)) {
       try {
         numbers.push_back(stoi(item));
       } catch (InvalidDataException &error) {
+        cout << error.what() << endl;
         flag_error = true;
         break;
       }
     }
-    if (numbers.size() == 3) {
-      if (!date.setDate(numbers[0], numbers[1], numbers[2])) {
-        flag_error = true;
-        break;
+    if (!flag_error) {
+      if (numbers.size() == 3) {
+        if (!date.setDate(numbers[0], numbers[1], numbers[2])) {
+          flag_error = true;
+          throw(InvalidDataException("Invalid data input!"));
+        }
       }
+      else {flag_error = true;}
     }
-    else {flag_error = true;}
   } while (flag_error);
 
   return date;
 }
 
 Vehicle *Utils::getVehicle(VehicleContainer &container, const string &label) {
-  string licensePlate = getString(label);
-  Vehicle *vehicle = container.get(licensePlate);
+  Vehicle *vehicle = nullptr;
+  bool valid = false;
+  do {
+    try {
+      string licensePlate = getString(label);
+      vehicle = container.get(licensePlate);
+      valid = true;
+    } catch (const NonExistingDataException &error) {
+      cout << error.what() << endl;
+      cout << "Please try again!\n";
+      valid = false;
+    }
+  } while (!valid);
   return vehicle;
 }
 
 Order *Utils::getOrder(OrderContainer &container, const string &label) {
-  int id = getInt(label);
-  Order *order = container.get(id);
+  Order *order = nullptr;
+  bool valid = false;
+  do {
+    try {
+      int id = getInt(label);
+      order = container.get(id);
+      valid = true;
+    } catch (const NonExistingDataException &error) {
+      cout << error.what() << endl;
+      cout << "Please try again!\n";
+      valid = false;
+    }
+  } while (!valid);
   return order;
 }
 
 Driver *Utils::getDriver(DriverContainer &container, const string &label) {
-  int id = getInt(label);
-  Driver *driver = container.get(id);
+  Driver *driver = nullptr;
+  bool valid = false;
+  do {
+    try {
+      int id = getInt(label);
+      driver = container.get(id);
+      valid = true;
+    } catch (const NonExistingDataException &error) {
+      cout << error.what() << endl;
+      cout << "Please try again!\n";
+      valid = false;
+    }
+  } while (!valid);
   return driver;
 }
 
 Trip *Utils::getTrip(TripContainer &container, const string &label) {
-  int id = getInt(label);
-  Trip *trip = container.getTrip(id);
+  Trip *trip = nullptr;
+  bool valid = false;
+  do {
+    try {
+      int id = getInt(label);
+      trip = container.getTrip(id);
+      valid = true;
+    } catch (const NonExistingDataException &error) {
+      cout << error.what() << endl;
+      cout << "Please try again!\n";
+      valid = false;
+    }
+  } while (!valid);
   return trip;
 }
 
-// Trip *Utils::getOrder(int order &label){ // verificar depois
-//   int order = getInt(label);
-//   Trip *trip = TripContainer::get(order);
-//   return order;
-// }
-
-// Trip utils::setTrip() {
-//   Trip trip = Trip();
-//   bool flag_error = false;
-//     do{
-//       try{
-//         flag_error = false;
-//         int id = Utils::getInt("Trip ID");
-//         Date date = utils::getDate("Date");
-//         int order = Utils::getOrder("Order ID");)
-//         string driver = Utils::getDriver("Driver");
-//         string vehicle = Utils::getVehicle("Vehicle's License Plate");
-//       }
-//     }
-//
-// }
 

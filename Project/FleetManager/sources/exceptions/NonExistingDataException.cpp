@@ -4,10 +4,9 @@
 
 #include "NonExistingDataException.h"
 
-NonExistingDataException::NonExistingDataException(string data) {
-    this->data = "!! Error: \"" + data + "\" does not exist !!";
-}
+NonExistingDataException::NonExistingDataException(const string &data)
+    : runtime_error("!! Error: \"" + data + "\" does not exist !!") {}
 
-const char *NonExistingDataException::what() {
-    return this->data.c_str();
+const char *NonExistingDataException::what() const noexcept {
+    return runtime_error::what();
 }

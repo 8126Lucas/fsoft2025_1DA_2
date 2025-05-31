@@ -4,10 +4,9 @@
 
 #include "DuplicatedDataException.h"
 
-DuplicatedDataException::DuplicatedDataException(string data) {
-    this->data = "!! Error: \"" + data + "\" duplicated !!";
-}
+DuplicatedDataException::DuplicatedDataException(const string &data)
+    : runtime_error("!! Error: \"" + data + "\" duplicated !!") {}
 
-const char *DuplicatedDataException::what() {
-    return this->data.c_str();
+const char *DuplicatedDataException::what() const noexcept {
+    return runtime_error::what();
 }

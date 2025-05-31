@@ -14,7 +14,7 @@ list<Expense>::iterator FinancialContainer::searchExpense(int id) {
             return it;
         }
     }
-    return it;
+    return expenses.end();
 }
 
 list<Revenue>::iterator FinancialContainer::searchRevenue(int id) {
@@ -24,7 +24,7 @@ list<Revenue>::iterator FinancialContainer::searchRevenue(int id) {
             return it;
         }
     }
-    return it;
+    return revenues.end();
 }
 
 Expense *FinancialContainer::getExpense(int id) {
@@ -32,7 +32,7 @@ Expense *FinancialContainer::getExpense(int id) {
     if(it != this->expenses.end()) {
         return &(*it);
     }
-    return NULL;
+    throw NonExistingDataException("Expense ID");
 }
 
 void FinancialContainer::addExpense(Expense &expense) {
@@ -76,7 +76,7 @@ Revenue *FinancialContainer::getRevenue(int id) {
     if(it != this->revenues.end()) {
         return &(*it);
     }
-    return NULL;
+    throw NonExistingDataException("Revenue ID" + to_string(id) + " is not associated to any Revenue");
 }
 
 void FinancialContainer::addRevenue(Revenue &revenue) {

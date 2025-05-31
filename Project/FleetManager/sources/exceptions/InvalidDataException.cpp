@@ -4,10 +4,9 @@
 
 #include "InvalidDataException.h"
 
-InvalidDataException::InvalidDataException(string data) {
-    this->data = "!! Error: \"" + data + "\" is invalid !!";
-}
+InvalidDataException::InvalidDataException(const string &data)
+    : runtime_error("!! Error: \"" + data + "\" is invalid !!") {}
 
-const char *InvalidDataException::what() {
-    return this->data.c_str();
+const char *InvalidDataException::what() const noexcept {
+    return runtime_error::what();
 }

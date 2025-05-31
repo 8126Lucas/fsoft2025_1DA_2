@@ -29,6 +29,7 @@ VehicleStorageLocation VehicleStorageLocationView::addVSL() {
             vsl.setCapacity(capacity);
             vsl.setCurrentVehicleCount(0);
         } catch (InvalidDataException &error) {
+            cout << error.what() << endl;
             flag_error = true;
         }
     } while (flag_error);
@@ -57,6 +58,7 @@ void VehicleStorageLocationView::printVSL(VehicleStorageLocation *vsl) {
             cout << "Capacity: " << vsl->getCapacity() << " vehicles\n";
             cout << "Vehicles Stored: " << vsl->getVehicleCount() << " vehicles\n";
         } catch (NonExistingDataException &error) {
+            cout << error.what() << endl;
             flag_error = true;
         }
     } while (flag_error);
@@ -110,6 +112,7 @@ void VehicleStorageLocationView::addVehicleToStorage(VSLContainer *containerVSL,
             vsl->getVehicles()[pair.first].push_back(pair.second);
             vsl->incrementVehicleCount();
         } catch (NonExistingDataException &error) {
+            cout << error.what() << endl;
             flag_error = true;
         }
     } while (flag_error);
@@ -139,6 +142,7 @@ void VehicleStorageLocationView::removeVehicleFromStorage(VSLContainer *containe
                 }
             }
         } catch (NonExistingDataException &error) {
+            cout << error.what() << endl;
             flag_error = true;
         }
     } while (flag_error);

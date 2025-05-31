@@ -30,6 +30,7 @@ Driver DriverView::addDriver() {
             driver.setAvailability(true);
 
         } catch (InvalidDataException &error) {
+            cout << error.what() << endl;
             flag_error = true;
         }
     } while (flag_error);
@@ -71,6 +72,7 @@ void DriverView::printDriver(Driver *driver) {
                 cout << "Vacation: No vacation active\n";
             }
         } catch (NonExistingDataException &error) {
+            cout << error.what() << endl;
             flag_error = true;
         }
     } while (flag_error);

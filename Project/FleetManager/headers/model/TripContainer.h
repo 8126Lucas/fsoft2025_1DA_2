@@ -16,10 +16,6 @@ private:
     list<Trip>::iterator search(int id);
 public:
     void add(Trip &trip);
-    void start(Trip &trip);
-    void complete(Trip &trip);
-    void failed(Trip &trip);
-    void updateState(int id, STATE state);
     void update(Trip &trip);
 
     Trip *getTrip(int id);

@@ -4,17 +4,15 @@
 
 #ifndef HEADERS_EXCEPTIONS_INVALIDDATAEXCEPTION_H
 #define HEADERS_EXCEPTIONS_INVALIDDATAEXCEPTION_H
-#include <exception>
+#include <stdexcept>
 #include <string>
 
 using namespace std;
 
-class InvalidDataException : public exception {
-private:
-    string data;
+class InvalidDataException : public runtime_error {
 public:
-    InvalidDataException(string data);
-    const char *what();
+    InvalidDataException(const string &data);
+    const char *what() const noexcept override;
 };
 
 

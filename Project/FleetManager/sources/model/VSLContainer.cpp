@@ -14,7 +14,7 @@ list<VehicleStorageLocation>::iterator VSLContainer::search(int id) {
             return it;
         }
     }
-    return it;
+    return locations.end();
 }
 
 void VSLContainer::add(const VehicleStorageLocation &location) {
@@ -60,5 +60,5 @@ VehicleStorageLocation *VSLContainer::get(int id) {
     if (it != this->locations.end()) {
         return &(*it);
     }
-    return NULL;
+    throw NonExistingDataException("VSL ID");
 }

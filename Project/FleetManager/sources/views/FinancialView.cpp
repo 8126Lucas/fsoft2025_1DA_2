@@ -31,6 +31,7 @@ Expense FinancialView::recordExpense(TripContainer &containerTrip) {
             expense.setAmount(amount);
             expense.setType(type);
         } catch (InvalidDataException &error) {
+            cout << error.what() << endl;
             flag_error = true;
         }
     } while (flag_error);
@@ -58,6 +59,7 @@ Revenue FinancialView::recordRevenue(OrderContainer &containerOrder) {
             revenue.setDate(date);
             revenue.setAmount(amount);
         } catch (InvalidDataException &error) {
+            cout << error.what() << endl;
             flag_error = true;
         }
     } while (flag_error);
@@ -115,6 +117,7 @@ void FinancialView::printExpense(Expense *expense) {
                 cout << "Type: Fine Expense\n";
             }
         } catch (NonExistingDataException &error) {
+            cout << error.what() << endl;
             flag_error = true;
         }
     } while (flag_error);
@@ -125,11 +128,12 @@ void FinancialView::printRevenue(const Revenue *revenue) {
     do {
         try {
             flag_error = false;
-            // cout << "*** Revenue " << revenue->getID() << " ***\n";
-            // cout << "Order: " << revenue->getOrder().getOrderId() << endl;
-            // cout << "Date: " << revenue->getDate() << endl;
-            // cout << "Amount: " << revenue->getAmount() << endl;
+            cout << "*** Revenue " << revenue->getID() << " ***\n";
+            cout << "Order: " << revenue->getOrder()->getOrderId() << endl;
+            cout << "Date: " << revenue->getDate() << endl;
+            cout << "Amount: " << revenue->getAmount() << endl;
         } catch (NonExistingDataException &error) {
+            cout << error.what() << endl;
             flag_error = true;
         }
     } while (flag_error);

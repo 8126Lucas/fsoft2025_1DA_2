@@ -6,6 +6,9 @@
 
 Truck::Truck() {
     this->weightCapacity = 0.0;
+    this->insurance = nullptr;
+    this->inspection = nullptr;
+    this->vsl = nullptr;
 }
 
 Truck::Truck(CATEGORY category, string brand, string model, int year, string licensePlate,

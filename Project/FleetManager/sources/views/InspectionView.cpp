@@ -22,6 +22,7 @@ Inspection InspectionView::addInspection(VehicleContainer &container) {
             inspection.setDate(date);
             inspection.setCost(cost);
         } catch (InvalidDataException &error) {
+            cout << error.what() << endl;
             flag_error = true;
         }
     } while (flag_error);

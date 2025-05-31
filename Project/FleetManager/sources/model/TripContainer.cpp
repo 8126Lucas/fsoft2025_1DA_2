@@ -16,10 +16,10 @@ list<Trip>::iterator TripContainer::search(int id) {
   list<Trip>::iterator it = this->trips.begin();
   for(; it != this->trips.end(); ++it) {
     if(it->getID() == id) {
-      return it; // foi encontrado o ID
+      return it;
     }
   }
-  return it;
+  return trips.end();
 }
 
 void TripContainer::add(Trip &trip) {
@@ -32,17 +32,7 @@ void TripContainer::add(Trip &trip) {
       }
 }
 
-void TripContainer::complete(Trip &trip) {
-  trip.setState(DELIVERED);
-}
 
-void TripContainer::start(Trip &trip) {
-  trip.setState(INCOMING);
-}
-
-void TripContainer::failed(Trip &trip) {
-  trip.setState(FAILED);
-}
 
 list<Trip> TripContainer::listTrips(){
   std::list<Trip> newList(this->trips);
@@ -78,7 +68,7 @@ Trip *TripContainer::getTrip(const int id)
   {
     return &(*it);
   }
-  return NULL;
+  throw NonExistingDataException("Trip ID");
 }
 
 void TripContainer::update(Trip &trip) {
@@ -92,17 +82,6 @@ void TripContainer::update(Trip &trip) {
     throw NonExistingDataException(msg);
   }
 }
-
-/*void TripContainer::updateState(int id, STATE newState)  --
-{
-  list<Trip>::iterator it = search(id);
-  if (it != this->trips.end())
-  {
-    it->setState(newState);
-  }else{
-    string msg = "Trip does not exists.";
-  }
-}*/
 
 
 

@@ -5,17 +5,15 @@
 #ifndef HEADERS_EXCEPTIONS_DUPLICATEDDATAEXCEPTION_H
 #define HEADERS_EXCEPTIONS_DUPLICATEDDATAEXCEPTION_H
 
-#include <exception>
+#include <stdexcept>
 #include <string>
 
 using namespace std;
 
-class DuplicatedDataException : public exception {
-private:
-    string data;
+class DuplicatedDataException : public runtime_error {
 public:
-    explicit DuplicatedDataException(string data);
-    const char *what();
+    explicit DuplicatedDataException(const string &data);
+    const char *what() const noexcept override;
 };
 
 #endif //HEADERS_EXCEPTIONS_DUPLICATEDDATAEXCEPTION_H

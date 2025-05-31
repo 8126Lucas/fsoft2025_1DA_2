@@ -16,8 +16,6 @@ void Controller::run() {
     do {
         op = this->view.menuEnterprise();
         switch (op) {
-            case 0:
-                break;
             case 1:
                 runVehicle();
                 break;
@@ -42,9 +40,6 @@ void Controller::runVehicle() {
     do {
         op = this->view.menuVehicle();
         switch (op) {
-            case 0:
-                run();
-                break;
             case 1: {
                 int category = Utils::getInt("Category (Truck - 1 / Van - 2)");
                 if (category == 1) {
@@ -185,9 +180,6 @@ void Controller::runTrip() {
     do {
         op = this->view.menuTrip();
         switch (op) {
-            case 0:
-                run();
-                break;
             case 1: {
                 OrderContainer &containerOrder = this->model.getOrderContainer();
 
@@ -268,9 +260,6 @@ void Controller::runDriver() {
     do {
         op = this->view.menuDriver();
         switch (op) {
-            case 0:
-                run();
-                break;
             case 1: {
                 Driver driver = this->driverView.addDriver();
                 DriverContainer &containerDriver = this->model.getDriverContainer();
@@ -315,9 +304,6 @@ void Controller::runFinancial() {
     do {
         op = this->view.menuFinancial();
         switch (op) {
-            case 0:
-                run();
-                break;
             case 1: {
                 TripContainer &containerTrip = this->model.getTripContainer();
                 Expense expense = this->financialView.recordExpense(containerTrip);

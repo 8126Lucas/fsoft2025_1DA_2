@@ -6,6 +6,9 @@
 
 Van::Van() {
     this->spaceCapacity = 0.0;
+    this->insurance = nullptr;
+    this->inspection = nullptr;
+    this->vsl = nullptr;
 }
 
 Van::Van(CATEGORY category, string brand, string model, int year, string licensePlate,
