@@ -129,7 +129,7 @@ void FinancialView::printRevenue(const Revenue *revenue) {
         try {
             flag_error = false;
             cout << "*** Revenue " << revenue->getID() << " ***\n";
-            cout << "Order: " << revenue->getOrder()->getOrderId() << endl;
+            cout << "Order: " << revenue->getOrder()->getOrderID() << endl;
             cout << "Date: " << revenue->getDate() << endl;
             cout << "Amount: " << revenue->getAmount() << endl;
         } catch (NonExistingDataException &error) {

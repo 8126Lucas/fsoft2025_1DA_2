@@ -92,23 +92,30 @@ VehicleStorageLocation *VehicleStorageLocationView::getVSL(VSLContainer *contain
 }
 
 pair<int, Vehicle *> VehicleStorageLocationView::getVehicleVSLPair(VSLContainer *containerVSL, VehicleContainer *containerVehicle) {
-    Vehicle *vehicle = VehicleView::getVehicle(containerVehicle);
-    VehicleStorageLocation *vsl = getVSL(containerVSL);
-    int vslID = vsl->getID();
-    return {vslID, vehicle};
+    try
+    {
+        Vehicle *vehicle = VehicleView::getVehicle(containerVehicle);
+        VehicleStorageLocation *vsl = getVSL(containerVSL);
+        int vslID = vsl->getID();
+        return {vslID, vehicle};
+    } catch (InvalidDataException &error)
+    {
+        cout << error.what() << endl;
+    }
+    return {-1, nullptr};
 }
 
 void VehicleStorageLocationView::addVehicleToStorage(VSLContainer *containerVSL, VehicleContainer *containerVehicle) {
     bool flag_error = false;
     do {
-        pair<int, Vehicle *> pair = getVehicleVSLPair(containerVSL, containerVehicle);
-        VehicleStorageLocation *vsl = containerVSL->get(pair.first);
-        if (vsl->getCapacity() == vsl->getVehicleCount()) {
-            cout << "The Storage Location is full!\n";
-            return;
-        }
         try {
             flag_error = false;
+            pair<int, Vehicle *> pair = getVehicleVSLPair(containerVSL, containerVehicle);
+            VehicleStorageLocation *vsl = containerVSL->get(pair.first);
+            if (vsl->getCapacity() == vsl->getVehicleCount()) {
+                cout << "The Storage Location is full!\n";
+                return;
+            }
             vsl->getVehicles()[pair.first].push_back(pair.second);
             vsl->incrementVehicleCount();
         } catch (NonExistingDataException &error) {

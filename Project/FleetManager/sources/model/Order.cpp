@@ -11,7 +11,7 @@
 Order::Order() : orderID(), clientID(), status(IN_PROGRESS) {}
 
 Order::Order(const int orderId, const int clientId,const Date date,const string sourceAddress,const string destinationAddress,
-             const double cargoSpace,const double cargoWeight,const double ShippingValue,const ORDERSTATUS status) {
+             const double cargoSpace,const double cargoWeight,const double ShippingValue,const STATUS status) {
     this->orderID = orderId;
     this->clientID = clientId;
     this->date = date;//cena do date

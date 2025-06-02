@@ -28,7 +28,7 @@ class Order {
     Order();
 
     Order(int orderId, int clientId, Date date, string sourceAddress, string destinationAddress,
-          double cargoSpace, double cargoWeight, double ShippingValue,ORDERSTATUS status);
+          double cargoSpace, double cargoWeight, double ShippingValue,STATUS status);
 
   ~Order();
 

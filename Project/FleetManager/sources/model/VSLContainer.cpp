@@ -3,6 +3,9 @@
 //
 
 #include "VSLContainer.h"
+
+#include <bits/codecvt.h>
+
 #include "DuplicatedDataException.h"
 #include "NonExistingDataException.h"
 #include "Utils.h"
@@ -55,10 +58,17 @@ list<VehicleStorageLocation> VSLContainer::listVSL() {
     return locations;
 }
 
-VehicleStorageLocation *VSLContainer::get(int id) {
-    list<VehicleStorageLocation>::iterator it = search(id);
-    if (it != this->locations.end()) {
-        return &(*it);
+VehicleStorageLocation *VSLContainer::get(int id)
+{
+    try{
+        list<VehicleStorageLocation>::iterator it = search(id);
+        if (it != this->locations.end()) {
+            return &(*it);
+        }
+        throw NonExistingDataException("VSL ID");
+    }catch (NonExistingDataException &error)
+    {
+        cout << error.what() << endl;
     }
-    throw NonExistingDataException("VSL ID");
+    return nullptr;
 }
