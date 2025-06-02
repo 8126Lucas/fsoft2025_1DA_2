@@ -24,6 +24,10 @@ bool Truck::canCarryLoad(Order &order) {
     return false;
 }
 
+double Truck::getWeightCapacity() const {
+    return weightCapacity;
+}
+
 void Truck::setWeightCapacity(double weightCapacity) {
     this->weightCapacity = weightCapacity;
 }

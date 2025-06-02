@@ -17,7 +17,7 @@ class Inspection {
     Vehicle *vehicle;
     Date date;
     double cost;
-    Date today = Date::getToday();
+    Date today;
 
   public:
     Inspection();
@@ -28,11 +28,13 @@ class Inspection {
     int getID() const;
     Vehicle *getVehicle() const;
     Date getDate() const;
+    double getCost() const;
 
     void setID(int id);
     void setVehicle(Vehicle *vehicle);
     void setDate(Date date);
     void setCost(double cost);
+    void setToday();
 
     bool isDued();
     int getRemainingDays() const;

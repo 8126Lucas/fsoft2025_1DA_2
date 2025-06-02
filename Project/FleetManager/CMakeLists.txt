@@ -85,6 +85,17 @@ set(MODEL_SOURCE_FILES
         ${PROJECT_SOURCES_MODEL_DIR}/VSLContainer.cpp
 )
 
+set(PROJECT_HEADERS_SERIAL_DIR
+        ${PROJECT_HEADERS_DIR}/serial)
+set(PROJECT_SOURCES_SERIAL_DIR
+        ${PROJECT_SOURCES_DIR}/serial)
+include_directories(
+        ${PROJECT_HEADERS_SERIAL_DIR}
+        ${PROJECT_SOURCES_SERIAL_DIR})
+set(SERIAL_SOURCE_FILES
+        ${PROJECT_HEADERS_SERIAL_DIR}/nlohmann/json.hpp
+        ${PROJECT_HEADERS_SERIAL_DIR}/VehicleSerialization.h
+        ${PROJECT_SOURCES_SERIAL_DIR}/VehicleSerialization.cpp)
 
 set(PROJECT_HEADERS_VIEWS_DIR
         ${PROJECT_HEADERS_DIR}/views)

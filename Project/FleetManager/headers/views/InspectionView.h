@@ -9,7 +9,7 @@
 
 class InspectionView {
 public:
-    Inspection addInspection(VehicleContainer &container);
+    Inspection *addInspection(VehicleContainer &container);
     string removeInspection();
 };
 

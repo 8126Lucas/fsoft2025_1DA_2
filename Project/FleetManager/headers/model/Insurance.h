@@ -17,7 +17,7 @@ class Insurance {
     Date startDate;
     Date endDate;
     double monthlyCost;
-    Date today = Date::getToday();
+    Date today;
 
   public:
     Insurance();
@@ -35,6 +35,7 @@ class Insurance {
     void setStartDate(Date &startDate);
     void setEndDate(Date endDate);
     void setMonthlyCost(double monthlyCost);
+    void setToday();
 
     bool isExpired();
     int getRemainingDays();

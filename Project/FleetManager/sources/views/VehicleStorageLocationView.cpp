@@ -13,8 +13,8 @@
 
 using namespace std;
 
-VehicleStorageLocation VehicleStorageLocationView::addVSL() {
-    VehicleStorageLocation vsl = VehicleStorageLocation();
+VehicleStorageLocation *VehicleStorageLocationView::addVSL() {
+    VehicleStorageLocation *vsl = new VehicleStorageLocation();
     bool flag_error = false;
     do {
         try {
@@ -23,11 +23,11 @@ VehicleStorageLocation VehicleStorageLocationView::addVSL() {
             string name = Utils::getString("Name");
             string address = Utils::getString("Address");
             int capacity = Utils::getInt("Capacity");
-            vsl.setID(id);
-            vsl.setName(name);
-            vsl.setAddress(address);
-            vsl.setCapacity(capacity);
-            vsl.setCurrentVehicleCount(0);
+            vsl->setID(id);
+            vsl->setName(name);
+            vsl->setAddress(address);
+            vsl->setCapacity(capacity);
+            vsl->setCurrentVehicleCount(0);
         } catch (InvalidDataException &error) {
             cout << error.what() << endl;
             flag_error = true;
@@ -91,32 +91,18 @@ VehicleStorageLocation *VehicleStorageLocationView::getVSL(VSLContainer *contain
     return vsl;
 }
 
-pair<int, Vehicle *> VehicleStorageLocationView::getVehicleVSLPair(VSLContainer *containerVSL, VehicleContainer *containerVehicle) {
-    try
-    {
-        Vehicle *vehicle = VehicleView::getVehicle(containerVehicle);
-        VehicleStorageLocation *vsl = getVSL(containerVSL);
-        int vslID = vsl->getID();
-        return {vslID, vehicle};
-    } catch (InvalidDataException &error)
-    {
-        cout << error.what() << endl;
-    }
-    return {-1, nullptr};
-}
-
 void VehicleStorageLocationView::addVehicleToStorage(VSLContainer *containerVSL, VehicleContainer *containerVehicle) {
     bool flag_error = false;
     do {
         try {
             flag_error = false;
-            pair<int, Vehicle *> pair = getVehicleVSLPair(containerVSL, containerVehicle);
-            VehicleStorageLocation *vsl = containerVSL->get(pair.first);
+            Vehicle *vehicle = VehicleView::getVehicle(containerVehicle);
+            VehicleStorageLocation *vsl = getVSL(containerVSL);
             if (vsl->getCapacity() == vsl->getVehicleCount()) {
                 cout << "The Storage Location is full!\n";
                 return;
             }
-            vsl->getVehicles()[pair.first].push_back(pair.second);
+            vsl->getVehicles()[vsl->getID()].push_back(vehicle);
             vsl->incrementVehicleCount();
         } catch (NonExistingDataException &error) {
             cout << error.what() << endl;
@@ -128,23 +114,23 @@ void VehicleStorageLocationView::addVehicleToStorage(VSLContainer *containerVSL,
 void VehicleStorageLocationView::removeVehicleFromStorage(VSLContainer *containerVSL, VehicleContainer *containerVehicle) {
     bool flag_error = false;
     do {
-        pair<int, Vehicle *> pair = getVehicleVSLPair(containerVSL, containerVehicle);
         try {
             flag_error = false;
-            VehicleStorageLocation *vsl = containerVSL->get(pair.first);
+            Vehicle *vehicle = VehicleView::getVehicle(containerVehicle);
+            VehicleStorageLocation *vsl = getVSL(containerVSL);
             if (vsl->getVehicleCount() == 0) {
                 cout << "The Storage Location is empty!\n";
                 return;
             }
-            list<Vehicle *>::iterator it = vsl->getVehicles()[pair.first].begin();
-            for (; it != vsl->getVehicles()[pair.first].end(); ++it) {
-                if ((*it) == pair.second) {
-                    vsl->getVehicles()[pair.first].erase(it);
+            list<Vehicle *>::iterator it = vsl->getVehicles()[vsl->getID()].begin();
+            for (; it != vsl->getVehicles()[vsl->getID()].end(); ++it) {
+                if ((*it) == vehicle) {
+                    vsl->getVehicles()[vsl->getID()].erase(it);
                     vsl->decrementVehicleCount();
                 }
                 else {
-                    string msg = "Vehicle " + pair.second->getLicensePlate() + " is not at Vehicle Storage Location "
-                                + to_string(pair.first) +"!\n";
+                    string msg = "Vehicle " + vehicle->getLicensePlate() + " is not at Vehicle Storage Location "
+                                + to_string(vsl->getID()) +"!\n";
                     throw NonExistingDataException(msg);
                 }
             }

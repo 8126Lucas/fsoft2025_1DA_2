@@ -10,7 +10,7 @@
 
 class InsuranceView {
 public:
-    Insurance addInsurance(VehicleContainer &container);
+    Insurance *addInsurance(VehicleContainer &container);
     string removeInsurance();
 };
 

@@ -25,6 +25,8 @@ class Truck: public Vehicle {
 
     bool canCarryLoad(Order &order);
 
+    double getWeightCapacity() const;
+
     void setWeightCapacity(double weightCapacity);
 };
 #endif //HEADERS_MODEL_TRUCK_H

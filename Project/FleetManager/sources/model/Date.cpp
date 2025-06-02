@@ -3,6 +3,9 @@
 //
 
 #include "Date.h"
+
+#include <chrono>
+
 #include "InvalidDataException.h"
 #include <string>
 #include <ctime>
@@ -43,8 +46,15 @@ bool Date::isValid(int day, int month, int year) {
 }
 
 Date::Date() {
-    const Date date = getToday();
-    setDate(date.day, date.month, date.year);
+    try {
+        const Date date = getToday();
+        setDate(date.day, date.month, date.year);
+    } catch (InvalidDataException &error) {
+        cout << error.what() << endl;
+        this->day = 1;
+        this->month = 1;
+        this->year = 2020;
+    }
 }
 
 Date::Date(int day, int month, int year) {
@@ -73,11 +83,22 @@ void Date::getDate(int &day, int &month, int &year) const {
 }
 
 Date Date::getToday() {
-    time_t timeNow;
-    time(&timeNow);
-    struct tm *localTime = localtime(&timeNow);
-    Date date = Date(localTime->tm_mday, localTime->tm_mon + 1, localTime->tm_year + 1900);
-    return date;
+    chrono::time_point now = chrono::system_clock::now();
+    time_t timeNow = chrono::system_clock::to_time_t(now);
+    tm localTime;
+    #ifdef _WIN32
+        if (localtime_s(&localTime, &timeNow) != 0) {
+            throw InvalidDataException("Today's date");
+        }
+    #else
+        tm *time = localtime(&timeNow);
+        if (time == nullptr) {
+            throw InvalidDataException("Today's date");
+        }
+        localTime = *time;
+    #endif
+        Date date = Date(localTime.tm_mday, localTime.tm_mon + 1, localTime.tm_year + 1900);
+        return date;
 }
 
 tm Date::mk_tm(int day, int month, int year) const {

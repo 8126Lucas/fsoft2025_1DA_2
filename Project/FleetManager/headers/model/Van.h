@@ -25,6 +25,8 @@ class Van : public Vehicle {
 
     bool canCarryLoad(Order &order);
 
+    double getSpaceCapacity() const;
+
     void setSpaceCapacity(double spaceCapacity);
 
 

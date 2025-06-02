@@ -3,11 +3,14 @@
 //
 
 #include "Inspection.h"
+#include <iostream>
+#include "InvalidDataException.h"
 
 Inspection::Inspection() {
     this->id = 0;
-    this->vehicle = NULL;
+    this->vehicle = nullptr;
     this->cost = 0;
+    this->today = Date(1, 1, 2020);
 
 }
 
@@ -32,6 +35,10 @@ Date Inspection::getDate() const {
     return date;
 }
 
+double Inspection::getCost() const {
+    return cost;
+}
+
 void Inspection::setID(int id) {
     this->id = id;
 }
@@ -48,6 +55,10 @@ void Inspection::setCost(double cost) {
     this->cost = cost;
 }
 
+void Inspection::setToday() {
+    this->today = Date(1, 1, 2020);
+}
+
 bool Inspection::isDued() {
     this->updateToday();
     if (this->date < this->today) {return true;}
@@ -60,5 +71,10 @@ int Inspection::getRemainingDays() const {
 }
 
 void Inspection::updateToday() {
-    this->today = Date::getToday();
+    try {
+        this->today = Date::getToday();
+    } catch (const InvalidDataException &error) {
+        cout << error.what() << endl;
+        this->today = Date(1, 1, 2026);
+    }
 }

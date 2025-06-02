@@ -7,8 +7,8 @@
 #include "InvalidDataException.h"
 #include "Utils.h"
 
-Insurance InsuranceView::addInsurance(VehicleContainer &container) {
-    Insurance insurance = Insurance();
+Insurance *InsuranceView::addInsurance(VehicleContainer &container) {
+    Insurance *insurance = new Insurance();
     bool flag_error = false;
     do {
         try {
@@ -18,11 +18,12 @@ Insurance InsuranceView::addInsurance(VehicleContainer &container) {
             Date startDate = Utils::getDate("Start Date");
             Date endDate = Utils::getDate("End Date");
             double monthlyCost = Utils::getDouble("Monthly Cost");
-            insurance.setID(id);
-            insurance.setVehicle(vehicle);
-            insurance.setStartDate(startDate);
-            insurance.setEndDate(endDate);
-            insurance.setMonthlyCost(monthlyCost);
+            insurance->setID(id);
+            insurance->setVehicle(vehicle);
+            insurance->setStartDate(startDate);
+            insurance->setEndDate(endDate);
+            insurance->setMonthlyCost(monthlyCost);
+            insurance->setToday();
         } catch (InvalidDataException &error) {
             cout << error.what() << endl;
             flag_error = true;

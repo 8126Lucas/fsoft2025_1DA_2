@@ -24,6 +24,10 @@ bool Van::canCarryLoad(Order &order) {
     return false;
 }
 
+double Van::getSpaceCapacity() const {
+    return spaceCapacity;
+}
+
 void Van::setSpaceCapacity(double spaceCapacity) {
     this->spaceCapacity = spaceCapacity;
 }
