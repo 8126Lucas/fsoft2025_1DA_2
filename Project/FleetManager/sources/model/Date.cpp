@@ -145,7 +145,7 @@ int Date::operator- (const Date &date) const {
     tm existingDate = mk_tm(this->day, this->month, this->year);
     const time_t timeToday = mktime(&today);
     const time_t timeExistingDate = mktime(&existingDate);
-    return difftime(timeToday, timeExistingDate) / secondsPerDay;
+    return difftime(timeExistingDate, timeToday) / secondsPerDay;
 }
 
 ostream &operator<<(ostream &stream, const Date &date) {

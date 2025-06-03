@@ -139,15 +139,19 @@ void VehicleView::printTruck(const Truck *truck) {
             else {insuranceAlert(truck);}
             if (truck->getInspection() != nullptr) {
                 cout << "Inspection (ID): " << truck->getInspection()->getID() << endl;
-                cout << "Inspection (Date): " << truck->getInspection()->getDate() << endl;
+                cout << "Inspection (Date): " << truck->getInspection()->getDate() << " (" << truck->getInspection()->getRemainingDays() << " days remaining)" << endl;
                 cout << "Inspection (Cost): " << truck->getInspection()->getCost() << " €\n";
             }
             else {inspectionAlert(truck);}
             if (truck->getVSL() != nullptr) {cout << "Storage Location (ID): " << truck->getVSL()->getID() << "\n\n";}
             else {cout << "Storage Location: no storage location\n\n";}
 
-            if (truck->getInsurance() != nullptr && truck->getInsurance()->isExpired()) {cout << "!!! Insurance has expired !!!\n";}
-            if (truck->getInsurance() != nullptr && truck->getInspection()->isDued()) {cout << "!!! Inspection is dued !!!\n";}
+            if (truck->getInsurance() != nullptr) {
+                if (truck->getInsurance()->isExpired()) {cout << "!!! Insurance has expired !!!\n";}
+            }
+            if (truck->getInspection() != nullptr) {
+                if (truck->getInspection()->isDued()) {cout << "!!! Inspection is dued !!!\n";}
+            }
         } catch (NonExistingDataException &error) {
             cout << error.what() << endl;
             flag_error = true;
@@ -180,15 +184,19 @@ void VehicleView::printVan(const Van *van) {
             else {insuranceAlert(van);}
             if (van->getInspection() != nullptr) {
                 cout << "Inspection (ID): " << van->getInspection()->getID() << endl;
-                cout << "Inspection (Date): " << van->getInspection()->getDate() << endl;
+                cout << "Inspection (Date): " << van->getInspection()->getDate() << " (" << van->getInspection()->getRemainingDays() << " days remaining)" << endl;
                 cout << "Inspection (Cost): " << van->getInspection()->getCost() << " €\n";
             }
             else {inspectionAlert(van);}
             if (van->getVSL() != nullptr) {cout << "Storage Location (ID): " << van->getVSL()->getID() << "\n\n";}
             else {cout << "Storage Location: no storage location\n\n";}
 
-            if (van->getInsurance() != nullptr && van->getInsurance()->isExpired()) {cout << "!!! Insurance has expired !!!\n";}
-            if (van->getInspection() != nullptr && van->getInspection()->isDued()) {cout << "!!! Inspection is dued !!!\n";}
+            if (van->getInsurance() != nullptr) {
+                if (van->getInsurance()->isExpired()) {cout << "!!! Insurance has expired !!!\n";}
+            }
+            if (van->getInspection() != nullptr) {
+                if (van->getInspection()->isDued()) {cout << "!!! Inspection is dued !!!\n";}
+            }
         } catch (NonExistingDataException &error) {
             cout << error.what() << endl;
             flag_error = true;
@@ -214,37 +222,44 @@ void VehicleView::printListVans(list<Van> &vans) {
     cout <<"**********************************\n\n";
 }
 
-double VehicleView::addFuel() {
-    const double addedFuel = Utils::getDouble("Fuel percentage added");
+double VehicleView::addFuel(Vehicle *vehicle) {
+    bool flag_error = false;
+    double addedFuel = 0;
+    do {
+        try {
+            flag_error = false;
+            addedFuel = Utils::getDouble("Fuel percentage added");
+            if ((vehicle->getFuel() + addedFuel) > 100 || addedFuel <= 0) {
+                throw InvalidDataException("Added Fuel Percentage");
+            }
+        } catch (InvalidDataException &error) {
+            flag_error = true;
+            cout << error.what() << endl;
+        }
+    } while (flag_error);
     return addedFuel;
 }
 
 void VehicleView::insuranceAlert(const Truck *truck) {
-    cout << "\n!!! ATTENTION !!!\n";
-    cout << "The vehicle " << truck->getLicensePlate() << " does not insurance active!\n\n";
+    cout << "!!! ATTENTION !!! The vehicle " << truck->getLicensePlate() << " does not insurance active!\n";
 }
 
 void VehicleView::insuranceAlert(const Van *van) {
-    cout << "\n!!! ATTENTION !!!\n";
-    cout << "The vehicle " << van->getLicensePlate() << " does not insurance active!\n\n";
+    cout << "!!! ATTENTION !!! The vehicle " << van->getLicensePlate() << " does not insurance active!\n";
 }
 
 void VehicleView::inspectionAlert(const Truck *truck) {
-    cout << "\n!!! ATTENTION !!!\n";
-    cout << "The vehicle " << truck->getLicensePlate() << " is pending inspection!\n\n";
+    cout << "!!! ATTENTION !!! The vehicle " << truck->getLicensePlate() << " is pending inspection!\n";
 }
 
 void VehicleView::inspectionAlert(const Van *van) {
-    cout << "\n!!! ATTENTION !!!\n";
-    cout << "The vehicle " << van->getLicensePlate() << " is pending inspection!\n\n";
+    cout << "!!! ATTENTION !!! The vehicle " << van->getLicensePlate() << " is pending inspection!\n";
 }
 
 void VehicleView::fuelAlert(const Truck *truck) {
-    cout << "\n!!! ATTENTION !!!\n";
-    cout << "The vehicle " << truck->getLicensePlate() << " does not have enough fuel!\n\n";
+    cout << "!!! ATTENTION !!! The vehicle " << truck->getLicensePlate() << " does not have enough fuel!\n";
 }
 
 void VehicleView::fuelAlert(const Van *van) {
-    cout << "\n!!! ATTENTION !!!\n";
-    cout << "The vehicle " << van->getLicensePlate() << " does not have enough fuel!\n\n";
+    cout << "!!! ATTENTION !!! The vehicle " << van->getLicensePlate() << " does not have enough fuel!\n";
 }

@@ -20,7 +20,7 @@ public:
     void printListStoredVehicles(const VehicleStorageLocation &vsl);
     static VehicleStorageLocation *getVSL(VSLContainer *container);
 
-    void addVehicleToStorage(VSLContainer *containerVSL, VehicleContainer *containerVehicle);
-    void removeVehicleFromStorage(VSLContainer *containerVSL, VehicleContainer *containerVehicle);
+    void addVehicleToStorage(VehicleStorageLocation *vsl, Vehicle *vehicle);
+    void removeVehicleFromStorage(VehicleStorageLocation *vsl, Vehicle *vehicle);
 };
 #endif //HEADERS_VIEW_VEHICLESTORAGELOCATIONVIEW_H

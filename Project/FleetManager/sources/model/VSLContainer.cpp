@@ -58,16 +58,14 @@ list<VehicleStorageLocation> VSLContainer::listVSL() {
     return locations;
 }
 
-VehicleStorageLocation *VSLContainer::get(int id)
-{
+VehicleStorageLocation *VSLContainer::get(int id) {
     try{
         list<VehicleStorageLocation>::iterator it = search(id);
         if (it != this->locations.end()) {
             return &(*it);
         }
         throw NonExistingDataException("VSL ID");
-    }catch (NonExistingDataException &error)
-    {
+    } catch (NonExistingDataException &error) {
         cout << error.what() << endl;
     }
     return nullptr;

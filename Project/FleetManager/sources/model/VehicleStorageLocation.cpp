@@ -59,7 +59,9 @@ unordered_map<int, list<Vehicle *>> VehicleStorageLocation::getVehicles() const 
 }
 
 list<Vehicle *> VehicleStorageLocation::getStoredVehicles(int id) const {
-    return vehicles.at(id);
+    unordered_map<int, list<Vehicle *>>::const_iterator it = vehicles.find(id);
+    if (it != vehicles.end()) {return it->second;}
+    throw NonExistingDataException("VSL ID");
 }
 
 void VehicleStorageLocation::setID(int id) {

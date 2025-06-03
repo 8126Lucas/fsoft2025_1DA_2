@@ -28,16 +28,14 @@ list<Van>::iterator VehicleContainer::searchVan(const string &licensePlate) {
     return vans.end();
 }
 
-Vehicle *VehicleContainer::get(string &licensePlate)
-{
-    try{
+Vehicle *VehicleContainer::get(string &licensePlate){
+    try {
         Truck *truck = getTruck(licensePlate);
         Van *van = getVan(licensePlate);
         if (truck == nullptr && van != nullptr) {return van;}
         if (truck != nullptr && van == nullptr) {return truck;}
         throw NonExistingDataException("Vehicle's License Plate");
-    }catch (NonExistingDataException &error)
-    {
+    } catch (NonExistingDataException &error) {
         cout << error.what() << endl;
     }
     return nullptr;
@@ -61,31 +59,37 @@ Van *VehicleContainer::getVan(string &licensePlate) {
 
 
 void VehicleContainer::add(Truck &truck) {
-    list<Truck>::iterator it = searchTruck(truck.getLicensePlate());
-    if (it == this->trucks.end()) {
-        this->trucks.push_back(truck);
-    }
-    else {
-        string msg = "Vehicle (Truck): " + truck.getLicensePlate();
-        throw DuplicatedDataException(msg);
+    try {
+        list<Truck>::iterator it = searchTruck(truck.getLicensePlate());
+        if (it == this->trucks.end()) {
+            this->trucks.push_back(truck);
+        }
+        else {
+            string msg = "Vehicle (Truck): " + truck.getLicensePlate();
+            throw DuplicatedDataException(msg);
+        }
+    } catch (DuplicatedDataException &error) {
+        cout << error.what() << endl;
     }
 }
 
 void VehicleContainer::add(Van &van) {
-    list<Van>::iterator it = searchVan(van.getLicensePlate());
-    if (it == this->vans.end()) {
-        this->vans.push_back(van);
-    }
-    else {
-        string msg = "Vehicle (Van): " + van.getLicensePlate();
-        throw DuplicatedDataException(msg);
+    try {
+        list<Van>::iterator it = searchVan(van.getLicensePlate());
+        if (it == this->vans.end()) {
+            this->vans.push_back(van);
+        }
+        else {
+            string msg = "Vehicle (Van): " + van.getLicensePlate();
+            throw DuplicatedDataException(msg);
+        }
+    } catch (DuplicatedDataException &error) {
+        cout << error.what() << endl;
     }
 }
 
-void VehicleContainer::remove(const string &licensePlate)
-{
-    try
-    {
+void VehicleContainer::remove(const string &licensePlate) {
+    try {
         const list<Truck>::iterator truckIT = searchTruck(licensePlate);
         const list<Van>::iterator vanIT = searchVan(licensePlate);
         if (truckIT != this->trucks.end()) {
@@ -94,12 +98,10 @@ void VehicleContainer::remove(const string &licensePlate)
         else if (vanIT != this->vans.end()) {
             this->vans.erase(vanIT);
         }
-        else
-        {
+        else {
             throw(NonExistingDataException("Vehicle " + licensePlate));
         }
-    }catch (NonExistingDataException &error)
-        {
+    } catch (NonExistingDataException &error) {
             cout << error.what() << endl;
         }
 
@@ -138,36 +140,45 @@ list<Van> VehicleContainer::listVans(bool available) {
 }
 
 void VehicleContainer::update(string &licensePlate, Insurance *insurance) {
-    list<Truck>::iterator truckIT = searchTruck(licensePlate);
-    list<Van>::iterator vanIT = searchVan(licensePlate);
-    if (truckIT != this->trucks.end()) {
-        truckIT->setInsurance(insurance);
-    }
-    else if (vanIT != this->vans.end()) {
-        vanIT->setInsurance(insurance);
-    }
-    else {
-        string msg = "Vehicle (insurance): " + licensePlate;
-        throw NonExistingDataException(msg);
+    try {
+        list<Truck>::iterator truckIT = searchTruck(licensePlate);
+        list<Van>::iterator vanIT = searchVan(licensePlate);
+        if (truckIT != this->trucks.end()) {
+            truckIT->setInsurance(insurance);
+        }
+        else if (vanIT != this->vans.end()) {
+            vanIT->setInsurance(insurance);
+        }
+        else {
+            string msg = "Vehicle (insurance): " + licensePlate;
+            throw NonExistingDataException(msg);
+        }
+    } catch (NonExistingDataException &error) {
+        cout << error.what() << endl;
     }
 }
 
 void VehicleContainer::update(string &licensePlate, Inspection *inspection) {
-    list<Truck>::iterator truckIT = searchTruck(licensePlate);
-    list<Van>::iterator vanIT = searchVan(licensePlate);
-    if (truckIT != this->trucks.end()) {
-        truckIT->setInspection(inspection);
-    }
-    else if (vanIT != this->vans.end()) {
-        vanIT->setInspection(inspection);
-    }
-    else {
-        string msg = "Vehicle (inspection): " + licensePlate;
-        throw NonExistingDataException(msg);
+    try {
+        list<Truck>::iterator truckIT = searchTruck(licensePlate);
+        list<Van>::iterator vanIT = searchVan(licensePlate);
+        if (truckIT != this->trucks.end()) {
+            truckIT->setInspection(inspection);
+        }
+        else if (vanIT != this->vans.end()) {
+            vanIT->setInspection(inspection);
+        }
+        else {
+            string msg = "Vehicle (inspection): " + licensePlate;
+            throw NonExistingDataException(msg);
+        }
+    } catch (NonExistingDataException &error) {
+        cout << error.what() << endl;
     }
 }
 
 void VehicleContainer::update(string &licensePlate, VehicleStorageLocation *vsl) {
+    try {
         list<Truck>::iterator truckIT = searchTruck(licensePlate);
         list<Van>::iterator vanIT = searchVan(licensePlate);
         if (truckIT != this->trucks.end()) {
@@ -180,12 +191,14 @@ void VehicleContainer::update(string &licensePlate, VehicleStorageLocation *vsl)
             string msg = "Vehicle (VSL): " + licensePlate;
             throw NonExistingDataException(msg);
         }
+    } catch (NonExistingDataException &error) {
+        cout << error.what() << endl;
+    }
 
 }
 
 void VehicleContainer::updateFuel(string &licensePlate, double addedFuel) {
-    try
-    {
+    try {
         list<Truck>::iterator truckIT = searchTruck(licensePlate);
         list<Van>::iterator vanIT = searchVan(licensePlate);
         if (truckIT != this->trucks.end()) {
@@ -198,14 +211,13 @@ void VehicleContainer::updateFuel(string &licensePlate, double addedFuel) {
             string msg = "Vehicle (fuel): " + licensePlate;
             throw NonExistingDataException(msg);
         }
-    }catch (NonExistingDataException &error)
-    {
+    } catch (NonExistingDataException &error) {
         cout << error.what() << endl;
     }
 }
 
 void VehicleContainer::updateMileage(string &licensePlate, Trip &trip) {
-
+    try {
         list<Truck>::iterator truckIT = searchTruck(licensePlate);
         list<Van>::iterator vanIT = searchVan(licensePlate);
         if (truckIT != this->trucks.end()) {
@@ -218,19 +230,26 @@ void VehicleContainer::updateMileage(string &licensePlate, Trip &trip) {
             string msg = "Vehicle (mileage): " + licensePlate;
             throw NonExistingDataException(msg);
         }
+    } catch (NonExistingDataException &error) {
+        cout << error.what() << endl;
+    }
 }
 
 void VehicleContainer::updateAvailability(string &licensePlate, bool available) {
-    list<Truck>::iterator truckIT = searchTruck(licensePlate);
-    list<Van>::iterator vanIT = searchVan(licensePlate);
-    if (truckIT != this->trucks.end()) {
-        truckIT->setAvailability(available);
-    }
-    else if (vanIT != this->vans.end()) {
-        vanIT->setAvailability(available);
-    }
-    else {
-        string msg = "Vehicle (availability): " + licensePlate;
-        throw NonExistingDataException(msg);
+    try {
+        list<Truck>::iterator truckIT = searchTruck(licensePlate);
+        list<Van>::iterator vanIT = searchVan(licensePlate);
+        if (truckIT != this->trucks.end()) {
+            truckIT->setAvailability(available);
+        }
+        else if (vanIT != this->vans.end()) {
+            vanIT->setAvailability(available);
+        }
+        else {
+            string msg = "Vehicle (availability): " + licensePlate;
+            throw NonExistingDataException(msg);
+        }
+    } catch (NonExistingDataException &error) {
+        cout << error.what() << endl;
     }
 }

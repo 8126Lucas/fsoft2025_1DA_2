@@ -22,7 +22,6 @@ void toJson(json &j, const CATEGORY &category) {
             j = "VAN";
             break;
     }
-
 }
 
 void fromJson(const json &j, CATEGORY &category) {

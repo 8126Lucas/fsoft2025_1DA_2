@@ -96,8 +96,9 @@ void Controller::runVehicle() {
                 break;
             case 6: {
                 string licensePlate = Utils::getString("Vehicle's License Plate");
-                double addedFuel = this->vehicleView.addFuel();
                 VehicleContainer &container = this->model.getVehicleContainer();
+                Vehicle *vehicle = container.get(licensePlate);
+                double addedFuel = this->vehicleView.addFuel(vehicle);
                 container.updateFuel(licensePlate, addedFuel);
             }
                 break;
@@ -128,6 +129,7 @@ void Controller::runVehicle() {
                 string licensePlate = this->inspectionView.removeInspection();
                 container.update(licensePlate, inspection);
             }
+                break;
             case 11: {
                 VehicleStorageLocation *vsl = this->vslView.addVSL();
                 VSLContainer &container = this->model.getVSLContainer();
@@ -146,9 +148,7 @@ void Controller::runVehicle() {
                 if (!locations.empty()) {
                     this->vslView.printListVSL(locations);
                 }
-                else {
-                    cout << "\nTHERE ARE NO STORAGE LOCATIONS RECORDED!\n";
-                }
+                else {cout << "\nTHERE ARE NO STORAGE LOCATIONS RECORDED!\n";}
             }
                 break;
             case 14: {
@@ -161,14 +161,22 @@ void Controller::runVehicle() {
             case 15: {
                 VSLContainer &containerVSL = this->model.getVSLContainer();
                 VehicleContainer &containerVehicle = this->model.getVehicleContainer();
-                this->vslView.addVehicleToStorage(&containerVSL, &containerVehicle);
-
+                Vehicle *vehicle = this->vehicleView.getVehicle(&containerVehicle);
+                VehicleStorageLocation *vsl = this->vslView.getVSL(&containerVSL);
+                this->vslView.addVehicleToStorage(vsl, vehicle);
+                string licensePlate = vehicle->getLicensePlate();
+                containerVehicle.update(licensePlate, vsl);
             }
                 break;
             case 16: {
                 VSLContainer &containerVSL = this->model.getVSLContainer();
                 VehicleContainer &containerVehicle = this->model.getVehicleContainer();
-                this->vslView.removeVehicleFromStorage(&containerVSL, &containerVehicle);
+                Vehicle *vehicle = this->vehicleView.getVehicle(&containerVehicle);
+                VehicleStorageLocation *vsl = this->vslView.getVSL(&containerVSL);
+                VehicleStorageLocation *newVSL = nullptr;
+                string licensePlate = vehicle->getLicensePlate();
+                this->vslView.removeVehicleFromStorage(vsl, vehicle);
+                containerVehicle.update(licensePlate, newVSL);
             }
                 break;
         }
@@ -235,12 +243,18 @@ void Controller::runTrip() {
                 list<Trip> listFailed = containerTrip.listTripsByState(FAILED);
                 list<Trip> listSupressed = containerTrip.listTripsByState(SUPRESSED);
                 list<Trip> listIncoming = containerTrip.listTripsByState(INCOMING);
-                if (!listFailed.empty() && !listSupressed.empty() && !listIncoming.empty()) {
+                if (!listFailed.empty()) {
                     this->tripView.printListTrips(listFailed);
+                }
+                if (!listSupressed.empty()) {
                     this->tripView.printListTrips(listSupressed);
+                }
+                if (!listIncoming.empty()) {
                     this->tripView.printListTrips(listIncoming);
                 }
-                else {cout << "\nTHERE ARE NO UNCOMPLETED TRIPS IN THE RECORDS!\n";}
+                if (!listFailed.empty() && !listSupressed.empty() && !listIncoming.empty()) {
+                    cout << "\nTHERE ARE NO UNCOMPLETED TRIPS IN THE RECORDS!\n";
+                }
             }
                 break;
             case 8: {

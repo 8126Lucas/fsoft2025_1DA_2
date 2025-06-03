@@ -30,7 +30,7 @@ public:
     void printListTrucks(list<Truck> &trucks);
     void printListVans(list<Van> &vans);
 
-    double addFuel();
+    double addFuel(Vehicle *vehicle);
     static void insuranceAlert(const Truck *truck);
     static void insuranceAlert(const Van *van);
     static void inspectionAlert(const Truck *truck);
