@@ -12,6 +12,7 @@ class OrderView {
   public:
     static Order addOrder();
     static void completeOrder(Order *order);
+    static int removeOrder();
     static Order *getOrder(OrderContainer *container);
     static void printOrder(Order *order);
     static void printOrders(list<Order> &orders);

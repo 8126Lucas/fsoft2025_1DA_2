@@ -29,22 +29,30 @@ Order *OrderContainer::get(int orderID) {
 }
 
 void OrderContainer::add(Order &order) {
-    list<Order>::iterator it = search(order.getOrderID());
-    if (it != this->orders.end()) {
-        string msg = "Order: " + to_string(order.getOrderID());
-        throw DuplicatedDataException(msg);
+    try {
+        list<Order>::iterator it = search(order.getOrderID());
+        if (it != this->orders.end()) {
+            string msg = "Order: " + to_string(order.getOrderID());
+            throw DuplicatedDataException(msg);
+        }
+        this->orders.push_back(order);
+    }catch (DuplicatedDataException &error) {
+        cout << error.what() << endl;
     }
-    this->orders.push_back(order);
 }
 
 void OrderContainer::remove(int orderId) {
-    list<Order>::iterator it = search(orderId);
-    if (it != this->orders.end()) {
-        this->orders.erase(it);
-    }
-    else {
-        string msg = "Order: " + to_string(orderId);
-        throw NonExistingDataException(msg);
+    try{
+        list<Order>::iterator it = search(orderId);
+        if (it != this->orders.end()) {
+            this->orders.erase(it);
+        }
+        else {
+            string msg = "Order: " + to_string(orderId);
+            throw NonExistingDataException(msg);
+        }
+    }catch (NonExistingDataException &error) {
+        cout << error.what() << endl;
     }
 }
 

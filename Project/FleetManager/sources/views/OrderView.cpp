@@ -42,7 +42,10 @@ Order OrderView::addOrder() {
     } while (flag_error);
     return order;
 }
-
+int OrderView::removeOrder() {
+    int orderId = Utils::getInt("Order ID");
+    return orderId;
+}
 Order *OrderView::getOrder(OrderContainer *container) {
   int orderId = Utils::getInt("Order ID");
   Order *order = container->get(orderId);
@@ -59,7 +62,7 @@ void OrderView::printOrder(Order *order) {
             cout << "Date: " << order->getDate() << endl;
             cout << "Source Address: " << order->getSourceAddress() << endl;
             cout << "Destination Address: " << order->getDestinationAddress() << endl;
-            cout << "Cargo Space (m" + to_string(char(0x00B3)) + "): " << order->getCargoSpace() << endl;
+            cout << "Cargo Space (m\xC2\xB3): "  << order->getCargoSpace() << endl;
             cout << "CargoWeight (Kg): " << order->getCargoWeight() << endl;
             cout << "ShippingValue (€): " << order->getShippingValue() << endl;
             if (order->getStatus() == IN_PROGRESS ) {cout << "Status: Not delivered\n";}

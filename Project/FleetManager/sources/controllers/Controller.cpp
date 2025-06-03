@@ -409,7 +409,7 @@ void Controller::runOrder() {
             }
                 break;
             case 2: {
-                int id = Utils::getInt("Order ID");
+                int id = this->orderView.removeOrder();
                 OrderContainer &containerOrder = this->model.getOrderContainer();
                 containerOrder.remove(id);
             }
