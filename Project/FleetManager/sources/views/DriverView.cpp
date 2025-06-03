@@ -64,8 +64,9 @@ void DriverView::printDriver(Driver *driver) {
             cout << "Time to Retire: " << driver->getTimeToRetire() << endl;
             if (driver->getAvailability()) {
                 cout << "Availability: available\n";
+            } else {
+                cout << "Availability: not available\n";
             }
-            else {cout << "Availability: not available\n";}
             if (driver->getVacation() != nullptr) {
                 cout << "Vacation (ID): " << driver->getVacationID() << endl;
             } else {

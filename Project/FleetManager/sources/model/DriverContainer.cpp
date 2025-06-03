@@ -28,22 +28,25 @@ Driver *DriverContainer::get(int id) {
 void DriverContainer::add(Driver &driver) {
   list<Driver>::iterator it = search(driver.getID());
   if (it != this->drivers.end()) {
-    string msg = "Driver (id): " + to_string(driver.getID());
-    throw DuplicatedDataException(msg);
+    throw DuplicatedDataException("Driver (id): " + to_string(driver.getID()));
   }
   this->drivers.push_back(driver);
 }
 
 
 void DriverContainer::remove(int id) {
-  list<Driver>::iterator it = search(id);
-  if (it != this->drivers.end()) {
-    this->drivers.erase(it);
-  }
-  else {
-    string msg = "Driver (id): " + to_string(id);
-    throw NonExistingDataException(msg);
-  }
+  try
+  {
+      list<Driver>::iterator it = search(id);
+      if (it != this->drivers.end()) {
+        this->drivers.erase(it);
+      } else {
+        throw NonExistingDataException("Driver (id): " + to_string(id));
+      }
+  } catch (NonExistingDataException &error)
+      {
+        cout << error.what() << endl;
+      }
 }
 
 list<Driver> DriverContainer::listDrivers() {
@@ -66,10 +69,8 @@ void DriverContainer::update(int id, Vacation vacation) {
   list<Driver>::iterator it = search(id);
   if (it != this->drivers.end()) {
     it->getVacations().push_back(&vacation);
-  }
-  else {
-    string msg = "Driver(id): " + to_string(id);
-    throw NonExistingDataException(msg);
+  } else {
+    throw NonExistingDataException("Driver(id): " + to_string(id));
   }
 }
 
@@ -77,9 +78,7 @@ void DriverContainer::updateAvailability(int id, bool available) {
   list<Driver>::iterator it = search(id);
   if (it != this->drivers.end()) {
     it->setAvailability(available);
-  }
-  else {
-    string msg = "Driver (id): " + id;
-    throw NonExistingDataException(msg);
+  } else {
+    throw NonExistingDataException("Driver (id): " + id);
   }
 }

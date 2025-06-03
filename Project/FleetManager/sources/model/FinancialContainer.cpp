@@ -38,21 +38,25 @@ Expense *FinancialContainer::getExpense(int id) {
 void FinancialContainer::addExpense(Expense &expense) {
     list<Expense>::iterator it = searchExpense(expense.getID());
     if (it != this->expenses.end()) {
-        string msg = "Expense (id): " + to_string(expense.getID());
-        throw DuplicatedDataException(msg);
+        throw DuplicatedDataException("Expense (id): " + to_string(expense.getID()));
     }
     this->expenses.push_back(expense);
 }
 
 void FinancialContainer::removeExpense(int id) {
-    list<Expense>::iterator it = searchExpense(id);
-    if (it != this->expenses.end()) {
-        this->expenses.erase(it);
-    }
-    else {
-        string msg = "Expense (id): " + to_string(id);
-        throw NonExistingDataException(msg);
-    }
+    try
+    {
+        list<Expense>::iterator it = searchExpense(id);
+        if (it != this->expenses.end()) {
+            this->expenses.erase(it);
+        } else {
+            throw NonExistingDataException("Expense (id): " + to_string(id));
+        }
+
+    } catch (NonExistingDataException &error)
+        {
+            cout << error.what() << endl;
+        }
 }
 
 list<Expense> FinancialContainer::listExpense() {
@@ -82,21 +86,24 @@ Revenue *FinancialContainer::getRevenue(int id) {
 void FinancialContainer::addRevenue(Revenue &revenue) {
     list<Revenue>::iterator it = searchRevenue(revenue.getID());
     if (it != this->revenues.end()) {
-        string msg = "Revenue (id): " + to_string(revenue.getID());
-        throw DuplicatedDataException(msg);
+        throw DuplicatedDataException("Revenue (id): " + to_string(revenue.getID()));
     }
     this->revenues.push_back(revenue);
 }
 
 void FinancialContainer::removeRevenue(int id) {
-    list<Revenue>::iterator it = searchRevenue(id);
-    if (it != this->revenues.end()) {
-        this->revenues.erase(it);
-    }
-    else {
-        string msg = "Revenue (id): " + to_string(id);
-        throw NonExistingDataException(msg);
-    }
+    try
+    {
+        list<Revenue>::iterator it = searchRevenue(id);
+        if (it != this->revenues.end()) {
+            this->revenues.erase(it);
+        } else {
+            throw NonExistingDataException("Revenue (id): " + to_string(id));
+        }
+    } catch (NonExistingDataException &error)
+        {
+            cout << error.what() << endl;
+        }
 }
 
 list<Revenue> FinancialContainer::listRevenue() {
@@ -117,7 +124,7 @@ double FinancialContainer::getExpensesTotal(Date startDate, Date endDate) {
 
 double FinancialContainer::getRevenuesTotal(Date startDate, Date endDate) {
     double totalRevenues = 0;
-    list<Revenue>::iterator it = this->revenues.end();
+    list<Revenue>::iterator it = this->revenues.begin();
     for (; it != this->revenues.end(); ++it) {
         if ((startDate < it->getDate() || startDate == it->getDate()) && (it->getDate() < endDate || endDate == it->getDate())) {
             totalRevenues += it->getAmount();

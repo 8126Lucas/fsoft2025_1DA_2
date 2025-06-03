@@ -7,8 +7,7 @@
 #include "FinancialContainer.h"
 #include "FinancialView.h"
 
-Revenue::Revenue() : id(0), amount(0) {
-}
+Revenue::Revenue() : id(0), amount(0) {}
 
 Revenue::Revenue(const int id, Order *order, Date date, double amount) {
     this->id = id;

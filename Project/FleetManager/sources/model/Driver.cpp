@@ -18,16 +18,6 @@ Driver::Driver(int id, char &license, int age) : available(true) {
 
 Driver::~Driver() {}
 
-// void Driver::addDriver() {
-//     Driver driver = DriverView::getDriver(DriverContainer *container);
-//     DriverContainer::add(driver);
-// }
-//
-// void Driver::removeDriver() {
-//     int id = DriverView::getID();
-//     DriverContainer::remove(id);
-// }
-
 int Driver::getID() {
     return id;
 }
@@ -70,6 +60,14 @@ int Driver::getVacationID() {
     return 0;
 }
 
+int Driver::getTimeToRetire() const {
+    const int retirementAge = 65;
+    if (age >= retirementAge) {
+        return 0;
+    }
+    return retirementAge - age;
+}
+
 void Driver::setID(int id) {
     this->id = id;
 }
@@ -92,14 +90,6 @@ void Driver::setVacation(Vacation *vacation) {
 
 void Driver::setAvailability(bool available) {
     this->available = available;
-}
-
-int Driver::getTimeToRetire() const {
-    const int retirementAge = 65;
-    if (age >= retirementAge) {
-        return 0;
-    }
-    return retirementAge - age;
 }
 
 void Driver::vacationAlert() {

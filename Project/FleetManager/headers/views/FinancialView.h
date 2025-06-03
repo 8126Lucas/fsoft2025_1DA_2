@@ -17,6 +17,7 @@ public:
     static int removeExpense();
     static Expense *getExpense(FinancialContainer *container);
     static Revenue recordRevenue(OrderContainer &containerOrder);
+    static Revenue *getRevenue(FinancialContainer *container);
     static int removeRevenue();
     // static void *getRevenue(FinancialContainer *container);
     static int getExpenseID();

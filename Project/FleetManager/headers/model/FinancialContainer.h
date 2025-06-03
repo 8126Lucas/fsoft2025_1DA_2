@@ -5,7 +5,6 @@
 #ifndef HEADERS_MODEL_FINANCIALCONTAINER_H
 #define HEADERS_MODEL_FINANCIALCONTAINER_H
 
-#include <vector>
 #include <list>
 #include "Expense.h"
 #include "Revenue.h"

@@ -5,7 +5,6 @@
 #ifndef HEADERS_MODEL_DRIVER_H
 #define HEADERS_MODEL_DRIVER_H
 
-#include <string>
 #include <list>
 
 #include "Vacation.h"
@@ -27,7 +26,6 @@ public:
     Driver();
 
     Driver(int id, char &license, int age);
-    Driver(int id, char license, int age, bool available = true, bool vacationStatus = false);
 
     ~Driver();
 

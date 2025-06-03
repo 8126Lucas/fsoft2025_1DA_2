@@ -35,6 +35,9 @@ bool Vacation::getStatus() const {
   return status;
 }
 
+int Vacation::getRemainingDays() const {
+    return this->endDate - this->today;
+}
 
 void Vacation::setID(int id) {
     this->id = id;
@@ -61,10 +64,6 @@ bool Vacation::isOnVacation() {
     if (this->endDate < this->today) {return true;}
     if (this->endDate == this->today) {return true;}
     return false;
-}
-
-int Vacation::getRemainingDays() const {
-    return this->endDate - this->today;
 }
 
 void Vacation::updateToday() {

@@ -9,13 +9,13 @@
 
 Expense::Expense() : amount(0) {}
 
-// Expense::Expense(const int id, Trip trip, Date date, double amount, TYPE type) {
-//     this->id = id;
-//     this->trip = trip;
-//     this->date = date;
-//     this->amount = amount;
-//     this->type = type;
-// }
+Expense::Expense(const int id, Trip *trip, Date date, double amount, TYPE type) {
+    this->id = id;
+    this->trip = trip;
+    this->date = date;
+    this->amount = amount;
+    this->type = type;
+}
 
 Expense::~Expense() {}
 

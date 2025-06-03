@@ -5,8 +5,6 @@
 #ifndef HEADERS_MODEL_EXPENSE_H
 #define HEADERS_MODEL_EXPENSE_H
 
-#include <string>
-#include <vector>
 #include "Date.h"
 #include "Trip.h"
 
