@@ -63,12 +63,19 @@ list<Trip> TripContainer::listTripsByState(STATE state){
 
 Trip *TripContainer::getTrip(const int id)
 {
-  list<Trip>::iterator it = search(id);
-  if (it != this->trips.end())
+  try
   {
-    return &(*it);
+    list<Trip>::iterator it = search(id);
+    if (it != this->trips.end())
+    {
+      return &(*it);
+    }
+    throw NonExistingDataException("Trip ID");
+  } catch (NonExistingDataException &error)
+  {
+    cout << error.what() << endl;
   }
-  throw NonExistingDataException("Trip ID");
+  return nullptr;
 }
 
 void TripContainer::update(Trip &trip) {

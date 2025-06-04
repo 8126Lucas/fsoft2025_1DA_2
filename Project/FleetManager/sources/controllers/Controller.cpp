@@ -200,8 +200,7 @@ void Controller::runTrip() {
                 DriverContainer &containerDriver = this->model.getDriverContainer();
                 VehicleContainer &containerVehicle = this->model.getVehicleContainer();
                 TripContainer &containerTrip = this->model.getTripContainer();
-                int id = Utils::getInt("Trip ID");
-                Trip *trip = containerTrip.getTrip(id);
+                Trip *trip = this->tripView.getTrip(&containerTrip);
                 this->tripView.startTrip(trip, containerDriver, containerVehicle);
                 containerTrip.update(*trip);
             }
@@ -210,8 +209,7 @@ void Controller::runTrip() {
                 DriverContainer &containerDriver = this->model.getDriverContainer();
                 VehicleContainer &containerVehicle = this->model.getVehicleContainer();
                 TripContainer &containerTrip = this->model.getTripContainer();
-                int id = Utils::getInt("Trip ID");
-                Trip *trip = containerTrip.getTrip(id);
+                Trip *trip = this->tripView.getTrip(&containerTrip);
                 this->tripView.endTrip(trip, containerDriver, containerVehicle);
                 containerTrip.update(*trip);
             }

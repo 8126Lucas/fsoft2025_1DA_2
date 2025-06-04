@@ -73,43 +73,43 @@
 			[
 				{
 					"backtrace" : 2,
-					"path" : "/home/dinis/CLionProjects/fsoft2025_1DA_2/Project/FleetManager/headers/controllers"
+					"path" : "/home/vitor/CLionProjects/fsoft2025_1DA_2/Project/FleetManager/headers/controllers"
 				},
 				{
 					"backtrace" : 2,
-					"path" : "/home/dinis/CLionProjects/fsoft2025_1DA_2/Project/FleetManager/sources/controllers"
+					"path" : "/home/vitor/CLionProjects/fsoft2025_1DA_2/Project/FleetManager/sources/controllers"
 				},
 				{
 					"backtrace" : 3,
-					"path" : "/home/dinis/CLionProjects/fsoft2025_1DA_2/Project/FleetManager/headers/exceptions"
+					"path" : "/home/vitor/CLionProjects/fsoft2025_1DA_2/Project/FleetManager/headers/exceptions"
 				},
 				{
 					"backtrace" : 3,
-					"path" : "/home/dinis/CLionProjects/fsoft2025_1DA_2/Project/FleetManager/sources/exceptions"
+					"path" : "/home/vitor/CLionProjects/fsoft2025_1DA_2/Project/FleetManager/sources/exceptions"
 				},
 				{
 					"backtrace" : 4,
-					"path" : "/home/dinis/CLionProjects/fsoft2025_1DA_2/Project/FleetManager/headers/model"
+					"path" : "/home/vitor/CLionProjects/fsoft2025_1DA_2/Project/FleetManager/headers/model"
 				},
 				{
 					"backtrace" : 4,
-					"path" : "/home/dinis/CLionProjects/fsoft2025_1DA_2/Project/FleetManager/sources/model"
+					"path" : "/home/vitor/CLionProjects/fsoft2025_1DA_2/Project/FleetManager/sources/model"
 				},
 				{
 					"backtrace" : 5,
-					"path" : "/home/dinis/CLionProjects/fsoft2025_1DA_2/Project/FleetManager/headers/serial"
+					"path" : "/home/vitor/CLionProjects/fsoft2025_1DA_2/Project/FleetManager/headers/serial"
 				},
 				{
 					"backtrace" : 5,
-					"path" : "/home/dinis/CLionProjects/fsoft2025_1DA_2/Project/FleetManager/sources/serial"
+					"path" : "/home/vitor/CLionProjects/fsoft2025_1DA_2/Project/FleetManager/sources/serial"
 				},
 				{
 					"backtrace" : 6,
-					"path" : "/home/dinis/CLionProjects/fsoft2025_1DA_2/Project/FleetManager/headers/views"
+					"path" : "/home/vitor/CLionProjects/fsoft2025_1DA_2/Project/FleetManager/headers/views"
 				},
 				{
 					"backtrace" : 6,
-					"path" : "/home/dinis/CLionProjects/fsoft2025_1DA_2/Project/FleetManager/sources/views"
+					"path" : "/home/vitor/CLionProjects/fsoft2025_1DA_2/Project/FleetManager/sources/views"
 				}
 			],
 			"language" : "CXX",

@@ -23,7 +23,7 @@ public:
     void printTrip(Trip *trip);
     void printListTrips(list<Trip> &trips);
     int getId();
-    Trip getTrip(TripContainer *container);
+    Trip *getTrip(TripContainer *container);
 
 };
 

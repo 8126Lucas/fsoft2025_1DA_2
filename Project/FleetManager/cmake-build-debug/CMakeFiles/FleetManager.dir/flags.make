@@ -4,7 +4,7 @@
 # compile CXX with /usr/bin/c++
 CXX_DEFINES = 
 
-CXX_INCLUDES = -I/home/dinis/CLionProjects/fsoft2025_1DA_2/Project/FleetManager/headers/controllers -I/home/dinis/CLionProjects/fsoft2025_1DA_2/Project/FleetManager/sources/controllers -I/home/dinis/CLionProjects/fsoft2025_1DA_2/Project/FleetManager/headers/exceptions -I/home/dinis/CLionProjects/fsoft2025_1DA_2/Project/FleetManager/sources/exceptions -I/home/dinis/CLionProjects/fsoft2025_1DA_2/Project/FleetManager/headers/model -I/home/dinis/CLionProjects/fsoft2025_1DA_2/Project/FleetManager/sources/model -I/home/dinis/CLionProjects/fsoft2025_1DA_2/Project/FleetManager/headers/serial -I/home/dinis/CLionProjects/fsoft2025_1DA_2/Project/FleetManager/sources/serial -I/home/dinis/CLionProjects/fsoft2025_1DA_2/Project/FleetManager/headers/views -I/home/dinis/CLionProjects/fsoft2025_1DA_2/Project/FleetManager/sources/views
+CXX_INCLUDES = -I/home/vitor/CLionProjects/fsoft2025_1DA_2/Project/FleetManager/headers/controllers -I/home/vitor/CLionProjects/fsoft2025_1DA_2/Project/FleetManager/sources/controllers -I/home/vitor/CLionProjects/fsoft2025_1DA_2/Project/FleetManager/headers/exceptions -I/home/vitor/CLionProjects/fsoft2025_1DA_2/Project/FleetManager/sources/exceptions -I/home/vitor/CLionProjects/fsoft2025_1DA_2/Project/FleetManager/headers/model -I/home/vitor/CLionProjects/fsoft2025_1DA_2/Project/FleetManager/sources/model -I/home/vitor/CLionProjects/fsoft2025_1DA_2/Project/FleetManager/headers/serial -I/home/vitor/CLionProjects/fsoft2025_1DA_2/Project/FleetManager/sources/serial -I/home/vitor/CLionProjects/fsoft2025_1DA_2/Project/FleetManager/headers/views -I/home/vitor/CLionProjects/fsoft2025_1DA_2/Project/FleetManager/sources/views
 
 CXX_FLAGS = -g -std=gnu++20 -fdiagnostics-color=always
 

@@ -23,8 +23,8 @@ Trip TripView::addTrip(OrderContainer &containerOrder) {
             trip.setState(SUPRESSED);
             trip.setID(tripID);
             trip.setOrder(order);
-            trip.setDriver(NULL);
-            trip.setVehicle(NULL);
+            trip.setDriver(nullptr);
+            trip.setVehicle(nullptr);
             trip.setKM(0);
             trip.setFuel(0);
             trip.setFuelCost(0);
@@ -39,10 +39,10 @@ Trip TripView::addTrip(OrderContainer &containerOrder) {
     return trip;
 }
 
-Trip TripView::getTrip(TripContainer *container){
+Trip *TripView::getTrip(TripContainer *container){
     int id = getId();
     Trip *trip = container->getTrip(id);
-    return *trip;
+    return trip;
 }
 
 int TripView::getId(){

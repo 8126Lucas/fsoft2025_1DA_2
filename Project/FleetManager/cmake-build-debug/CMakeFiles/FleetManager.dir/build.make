@@ -44,19 +44,19 @@ cmake_force:
 SHELL = /bin/sh
 
 # The CMake executable.
-CMAKE_COMMAND = /home/dinis/Downloads/clion/clion-2024.3.4/bin/cmake/linux/x64/bin/cmake
+CMAKE_COMMAND = /home/vitor/clion-2024.3.4/bin/cmake/linux/x64/bin/cmake
 
 # The command to remove a file.
-RM = /home/dinis/Downloads/clion/clion-2024.3.4/bin/cmake/linux/x64/bin/cmake -E rm -f
+RM = /home/vitor/clion-2024.3.4/bin/cmake/linux/x64/bin/cmake -E rm -f
 
 # Escaping for special characters.
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/dinis/CLionProjects/fsoft2025_1DA_2/Project/FleetManager
+CMAKE_SOURCE_DIR = /home/vitor/CLionProjects/fsoft2025_1DA_2/Project/FleetManager
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/dinis/CLionProjects/fsoft2025_1DA_2/Project/FleetManager/cmake-build-debug
+CMAKE_BINARY_DIR = /home/vitor/CLionProjects/fsoft2025_1DA_2/Project/FleetManager/cmake-build-debug
 
 # Include any dependencies generated for this target.
 include CMakeFiles/FleetManager.dir/depend.make
@@ -70,508 +70,508 @@ include CMakeFiles/FleetManager.dir/progress.make
 include CMakeFiles/FleetManager.dir/flags.make
 
 CMakeFiles/FleetManager.dir/main.cpp.o: CMakeFiles/FleetManager.dir/flags.make
-CMakeFiles/FleetManager.dir/main.cpp.o: /home/dinis/CLionProjects/fsoft2025_1DA_2/Project/FleetManager/main.cpp
+CMakeFiles/FleetManager.dir/main.cpp.o: /home/vitor/CLionProjects/fsoft2025_1DA_2/Project/FleetManager/main.cpp
 CMakeFiles/FleetManager.dir/main.cpp.o: CMakeFiles/FleetManager.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/dinis/CLionProjects/fsoft2025_1DA_2/Project/FleetManager/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/FleetManager.dir/main.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/FleetManager.dir/main.cpp.o -MF CMakeFiles/FleetManager.dir/main.cpp.o.d -o CMakeFiles/FleetManager.dir/main.cpp.o -c /home/dinis/CLionProjects/fsoft2025_1DA_2/Project/FleetManager/main.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/vitor/CLionProjects/fsoft2025_1DA_2/Project/FleetManager/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/FleetManager.dir/main.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/FleetManager.dir/main.cpp.o -MF CMakeFiles/FleetManager.dir/main.cpp.o.d -o CMakeFiles/FleetManager.dir/main.cpp.o -c /home/vitor/CLionProjects/fsoft2025_1DA_2/Project/FleetManager/main.cpp
 
 CMakeFiles/FleetManager.dir/main.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/FleetManager.dir/main.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/dinis/CLionProjects/fsoft2025_1DA_2/Project/FleetManager/main.cpp > CMakeFiles/FleetManager.dir/main.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/vitor/CLionProjects/fsoft2025_1DA_2/Project/FleetManager/main.cpp > CMakeFiles/FleetManager.dir/main.cpp.i
 
 CMakeFiles/FleetManager.dir/main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/FleetManager.dir/main.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/dinis/CLionProjects/fsoft2025_1DA_2/Project/FleetManager/main.cpp -o CMakeFiles/FleetManager.dir/main.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/vitor/CLionProjects/fsoft2025_1DA_2/Project/FleetManager/main.cpp -o CMakeFiles/FleetManager.dir/main.cpp.s
 
 CMakeFiles/FleetManager.dir/sources/views/DriverView.cpp.o: CMakeFiles/FleetManager.dir/flags.make
-CMakeFiles/FleetManager.dir/sources/views/DriverView.cpp.o: /home/dinis/CLionProjects/fsoft2025_1DA_2/Project/FleetManager/sources/views/DriverView.cpp
+CMakeFiles/FleetManager.dir/sources/views/DriverView.cpp.o: /home/vitor/CLionProjects/fsoft2025_1DA_2/Project/FleetManager/sources/views/DriverView.cpp
 CMakeFiles/FleetManager.dir/sources/views/DriverView.cpp.o: CMakeFiles/FleetManager.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/dinis/CLionProjects/fsoft2025_1DA_2/Project/FleetManager/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/FleetManager.dir/sources/views/DriverView.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/FleetManager.dir/sources/views/DriverView.cpp.o -MF CMakeFiles/FleetManager.dir/sources/views/DriverView.cpp.o.d -o CMakeFiles/FleetManager.dir/sources/views/DriverView.cpp.o -c /home/dinis/CLionProjects/fsoft2025_1DA_2/Project/FleetManager/sources/views/DriverView.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/vitor/CLionProjects/fsoft2025_1DA_2/Project/FleetManager/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/FleetManager.dir/sources/views/DriverView.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/FleetManager.dir/sources/views/DriverView.cpp.o -MF CMakeFiles/FleetManager.dir/sources/views/DriverView.cpp.o.d -o CMakeFiles/FleetManager.dir/sources/views/DriverView.cpp.o -c /home/vitor/CLionProjects/fsoft2025_1DA_2/Project/FleetManager/sources/views/DriverView.cpp
 
 CMakeFiles/FleetManager.dir/sources/views/DriverView.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/FleetManager.dir/sources/views/DriverView.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/dinis/CLionProjects/fsoft2025_1DA_2/Project/FleetManager/sources/views/DriverView.cpp > CMakeFiles/FleetManager.dir/sources/views/DriverView.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/vitor/CLionProjects/fsoft2025_1DA_2/Project/FleetManager/sources/views/DriverView.cpp > CMakeFiles/FleetManager.dir/sources/views/DriverView.cpp.i
 
 CMakeFiles/FleetManager.dir/sources/views/DriverView.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/FleetManager.dir/sources/views/DriverView.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/dinis/CLionProjects/fsoft2025_1DA_2/Project/FleetManager/sources/views/DriverView.cpp -o CMakeFiles/FleetManager.dir/sources/views/DriverView.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/vitor/CLionProjects/fsoft2025_1DA_2/Project/FleetManager/sources/views/DriverView.cpp -o CMakeFiles/FleetManager.dir/sources/views/DriverView.cpp.s
 
 CMakeFiles/FleetManager.dir/sources/views/FinancialView.cpp.o: CMakeFiles/FleetManager.dir/flags.make
-CMakeFiles/FleetManager.dir/sources/views/FinancialView.cpp.o: /home/dinis/CLionProjects/fsoft2025_1DA_2/Project/FleetManager/sources/views/FinancialView.cpp
+CMakeFiles/FleetManager.dir/sources/views/FinancialView.cpp.o: /home/vitor/CLionProjects/fsoft2025_1DA_2/Project/FleetManager/sources/views/FinancialView.cpp
 CMakeFiles/FleetManager.dir/sources/views/FinancialView.cpp.o: CMakeFiles/FleetManager.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/dinis/CLionProjects/fsoft2025_1DA_2/Project/FleetManager/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/FleetManager.dir/sources/views/FinancialView.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/FleetManager.dir/sources/views/FinancialView.cpp.o -MF CMakeFiles/FleetManager.dir/sources/views/FinancialView.cpp.o.d -o CMakeFiles/FleetManager.dir/sources/views/FinancialView.cpp.o -c /home/dinis/CLionProjects/fsoft2025_1DA_2/Project/FleetManager/sources/views/FinancialView.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/vitor/CLionProjects/fsoft2025_1DA_2/Project/FleetManager/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/FleetManager.dir/sources/views/FinancialView.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/FleetManager.dir/sources/views/FinancialView.cpp.o -MF CMakeFiles/FleetManager.dir/sources/views/FinancialView.cpp.o.d -o CMakeFiles/FleetManager.dir/sources/views/FinancialView.cpp.o -c /home/vitor/CLionProjects/fsoft2025_1DA_2/Project/FleetManager/sources/views/FinancialView.cpp
 
 CMakeFiles/FleetManager.dir/sources/views/FinancialView.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/FleetManager.dir/sources/views/FinancialView.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/dinis/CLionProjects/fsoft2025_1DA_2/Project/FleetManager/sources/views/FinancialView.cpp > CMakeFiles/FleetManager.dir/sources/views/FinancialView.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/vitor/CLionProjects/fsoft2025_1DA_2/Project/FleetManager/sources/views/FinancialView.cpp > CMakeFiles/FleetManager.dir/sources/views/FinancialView.cpp.i
 
 CMakeFiles/FleetManager.dir/sources/views/FinancialView.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/FleetManager.dir/sources/views/FinancialView.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/dinis/CLionProjects/fsoft2025_1DA_2/Project/FleetManager/sources/views/FinancialView.cpp -o CMakeFiles/FleetManager.dir/sources/views/FinancialView.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/vitor/CLionProjects/fsoft2025_1DA_2/Project/FleetManager/sources/views/FinancialView.cpp -o CMakeFiles/FleetManager.dir/sources/views/FinancialView.cpp.s
 
 CMakeFiles/FleetManager.dir/sources/views/InspectionView.cpp.o: CMakeFiles/FleetManager.dir/flags.make
-CMakeFiles/FleetManager.dir/sources/views/InspectionView.cpp.o: /home/dinis/CLionProjects/fsoft2025_1DA_2/Project/FleetManager/sources/views/InspectionView.cpp
+CMakeFiles/FleetManager.dir/sources/views/InspectionView.cpp.o: /home/vitor/CLionProjects/fsoft2025_1DA_2/Project/FleetManager/sources/views/InspectionView.cpp
 CMakeFiles/FleetManager.dir/sources/views/InspectionView.cpp.o: CMakeFiles/FleetManager.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/dinis/CLionProjects/fsoft2025_1DA_2/Project/FleetManager/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/FleetManager.dir/sources/views/InspectionView.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/FleetManager.dir/sources/views/InspectionView.cpp.o -MF CMakeFiles/FleetManager.dir/sources/views/InspectionView.cpp.o.d -o CMakeFiles/FleetManager.dir/sources/views/InspectionView.cpp.o -c /home/dinis/CLionProjects/fsoft2025_1DA_2/Project/FleetManager/sources/views/InspectionView.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/vitor/CLionProjects/fsoft2025_1DA_2/Project/FleetManager/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/FleetManager.dir/sources/views/InspectionView.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/FleetManager.dir/sources/views/InspectionView.cpp.o -MF CMakeFiles/FleetManager.dir/sources/views/InspectionView.cpp.o.d -o CMakeFiles/FleetManager.dir/sources/views/InspectionView.cpp.o -c /home/vitor/CLionProjects/fsoft2025_1DA_2/Project/FleetManager/sources/views/InspectionView.cpp
 
 CMakeFiles/FleetManager.dir/sources/views/InspectionView.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/FleetManager.dir/sources/views/InspectionView.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/dinis/CLionProjects/fsoft2025_1DA_2/Project/FleetManager/sources/views/InspectionView.cpp > CMakeFiles/FleetManager.dir/sources/views/InspectionView.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/vitor/CLionProjects/fsoft2025_1DA_2/Project/FleetManager/sources/views/InspectionView.cpp > CMakeFiles/FleetManager.dir/sources/views/InspectionView.cpp.i
 
 CMakeFiles/FleetManager.dir/sources/views/InspectionView.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/FleetManager.dir/sources/views/InspectionView.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/dinis/CLionProjects/fsoft2025_1DA_2/Project/FleetManager/sources/views/InspectionView.cpp -o CMakeFiles/FleetManager.dir/sources/views/InspectionView.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/vitor/CLionProjects/fsoft2025_1DA_2/Project/FleetManager/sources/views/InspectionView.cpp -o CMakeFiles/FleetManager.dir/sources/views/InspectionView.cpp.s
 
 CMakeFiles/FleetManager.dir/sources/views/InsuranceView.cpp.o: CMakeFiles/FleetManager.dir/flags.make
-CMakeFiles/FleetManager.dir/sources/views/InsuranceView.cpp.o: /home/dinis/CLionProjects/fsoft2025_1DA_2/Project/FleetManager/sources/views/InsuranceView.cpp
+CMakeFiles/FleetManager.dir/sources/views/InsuranceView.cpp.o: /home/vitor/CLionProjects/fsoft2025_1DA_2/Project/FleetManager/sources/views/InsuranceView.cpp
 CMakeFiles/FleetManager.dir/sources/views/InsuranceView.cpp.o: CMakeFiles/FleetManager.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/dinis/CLionProjects/fsoft2025_1DA_2/Project/FleetManager/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/FleetManager.dir/sources/views/InsuranceView.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/FleetManager.dir/sources/views/InsuranceView.cpp.o -MF CMakeFiles/FleetManager.dir/sources/views/InsuranceView.cpp.o.d -o CMakeFiles/FleetManager.dir/sources/views/InsuranceView.cpp.o -c /home/dinis/CLionProjects/fsoft2025_1DA_2/Project/FleetManager/sources/views/InsuranceView.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/vitor/CLionProjects/fsoft2025_1DA_2/Project/FleetManager/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/FleetManager.dir/sources/views/InsuranceView.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/FleetManager.dir/sources/views/InsuranceView.cpp.o -MF CMakeFiles/FleetManager.dir/sources/views/InsuranceView.cpp.o.d -o CMakeFiles/FleetManager.dir/sources/views/InsuranceView.cpp.o -c /home/vitor/CLionProjects/fsoft2025_1DA_2/Project/FleetManager/sources/views/InsuranceView.cpp
 
 CMakeFiles/FleetManager.dir/sources/views/InsuranceView.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/FleetManager.dir/sources/views/InsuranceView.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/dinis/CLionProjects/fsoft2025_1DA_2/Project/FleetManager/sources/views/InsuranceView.cpp > CMakeFiles/FleetManager.dir/sources/views/InsuranceView.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/vitor/CLionProjects/fsoft2025_1DA_2/Project/FleetManager/sources/views/InsuranceView.cpp > CMakeFiles/FleetManager.dir/sources/views/InsuranceView.cpp.i
 
 CMakeFiles/FleetManager.dir/sources/views/InsuranceView.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/FleetManager.dir/sources/views/InsuranceView.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/dinis/CLionProjects/fsoft2025_1DA_2/Project/FleetManager/sources/views/InsuranceView.cpp -o CMakeFiles/FleetManager.dir/sources/views/InsuranceView.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/vitor/CLionProjects/fsoft2025_1DA_2/Project/FleetManager/sources/views/InsuranceView.cpp -o CMakeFiles/FleetManager.dir/sources/views/InsuranceView.cpp.s
 
 CMakeFiles/FleetManager.dir/sources/views/OrderView.cpp.o: CMakeFiles/FleetManager.dir/flags.make
-CMakeFiles/FleetManager.dir/sources/views/OrderView.cpp.o: /home/dinis/CLionProjects/fsoft2025_1DA_2/Project/FleetManager/sources/views/OrderView.cpp
+CMakeFiles/FleetManager.dir/sources/views/OrderView.cpp.o: /home/vitor/CLionProjects/fsoft2025_1DA_2/Project/FleetManager/sources/views/OrderView.cpp
 CMakeFiles/FleetManager.dir/sources/views/OrderView.cpp.o: CMakeFiles/FleetManager.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/dinis/CLionProjects/fsoft2025_1DA_2/Project/FleetManager/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/FleetManager.dir/sources/views/OrderView.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/FleetManager.dir/sources/views/OrderView.cpp.o -MF CMakeFiles/FleetManager.dir/sources/views/OrderView.cpp.o.d -o CMakeFiles/FleetManager.dir/sources/views/OrderView.cpp.o -c /home/dinis/CLionProjects/fsoft2025_1DA_2/Project/FleetManager/sources/views/OrderView.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/vitor/CLionProjects/fsoft2025_1DA_2/Project/FleetManager/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/FleetManager.dir/sources/views/OrderView.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/FleetManager.dir/sources/views/OrderView.cpp.o -MF CMakeFiles/FleetManager.dir/sources/views/OrderView.cpp.o.d -o CMakeFiles/FleetManager.dir/sources/views/OrderView.cpp.o -c /home/vitor/CLionProjects/fsoft2025_1DA_2/Project/FleetManager/sources/views/OrderView.cpp
 
 CMakeFiles/FleetManager.dir/sources/views/OrderView.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/FleetManager.dir/sources/views/OrderView.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/dinis/CLionProjects/fsoft2025_1DA_2/Project/FleetManager/sources/views/OrderView.cpp > CMakeFiles/FleetManager.dir/sources/views/OrderView.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/vitor/CLionProjects/fsoft2025_1DA_2/Project/FleetManager/sources/views/OrderView.cpp > CMakeFiles/FleetManager.dir/sources/views/OrderView.cpp.i
 
 CMakeFiles/FleetManager.dir/sources/views/OrderView.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/FleetManager.dir/sources/views/OrderView.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/dinis/CLionProjects/fsoft2025_1DA_2/Project/FleetManager/sources/views/OrderView.cpp -o CMakeFiles/FleetManager.dir/sources/views/OrderView.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/vitor/CLionProjects/fsoft2025_1DA_2/Project/FleetManager/sources/views/OrderView.cpp -o CMakeFiles/FleetManager.dir/sources/views/OrderView.cpp.s
 
 CMakeFiles/FleetManager.dir/sources/views/TripView.cpp.o: CMakeFiles/FleetManager.dir/flags.make
-CMakeFiles/FleetManager.dir/sources/views/TripView.cpp.o: /home/dinis/CLionProjects/fsoft2025_1DA_2/Project/FleetManager/sources/views/TripView.cpp
+CMakeFiles/FleetManager.dir/sources/views/TripView.cpp.o: /home/vitor/CLionProjects/fsoft2025_1DA_2/Project/FleetManager/sources/views/TripView.cpp
 CMakeFiles/FleetManager.dir/sources/views/TripView.cpp.o: CMakeFiles/FleetManager.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/dinis/CLionProjects/fsoft2025_1DA_2/Project/FleetManager/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/FleetManager.dir/sources/views/TripView.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/FleetManager.dir/sources/views/TripView.cpp.o -MF CMakeFiles/FleetManager.dir/sources/views/TripView.cpp.o.d -o CMakeFiles/FleetManager.dir/sources/views/TripView.cpp.o -c /home/dinis/CLionProjects/fsoft2025_1DA_2/Project/FleetManager/sources/views/TripView.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/vitor/CLionProjects/fsoft2025_1DA_2/Project/FleetManager/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/FleetManager.dir/sources/views/TripView.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/FleetManager.dir/sources/views/TripView.cpp.o -MF CMakeFiles/FleetManager.dir/sources/views/TripView.cpp.o.d -o CMakeFiles/FleetManager.dir/sources/views/TripView.cpp.o -c /home/vitor/CLionProjects/fsoft2025_1DA_2/Project/FleetManager/sources/views/TripView.cpp
 
 CMakeFiles/FleetManager.dir/sources/views/TripView.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/FleetManager.dir/sources/views/TripView.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/dinis/CLionProjects/fsoft2025_1DA_2/Project/FleetManager/sources/views/TripView.cpp > CMakeFiles/FleetManager.dir/sources/views/TripView.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/vitor/CLionProjects/fsoft2025_1DA_2/Project/FleetManager/sources/views/TripView.cpp > CMakeFiles/FleetManager.dir/sources/views/TripView.cpp.i
 
 CMakeFiles/FleetManager.dir/sources/views/TripView.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/FleetManager.dir/sources/views/TripView.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/dinis/CLionProjects/fsoft2025_1DA_2/Project/FleetManager/sources/views/TripView.cpp -o CMakeFiles/FleetManager.dir/sources/views/TripView.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/vitor/CLionProjects/fsoft2025_1DA_2/Project/FleetManager/sources/views/TripView.cpp -o CMakeFiles/FleetManager.dir/sources/views/TripView.cpp.s
 
 CMakeFiles/FleetManager.dir/sources/views/Utils.cpp.o: CMakeFiles/FleetManager.dir/flags.make
-CMakeFiles/FleetManager.dir/sources/views/Utils.cpp.o: /home/dinis/CLionProjects/fsoft2025_1DA_2/Project/FleetManager/sources/views/Utils.cpp
+CMakeFiles/FleetManager.dir/sources/views/Utils.cpp.o: /home/vitor/CLionProjects/fsoft2025_1DA_2/Project/FleetManager/sources/views/Utils.cpp
 CMakeFiles/FleetManager.dir/sources/views/Utils.cpp.o: CMakeFiles/FleetManager.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/dinis/CLionProjects/fsoft2025_1DA_2/Project/FleetManager/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/FleetManager.dir/sources/views/Utils.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/FleetManager.dir/sources/views/Utils.cpp.o -MF CMakeFiles/FleetManager.dir/sources/views/Utils.cpp.o.d -o CMakeFiles/FleetManager.dir/sources/views/Utils.cpp.o -c /home/dinis/CLionProjects/fsoft2025_1DA_2/Project/FleetManager/sources/views/Utils.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/vitor/CLionProjects/fsoft2025_1DA_2/Project/FleetManager/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/FleetManager.dir/sources/views/Utils.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/FleetManager.dir/sources/views/Utils.cpp.o -MF CMakeFiles/FleetManager.dir/sources/views/Utils.cpp.o.d -o CMakeFiles/FleetManager.dir/sources/views/Utils.cpp.o -c /home/vitor/CLionProjects/fsoft2025_1DA_2/Project/FleetManager/sources/views/Utils.cpp
 
 CMakeFiles/FleetManager.dir/sources/views/Utils.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/FleetManager.dir/sources/views/Utils.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/dinis/CLionProjects/fsoft2025_1DA_2/Project/FleetManager/sources/views/Utils.cpp > CMakeFiles/FleetManager.dir/sources/views/Utils.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/vitor/CLionProjects/fsoft2025_1DA_2/Project/FleetManager/sources/views/Utils.cpp > CMakeFiles/FleetManager.dir/sources/views/Utils.cpp.i
 
 CMakeFiles/FleetManager.dir/sources/views/Utils.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/FleetManager.dir/sources/views/Utils.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/dinis/CLionProjects/fsoft2025_1DA_2/Project/FleetManager/sources/views/Utils.cpp -o CMakeFiles/FleetManager.dir/sources/views/Utils.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/vitor/CLionProjects/fsoft2025_1DA_2/Project/FleetManager/sources/views/Utils.cpp -o CMakeFiles/FleetManager.dir/sources/views/Utils.cpp.s
 
 CMakeFiles/FleetManager.dir/sources/views/VacationView.cpp.o: CMakeFiles/FleetManager.dir/flags.make
-CMakeFiles/FleetManager.dir/sources/views/VacationView.cpp.o: /home/dinis/CLionProjects/fsoft2025_1DA_2/Project/FleetManager/sources/views/VacationView.cpp
+CMakeFiles/FleetManager.dir/sources/views/VacationView.cpp.o: /home/vitor/CLionProjects/fsoft2025_1DA_2/Project/FleetManager/sources/views/VacationView.cpp
 CMakeFiles/FleetManager.dir/sources/views/VacationView.cpp.o: CMakeFiles/FleetManager.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/dinis/CLionProjects/fsoft2025_1DA_2/Project/FleetManager/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/FleetManager.dir/sources/views/VacationView.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/FleetManager.dir/sources/views/VacationView.cpp.o -MF CMakeFiles/FleetManager.dir/sources/views/VacationView.cpp.o.d -o CMakeFiles/FleetManager.dir/sources/views/VacationView.cpp.o -c /home/dinis/CLionProjects/fsoft2025_1DA_2/Project/FleetManager/sources/views/VacationView.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/vitor/CLionProjects/fsoft2025_1DA_2/Project/FleetManager/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/FleetManager.dir/sources/views/VacationView.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/FleetManager.dir/sources/views/VacationView.cpp.o -MF CMakeFiles/FleetManager.dir/sources/views/VacationView.cpp.o.d -o CMakeFiles/FleetManager.dir/sources/views/VacationView.cpp.o -c /home/vitor/CLionProjects/fsoft2025_1DA_2/Project/FleetManager/sources/views/VacationView.cpp
 
 CMakeFiles/FleetManager.dir/sources/views/VacationView.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/FleetManager.dir/sources/views/VacationView.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/dinis/CLionProjects/fsoft2025_1DA_2/Project/FleetManager/sources/views/VacationView.cpp > CMakeFiles/FleetManager.dir/sources/views/VacationView.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/vitor/CLionProjects/fsoft2025_1DA_2/Project/FleetManager/sources/views/VacationView.cpp > CMakeFiles/FleetManager.dir/sources/views/VacationView.cpp.i
 
 CMakeFiles/FleetManager.dir/sources/views/VacationView.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/FleetManager.dir/sources/views/VacationView.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/dinis/CLionProjects/fsoft2025_1DA_2/Project/FleetManager/sources/views/VacationView.cpp -o CMakeFiles/FleetManager.dir/sources/views/VacationView.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/vitor/CLionProjects/fsoft2025_1DA_2/Project/FleetManager/sources/views/VacationView.cpp -o CMakeFiles/FleetManager.dir/sources/views/VacationView.cpp.s
 
 CMakeFiles/FleetManager.dir/sources/views/VehicleStorageLocationView.cpp.o: CMakeFiles/FleetManager.dir/flags.make
-CMakeFiles/FleetManager.dir/sources/views/VehicleStorageLocationView.cpp.o: /home/dinis/CLionProjects/fsoft2025_1DA_2/Project/FleetManager/sources/views/VehicleStorageLocationView.cpp
+CMakeFiles/FleetManager.dir/sources/views/VehicleStorageLocationView.cpp.o: /home/vitor/CLionProjects/fsoft2025_1DA_2/Project/FleetManager/sources/views/VehicleStorageLocationView.cpp
 CMakeFiles/FleetManager.dir/sources/views/VehicleStorageLocationView.cpp.o: CMakeFiles/FleetManager.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/dinis/CLionProjects/fsoft2025_1DA_2/Project/FleetManager/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/FleetManager.dir/sources/views/VehicleStorageLocationView.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/FleetManager.dir/sources/views/VehicleStorageLocationView.cpp.o -MF CMakeFiles/FleetManager.dir/sources/views/VehicleStorageLocationView.cpp.o.d -o CMakeFiles/FleetManager.dir/sources/views/VehicleStorageLocationView.cpp.o -c /home/dinis/CLionProjects/fsoft2025_1DA_2/Project/FleetManager/sources/views/VehicleStorageLocationView.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/vitor/CLionProjects/fsoft2025_1DA_2/Project/FleetManager/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/FleetManager.dir/sources/views/VehicleStorageLocationView.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/FleetManager.dir/sources/views/VehicleStorageLocationView.cpp.o -MF CMakeFiles/FleetManager.dir/sources/views/VehicleStorageLocationView.cpp.o.d -o CMakeFiles/FleetManager.dir/sources/views/VehicleStorageLocationView.cpp.o -c /home/vitor/CLionProjects/fsoft2025_1DA_2/Project/FleetManager/sources/views/VehicleStorageLocationView.cpp
 
 CMakeFiles/FleetManager.dir/sources/views/VehicleStorageLocationView.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/FleetManager.dir/sources/views/VehicleStorageLocationView.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/dinis/CLionProjects/fsoft2025_1DA_2/Project/FleetManager/sources/views/VehicleStorageLocationView.cpp > CMakeFiles/FleetManager.dir/sources/views/VehicleStorageLocationView.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/vitor/CLionProjects/fsoft2025_1DA_2/Project/FleetManager/sources/views/VehicleStorageLocationView.cpp > CMakeFiles/FleetManager.dir/sources/views/VehicleStorageLocationView.cpp.i
 
 CMakeFiles/FleetManager.dir/sources/views/VehicleStorageLocationView.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/FleetManager.dir/sources/views/VehicleStorageLocationView.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/dinis/CLionProjects/fsoft2025_1DA_2/Project/FleetManager/sources/views/VehicleStorageLocationView.cpp -o CMakeFiles/FleetManager.dir/sources/views/VehicleStorageLocationView.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/vitor/CLionProjects/fsoft2025_1DA_2/Project/FleetManager/sources/views/VehicleStorageLocationView.cpp -o CMakeFiles/FleetManager.dir/sources/views/VehicleStorageLocationView.cpp.s
 
 CMakeFiles/FleetManager.dir/sources/views/VehicleView.cpp.o: CMakeFiles/FleetManager.dir/flags.make
-CMakeFiles/FleetManager.dir/sources/views/VehicleView.cpp.o: /home/dinis/CLionProjects/fsoft2025_1DA_2/Project/FleetManager/sources/views/VehicleView.cpp
+CMakeFiles/FleetManager.dir/sources/views/VehicleView.cpp.o: /home/vitor/CLionProjects/fsoft2025_1DA_2/Project/FleetManager/sources/views/VehicleView.cpp
 CMakeFiles/FleetManager.dir/sources/views/VehicleView.cpp.o: CMakeFiles/FleetManager.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/dinis/CLionProjects/fsoft2025_1DA_2/Project/FleetManager/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object CMakeFiles/FleetManager.dir/sources/views/VehicleView.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/FleetManager.dir/sources/views/VehicleView.cpp.o -MF CMakeFiles/FleetManager.dir/sources/views/VehicleView.cpp.o.d -o CMakeFiles/FleetManager.dir/sources/views/VehicleView.cpp.o -c /home/dinis/CLionProjects/fsoft2025_1DA_2/Project/FleetManager/sources/views/VehicleView.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/vitor/CLionProjects/fsoft2025_1DA_2/Project/FleetManager/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object CMakeFiles/FleetManager.dir/sources/views/VehicleView.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/FleetManager.dir/sources/views/VehicleView.cpp.o -MF CMakeFiles/FleetManager.dir/sources/views/VehicleView.cpp.o.d -o CMakeFiles/FleetManager.dir/sources/views/VehicleView.cpp.o -c /home/vitor/CLionProjects/fsoft2025_1DA_2/Project/FleetManager/sources/views/VehicleView.cpp
 
 CMakeFiles/FleetManager.dir/sources/views/VehicleView.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/FleetManager.dir/sources/views/VehicleView.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/dinis/CLionProjects/fsoft2025_1DA_2/Project/FleetManager/sources/views/VehicleView.cpp > CMakeFiles/FleetManager.dir/sources/views/VehicleView.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/vitor/CLionProjects/fsoft2025_1DA_2/Project/FleetManager/sources/views/VehicleView.cpp > CMakeFiles/FleetManager.dir/sources/views/VehicleView.cpp.i
 
 CMakeFiles/FleetManager.dir/sources/views/VehicleView.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/FleetManager.dir/sources/views/VehicleView.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/dinis/CLionProjects/fsoft2025_1DA_2/Project/FleetManager/sources/views/VehicleView.cpp -o CMakeFiles/FleetManager.dir/sources/views/VehicleView.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/vitor/CLionProjects/fsoft2025_1DA_2/Project/FleetManager/sources/views/VehicleView.cpp -o CMakeFiles/FleetManager.dir/sources/views/VehicleView.cpp.s
 
 CMakeFiles/FleetManager.dir/sources/views/View.cpp.o: CMakeFiles/FleetManager.dir/flags.make
-CMakeFiles/FleetManager.dir/sources/views/View.cpp.o: /home/dinis/CLionProjects/fsoft2025_1DA_2/Project/FleetManager/sources/views/View.cpp
+CMakeFiles/FleetManager.dir/sources/views/View.cpp.o: /home/vitor/CLionProjects/fsoft2025_1DA_2/Project/FleetManager/sources/views/View.cpp
 CMakeFiles/FleetManager.dir/sources/views/View.cpp.o: CMakeFiles/FleetManager.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/dinis/CLionProjects/fsoft2025_1DA_2/Project/FleetManager/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building CXX object CMakeFiles/FleetManager.dir/sources/views/View.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/FleetManager.dir/sources/views/View.cpp.o -MF CMakeFiles/FleetManager.dir/sources/views/View.cpp.o.d -o CMakeFiles/FleetManager.dir/sources/views/View.cpp.o -c /home/dinis/CLionProjects/fsoft2025_1DA_2/Project/FleetManager/sources/views/View.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/vitor/CLionProjects/fsoft2025_1DA_2/Project/FleetManager/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building CXX object CMakeFiles/FleetManager.dir/sources/views/View.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/FleetManager.dir/sources/views/View.cpp.o -MF CMakeFiles/FleetManager.dir/sources/views/View.cpp.o.d -o CMakeFiles/FleetManager.dir/sources/views/View.cpp.o -c /home/vitor/CLionProjects/fsoft2025_1DA_2/Project/FleetManager/sources/views/View.cpp
 
 CMakeFiles/FleetManager.dir/sources/views/View.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/FleetManager.dir/sources/views/View.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/dinis/CLionProjects/fsoft2025_1DA_2/Project/FleetManager/sources/views/View.cpp > CMakeFiles/FleetManager.dir/sources/views/View.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/vitor/CLionProjects/fsoft2025_1DA_2/Project/FleetManager/sources/views/View.cpp > CMakeFiles/FleetManager.dir/sources/views/View.cpp.i
 
 CMakeFiles/FleetManager.dir/sources/views/View.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/FleetManager.dir/sources/views/View.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/dinis/CLionProjects/fsoft2025_1DA_2/Project/FleetManager/sources/views/View.cpp -o CMakeFiles/FleetManager.dir/sources/views/View.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/vitor/CLionProjects/fsoft2025_1DA_2/Project/FleetManager/sources/views/View.cpp -o CMakeFiles/FleetManager.dir/sources/views/View.cpp.s
 
 CMakeFiles/FleetManager.dir/sources/model/Vehicle.cpp.o: CMakeFiles/FleetManager.dir/flags.make
-CMakeFiles/FleetManager.dir/sources/model/Vehicle.cpp.o: /home/dinis/CLionProjects/fsoft2025_1DA_2/Project/FleetManager/sources/model/Vehicle.cpp
+CMakeFiles/FleetManager.dir/sources/model/Vehicle.cpp.o: /home/vitor/CLionProjects/fsoft2025_1DA_2/Project/FleetManager/sources/model/Vehicle.cpp
 CMakeFiles/FleetManager.dir/sources/model/Vehicle.cpp.o: CMakeFiles/FleetManager.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/dinis/CLionProjects/fsoft2025_1DA_2/Project/FleetManager/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building CXX object CMakeFiles/FleetManager.dir/sources/model/Vehicle.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/FleetManager.dir/sources/model/Vehicle.cpp.o -MF CMakeFiles/FleetManager.dir/sources/model/Vehicle.cpp.o.d -o CMakeFiles/FleetManager.dir/sources/model/Vehicle.cpp.o -c /home/dinis/CLionProjects/fsoft2025_1DA_2/Project/FleetManager/sources/model/Vehicle.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/vitor/CLionProjects/fsoft2025_1DA_2/Project/FleetManager/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building CXX object CMakeFiles/FleetManager.dir/sources/model/Vehicle.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/FleetManager.dir/sources/model/Vehicle.cpp.o -MF CMakeFiles/FleetManager.dir/sources/model/Vehicle.cpp.o.d -o CMakeFiles/FleetManager.dir/sources/model/Vehicle.cpp.o -c /home/vitor/CLionProjects/fsoft2025_1DA_2/Project/FleetManager/sources/model/Vehicle.cpp
 
 CMakeFiles/FleetManager.dir/sources/model/Vehicle.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/FleetManager.dir/sources/model/Vehicle.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/dinis/CLionProjects/fsoft2025_1DA_2/Project/FleetManager/sources/model/Vehicle.cpp > CMakeFiles/FleetManager.dir/sources/model/Vehicle.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/vitor/CLionProjects/fsoft2025_1DA_2/Project/FleetManager/sources/model/Vehicle.cpp > CMakeFiles/FleetManager.dir/sources/model/Vehicle.cpp.i
 
 CMakeFiles/FleetManager.dir/sources/model/Vehicle.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/FleetManager.dir/sources/model/Vehicle.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/dinis/CLionProjects/fsoft2025_1DA_2/Project/FleetManager/sources/model/Vehicle.cpp -o CMakeFiles/FleetManager.dir/sources/model/Vehicle.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/vitor/CLionProjects/fsoft2025_1DA_2/Project/FleetManager/sources/model/Vehicle.cpp -o CMakeFiles/FleetManager.dir/sources/model/Vehicle.cpp.s
 
 CMakeFiles/FleetManager.dir/sources/model/Date.cpp.o: CMakeFiles/FleetManager.dir/flags.make
-CMakeFiles/FleetManager.dir/sources/model/Date.cpp.o: /home/dinis/CLionProjects/fsoft2025_1DA_2/Project/FleetManager/sources/model/Date.cpp
+CMakeFiles/FleetManager.dir/sources/model/Date.cpp.o: /home/vitor/CLionProjects/fsoft2025_1DA_2/Project/FleetManager/sources/model/Date.cpp
 CMakeFiles/FleetManager.dir/sources/model/Date.cpp.o: CMakeFiles/FleetManager.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/dinis/CLionProjects/fsoft2025_1DA_2/Project/FleetManager/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Building CXX object CMakeFiles/FleetManager.dir/sources/model/Date.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/FleetManager.dir/sources/model/Date.cpp.o -MF CMakeFiles/FleetManager.dir/sources/model/Date.cpp.o.d -o CMakeFiles/FleetManager.dir/sources/model/Date.cpp.o -c /home/dinis/CLionProjects/fsoft2025_1DA_2/Project/FleetManager/sources/model/Date.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/vitor/CLionProjects/fsoft2025_1DA_2/Project/FleetManager/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Building CXX object CMakeFiles/FleetManager.dir/sources/model/Date.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/FleetManager.dir/sources/model/Date.cpp.o -MF CMakeFiles/FleetManager.dir/sources/model/Date.cpp.o.d -o CMakeFiles/FleetManager.dir/sources/model/Date.cpp.o -c /home/vitor/CLionProjects/fsoft2025_1DA_2/Project/FleetManager/sources/model/Date.cpp
 
 CMakeFiles/FleetManager.dir/sources/model/Date.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/FleetManager.dir/sources/model/Date.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/dinis/CLionProjects/fsoft2025_1DA_2/Project/FleetManager/sources/model/Date.cpp > CMakeFiles/FleetManager.dir/sources/model/Date.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/vitor/CLionProjects/fsoft2025_1DA_2/Project/FleetManager/sources/model/Date.cpp > CMakeFiles/FleetManager.dir/sources/model/Date.cpp.i
 
 CMakeFiles/FleetManager.dir/sources/model/Date.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/FleetManager.dir/sources/model/Date.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/dinis/CLionProjects/fsoft2025_1DA_2/Project/FleetManager/sources/model/Date.cpp -o CMakeFiles/FleetManager.dir/sources/model/Date.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/vitor/CLionProjects/fsoft2025_1DA_2/Project/FleetManager/sources/model/Date.cpp -o CMakeFiles/FleetManager.dir/sources/model/Date.cpp.s
 
 CMakeFiles/FleetManager.dir/sources/model/Driver.cpp.o: CMakeFiles/FleetManager.dir/flags.make
-CMakeFiles/FleetManager.dir/sources/model/Driver.cpp.o: /home/dinis/CLionProjects/fsoft2025_1DA_2/Project/FleetManager/sources/model/Driver.cpp
+CMakeFiles/FleetManager.dir/sources/model/Driver.cpp.o: /home/vitor/CLionProjects/fsoft2025_1DA_2/Project/FleetManager/sources/model/Driver.cpp
 CMakeFiles/FleetManager.dir/sources/model/Driver.cpp.o: CMakeFiles/FleetManager.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/dinis/CLionProjects/fsoft2025_1DA_2/Project/FleetManager/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Building CXX object CMakeFiles/FleetManager.dir/sources/model/Driver.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/FleetManager.dir/sources/model/Driver.cpp.o -MF CMakeFiles/FleetManager.dir/sources/model/Driver.cpp.o.d -o CMakeFiles/FleetManager.dir/sources/model/Driver.cpp.o -c /home/dinis/CLionProjects/fsoft2025_1DA_2/Project/FleetManager/sources/model/Driver.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/vitor/CLionProjects/fsoft2025_1DA_2/Project/FleetManager/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Building CXX object CMakeFiles/FleetManager.dir/sources/model/Driver.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/FleetManager.dir/sources/model/Driver.cpp.o -MF CMakeFiles/FleetManager.dir/sources/model/Driver.cpp.o.d -o CMakeFiles/FleetManager.dir/sources/model/Driver.cpp.o -c /home/vitor/CLionProjects/fsoft2025_1DA_2/Project/FleetManager/sources/model/Driver.cpp
 
 CMakeFiles/FleetManager.dir/sources/model/Driver.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/FleetManager.dir/sources/model/Driver.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/dinis/CLionProjects/fsoft2025_1DA_2/Project/FleetManager/sources/model/Driver.cpp > CMakeFiles/FleetManager.dir/sources/model/Driver.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/vitor/CLionProjects/fsoft2025_1DA_2/Project/FleetManager/sources/model/Driver.cpp > CMakeFiles/FleetManager.dir/sources/model/Driver.cpp.i
 
 CMakeFiles/FleetManager.dir/sources/model/Driver.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/FleetManager.dir/sources/model/Driver.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/dinis/CLionProjects/fsoft2025_1DA_2/Project/FleetManager/sources/model/Driver.cpp -o CMakeFiles/FleetManager.dir/sources/model/Driver.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/vitor/CLionProjects/fsoft2025_1DA_2/Project/FleetManager/sources/model/Driver.cpp -o CMakeFiles/FleetManager.dir/sources/model/Driver.cpp.s
 
 CMakeFiles/FleetManager.dir/sources/model/DriverContainer.cpp.o: CMakeFiles/FleetManager.dir/flags.make
-CMakeFiles/FleetManager.dir/sources/model/DriverContainer.cpp.o: /home/dinis/CLionProjects/fsoft2025_1DA_2/Project/FleetManager/sources/model/DriverContainer.cpp
+CMakeFiles/FleetManager.dir/sources/model/DriverContainer.cpp.o: /home/vitor/CLionProjects/fsoft2025_1DA_2/Project/FleetManager/sources/model/DriverContainer.cpp
 CMakeFiles/FleetManager.dir/sources/model/DriverContainer.cpp.o: CMakeFiles/FleetManager.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/dinis/CLionProjects/fsoft2025_1DA_2/Project/FleetManager/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Building CXX object CMakeFiles/FleetManager.dir/sources/model/DriverContainer.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/FleetManager.dir/sources/model/DriverContainer.cpp.o -MF CMakeFiles/FleetManager.dir/sources/model/DriverContainer.cpp.o.d -o CMakeFiles/FleetManager.dir/sources/model/DriverContainer.cpp.o -c /home/dinis/CLionProjects/fsoft2025_1DA_2/Project/FleetManager/sources/model/DriverContainer.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/vitor/CLionProjects/fsoft2025_1DA_2/Project/FleetManager/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Building CXX object CMakeFiles/FleetManager.dir/sources/model/DriverContainer.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/FleetManager.dir/sources/model/DriverContainer.cpp.o -MF CMakeFiles/FleetManager.dir/sources/model/DriverContainer.cpp.o.d -o CMakeFiles/FleetManager.dir/sources/model/DriverContainer.cpp.o -c /home/vitor/CLionProjects/fsoft2025_1DA_2/Project/FleetManager/sources/model/DriverContainer.cpp
 
 CMakeFiles/FleetManager.dir/sources/model/DriverContainer.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/FleetManager.dir/sources/model/DriverContainer.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/dinis/CLionProjects/fsoft2025_1DA_2/Project/FleetManager/sources/model/DriverContainer.cpp > CMakeFiles/FleetManager.dir/sources/model/DriverContainer.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/vitor/CLionProjects/fsoft2025_1DA_2/Project/FleetManager/sources/model/DriverContainer.cpp > CMakeFiles/FleetManager.dir/sources/model/DriverContainer.cpp.i
 
 CMakeFiles/FleetManager.dir/sources/model/DriverContainer.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/FleetManager.dir/sources/model/DriverContainer.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/dinis/CLionProjects/fsoft2025_1DA_2/Project/FleetManager/sources/model/DriverContainer.cpp -o CMakeFiles/FleetManager.dir/sources/model/DriverContainer.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/vitor/CLionProjects/fsoft2025_1DA_2/Project/FleetManager/sources/model/DriverContainer.cpp -o CMakeFiles/FleetManager.dir/sources/model/DriverContainer.cpp.s
 
 CMakeFiles/FleetManager.dir/sources/model/Enterprise.cpp.o: CMakeFiles/FleetManager.dir/flags.make
-CMakeFiles/FleetManager.dir/sources/model/Enterprise.cpp.o: /home/dinis/CLionProjects/fsoft2025_1DA_2/Project/FleetManager/sources/model/Enterprise.cpp
+CMakeFiles/FleetManager.dir/sources/model/Enterprise.cpp.o: /home/vitor/CLionProjects/fsoft2025_1DA_2/Project/FleetManager/sources/model/Enterprise.cpp
 CMakeFiles/FleetManager.dir/sources/model/Enterprise.cpp.o: CMakeFiles/FleetManager.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/dinis/CLionProjects/fsoft2025_1DA_2/Project/FleetManager/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_17) "Building CXX object CMakeFiles/FleetManager.dir/sources/model/Enterprise.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/FleetManager.dir/sources/model/Enterprise.cpp.o -MF CMakeFiles/FleetManager.dir/sources/model/Enterprise.cpp.o.d -o CMakeFiles/FleetManager.dir/sources/model/Enterprise.cpp.o -c /home/dinis/CLionProjects/fsoft2025_1DA_2/Project/FleetManager/sources/model/Enterprise.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/vitor/CLionProjects/fsoft2025_1DA_2/Project/FleetManager/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_17) "Building CXX object CMakeFiles/FleetManager.dir/sources/model/Enterprise.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/FleetManager.dir/sources/model/Enterprise.cpp.o -MF CMakeFiles/FleetManager.dir/sources/model/Enterprise.cpp.o.d -o CMakeFiles/FleetManager.dir/sources/model/Enterprise.cpp.o -c /home/vitor/CLionProjects/fsoft2025_1DA_2/Project/FleetManager/sources/model/Enterprise.cpp
 
 CMakeFiles/FleetManager.dir/sources/model/Enterprise.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/FleetManager.dir/sources/model/Enterprise.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/dinis/CLionProjects/fsoft2025_1DA_2/Project/FleetManager/sources/model/Enterprise.cpp > CMakeFiles/FleetManager.dir/sources/model/Enterprise.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/vitor/CLionProjects/fsoft2025_1DA_2/Project/FleetManager/sources/model/Enterprise.cpp > CMakeFiles/FleetManager.dir/sources/model/Enterprise.cpp.i
 
 CMakeFiles/FleetManager.dir/sources/model/Enterprise.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/FleetManager.dir/sources/model/Enterprise.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/dinis/CLionProjects/fsoft2025_1DA_2/Project/FleetManager/sources/model/Enterprise.cpp -o CMakeFiles/FleetManager.dir/sources/model/Enterprise.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/vitor/CLionProjects/fsoft2025_1DA_2/Project/FleetManager/sources/model/Enterprise.cpp -o CMakeFiles/FleetManager.dir/sources/model/Enterprise.cpp.s
 
 CMakeFiles/FleetManager.dir/sources/model/Expense.cpp.o: CMakeFiles/FleetManager.dir/flags.make
-CMakeFiles/FleetManager.dir/sources/model/Expense.cpp.o: /home/dinis/CLionProjects/fsoft2025_1DA_2/Project/FleetManager/sources/model/Expense.cpp
+CMakeFiles/FleetManager.dir/sources/model/Expense.cpp.o: /home/vitor/CLionProjects/fsoft2025_1DA_2/Project/FleetManager/sources/model/Expense.cpp
 CMakeFiles/FleetManager.dir/sources/model/Expense.cpp.o: CMakeFiles/FleetManager.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/dinis/CLionProjects/fsoft2025_1DA_2/Project/FleetManager/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_18) "Building CXX object CMakeFiles/FleetManager.dir/sources/model/Expense.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/FleetManager.dir/sources/model/Expense.cpp.o -MF CMakeFiles/FleetManager.dir/sources/model/Expense.cpp.o.d -o CMakeFiles/FleetManager.dir/sources/model/Expense.cpp.o -c /home/dinis/CLionProjects/fsoft2025_1DA_2/Project/FleetManager/sources/model/Expense.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/vitor/CLionProjects/fsoft2025_1DA_2/Project/FleetManager/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_18) "Building CXX object CMakeFiles/FleetManager.dir/sources/model/Expense.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/FleetManager.dir/sources/model/Expense.cpp.o -MF CMakeFiles/FleetManager.dir/sources/model/Expense.cpp.o.d -o CMakeFiles/FleetManager.dir/sources/model/Expense.cpp.o -c /home/vitor/CLionProjects/fsoft2025_1DA_2/Project/FleetManager/sources/model/Expense.cpp
 
 CMakeFiles/FleetManager.dir/sources/model/Expense.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/FleetManager.dir/sources/model/Expense.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/dinis/CLionProjects/fsoft2025_1DA_2/Project/FleetManager/sources/model/Expense.cpp > CMakeFiles/FleetManager.dir/sources/model/Expense.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/vitor/CLionProjects/fsoft2025_1DA_2/Project/FleetManager/sources/model/Expense.cpp > CMakeFiles/FleetManager.dir/sources/model/Expense.cpp.i
 
 CMakeFiles/FleetManager.dir/sources/model/Expense.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/FleetManager.dir/sources/model/Expense.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/dinis/CLionProjects/fsoft2025_1DA_2/Project/FleetManager/sources/model/Expense.cpp -o CMakeFiles/FleetManager.dir/sources/model/Expense.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/vitor/CLionProjects/fsoft2025_1DA_2/Project/FleetManager/sources/model/Expense.cpp -o CMakeFiles/FleetManager.dir/sources/model/Expense.cpp.s
 
 CMakeFiles/FleetManager.dir/sources/model/FinancialContainer.cpp.o: CMakeFiles/FleetManager.dir/flags.make
-CMakeFiles/FleetManager.dir/sources/model/FinancialContainer.cpp.o: /home/dinis/CLionProjects/fsoft2025_1DA_2/Project/FleetManager/sources/model/FinancialContainer.cpp
+CMakeFiles/FleetManager.dir/sources/model/FinancialContainer.cpp.o: /home/vitor/CLionProjects/fsoft2025_1DA_2/Project/FleetManager/sources/model/FinancialContainer.cpp
 CMakeFiles/FleetManager.dir/sources/model/FinancialContainer.cpp.o: CMakeFiles/FleetManager.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/dinis/CLionProjects/fsoft2025_1DA_2/Project/FleetManager/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_19) "Building CXX object CMakeFiles/FleetManager.dir/sources/model/FinancialContainer.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/FleetManager.dir/sources/model/FinancialContainer.cpp.o -MF CMakeFiles/FleetManager.dir/sources/model/FinancialContainer.cpp.o.d -o CMakeFiles/FleetManager.dir/sources/model/FinancialContainer.cpp.o -c /home/dinis/CLionProjects/fsoft2025_1DA_2/Project/FleetManager/sources/model/FinancialContainer.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/vitor/CLionProjects/fsoft2025_1DA_2/Project/FleetManager/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_19) "Building CXX object CMakeFiles/FleetManager.dir/sources/model/FinancialContainer.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/FleetManager.dir/sources/model/FinancialContainer.cpp.o -MF CMakeFiles/FleetManager.dir/sources/model/FinancialContainer.cpp.o.d -o CMakeFiles/FleetManager.dir/sources/model/FinancialContainer.cpp.o -c /home/vitor/CLionProjects/fsoft2025_1DA_2/Project/FleetManager/sources/model/FinancialContainer.cpp
 
 CMakeFiles/FleetManager.dir/sources/model/FinancialContainer.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/FleetManager.dir/sources/model/FinancialContainer.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/dinis/CLionProjects/fsoft2025_1DA_2/Project/FleetManager/sources/model/FinancialContainer.cpp > CMakeFiles/FleetManager.dir/sources/model/FinancialContainer.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/vitor/CLionProjects/fsoft2025_1DA_2/Project/FleetManager/sources/model/FinancialContainer.cpp > CMakeFiles/FleetManager.dir/sources/model/FinancialContainer.cpp.i
 
 CMakeFiles/FleetManager.dir/sources/model/FinancialContainer.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/FleetManager.dir/sources/model/FinancialContainer.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/dinis/CLionProjects/fsoft2025_1DA_2/Project/FleetManager/sources/model/FinancialContainer.cpp -o CMakeFiles/FleetManager.dir/sources/model/FinancialContainer.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/vitor/CLionProjects/fsoft2025_1DA_2/Project/FleetManager/sources/model/FinancialContainer.cpp -o CMakeFiles/FleetManager.dir/sources/model/FinancialContainer.cpp.s
 
 CMakeFiles/FleetManager.dir/sources/model/Inspection.cpp.o: CMakeFiles/FleetManager.dir/flags.make
-CMakeFiles/FleetManager.dir/sources/model/Inspection.cpp.o: /home/dinis/CLionProjects/fsoft2025_1DA_2/Project/FleetManager/sources/model/Inspection.cpp
+CMakeFiles/FleetManager.dir/sources/model/Inspection.cpp.o: /home/vitor/CLionProjects/fsoft2025_1DA_2/Project/FleetManager/sources/model/Inspection.cpp
 CMakeFiles/FleetManager.dir/sources/model/Inspection.cpp.o: CMakeFiles/FleetManager.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/dinis/CLionProjects/fsoft2025_1DA_2/Project/FleetManager/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_20) "Building CXX object CMakeFiles/FleetManager.dir/sources/model/Inspection.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/FleetManager.dir/sources/model/Inspection.cpp.o -MF CMakeFiles/FleetManager.dir/sources/model/Inspection.cpp.o.d -o CMakeFiles/FleetManager.dir/sources/model/Inspection.cpp.o -c /home/dinis/CLionProjects/fsoft2025_1DA_2/Project/FleetManager/sources/model/Inspection.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/vitor/CLionProjects/fsoft2025_1DA_2/Project/FleetManager/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_20) "Building CXX object CMakeFiles/FleetManager.dir/sources/model/Inspection.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/FleetManager.dir/sources/model/Inspection.cpp.o -MF CMakeFiles/FleetManager.dir/sources/model/Inspection.cpp.o.d -o CMakeFiles/FleetManager.dir/sources/model/Inspection.cpp.o -c /home/vitor/CLionProjects/fsoft2025_1DA_2/Project/FleetManager/sources/model/Inspection.cpp
 
 CMakeFiles/FleetManager.dir/sources/model/Inspection.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/FleetManager.dir/sources/model/Inspection.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/dinis/CLionProjects/fsoft2025_1DA_2/Project/FleetManager/sources/model/Inspection.cpp > CMakeFiles/FleetManager.dir/sources/model/Inspection.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/vitor/CLionProjects/fsoft2025_1DA_2/Project/FleetManager/sources/model/Inspection.cpp > CMakeFiles/FleetManager.dir/sources/model/Inspection.cpp.i
 
 CMakeFiles/FleetManager.dir/sources/model/Inspection.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/FleetManager.dir/sources/model/Inspection.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/dinis/CLionProjects/fsoft2025_1DA_2/Project/FleetManager/sources/model/Inspection.cpp -o CMakeFiles/FleetManager.dir/sources/model/Inspection.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/vitor/CLionProjects/fsoft2025_1DA_2/Project/FleetManager/sources/model/Inspection.cpp -o CMakeFiles/FleetManager.dir/sources/model/Inspection.cpp.s
 
 CMakeFiles/FleetManager.dir/sources/model/Insurance.cpp.o: CMakeFiles/FleetManager.dir/flags.make
-CMakeFiles/FleetManager.dir/sources/model/Insurance.cpp.o: /home/dinis/CLionProjects/fsoft2025_1DA_2/Project/FleetManager/sources/model/Insurance.cpp
+CMakeFiles/FleetManager.dir/sources/model/Insurance.cpp.o: /home/vitor/CLionProjects/fsoft2025_1DA_2/Project/FleetManager/sources/model/Insurance.cpp
 CMakeFiles/FleetManager.dir/sources/model/Insurance.cpp.o: CMakeFiles/FleetManager.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/dinis/CLionProjects/fsoft2025_1DA_2/Project/FleetManager/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_21) "Building CXX object CMakeFiles/FleetManager.dir/sources/model/Insurance.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/FleetManager.dir/sources/model/Insurance.cpp.o -MF CMakeFiles/FleetManager.dir/sources/model/Insurance.cpp.o.d -o CMakeFiles/FleetManager.dir/sources/model/Insurance.cpp.o -c /home/dinis/CLionProjects/fsoft2025_1DA_2/Project/FleetManager/sources/model/Insurance.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/vitor/CLionProjects/fsoft2025_1DA_2/Project/FleetManager/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_21) "Building CXX object CMakeFiles/FleetManager.dir/sources/model/Insurance.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/FleetManager.dir/sources/model/Insurance.cpp.o -MF CMakeFiles/FleetManager.dir/sources/model/Insurance.cpp.o.d -o CMakeFiles/FleetManager.dir/sources/model/Insurance.cpp.o -c /home/vitor/CLionProjects/fsoft2025_1DA_2/Project/FleetManager/sources/model/Insurance.cpp
 
 CMakeFiles/FleetManager.dir/sources/model/Insurance.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/FleetManager.dir/sources/model/Insurance.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/dinis/CLionProjects/fsoft2025_1DA_2/Project/FleetManager/sources/model/Insurance.cpp > CMakeFiles/FleetManager.dir/sources/model/Insurance.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/vitor/CLionProjects/fsoft2025_1DA_2/Project/FleetManager/sources/model/Insurance.cpp > CMakeFiles/FleetManager.dir/sources/model/Insurance.cpp.i
 
 CMakeFiles/FleetManager.dir/sources/model/Insurance.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/FleetManager.dir/sources/model/Insurance.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/dinis/CLionProjects/fsoft2025_1DA_2/Project/FleetManager/sources/model/Insurance.cpp -o CMakeFiles/FleetManager.dir/sources/model/Insurance.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/vitor/CLionProjects/fsoft2025_1DA_2/Project/FleetManager/sources/model/Insurance.cpp -o CMakeFiles/FleetManager.dir/sources/model/Insurance.cpp.s
 
 CMakeFiles/FleetManager.dir/sources/model/Order.cpp.o: CMakeFiles/FleetManager.dir/flags.make
-CMakeFiles/FleetManager.dir/sources/model/Order.cpp.o: /home/dinis/CLionProjects/fsoft2025_1DA_2/Project/FleetManager/sources/model/Order.cpp
+CMakeFiles/FleetManager.dir/sources/model/Order.cpp.o: /home/vitor/CLionProjects/fsoft2025_1DA_2/Project/FleetManager/sources/model/Order.cpp
 CMakeFiles/FleetManager.dir/sources/model/Order.cpp.o: CMakeFiles/FleetManager.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/dinis/CLionProjects/fsoft2025_1DA_2/Project/FleetManager/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_22) "Building CXX object CMakeFiles/FleetManager.dir/sources/model/Order.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/FleetManager.dir/sources/model/Order.cpp.o -MF CMakeFiles/FleetManager.dir/sources/model/Order.cpp.o.d -o CMakeFiles/FleetManager.dir/sources/model/Order.cpp.o -c /home/dinis/CLionProjects/fsoft2025_1DA_2/Project/FleetManager/sources/model/Order.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/vitor/CLionProjects/fsoft2025_1DA_2/Project/FleetManager/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_22) "Building CXX object CMakeFiles/FleetManager.dir/sources/model/Order.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/FleetManager.dir/sources/model/Order.cpp.o -MF CMakeFiles/FleetManager.dir/sources/model/Order.cpp.o.d -o CMakeFiles/FleetManager.dir/sources/model/Order.cpp.o -c /home/vitor/CLionProjects/fsoft2025_1DA_2/Project/FleetManager/sources/model/Order.cpp
 
 CMakeFiles/FleetManager.dir/sources/model/Order.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/FleetManager.dir/sources/model/Order.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/dinis/CLionProjects/fsoft2025_1DA_2/Project/FleetManager/sources/model/Order.cpp > CMakeFiles/FleetManager.dir/sources/model/Order.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/vitor/CLionProjects/fsoft2025_1DA_2/Project/FleetManager/sources/model/Order.cpp > CMakeFiles/FleetManager.dir/sources/model/Order.cpp.i
 
 CMakeFiles/FleetManager.dir/sources/model/Order.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/FleetManager.dir/sources/model/Order.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/dinis/CLionProjects/fsoft2025_1DA_2/Project/FleetManager/sources/model/Order.cpp -o CMakeFiles/FleetManager.dir/sources/model/Order.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/vitor/CLionProjects/fsoft2025_1DA_2/Project/FleetManager/sources/model/Order.cpp -o CMakeFiles/FleetManager.dir/sources/model/Order.cpp.s
 
 CMakeFiles/FleetManager.dir/sources/model/OrderContainer.cpp.o: CMakeFiles/FleetManager.dir/flags.make
-CMakeFiles/FleetManager.dir/sources/model/OrderContainer.cpp.o: /home/dinis/CLionProjects/fsoft2025_1DA_2/Project/FleetManager/sources/model/OrderContainer.cpp
+CMakeFiles/FleetManager.dir/sources/model/OrderContainer.cpp.o: /home/vitor/CLionProjects/fsoft2025_1DA_2/Project/FleetManager/sources/model/OrderContainer.cpp
 CMakeFiles/FleetManager.dir/sources/model/OrderContainer.cpp.o: CMakeFiles/FleetManager.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/dinis/CLionProjects/fsoft2025_1DA_2/Project/FleetManager/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_23) "Building CXX object CMakeFiles/FleetManager.dir/sources/model/OrderContainer.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/FleetManager.dir/sources/model/OrderContainer.cpp.o -MF CMakeFiles/FleetManager.dir/sources/model/OrderContainer.cpp.o.d -o CMakeFiles/FleetManager.dir/sources/model/OrderContainer.cpp.o -c /home/dinis/CLionProjects/fsoft2025_1DA_2/Project/FleetManager/sources/model/OrderContainer.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/vitor/CLionProjects/fsoft2025_1DA_2/Project/FleetManager/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_23) "Building CXX object CMakeFiles/FleetManager.dir/sources/model/OrderContainer.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/FleetManager.dir/sources/model/OrderContainer.cpp.o -MF CMakeFiles/FleetManager.dir/sources/model/OrderContainer.cpp.o.d -o CMakeFiles/FleetManager.dir/sources/model/OrderContainer.cpp.o -c /home/vitor/CLionProjects/fsoft2025_1DA_2/Project/FleetManager/sources/model/OrderContainer.cpp
 
 CMakeFiles/FleetManager.dir/sources/model/OrderContainer.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/FleetManager.dir/sources/model/OrderContainer.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/dinis/CLionProjects/fsoft2025_1DA_2/Project/FleetManager/sources/model/OrderContainer.cpp > CMakeFiles/FleetManager.dir/sources/model/OrderContainer.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/vitor/CLionProjects/fsoft2025_1DA_2/Project/FleetManager/sources/model/OrderContainer.cpp > CMakeFiles/FleetManager.dir/sources/model/OrderContainer.cpp.i
 
 CMakeFiles/FleetManager.dir/sources/model/OrderContainer.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/FleetManager.dir/sources/model/OrderContainer.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/dinis/CLionProjects/fsoft2025_1DA_2/Project/FleetManager/sources/model/OrderContainer.cpp -o CMakeFiles/FleetManager.dir/sources/model/OrderContainer.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/vitor/CLionProjects/fsoft2025_1DA_2/Project/FleetManager/sources/model/OrderContainer.cpp -o CMakeFiles/FleetManager.dir/sources/model/OrderContainer.cpp.s
 
 CMakeFiles/FleetManager.dir/sources/model/Revenue.cpp.o: CMakeFiles/FleetManager.dir/flags.make
-CMakeFiles/FleetManager.dir/sources/model/Revenue.cpp.o: /home/dinis/CLionProjects/fsoft2025_1DA_2/Project/FleetManager/sources/model/Revenue.cpp
+CMakeFiles/FleetManager.dir/sources/model/Revenue.cpp.o: /home/vitor/CLionProjects/fsoft2025_1DA_2/Project/FleetManager/sources/model/Revenue.cpp
 CMakeFiles/FleetManager.dir/sources/model/Revenue.cpp.o: CMakeFiles/FleetManager.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/dinis/CLionProjects/fsoft2025_1DA_2/Project/FleetManager/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_24) "Building CXX object CMakeFiles/FleetManager.dir/sources/model/Revenue.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/FleetManager.dir/sources/model/Revenue.cpp.o -MF CMakeFiles/FleetManager.dir/sources/model/Revenue.cpp.o.d -o CMakeFiles/FleetManager.dir/sources/model/Revenue.cpp.o -c /home/dinis/CLionProjects/fsoft2025_1DA_2/Project/FleetManager/sources/model/Revenue.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/vitor/CLionProjects/fsoft2025_1DA_2/Project/FleetManager/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_24) "Building CXX object CMakeFiles/FleetManager.dir/sources/model/Revenue.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/FleetManager.dir/sources/model/Revenue.cpp.o -MF CMakeFiles/FleetManager.dir/sources/model/Revenue.cpp.o.d -o CMakeFiles/FleetManager.dir/sources/model/Revenue.cpp.o -c /home/vitor/CLionProjects/fsoft2025_1DA_2/Project/FleetManager/sources/model/Revenue.cpp
 
 CMakeFiles/FleetManager.dir/sources/model/Revenue.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/FleetManager.dir/sources/model/Revenue.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/dinis/CLionProjects/fsoft2025_1DA_2/Project/FleetManager/sources/model/Revenue.cpp > CMakeFiles/FleetManager.dir/sources/model/Revenue.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/vitor/CLionProjects/fsoft2025_1DA_2/Project/FleetManager/sources/model/Revenue.cpp > CMakeFiles/FleetManager.dir/sources/model/Revenue.cpp.i
 
 CMakeFiles/FleetManager.dir/sources/model/Revenue.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/FleetManager.dir/sources/model/Revenue.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/dinis/CLionProjects/fsoft2025_1DA_2/Project/FleetManager/sources/model/Revenue.cpp -o CMakeFiles/FleetManager.dir/sources/model/Revenue.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/vitor/CLionProjects/fsoft2025_1DA_2/Project/FleetManager/sources/model/Revenue.cpp -o CMakeFiles/FleetManager.dir/sources/model/Revenue.cpp.s
 
 CMakeFiles/FleetManager.dir/sources/model/Trip.cpp.o: CMakeFiles/FleetManager.dir/flags.make
-CMakeFiles/FleetManager.dir/sources/model/Trip.cpp.o: /home/dinis/CLionProjects/fsoft2025_1DA_2/Project/FleetManager/sources/model/Trip.cpp
+CMakeFiles/FleetManager.dir/sources/model/Trip.cpp.o: /home/vitor/CLionProjects/fsoft2025_1DA_2/Project/FleetManager/sources/model/Trip.cpp
 CMakeFiles/FleetManager.dir/sources/model/Trip.cpp.o: CMakeFiles/FleetManager.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/dinis/CLionProjects/fsoft2025_1DA_2/Project/FleetManager/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_25) "Building CXX object CMakeFiles/FleetManager.dir/sources/model/Trip.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/FleetManager.dir/sources/model/Trip.cpp.o -MF CMakeFiles/FleetManager.dir/sources/model/Trip.cpp.o.d -o CMakeFiles/FleetManager.dir/sources/model/Trip.cpp.o -c /home/dinis/CLionProjects/fsoft2025_1DA_2/Project/FleetManager/sources/model/Trip.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/vitor/CLionProjects/fsoft2025_1DA_2/Project/FleetManager/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_25) "Building CXX object CMakeFiles/FleetManager.dir/sources/model/Trip.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/FleetManager.dir/sources/model/Trip.cpp.o -MF CMakeFiles/FleetManager.dir/sources/model/Trip.cpp.o.d -o CMakeFiles/FleetManager.dir/sources/model/Trip.cpp.o -c /home/vitor/CLionProjects/fsoft2025_1DA_2/Project/FleetManager/sources/model/Trip.cpp
 
 CMakeFiles/FleetManager.dir/sources/model/Trip.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/FleetManager.dir/sources/model/Trip.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/dinis/CLionProjects/fsoft2025_1DA_2/Project/FleetManager/sources/model/Trip.cpp > CMakeFiles/FleetManager.dir/sources/model/Trip.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/vitor/CLionProjects/fsoft2025_1DA_2/Project/FleetManager/sources/model/Trip.cpp > CMakeFiles/FleetManager.dir/sources/model/Trip.cpp.i
 
 CMakeFiles/FleetManager.dir/sources/model/Trip.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/FleetManager.dir/sources/model/Trip.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/dinis/CLionProjects/fsoft2025_1DA_2/Project/FleetManager/sources/model/Trip.cpp -o CMakeFiles/FleetManager.dir/sources/model/Trip.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/vitor/CLionProjects/fsoft2025_1DA_2/Project/FleetManager/sources/model/Trip.cpp -o CMakeFiles/FleetManager.dir/sources/model/Trip.cpp.s
 
 CMakeFiles/FleetManager.dir/sources/model/TripContainer.cpp.o: CMakeFiles/FleetManager.dir/flags.make
-CMakeFiles/FleetManager.dir/sources/model/TripContainer.cpp.o: /home/dinis/CLionProjects/fsoft2025_1DA_2/Project/FleetManager/sources/model/TripContainer.cpp
+CMakeFiles/FleetManager.dir/sources/model/TripContainer.cpp.o: /home/vitor/CLionProjects/fsoft2025_1DA_2/Project/FleetManager/sources/model/TripContainer.cpp
 CMakeFiles/FleetManager.dir/sources/model/TripContainer.cpp.o: CMakeFiles/FleetManager.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/dinis/CLionProjects/fsoft2025_1DA_2/Project/FleetManager/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_26) "Building CXX object CMakeFiles/FleetManager.dir/sources/model/TripContainer.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/FleetManager.dir/sources/model/TripContainer.cpp.o -MF CMakeFiles/FleetManager.dir/sources/model/TripContainer.cpp.o.d -o CMakeFiles/FleetManager.dir/sources/model/TripContainer.cpp.o -c /home/dinis/CLionProjects/fsoft2025_1DA_2/Project/FleetManager/sources/model/TripContainer.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/vitor/CLionProjects/fsoft2025_1DA_2/Project/FleetManager/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_26) "Building CXX object CMakeFiles/FleetManager.dir/sources/model/TripContainer.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/FleetManager.dir/sources/model/TripContainer.cpp.o -MF CMakeFiles/FleetManager.dir/sources/model/TripContainer.cpp.o.d -o CMakeFiles/FleetManager.dir/sources/model/TripContainer.cpp.o -c /home/vitor/CLionProjects/fsoft2025_1DA_2/Project/FleetManager/sources/model/TripContainer.cpp
 
 CMakeFiles/FleetManager.dir/sources/model/TripContainer.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/FleetManager.dir/sources/model/TripContainer.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/dinis/CLionProjects/fsoft2025_1DA_2/Project/FleetManager/sources/model/TripContainer.cpp > CMakeFiles/FleetManager.dir/sources/model/TripContainer.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/vitor/CLionProjects/fsoft2025_1DA_2/Project/FleetManager/sources/model/TripContainer.cpp > CMakeFiles/FleetManager.dir/sources/model/TripContainer.cpp.i
 
 CMakeFiles/FleetManager.dir/sources/model/TripContainer.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/FleetManager.dir/sources/model/TripContainer.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/dinis/CLionProjects/fsoft2025_1DA_2/Project/FleetManager/sources/model/TripContainer.cpp -o CMakeFiles/FleetManager.dir/sources/model/TripContainer.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/vitor/CLionProjects/fsoft2025_1DA_2/Project/FleetManager/sources/model/TripContainer.cpp -o CMakeFiles/FleetManager.dir/sources/model/TripContainer.cpp.s
 
 CMakeFiles/FleetManager.dir/sources/model/Truck.cpp.o: CMakeFiles/FleetManager.dir/flags.make
-CMakeFiles/FleetManager.dir/sources/model/Truck.cpp.o: /home/dinis/CLionProjects/fsoft2025_1DA_2/Project/FleetManager/sources/model/Truck.cpp
+CMakeFiles/FleetManager.dir/sources/model/Truck.cpp.o: /home/vitor/CLionProjects/fsoft2025_1DA_2/Project/FleetManager/sources/model/Truck.cpp
 CMakeFiles/FleetManager.dir/sources/model/Truck.cpp.o: CMakeFiles/FleetManager.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/dinis/CLionProjects/fsoft2025_1DA_2/Project/FleetManager/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_27) "Building CXX object CMakeFiles/FleetManager.dir/sources/model/Truck.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/FleetManager.dir/sources/model/Truck.cpp.o -MF CMakeFiles/FleetManager.dir/sources/model/Truck.cpp.o.d -o CMakeFiles/FleetManager.dir/sources/model/Truck.cpp.o -c /home/dinis/CLionProjects/fsoft2025_1DA_2/Project/FleetManager/sources/model/Truck.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/vitor/CLionProjects/fsoft2025_1DA_2/Project/FleetManager/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_27) "Building CXX object CMakeFiles/FleetManager.dir/sources/model/Truck.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/FleetManager.dir/sources/model/Truck.cpp.o -MF CMakeFiles/FleetManager.dir/sources/model/Truck.cpp.o.d -o CMakeFiles/FleetManager.dir/sources/model/Truck.cpp.o -c /home/vitor/CLionProjects/fsoft2025_1DA_2/Project/FleetManager/sources/model/Truck.cpp
 
 CMakeFiles/FleetManager.dir/sources/model/Truck.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/FleetManager.dir/sources/model/Truck.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/dinis/CLionProjects/fsoft2025_1DA_2/Project/FleetManager/sources/model/Truck.cpp > CMakeFiles/FleetManager.dir/sources/model/Truck.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/vitor/CLionProjects/fsoft2025_1DA_2/Project/FleetManager/sources/model/Truck.cpp > CMakeFiles/FleetManager.dir/sources/model/Truck.cpp.i
 
 CMakeFiles/FleetManager.dir/sources/model/Truck.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/FleetManager.dir/sources/model/Truck.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/dinis/CLionProjects/fsoft2025_1DA_2/Project/FleetManager/sources/model/Truck.cpp -o CMakeFiles/FleetManager.dir/sources/model/Truck.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/vitor/CLionProjects/fsoft2025_1DA_2/Project/FleetManager/sources/model/Truck.cpp -o CMakeFiles/FleetManager.dir/sources/model/Truck.cpp.s
 
 CMakeFiles/FleetManager.dir/sources/model/Vacation.cpp.o: CMakeFiles/FleetManager.dir/flags.make
-CMakeFiles/FleetManager.dir/sources/model/Vacation.cpp.o: /home/dinis/CLionProjects/fsoft2025_1DA_2/Project/FleetManager/sources/model/Vacation.cpp
+CMakeFiles/FleetManager.dir/sources/model/Vacation.cpp.o: /home/vitor/CLionProjects/fsoft2025_1DA_2/Project/FleetManager/sources/model/Vacation.cpp
 CMakeFiles/FleetManager.dir/sources/model/Vacation.cpp.o: CMakeFiles/FleetManager.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/dinis/CLionProjects/fsoft2025_1DA_2/Project/FleetManager/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_28) "Building CXX object CMakeFiles/FleetManager.dir/sources/model/Vacation.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/FleetManager.dir/sources/model/Vacation.cpp.o -MF CMakeFiles/FleetManager.dir/sources/model/Vacation.cpp.o.d -o CMakeFiles/FleetManager.dir/sources/model/Vacation.cpp.o -c /home/dinis/CLionProjects/fsoft2025_1DA_2/Project/FleetManager/sources/model/Vacation.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/vitor/CLionProjects/fsoft2025_1DA_2/Project/FleetManager/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_28) "Building CXX object CMakeFiles/FleetManager.dir/sources/model/Vacation.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/FleetManager.dir/sources/model/Vacation.cpp.o -MF CMakeFiles/FleetManager.dir/sources/model/Vacation.cpp.o.d -o CMakeFiles/FleetManager.dir/sources/model/Vacation.cpp.o -c /home/vitor/CLionProjects/fsoft2025_1DA_2/Project/FleetManager/sources/model/Vacation.cpp
 
 CMakeFiles/FleetManager.dir/sources/model/Vacation.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/FleetManager.dir/sources/model/Vacation.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/dinis/CLionProjects/fsoft2025_1DA_2/Project/FleetManager/sources/model/Vacation.cpp > CMakeFiles/FleetManager.dir/sources/model/Vacation.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/vitor/CLionProjects/fsoft2025_1DA_2/Project/FleetManager/sources/model/Vacation.cpp > CMakeFiles/FleetManager.dir/sources/model/Vacation.cpp.i
 
 CMakeFiles/FleetManager.dir/sources/model/Vacation.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/FleetManager.dir/sources/model/Vacation.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/dinis/CLionProjects/fsoft2025_1DA_2/Project/FleetManager/sources/model/Vacation.cpp -o CMakeFiles/FleetManager.dir/sources/model/Vacation.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/vitor/CLionProjects/fsoft2025_1DA_2/Project/FleetManager/sources/model/Vacation.cpp -o CMakeFiles/FleetManager.dir/sources/model/Vacation.cpp.s
 
 CMakeFiles/FleetManager.dir/sources/model/Van.cpp.o: CMakeFiles/FleetManager.dir/flags.make
-CMakeFiles/FleetManager.dir/sources/model/Van.cpp.o: /home/dinis/CLionProjects/fsoft2025_1DA_2/Project/FleetManager/sources/model/Van.cpp
+CMakeFiles/FleetManager.dir/sources/model/Van.cpp.o: /home/vitor/CLionProjects/fsoft2025_1DA_2/Project/FleetManager/sources/model/Van.cpp
 CMakeFiles/FleetManager.dir/sources/model/Van.cpp.o: CMakeFiles/FleetManager.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/dinis/CLionProjects/fsoft2025_1DA_2/Project/FleetManager/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_29) "Building CXX object CMakeFiles/FleetManager.dir/sources/model/Van.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/FleetManager.dir/sources/model/Van.cpp.o -MF CMakeFiles/FleetManager.dir/sources/model/Van.cpp.o.d -o CMakeFiles/FleetManager.dir/sources/model/Van.cpp.o -c /home/dinis/CLionProjects/fsoft2025_1DA_2/Project/FleetManager/sources/model/Van.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/vitor/CLionProjects/fsoft2025_1DA_2/Project/FleetManager/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_29) "Building CXX object CMakeFiles/FleetManager.dir/sources/model/Van.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/FleetManager.dir/sources/model/Van.cpp.o -MF CMakeFiles/FleetManager.dir/sources/model/Van.cpp.o.d -o CMakeFiles/FleetManager.dir/sources/model/Van.cpp.o -c /home/vitor/CLionProjects/fsoft2025_1DA_2/Project/FleetManager/sources/model/Van.cpp
 
 CMakeFiles/FleetManager.dir/sources/model/Van.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/FleetManager.dir/sources/model/Van.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/dinis/CLionProjects/fsoft2025_1DA_2/Project/FleetManager/sources/model/Van.cpp > CMakeFiles/FleetManager.dir/sources/model/Van.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/vitor/CLionProjects/fsoft2025_1DA_2/Project/FleetManager/sources/model/Van.cpp > CMakeFiles/FleetManager.dir/sources/model/Van.cpp.i
 
 CMakeFiles/FleetManager.dir/sources/model/Van.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/FleetManager.dir/sources/model/Van.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/dinis/CLionProjects/fsoft2025_1DA_2/Project/FleetManager/sources/model/Van.cpp -o CMakeFiles/FleetManager.dir/sources/model/Van.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/vitor/CLionProjects/fsoft2025_1DA_2/Project/FleetManager/sources/model/Van.cpp -o CMakeFiles/FleetManager.dir/sources/model/Van.cpp.s
 
 CMakeFiles/FleetManager.dir/sources/model/VehicleContainer.cpp.o: CMakeFiles/FleetManager.dir/flags.make
-CMakeFiles/FleetManager.dir/sources/model/VehicleContainer.cpp.o: /home/dinis/CLionProjects/fsoft2025_1DA_2/Project/FleetManager/sources/model/VehicleContainer.cpp
+CMakeFiles/FleetManager.dir/sources/model/VehicleContainer.cpp.o: /home/vitor/CLionProjects/fsoft2025_1DA_2/Project/FleetManager/sources/model/VehicleContainer.cpp
 CMakeFiles/FleetManager.dir/sources/model/VehicleContainer.cpp.o: CMakeFiles/FleetManager.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/dinis/CLionProjects/fsoft2025_1DA_2/Project/FleetManager/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_30) "Building CXX object CMakeFiles/FleetManager.dir/sources/model/VehicleContainer.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/FleetManager.dir/sources/model/VehicleContainer.cpp.o -MF CMakeFiles/FleetManager.dir/sources/model/VehicleContainer.cpp.o.d -o CMakeFiles/FleetManager.dir/sources/model/VehicleContainer.cpp.o -c /home/dinis/CLionProjects/fsoft2025_1DA_2/Project/FleetManager/sources/model/VehicleContainer.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/vitor/CLionProjects/fsoft2025_1DA_2/Project/FleetManager/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_30) "Building CXX object CMakeFiles/FleetManager.dir/sources/model/VehicleContainer.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/FleetManager.dir/sources/model/VehicleContainer.cpp.o -MF CMakeFiles/FleetManager.dir/sources/model/VehicleContainer.cpp.o.d -o CMakeFiles/FleetManager.dir/sources/model/VehicleContainer.cpp.o -c /home/vitor/CLionProjects/fsoft2025_1DA_2/Project/FleetManager/sources/model/VehicleContainer.cpp
 
 CMakeFiles/FleetManager.dir/sources/model/VehicleContainer.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/FleetManager.dir/sources/model/VehicleContainer.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/dinis/CLionProjects/fsoft2025_1DA_2/Project/FleetManager/sources/model/VehicleContainer.cpp > CMakeFiles/FleetManager.dir/sources/model/VehicleContainer.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/vitor/CLionProjects/fsoft2025_1DA_2/Project/FleetManager/sources/model/VehicleContainer.cpp > CMakeFiles/FleetManager.dir/sources/model/VehicleContainer.cpp.i
 
 CMakeFiles/FleetManager.dir/sources/model/VehicleContainer.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/FleetManager.dir/sources/model/VehicleContainer.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/dinis/CLionProjects/fsoft2025_1DA_2/Project/FleetManager/sources/model/VehicleContainer.cpp -o CMakeFiles/FleetManager.dir/sources/model/VehicleContainer.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/vitor/CLionProjects/fsoft2025_1DA_2/Project/FleetManager/sources/model/VehicleContainer.cpp -o CMakeFiles/FleetManager.dir/sources/model/VehicleContainer.cpp.s
 
 CMakeFiles/FleetManager.dir/sources/model/VehicleStorageLocation.cpp.o: CMakeFiles/FleetManager.dir/flags.make
-CMakeFiles/FleetManager.dir/sources/model/VehicleStorageLocation.cpp.o: /home/dinis/CLionProjects/fsoft2025_1DA_2/Project/FleetManager/sources/model/VehicleStorageLocation.cpp
+CMakeFiles/FleetManager.dir/sources/model/VehicleStorageLocation.cpp.o: /home/vitor/CLionProjects/fsoft2025_1DA_2/Project/FleetManager/sources/model/VehicleStorageLocation.cpp
 CMakeFiles/FleetManager.dir/sources/model/VehicleStorageLocation.cpp.o: CMakeFiles/FleetManager.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/dinis/CLionProjects/fsoft2025_1DA_2/Project/FleetManager/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_31) "Building CXX object CMakeFiles/FleetManager.dir/sources/model/VehicleStorageLocation.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/FleetManager.dir/sources/model/VehicleStorageLocation.cpp.o -MF CMakeFiles/FleetManager.dir/sources/model/VehicleStorageLocation.cpp.o.d -o CMakeFiles/FleetManager.dir/sources/model/VehicleStorageLocation.cpp.o -c /home/dinis/CLionProjects/fsoft2025_1DA_2/Project/FleetManager/sources/model/VehicleStorageLocation.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/vitor/CLionProjects/fsoft2025_1DA_2/Project/FleetManager/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_31) "Building CXX object CMakeFiles/FleetManager.dir/sources/model/VehicleStorageLocation.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/FleetManager.dir/sources/model/VehicleStorageLocation.cpp.o -MF CMakeFiles/FleetManager.dir/sources/model/VehicleStorageLocation.cpp.o.d -o CMakeFiles/FleetManager.dir/sources/model/VehicleStorageLocation.cpp.o -c /home/vitor/CLionProjects/fsoft2025_1DA_2/Project/FleetManager/sources/model/VehicleStorageLocation.cpp
 
 CMakeFiles/FleetManager.dir/sources/model/VehicleStorageLocation.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/FleetManager.dir/sources/model/VehicleStorageLocation.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/dinis/CLionProjects/fsoft2025_1DA_2/Project/FleetManager/sources/model/VehicleStorageLocation.cpp > CMakeFiles/FleetManager.dir/sources/model/VehicleStorageLocation.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/vitor/CLionProjects/fsoft2025_1DA_2/Project/FleetManager/sources/model/VehicleStorageLocation.cpp > CMakeFiles/FleetManager.dir/sources/model/VehicleStorageLocation.cpp.i
 
 CMakeFiles/FleetManager.dir/sources/model/VehicleStorageLocation.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/FleetManager.dir/sources/model/VehicleStorageLocation.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/dinis/CLionProjects/fsoft2025_1DA_2/Project/FleetManager/sources/model/VehicleStorageLocation.cpp -o CMakeFiles/FleetManager.dir/sources/model/VehicleStorageLocation.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/vitor/CLionProjects/fsoft2025_1DA_2/Project/FleetManager/sources/model/VehicleStorageLocation.cpp -o CMakeFiles/FleetManager.dir/sources/model/VehicleStorageLocation.cpp.s
 
 CMakeFiles/FleetManager.dir/sources/model/VSLContainer.cpp.o: CMakeFiles/FleetManager.dir/flags.make
-CMakeFiles/FleetManager.dir/sources/model/VSLContainer.cpp.o: /home/dinis/CLionProjects/fsoft2025_1DA_2/Project/FleetManager/sources/model/VSLContainer.cpp
+CMakeFiles/FleetManager.dir/sources/model/VSLContainer.cpp.o: /home/vitor/CLionProjects/fsoft2025_1DA_2/Project/FleetManager/sources/model/VSLContainer.cpp
 CMakeFiles/FleetManager.dir/sources/model/VSLContainer.cpp.o: CMakeFiles/FleetManager.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/dinis/CLionProjects/fsoft2025_1DA_2/Project/FleetManager/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_32) "Building CXX object CMakeFiles/FleetManager.dir/sources/model/VSLContainer.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/FleetManager.dir/sources/model/VSLContainer.cpp.o -MF CMakeFiles/FleetManager.dir/sources/model/VSLContainer.cpp.o.d -o CMakeFiles/FleetManager.dir/sources/model/VSLContainer.cpp.o -c /home/dinis/CLionProjects/fsoft2025_1DA_2/Project/FleetManager/sources/model/VSLContainer.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/vitor/CLionProjects/fsoft2025_1DA_2/Project/FleetManager/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_32) "Building CXX object CMakeFiles/FleetManager.dir/sources/model/VSLContainer.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/FleetManager.dir/sources/model/VSLContainer.cpp.o -MF CMakeFiles/FleetManager.dir/sources/model/VSLContainer.cpp.o.d -o CMakeFiles/FleetManager.dir/sources/model/VSLContainer.cpp.o -c /home/vitor/CLionProjects/fsoft2025_1DA_2/Project/FleetManager/sources/model/VSLContainer.cpp
 
 CMakeFiles/FleetManager.dir/sources/model/VSLContainer.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/FleetManager.dir/sources/model/VSLContainer.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/dinis/CLionProjects/fsoft2025_1DA_2/Project/FleetManager/sources/model/VSLContainer.cpp > CMakeFiles/FleetManager.dir/sources/model/VSLContainer.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/vitor/CLionProjects/fsoft2025_1DA_2/Project/FleetManager/sources/model/VSLContainer.cpp > CMakeFiles/FleetManager.dir/sources/model/VSLContainer.cpp.i
 
 CMakeFiles/FleetManager.dir/sources/model/VSLContainer.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/FleetManager.dir/sources/model/VSLContainer.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/dinis/CLionProjects/fsoft2025_1DA_2/Project/FleetManager/sources/model/VSLContainer.cpp -o CMakeFiles/FleetManager.dir/sources/model/VSLContainer.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/vitor/CLionProjects/fsoft2025_1DA_2/Project/FleetManager/sources/model/VSLContainer.cpp -o CMakeFiles/FleetManager.dir/sources/model/VSLContainer.cpp.s
 
 CMakeFiles/FleetManager.dir/sources/exceptions/NonExistingDataException.cpp.o: CMakeFiles/FleetManager.dir/flags.make
-CMakeFiles/FleetManager.dir/sources/exceptions/NonExistingDataException.cpp.o: /home/dinis/CLionProjects/fsoft2025_1DA_2/Project/FleetManager/sources/exceptions/NonExistingDataException.cpp
+CMakeFiles/FleetManager.dir/sources/exceptions/NonExistingDataException.cpp.o: /home/vitor/CLionProjects/fsoft2025_1DA_2/Project/FleetManager/sources/exceptions/NonExistingDataException.cpp
 CMakeFiles/FleetManager.dir/sources/exceptions/NonExistingDataException.cpp.o: CMakeFiles/FleetManager.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/dinis/CLionProjects/fsoft2025_1DA_2/Project/FleetManager/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_33) "Building CXX object CMakeFiles/FleetManager.dir/sources/exceptions/NonExistingDataException.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/FleetManager.dir/sources/exceptions/NonExistingDataException.cpp.o -MF CMakeFiles/FleetManager.dir/sources/exceptions/NonExistingDataException.cpp.o.d -o CMakeFiles/FleetManager.dir/sources/exceptions/NonExistingDataException.cpp.o -c /home/dinis/CLionProjects/fsoft2025_1DA_2/Project/FleetManager/sources/exceptions/NonExistingDataException.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/vitor/CLionProjects/fsoft2025_1DA_2/Project/FleetManager/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_33) "Building CXX object CMakeFiles/FleetManager.dir/sources/exceptions/NonExistingDataException.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/FleetManager.dir/sources/exceptions/NonExistingDataException.cpp.o -MF CMakeFiles/FleetManager.dir/sources/exceptions/NonExistingDataException.cpp.o.d -o CMakeFiles/FleetManager.dir/sources/exceptions/NonExistingDataException.cpp.o -c /home/vitor/CLionProjects/fsoft2025_1DA_2/Project/FleetManager/sources/exceptions/NonExistingDataException.cpp
 
 CMakeFiles/FleetManager.dir/sources/exceptions/NonExistingDataException.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/FleetManager.dir/sources/exceptions/NonExistingDataException.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/dinis/CLionProjects/fsoft2025_1DA_2/Project/FleetManager/sources/exceptions/NonExistingDataException.cpp > CMakeFiles/FleetManager.dir/sources/exceptions/NonExistingDataException.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/vitor/CLionProjects/fsoft2025_1DA_2/Project/FleetManager/sources/exceptions/NonExistingDataException.cpp > CMakeFiles/FleetManager.dir/sources/exceptions/NonExistingDataException.cpp.i
 
 CMakeFiles/FleetManager.dir/sources/exceptions/NonExistingDataException.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/FleetManager.dir/sources/exceptions/NonExistingDataException.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/dinis/CLionProjects/fsoft2025_1DA_2/Project/FleetManager/sources/exceptions/NonExistingDataException.cpp -o CMakeFiles/FleetManager.dir/sources/exceptions/NonExistingDataException.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/vitor/CLionProjects/fsoft2025_1DA_2/Project/FleetManager/sources/exceptions/NonExistingDataException.cpp -o CMakeFiles/FleetManager.dir/sources/exceptions/NonExistingDataException.cpp.s
 
 CMakeFiles/FleetManager.dir/sources/exceptions/DuplicatedDataException.cpp.o: CMakeFiles/FleetManager.dir/flags.make
-CMakeFiles/FleetManager.dir/sources/exceptions/DuplicatedDataException.cpp.o: /home/dinis/CLionProjects/fsoft2025_1DA_2/Project/FleetManager/sources/exceptions/DuplicatedDataException.cpp
+CMakeFiles/FleetManager.dir/sources/exceptions/DuplicatedDataException.cpp.o: /home/vitor/CLionProjects/fsoft2025_1DA_2/Project/FleetManager/sources/exceptions/DuplicatedDataException.cpp
 CMakeFiles/FleetManager.dir/sources/exceptions/DuplicatedDataException.cpp.o: CMakeFiles/FleetManager.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/dinis/CLionProjects/fsoft2025_1DA_2/Project/FleetManager/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_34) "Building CXX object CMakeFiles/FleetManager.dir/sources/exceptions/DuplicatedDataException.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/FleetManager.dir/sources/exceptions/DuplicatedDataException.cpp.o -MF CMakeFiles/FleetManager.dir/sources/exceptions/DuplicatedDataException.cpp.o.d -o CMakeFiles/FleetManager.dir/sources/exceptions/DuplicatedDataException.cpp.o -c /home/dinis/CLionProjects/fsoft2025_1DA_2/Project/FleetManager/sources/exceptions/DuplicatedDataException.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/vitor/CLionProjects/fsoft2025_1DA_2/Project/FleetManager/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_34) "Building CXX object CMakeFiles/FleetManager.dir/sources/exceptions/DuplicatedDataException.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/FleetManager.dir/sources/exceptions/DuplicatedDataException.cpp.o -MF CMakeFiles/FleetManager.dir/sources/exceptions/DuplicatedDataException.cpp.o.d -o CMakeFiles/FleetManager.dir/sources/exceptions/DuplicatedDataException.cpp.o -c /home/vitor/CLionProjects/fsoft2025_1DA_2/Project/FleetManager/sources/exceptions/DuplicatedDataException.cpp
 
 CMakeFiles/FleetManager.dir/sources/exceptions/DuplicatedDataException.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/FleetManager.dir/sources/exceptions/DuplicatedDataException.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/dinis/CLionProjects/fsoft2025_1DA_2/Project/FleetManager/sources/exceptions/DuplicatedDataException.cpp > CMakeFiles/FleetManager.dir/sources/exceptions/DuplicatedDataException.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/vitor/CLionProjects/fsoft2025_1DA_2/Project/FleetManager/sources/exceptions/DuplicatedDataException.cpp > CMakeFiles/FleetManager.dir/sources/exceptions/DuplicatedDataException.cpp.i
 
 CMakeFiles/FleetManager.dir/sources/exceptions/DuplicatedDataException.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/FleetManager.dir/sources/exceptions/DuplicatedDataException.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/dinis/CLionProjects/fsoft2025_1DA_2/Project/FleetManager/sources/exceptions/DuplicatedDataException.cpp -o CMakeFiles/FleetManager.dir/sources/exceptions/DuplicatedDataException.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/vitor/CLionProjects/fsoft2025_1DA_2/Project/FleetManager/sources/exceptions/DuplicatedDataException.cpp -o CMakeFiles/FleetManager.dir/sources/exceptions/DuplicatedDataException.cpp.s
 
 CMakeFiles/FleetManager.dir/sources/exceptions/InvalidDataException.cpp.o: CMakeFiles/FleetManager.dir/flags.make
-CMakeFiles/FleetManager.dir/sources/exceptions/InvalidDataException.cpp.o: /home/dinis/CLionProjects/fsoft2025_1DA_2/Project/FleetManager/sources/exceptions/InvalidDataException.cpp
+CMakeFiles/FleetManager.dir/sources/exceptions/InvalidDataException.cpp.o: /home/vitor/CLionProjects/fsoft2025_1DA_2/Project/FleetManager/sources/exceptions/InvalidDataException.cpp
 CMakeFiles/FleetManager.dir/sources/exceptions/InvalidDataException.cpp.o: CMakeFiles/FleetManager.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/dinis/CLionProjects/fsoft2025_1DA_2/Project/FleetManager/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_35) "Building CXX object CMakeFiles/FleetManager.dir/sources/exceptions/InvalidDataException.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/FleetManager.dir/sources/exceptions/InvalidDataException.cpp.o -MF CMakeFiles/FleetManager.dir/sources/exceptions/InvalidDataException.cpp.o.d -o CMakeFiles/FleetManager.dir/sources/exceptions/InvalidDataException.cpp.o -c /home/dinis/CLionProjects/fsoft2025_1DA_2/Project/FleetManager/sources/exceptions/InvalidDataException.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/vitor/CLionProjects/fsoft2025_1DA_2/Project/FleetManager/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_35) "Building CXX object CMakeFiles/FleetManager.dir/sources/exceptions/InvalidDataException.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/FleetManager.dir/sources/exceptions/InvalidDataException.cpp.o -MF CMakeFiles/FleetManager.dir/sources/exceptions/InvalidDataException.cpp.o.d -o CMakeFiles/FleetManager.dir/sources/exceptions/InvalidDataException.cpp.o -c /home/vitor/CLionProjects/fsoft2025_1DA_2/Project/FleetManager/sources/exceptions/InvalidDataException.cpp
 
 CMakeFiles/FleetManager.dir/sources/exceptions/InvalidDataException.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/FleetManager.dir/sources/exceptions/InvalidDataException.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/dinis/CLionProjects/fsoft2025_1DA_2/Project/FleetManager/sources/exceptions/InvalidDataException.cpp > CMakeFiles/FleetManager.dir/sources/exceptions/InvalidDataException.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/vitor/CLionProjects/fsoft2025_1DA_2/Project/FleetManager/sources/exceptions/InvalidDataException.cpp > CMakeFiles/FleetManager.dir/sources/exceptions/InvalidDataException.cpp.i
 
 CMakeFiles/FleetManager.dir/sources/exceptions/InvalidDataException.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/FleetManager.dir/sources/exceptions/InvalidDataException.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/dinis/CLionProjects/fsoft2025_1DA_2/Project/FleetManager/sources/exceptions/InvalidDataException.cpp -o CMakeFiles/FleetManager.dir/sources/exceptions/InvalidDataException.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/vitor/CLionProjects/fsoft2025_1DA_2/Project/FleetManager/sources/exceptions/InvalidDataException.cpp -o CMakeFiles/FleetManager.dir/sources/exceptions/InvalidDataException.cpp.s
 
 CMakeFiles/FleetManager.dir/sources/controllers/Controller.cpp.o: CMakeFiles/FleetManager.dir/flags.make
-CMakeFiles/FleetManager.dir/sources/controllers/Controller.cpp.o: /home/dinis/CLionProjects/fsoft2025_1DA_2/Project/FleetManager/sources/controllers/Controller.cpp
+CMakeFiles/FleetManager.dir/sources/controllers/Controller.cpp.o: /home/vitor/CLionProjects/fsoft2025_1DA_2/Project/FleetManager/sources/controllers/Controller.cpp
 CMakeFiles/FleetManager.dir/sources/controllers/Controller.cpp.o: CMakeFiles/FleetManager.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/dinis/CLionProjects/fsoft2025_1DA_2/Project/FleetManager/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_36) "Building CXX object CMakeFiles/FleetManager.dir/sources/controllers/Controller.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/FleetManager.dir/sources/controllers/Controller.cpp.o -MF CMakeFiles/FleetManager.dir/sources/controllers/Controller.cpp.o.d -o CMakeFiles/FleetManager.dir/sources/controllers/Controller.cpp.o -c /home/dinis/CLionProjects/fsoft2025_1DA_2/Project/FleetManager/sources/controllers/Controller.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/vitor/CLionProjects/fsoft2025_1DA_2/Project/FleetManager/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_36) "Building CXX object CMakeFiles/FleetManager.dir/sources/controllers/Controller.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/FleetManager.dir/sources/controllers/Controller.cpp.o -MF CMakeFiles/FleetManager.dir/sources/controllers/Controller.cpp.o.d -o CMakeFiles/FleetManager.dir/sources/controllers/Controller.cpp.o -c /home/vitor/CLionProjects/fsoft2025_1DA_2/Project/FleetManager/sources/controllers/Controller.cpp
 
 CMakeFiles/FleetManager.dir/sources/controllers/Controller.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/FleetManager.dir/sources/controllers/Controller.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/dinis/CLionProjects/fsoft2025_1DA_2/Project/FleetManager/sources/controllers/Controller.cpp > CMakeFiles/FleetManager.dir/sources/controllers/Controller.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/vitor/CLionProjects/fsoft2025_1DA_2/Project/FleetManager/sources/controllers/Controller.cpp > CMakeFiles/FleetManager.dir/sources/controllers/Controller.cpp.i
 
 CMakeFiles/FleetManager.dir/sources/controllers/Controller.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/FleetManager.dir/sources/controllers/Controller.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/dinis/CLionProjects/fsoft2025_1DA_2/Project/FleetManager/sources/controllers/Controller.cpp -o CMakeFiles/FleetManager.dir/sources/controllers/Controller.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/vitor/CLionProjects/fsoft2025_1DA_2/Project/FleetManager/sources/controllers/Controller.cpp -o CMakeFiles/FleetManager.dir/sources/controllers/Controller.cpp.s
 
 # Object files for target FleetManager
 FleetManager_OBJECTS = \
@@ -653,7 +653,7 @@ FleetManager: CMakeFiles/FleetManager.dir/sources/exceptions/InvalidDataExceptio
 FleetManager: CMakeFiles/FleetManager.dir/sources/controllers/Controller.cpp.o
 FleetManager: CMakeFiles/FleetManager.dir/build.make
 FleetManager: CMakeFiles/FleetManager.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/dinis/CLionProjects/fsoft2025_1DA_2/Project/FleetManager/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_37) "Linking CXX executable FleetManager"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/vitor/CLionProjects/fsoft2025_1DA_2/Project/FleetManager/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_37) "Linking CXX executable FleetManager"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/FleetManager.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -665,6 +665,6 @@ CMakeFiles/FleetManager.dir/clean:
 .PHONY : CMakeFiles/FleetManager.dir/clean
 
 CMakeFiles/FleetManager.dir/depend:
-	cd /home/dinis/CLionProjects/fsoft2025_1DA_2/Project/FleetManager/cmake-build-debug && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/dinis/CLionProjects/fsoft2025_1DA_2/Project/FleetManager /home/dinis/CLionProjects/fsoft2025_1DA_2/Project/FleetManager /home/dinis/CLionProjects/fsoft2025_1DA_2/Project/FleetManager/cmake-build-debug /home/dinis/CLionProjects/fsoft2025_1DA_2/Project/FleetManager/cmake-build-debug /home/dinis/CLionProjects/fsoft2025_1DA_2/Project/FleetManager/cmake-build-debug/CMakeFiles/FleetManager.dir/DependInfo.cmake "--color=$(COLOR)"
+	cd /home/vitor/CLionProjects/fsoft2025_1DA_2/Project/FleetManager/cmake-build-debug && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/vitor/CLionProjects/fsoft2025_1DA_2/Project/FleetManager /home/vitor/CLionProjects/fsoft2025_1DA_2/Project/FleetManager /home/vitor/CLionProjects/fsoft2025_1DA_2/Project/FleetManager/cmake-build-debug /home/vitor/CLionProjects/fsoft2025_1DA_2/Project/FleetManager/cmake-build-debug /home/vitor/CLionProjects/fsoft2025_1DA_2/Project/FleetManager/cmake-build-debug/CMakeFiles/FleetManager.dir/DependInfo.cmake "--color=$(COLOR)"
 .PHONY : CMakeFiles/FleetManager.dir/depend
 
