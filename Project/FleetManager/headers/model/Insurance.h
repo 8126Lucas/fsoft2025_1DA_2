@@ -27,8 +27,10 @@ class Insurance {
 
     int getID() const;
     Vehicle *getVehicle() const;
+    Date getStartDate() const;
     Date getEndDate() const;
     double getMonthlyCost() const;
+    Date getToday() const;
 
     void setID(int id);
     void setVehicle(Vehicle *vehicle);

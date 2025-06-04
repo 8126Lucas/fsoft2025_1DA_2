@@ -39,6 +39,10 @@ double Inspection::getCost() const {
     return cost;
 }
 
+Date Inspection::getToday() const {
+    return today;
+}
+
 void Inspection::setID(int id) {
     this->id = id;
 }

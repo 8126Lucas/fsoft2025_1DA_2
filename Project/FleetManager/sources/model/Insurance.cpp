@@ -28,12 +28,20 @@ Vehicle *Insurance::getVehicle() const {
     return vehicle;
 }
 
+Date Insurance::getStartDate() const {
+    return startDate;
+}
+
 Date Insurance::getEndDate() const {
     return endDate;
 }
 
 double Insurance::getMonthlyCost() const {
     return monthlyCost;
+}
+
+Date Insurance::getToday() const {
+    return today;
 }
 
 void Insurance::setID(int id) {

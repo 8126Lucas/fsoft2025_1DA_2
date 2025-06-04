@@ -29,6 +29,7 @@ class Inspection {
     Vehicle *getVehicle() const;
     Date getDate() const;
     double getCost() const;
+    Date getToday() const;
 
     void setID(int id);
     void setVehicle(Vehicle *vehicle);
