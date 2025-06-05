@@ -6,6 +6,7 @@
 #include "Utils.h"
 #include "DriverContainer.h"
 #include "DriverView.h"
+#include "InvalidDataException.h"
 #include "Vacation.h"
 
 Driver::Driver() : id(), available(true) {}
@@ -39,26 +40,42 @@ list<Vacation *> Driver::getVacations() {
 }
 
 Vacation *Driver::getVacation() {
-    Date today = Date::getToday();
-    list<Vacation *>::iterator it = vacations.begin();
-    for (; it != vacations.end(); ++it) {
-        if (((*it)->getStartDate() < today || (*it)->getStartDate() == today) && ((*it)->getEndDate() > today || (*it)->getEndDate() == today)) {
-            return (*it);
+    try {
+        if (vacations.empty()) {
+            return nullptr;
         }
+
+        Date today = Date::getToday();
+        list<Vacation *>::iterator it = this->vacations.begin();
+        for (; it != this->vacations.end(); ++it) {
+            if (*it != nullptr) {
+                if (((*it)->getStartDate() < today || (*it)->getStartDate() == today) &&
+                    ((*it)->getEndDate() > today || (*it)->getEndDate() == today)) {
+                    return *it;
+                    }
+            }
+        }
+    } catch (const InvalidDataException &error) {
+        cout << error.what() << endl;
+    } catch (...) {
+        cout << "Erro inesperado ao processar datas" << endl;
     }
     return nullptr;
 }
 
+
 int Driver::getVacationID() {
-    Date today = Date::getToday();
-    list<Vacation *>::iterator it = vacations.begin();
-    for (; it != vacations.end(); ++it) {
-        if (((*it)->getStartDate() < today || (*it)->getStartDate() == today) && ((*it)->getEndDate() > today || (*it)->getEndDate() == today)) {
-            return (*it)->getID();
+    try {
+        Vacation* vacation = getVacation();
+        if (vacation != nullptr) {
+            return vacation->getID();
         }
+    } catch (...) {
+        cout << "Erro ao obter ID das férias" << endl;
     }
     return 0;
 }
+
 
 int Driver::getTimeToRetire() const {
     const int retirementAge = 65;
