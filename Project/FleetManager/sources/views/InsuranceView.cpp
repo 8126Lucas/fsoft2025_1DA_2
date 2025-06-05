@@ -23,7 +23,7 @@ Insurance *InsuranceView::addInsurance(VehicleContainer &container) {
             insurance->setStartDate(startDate);
             insurance->setEndDate(endDate);
             insurance->setMonthlyCost(monthlyCost);
-            insurance->setToday();
+            // insurance->setToday(); Mudar para setAutoToday()
         } catch (InvalidDataException &error) {
             cout << error.what() << endl;
             flag_error = true;

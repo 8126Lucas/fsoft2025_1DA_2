@@ -121,6 +121,28 @@ int Date::getYear() const {
     return this->year;
 }
 
+string Date::dateToString() const {
+    string dateString = to_string(this->getDay()) + '/' + to_string(this->getMonth()) + '/'
+                        + to_string(this->getYear());
+    return dateString;
+}
+
+Date Date::stringToDate(const string &dateString) const {
+    Date date = Date();
+    char seperator = '/';
+    vector<int> numbers;
+    size_t start = 0;
+    size_t end = dateString.find(seperator);
+    while (end != string::npos) {
+        numbers.push_back(stoi(dateString.substr(start, end - start)));
+        start = end + 1;
+        end = dateString.find(seperator, start);
+    }
+    numbers.push_back(stoi(dateString.substr(start)));
+    date.setDate(numbers[0], numbers[1], numbers[2]);
+    return date;
+}
+
 bool Date::operator== (const Date &date) const {
     if (this->year == date.year && this->month == date.month && this->day == date.day) {
         return true;
@@ -145,7 +167,7 @@ int Date::operator- (const Date &date) const {
     tm existingDate = mk_tm(this->day, this->month, this->year);
     const time_t timeToday = mktime(&today);
     const time_t timeExistingDate = mktime(&existingDate);
-    return difftime(timeExistingDate, timeToday) / secondsPerDay;
+    return static_cast<int>(difftime(timeExistingDate, timeToday) / secondsPerDay);
 }
 
 ostream &operator<<(ostream &stream, const Date &date) {

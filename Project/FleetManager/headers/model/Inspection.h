@@ -35,7 +35,7 @@ class Inspection {
     void setVehicle(Vehicle *vehicle);
     void setDate(Date date);
     void setCost(double cost);
-    void setToday();
+    void setToday(const Date &date);
 
     bool isDued();
     int getRemainingDays() const;

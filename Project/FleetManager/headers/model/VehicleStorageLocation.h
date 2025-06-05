@@ -25,7 +25,7 @@ class VehicleStorageLocation {
 
   public:
     VehicleStorageLocation();
-    VehicleStorageLocation(int id, string name, string address, int capacity,
+    VehicleStorageLocation(int id, string &name, string &address, int capacity,
                            int currentVehicleCount = 0);
 
     ~VehicleStorageLocation();

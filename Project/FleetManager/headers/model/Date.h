@@ -32,6 +32,9 @@ public:
       int getMonth() const;
       int getYear() const;
 
+      string dateToString() const;
+      Date stringToDate(const string &dateString) const;
+
       bool operator==(const Date &date) const;
       bool operator>(const Date &date) const;
       bool operator<(const Date &date) const;

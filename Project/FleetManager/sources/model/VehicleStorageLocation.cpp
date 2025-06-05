@@ -10,7 +10,7 @@
 
 VehicleStorageLocation::VehicleStorageLocation(): id(0), capacity(0), currentVehicleCount(0) {}
 
-VehicleStorageLocation::VehicleStorageLocation(int id, string name, string address,
+VehicleStorageLocation::VehicleStorageLocation(int id, string &name, string &address,
                                                 int capacity, int currentVehicleCount) {
     this->id = id;
     this->name = name;

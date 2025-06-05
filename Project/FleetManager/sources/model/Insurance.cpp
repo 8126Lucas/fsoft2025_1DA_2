@@ -64,8 +64,8 @@ void Insurance::setMonthlyCost(double monthlyCost) {
     this->monthlyCost = monthlyCost;
 }
 
-void Insurance::setToday() {
-    this->today = Date(1, 1, 2020);
+void Insurance::setToday(const Date &date) {
+    this->today = date;
 }
 
 bool Insurance::isExpired() {

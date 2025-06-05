@@ -59,8 +59,8 @@ void Inspection::setCost(double cost) {
     this->cost = cost;
 }
 
-void Inspection::setToday() {
-    this->today = Date(1, 1, 2020);
+void Inspection::setToday(const Date &date) {
+    this->today = date;
 }
 
 bool Inspection::isDued() {

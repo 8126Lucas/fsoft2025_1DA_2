@@ -21,7 +21,7 @@ Inspection *InspectionView::addInspection(VehicleContainer &container) {
             inspection->setVehicle(vehicle);
             inspection->setDate(date);
             inspection->setCost(cost);
-            inspection->setToday();
+            // inspection->setToday(); Mudar para setAutoToday()
         } catch (InvalidDataException &error) {
             cout << error.what() << endl;
             flag_error = true;

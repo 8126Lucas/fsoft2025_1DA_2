@@ -26,7 +26,10 @@ Vehicle::Vehicle(const CATEGORY category, const string &brand, const string &mod
     this->available = available;
 }
 
-Vehicle::~Vehicle() {}
+Vehicle::~Vehicle() {
+    delete inspection;
+    delete insurance;
+}
 
 CATEGORY Vehicle::getCategory() const {
     return category;
