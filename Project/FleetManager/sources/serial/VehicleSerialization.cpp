@@ -6,25 +6,27 @@
 #include "Inspection.h"
 #include "Insurance.h"
 
-void VehicleSerialization::toJSON(json &j, const CATEGORY &category) {
+string VehicleSerialization::toJSON(json &j, const CATEGORY &category) {
     switch (category) {
         case TRUCK:
-            j = "TRUCK";
+            j["category"] = "TRUCK";
             break;
         case VAN:
-            j = "VAN";
+            j["category"] = "VAN";
             break;
     }
 }
 
-void VehicleSerialization::fromJSON(const json &j, CATEGORY &category) {
-    string stringCategory = j.get<string>();
+CATEGORY VehicleSerialization::fromJSON(const json &j) {
+    string stringCategory = j["category"].get<string>();
+    CATEGORY category;
     if (stringCategory == "TRUCK") {category = TRUCK;}
     else {category = VAN;}
+    return category;
 }
 
 void VehicleSerialization::toJSON(json &j, const Vehicle &vehicle) {
-    j["category"] = vehicle.getCategory();
+    toJSON(j, vehicle.getCategory());
     j["brand"] = vehicle.getBrand();
     j["model"] = vehicle.getModel();
     j["year"] = vehicle.getYear();
@@ -49,7 +51,7 @@ void VehicleSerialization::toJSON(json &j, const Vehicle &vehicle) {
         j["insuranceMonthlyCost"] = -1;
         j["insuranceToday"] = "no date";
     }
-    if (vehicle.getInspection != nullptr) {
+    if (vehicle.getInspection() != nullptr) {
         j["inspectionID"] = vehicle.getInspection()->getID();
         string string_date = vehicle.getInspection()->getDate().dateToString();
         j["inspectionDate"] = string_date;
@@ -68,7 +70,7 @@ void VehicleSerialization::toJSON(json &j, const Vehicle &vehicle) {
 }
 
 void VehicleSerialization::fromJSON(const json &j, Vehicle &vehicle) {
-    vehicle.setCategory(j["category"]);
+    vehicle.setCategory(fromJSON(j));
     vehicle.setBrand(j["brand"]);
     vehicle.setModel(j["model"]);
     vehicle.setYear(j["year"]);
@@ -107,21 +109,21 @@ void VehicleSerialization::fromJSON(const json &j, Vehicle &vehicle) {
 }
 
 void VehicleSerialization::toJSON(json &j, const Truck &truck) {
-    toJson(j, static_cast<const Vehicle &>(truck));
+    toJSON(j, static_cast<const Vehicle &>(truck));
     j["weightCapacity"] = truck.getWeightCapacity();
 }
 
 void VehicleSerialization::fromJSON(const json &j, Truck &truck) {
-    fromJson(j, static_cast<Vehicle &>(truck));
+    fromJSON(j, static_cast<Vehicle &>(truck));
     truck.setWeightCapacity(j["weightCapacity"]);
 }
 
 void VehicleSerialization::toJSON(json &j, const Van &van) {
-    toJson(j, static_cast<const Vehicle &>(van));
+    toJSON(j, static_cast<const Vehicle &>(van));
     j["spaceCapacity"] = van.getSpaceCapacity();
 }
 
 void VehicleSerialization::fromJSON(const json &j, Van &van) {
-    fromJson(j, static_cast<Vehicle &>(van));
+    fromJSON(j, static_cast<Vehicle &>(van));
     van.setSpaceCapacity(j["weightCapacity"]);
 }

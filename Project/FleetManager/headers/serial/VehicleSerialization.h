@@ -13,14 +13,14 @@ using namespace nlohmann;
 
 class VehicleSerialization {
 public:
-    virtual void toJSON(json &j, const CATEGORY &category) = 0;
-    virtual void fromJSON(const json &j, CATEGORY &category) = 0;
-    virtual void toJSON(json &j, const Vehicle &vehicle) = 0;
-    virtual void fromJSON(const json &j, Vehicle &vehicle) = 0;
-    virtual void toJSON(json &j, const Truck &truck) = 0;
-    virtual void fromJSON(const json &j, Truck &truck) = 0;
-    virtual void toJSON(json &j, const Van &van) = 0;
-    virtual void fromJSON(const json &j, Van &van) = 0;
+    void toJSON(json &j, const CATEGORY &category);
+    CATEGORY fromJSON(const json &j);
+    void toJSON(json &j, const Vehicle &vehicle);
+    void fromJSON(const json &j, Vehicle &vehicle);
+    void toJSON(json &j, const Truck &truck);
+    void fromJSON(const json &j, Truck &truck);
+    void toJSON(json &j, const Van &van);
+    void fromJSON(const json &j, Van &van);
 };
 
 #endif //HEADERS_SERIAL_VEHICLESERIALIZATION_H
