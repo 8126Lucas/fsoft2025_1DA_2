@@ -29,19 +29,23 @@ Trip::Trip(Order *order, double kilometers, double fuel, double fuelCost,double 
 
 Trip::~Trip() {}
 
-int Trip::getID() {
+Order *Trip::getOrder() const {
+  return this->order;
+}
+
+int Trip::getID() const {
   return this->id;
 }
 
-STATE Trip::getState(){
+STATE Trip::getState() const{
   return this->state;
 }
 
-Driver *Trip::getDriver() {
+Driver *Trip::getDriver() const{
   return this->driver;
 }
 
-Vehicle *Trip::getVehicle() {
+Vehicle *Trip::getVehicle() const{
   return this->vehicle;
 }
 
@@ -89,28 +93,28 @@ void Trip::setTolls(double tolls) {
   this->tolls = tolls;
 }
 
-double Trip::getKM() {
+double Trip::getKM() const{
   return kilometers;
 }
 
-double Trip::getFines(){
+double Trip::getFines() const{
   return fines;
 }
 
-double Trip::getTolls(){
+double Trip::getTolls() const{
   return tolls;
 }
 
-double Trip::getFuelCost(){
+double Trip::getFuelCost() const{
   return fuelCost;
 }
 
-double Trip::getFuel()
+double Trip::getFuel() const
 {
   return fuel;
 }
 
-double Trip::getCost(){
+double Trip::getCost() const{
   return cost;
 }
 

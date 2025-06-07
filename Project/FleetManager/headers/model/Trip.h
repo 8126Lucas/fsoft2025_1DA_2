@@ -43,16 +43,17 @@ public:
   ~Trip();
 
 
-  STATE getState();
-  int getID();
-  Driver *getDriver();
-  Vehicle *getVehicle();
-  double getCost();
-  double getFuelCost();
-  double getTolls();
-  double getFines();
-  double getKM();
-  double getFuel();
+  STATE getState() const;
+  int getID() const;
+  Order *getOrder() const;
+  Driver *getDriver() const;
+  Vehicle *getVehicle() const;
+  double getCost() const;
+  double getFuelCost() const;
+  double getTolls() const;
+  double getFines() const;
+  double getKM() const;
+  double getFuel() const;
 
   void setState(STATE newState);
   void setID(int id);
