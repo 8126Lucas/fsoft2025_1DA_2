@@ -23,7 +23,7 @@ int Expense::getID() const {
     return id;
 }
 
-Trip *Expense::getTrip() {
+Trip *Expense::getTrip() const {
     return trip;
 }
 

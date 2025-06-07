@@ -32,7 +32,7 @@ public:
     ~Expense();
 
     int getID() const;
-    Trip *getTrip();
+    Trip *getTrip() const;
     Date getDate() const;
     double getAmount() const;
     TYPE getType() const;

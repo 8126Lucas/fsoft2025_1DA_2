@@ -3,6 +3,9 @@
 //
 
 #include "Driver.h"
+
+#include <string.h>
+
 #include "Utils.h"
 #include "DriverContainer.h"
 #include "DriverView.h"
@@ -19,7 +22,7 @@ Driver::Driver(int id, char &license, int age) : available(true) {
 
 Driver::~Driver() {}
 
-int Driver::getID() {
+int Driver::getID() const {
     return id;
 }
 
@@ -124,4 +127,10 @@ void Driver::retirementAlert() {
 bool Driver::isAvailable() const {
     if (this->available) {return true;}
     return false;
+}
+
+char Driver::stringToChar(string license) {
+    char licenseChar;
+    strcpy(&licenseChar, license.c_str());
+    return licenseChar;
 }

@@ -32,7 +32,7 @@ public:
     // void addDriver();
     // void removeDriver();
 
-    int getID();
+    int getID() const;
     char getLicense() const;
     int getAge() const;
     int getTimeToRetire() const;
@@ -51,6 +51,8 @@ public:
     void vacationAlert();
     void retirementAlert();
     bool isAvailable() const;
+
+    char stringToChar(string license);
 
     bool operator == (int id) const;
 };
