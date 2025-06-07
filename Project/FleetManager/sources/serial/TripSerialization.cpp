@@ -46,10 +46,34 @@ void TripSerialization::toJSON(json &j, const Trip &trip){
    j["cost"]  = trip.getCost();
 }
 
-void TripSerialization::fromJSON(const json &j, Trip &trip){
+void TripSerialization::fromJSON(const json &j, Trip &trip, DriverContainer& driverContainer, OrderContainer& orderContainer, VehicleContainer& vehicleContainer){
    trip.setState(j["state"].get<STATE>());
    trip.setID(j["id"].get<int>());
-   int orderID = j["orderID"].get<int>(); // duvida nesta parte
-   trip.setDriver(j["driverID"].get<*Driver>(  ));
+   trip.setKM(j["km"].get<double>());
+   trip.setFuel(j["fuel"].get<double>());
+   trip.setFuelCost(j["fuelCost"].get<double>());
+   trip.setTolls(j["tolls"].get<double>());
+   trip.setFines(j["fines"].get<double>());
+   trip.setCost(j["cost"].get<double>());
+
+  const int driverID = j["driverID"].get<int>();
+   Driver* driver = driverContainer.get(driverID);
+  if (driver != nullptr) {
+     trip.setDriver(driver);
+   }else {
+     trip.setDriver(nullptr);
+   }
+
+  const int orderID = j["orderID"].get<int>();
+   Order* order = orderContainer.get(orderID);
+   trip.setOrder(order);
+
+  string vehicleLicensePlate = j["vehicleLicensePlate"].get<string>();
+  Vehicle* vehicle = vehicleContainer.get(vehicleLicensePlate);
+  if (vehicle != nullptr) {
+    trip.setVehicle(vehicle);
+  }else {
+    trip.setVehicle(nullptr);
+  }
 
 }

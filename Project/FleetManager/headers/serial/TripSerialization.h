@@ -6,6 +6,9 @@
 #define HEADERS_SERIAL_TRIPSERIALIZATION_H
 
 #include "Trip.h"
+#include "DriverContainer.h"
+#include "OrderContainer.h"
+#include "VehicleContainer.h"
 #include <nlohmann/json.hpp>
 
 
@@ -18,6 +21,7 @@ class TripSerialization {
      void fromJSON(const json &j, STATE &state);
      void toJSON(json &j, const Trip &trip);
      void fromJSON(const json &j, Trip &trip);
+     static void fromJSON(const json&, Trip& trip, DriverContainer& driverContainer, OrderContainer& orderContainer, VehicleContainer& vehicleContainer);
 };
 
 
