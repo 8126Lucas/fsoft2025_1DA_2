@@ -51,3 +51,7 @@ FinancialContainer &Enterprise::getFinancialContainer() {
 OrderContainer &Enterprise::getOrderContainer() {
     return this->orderC;
 }
+
+DataContainer &Enterprise::getDataContainer() {
+    return this->dataC;
+}

@@ -11,8 +11,8 @@ using namespace nlohmann;
 
 class VehicleStorageLocationSerialization {
 public:
-    virtual void toJSON(json &j, const VehicleStorageLocation &vsl) = 0;
-    virtual void fromJSON(const json &j, VehicleStorageLocation &vsl) = 0;
+    void toJSON(json &j, const VehicleStorageLocation &vsl);
+    void fromJSON(const json &j, VehicleStorageLocation &vsl);
 };
 
 

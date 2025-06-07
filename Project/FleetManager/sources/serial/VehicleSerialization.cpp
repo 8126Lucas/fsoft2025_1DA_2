@@ -6,7 +6,7 @@
 #include "Inspection.h"
 #include "Insurance.h"
 
-string VehicleSerialization::toJSON(json &j, const CATEGORY &category) {
+void VehicleSerialization::toJSON(json &j, const CATEGORY &category) {
     switch (category) {
         case TRUCK:
             j["category"] = "TRUCK";
@@ -125,5 +125,5 @@ void VehicleSerialization::toJSON(json &j, const Van &van) {
 
 void VehicleSerialization::fromJSON(const json &j, Van &van) {
     fromJSON(j, static_cast<Vehicle &>(van));
-    van.setSpaceCapacity(j["weightCapacity"]);
+    van.setSpaceCapacity(j["spaceCapacity"]);
 }

@@ -11,6 +11,10 @@ void DriverSerialization::toJSON(json &j, const Driver &driver) {
     j["timeToRetire"] = driver.getTimeToRetire();
     j["available"] = driver.getAvailability();
 
+    j["vacations"] = json::array();
+    for(list<Vacation *>::iterator it = driver.getVacation().begin(); it == driver.getVacation().end; ++it) {
+        json vacationJSON = json::array();
+        vacationJSON.push_back(it->)
     //j["vacations"] = driver.getVacation();
 }
 

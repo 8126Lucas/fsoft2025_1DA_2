@@ -11,6 +11,7 @@
 #include "DriverContainer.h"
 #include "FinancialContainer.h"
 #include "OrderContainer.h"
+#include "DataContainer.h"
 
 using namespace std;
 
@@ -23,6 +24,7 @@ private:
     DriverContainer driverC;
     FinancialContainer financialC;
     OrderContainer orderC;
+    DataContainer dataC;
 
 public:
     Enterprise();
@@ -38,6 +40,7 @@ public:
     DriverContainer &getDriverContainer();
     FinancialContainer &getFinancialContainer();
     OrderContainer &getOrderContainer();
+    DataContainer &getDataContainer();
 };
 
 #endif //HEADERS_MODEL_ENTERPRISE_H

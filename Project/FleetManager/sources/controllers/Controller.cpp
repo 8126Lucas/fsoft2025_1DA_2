@@ -12,6 +12,7 @@ using namespace std;
 Controller::Controller(Enterprise &enterprise): model(enterprise) {}
 
 void Controller::run() {
+    this->model.getDataContainer().loadAllData();
     int op = -1;
     do {
         op = this->view.menuEnterprise();
@@ -33,6 +34,7 @@ void Controller::run() {
                 break;
         }
     } while (op != 0);
+    this->model.getDataContainer().saveAllData();
 }
 
 void Controller::runVehicle() {
