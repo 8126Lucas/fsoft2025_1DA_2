@@ -26,39 +26,39 @@ Order::Order(const int orderId, const int clientId,const Date date,const string 
 
 Order::~Order() {}
 
-int Order::getOrderID() {
+int Order::getOrderID() const {
     return orderID;
 }
 
-int Order::getClientID() {
+int Order::getClientID() const {
     return clientID;
 }
 
-Date Order::getDate() {
+Date Order::getDate() const {
     return date;
 }
 
-string Order::getSourceAddress() {
+string Order::getSourceAddress() const {
     return sourceAddress;
 }
 
-string Order::getDestinationAddress() {
+string Order::getDestinationAddress() const {
     return destinationAddress;
 }
 
-double Order::getCargoSpace() {
+double Order::getCargoSpace() const {
     return cargoSpace;
 }
 
-double Order::getCargoWeight() {
+double Order::getCargoWeight() const {
     return cargoWeight;
 }
 
-double Order::getShippingValue() {
+double Order::getShippingValue() const {
     return shippingValue;
 }
 
-STATUS Order::getStatus() {
+STATUS Order::getStatus() const {
     return status;
 }
 

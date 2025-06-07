@@ -33,15 +33,15 @@ class Order {
   ~Order();
 
 
-    Date getDate();
-    int getOrderID();
-    int getClientID();
-    string getSourceAddress();
-    string getDestinationAddress();
-    double getCargoSpace();
-    double getCargoWeight();
-    double getShippingValue();
-    STATUS getStatus();
+    Date getDate() const;
+    int getOrderID() const;
+    int getClientID() const;
+    string getSourceAddress() const;
+    string getDestinationAddress() const;
+    double getCargoSpace() const;
+    double getCargoWeight() const;
+    double getShippingValue() const;
+    STATUS getStatus() const;
 
     void setStatus(STATUS status);
     void setOrderID(int orderID);
