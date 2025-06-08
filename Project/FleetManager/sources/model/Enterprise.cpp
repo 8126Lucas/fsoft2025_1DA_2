@@ -4,21 +4,50 @@
 
 #include "Enterprise.h"
 
-Enterprise::Enterprise() {
+Enterprise::Enterprise() :
+    dataC(
+        &vehicleC,
+        &vslC,
+        &driverC,
+        &financialC,
+        &tripC,
+        &orderC,
+      "../data/vehicle.json",
+      "../data/vsl.json",
+      "../data/driver.json",
+      "../data/financial.json",
+      "../data/trip.json",
+      "../data/order.json") {
     this->name = "";
 }
 
-Enterprise::Enterprise(const string &name) {
+Enterprise::Enterprise(const string &name) :
+    dataC(
+    &vehicleC,
+    &vslC,
+    &driverC,
+    &financialC,
+    &tripC,
+    &orderC,
+    "../data/vehicle.json",
+    "../data/vsl.json",
+    "../data/driver.json",
+    "../data/financial.json",
+    "../data/trip.json",
+    "../data/order.json") {
     this->name = name;
 }
 
-Enterprise::Enterprise(const Enterprise &enterprise) : vslC(enterprise.vslC) {
-    this->name = enterprise.name;
-    this->vehicleC = enterprise.vehicleC;
-    this->tripC = enterprise.tripC;
-    this->driverC = enterprise.driverC;
-    this->orderC = enterprise.orderC;
-}
+Enterprise::Enterprise(const Enterprise &enterprise) :
+    name(enterprise.name),
+    vehicleC(enterprise.vehicleC),
+    vslC(enterprise.vslC),
+    tripC(enterprise.tripC),
+    driverC(enterprise.driverC),
+    financialC(enterprise.financialC),
+    orderC(enterprise.orderC),
+    dataC(enterprise.dataC) {}
+
 
 const string &Enterprise::getName() const {
     return name;

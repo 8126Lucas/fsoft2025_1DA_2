@@ -14,8 +14,8 @@ class OrderSerialization {
 public:
   void toJSON(json &j, const Order &order);
   void fromJSON(const json &j, Order &order);
-  string toJSON(json &j, const STATUS &status);
+  void toJSON(json &j, const STATUS &status);
   STATUS fromJSON(const json &j);
-}
+};
 
 #endif //HEADERS_SERIAL_ORDERSERIALIZATION_H

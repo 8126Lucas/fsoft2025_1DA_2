@@ -3,7 +3,7 @@
 //
 #include "OrderSerialization.h"
 
-string OrderSerialization::toJSON(json &j,const STATUS &status){
+void OrderSerialization::toJSON(json &j,const STATUS &status){
     switch(status){
       case IN_PROGRESS:
         j["status"] = "IN_PROGRESS";
@@ -15,9 +15,9 @@ string OrderSerialization::toJSON(json &j,const STATUS &status){
 }
 
 STATUS OrderSerialization::fromJSON(const json &j){
-  string Orderstring = j["status"].get<string>();
+  string orderString = j["status"].get<string>();
   STATUS status;
-  if(Orderstring == "IN_PROGRESS") {status = IN_PROGRESS;}
+  if(orderString == "IN_PROGRESS") {status = IN_PROGRESS;}
   else {status = COMPLETED;}
   return status;
 }

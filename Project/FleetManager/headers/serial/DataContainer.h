@@ -47,12 +47,12 @@ public:
         TripContainer *containerTrip,
         OrderContainer *containerOrder,
 
-        string vehicleFilePath = "../../data/vehicle.json",
-        string vslFilePath = "../../data/vsl.json",
-        string driverFilePath = "../../data/driver.json",
-        string financialFilePath = "../../data/financial.json",
-        string tripFilePath = "../../data/trip.json",
-        string orderFilePath = "../../data/order.json"
+        string vehicleFilePath = "../data/vehicle.json",
+        string vslFilePath = "../data/vsl.json",
+        string driverFilePath = "../data/driver.json",
+        string financialFilePath = "../data/financial.json",
+        string tripFilePath = "../data/trip.json",
+        string orderFilePath = "../data/order.json"
         );
 
     void loadVehicles();
@@ -61,6 +61,8 @@ public:
     void loadFinancials();
     void loadTrips();
     void loadOrders();
+
+    void linkVehicleAndVSL();
 
     void loadAllData();
     void saveAllData();

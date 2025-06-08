@@ -6,7 +6,9 @@
 #define HEADERS_SERIAL_FINANCIALSERIALIZATION_H
 #include <nlohmann/json.hpp>
 #include "Expense.h"
+#include "OrderContainer.h"
 #include "Revenue.h"
+#include "TripContainer.h"
 
 using namespace nlohmann;
 
@@ -15,9 +17,9 @@ public:
     void toJSON(json &j, const TYPE &type);
     void fromJSON(const json &j, TYPE &type);
     void toJSON(json &j, const Expense &expense);
-    void fromJSON(const json &j, Expense &expense);
+    void fromJSON(const json &j, Expense &expense, TripContainer &tripContainer);
     void toJSON(json &j, const Revenue &revenue);
-    void fromJSON(const json &j, Revenue &revenue);
+    void fromJSON(const json &j, Revenue &revenue, OrderContainer &orderContainer);
 
 };
 

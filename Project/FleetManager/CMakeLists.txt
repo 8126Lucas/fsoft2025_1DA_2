@@ -85,18 +85,6 @@ set(MODEL_SOURCE_FILES
         ${PROJECT_SOURCES_MODEL_DIR}/VSLContainer.cpp
 )
 
-set(PROJECT_HEADERS_SERIAL_DIR
-        ${PROJECT_HEADERS_DIR}/serial)
-set(PROJECT_SOURCES_SERIAL_DIR
-        ${PROJECT_SOURCES_DIR}/serial)
-include_directories(
-        ${PROJECT_HEADERS_SERIAL_DIR}
-        ${PROJECT_SOURCES_SERIAL_DIR})
-set(SERIAL_SOURCE_FILES
-        ${PROJECT_HEADERS_SERIAL_DIR}/nlohmann/json.hpp
-        ${PROJECT_HEADERS_SERIAL_DIR}/VehicleSerialization.h
-        ${PROJECT_SOURCES_SERIAL_DIR}/VehicleSerialization.cpp)
-
 set(PROJECT_HEADERS_VIEWS_DIR
         ${PROJECT_HEADERS_DIR}/views)
 set(PROJECT_SOURCES_VIEWS_DIR
@@ -129,10 +117,35 @@ set(VIEWS_SOURCE_FILES
         ${PROJECT_SOURCES_VIEWS_DIR}/View.cpp)
 
 
+set(PROJECT_HEADERS_SERIAL_DIR
+        ${PROJECT_HEADERS_DIR}/serial)
+set(PROJECT_SOURCES_SERIAL_DIR
+        ${PROJECT_SOURCES_DIR}/serial)
+include_directories(
+        ${PROJECT_HEADERS_SERIAL_DIR}
+        ${PROJECT_SOURCES_SERIAL_DIR})
+set(SERIAL_SOURCE_FILES
+        ${PROJECT_HEADERS_SERIAL_DIR}/nlohmann/json.hpp
+        ${PROJECT_HEADERS_SERIAL_DIR}/DriverSerialization.h
+        ${PROJECT_SOURCES_SERIAL_DIR}/DriverSerialization.cpp
+        ${PROJECT_HEADERS_SERIAL_DIR}/FinancialSerialization.h
+        ${PROJECT_SOURCES_SERIAL_DIR}/FinancialSerialization.cpp
+        ${PROJECT_HEADERS_SERIAL_DIR}/OrderSerialization.h
+        ${PROJECT_SOURCES_SERIAL_DIR}/OrderSerialization.cpp
+        ${PROJECT_HEADERS_SERIAL_DIR}/TripSerialization.h
+        ${PROJECT_SOURCES_SERIAL_DIR}/TripSerialization.cpp
+        ${PROJECT_HEADERS_SERIAL_DIR}/VehicleSerialization.h
+        ${PROJECT_SOURCES_SERIAL_DIR}/VehicleSerialization.cpp
+        ${PROJECT_HEADERS_SERIAL_DIR}/VehicleStorageLocationSerialization.h
+        ${PROJECT_SOURCES_SERIAL_DIR}/VehicleStorageLocationSerialization.cpp
+        ${PROJECT_HEADERS_SERIAL_DIR}/DataContainer.h
+        ${PROJECT_SOURCES_SERIAL_DIR}/DataContainer.cpp)
+
 add_executable(
         FleetManager
         main.cpp
         ${VIEWS_SOURCE_FILES}
         ${MODEL_SOURCE_FILES}
         ${EXCEPTIONS_SOURCE_FILES}
-        ${CONTROLLERS_SOURCE_FILES})
+        ${CONTROLLERS_SOURCE_FILES}
+        ${SERIAL_SOURCE_FILES})

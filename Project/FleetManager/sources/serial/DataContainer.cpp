@@ -3,15 +3,42 @@
 //
 
 #include "DataContainer.h"
+
+#include <filesystem>
 #include <fstream>
 #include <iomanip>
 #include <iostream>
 #include "NonExistingDataException.h"
 
-// Por fazer DataContainer::DataContainer() {}
+DataContainer::DataContainer(
+    VehicleContainer *containerVehicle,
+    VSLContainer *containerVSL,
+    DriverContainer *containerDriver,
+    FinancialContainer *containerFinancial,
+    TripContainer *containerTrip,
+    OrderContainer *containerOrder,
+    string vehicleFilePath,
+    string vslFilePath,
+    string driverFilePath,
+    string financialFilePath,
+    string tripFilePath,
+    string orderFilePath) :
+    containerVehicle(containerVehicle),
+    containerVSL(containerVSL),
+    containerDriver(containerDriver),
+    containerFinancial(containerFinancial),
+    containerTrip(containerTrip),
+    containerOrder(containerOrder),
+    vehicleFilePath(vehicleFilePath),
+    vslFilePath(vslFilePath),
+    driverFilePath(driverFilePath),
+    financialFilePath(financialFilePath),
+    tripFilePath(tripFilePath),
+    orderFilePath(orderFilePath) {}
 
 void DataContainer::loadVehicles() {
     ifstream file(vehicleFilePath);
+    cout << filesystem::absolute(vehicleFilePath) << endl;
     try {
         if (!file.is_open()) {throw NonExistingDataException("Vehicle JSON File");}
     } catch (NonExistingDataException &error) {
@@ -39,6 +66,7 @@ void DataContainer::loadVehicles() {
 
 void DataContainer::loadVSLs() {
     ifstream file(vslFilePath);
+    cout << filesystem::absolute(vslFilePath) << endl;
     try {
         if (!file.is_open()) {throw NonExistingDataException("Vehicle Storage Location JSON File");}
     } catch (NonExistingDataException &error) {
@@ -59,6 +87,7 @@ void DataContainer::loadVSLs() {
 
 void DataContainer::loadDrivers() {
     ifstream file(driverFilePath);
+    cout << filesystem::absolute(driverFilePath) << endl;
     try {
         if (!file.is_open()) {throw NonExistingDataException("Driver JSON File");}
     } catch (NonExistingDataException &error) {
@@ -79,6 +108,7 @@ void DataContainer::loadDrivers() {
 
 void DataContainer::loadFinancials() {
     ifstream file(financialFilePath);
+    cout << filesystem::absolute(financialFilePath) << endl;
     try {
         if (!file.is_open()) {throw NonExistingDataException("Financial JSON File");}
     } catch (NonExistingDataException &error) {
@@ -90,14 +120,14 @@ void DataContainer::loadFinancials() {
     if (j.contains("expenses")) {
         for (const basic_json<> &expenseJSON : j["expenses"]) {
             Expense expense;
-            serializer.fromJSON(expenseJSON, expense);
+            serializer.fromJSON(expenseJSON, expense, *containerTrip);
             containerFinancial->addExpense(expense);
         }
     }
     if (j.contains("revenues")) {
         for (const basic_json<> &revenueJSON : j["revenues"]) {
             Revenue revenue;
-            serializer.fromJSON(revenueJSON, revenue);
+            serializer.fromJSON(revenueJSON, revenue, *containerOrder);
             containerFinancial->addRevenue(revenue);
         }
     }
@@ -106,6 +136,7 @@ void DataContainer::loadFinancials() {
 
 void DataContainer::loadTrips() {
     ifstream file(tripFilePath);
+    cout << filesystem::absolute(tripFilePath) << endl;
     try {
         if (!file.is_open()) {throw NonExistingDataException("Trip JSON File");}
     } catch (NonExistingDataException &error) {
@@ -117,7 +148,7 @@ void DataContainer::loadTrips() {
     if (j.contains("trips")) {
         for (const basic_json<> &tripJSON : j["trips"]) {
             Trip trip;
-            serializer.fromJSON(tripJSON, trip);
+            serializer.fromJSON(tripJSON, trip, *containerDriver, *containerOrder, *containerVehicle);
             containerTrip->add(trip);
         }
     }
@@ -126,6 +157,7 @@ void DataContainer::loadTrips() {
 
 void DataContainer::loadOrders() {
     ifstream file(orderFilePath);
+    cout << filesystem::absolute(orderFilePath) << endl;
     try {
         if (!file.is_open()) {throw NonExistingDataException("Order JSON File");}
     } catch (NonExistingDataException &error) {
@@ -144,6 +176,40 @@ void DataContainer::loadOrders() {
     file.close();
 }
 
+void DataContainer::linkVehicleAndVSL() {
+    ifstream vehicleInputFile(vehicleFilePath);
+    json j;
+    vehicleInputFile >> j;
+    if (j.contains("trucks")) {
+        int i = 0;
+        for (Truck &truck : containerVehicle->listTrucks()) {
+            int vslID = j["trucks"][i]["vslID"];
+            if (vslID != -1) {
+                VehicleStorageLocation *vsl = containerVSL->get(vslID);
+                if (vsl != nullptr) {
+                    truck.setVSL(vsl);
+                    vsl->getVehicles()[vsl->getID()].push_back(&truck);
+                }
+            }
+            i++;
+        }
+    }
+    if (j.contains("vans")) {
+        int i = 0;
+        for (Van &van : containerVehicle->listVans()) {
+            int vslID = j["vans"][i]["vslID"];
+            if (vslID != -1) {
+                VehicleStorageLocation *vsl = containerVSL->get(vslID);
+                if (vsl != nullptr) {
+                    van.setVSL(vsl);
+                    vsl->getVehicles()[vsl->getID()].push_back(&van);
+                }
+            }
+            i++;
+        }
+    }
+}
+
 
 void DataContainer::loadAllData() {
     loadVehicles();
@@ -152,6 +218,7 @@ void DataContainer::loadAllData() {
     loadFinancials();
     loadTrips();
     loadOrders();
+    linkVehicleAndVSL();
 }
 
 void DataContainer::saveAllData() {

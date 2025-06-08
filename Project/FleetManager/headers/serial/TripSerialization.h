@@ -20,8 +20,7 @@ class TripSerialization {
      void toJSON(json &j, const STATE &state);
      void fromJSON(const json &j, STATE &state);
      void toJSON(json &j, const Trip &trip);
-     void fromJSON(const json &j, Trip &trip);
-     static void fromJSON(const json&, Trip& trip, DriverContainer& driverContainer, OrderContainer& orderContainer, VehicleContainer& vehicleContainer);
+     void fromJSON(const json&, Trip& trip, DriverContainer& driverContainer, OrderContainer& orderContainer, VehicleContainer& vehicleContainer);
 };
 
 

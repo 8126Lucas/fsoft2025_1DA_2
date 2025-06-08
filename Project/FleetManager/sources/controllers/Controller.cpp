@@ -54,7 +54,6 @@ void Controller::runVehicle() {
                     VehicleContainer &container = this->model.getVehicleContainer();
                     container.add(van);
                 }
-
             }
                 break;
             case 2: {
