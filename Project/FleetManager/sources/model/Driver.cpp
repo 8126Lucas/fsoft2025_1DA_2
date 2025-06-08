@@ -38,7 +38,7 @@ bool Driver::getAvailability() const {
     return available;
 }
 
-list<Vacation *> Driver::getVacations() {
+list<Vacation *> Driver::getVacations() const {
     return vacations;
 }
 

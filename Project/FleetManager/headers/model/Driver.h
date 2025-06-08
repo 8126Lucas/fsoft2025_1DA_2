@@ -36,7 +36,7 @@ public:
     char getLicense() const;
     int getAge() const;
     int getTimeToRetire() const;
-    list<Vacation *> getVacations();
+    list<Vacation *> getVacations() const;
     Vacation *getVacation();
     bool getAvailability() const;
     int getVacationID();

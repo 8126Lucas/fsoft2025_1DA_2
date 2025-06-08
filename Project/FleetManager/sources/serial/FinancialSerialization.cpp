@@ -4,7 +4,9 @@
 
 #include "FinancialSerialization.h"
 #include "Expense.h"
+#include "OrderContainer.h"
 #include "Revenue.h"
+#include "TripContainer.h"
 
 void FinancialSerialization::toJSON(json &j, const TYPE &type) {
     switch (type) {
@@ -44,9 +46,11 @@ void FinancialSerialization::toJSON(json &j, const Expense &expense) {
     j["type"] = expense.getType();
 }
 
-void FinancialSerialization::fromJSON(const json &j, Expense &expense) {
+void FinancialSerialization::fromJSON(const json &j, Expense &expense, TripContainer &tripContainer) {
     expense.setID(j["id"]);
-    expense.setTrip(j["trip"]);
+    const int tripID = j["tripID"].get<int>();
+    Trip* trip = tripContainer.getTrip(tripID);
+    expense.setTrip(trip);
     Date date = date.stringToDate(j["expenseDate"]);
     expense.setDate(date);
     expense.setAmount(j["amount"]);
@@ -61,9 +65,11 @@ void FinancialSerialization::toJSON(json &j, const Revenue &revenue) {
     j["amount"] = revenue.getAmount();
 }
 
-void FinancialSerialization::fromJSON(const json &j, Revenue &revenue) {
+void FinancialSerialization::fromJSON(const json &j, Revenue &revenue, OrderContainer &orderContainer) {
     revenue.setID(j["id"]);
-    revenue.setOrder(j["order"]);
+    const int orderID = j["orderID"].get<int>();
+    Order* order = orderContainer.get(orderID);
+    revenue.setOrder(order);
     Date date = date.stringToDate(j["revenueDate"]);
     revenue.setDate(date);
     revenue.setAmount(j["amount"]);
