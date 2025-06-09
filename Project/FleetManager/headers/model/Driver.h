@@ -52,7 +52,7 @@ public:
     void retirementAlert();
     bool isAvailable() const;
 
-    char stringToChar(string license);
+    char stringToChar(string &license);
 
     bool operator == (int id) const;
 };

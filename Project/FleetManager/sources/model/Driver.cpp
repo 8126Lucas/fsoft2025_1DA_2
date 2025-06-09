@@ -129,8 +129,8 @@ bool Driver::isAvailable() const {
     return false;
 }
 
-char Driver::stringToChar(string license) {
+char Driver::stringToChar(string &license) {
     char licenseChar;
-    strcpy(&licenseChar, license.c_str());
+    licenseChar = license[0];
     return licenseChar;
 }
