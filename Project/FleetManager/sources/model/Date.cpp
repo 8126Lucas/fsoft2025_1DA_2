@@ -5,7 +5,7 @@
 #include "Date.h"
 
 #include <chrono>
-
+#include <vector>
 #include "InvalidDataException.h"
 #include <string>
 #include <ctime>

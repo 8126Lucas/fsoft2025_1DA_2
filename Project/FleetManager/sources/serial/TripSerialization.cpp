@@ -24,21 +24,31 @@ void TripSerialization::toJSON(json &j, const STATE &state){
   }
 }
 
-void TripSerialization::fromJSON(const json &j, STATE &state){
+STATE TripSerialization::fromJSON(const json &j){
   string stringState = j["state"].get<string>();
+  STATE state;
   if (stringState == "DELIVERED"){state = DELIVERED;}
   else if (stringState == "INCOMING"){state = INCOMING;}
   else if (stringState == "SUPRESSED"){state = SUPRESSED;}
   else if (stringState == "FAILED"){state = FAILED;}
+  return state;
 }
 
 void TripSerialization::toJSON(json &j, const Trip &trip){
    toJSON(j, trip.getState());
    j["id"] = trip.getID();
    j["orderID"] = trip.getOrder()->getOrderID();
+  if (trip.getDriver() != nullptr) {
    j["driverID"] = trip.getDriver()->getID();
+  }else {
+    j["driverID"] = -1;
+  }
+  if (trip.getVehicle() != nullptr) {
    j["vehicleLicensePlate"] = trip.getVehicle()->getLicensePlate();
-   j["kilometer"] = trip.getKM();
+  }else {
+    j["vehicleLicensePlate"] = "No Vehicle";
+  }
+   j["km"] = trip.getKM();
    j["fuelCost"] = trip.getFuelCost();
    j["tolls"] = trip.getTolls();
    j["fines"] = trip.getFines();
@@ -47,7 +57,7 @@ void TripSerialization::toJSON(json &j, const Trip &trip){
 }
 
 void TripSerialization::fromJSON(const json &j, Trip &trip, DriverContainer& driverContainer, OrderContainer& orderContainer, VehicleContainer& vehicleContainer){
-   trip.setState(j["state"].get<STATE>());
+   trip.setState(fromJSON(j));
    trip.setID(j["id"].get<int>());
    trip.setKM(j["km"].get<double>());
    trip.setFuel(j["fuel"].get<double>());
@@ -56,21 +66,23 @@ void TripSerialization::fromJSON(const json &j, Trip &trip, DriverContainer& dri
    trip.setFines(j["fines"].get<double>());
    trip.setCost(j["cost"].get<double>());
 
-  const int driverID = j["driverID"].get<int>();
-   Driver* driver = driverContainer.get(driverID);
-  if (driver != nullptr) {
+   if (j["driverID"] != -1) {
+     const int driverID = j["driverID"].get<int>();
+     Driver* driver = driverContainer.get(driverID);
      trip.setDriver(driver);
    }else {
      trip.setDriver(nullptr);
    }
 
-  const int orderID = j["orderID"].get<int>();
+   const int orderID = j["orderID"].get<int>();
    Order* order = orderContainer.get(orderID);
    trip.setOrder(order);
 
-  string vehicleLicensePlate = j["vehicleLicensePlate"].get<string>();
-  Vehicle* vehicle = vehicleContainer.get(vehicleLicensePlate);
-  if (vehicle != nullptr) {
+
+
+  if (j["vehicleLicensePlate"] != -1) {
+    string vehicleLicensePlate = j["vehicleLicensePlate"].get<string>();
+    Vehicle* vehicle = vehicleContainer.get(vehicleLicensePlate);           
     trip.setVehicle(vehicle);
   }else {
     trip.setVehicle(nullptr);

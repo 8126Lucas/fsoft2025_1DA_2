@@ -1,26 +1,6 @@
 {
     "trucks": [
-        {
-            "available": true,
-            "brand": "1",
-            "category": "TRUCK",
-            "fuel": 1.0,
-            "inspectionCost": -1,
-            "inspectionDate": "no date",
-            "inspectionID": -1,
-            "inspectionToday": "no date",
-            "insuranceEndDate": "1/1/2026",
-            "insuranceID": 1,
-            "insuranceMonthlyCost": 1.0,
-            "insuranceStartDate": "1/1/2024",
-            "insuranceToday": "8/6/2025",
-            "licensePlate": "1",
-            "mileage": 1.0,
-            "model": "1",
-            "vslID": -1,
-            "weightCapacity": 1.0,
-            "year": 1
-        }
+
     ],
     "vans": []
 }

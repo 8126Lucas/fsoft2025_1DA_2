@@ -18,7 +18,7 @@ class TripSerialization {
 
   public:
      void toJSON(json &j, const STATE &state);
-     void fromJSON(const json &j, STATE &state);
+     STATE fromJSON(const json &j);
      void toJSON(json &j, const Trip &trip);
      void fromJSON(const json&, Trip& trip, DriverContainer& driverContainer, OrderContainer& orderContainer, VehicleContainer& vehicleContainer);
 };

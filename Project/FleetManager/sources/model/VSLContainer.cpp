@@ -4,7 +4,7 @@
 
 #include "VSLContainer.h"
 
-#include <bits/codecvt.h>
+
 
 #include "DuplicatedDataException.h"
 #include "NonExistingDataException.h"

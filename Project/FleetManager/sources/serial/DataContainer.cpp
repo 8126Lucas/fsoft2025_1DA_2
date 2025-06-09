@@ -212,12 +212,12 @@ void DataContainer::linkVehicleAndVSL() {
 
 
 void DataContainer::loadAllData() {
+    loadOrders();
     loadVehicles();
     loadVSLs();
     loadDrivers();
     loadFinancials();
     loadTrips();
-    loadOrders();
     linkVehicleAndVSL();
 }
 
