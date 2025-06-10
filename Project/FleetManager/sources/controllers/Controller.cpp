@@ -295,13 +295,13 @@ void Controller::runDriver() {
             case 4: {
                 DriverContainer &containerDriver = this->model.getDriverContainer();
                 list<Driver> listDrivers = containerDriver.listAvailableDrivers(true);
-                this->driverView.printDrivers(listDrivers);
+                this->driverView.printAvailableDrivers(listDrivers);
             }
                 break;
             case 5: {
                 DriverContainer &containerDriver = this->model.getDriverContainer();
                 list<Driver> listDrivers = containerDriver.listAvailableDrivers(false);
-                this->driverView.printDrivers(listDrivers);
+                this->driverView.printUnavailableDrivers(listDrivers);
             }
                 break;
             case 6: {
@@ -438,12 +438,18 @@ void Controller::runOrder() {
             case 4: {
                 OrderContainer &containerOrder = this->model.getOrderContainer();
                 list<Order> listOrder = containerOrder.listUncompleted();
+                if (listOrder.empty()) {
+                    cout << "\nTHERE ARE NO UNCOMPLETED ORDERS IN THE RECORDS!\n";
+                }
                 this->orderView.printOrders(listOrder);
             }
                 break;
             case 5: {
                 OrderContainer &containerOrder = this->model.getOrderContainer();
                 list<Order> listOrder = containerOrder.listCompleted();
+                if (listOrder.empty()) {
+                    cout << "\nTHERE ARE NO COMPLETED ORDERS IN THE RECORDS!\n";
+                }
                 this->orderView.printOrders(listOrder);
             }
                 break;
@@ -451,6 +457,9 @@ void Controller::runOrder() {
                 int clientID = Utils::getInt("Client ID");
                 OrderContainer &containerOrder = this->model.getOrderContainer();
                 list<Order> listOrder = containerOrder.listOrdersByClient(clientID);
+                if (listOrder.empty()) {
+                    cout << "\nTHERE ARE NO ORDERS MADE BY THIS CLIENT IN THE RECORDS!\n";
+                }
                 this->orderView.printOrders(listOrder);
             }
                 break;

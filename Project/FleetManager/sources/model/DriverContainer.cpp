@@ -26,11 +26,15 @@ Driver *DriverContainer::get(int id) {
 }
 
 void DriverContainer::add(Driver &driver) {
-  list<Driver>::iterator it = search(driver.getID());
-  if (it != this->drivers.end()) {
-    throw DuplicatedDataException("Driver (id): " + to_string(driver.getID()));
+  try {
+    list<Driver>::iterator it = search(driver.getID());
+    if (it != this->drivers.end()) {
+      throw DuplicatedDataException("Driver (id): " + to_string(driver.getID()));
+    }
+    this->drivers.push_back(driver);
+  } catch (DuplicatedDataException &error) {
+    cout << error.what() << endl;
   }
-  this->drivers.push_back(driver);
 }
 
 
@@ -50,8 +54,8 @@ void DriverContainer::remove(int id) {
 }
 
 list<Driver> DriverContainer::listDrivers() {
-  list<Driver> newList(this->drivers);
-  return newList;
+    list<Driver> newList(this->drivers);
+    return newList;
 }
 
 list<Driver> DriverContainer::listAvailableDrivers(bool available) {
