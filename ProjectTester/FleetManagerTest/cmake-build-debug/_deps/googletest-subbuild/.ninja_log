@@ -1,0 +1,21 @@
+# ninja log v6
+0	15	1749572246198284833	googletest-populate-prefix/src/googletest-populate-stamp/googletest-populate-mkdir	591383709c69c910
+0	15	1749572246198284833	/Users/vitorteixeira/Desktop/FSOFT/PL3/fsoft2025_1DA_2/ProjectTester/FleetManagerTest/cmake-build-debug/_deps/googletest-subbuild/googletest-populate-prefix/src/googletest-populate-stamp/googletest-populate-mkdir	591383709c69c910
+15	23682	1749572269865912833	googletest-populate-prefix/src/googletest-populate-stamp/googletest-populate-download	bde186f734f4659c
+15	23682	1749572269865912833	/Users/vitorteixeira/Desktop/FSOFT/PL3/fsoft2025_1DA_2/ProjectTester/FleetManagerTest/cmake-build-debug/_deps/googletest-subbuild/googletest-populate-prefix/src/googletest-populate-stamp/googletest-populate-download	bde186f734f4659c
+23682	23695	1749572269879032053	googletest-populate-prefix/src/googletest-populate-stamp/googletest-populate-update	4b621e33368cbdb9
+23682	23695	1749572269879032053	/Users/vitorteixeira/Desktop/FSOFT/PL3/fsoft2025_1DA_2/ProjectTester/FleetManagerTest/cmake-build-debug/_deps/googletest-subbuild/googletest-populate-prefix/src/googletest-populate-stamp/googletest-populate-update	4b621e33368cbdb9
+23695	23706	1749572269890257390	googletest-populate-prefix/src/googletest-populate-stamp/googletest-populate-patch	fc8b03fd9a6df51
+23695	23706	1749572269890257390	/Users/vitorteixeira/Desktop/FSOFT/PL3/fsoft2025_1DA_2/ProjectTester/FleetManagerTest/cmake-build-debug/_deps/googletest-subbuild/googletest-populate-prefix/src/googletest-populate-stamp/googletest-populate-patch	fc8b03fd9a6df51
+23707	23719	1749572269902093813	googletest-populate-prefix/src/googletest-populate-stamp/googletest-populate-configure	9a9b940c71291c35
+23707	23719	1749572269902093813	/Users/vitorteixeira/Desktop/FSOFT/PL3/fsoft2025_1DA_2/ProjectTester/FleetManagerTest/cmake-build-debug/_deps/googletest-subbuild/googletest-populate-prefix/src/googletest-populate-stamp/googletest-populate-configure	9a9b940c71291c35
+23719	23730	1749572269913411943	googletest-populate-prefix/src/googletest-populate-stamp/googletest-populate-build	20d1de30033ffb11
+23719	23730	1749572269913411943	/Users/vitorteixeira/Desktop/FSOFT/PL3/fsoft2025_1DA_2/ProjectTester/FleetManagerTest/cmake-build-debug/_deps/googletest-subbuild/googletest-populate-prefix/src/googletest-populate-stamp/googletest-populate-build	20d1de30033ffb11
+23730	23740	1749572269923954986	googletest-populate-prefix/src/googletest-populate-stamp/googletest-populate-install	65a56d4c63ac9ba1
+23730	23740	1749572269923954986	/Users/vitorteixeira/Desktop/FSOFT/PL3/fsoft2025_1DA_2/ProjectTester/FleetManagerTest/cmake-build-debug/_deps/googletest-subbuild/googletest-populate-prefix/src/googletest-populate-stamp/googletest-populate-install	65a56d4c63ac9ba1
+23740	23751	1749572269934451153	googletest-populate-prefix/src/googletest-populate-stamp/googletest-populate-test	788ae906b1bb4ae2
+23740	23751	1749572269934451153	/Users/vitorteixeira/Desktop/FSOFT/PL3/fsoft2025_1DA_2/ProjectTester/FleetManagerTest/cmake-build-debug/_deps/googletest-subbuild/googletest-populate-prefix/src/googletest-populate-stamp/googletest-populate-test	788ae906b1bb4ae2
+23751	23765	1749572269949258172	CMakeFiles/googletest-populate-complete	f3eb4af422feb760
+23751	23765	1749572269949258172	googletest-populate-prefix/src/googletest-populate-stamp/googletest-populate-done	f3eb4af422feb760
+23751	23765	1749572269949258172	/Users/vitorteixeira/Desktop/FSOFT/PL3/fsoft2025_1DA_2/ProjectTester/FleetManagerTest/cmake-build-debug/_deps/googletest-subbuild/CMakeFiles/googletest-populate-complete	f3eb4af422feb760
+23751	23765	1749572269949258172	/Users/vitorteixeira/Desktop/FSOFT/PL3/fsoft2025_1DA_2/ProjectTester/FleetManagerTest/cmake-build-debug/_deps/googletest-subbuild/googletest-populate-prefix/src/googletest-populate-stamp/googletest-populate-done	f3eb4af422feb760
