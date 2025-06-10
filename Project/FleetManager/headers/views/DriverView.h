@@ -14,8 +14,10 @@ public:
     static int removeDriver();
     static Driver *getDriver(DriverContainer *container);
     static int getID();
-    void printDriver(Driver *driver);
-    void printDrivers(list<Driver> &drivers);
+    static void printDriver(Driver *driver);
+    static void printDrivers(list<Driver> &drivers);
+    static void printAvailableDrivers(list<Driver> &drivers);
+    static void printUnavailableDrivers(list<Driver> &drivers);
 
     static void vacationAlert(Driver &driver);
     static void retirementAlert(Driver &driver);

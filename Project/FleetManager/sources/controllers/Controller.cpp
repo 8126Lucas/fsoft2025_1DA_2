@@ -289,31 +289,19 @@ void Controller::runDriver() {
             case 3: {
                 DriverContainer &containerDriver = this->model.getDriverContainer();
                 list<Driver> listDrivers = containerDriver.listDrivers();
-                if (listDrivers.empty()) {
-                    cout << "\nTHERE ARE NO DRIVERS IN THE RECORDS!\n";
-                } else {
-                    this->driverView.printDrivers(listDrivers);
-                }
+                this->driverView.printDrivers(listDrivers);
             }
                 break;
             case 4: {
                 DriverContainer &containerDriver = this->model.getDriverContainer();
                 list<Driver> listDrivers = containerDriver.listAvailableDrivers(true);
-                if (listDrivers.empty()) {
-                    cout << "\nTHERE ARE NO AVAILABLE DRIVERS IN THE RECORDS!\n";
-                } else {
-                    this->driverView.printDrivers(listDrivers);
-                }
+                this->driverView.printAvailableDrivers(listDrivers);
             }
                 break;
             case 5: {
                 DriverContainer &containerDriver = this->model.getDriverContainer();
                 list<Driver> listDrivers = containerDriver.listAvailableDrivers(false);
-                if (listDrivers.empty()) {
-                    cout << "\nTHERE ARE NO UNAVAILABLE DRIVERS IN THE RECORDS!\n";
-                } else {
-                    this->driverView.printDrivers(listDrivers);
-                }
+                this->driverView.printUnavailableDrivers(listDrivers);
             }
                 break;
             case 6: {

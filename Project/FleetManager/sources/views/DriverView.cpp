@@ -96,6 +96,32 @@ void DriverView::printDriver(Driver *driver) {
 }
 
 void DriverView::printDrivers(list<Driver> &drivers) {
+    if (drivers.empty()) {
+        cout << "\nTHERE ARE NO DRIVERS IN THE RECORDS!\n";
+        return;
+    }
+    list<Driver>::iterator it = drivers.begin();
+    for (; it != drivers.end(); ++it) {
+        printDriver(&*it);
+    }
+}
+
+void DriverView::printAvailableDrivers(list<Driver> &drivers) {
+    if (drivers.empty()) {
+        cout << "\nTHERE ARE NO AVAILABLE DRIVERS IN THE RECORDS!\n";
+        return;
+    }
+    list<Driver>::iterator it = drivers.begin();
+    for (; it != drivers.end(); ++it) {
+        printDriver(&*it);
+    }
+}
+
+void DriverView::printUnavailableDrivers(list<Driver> &drivers) {
+    if (drivers.empty()) {
+        cout << "\nTHERE ARE NO UNAVAILABLE DRIVERS IN THE RECORDS!\n";
+        return;
+    }
     list<Driver>::iterator it = drivers.begin();
     for (; it != drivers.end(); ++it) {
         printDriver(&*it);
