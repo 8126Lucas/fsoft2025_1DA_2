@@ -437,30 +437,27 @@ void Controller::runOrder() {
                 break;
             case 4: {
                 OrderContainer &containerOrder = this->model.getOrderContainer();
-                list<Order> listOrder = containerOrder.listUncompleted();
-                if (listOrder.empty()) {
-                    cout << "\nTHERE ARE NO UNCOMPLETED ORDERS IN THE RECORDS!\n";
-                }
+                list<Order> listOrder = containerOrder.listOrders();
                 this->orderView.printOrders(listOrder);
             }
                 break;
             case 5: {
                 OrderContainer &containerOrder = this->model.getOrderContainer();
-                list<Order> listOrder = containerOrder.listCompleted();
-                if (listOrder.empty()) {
-                    cout << "\nTHERE ARE NO COMPLETED ORDERS IN THE RECORDS!\n";
-                }
-                this->orderView.printOrders(listOrder);
+                list<Order> listOrder = containerOrder.listUncompleted();
+                this->orderView.printUncompletedOrders(listOrder);
             }
                 break;
             case 6: {
+                OrderContainer &containerOrder = this->model.getOrderContainer();
+                list<Order> listOrder = containerOrder.listCompleted();
+                this->orderView.printCompletedOrders(listOrder);
+            }
+                break;
+            case 7: {
                 int clientID = Utils::getInt("Client ID");
                 OrderContainer &containerOrder = this->model.getOrderContainer();
                 list<Order> listOrder = containerOrder.listOrdersByClient(clientID);
-                if (listOrder.empty()) {
-                    cout << "\nTHERE ARE NO ORDERS MADE BY THIS CLIENT IN THE RECORDS!\n";
-                }
-                this->orderView.printOrders(listOrder);
+                this->orderView.printOrdersByClient(listOrder);
             }
                 break;
         }

@@ -16,6 +16,9 @@ class OrderView {
     static Order *getOrder(OrderContainer *container);
     static void printOrder(Order *order);
     static void printOrders(list<Order> &orders);
-    //static void printCompleted(orders)
+    static void printCompletedOrders(list<Order> &orders);
+    static void printUncompletedOrders(list<Order> &orders);
+    static void printOrdersByClient(list<Order> &orders);
 };
+
 #endif //HEADERS_VIEWS_ORDERVIEW_H
