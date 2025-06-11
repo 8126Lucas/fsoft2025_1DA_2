@@ -83,3 +83,8 @@ void VehicleStorageLocation::setCapacity(int capacity) {
 void VehicleStorageLocation::setCurrentVehicleCount(int currentVehicleCount) {
     this->currentVehicleCount = currentVehicleCount;
 }
+
+void VehicleStorageLocation::addVehicle(Vehicle *vehicle) {
+    this->getVehicles()[this->getID()].push_back(vehicle);
+    this->incrementVehicleCount();
+}

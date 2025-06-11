@@ -66,14 +66,14 @@ add_executable(runTests
         trip_test.cpp
         driver_test.cpp
         financial_test.cpp
+        vehicle_test.cpp
+        vsl_test.cpp
         ${APP_SOURCES}
 )
 
 
 target_include_directories(runTests PRIVATE
-        # Headers do Google Test
         ${CMAKE_CURRENT_SOURCE_DIR}/googleTestLib/googletest-main/googletest/include
-        # Headers da sua aplicação
         ${PROJECT_HEADERS_DIR}/controllers
         ${PROJECT_HEADERS_DIR}/exceptions
         ${PROJECT_HEADERS_DIR}/model
@@ -82,7 +82,7 @@ target_include_directories(runTests PRIVATE
 )
 
 
-target_link_libraries(runTests PRIVATE gtest_main)
+target_link_libraries(runTests PRIVATE gtest gtest_main)
 
 include(GoogleTest)
 gtest_discover_tests(runTests)

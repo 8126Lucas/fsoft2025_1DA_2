@@ -5,6 +5,7 @@
 #include "Truck.h"
 
 Truck::Truck() {
+    this->category = TRUCK;
     this->weightCapacity = 0.0;
     this->insurance = nullptr;
     this->inspection = nullptr;

@@ -106,8 +106,7 @@ void VehicleStorageLocationView::addVehicleToStorage(VehicleStorageLocation *vsl
                 cout << "The Storage Location is full!\n";
                 return;
             }
-            vsl->getVehicles()[vsl->getID()].push_back(vehicle);
-            vsl->incrementVehicleCount();
+            vsl->addVehicle(vehicle);
         } catch (NonExistingDataException &error) {
             cout << error.what() << endl;
             flag_error = true;

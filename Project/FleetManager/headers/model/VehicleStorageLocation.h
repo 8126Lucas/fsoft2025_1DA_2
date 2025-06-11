@@ -49,6 +49,8 @@ class VehicleStorageLocation {
     void setCapacity(int capacity);
     void setCurrentVehicleCount(int currentVehicleCount);
 
+    void addVehicle(Vehicle *vehicle);
+
     bool operator== (int id) const;
 };
 

@@ -5,6 +5,7 @@
 #include "Van.h"
 
 Van::Van() {
+    this->category = VAN;
     this->spaceCapacity = 0.0;
     this->insurance = nullptr;
     this->inspection = nullptr;
