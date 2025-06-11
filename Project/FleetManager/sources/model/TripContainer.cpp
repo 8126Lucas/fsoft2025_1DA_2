@@ -23,13 +23,17 @@ list<Trip>::iterator TripContainer::search(int id) {
 }
 
 void TripContainer::add(Trip &trip) {
+  try{
     list<Trip>::iterator it = this->trips.begin();
     if (it == this->trips.end()) {
       this->trips.push_back(trip);
     }else{
       string msg = "Trip already exists.";
       throw DuplicatedDataException(msg);
-      }
+    }
+  }catch(DuplicatedDataException &error) {
+    cout << error.what() << endl;
+  }
 }
 
 
