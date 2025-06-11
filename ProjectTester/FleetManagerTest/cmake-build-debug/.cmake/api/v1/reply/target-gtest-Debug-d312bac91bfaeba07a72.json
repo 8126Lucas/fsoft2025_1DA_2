@@ -82,18 +82,30 @@
 					"fragment" : "-g -std=c++17 -fdiagnostics-color=always"
 				},
 				{
+<<<<<<<< HEAD:ProjectTester/FleetManagerTest/cmake-build-debug/.cmake/api/v1/reply/target-gtest-Debug-e75a2c969264a96bd265.json
 					"fragment" : "-Wall -Wshadow -Wundef -Wno-error=dangling-else -DGTEST_HAS_PTHREAD=1 -fexceptions -Wextra -Wno-unused-parameter -Wno-missing-field-initializers"
+========
+					"fragment" : "-Wall -Wshadow -Wundef -Wno-error=dangling-else -DGTEST_HAS_PTHREAD=0 -fexceptions -Wextra -Wno-unused-parameter -Wno-missing-field-initializers"
+>>>>>>>> origin/master:ProjectTester/FleetManagerTest/cmake-build-debug/.cmake/api/v1/reply/target-gtest-Debug-d312bac91bfaeba07a72.json
 				}
 			],
 			"includes" : 
 			[
 				{
 					"backtrace" : 6,
+<<<<<<<< HEAD:ProjectTester/FleetManagerTest/cmake-build-debug/.cmake/api/v1/reply/target-gtest-Debug-e75a2c969264a96bd265.json
 					"path" : "/home/dinis/CLionProjects/fsoft2025_1DA_2_definitivo/ProjectTester/FleetManagerTest/googleTestLib/googletest-main/googletest/include"
 				},
 				{
 					"backtrace" : 6,
 					"path" : "/home/dinis/CLionProjects/fsoft2025_1DA_2_definitivo/ProjectTester/FleetManagerTest/googleTestLib/googletest-main/googletest"
+========
+					"path" : "C:/Projects/fsoft2025_1DA_2/ProjectTester/FleetManagerTest/googleTestLib/googletest-main/googletest/include"
+				},
+				{
+					"backtrace" : 6,
+					"path" : "C:/Projects/fsoft2025_1DA_2/ProjectTester/FleetManagerTest/googleTestLib/googletest-main/googletest"
+>>>>>>>> origin/master:ProjectTester/FleetManagerTest/cmake-build-debug/.cmake/api/v1/reply/target-gtest-Debug-d312bac91bfaeba07a72.json
 				}
 			],
 			"language" : "CXX",
@@ -123,7 +135,7 @@
 		],
 		"prefix" : 
 		{
-			"path" : "/usr/local"
+			"path" : "C:/Program Files (x86)/FleetManagerTest"
 		}
 	},
 	"name" : "gtest",

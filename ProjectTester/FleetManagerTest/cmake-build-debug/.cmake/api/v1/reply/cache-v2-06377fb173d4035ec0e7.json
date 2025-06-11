@@ -27,7 +27,11 @@
 				}
 			],
 			"type" : "FILEPATH",
+<<<<<<<< HEAD:ProjectTester/FleetManagerTest/cmake-build-debug/.cmake/api/v1/reply/cache-v2-6cc35cfe9ab982459708.json
 			"value" : "/usr/bin/addr2line"
+========
+			"value" : "C:/msys64/ucrt64/bin/addr2line.exe"
+>>>>>>>> origin/master:ProjectTester/FleetManagerTest/cmake-build-debug/.cmake/api/v1/reply/cache-v2-06377fb173d4035ec0e7.json
 		},
 		{
 			"name" : "CMAKE_AR",
@@ -43,7 +47,11 @@
 				}
 			],
 			"type" : "FILEPATH",
+<<<<<<<< HEAD:ProjectTester/FleetManagerTest/cmake-build-debug/.cmake/api/v1/reply/cache-v2-6cc35cfe9ab982459708.json
 			"value" : "/usr/bin/ar"
+========
+			"value" : "C:/msys64/ucrt64/bin/ar.exe"
+>>>>>>>> origin/master:ProjectTester/FleetManagerTest/cmake-build-debug/.cmake/api/v1/reply/cache-v2-06377fb173d4035ec0e7.json
 		},
 		{
 			"name" : "CMAKE_BUILD_TYPE",
@@ -67,7 +75,11 @@
 				}
 			],
 			"type" : "INTERNAL",
+<<<<<<<< HEAD:ProjectTester/FleetManagerTest/cmake-build-debug/.cmake/api/v1/reply/cache-v2-6cc35cfe9ab982459708.json
 			"value" : "/home/dinis/CLionProjects/fsoft2025_1DA_2_definitivo/ProjectTester/FleetManagerTest/cmake-build-debug"
+========
+			"value" : "c:/Projects/fsoft2025_1DA_2/ProjectTester/FleetManagerTest/cmake-build-debug"
+>>>>>>>> origin/master:ProjectTester/FleetManagerTest/cmake-build-debug/.cmake/api/v1/reply/cache-v2-06377fb173d4035ec0e7.json
 		},
 		{
 			"name" : "CMAKE_CACHE_MAJOR_VERSION",
@@ -91,7 +103,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "30"
+			"value" : "31"
 		},
 		{
 			"name" : "CMAKE_CACHE_PATCH_VERSION",
@@ -103,7 +115,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "5"
+			"value" : "6"
 		},
 		{
 			"name" : "CMAKE_COLOR_DIAGNOSTICS",
@@ -127,7 +139,11 @@
 				}
 			],
 			"type" : "INTERNAL",
+<<<<<<<< HEAD:ProjectTester/FleetManagerTest/cmake-build-debug/.cmake/api/v1/reply/cache-v2-6cc35cfe9ab982459708.json
 			"value" : "/home/dinis/Downloads/clion/clion-2024.3.4/bin/cmake/linux/x64/bin/cmake"
+========
+			"value" : "C:/Program Files/JetBrains/CLion 2024.3.3/bin/cmake/win/aarch64/bin/cmake.exe"
+>>>>>>>> origin/master:ProjectTester/FleetManagerTest/cmake-build-debug/.cmake/api/v1/reply/cache-v2-06377fb173d4035ec0e7.json
 		},
 		{
 			"name" : "CMAKE_CPACK_COMMAND",
@@ -139,7 +155,11 @@
 				}
 			],
 			"type" : "INTERNAL",
+<<<<<<<< HEAD:ProjectTester/FleetManagerTest/cmake-build-debug/.cmake/api/v1/reply/cache-v2-6cc35cfe9ab982459708.json
 			"value" : "/home/dinis/Downloads/clion/clion-2024.3.4/bin/cmake/linux/x64/bin/cpack"
+========
+			"value" : "C:/Program Files/JetBrains/CLion 2024.3.3/bin/cmake/win/aarch64/bin/cpack.exe"
+>>>>>>>> origin/master:ProjectTester/FleetManagerTest/cmake-build-debug/.cmake/api/v1/reply/cache-v2-06377fb173d4035ec0e7.json
 		},
 		{
 			"name" : "CMAKE_CTEST_COMMAND",
@@ -151,7 +171,11 @@
 				}
 			],
 			"type" : "INTERNAL",
+<<<<<<<< HEAD:ProjectTester/FleetManagerTest/cmake-build-debug/.cmake/api/v1/reply/cache-v2-6cc35cfe9ab982459708.json
 			"value" : "/home/dinis/Downloads/clion/clion-2024.3.4/bin/cmake/linux/x64/bin/ctest"
+========
+			"value" : "C:/Program Files/JetBrains/CLion 2024.3.3/bin/cmake/win/aarch64/bin/ctest.exe"
+>>>>>>>> origin/master:ProjectTester/FleetManagerTest/cmake-build-debug/.cmake/api/v1/reply/cache-v2-06377fb173d4035ec0e7.json
 		},
 		{
 			"name" : "CMAKE_CXX_COMPILER",
@@ -163,10 +187,27 @@
 				},
 				{
 					"name" : "HELPSTRING",
-					"value" : "CXX compiler"
+					"value" : "No help, variable specified on the command line."
+				}
+			],
+			"type" : "UNINITIALIZED",
+			"value" : "C:/msys64/ucrt64/bin/g++.exe"
+		},
+		{
+			"name" : "CMAKE_CXX_COMPILER_AR",
+			"properties" : 
+			[
+				{
+					"name" : "ADVANCED",
+					"value" : "1"
+				},
+				{
+					"name" : "HELPSTRING",
+					"value" : "A wrapper around 'ar' adding the appropriate '--plugin' option for the GCC compiler"
 				}
 			],
 			"type" : "FILEPATH",
+<<<<<<<< HEAD:ProjectTester/FleetManagerTest/cmake-build-debug/.cmake/api/v1/reply/cache-v2-6cc35cfe9ab982459708.json
 			"value" : "/usr/bin/c++"
 		},
 		{
@@ -184,6 +225,9 @@
 			],
 			"type" : "FILEPATH",
 			"value" : "/usr/bin/gcc-ar-14"
+========
+			"value" : "C:/msys64/ucrt64/bin/gcc-ar.exe"
+>>>>>>>> origin/master:ProjectTester/FleetManagerTest/cmake-build-debug/.cmake/api/v1/reply/cache-v2-06377fb173d4035ec0e7.json
 		},
 		{
 			"name" : "CMAKE_CXX_COMPILER_RANLIB",
@@ -199,7 +243,11 @@
 				}
 			],
 			"type" : "FILEPATH",
+<<<<<<<< HEAD:ProjectTester/FleetManagerTest/cmake-build-debug/.cmake/api/v1/reply/cache-v2-6cc35cfe9ab982459708.json
 			"value" : "/usr/bin/gcc-ranlib-14"
+========
+			"value" : "C:/msys64/ucrt64/bin/gcc-ranlib.exe"
+>>>>>>>> origin/master:ProjectTester/FleetManagerTest/cmake-build-debug/.cmake/api/v1/reply/cache-v2-06377fb173d4035ec0e7.json
 		},
 		{
 			"name" : "CMAKE_CXX_FLAGS",
@@ -282,6 +330,22 @@
 			"value" : "-O2 -g -DNDEBUG"
 		},
 		{
+			"name" : "CMAKE_CXX_STANDARD_LIBRARIES",
+			"properties" : 
+			[
+				{
+					"name" : "ADVANCED",
+					"value" : "1"
+				},
+				{
+					"name" : "HELPSTRING",
+					"value" : "Libraries linked by default with all C++ applications."
+				}
+			],
+			"type" : "STRING",
+			"value" : "-lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32"
+		},
+		{
 			"name" : "CMAKE_C_COMPILER",
 			"properties" : 
 			[
@@ -291,10 +355,27 @@
 				},
 				{
 					"name" : "HELPSTRING",
-					"value" : "C compiler"
+					"value" : "No help, variable specified on the command line."
+				}
+			],
+			"type" : "UNINITIALIZED",
+			"value" : "C:/msys64/ucrt64/bin/gcc.exe"
+		},
+		{
+			"name" : "CMAKE_C_COMPILER_AR",
+			"properties" : 
+			[
+				{
+					"name" : "ADVANCED",
+					"value" : "1"
+				},
+				{
+					"name" : "HELPSTRING",
+					"value" : "A wrapper around 'ar' adding the appropriate '--plugin' option for the GCC compiler"
 				}
 			],
 			"type" : "FILEPATH",
+<<<<<<<< HEAD:ProjectTester/FleetManagerTest/cmake-build-debug/.cmake/api/v1/reply/cache-v2-6cc35cfe9ab982459708.json
 			"value" : "/usr/bin/cc"
 		},
 		{
@@ -312,6 +393,9 @@
 			],
 			"type" : "FILEPATH",
 			"value" : "/usr/bin/gcc-ar-14"
+========
+			"value" : "C:/msys64/ucrt64/bin/gcc-ar.exe"
+>>>>>>>> origin/master:ProjectTester/FleetManagerTest/cmake-build-debug/.cmake/api/v1/reply/cache-v2-06377fb173d4035ec0e7.json
 		},
 		{
 			"name" : "CMAKE_C_COMPILER_RANLIB",
@@ -327,7 +411,11 @@
 				}
 			],
 			"type" : "FILEPATH",
+<<<<<<<< HEAD:ProjectTester/FleetManagerTest/cmake-build-debug/.cmake/api/v1/reply/cache-v2-6cc35cfe9ab982459708.json
 			"value" : "/usr/bin/gcc-ranlib-14"
+========
+			"value" : "C:/msys64/ucrt64/bin/gcc-ranlib.exe"
+>>>>>>>> origin/master:ProjectTester/FleetManagerTest/cmake-build-debug/.cmake/api/v1/reply/cache-v2-06377fb173d4035ec0e7.json
 		},
 		{
 			"name" : "CMAKE_C_FLAGS",
@@ -410,6 +498,22 @@
 			"value" : "-O2 -g -DNDEBUG"
 		},
 		{
+			"name" : "CMAKE_C_STANDARD_LIBRARIES",
+			"properties" : 
+			[
+				{
+					"name" : "ADVANCED",
+					"value" : "1"
+				},
+				{
+					"name" : "HELPSTRING",
+					"value" : "Libraries linked by default with all C applications."
+				}
+			],
+			"type" : "STRING",
+			"value" : "-lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32"
+		},
+		{
 			"name" : "CMAKE_DLLTOOL",
 			"properties" : 
 			[
@@ -423,7 +527,7 @@
 				}
 			],
 			"type" : "FILEPATH",
-			"value" : "CMAKE_DLLTOOL-NOTFOUND"
+			"value" : "C:/msys64/ucrt64/bin/dlltool.exe"
 		},
 		{
 			"name" : "CMAKE_EXECUTABLE_FORMAT",
@@ -435,7 +539,11 @@
 				}
 			],
 			"type" : "INTERNAL",
+<<<<<<<< HEAD:ProjectTester/FleetManagerTest/cmake-build-debug/.cmake/api/v1/reply/cache-v2-6cc35cfe9ab982459708.json
 			"value" : "ELF"
+========
+			"value" : "Unknown"
+>>>>>>>> origin/master:ProjectTester/FleetManagerTest/cmake-build-debug/.cmake/api/v1/reply/cache-v2-06377fb173d4035ec0e7.json
 		},
 		{
 			"name" : "CMAKE_EXE_LINKER_FLAGS",
@@ -518,22 +626,6 @@
 			"value" : ""
 		},
 		{
-			"name" : "CMAKE_EXPORT_COMPILE_COMMANDS",
-			"properties" : 
-			[
-				{
-					"name" : "ADVANCED",
-					"value" : "1"
-				},
-				{
-					"name" : "HELPSTRING",
-					"value" : "Enable/Disable output of compile commands during generation."
-				}
-			],
-			"type" : "BOOL",
-			"value" : ""
-		},
-		{
 			"name" : "CMAKE_EXTRA_GENERATOR",
 			"properties" : 
 			[
@@ -555,7 +647,11 @@
 				}
 			],
 			"type" : "STATIC",
+<<<<<<<< HEAD:ProjectTester/FleetManagerTest/cmake-build-debug/.cmake/api/v1/reply/cache-v2-6cc35cfe9ab982459708.json
 			"value" : "/home/dinis/CLionProjects/fsoft2025_1DA_2_definitivo/ProjectTester/FleetManagerTest/cmake-build-debug/CMakeFiles/pkgRedirects"
+========
+			"value" : "C:/Projects/fsoft2025_1DA_2/ProjectTester/FleetManagerTest/cmake-build-debug/CMakeFiles/pkgRedirects"
+>>>>>>>> origin/master:ProjectTester/FleetManagerTest/cmake-build-debug/.cmake/api/v1/reply/cache-v2-06377fb173d4035ec0e7.json
 		},
 		{
 			"name" : "CMAKE_GENERATOR",
@@ -567,7 +663,11 @@
 				}
 			],
 			"type" : "INTERNAL",
+<<<<<<<< HEAD:ProjectTester/FleetManagerTest/cmake-build-debug/.cmake/api/v1/reply/cache-v2-6cc35cfe9ab982459708.json
 			"value" : "Unix Makefiles"
+========
+			"value" : "MinGW Makefiles"
+>>>>>>>> origin/master:ProjectTester/FleetManagerTest/cmake-build-debug/.cmake/api/v1/reply/cache-v2-06377fb173d4035ec0e7.json
 		},
 		{
 			"name" : "CMAKE_GENERATOR_INSTANCE",
@@ -606,16 +706,16 @@
 			"value" : ""
 		},
 		{
-			"name" : "CMAKE_HAVE_LIBC_PTHREAD",
+			"name" : "CMAKE_GNUtoMS",
 			"properties" : 
 			[
 				{
 					"name" : "HELPSTRING",
-					"value" : "Test CMAKE_HAVE_LIBC_PTHREAD"
+					"value" : "Convert GNU import libraries to MS format (requires Visual Studio)"
 				}
 			],
-			"type" : "INTERNAL",
-			"value" : "1"
+			"type" : "BOOL",
+			"value" : "OFF"
 		},
 		{
 			"name" : "CMAKE_HOME_DIRECTORY",
@@ -627,7 +727,11 @@
 				}
 			],
 			"type" : "INTERNAL",
+<<<<<<<< HEAD:ProjectTester/FleetManagerTest/cmake-build-debug/.cmake/api/v1/reply/cache-v2-6cc35cfe9ab982459708.json
 			"value" : "/home/dinis/CLionProjects/fsoft2025_1DA_2_definitivo/ProjectTester/FleetManagerTest"
+========
+			"value" : "C:/Projects/fsoft2025_1DA_2/ProjectTester/FleetManagerTest"
+>>>>>>>> origin/master:ProjectTester/FleetManagerTest/cmake-build-debug/.cmake/api/v1/reply/cache-v2-06377fb173d4035ec0e7.json
 		},
 		{
 			"name" : "CMAKE_INSTALL_BINDIR",
@@ -831,7 +935,7 @@
 				}
 			],
 			"type" : "PATH",
-			"value" : "/usr/local"
+			"value" : "C:/Program Files (x86)/FleetManagerTest"
 		},
 		{
 			"name" : "CMAKE_INSTALL_RUNSTATEDIR",
@@ -923,7 +1027,11 @@
 				}
 			],
 			"type" : "FILEPATH",
+<<<<<<<< HEAD:ProjectTester/FleetManagerTest/cmake-build-debug/.cmake/api/v1/reply/cache-v2-6cc35cfe9ab982459708.json
 			"value" : "/usr/bin/ld"
+========
+			"value" : "C:/msys64/ucrt64/bin/ld.exe"
+>>>>>>>> origin/master:ProjectTester/FleetManagerTest/cmake-build-debug/.cmake/api/v1/reply/cache-v2-06377fb173d4035ec0e7.json
 		},
 		{
 			"name" : "CMAKE_MAKE_PROGRAM",
@@ -938,8 +1046,13 @@
 					"value" : "Path to a program."
 				}
 			],
+<<<<<<<< HEAD:ProjectTester/FleetManagerTest/cmake-build-debug/.cmake/api/v1/reply/cache-v2-6cc35cfe9ab982459708.json
 			"type" : "FILEPATH",
 			"value" : "/usr/bin/gmake"
+========
+			"type" : "UNINITIALIZED",
+			"value" : "C:/msys64/ucrt64/bin/mingw32-make.exe"
+>>>>>>>> origin/master:ProjectTester/FleetManagerTest/cmake-build-debug/.cmake/api/v1/reply/cache-v2-06377fb173d4035ec0e7.json
 		},
 		{
 			"name" : "CMAKE_MODULE_LINKER_FLAGS",
@@ -1035,7 +1148,11 @@
 				}
 			],
 			"type" : "FILEPATH",
+<<<<<<<< HEAD:ProjectTester/FleetManagerTest/cmake-build-debug/.cmake/api/v1/reply/cache-v2-6cc35cfe9ab982459708.json
 			"value" : "/usr/bin/nm"
+========
+			"value" : "C:/msys64/ucrt64/bin/nm.exe"
+>>>>>>>> origin/master:ProjectTester/FleetManagerTest/cmake-build-debug/.cmake/api/v1/reply/cache-v2-06377fb173d4035ec0e7.json
 		},
 		{
 			"name" : "CMAKE_NUMBER_OF_MAKEFILES",
@@ -1063,7 +1180,11 @@
 				}
 			],
 			"type" : "FILEPATH",
+<<<<<<<< HEAD:ProjectTester/FleetManagerTest/cmake-build-debug/.cmake/api/v1/reply/cache-v2-6cc35cfe9ab982459708.json
 			"value" : "/usr/bin/objcopy"
+========
+			"value" : "C:/msys64/ucrt64/bin/objcopy.exe"
+>>>>>>>> origin/master:ProjectTester/FleetManagerTest/cmake-build-debug/.cmake/api/v1/reply/cache-v2-06377fb173d4035ec0e7.json
 		},
 		{
 			"name" : "CMAKE_OBJDUMP",
@@ -1079,7 +1200,11 @@
 				}
 			],
 			"type" : "FILEPATH",
+<<<<<<<< HEAD:ProjectTester/FleetManagerTest/cmake-build-debug/.cmake/api/v1/reply/cache-v2-6cc35cfe9ab982459708.json
 			"value" : "/usr/bin/objdump"
+========
+			"value" : "C:/msys64/ucrt64/bin/objdump.exe"
+>>>>>>>> origin/master:ProjectTester/FleetManagerTest/cmake-build-debug/.cmake/api/v1/reply/cache-v2-06377fb173d4035ec0e7.json
 		},
 		{
 			"name" : "CMAKE_PLATFORM_INFO_INITIALIZED",
@@ -1203,7 +1328,119 @@
 				}
 			],
 			"type" : "FILEPATH",
+<<<<<<<< HEAD:ProjectTester/FleetManagerTest/cmake-build-debug/.cmake/api/v1/reply/cache-v2-6cc35cfe9ab982459708.json
 			"value" : "/usr/bin/ranlib"
+========
+			"value" : "C:/msys64/ucrt64/bin/ranlib.exe"
+		},
+		{
+			"name" : "CMAKE_RC_COMPILER",
+			"properties" : 
+			[
+				{
+					"name" : "ADVANCED",
+					"value" : "1"
+				},
+				{
+					"name" : "HELPSTRING",
+					"value" : "RC compiler"
+				}
+			],
+			"type" : "FILEPATH",
+			"value" : "C:/msys64/ucrt64/bin/windres.exe"
+		},
+		{
+			"name" : "CMAKE_RC_COMPILER_WORKS",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : ""
+				}
+			],
+			"type" : "INTERNAL",
+			"value" : "1"
+		},
+		{
+			"name" : "CMAKE_RC_FLAGS",
+			"properties" : 
+			[
+				{
+					"name" : "ADVANCED",
+					"value" : "1"
+				},
+				{
+					"name" : "HELPSTRING",
+					"value" : "Flags for Windows Resource Compiler during all build types."
+				}
+			],
+			"type" : "STRING",
+			"value" : ""
+		},
+		{
+			"name" : "CMAKE_RC_FLAGS_DEBUG",
+			"properties" : 
+			[
+				{
+					"name" : "ADVANCED",
+					"value" : "1"
+				},
+				{
+					"name" : "HELPSTRING",
+					"value" : "Flags for Windows Resource Compiler during DEBUG builds."
+				}
+			],
+			"type" : "STRING",
+			"value" : ""
+		},
+		{
+			"name" : "CMAKE_RC_FLAGS_MINSIZEREL",
+			"properties" : 
+			[
+				{
+					"name" : "ADVANCED",
+					"value" : "1"
+				},
+				{
+					"name" : "HELPSTRING",
+					"value" : "Flags for Windows Resource Compiler during MINSIZEREL builds."
+				}
+			],
+			"type" : "STRING",
+			"value" : ""
+		},
+		{
+			"name" : "CMAKE_RC_FLAGS_RELEASE",
+			"properties" : 
+			[
+				{
+					"name" : "ADVANCED",
+					"value" : "1"
+				},
+				{
+					"name" : "HELPSTRING",
+					"value" : "Flags for Windows Resource Compiler during RELEASE builds."
+				}
+			],
+			"type" : "STRING",
+			"value" : ""
+		},
+		{
+			"name" : "CMAKE_RC_FLAGS_RELWITHDEBINFO",
+			"properties" : 
+			[
+				{
+					"name" : "ADVANCED",
+					"value" : "1"
+				},
+				{
+					"name" : "HELPSTRING",
+					"value" : "Flags for Windows Resource Compiler during RELWITHDEBINFO builds."
+				}
+			],
+			"type" : "STRING",
+			"value" : ""
+>>>>>>>> origin/master:ProjectTester/FleetManagerTest/cmake-build-debug/.cmake/api/v1/reply/cache-v2-06377fb173d4035ec0e7.json
 		},
 		{
 			"name" : "CMAKE_READELF",
@@ -1219,7 +1456,11 @@
 				}
 			],
 			"type" : "FILEPATH",
+<<<<<<<< HEAD:ProjectTester/FleetManagerTest/cmake-build-debug/.cmake/api/v1/reply/cache-v2-6cc35cfe9ab982459708.json
 			"value" : "/usr/bin/readelf"
+========
+			"value" : "C:/msys64/ucrt64/bin/readelf.exe"
+>>>>>>>> origin/master:ProjectTester/FleetManagerTest/cmake-build-debug/.cmake/api/v1/reply/cache-v2-06377fb173d4035ec0e7.json
 		},
 		{
 			"name" : "CMAKE_ROOT",
@@ -1231,7 +1472,11 @@
 				}
 			],
 			"type" : "INTERNAL",
+<<<<<<<< HEAD:ProjectTester/FleetManagerTest/cmake-build-debug/.cmake/api/v1/reply/cache-v2-6cc35cfe9ab982459708.json
 			"value" : "/home/dinis/Downloads/clion/clion-2024.3.4/bin/cmake/linux/x64/share/cmake-3.30"
+========
+			"value" : "C:/Program Files/JetBrains/CLion 2024.3.3/bin/cmake/win/aarch64/share/cmake-3.31"
+>>>>>>>> origin/master:ProjectTester/FleetManagerTest/cmake-build-debug/.cmake/api/v1/reply/cache-v2-06377fb173d4035ec0e7.json
 		},
 		{
 			"name" : "CMAKE_SHARED_LINKER_FLAGS",
@@ -1439,7 +1684,11 @@
 				}
 			],
 			"type" : "FILEPATH",
+<<<<<<<< HEAD:ProjectTester/FleetManagerTest/cmake-build-debug/.cmake/api/v1/reply/cache-v2-6cc35cfe9ab982459708.json
 			"value" : "/usr/bin/strip"
+========
+			"value" : "C:/msys64/ucrt64/bin/strip.exe"
+>>>>>>>> origin/master:ProjectTester/FleetManagerTest/cmake-build-debug/.cmake/api/v1/reply/cache-v2-06377fb173d4035ec0e7.json
 		},
 		{
 			"name" : "CMAKE_TAPI",
@@ -1456,6 +1705,7 @@
 			],
 			"type" : "FILEPATH",
 			"value" : "CMAKE_TAPI-NOTFOUND"
+<<<<<<<< HEAD:ProjectTester/FleetManagerTest/cmake-build-debug/.cmake/api/v1/reply/cache-v2-6cc35cfe9ab982459708.json
 		},
 		{
 			"name" : "CMAKE_UNAME",
@@ -1468,6 +1718,8 @@
 			],
 			"type" : "INTERNAL",
 			"value" : "/usr/bin/uname"
+========
+>>>>>>>> origin/master:ProjectTester/FleetManagerTest/cmake-build-debug/.cmake/api/v1/reply/cache-v2-06377fb173d4035ec0e7.json
 		},
 		{
 			"name" : "CMAKE_VERBOSE_MAKEFILE",
@@ -1486,18 +1738,6 @@
 			"value" : "FALSE"
 		},
 		{
-			"name" : "FIND_PACKAGE_MESSAGE_DETAILS_Threads",
-			"properties" : 
-			[
-				{
-					"name" : "HELPSTRING",
-					"value" : "Details about finding Threads"
-				}
-			],
-			"type" : "INTERNAL",
-			"value" : "[TRUE][v()]"
-		},
-		{
 			"name" : "FleetManagerTest_BINARY_DIR",
 			"properties" : 
 			[
@@ -1507,7 +1747,11 @@
 				}
 			],
 			"type" : "STATIC",
+<<<<<<<< HEAD:ProjectTester/FleetManagerTest/cmake-build-debug/.cmake/api/v1/reply/cache-v2-6cc35cfe9ab982459708.json
 			"value" : "/home/dinis/CLionProjects/fsoft2025_1DA_2_definitivo/ProjectTester/FleetManagerTest/cmake-build-debug"
+========
+			"value" : "C:/Projects/fsoft2025_1DA_2/ProjectTester/FleetManagerTest/cmake-build-debug"
+>>>>>>>> origin/master:ProjectTester/FleetManagerTest/cmake-build-debug/.cmake/api/v1/reply/cache-v2-06377fb173d4035ec0e7.json
 		},
 		{
 			"name" : "FleetManagerTest_IS_TOP_LEVEL",
@@ -1531,7 +1775,11 @@
 				}
 			],
 			"type" : "STATIC",
+<<<<<<<< HEAD:ProjectTester/FleetManagerTest/cmake-build-debug/.cmake/api/v1/reply/cache-v2-6cc35cfe9ab982459708.json
 			"value" : "/home/dinis/CLionProjects/fsoft2025_1DA_2_definitivo/ProjectTester/FleetManagerTest"
+========
+			"value" : "C:/Projects/fsoft2025_1DA_2/ProjectTester/FleetManagerTest"
+>>>>>>>> origin/master:ProjectTester/FleetManagerTest/cmake-build-debug/.cmake/api/v1/reply/cache-v2-06377fb173d4035ec0e7.json
 		},
 		{
 			"name" : "GTEST_HAS_ABSL",
@@ -1558,6 +1806,33 @@
 			"value" : "ON"
 		},
 		{
+<<<<<<<< HEAD:ProjectTester/FleetManagerTest/cmake-build-debug/.cmake/api/v1/reply/cache-v2-6cc35cfe9ab982459708.json
+========
+			"name" : "_CMAKE_CXX_LINKER_PUSHPOP_STATE_SUPPORTED",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : "linker supports push/pop state"
+				}
+			],
+			"type" : "INTERNAL",
+			"value" : "TRUE"
+		},
+		{
+			"name" : "_CMAKE_C_LINKER_PUSHPOP_STATE_SUPPORTED",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : "linker supports push/pop state"
+				}
+			],
+			"type" : "INTERNAL",
+			"value" : "TRUE"
+		},
+		{
+>>>>>>>> origin/master:ProjectTester/FleetManagerTest/cmake-build-debug/.cmake/api/v1/reply/cache-v2-06377fb173d4035ec0e7.json
 			"name" : "_CMAKE_LINKER_PUSHPOP_STATE_SUPPORTED",
 			"properties" : 
 			[
@@ -1579,7 +1854,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "/usr/local"
+			"value" : "C:/Program Files (x86)/FleetManagerTest"
 		},
 		{
 			"name" : "cmake_package_name",
@@ -1603,7 +1878,11 @@
 				}
 			],
 			"type" : "INTERNAL",
+<<<<<<<< HEAD:ProjectTester/FleetManagerTest/cmake-build-debug/.cmake/api/v1/reply/cache-v2-6cc35cfe9ab982459708.json
 			"value" : "/home/dinis/CLionProjects/fsoft2025_1DA_2_definitivo/ProjectTester/FleetManagerTest/cmake-build-debug/googleTestLib/googletest-main/googletest/generated"
+========
+			"value" : "C:/Projects/fsoft2025_1DA_2/ProjectTester/FleetManagerTest/cmake-build-debug/googleTestLib/googletest-main/googletest/generated"
+>>>>>>>> origin/master:ProjectTester/FleetManagerTest/cmake-build-debug/.cmake/api/v1/reply/cache-v2-06377fb173d4035ec0e7.json
 		},
 		{
 			"name" : "gmock_BINARY_DIR",
@@ -1615,7 +1894,11 @@
 				}
 			],
 			"type" : "STATIC",
+<<<<<<<< HEAD:ProjectTester/FleetManagerTest/cmake-build-debug/.cmake/api/v1/reply/cache-v2-6cc35cfe9ab982459708.json
 			"value" : "/home/dinis/CLionProjects/fsoft2025_1DA_2_definitivo/ProjectTester/FleetManagerTest/cmake-build-debug/googleTestLib/googletest-main/googlemock"
+========
+			"value" : "C:/Projects/fsoft2025_1DA_2/ProjectTester/FleetManagerTest/cmake-build-debug/googleTestLib/googletest-main/googlemock"
+>>>>>>>> origin/master:ProjectTester/FleetManagerTest/cmake-build-debug/.cmake/api/v1/reply/cache-v2-06377fb173d4035ec0e7.json
 		},
 		{
 			"name" : "gmock_IS_TOP_LEVEL",
@@ -1639,7 +1922,11 @@
 				}
 			],
 			"type" : "STATIC",
+<<<<<<<< HEAD:ProjectTester/FleetManagerTest/cmake-build-debug/.cmake/api/v1/reply/cache-v2-6cc35cfe9ab982459708.json
 			"value" : "/home/dinis/CLionProjects/fsoft2025_1DA_2_definitivo/ProjectTester/FleetManagerTest/googleTestLib/googletest-main/googlemock"
+========
+			"value" : "C:/Projects/fsoft2025_1DA_2/ProjectTester/FleetManagerTest/googleTestLib/googletest-main/googlemock"
+>>>>>>>> origin/master:ProjectTester/FleetManagerTest/cmake-build-debug/.cmake/api/v1/reply/cache-v2-06377fb173d4035ec0e7.json
 		},
 		{
 			"name" : "gmock_build_tests",
@@ -1667,7 +1954,11 @@
 				}
 			],
 			"type" : "STATIC",
+<<<<<<<< HEAD:ProjectTester/FleetManagerTest/cmake-build-debug/.cmake/api/v1/reply/cache-v2-6cc35cfe9ab982459708.json
 			"value" : "/home/dinis/CLionProjects/fsoft2025_1DA_2_definitivo/ProjectTester/FleetManagerTest/cmake-build-debug/googleTestLib/googletest-main"
+========
+			"value" : "C:/Projects/fsoft2025_1DA_2/ProjectTester/FleetManagerTest/cmake-build-debug/googleTestLib/googletest-main"
+>>>>>>>> origin/master:ProjectTester/FleetManagerTest/cmake-build-debug/.cmake/api/v1/reply/cache-v2-06377fb173d4035ec0e7.json
 		},
 		{
 			"name" : "googletest-distribution_IS_TOP_LEVEL",
@@ -1691,7 +1982,11 @@
 				}
 			],
 			"type" : "STATIC",
+<<<<<<<< HEAD:ProjectTester/FleetManagerTest/cmake-build-debug/.cmake/api/v1/reply/cache-v2-6cc35cfe9ab982459708.json
 			"value" : "/home/dinis/CLionProjects/fsoft2025_1DA_2_definitivo/ProjectTester/FleetManagerTest/googleTestLib/googletest-main"
+========
+			"value" : "C:/Projects/fsoft2025_1DA_2/ProjectTester/FleetManagerTest/googleTestLib/googletest-main"
+>>>>>>>> origin/master:ProjectTester/FleetManagerTest/cmake-build-debug/.cmake/api/v1/reply/cache-v2-06377fb173d4035ec0e7.json
 		},
 		{
 			"name" : "gtest_BINARY_DIR",
@@ -1703,7 +1998,11 @@
 				}
 			],
 			"type" : "STATIC",
+<<<<<<<< HEAD:ProjectTester/FleetManagerTest/cmake-build-debug/.cmake/api/v1/reply/cache-v2-6cc35cfe9ab982459708.json
 			"value" : "/home/dinis/CLionProjects/fsoft2025_1DA_2_definitivo/ProjectTester/FleetManagerTest/cmake-build-debug/googleTestLib/googletest-main/googletest"
+========
+			"value" : "C:/Projects/fsoft2025_1DA_2/ProjectTester/FleetManagerTest/cmake-build-debug/googleTestLib/googletest-main/googletest"
+>>>>>>>> origin/master:ProjectTester/FleetManagerTest/cmake-build-debug/.cmake/api/v1/reply/cache-v2-06377fb173d4035ec0e7.json
 		},
 		{
 			"name" : "gtest_IS_TOP_LEVEL",
@@ -1727,7 +2026,11 @@
 				}
 			],
 			"type" : "STATIC",
+<<<<<<<< HEAD:ProjectTester/FleetManagerTest/cmake-build-debug/.cmake/api/v1/reply/cache-v2-6cc35cfe9ab982459708.json
 			"value" : "/home/dinis/CLionProjects/fsoft2025_1DA_2_definitivo/ProjectTester/FleetManagerTest/googleTestLib/googletest-main/googletest"
+========
+			"value" : "C:/Projects/fsoft2025_1DA_2/ProjectTester/FleetManagerTest/googleTestLib/googletest-main/googletest"
+>>>>>>>> origin/master:ProjectTester/FleetManagerTest/cmake-build-debug/.cmake/api/v1/reply/cache-v2-06377fb173d4035ec0e7.json
 		},
 		{
 			"name" : "gtest_build_samples",
