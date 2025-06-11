@@ -8,7 +8,7 @@
             "inspectionCost": 24.99,
             "inspectionDate": "6/3/2025",
             "inspectionID": 1,
-            "inspectionToday": "1/1/2020",
+            "inspectionToday": "11/6/2025",
             "insuranceEndDate": "15/8/2034",
             "insuranceID": 1,
             "insuranceMonthlyCost": 23.87,
@@ -64,6 +64,27 @@
             "spaceCapacity": 20.0,
             "vslID": -1,
             "year": 2025
+        },
+        {
+            "available": true,
+            "brand": "BMW",
+            "category": "VAN",
+            "fuel": 80.0,
+            "inspectionCost": 30.0,
+            "inspectionDate": "10/6/2025",
+            "inspectionID": 1,
+            "inspectionToday": "11/6/2025",
+            "insuranceEndDate": "11/6/2026",
+            "insuranceID": 1,
+            "insuranceMonthlyCost": 30.0,
+            "insuranceStartDate": "11/6/2025",
+            "insuranceToday": "11/6/2025",
+            "licensePlate": "25-qi-56",
+            "mileage": 140000.0,
+            "model": "Serie1",
+            "spaceCapacity": 100.0,
+            "vslID": -1,
+            "year": 2015
         }
     ]
 }

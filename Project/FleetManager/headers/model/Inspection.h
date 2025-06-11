@@ -38,7 +38,7 @@ class Inspection {
     void setToday(const Date &date);
 
     bool isDued();
-    int getRemainingDays() const;
+    int getRemainingDays();
     void updateToday();
 };
 

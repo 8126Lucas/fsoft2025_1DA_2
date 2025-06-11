@@ -8,7 +8,7 @@
 
 using namespace std;
 
-Trip::Trip() : state(), id(), order(nullptr), driver(nullptr), vehicle(nullptr), kilometers(0), fuel(0), fuelCost(0),
+Trip::Trip() : state(SUPRESSED), id(), order(nullptr), driver(nullptr), vehicle(nullptr), kilometers(0), fuel(0), fuelCost(0),
                fines(0),
                cost(0),
                tolls(0) {

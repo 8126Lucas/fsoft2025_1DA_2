@@ -20,8 +20,8 @@ class TripTest : public ::testing::Test {
 
 TEST_F(TripTest, ConstructorAndInicialization){
   //Assert
-  EXPECT_EQ(trip->getID(), 1);
-  EXPECT_EQ(trip->getState(), STATE::INCOMING);
+  EXPECT_EQ(trip->getID(), 0);
+  EXPECT_EQ(trip->getState(), STATE::SUPRESSED);
   EXPECT_EQ(trip->getOrder(), nullptr);
   EXPECT_EQ(trip->getDriver(), nullptr);
   EXPECT_EQ(trip->getVehicle(), nullptr);

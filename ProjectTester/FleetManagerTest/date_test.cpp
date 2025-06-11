@@ -23,7 +23,7 @@ TEST(DateConstructorTest, InvalidDate){
   try{
     Date date(2, 13, 1996);
   }catch(InvalidDataException& error){
-    bool flag = true;
+    flag = true;
   }
   EXPECT_TRUE(flag);
 }

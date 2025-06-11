@@ -70,10 +70,6 @@ bool Inspection::isDued() {
     return false;
 }
 
-int Inspection::getRemainingDays() const {
-    return this->date - this->today;
-}
-
 void Inspection::updateToday() {
     try {
         this->today = Date::getToday();
@@ -81,4 +77,9 @@ void Inspection::updateToday() {
         cout << error.what() << endl;
         this->today = Date(1, 1, 2026);
     }
+}
+
+int Inspection::getRemainingDays() {
+    updateToday();
+    return this->date - this->today;
 }
