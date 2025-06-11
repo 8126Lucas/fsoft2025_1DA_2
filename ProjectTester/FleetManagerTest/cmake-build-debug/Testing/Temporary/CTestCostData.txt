@@ -1,0 +1,18 @@
+DateConstructorTest.ValidDate 6 0.00166555
+DateConstructorTest.InvalidDate 6 0.00107436
+DateSetTest.ValidDate 6 0.00107003
+DateSetTest.InvalidDate 6 0.0011861
+DateEqualTest.EqualDate 6 0.00116978
+DateOperatorHigherTest.HigherDate 6 0.00132665
+DateOperatorHigherTest.LowerDate 6 0.00103556
+DateOperatorLowerTest.HigherDate 6 0.00111699
+DateOperatorLowerTest.LowerDate 6 0.00106017
+TripTest.ConstructorAndInicialization 6 0.00107236
+TripTest.TestSetTrip 6 0.00117241
+TripTest.TripSuppressedState 6 0.00103384
+TripTest.TripIncomingState 6 0.00100972
+TripTest.TripDeliveredState 6 0.000974326
+TripTest.TripFailedState 6 0.000879271
+driverTest.ConstructorAndInicialization 1 0.005584
+driverTest.TestSetDriver 2 0.00280975
+---
