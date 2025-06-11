@@ -1,0 +1,10 @@
+/home/dinis/Downloads/clion/clion-2024.3.4/bin/cmake/linux/x64/bin/cmake -DCMAKE_BUILD_TYPE=Debug -DCMAKE_MAKE_PROGRAM=/home/dinis/Downloads/clion/clion-2024.3.4/bin/ninja/linux/x64/ninja -S /home/dinis/CLionProjects/fsoft2025_1DA_2_definitivo/ProjectTester/googletest-main/CMakeLists.txt -G Ninja -S /home/dinis/CLionProjects/fsoft2025_1DA_2_definitivo/Project/FleetManager -B /home/dinis/CLionProjects/fsoft2025_1DA_2_definitivo/Project/FleetManager/cmake-build-debug_google
+CMake Warning:
+  Ignoring extra path from command line:
+
+   "/home/dinis/CLionProjects/fsoft2025_1DA_2_definitivo/ProjectTester/googletest-main/CMakeLists.txt"
+
+
+-- Configuring done (0.0s)
+-- Generating done (0.0s)
+-- Build files have been written to: /home/dinis/CLionProjects/fsoft2025_1DA_2_definitivo/Project/FleetManager/cmake-build-debug_google

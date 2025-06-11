@@ -61,6 +61,7 @@ enable_testing()
 
 
 add_executable(runTests
+        order_test.cpp
         date_test.cpp
         trip_test.cpp
         driver_test.cpp

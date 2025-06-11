@@ -1,0 +1,11 @@
+{
+"rules": [
+{
+"primary-output": "CMakeFiles/FleetManager.dir/sources/exceptions/NonExistingDataException.cpp.o",
+"requires": [
+]
+}
+],
+"version": 0,
+"revision": 0
+}

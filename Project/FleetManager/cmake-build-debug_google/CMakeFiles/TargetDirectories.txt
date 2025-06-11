@@ -1,0 +1,3 @@
+/home/dinis/CLionProjects/fsoft2025_1DA_2_definitivo/Project/FleetManager/cmake-build-debug_google/CMakeFiles/FleetManager.dir
+/home/dinis/CLionProjects/fsoft2025_1DA_2_definitivo/Project/FleetManager/cmake-build-debug_google/CMakeFiles/edit_cache.dir
+/home/dinis/CLionProjects/fsoft2025_1DA_2_definitivo/Project/FleetManager/cmake-build-debug_google/CMakeFiles/rebuild_cache.dir
