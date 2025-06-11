@@ -11,9 +11,6 @@
 class driverTest : public ::testing::Test {
 protected:
     void SetUp() override {
-        //int id = 1;
-        //char license = 'C';
-        //int age = 30;
         driver = new Driver();
     }
 
@@ -36,7 +33,7 @@ TEST_F(driverTest, ConstructorAndInicialization) {
 TEST_F(driverTest, TestSetDriver) {
     int newId = 100;
     char newLicense = 'B';
-    int newAge = 40;
+    int newAge = 30;
     int newTimeToRetire = 65 - newAge;
     bool newAvailability = false;
 
@@ -45,11 +42,54 @@ TEST_F(driverTest, TestSetDriver) {
     driver->setAge(newAge);
     driver->setTimeToRetire(newTimeToRetire);
     driver->setAvailability(newAvailability);
-    //vacations?
 
     EXPECT_EQ(driver->getID(), newId);
     EXPECT_EQ(driver->getLicense(), newLicense);
     EXPECT_EQ(driver->getAge(), newAge);
     EXPECT_EQ(driver->getTimeToRetire(), newTimeToRetire);
     EXPECT_FALSE(driver->getAvailability());
+}
+
+class vacationTest : public ::testing::Test {
+protected:
+    void SetUp() override {
+        vacation = new Vacation;
+    }
+    void TearDown() override {
+        delete vacation;
+        vacation = nullptr;
+    }
+    Vacation *vacation;
+};
+
+TEST_F(vacationTest, ConstructorAndInicialization) {
+    EXPECT_EQ(vacation->getID(), 0);
+    EXPECT_EQ(vacation->getDriver(), nullptr);
+    Date dateteste;
+    EXPECT_EQ(vacation->getStartDate(), dateteste);
+    EXPECT_EQ(vacation->getEndDate(), dateteste);
+    EXPECT_FALSE(vacation->getStatus());
+}
+
+TEST_F(vacationTest, TestSetVacation) {
+    int newId = 100;
+    Driver* testDriver = new Driver();
+    Date newStartDate;
+    Date newEndDate;
+    Date today = Date::getToday();
+    bool newStatus = false;
+
+    vacation->setID(newId);
+    vacation->setDriver(testDriver);
+    vacation->setStartDate(newStartDate);
+    vacation->setEndDate(newEndDate);
+    vacation->setStatus(newStatus);
+
+    EXPECT_EQ(vacation->getID(), newId);
+    EXPECT_EQ(vacation->getDriver(), testDriver);
+    EXPECT_EQ(vacation->getStartDate(), newStartDate);
+    EXPECT_EQ(vacation->getEndDate(), newEndDate);
+    EXPECT_FALSE(vacation->getStatus());
+
+    delete testDriver;
 }

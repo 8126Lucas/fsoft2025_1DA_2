@@ -18,6 +18,7 @@ Driver::Driver(int id, char &license, int age) : available(true) {
     this->id = id;
     this->license = license;
     this->age= age;
+    this->timeToRetire = 65;
 }
 
 Driver::~Driver() {}
