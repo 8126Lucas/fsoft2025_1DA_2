@@ -9,7 +9,7 @@
 
 class VacationView {
 public:
-    static Vacation addVacation(DriverContainer &container);
+    static Vacation *addVacation(DriverContainer &container);
     static int removeVacation();
 };
 

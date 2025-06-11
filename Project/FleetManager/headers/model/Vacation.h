@@ -29,7 +29,7 @@ public:
     bool getStatus() const;
 
     void setID(int id);
-    void setDriver(Driver &driver);
+    void setDriver(Driver *driver);
     void setStartDate(Date startDate);
     void setEndDate(Date endDate);
     void setStatus(bool status);

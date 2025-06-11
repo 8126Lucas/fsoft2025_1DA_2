@@ -7,8 +7,8 @@
 #include "InvalidDataException.h"
 #include "Utils.h"
 
-Vacation VacationView::addVacation(DriverContainer &container) {
-    Vacation vacation = Vacation();
+Vacation *VacationView::addVacation(DriverContainer &container) {
+    Vacation *vacation = new Vacation();
     bool flag_error = false;
     do {
         try {
@@ -18,14 +18,14 @@ Vacation VacationView::addVacation(DriverContainer &container) {
             Driver *driver = Utils::getDriver(container, "Driver's ID");
             Date startDate = Utils::getDate("Start Date");
             Date endDate = Utils::getDate("End Date");
-            vacation.setID(id);
-            vacation.setDriver(*driver);
-            vacation.setStartDate(startDate);
-            vacation.setEndDate(endDate);
+            vacation->setID(id);
+            vacation->setDriver(driver);
+            vacation->setStartDate(startDate);
+            vacation->setEndDate(endDate);
             if (startDate > today || endDate < today) {
-                vacation.setStatus(false);
+                vacation->setStatus(false);
             } else {
-                vacation.setStatus(true);
+                vacation->setStatus(true);
             }
         } catch (InvalidDataException &error) {
             cout << error.what() << endl;

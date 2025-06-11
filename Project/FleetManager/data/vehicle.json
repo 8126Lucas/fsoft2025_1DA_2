@@ -1,6 +1,69 @@
 {
     "trucks": [
-
+        {
+            "available": true,
+            "brand": "ABC",
+            "category": "TRUCK",
+            "fuel": 45.0,
+            "inspectionCost": 24.99,
+            "inspectionDate": "6/3/2025",
+            "inspectionID": 1,
+            "inspectionToday": "1/1/2020",
+            "insuranceEndDate": "15/8/2034",
+            "insuranceID": 1,
+            "insuranceMonthlyCost": 23.87,
+            "insuranceStartDate": "7/5/2022",
+            "insuranceToday": "11/6/2025",
+            "licensePlate": "00-00-01",
+            "mileage": 23059.0,
+            "model": "XYZ",
+            "vslID": -1,
+            "weightCapacity": 2000.0,
+            "year": 2000
+        },
+        {
+            "available": true,
+            "brand": "TOTAL",
+            "category": "TRUCK",
+            "fuel": 67.0,
+            "inspectionCost": -1,
+            "inspectionDate": "no date",
+            "inspectionID": -1,
+            "inspectionToday": "no date",
+            "insuranceEndDate": "no date",
+            "insuranceID": -1,
+            "insuranceMonthlyCost": -1,
+            "insuranceStartDate": "no date",
+            "insuranceToday": "no date",
+            "licensePlate": "00-00-03",
+            "mileage": 76456.0,
+            "model": "20",
+            "vslID": -1,
+            "weightCapacity": 3527.0,
+            "year": 2009
+        }
     ],
-    "vans": []
+    "vans": [
+        {
+            "available": true,
+            "brand": "GUNA",
+            "category": "VAN",
+            "fuel": 23.0,
+            "inspectionCost": -1,
+            "inspectionDate": "no date",
+            "inspectionID": -1,
+            "inspectionToday": "no date",
+            "insuranceEndDate": "no date",
+            "insuranceID": -1,
+            "insuranceMonthlyCost": -1,
+            "insuranceStartDate": "no date",
+            "insuranceToday": "no date",
+            "licensePlate": "00-00-02",
+            "mileage": 543667.0,
+            "model": "MASTER",
+            "spaceCapacity": 20.0,
+            "vslID": -1,
+            "year": 2025
+        }
+    ]
 }

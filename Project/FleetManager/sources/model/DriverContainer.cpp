@@ -69,10 +69,10 @@ list<Driver> DriverContainer::listAvailableDrivers(bool available) {
   return newList;
 }
 
-void DriverContainer::update(int id, Vacation vacation) {
+void DriverContainer::update(int id, Vacation *vacation) {
   list<Driver>::iterator it = search(id);
   if (it != this->drivers.end()) {
-    it->getVacations().push_back(&vacation);
+    it->setVacation(vacation);
   } else {
     throw NonExistingDataException("Driver(id): " + to_string(id));
   }

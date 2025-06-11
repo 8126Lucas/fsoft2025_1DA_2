@@ -4,6 +4,8 @@
 
 #include "DriverSerialization.h"
 
+#include "DriverContainer.h"
+
 void DriverSerialization::toJSON(json &j, const Driver &driver) {
     j["id"] = driver.getID();
     char licenseChar = driver.getLicense();
@@ -14,17 +16,16 @@ void DriverSerialization::toJSON(json &j, const Driver &driver) {
     j["available"] = driver.getAvailability();
 
     j["vacations"] = json::array();
-    if (driver.getVacations().empty()) {
-        for(list<Vacation *>::iterator it = driver.getVacations().begin(); it != driver.getVacations().end(); ++it) {
-            json vacationJSON;
+    for(Vacation *vacation : driver.getVacations()) {
+        json vacationJSON;
 
-            vacationJSON["id"] = (*it)->getID();
-            vacationJSON["startDate"] = (*it)->getStartDate().dateToString();
-            vacationJSON["endDate"] = (*it)->getEndDate().dateToString();
-            vacationJSON["status"] = (*it)->getStatus();
+        vacationJSON["id"] = vacation->getID();
+        vacationJSON["driverID"] = vacation->getDriver()->getID();
+        vacationJSON["startDate"] = vacation->getStartDate().dateToString();
+        vacationJSON["endDate"] = vacation->getEndDate().dateToString();
+        vacationJSON["status"] = vacation->getStatus();
 
-            j["vacations"].push_back(vacationJSON);
-        }
+        j["vacations"].push_back(vacationJSON);
     }
 }
 
@@ -34,19 +35,16 @@ void DriverSerialization::fromJSON(const json &j, Driver &driver) {
     char char_license = driver.stringToChar(licenseString);
     driver.setLicense(char_license);
     driver.setAge(j["age"]);
-    driver.setAge(j["timeToRetire"]);
+    driver.setTimeToRetire(j["timeToRetire"]);
     driver.setAvailability(j["available"]);
 
-    if (j["vacations"].is_array() && j["vacations"].size() > 0) {
-        for(list<Vacation *>::iterator it = driver.getVacations().begin(); it != driver.getVacations().end(); ++it) {
-            Vacation* vacation = new Vacation();
-
-            json vacationJSON = j["vacations"];
-
+    if (j["vacations"].is_array() && !j["vacations"].empty()) {
+        for(const basic_json<> &vacationJSON : j["vacations"]) {
+            Vacation *vacation = new Vacation();
             Date startDate;
             Date endDate;
-
             vacation->setID(vacationJSON["id"]);
+            vacation->setDriver(&driver);
             vacation->setStartDate(startDate.stringToDate(vacationJSON["startDate"]));
             vacation->setEndDate(endDate.stringToDate(vacationJSON["endDate"]));
             vacation->setStatus(vacationJSON["status"]);

@@ -216,8 +216,8 @@ void DataContainer::loadAllData() {
     loadVehicles();
     loadVSLs();
     loadDrivers();
-    loadFinancials();
     loadTrips();
+    loadFinancials();
     linkVehicleAndVSL();
 }
 

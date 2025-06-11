@@ -306,8 +306,8 @@ void Controller::runDriver() {
                 break;
             case 6: {
                 DriverContainer &containerDriver = this->model.getDriverContainer();
-                Vacation vacation = this->vacationView.addVacation(containerDriver);
-                containerDriver.update(vacation.getDriver()->getID(), vacation);
+                Vacation *vacation = this->vacationView.addVacation(containerDriver);
+                containerDriver.update(vacation->getDriver()->getID(), vacation);
             }
         }
     } while (op != 0);

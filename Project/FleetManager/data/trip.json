@@ -1,5 +1,17 @@
 {
     "trips": [
-
+        {
+            "cost": 130.0,
+            "driverID": -1,
+            "fines": 0.0,
+            "fuel": 0.0,
+            "fuelCost": 0.0,
+            "id": 1,
+            "km": 0.0,
+            "orderID": 2,
+            "state": "SUPRESSED",
+            "tolls": 0.0,
+            "vehicleLicensePlate": "No Vehicle"
+        }
     ]
 }
