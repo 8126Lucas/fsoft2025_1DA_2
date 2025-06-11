@@ -7,7 +7,7 @@
 #include "FinancialContainer.h"
 #include "FinancialView.h"
 
-Expense::Expense() : amount(0) {}
+Expense::Expense() : id(0), trip(nullptr), amount(0.0), type(FUEL) {}
 
 Expense::Expense(const int id, Trip *trip, Date date, double amount, TYPE type) {
     this->id = id;

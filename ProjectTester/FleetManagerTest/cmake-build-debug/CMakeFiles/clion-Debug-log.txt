@@ -1,4 +1,5 @@
 "C:\Program Files\JetBrains\CLion 2024.3.3\bin\cmake\win\aarch64\bin\cmake.exe" -DCMAKE_BUILD_TYPE=Debug -DCMAKE_MAKE_PROGRAM=C:/msys64/ucrt64/bin/mingw32-make.exe -DCMAKE_C_COMPILER=C:/msys64/ucrt64/bin/gcc.exe -DCMAKE_CXX_COMPILER=C:/msys64/ucrt64/bin/g++.exe -G "MinGW Makefiles" -S C:\Projects\fsoft2025_1DA_2\ProjectTester\FleetManagerTest -B C:\Projects\fsoft2025_1DA_2\ProjectTester\FleetManagerTest\cmake-build-debug
--- Configuring done (0.1s)
+-- Configuring done (0.4s)
 -- Generating done (0.1s)
 -- Build files have been written to: C:/Projects/fsoft2025_1DA_2/ProjectTester/FleetManagerTest/cmake-build-debug
+CMake File API: C:\Projects\fsoft2025_1DA_2\ProjectTester\FleetManagerTest\cmake-build-debug: failed to load from 'C:\Projects\fsoft2025_1DA_2\ProjectTester\FleetManagerTest\cmake-build-debug\.cmake\api\v1\reply\cache-v2-06377fb173d4035ec0e7.json'

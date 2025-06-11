@@ -52,6 +52,8 @@ set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "C:/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/views/View.cpp" "CMakeFiles/runTests.dir/C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/views/View.cpp.obj" "gcc" "CMakeFiles/runTests.dir/C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/views/View.cpp.obj.d"
   "C:/Projects/fsoft2025_1DA_2/ProjectTester/FleetManagerTest/date_test.cpp" "CMakeFiles/runTests.dir/date_test.cpp.obj" "gcc" "CMakeFiles/runTests.dir/date_test.cpp.obj.d"
   "C:/Projects/fsoft2025_1DA_2/ProjectTester/FleetManagerTest/driver_test.cpp" "CMakeFiles/runTests.dir/driver_test.cpp.obj" "gcc" "CMakeFiles/runTests.dir/driver_test.cpp.obj.d"
+  "C:/Projects/fsoft2025_1DA_2/ProjectTester/FleetManagerTest/financial_test.cpp" "CMakeFiles/runTests.dir/financial_test.cpp.obj" "gcc" "CMakeFiles/runTests.dir/financial_test.cpp.obj.d"
+  "C:/Projects/fsoft2025_1DA_2/ProjectTester/FleetManagerTest/order_test.cpp" "CMakeFiles/runTests.dir/order_test.cpp.obj" "gcc" "CMakeFiles/runTests.dir/order_test.cpp.obj.d"
   "C:/Projects/fsoft2025_1DA_2/ProjectTester/FleetManagerTest/trip_test.cpp" "CMakeFiles/runTests.dir/trip_test.cpp.obj" "gcc" "CMakeFiles/runTests.dir/trip_test.cpp.obj.d"
   )
 

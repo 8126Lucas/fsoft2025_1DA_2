@@ -71,11 +71,26 @@ include CMakeFiles/runTests.dir/flags.make
 CMakeFiles/runTests.dir/codegen:
 .PHONY : CMakeFiles/runTests.dir/codegen
 
+CMakeFiles/runTests.dir/order_test.cpp.obj: CMakeFiles/runTests.dir/flags.make
+CMakeFiles/runTests.dir/order_test.cpp.obj: CMakeFiles/runTests.dir/includes_CXX.rsp
+CMakeFiles/runTests.dir/order_test.cpp.obj: C:/Projects/fsoft2025_1DA_2/ProjectTester/FleetManagerTest/order_test.cpp
+CMakeFiles/runTests.dir/order_test.cpp.obj: CMakeFiles/runTests.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Projects\fsoft2025_1DA_2\ProjectTester\FleetManagerTest\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/runTests.dir/order_test.cpp.obj"
+	C:\msys64\ucrt64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/runTests.dir/order_test.cpp.obj -MF CMakeFiles\runTests.dir\order_test.cpp.obj.d -o CMakeFiles\runTests.dir\order_test.cpp.obj -c C:\Projects\fsoft2025_1DA_2\ProjectTester\FleetManagerTest\order_test.cpp
+
+CMakeFiles/runTests.dir/order_test.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/runTests.dir/order_test.cpp.i"
+	C:\msys64\ucrt64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Projects\fsoft2025_1DA_2\ProjectTester\FleetManagerTest\order_test.cpp > CMakeFiles\runTests.dir\order_test.cpp.i
+
+CMakeFiles/runTests.dir/order_test.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/runTests.dir/order_test.cpp.s"
+	C:\msys64\ucrt64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Projects\fsoft2025_1DA_2\ProjectTester\FleetManagerTest\order_test.cpp -o CMakeFiles\runTests.dir\order_test.cpp.s
+
 CMakeFiles/runTests.dir/date_test.cpp.obj: CMakeFiles/runTests.dir/flags.make
 CMakeFiles/runTests.dir/date_test.cpp.obj: CMakeFiles/runTests.dir/includes_CXX.rsp
 CMakeFiles/runTests.dir/date_test.cpp.obj: C:/Projects/fsoft2025_1DA_2/ProjectTester/FleetManagerTest/date_test.cpp
 CMakeFiles/runTests.dir/date_test.cpp.obj: CMakeFiles/runTests.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Projects\fsoft2025_1DA_2\ProjectTester\FleetManagerTest\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/runTests.dir/date_test.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Projects\fsoft2025_1DA_2\ProjectTester\FleetManagerTest\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/runTests.dir/date_test.cpp.obj"
 	C:\msys64\ucrt64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/runTests.dir/date_test.cpp.obj -MF CMakeFiles\runTests.dir\date_test.cpp.obj.d -o CMakeFiles\runTests.dir\date_test.cpp.obj -c C:\Projects\fsoft2025_1DA_2\ProjectTester\FleetManagerTest\date_test.cpp
 
 CMakeFiles/runTests.dir/date_test.cpp.i: cmake_force
@@ -90,7 +105,7 @@ CMakeFiles/runTests.dir/trip_test.cpp.obj: CMakeFiles/runTests.dir/flags.make
 CMakeFiles/runTests.dir/trip_test.cpp.obj: CMakeFiles/runTests.dir/includes_CXX.rsp
 CMakeFiles/runTests.dir/trip_test.cpp.obj: C:/Projects/fsoft2025_1DA_2/ProjectTester/FleetManagerTest/trip_test.cpp
 CMakeFiles/runTests.dir/trip_test.cpp.obj: CMakeFiles/runTests.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Projects\fsoft2025_1DA_2\ProjectTester\FleetManagerTest\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/runTests.dir/trip_test.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Projects\fsoft2025_1DA_2\ProjectTester\FleetManagerTest\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/runTests.dir/trip_test.cpp.obj"
 	C:\msys64\ucrt64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/runTests.dir/trip_test.cpp.obj -MF CMakeFiles\runTests.dir\trip_test.cpp.obj.d -o CMakeFiles\runTests.dir\trip_test.cpp.obj -c C:\Projects\fsoft2025_1DA_2\ProjectTester\FleetManagerTest\trip_test.cpp
 
 CMakeFiles/runTests.dir/trip_test.cpp.i: cmake_force
@@ -105,7 +120,7 @@ CMakeFiles/runTests.dir/driver_test.cpp.obj: CMakeFiles/runTests.dir/flags.make
 CMakeFiles/runTests.dir/driver_test.cpp.obj: CMakeFiles/runTests.dir/includes_CXX.rsp
 CMakeFiles/runTests.dir/driver_test.cpp.obj: C:/Projects/fsoft2025_1DA_2/ProjectTester/FleetManagerTest/driver_test.cpp
 CMakeFiles/runTests.dir/driver_test.cpp.obj: CMakeFiles/runTests.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Projects\fsoft2025_1DA_2\ProjectTester\FleetManagerTest\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/runTests.dir/driver_test.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Projects\fsoft2025_1DA_2\ProjectTester\FleetManagerTest\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/runTests.dir/driver_test.cpp.obj"
 	C:\msys64\ucrt64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/runTests.dir/driver_test.cpp.obj -MF CMakeFiles\runTests.dir\driver_test.cpp.obj.d -o CMakeFiles\runTests.dir\driver_test.cpp.obj -c C:\Projects\fsoft2025_1DA_2\ProjectTester\FleetManagerTest\driver_test.cpp
 
 CMakeFiles/runTests.dir/driver_test.cpp.i: cmake_force
@@ -116,11 +131,26 @@ CMakeFiles/runTests.dir/driver_test.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/runTests.dir/driver_test.cpp.s"
 	C:\msys64\ucrt64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Projects\fsoft2025_1DA_2\ProjectTester\FleetManagerTest\driver_test.cpp -o CMakeFiles\runTests.dir\driver_test.cpp.s
 
+CMakeFiles/runTests.dir/financial_test.cpp.obj: CMakeFiles/runTests.dir/flags.make
+CMakeFiles/runTests.dir/financial_test.cpp.obj: CMakeFiles/runTests.dir/includes_CXX.rsp
+CMakeFiles/runTests.dir/financial_test.cpp.obj: C:/Projects/fsoft2025_1DA_2/ProjectTester/FleetManagerTest/financial_test.cpp
+CMakeFiles/runTests.dir/financial_test.cpp.obj: CMakeFiles/runTests.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Projects\fsoft2025_1DA_2\ProjectTester\FleetManagerTest\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/runTests.dir/financial_test.cpp.obj"
+	C:\msys64\ucrt64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/runTests.dir/financial_test.cpp.obj -MF CMakeFiles\runTests.dir\financial_test.cpp.obj.d -o CMakeFiles\runTests.dir\financial_test.cpp.obj -c C:\Projects\fsoft2025_1DA_2\ProjectTester\FleetManagerTest\financial_test.cpp
+
+CMakeFiles/runTests.dir/financial_test.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/runTests.dir/financial_test.cpp.i"
+	C:\msys64\ucrt64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Projects\fsoft2025_1DA_2\ProjectTester\FleetManagerTest\financial_test.cpp > CMakeFiles\runTests.dir\financial_test.cpp.i
+
+CMakeFiles/runTests.dir/financial_test.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/runTests.dir/financial_test.cpp.s"
+	C:\msys64\ucrt64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Projects\fsoft2025_1DA_2\ProjectTester\FleetManagerTest\financial_test.cpp -o CMakeFiles\runTests.dir\financial_test.cpp.s
+
 CMakeFiles/runTests.dir/C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/controllers/Controller.cpp.obj: CMakeFiles/runTests.dir/flags.make
 CMakeFiles/runTests.dir/C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/controllers/Controller.cpp.obj: CMakeFiles/runTests.dir/includes_CXX.rsp
 CMakeFiles/runTests.dir/C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/controllers/Controller.cpp.obj: C:/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/controllers/Controller.cpp
 CMakeFiles/runTests.dir/C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/controllers/Controller.cpp.obj: CMakeFiles/runTests.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Projects\fsoft2025_1DA_2\ProjectTester\FleetManagerTest\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/runTests.dir/C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/controllers/Controller.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Projects\fsoft2025_1DA_2\ProjectTester\FleetManagerTest\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/runTests.dir/C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/controllers/Controller.cpp.obj"
 	C:\msys64\ucrt64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/runTests.dir/C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/controllers/Controller.cpp.obj -MF CMakeFiles\runTests.dir\C_\Projects\fsoft2025_1DA_2\Project\FleetManager\sources\controllers\Controller.cpp.obj.d -o CMakeFiles\runTests.dir\C_\Projects\fsoft2025_1DA_2\Project\FleetManager\sources\controllers\Controller.cpp.obj -c C:\Projects\fsoft2025_1DA_2\Project\FleetManager\sources\controllers\Controller.cpp
 
 CMakeFiles/runTests.dir/C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/controllers/Controller.cpp.i: cmake_force
@@ -135,7 +165,7 @@ CMakeFiles/runTests.dir/C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources
 CMakeFiles/runTests.dir/C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/exceptions/NonExistingDataException.cpp.obj: CMakeFiles/runTests.dir/includes_CXX.rsp
 CMakeFiles/runTests.dir/C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/exceptions/NonExistingDataException.cpp.obj: C:/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/exceptions/NonExistingDataException.cpp
 CMakeFiles/runTests.dir/C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/exceptions/NonExistingDataException.cpp.obj: CMakeFiles/runTests.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Projects\fsoft2025_1DA_2\ProjectTester\FleetManagerTest\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/runTests.dir/C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/exceptions/NonExistingDataException.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Projects\fsoft2025_1DA_2\ProjectTester\FleetManagerTest\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/runTests.dir/C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/exceptions/NonExistingDataException.cpp.obj"
 	C:\msys64\ucrt64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/runTests.dir/C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/exceptions/NonExistingDataException.cpp.obj -MF CMakeFiles\runTests.dir\C_\Projects\fsoft2025_1DA_2\Project\FleetManager\sources\exceptions\NonExistingDataException.cpp.obj.d -o CMakeFiles\runTests.dir\C_\Projects\fsoft2025_1DA_2\Project\FleetManager\sources\exceptions\NonExistingDataException.cpp.obj -c C:\Projects\fsoft2025_1DA_2\Project\FleetManager\sources\exceptions\NonExistingDataException.cpp
 
 CMakeFiles/runTests.dir/C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/exceptions/NonExistingDataException.cpp.i: cmake_force
@@ -150,7 +180,7 @@ CMakeFiles/runTests.dir/C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources
 CMakeFiles/runTests.dir/C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/exceptions/DuplicatedDataException.cpp.obj: CMakeFiles/runTests.dir/includes_CXX.rsp
 CMakeFiles/runTests.dir/C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/exceptions/DuplicatedDataException.cpp.obj: C:/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/exceptions/DuplicatedDataException.cpp
 CMakeFiles/runTests.dir/C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/exceptions/DuplicatedDataException.cpp.obj: CMakeFiles/runTests.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Projects\fsoft2025_1DA_2\ProjectTester\FleetManagerTest\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/runTests.dir/C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/exceptions/DuplicatedDataException.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Projects\fsoft2025_1DA_2\ProjectTester\FleetManagerTest\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/runTests.dir/C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/exceptions/DuplicatedDataException.cpp.obj"
 	C:\msys64\ucrt64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/runTests.dir/C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/exceptions/DuplicatedDataException.cpp.obj -MF CMakeFiles\runTests.dir\C_\Projects\fsoft2025_1DA_2\Project\FleetManager\sources\exceptions\DuplicatedDataException.cpp.obj.d -o CMakeFiles\runTests.dir\C_\Projects\fsoft2025_1DA_2\Project\FleetManager\sources\exceptions\DuplicatedDataException.cpp.obj -c C:\Projects\fsoft2025_1DA_2\Project\FleetManager\sources\exceptions\DuplicatedDataException.cpp
 
 CMakeFiles/runTests.dir/C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/exceptions/DuplicatedDataException.cpp.i: cmake_force
@@ -165,7 +195,7 @@ CMakeFiles/runTests.dir/C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources
 CMakeFiles/runTests.dir/C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/exceptions/InvalidDataException.cpp.obj: CMakeFiles/runTests.dir/includes_CXX.rsp
 CMakeFiles/runTests.dir/C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/exceptions/InvalidDataException.cpp.obj: C:/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/exceptions/InvalidDataException.cpp
 CMakeFiles/runTests.dir/C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/exceptions/InvalidDataException.cpp.obj: CMakeFiles/runTests.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Projects\fsoft2025_1DA_2\ProjectTester\FleetManagerTest\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/runTests.dir/C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/exceptions/InvalidDataException.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Projects\fsoft2025_1DA_2\ProjectTester\FleetManagerTest\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/runTests.dir/C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/exceptions/InvalidDataException.cpp.obj"
 	C:\msys64\ucrt64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/runTests.dir/C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/exceptions/InvalidDataException.cpp.obj -MF CMakeFiles\runTests.dir\C_\Projects\fsoft2025_1DA_2\Project\FleetManager\sources\exceptions\InvalidDataException.cpp.obj.d -o CMakeFiles\runTests.dir\C_\Projects\fsoft2025_1DA_2\Project\FleetManager\sources\exceptions\InvalidDataException.cpp.obj -c C:\Projects\fsoft2025_1DA_2\Project\FleetManager\sources\exceptions\InvalidDataException.cpp
 
 CMakeFiles/runTests.dir/C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/exceptions/InvalidDataException.cpp.i: cmake_force
@@ -180,7 +210,7 @@ CMakeFiles/runTests.dir/C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources
 CMakeFiles/runTests.dir/C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/model/Vehicle.cpp.obj: CMakeFiles/runTests.dir/includes_CXX.rsp
 CMakeFiles/runTests.dir/C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/model/Vehicle.cpp.obj: C:/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/model/Vehicle.cpp
 CMakeFiles/runTests.dir/C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/model/Vehicle.cpp.obj: CMakeFiles/runTests.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Projects\fsoft2025_1DA_2\ProjectTester\FleetManagerTest\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/runTests.dir/C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/model/Vehicle.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Projects\fsoft2025_1DA_2\ProjectTester\FleetManagerTest\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/runTests.dir/C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/model/Vehicle.cpp.obj"
 	C:\msys64\ucrt64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/runTests.dir/C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/model/Vehicle.cpp.obj -MF CMakeFiles\runTests.dir\C_\Projects\fsoft2025_1DA_2\Project\FleetManager\sources\model\Vehicle.cpp.obj.d -o CMakeFiles\runTests.dir\C_\Projects\fsoft2025_1DA_2\Project\FleetManager\sources\model\Vehicle.cpp.obj -c C:\Projects\fsoft2025_1DA_2\Project\FleetManager\sources\model\Vehicle.cpp
 
 CMakeFiles/runTests.dir/C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/model/Vehicle.cpp.i: cmake_force
@@ -195,7 +225,7 @@ CMakeFiles/runTests.dir/C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources
 CMakeFiles/runTests.dir/C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/model/Date.cpp.obj: CMakeFiles/runTests.dir/includes_CXX.rsp
 CMakeFiles/runTests.dir/C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/model/Date.cpp.obj: C:/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/model/Date.cpp
 CMakeFiles/runTests.dir/C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/model/Date.cpp.obj: CMakeFiles/runTests.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Projects\fsoft2025_1DA_2\ProjectTester\FleetManagerTest\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/runTests.dir/C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/model/Date.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Projects\fsoft2025_1DA_2\ProjectTester\FleetManagerTest\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object CMakeFiles/runTests.dir/C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/model/Date.cpp.obj"
 	C:\msys64\ucrt64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/runTests.dir/C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/model/Date.cpp.obj -MF CMakeFiles\runTests.dir\C_\Projects\fsoft2025_1DA_2\Project\FleetManager\sources\model\Date.cpp.obj.d -o CMakeFiles\runTests.dir\C_\Projects\fsoft2025_1DA_2\Project\FleetManager\sources\model\Date.cpp.obj -c C:\Projects\fsoft2025_1DA_2\Project\FleetManager\sources\model\Date.cpp
 
 CMakeFiles/runTests.dir/C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/model/Date.cpp.i: cmake_force
@@ -210,7 +240,7 @@ CMakeFiles/runTests.dir/C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources
 CMakeFiles/runTests.dir/C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/model/Driver.cpp.obj: CMakeFiles/runTests.dir/includes_CXX.rsp
 CMakeFiles/runTests.dir/C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/model/Driver.cpp.obj: C:/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/model/Driver.cpp
 CMakeFiles/runTests.dir/C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/model/Driver.cpp.obj: CMakeFiles/runTests.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Projects\fsoft2025_1DA_2\ProjectTester\FleetManagerTest\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/runTests.dir/C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/model/Driver.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Projects\fsoft2025_1DA_2\ProjectTester\FleetManagerTest\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building CXX object CMakeFiles/runTests.dir/C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/model/Driver.cpp.obj"
 	C:\msys64\ucrt64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/runTests.dir/C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/model/Driver.cpp.obj -MF CMakeFiles\runTests.dir\C_\Projects\fsoft2025_1DA_2\Project\FleetManager\sources\model\Driver.cpp.obj.d -o CMakeFiles\runTests.dir\C_\Projects\fsoft2025_1DA_2\Project\FleetManager\sources\model\Driver.cpp.obj -c C:\Projects\fsoft2025_1DA_2\Project\FleetManager\sources\model\Driver.cpp
 
 CMakeFiles/runTests.dir/C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/model/Driver.cpp.i: cmake_force
@@ -225,7 +255,7 @@ CMakeFiles/runTests.dir/C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources
 CMakeFiles/runTests.dir/C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/model/DriverContainer.cpp.obj: CMakeFiles/runTests.dir/includes_CXX.rsp
 CMakeFiles/runTests.dir/C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/model/DriverContainer.cpp.obj: C:/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/model/DriverContainer.cpp
 CMakeFiles/runTests.dir/C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/model/DriverContainer.cpp.obj: CMakeFiles/runTests.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Projects\fsoft2025_1DA_2\ProjectTester\FleetManagerTest\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object CMakeFiles/runTests.dir/C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/model/DriverContainer.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Projects\fsoft2025_1DA_2\ProjectTester\FleetManagerTest\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building CXX object CMakeFiles/runTests.dir/C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/model/DriverContainer.cpp.obj"
 	C:\msys64\ucrt64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/runTests.dir/C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/model/DriverContainer.cpp.obj -MF CMakeFiles\runTests.dir\C_\Projects\fsoft2025_1DA_2\Project\FleetManager\sources\model\DriverContainer.cpp.obj.d -o CMakeFiles\runTests.dir\C_\Projects\fsoft2025_1DA_2\Project\FleetManager\sources\model\DriverContainer.cpp.obj -c C:\Projects\fsoft2025_1DA_2\Project\FleetManager\sources\model\DriverContainer.cpp
 
 CMakeFiles/runTests.dir/C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/model/DriverContainer.cpp.i: cmake_force
@@ -240,7 +270,7 @@ CMakeFiles/runTests.dir/C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources
 CMakeFiles/runTests.dir/C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/model/Enterprise.cpp.obj: CMakeFiles/runTests.dir/includes_CXX.rsp
 CMakeFiles/runTests.dir/C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/model/Enterprise.cpp.obj: C:/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/model/Enterprise.cpp
 CMakeFiles/runTests.dir/C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/model/Enterprise.cpp.obj: CMakeFiles/runTests.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Projects\fsoft2025_1DA_2\ProjectTester\FleetManagerTest\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building CXX object CMakeFiles/runTests.dir/C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/model/Enterprise.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Projects\fsoft2025_1DA_2\ProjectTester\FleetManagerTest\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Building CXX object CMakeFiles/runTests.dir/C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/model/Enterprise.cpp.obj"
 	C:\msys64\ucrt64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/runTests.dir/C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/model/Enterprise.cpp.obj -MF CMakeFiles\runTests.dir\C_\Projects\fsoft2025_1DA_2\Project\FleetManager\sources\model\Enterprise.cpp.obj.d -o CMakeFiles\runTests.dir\C_\Projects\fsoft2025_1DA_2\Project\FleetManager\sources\model\Enterprise.cpp.obj -c C:\Projects\fsoft2025_1DA_2\Project\FleetManager\sources\model\Enterprise.cpp
 
 CMakeFiles/runTests.dir/C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/model/Enterprise.cpp.i: cmake_force
@@ -255,7 +285,7 @@ CMakeFiles/runTests.dir/C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources
 CMakeFiles/runTests.dir/C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/model/Expense.cpp.obj: CMakeFiles/runTests.dir/includes_CXX.rsp
 CMakeFiles/runTests.dir/C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/model/Expense.cpp.obj: C:/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/model/Expense.cpp
 CMakeFiles/runTests.dir/C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/model/Expense.cpp.obj: CMakeFiles/runTests.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Projects\fsoft2025_1DA_2\ProjectTester\FleetManagerTest\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building CXX object CMakeFiles/runTests.dir/C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/model/Expense.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Projects\fsoft2025_1DA_2\ProjectTester\FleetManagerTest\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Building CXX object CMakeFiles/runTests.dir/C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/model/Expense.cpp.obj"
 	C:\msys64\ucrt64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/runTests.dir/C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/model/Expense.cpp.obj -MF CMakeFiles\runTests.dir\C_\Projects\fsoft2025_1DA_2\Project\FleetManager\sources\model\Expense.cpp.obj.d -o CMakeFiles\runTests.dir\C_\Projects\fsoft2025_1DA_2\Project\FleetManager\sources\model\Expense.cpp.obj -c C:\Projects\fsoft2025_1DA_2\Project\FleetManager\sources\model\Expense.cpp
 
 CMakeFiles/runTests.dir/C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/model/Expense.cpp.i: cmake_force
@@ -270,7 +300,7 @@ CMakeFiles/runTests.dir/C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources
 CMakeFiles/runTests.dir/C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/model/FinancialContainer.cpp.obj: CMakeFiles/runTests.dir/includes_CXX.rsp
 CMakeFiles/runTests.dir/C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/model/FinancialContainer.cpp.obj: C:/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/model/FinancialContainer.cpp
 CMakeFiles/runTests.dir/C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/model/FinancialContainer.cpp.obj: CMakeFiles/runTests.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Projects\fsoft2025_1DA_2\ProjectTester\FleetManagerTest\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Building CXX object CMakeFiles/runTests.dir/C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/model/FinancialContainer.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Projects\fsoft2025_1DA_2\ProjectTester\FleetManagerTest\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Building CXX object CMakeFiles/runTests.dir/C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/model/FinancialContainer.cpp.obj"
 	C:\msys64\ucrt64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/runTests.dir/C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/model/FinancialContainer.cpp.obj -MF CMakeFiles\runTests.dir\C_\Projects\fsoft2025_1DA_2\Project\FleetManager\sources\model\FinancialContainer.cpp.obj.d -o CMakeFiles\runTests.dir\C_\Projects\fsoft2025_1DA_2\Project\FleetManager\sources\model\FinancialContainer.cpp.obj -c C:\Projects\fsoft2025_1DA_2\Project\FleetManager\sources\model\FinancialContainer.cpp
 
 CMakeFiles/runTests.dir/C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/model/FinancialContainer.cpp.i: cmake_force
@@ -285,7 +315,7 @@ CMakeFiles/runTests.dir/C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources
 CMakeFiles/runTests.dir/C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/model/Inspection.cpp.obj: CMakeFiles/runTests.dir/includes_CXX.rsp
 CMakeFiles/runTests.dir/C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/model/Inspection.cpp.obj: C:/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/model/Inspection.cpp
 CMakeFiles/runTests.dir/C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/model/Inspection.cpp.obj: CMakeFiles/runTests.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Projects\fsoft2025_1DA_2\ProjectTester\FleetManagerTest\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Building CXX object CMakeFiles/runTests.dir/C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/model/Inspection.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Projects\fsoft2025_1DA_2\ProjectTester\FleetManagerTest\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_17) "Building CXX object CMakeFiles/runTests.dir/C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/model/Inspection.cpp.obj"
 	C:\msys64\ucrt64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/runTests.dir/C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/model/Inspection.cpp.obj -MF CMakeFiles\runTests.dir\C_\Projects\fsoft2025_1DA_2\Project\FleetManager\sources\model\Inspection.cpp.obj.d -o CMakeFiles\runTests.dir\C_\Projects\fsoft2025_1DA_2\Project\FleetManager\sources\model\Inspection.cpp.obj -c C:\Projects\fsoft2025_1DA_2\Project\FleetManager\sources\model\Inspection.cpp
 
 CMakeFiles/runTests.dir/C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/model/Inspection.cpp.i: cmake_force
@@ -300,7 +330,7 @@ CMakeFiles/runTests.dir/C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources
 CMakeFiles/runTests.dir/C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/model/Insurance.cpp.obj: CMakeFiles/runTests.dir/includes_CXX.rsp
 CMakeFiles/runTests.dir/C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/model/Insurance.cpp.obj: C:/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/model/Insurance.cpp
 CMakeFiles/runTests.dir/C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/model/Insurance.cpp.obj: CMakeFiles/runTests.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Projects\fsoft2025_1DA_2\ProjectTester\FleetManagerTest\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Building CXX object CMakeFiles/runTests.dir/C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/model/Insurance.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Projects\fsoft2025_1DA_2\ProjectTester\FleetManagerTest\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_18) "Building CXX object CMakeFiles/runTests.dir/C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/model/Insurance.cpp.obj"
 	C:\msys64\ucrt64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/runTests.dir/C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/model/Insurance.cpp.obj -MF CMakeFiles\runTests.dir\C_\Projects\fsoft2025_1DA_2\Project\FleetManager\sources\model\Insurance.cpp.obj.d -o CMakeFiles\runTests.dir\C_\Projects\fsoft2025_1DA_2\Project\FleetManager\sources\model\Insurance.cpp.obj -c C:\Projects\fsoft2025_1DA_2\Project\FleetManager\sources\model\Insurance.cpp
 
 CMakeFiles/runTests.dir/C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/model/Insurance.cpp.i: cmake_force
@@ -315,7 +345,7 @@ CMakeFiles/runTests.dir/C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources
 CMakeFiles/runTests.dir/C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/model/Order.cpp.obj: CMakeFiles/runTests.dir/includes_CXX.rsp
 CMakeFiles/runTests.dir/C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/model/Order.cpp.obj: C:/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/model/Order.cpp
 CMakeFiles/runTests.dir/C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/model/Order.cpp.obj: CMakeFiles/runTests.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Projects\fsoft2025_1DA_2\ProjectTester\FleetManagerTest\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_17) "Building CXX object CMakeFiles/runTests.dir/C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/model/Order.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Projects\fsoft2025_1DA_2\ProjectTester\FleetManagerTest\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_19) "Building CXX object CMakeFiles/runTests.dir/C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/model/Order.cpp.obj"
 	C:\msys64\ucrt64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/runTests.dir/C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/model/Order.cpp.obj -MF CMakeFiles\runTests.dir\C_\Projects\fsoft2025_1DA_2\Project\FleetManager\sources\model\Order.cpp.obj.d -o CMakeFiles\runTests.dir\C_\Projects\fsoft2025_1DA_2\Project\FleetManager\sources\model\Order.cpp.obj -c C:\Projects\fsoft2025_1DA_2\Project\FleetManager\sources\model\Order.cpp
 
 CMakeFiles/runTests.dir/C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/model/Order.cpp.i: cmake_force
@@ -330,7 +360,7 @@ CMakeFiles/runTests.dir/C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources
 CMakeFiles/runTests.dir/C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/model/OrderContainer.cpp.obj: CMakeFiles/runTests.dir/includes_CXX.rsp
 CMakeFiles/runTests.dir/C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/model/OrderContainer.cpp.obj: C:/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/model/OrderContainer.cpp
 CMakeFiles/runTests.dir/C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/model/OrderContainer.cpp.obj: CMakeFiles/runTests.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Projects\fsoft2025_1DA_2\ProjectTester\FleetManagerTest\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_18) "Building CXX object CMakeFiles/runTests.dir/C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/model/OrderContainer.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Projects\fsoft2025_1DA_2\ProjectTester\FleetManagerTest\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_20) "Building CXX object CMakeFiles/runTests.dir/C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/model/OrderContainer.cpp.obj"
 	C:\msys64\ucrt64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/runTests.dir/C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/model/OrderContainer.cpp.obj -MF CMakeFiles\runTests.dir\C_\Projects\fsoft2025_1DA_2\Project\FleetManager\sources\model\OrderContainer.cpp.obj.d -o CMakeFiles\runTests.dir\C_\Projects\fsoft2025_1DA_2\Project\FleetManager\sources\model\OrderContainer.cpp.obj -c C:\Projects\fsoft2025_1DA_2\Project\FleetManager\sources\model\OrderContainer.cpp
 
 CMakeFiles/runTests.dir/C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/model/OrderContainer.cpp.i: cmake_force
@@ -345,7 +375,7 @@ CMakeFiles/runTests.dir/C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources
 CMakeFiles/runTests.dir/C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/model/Revenue.cpp.obj: CMakeFiles/runTests.dir/includes_CXX.rsp
 CMakeFiles/runTests.dir/C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/model/Revenue.cpp.obj: C:/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/model/Revenue.cpp
 CMakeFiles/runTests.dir/C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/model/Revenue.cpp.obj: CMakeFiles/runTests.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Projects\fsoft2025_1DA_2\ProjectTester\FleetManagerTest\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_19) "Building CXX object CMakeFiles/runTests.dir/C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/model/Revenue.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Projects\fsoft2025_1DA_2\ProjectTester\FleetManagerTest\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_21) "Building CXX object CMakeFiles/runTests.dir/C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/model/Revenue.cpp.obj"
 	C:\msys64\ucrt64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/runTests.dir/C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/model/Revenue.cpp.obj -MF CMakeFiles\runTests.dir\C_\Projects\fsoft2025_1DA_2\Project\FleetManager\sources\model\Revenue.cpp.obj.d -o CMakeFiles\runTests.dir\C_\Projects\fsoft2025_1DA_2\Project\FleetManager\sources\model\Revenue.cpp.obj -c C:\Projects\fsoft2025_1DA_2\Project\FleetManager\sources\model\Revenue.cpp
 
 CMakeFiles/runTests.dir/C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/model/Revenue.cpp.i: cmake_force
@@ -360,7 +390,7 @@ CMakeFiles/runTests.dir/C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources
 CMakeFiles/runTests.dir/C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/model/Trip.cpp.obj: CMakeFiles/runTests.dir/includes_CXX.rsp
 CMakeFiles/runTests.dir/C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/model/Trip.cpp.obj: C:/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/model/Trip.cpp
 CMakeFiles/runTests.dir/C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/model/Trip.cpp.obj: CMakeFiles/runTests.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Projects\fsoft2025_1DA_2\ProjectTester\FleetManagerTest\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_20) "Building CXX object CMakeFiles/runTests.dir/C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/model/Trip.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Projects\fsoft2025_1DA_2\ProjectTester\FleetManagerTest\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_22) "Building CXX object CMakeFiles/runTests.dir/C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/model/Trip.cpp.obj"
 	C:\msys64\ucrt64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/runTests.dir/C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/model/Trip.cpp.obj -MF CMakeFiles\runTests.dir\C_\Projects\fsoft2025_1DA_2\Project\FleetManager\sources\model\Trip.cpp.obj.d -o CMakeFiles\runTests.dir\C_\Projects\fsoft2025_1DA_2\Project\FleetManager\sources\model\Trip.cpp.obj -c C:\Projects\fsoft2025_1DA_2\Project\FleetManager\sources\model\Trip.cpp
 
 CMakeFiles/runTests.dir/C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/model/Trip.cpp.i: cmake_force
@@ -375,7 +405,7 @@ CMakeFiles/runTests.dir/C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources
 CMakeFiles/runTests.dir/C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/model/TripContainer.cpp.obj: CMakeFiles/runTests.dir/includes_CXX.rsp
 CMakeFiles/runTests.dir/C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/model/TripContainer.cpp.obj: C:/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/model/TripContainer.cpp
 CMakeFiles/runTests.dir/C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/model/TripContainer.cpp.obj: CMakeFiles/runTests.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Projects\fsoft2025_1DA_2\ProjectTester\FleetManagerTest\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_21) "Building CXX object CMakeFiles/runTests.dir/C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/model/TripContainer.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Projects\fsoft2025_1DA_2\ProjectTester\FleetManagerTest\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_23) "Building CXX object CMakeFiles/runTests.dir/C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/model/TripContainer.cpp.obj"
 	C:\msys64\ucrt64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/runTests.dir/C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/model/TripContainer.cpp.obj -MF CMakeFiles\runTests.dir\C_\Projects\fsoft2025_1DA_2\Project\FleetManager\sources\model\TripContainer.cpp.obj.d -o CMakeFiles\runTests.dir\C_\Projects\fsoft2025_1DA_2\Project\FleetManager\sources\model\TripContainer.cpp.obj -c C:\Projects\fsoft2025_1DA_2\Project\FleetManager\sources\model\TripContainer.cpp
 
 CMakeFiles/runTests.dir/C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/model/TripContainer.cpp.i: cmake_force
@@ -390,7 +420,7 @@ CMakeFiles/runTests.dir/C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources
 CMakeFiles/runTests.dir/C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/model/Truck.cpp.obj: CMakeFiles/runTests.dir/includes_CXX.rsp
 CMakeFiles/runTests.dir/C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/model/Truck.cpp.obj: C:/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/model/Truck.cpp
 CMakeFiles/runTests.dir/C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/model/Truck.cpp.obj: CMakeFiles/runTests.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Projects\fsoft2025_1DA_2\ProjectTester\FleetManagerTest\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_22) "Building CXX object CMakeFiles/runTests.dir/C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/model/Truck.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Projects\fsoft2025_1DA_2\ProjectTester\FleetManagerTest\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_24) "Building CXX object CMakeFiles/runTests.dir/C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/model/Truck.cpp.obj"
 	C:\msys64\ucrt64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/runTests.dir/C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/model/Truck.cpp.obj -MF CMakeFiles\runTests.dir\C_\Projects\fsoft2025_1DA_2\Project\FleetManager\sources\model\Truck.cpp.obj.d -o CMakeFiles\runTests.dir\C_\Projects\fsoft2025_1DA_2\Project\FleetManager\sources\model\Truck.cpp.obj -c C:\Projects\fsoft2025_1DA_2\Project\FleetManager\sources\model\Truck.cpp
 
 CMakeFiles/runTests.dir/C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/model/Truck.cpp.i: cmake_force
@@ -405,7 +435,7 @@ CMakeFiles/runTests.dir/C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources
 CMakeFiles/runTests.dir/C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/model/Vacation.cpp.obj: CMakeFiles/runTests.dir/includes_CXX.rsp
 CMakeFiles/runTests.dir/C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/model/Vacation.cpp.obj: C:/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/model/Vacation.cpp
 CMakeFiles/runTests.dir/C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/model/Vacation.cpp.obj: CMakeFiles/runTests.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Projects\fsoft2025_1DA_2\ProjectTester\FleetManagerTest\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_23) "Building CXX object CMakeFiles/runTests.dir/C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/model/Vacation.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Projects\fsoft2025_1DA_2\ProjectTester\FleetManagerTest\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_25) "Building CXX object CMakeFiles/runTests.dir/C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/model/Vacation.cpp.obj"
 	C:\msys64\ucrt64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/runTests.dir/C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/model/Vacation.cpp.obj -MF CMakeFiles\runTests.dir\C_\Projects\fsoft2025_1DA_2\Project\FleetManager\sources\model\Vacation.cpp.obj.d -o CMakeFiles\runTests.dir\C_\Projects\fsoft2025_1DA_2\Project\FleetManager\sources\model\Vacation.cpp.obj -c C:\Projects\fsoft2025_1DA_2\Project\FleetManager\sources\model\Vacation.cpp
 
 CMakeFiles/runTests.dir/C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/model/Vacation.cpp.i: cmake_force
@@ -420,7 +450,7 @@ CMakeFiles/runTests.dir/C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources
 CMakeFiles/runTests.dir/C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/model/Van.cpp.obj: CMakeFiles/runTests.dir/includes_CXX.rsp
 CMakeFiles/runTests.dir/C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/model/Van.cpp.obj: C:/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/model/Van.cpp
 CMakeFiles/runTests.dir/C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/model/Van.cpp.obj: CMakeFiles/runTests.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Projects\fsoft2025_1DA_2\ProjectTester\FleetManagerTest\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_24) "Building CXX object CMakeFiles/runTests.dir/C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/model/Van.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Projects\fsoft2025_1DA_2\ProjectTester\FleetManagerTest\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_26) "Building CXX object CMakeFiles/runTests.dir/C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/model/Van.cpp.obj"
 	C:\msys64\ucrt64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/runTests.dir/C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/model/Van.cpp.obj -MF CMakeFiles\runTests.dir\C_\Projects\fsoft2025_1DA_2\Project\FleetManager\sources\model\Van.cpp.obj.d -o CMakeFiles\runTests.dir\C_\Projects\fsoft2025_1DA_2\Project\FleetManager\sources\model\Van.cpp.obj -c C:\Projects\fsoft2025_1DA_2\Project\FleetManager\sources\model\Van.cpp
 
 CMakeFiles/runTests.dir/C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/model/Van.cpp.i: cmake_force
@@ -435,7 +465,7 @@ CMakeFiles/runTests.dir/C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources
 CMakeFiles/runTests.dir/C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/model/VehicleContainer.cpp.obj: CMakeFiles/runTests.dir/includes_CXX.rsp
 CMakeFiles/runTests.dir/C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/model/VehicleContainer.cpp.obj: C:/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/model/VehicleContainer.cpp
 CMakeFiles/runTests.dir/C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/model/VehicleContainer.cpp.obj: CMakeFiles/runTests.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Projects\fsoft2025_1DA_2\ProjectTester\FleetManagerTest\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_25) "Building CXX object CMakeFiles/runTests.dir/C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/model/VehicleContainer.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Projects\fsoft2025_1DA_2\ProjectTester\FleetManagerTest\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_27) "Building CXX object CMakeFiles/runTests.dir/C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/model/VehicleContainer.cpp.obj"
 	C:\msys64\ucrt64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/runTests.dir/C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/model/VehicleContainer.cpp.obj -MF CMakeFiles\runTests.dir\C_\Projects\fsoft2025_1DA_2\Project\FleetManager\sources\model\VehicleContainer.cpp.obj.d -o CMakeFiles\runTests.dir\C_\Projects\fsoft2025_1DA_2\Project\FleetManager\sources\model\VehicleContainer.cpp.obj -c C:\Projects\fsoft2025_1DA_2\Project\FleetManager\sources\model\VehicleContainer.cpp
 
 CMakeFiles/runTests.dir/C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/model/VehicleContainer.cpp.i: cmake_force
@@ -450,7 +480,7 @@ CMakeFiles/runTests.dir/C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources
 CMakeFiles/runTests.dir/C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/model/VehicleStorageLocation.cpp.obj: CMakeFiles/runTests.dir/includes_CXX.rsp
 CMakeFiles/runTests.dir/C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/model/VehicleStorageLocation.cpp.obj: C:/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/model/VehicleStorageLocation.cpp
 CMakeFiles/runTests.dir/C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/model/VehicleStorageLocation.cpp.obj: CMakeFiles/runTests.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Projects\fsoft2025_1DA_2\ProjectTester\FleetManagerTest\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_26) "Building CXX object CMakeFiles/runTests.dir/C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/model/VehicleStorageLocation.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Projects\fsoft2025_1DA_2\ProjectTester\FleetManagerTest\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_28) "Building CXX object CMakeFiles/runTests.dir/C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/model/VehicleStorageLocation.cpp.obj"
 	C:\msys64\ucrt64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/runTests.dir/C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/model/VehicleStorageLocation.cpp.obj -MF CMakeFiles\runTests.dir\C_\Projects\fsoft2025_1DA_2\Project\FleetManager\sources\model\VehicleStorageLocation.cpp.obj.d -o CMakeFiles\runTests.dir\C_\Projects\fsoft2025_1DA_2\Project\FleetManager\sources\model\VehicleStorageLocation.cpp.obj -c C:\Projects\fsoft2025_1DA_2\Project\FleetManager\sources\model\VehicleStorageLocation.cpp
 
 CMakeFiles/runTests.dir/C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/model/VehicleStorageLocation.cpp.i: cmake_force
@@ -465,7 +495,7 @@ CMakeFiles/runTests.dir/C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources
 CMakeFiles/runTests.dir/C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/model/VSLContainer.cpp.obj: CMakeFiles/runTests.dir/includes_CXX.rsp
 CMakeFiles/runTests.dir/C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/model/VSLContainer.cpp.obj: C:/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/model/VSLContainer.cpp
 CMakeFiles/runTests.dir/C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/model/VSLContainer.cpp.obj: CMakeFiles/runTests.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Projects\fsoft2025_1DA_2\ProjectTester\FleetManagerTest\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_27) "Building CXX object CMakeFiles/runTests.dir/C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/model/VSLContainer.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Projects\fsoft2025_1DA_2\ProjectTester\FleetManagerTest\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_29) "Building CXX object CMakeFiles/runTests.dir/C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/model/VSLContainer.cpp.obj"
 	C:\msys64\ucrt64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/runTests.dir/C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/model/VSLContainer.cpp.obj -MF CMakeFiles\runTests.dir\C_\Projects\fsoft2025_1DA_2\Project\FleetManager\sources\model\VSLContainer.cpp.obj.d -o CMakeFiles\runTests.dir\C_\Projects\fsoft2025_1DA_2\Project\FleetManager\sources\model\VSLContainer.cpp.obj -c C:\Projects\fsoft2025_1DA_2\Project\FleetManager\sources\model\VSLContainer.cpp
 
 CMakeFiles/runTests.dir/C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/model/VSLContainer.cpp.i: cmake_force
@@ -480,7 +510,7 @@ CMakeFiles/runTests.dir/C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources
 CMakeFiles/runTests.dir/C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/views/DriverView.cpp.obj: CMakeFiles/runTests.dir/includes_CXX.rsp
 CMakeFiles/runTests.dir/C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/views/DriverView.cpp.obj: C:/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/views/DriverView.cpp
 CMakeFiles/runTests.dir/C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/views/DriverView.cpp.obj: CMakeFiles/runTests.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Projects\fsoft2025_1DA_2\ProjectTester\FleetManagerTest\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_28) "Building CXX object CMakeFiles/runTests.dir/C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/views/DriverView.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Projects\fsoft2025_1DA_2\ProjectTester\FleetManagerTest\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_30) "Building CXX object CMakeFiles/runTests.dir/C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/views/DriverView.cpp.obj"
 	C:\msys64\ucrt64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/runTests.dir/C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/views/DriverView.cpp.obj -MF CMakeFiles\runTests.dir\C_\Projects\fsoft2025_1DA_2\Project\FleetManager\sources\views\DriverView.cpp.obj.d -o CMakeFiles\runTests.dir\C_\Projects\fsoft2025_1DA_2\Project\FleetManager\sources\views\DriverView.cpp.obj -c C:\Projects\fsoft2025_1DA_2\Project\FleetManager\sources\views\DriverView.cpp
 
 CMakeFiles/runTests.dir/C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/views/DriverView.cpp.i: cmake_force
@@ -495,7 +525,7 @@ CMakeFiles/runTests.dir/C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources
 CMakeFiles/runTests.dir/C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/views/FinancialView.cpp.obj: CMakeFiles/runTests.dir/includes_CXX.rsp
 CMakeFiles/runTests.dir/C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/views/FinancialView.cpp.obj: C:/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/views/FinancialView.cpp
 CMakeFiles/runTests.dir/C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/views/FinancialView.cpp.obj: CMakeFiles/runTests.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Projects\fsoft2025_1DA_2\ProjectTester\FleetManagerTest\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_29) "Building CXX object CMakeFiles/runTests.dir/C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/views/FinancialView.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Projects\fsoft2025_1DA_2\ProjectTester\FleetManagerTest\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_31) "Building CXX object CMakeFiles/runTests.dir/C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/views/FinancialView.cpp.obj"
 	C:\msys64\ucrt64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/runTests.dir/C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/views/FinancialView.cpp.obj -MF CMakeFiles\runTests.dir\C_\Projects\fsoft2025_1DA_2\Project\FleetManager\sources\views\FinancialView.cpp.obj.d -o CMakeFiles\runTests.dir\C_\Projects\fsoft2025_1DA_2\Project\FleetManager\sources\views\FinancialView.cpp.obj -c C:\Projects\fsoft2025_1DA_2\Project\FleetManager\sources\views\FinancialView.cpp
 
 CMakeFiles/runTests.dir/C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/views/FinancialView.cpp.i: cmake_force
@@ -510,7 +540,7 @@ CMakeFiles/runTests.dir/C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources
 CMakeFiles/runTests.dir/C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/views/InspectionView.cpp.obj: CMakeFiles/runTests.dir/includes_CXX.rsp
 CMakeFiles/runTests.dir/C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/views/InspectionView.cpp.obj: C:/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/views/InspectionView.cpp
 CMakeFiles/runTests.dir/C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/views/InspectionView.cpp.obj: CMakeFiles/runTests.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Projects\fsoft2025_1DA_2\ProjectTester\FleetManagerTest\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_30) "Building CXX object CMakeFiles/runTests.dir/C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/views/InspectionView.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Projects\fsoft2025_1DA_2\ProjectTester\FleetManagerTest\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_32) "Building CXX object CMakeFiles/runTests.dir/C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/views/InspectionView.cpp.obj"
 	C:\msys64\ucrt64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/runTests.dir/C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/views/InspectionView.cpp.obj -MF CMakeFiles\runTests.dir\C_\Projects\fsoft2025_1DA_2\Project\FleetManager\sources\views\InspectionView.cpp.obj.d -o CMakeFiles\runTests.dir\C_\Projects\fsoft2025_1DA_2\Project\FleetManager\sources\views\InspectionView.cpp.obj -c C:\Projects\fsoft2025_1DA_2\Project\FleetManager\sources\views\InspectionView.cpp
 
 CMakeFiles/runTests.dir/C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/views/InspectionView.cpp.i: cmake_force
@@ -525,7 +555,7 @@ CMakeFiles/runTests.dir/C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources
 CMakeFiles/runTests.dir/C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/views/InsuranceView.cpp.obj: CMakeFiles/runTests.dir/includes_CXX.rsp
 CMakeFiles/runTests.dir/C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/views/InsuranceView.cpp.obj: C:/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/views/InsuranceView.cpp
 CMakeFiles/runTests.dir/C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/views/InsuranceView.cpp.obj: CMakeFiles/runTests.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Projects\fsoft2025_1DA_2\ProjectTester\FleetManagerTest\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_31) "Building CXX object CMakeFiles/runTests.dir/C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/views/InsuranceView.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Projects\fsoft2025_1DA_2\ProjectTester\FleetManagerTest\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_33) "Building CXX object CMakeFiles/runTests.dir/C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/views/InsuranceView.cpp.obj"
 	C:\msys64\ucrt64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/runTests.dir/C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/views/InsuranceView.cpp.obj -MF CMakeFiles\runTests.dir\C_\Projects\fsoft2025_1DA_2\Project\FleetManager\sources\views\InsuranceView.cpp.obj.d -o CMakeFiles\runTests.dir\C_\Projects\fsoft2025_1DA_2\Project\FleetManager\sources\views\InsuranceView.cpp.obj -c C:\Projects\fsoft2025_1DA_2\Project\FleetManager\sources\views\InsuranceView.cpp
 
 CMakeFiles/runTests.dir/C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/views/InsuranceView.cpp.i: cmake_force
@@ -540,7 +570,7 @@ CMakeFiles/runTests.dir/C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources
 CMakeFiles/runTests.dir/C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/views/OrderView.cpp.obj: CMakeFiles/runTests.dir/includes_CXX.rsp
 CMakeFiles/runTests.dir/C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/views/OrderView.cpp.obj: C:/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/views/OrderView.cpp
 CMakeFiles/runTests.dir/C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/views/OrderView.cpp.obj: CMakeFiles/runTests.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Projects\fsoft2025_1DA_2\ProjectTester\FleetManagerTest\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_32) "Building CXX object CMakeFiles/runTests.dir/C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/views/OrderView.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Projects\fsoft2025_1DA_2\ProjectTester\FleetManagerTest\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_34) "Building CXX object CMakeFiles/runTests.dir/C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/views/OrderView.cpp.obj"
 	C:\msys64\ucrt64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/runTests.dir/C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/views/OrderView.cpp.obj -MF CMakeFiles\runTests.dir\C_\Projects\fsoft2025_1DA_2\Project\FleetManager\sources\views\OrderView.cpp.obj.d -o CMakeFiles\runTests.dir\C_\Projects\fsoft2025_1DA_2\Project\FleetManager\sources\views\OrderView.cpp.obj -c C:\Projects\fsoft2025_1DA_2\Project\FleetManager\sources\views\OrderView.cpp
 
 CMakeFiles/runTests.dir/C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/views/OrderView.cpp.i: cmake_force
@@ -555,7 +585,7 @@ CMakeFiles/runTests.dir/C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources
 CMakeFiles/runTests.dir/C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/views/TripView.cpp.obj: CMakeFiles/runTests.dir/includes_CXX.rsp
 CMakeFiles/runTests.dir/C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/views/TripView.cpp.obj: C:/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/views/TripView.cpp
 CMakeFiles/runTests.dir/C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/views/TripView.cpp.obj: CMakeFiles/runTests.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Projects\fsoft2025_1DA_2\ProjectTester\FleetManagerTest\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_33) "Building CXX object CMakeFiles/runTests.dir/C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/views/TripView.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Projects\fsoft2025_1DA_2\ProjectTester\FleetManagerTest\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_35) "Building CXX object CMakeFiles/runTests.dir/C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/views/TripView.cpp.obj"
 	C:\msys64\ucrt64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/runTests.dir/C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/views/TripView.cpp.obj -MF CMakeFiles\runTests.dir\C_\Projects\fsoft2025_1DA_2\Project\FleetManager\sources\views\TripView.cpp.obj.d -o CMakeFiles\runTests.dir\C_\Projects\fsoft2025_1DA_2\Project\FleetManager\sources\views\TripView.cpp.obj -c C:\Projects\fsoft2025_1DA_2\Project\FleetManager\sources\views\TripView.cpp
 
 CMakeFiles/runTests.dir/C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/views/TripView.cpp.i: cmake_force
@@ -570,7 +600,7 @@ CMakeFiles/runTests.dir/C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources
 CMakeFiles/runTests.dir/C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/views/Utils.cpp.obj: CMakeFiles/runTests.dir/includes_CXX.rsp
 CMakeFiles/runTests.dir/C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/views/Utils.cpp.obj: C:/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/views/Utils.cpp
 CMakeFiles/runTests.dir/C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/views/Utils.cpp.obj: CMakeFiles/runTests.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Projects\fsoft2025_1DA_2\ProjectTester\FleetManagerTest\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_34) "Building CXX object CMakeFiles/runTests.dir/C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/views/Utils.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Projects\fsoft2025_1DA_2\ProjectTester\FleetManagerTest\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_36) "Building CXX object CMakeFiles/runTests.dir/C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/views/Utils.cpp.obj"
 	C:\msys64\ucrt64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/runTests.dir/C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/views/Utils.cpp.obj -MF CMakeFiles\runTests.dir\C_\Projects\fsoft2025_1DA_2\Project\FleetManager\sources\views\Utils.cpp.obj.d -o CMakeFiles\runTests.dir\C_\Projects\fsoft2025_1DA_2\Project\FleetManager\sources\views\Utils.cpp.obj -c C:\Projects\fsoft2025_1DA_2\Project\FleetManager\sources\views\Utils.cpp
 
 CMakeFiles/runTests.dir/C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/views/Utils.cpp.i: cmake_force
@@ -585,7 +615,7 @@ CMakeFiles/runTests.dir/C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources
 CMakeFiles/runTests.dir/C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/views/VacationView.cpp.obj: CMakeFiles/runTests.dir/includes_CXX.rsp
 CMakeFiles/runTests.dir/C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/views/VacationView.cpp.obj: C:/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/views/VacationView.cpp
 CMakeFiles/runTests.dir/C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/views/VacationView.cpp.obj: CMakeFiles/runTests.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Projects\fsoft2025_1DA_2\ProjectTester\FleetManagerTest\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_35) "Building CXX object CMakeFiles/runTests.dir/C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/views/VacationView.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Projects\fsoft2025_1DA_2\ProjectTester\FleetManagerTest\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_37) "Building CXX object CMakeFiles/runTests.dir/C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/views/VacationView.cpp.obj"
 	C:\msys64\ucrt64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/runTests.dir/C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/views/VacationView.cpp.obj -MF CMakeFiles\runTests.dir\C_\Projects\fsoft2025_1DA_2\Project\FleetManager\sources\views\VacationView.cpp.obj.d -o CMakeFiles\runTests.dir\C_\Projects\fsoft2025_1DA_2\Project\FleetManager\sources\views\VacationView.cpp.obj -c C:\Projects\fsoft2025_1DA_2\Project\FleetManager\sources\views\VacationView.cpp
 
 CMakeFiles/runTests.dir/C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/views/VacationView.cpp.i: cmake_force
@@ -600,7 +630,7 @@ CMakeFiles/runTests.dir/C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources
 CMakeFiles/runTests.dir/C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/views/VehicleStorageLocationView.cpp.obj: CMakeFiles/runTests.dir/includes_CXX.rsp
 CMakeFiles/runTests.dir/C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/views/VehicleStorageLocationView.cpp.obj: C:/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/views/VehicleStorageLocationView.cpp
 CMakeFiles/runTests.dir/C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/views/VehicleStorageLocationView.cpp.obj: CMakeFiles/runTests.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Projects\fsoft2025_1DA_2\ProjectTester\FleetManagerTest\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_36) "Building CXX object CMakeFiles/runTests.dir/C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/views/VehicleStorageLocationView.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Projects\fsoft2025_1DA_2\ProjectTester\FleetManagerTest\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_38) "Building CXX object CMakeFiles/runTests.dir/C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/views/VehicleStorageLocationView.cpp.obj"
 	C:\msys64\ucrt64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/runTests.dir/C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/views/VehicleStorageLocationView.cpp.obj -MF CMakeFiles\runTests.dir\C_\Projects\fsoft2025_1DA_2\Project\FleetManager\sources\views\VehicleStorageLocationView.cpp.obj.d -o CMakeFiles\runTests.dir\C_\Projects\fsoft2025_1DA_2\Project\FleetManager\sources\views\VehicleStorageLocationView.cpp.obj -c C:\Projects\fsoft2025_1DA_2\Project\FleetManager\sources\views\VehicleStorageLocationView.cpp
 
 CMakeFiles/runTests.dir/C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/views/VehicleStorageLocationView.cpp.i: cmake_force
@@ -615,7 +645,7 @@ CMakeFiles/runTests.dir/C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources
 CMakeFiles/runTests.dir/C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/views/VehicleView.cpp.obj: CMakeFiles/runTests.dir/includes_CXX.rsp
 CMakeFiles/runTests.dir/C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/views/VehicleView.cpp.obj: C:/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/views/VehicleView.cpp
 CMakeFiles/runTests.dir/C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/views/VehicleView.cpp.obj: CMakeFiles/runTests.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Projects\fsoft2025_1DA_2\ProjectTester\FleetManagerTest\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_37) "Building CXX object CMakeFiles/runTests.dir/C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/views/VehicleView.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Projects\fsoft2025_1DA_2\ProjectTester\FleetManagerTest\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_39) "Building CXX object CMakeFiles/runTests.dir/C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/views/VehicleView.cpp.obj"
 	C:\msys64\ucrt64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/runTests.dir/C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/views/VehicleView.cpp.obj -MF CMakeFiles\runTests.dir\C_\Projects\fsoft2025_1DA_2\Project\FleetManager\sources\views\VehicleView.cpp.obj.d -o CMakeFiles\runTests.dir\C_\Projects\fsoft2025_1DA_2\Project\FleetManager\sources\views\VehicleView.cpp.obj -c C:\Projects\fsoft2025_1DA_2\Project\FleetManager\sources\views\VehicleView.cpp
 
 CMakeFiles/runTests.dir/C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/views/VehicleView.cpp.i: cmake_force
@@ -630,7 +660,7 @@ CMakeFiles/runTests.dir/C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources
 CMakeFiles/runTests.dir/C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/views/View.cpp.obj: CMakeFiles/runTests.dir/includes_CXX.rsp
 CMakeFiles/runTests.dir/C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/views/View.cpp.obj: C:/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/views/View.cpp
 CMakeFiles/runTests.dir/C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/views/View.cpp.obj: CMakeFiles/runTests.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Projects\fsoft2025_1DA_2\ProjectTester\FleetManagerTest\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_38) "Building CXX object CMakeFiles/runTests.dir/C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/views/View.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Projects\fsoft2025_1DA_2\ProjectTester\FleetManagerTest\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_40) "Building CXX object CMakeFiles/runTests.dir/C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/views/View.cpp.obj"
 	C:\msys64\ucrt64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/runTests.dir/C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/views/View.cpp.obj -MF CMakeFiles\runTests.dir\C_\Projects\fsoft2025_1DA_2\Project\FleetManager\sources\views\View.cpp.obj.d -o CMakeFiles\runTests.dir\C_\Projects\fsoft2025_1DA_2\Project\FleetManager\sources\views\View.cpp.obj -c C:\Projects\fsoft2025_1DA_2\Project\FleetManager\sources\views\View.cpp
 
 CMakeFiles/runTests.dir/C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/views/View.cpp.i: cmake_force
@@ -645,7 +675,7 @@ CMakeFiles/runTests.dir/C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources
 CMakeFiles/runTests.dir/C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/serial/DriverSerialization.cpp.obj: CMakeFiles/runTests.dir/includes_CXX.rsp
 CMakeFiles/runTests.dir/C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/serial/DriverSerialization.cpp.obj: C:/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/serial/DriverSerialization.cpp
 CMakeFiles/runTests.dir/C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/serial/DriverSerialization.cpp.obj: CMakeFiles/runTests.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Projects\fsoft2025_1DA_2\ProjectTester\FleetManagerTest\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_39) "Building CXX object CMakeFiles/runTests.dir/C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/serial/DriverSerialization.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Projects\fsoft2025_1DA_2\ProjectTester\FleetManagerTest\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_41) "Building CXX object CMakeFiles/runTests.dir/C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/serial/DriverSerialization.cpp.obj"
 	C:\msys64\ucrt64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/runTests.dir/C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/serial/DriverSerialization.cpp.obj -MF CMakeFiles\runTests.dir\C_\Projects\fsoft2025_1DA_2\Project\FleetManager\sources\serial\DriverSerialization.cpp.obj.d -o CMakeFiles\runTests.dir\C_\Projects\fsoft2025_1DA_2\Project\FleetManager\sources\serial\DriverSerialization.cpp.obj -c C:\Projects\fsoft2025_1DA_2\Project\FleetManager\sources\serial\DriverSerialization.cpp
 
 CMakeFiles/runTests.dir/C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/serial/DriverSerialization.cpp.i: cmake_force
@@ -660,7 +690,7 @@ CMakeFiles/runTests.dir/C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources
 CMakeFiles/runTests.dir/C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/serial/FinancialSerialization.cpp.obj: CMakeFiles/runTests.dir/includes_CXX.rsp
 CMakeFiles/runTests.dir/C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/serial/FinancialSerialization.cpp.obj: C:/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/serial/FinancialSerialization.cpp
 CMakeFiles/runTests.dir/C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/serial/FinancialSerialization.cpp.obj: CMakeFiles/runTests.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Projects\fsoft2025_1DA_2\ProjectTester\FleetManagerTest\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_40) "Building CXX object CMakeFiles/runTests.dir/C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/serial/FinancialSerialization.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Projects\fsoft2025_1DA_2\ProjectTester\FleetManagerTest\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_42) "Building CXX object CMakeFiles/runTests.dir/C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/serial/FinancialSerialization.cpp.obj"
 	C:\msys64\ucrt64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/runTests.dir/C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/serial/FinancialSerialization.cpp.obj -MF CMakeFiles\runTests.dir\C_\Projects\fsoft2025_1DA_2\Project\FleetManager\sources\serial\FinancialSerialization.cpp.obj.d -o CMakeFiles\runTests.dir\C_\Projects\fsoft2025_1DA_2\Project\FleetManager\sources\serial\FinancialSerialization.cpp.obj -c C:\Projects\fsoft2025_1DA_2\Project\FleetManager\sources\serial\FinancialSerialization.cpp
 
 CMakeFiles/runTests.dir/C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/serial/FinancialSerialization.cpp.i: cmake_force
@@ -675,7 +705,7 @@ CMakeFiles/runTests.dir/C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources
 CMakeFiles/runTests.dir/C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/serial/OrderSerialization.cpp.obj: CMakeFiles/runTests.dir/includes_CXX.rsp
 CMakeFiles/runTests.dir/C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/serial/OrderSerialization.cpp.obj: C:/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/serial/OrderSerialization.cpp
 CMakeFiles/runTests.dir/C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/serial/OrderSerialization.cpp.obj: CMakeFiles/runTests.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Projects\fsoft2025_1DA_2\ProjectTester\FleetManagerTest\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_41) "Building CXX object CMakeFiles/runTests.dir/C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/serial/OrderSerialization.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Projects\fsoft2025_1DA_2\ProjectTester\FleetManagerTest\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_43) "Building CXX object CMakeFiles/runTests.dir/C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/serial/OrderSerialization.cpp.obj"
 	C:\msys64\ucrt64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/runTests.dir/C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/serial/OrderSerialization.cpp.obj -MF CMakeFiles\runTests.dir\C_\Projects\fsoft2025_1DA_2\Project\FleetManager\sources\serial\OrderSerialization.cpp.obj.d -o CMakeFiles\runTests.dir\C_\Projects\fsoft2025_1DA_2\Project\FleetManager\sources\serial\OrderSerialization.cpp.obj -c C:\Projects\fsoft2025_1DA_2\Project\FleetManager\sources\serial\OrderSerialization.cpp
 
 CMakeFiles/runTests.dir/C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/serial/OrderSerialization.cpp.i: cmake_force
@@ -690,7 +720,7 @@ CMakeFiles/runTests.dir/C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources
 CMakeFiles/runTests.dir/C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/serial/TripSerialization.cpp.obj: CMakeFiles/runTests.dir/includes_CXX.rsp
 CMakeFiles/runTests.dir/C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/serial/TripSerialization.cpp.obj: C:/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/serial/TripSerialization.cpp
 CMakeFiles/runTests.dir/C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/serial/TripSerialization.cpp.obj: CMakeFiles/runTests.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Projects\fsoft2025_1DA_2\ProjectTester\FleetManagerTest\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_42) "Building CXX object CMakeFiles/runTests.dir/C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/serial/TripSerialization.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Projects\fsoft2025_1DA_2\ProjectTester\FleetManagerTest\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_44) "Building CXX object CMakeFiles/runTests.dir/C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/serial/TripSerialization.cpp.obj"
 	C:\msys64\ucrt64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/runTests.dir/C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/serial/TripSerialization.cpp.obj -MF CMakeFiles\runTests.dir\C_\Projects\fsoft2025_1DA_2\Project\FleetManager\sources\serial\TripSerialization.cpp.obj.d -o CMakeFiles\runTests.dir\C_\Projects\fsoft2025_1DA_2\Project\FleetManager\sources\serial\TripSerialization.cpp.obj -c C:\Projects\fsoft2025_1DA_2\Project\FleetManager\sources\serial\TripSerialization.cpp
 
 CMakeFiles/runTests.dir/C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/serial/TripSerialization.cpp.i: cmake_force
@@ -705,7 +735,7 @@ CMakeFiles/runTests.dir/C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources
 CMakeFiles/runTests.dir/C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/serial/VehicleSerialization.cpp.obj: CMakeFiles/runTests.dir/includes_CXX.rsp
 CMakeFiles/runTests.dir/C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/serial/VehicleSerialization.cpp.obj: C:/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/serial/VehicleSerialization.cpp
 CMakeFiles/runTests.dir/C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/serial/VehicleSerialization.cpp.obj: CMakeFiles/runTests.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Projects\fsoft2025_1DA_2\ProjectTester\FleetManagerTest\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_43) "Building CXX object CMakeFiles/runTests.dir/C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/serial/VehicleSerialization.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Projects\fsoft2025_1DA_2\ProjectTester\FleetManagerTest\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_45) "Building CXX object CMakeFiles/runTests.dir/C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/serial/VehicleSerialization.cpp.obj"
 	C:\msys64\ucrt64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/runTests.dir/C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/serial/VehicleSerialization.cpp.obj -MF CMakeFiles\runTests.dir\C_\Projects\fsoft2025_1DA_2\Project\FleetManager\sources\serial\VehicleSerialization.cpp.obj.d -o CMakeFiles\runTests.dir\C_\Projects\fsoft2025_1DA_2\Project\FleetManager\sources\serial\VehicleSerialization.cpp.obj -c C:\Projects\fsoft2025_1DA_2\Project\FleetManager\sources\serial\VehicleSerialization.cpp
 
 CMakeFiles/runTests.dir/C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/serial/VehicleSerialization.cpp.i: cmake_force
@@ -720,7 +750,7 @@ CMakeFiles/runTests.dir/C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources
 CMakeFiles/runTests.dir/C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/serial/VehicleStorageLocationSerialization.cpp.obj: CMakeFiles/runTests.dir/includes_CXX.rsp
 CMakeFiles/runTests.dir/C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/serial/VehicleStorageLocationSerialization.cpp.obj: C:/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/serial/VehicleStorageLocationSerialization.cpp
 CMakeFiles/runTests.dir/C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/serial/VehicleStorageLocationSerialization.cpp.obj: CMakeFiles/runTests.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Projects\fsoft2025_1DA_2\ProjectTester\FleetManagerTest\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_44) "Building CXX object CMakeFiles/runTests.dir/C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/serial/VehicleStorageLocationSerialization.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Projects\fsoft2025_1DA_2\ProjectTester\FleetManagerTest\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_46) "Building CXX object CMakeFiles/runTests.dir/C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/serial/VehicleStorageLocationSerialization.cpp.obj"
 	C:\msys64\ucrt64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/runTests.dir/C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/serial/VehicleStorageLocationSerialization.cpp.obj -MF CMakeFiles\runTests.dir\C_\Projects\fsoft2025_1DA_2\Project\FleetManager\sources\serial\VehicleStorageLocationSerialization.cpp.obj.d -o CMakeFiles\runTests.dir\C_\Projects\fsoft2025_1DA_2\Project\FleetManager\sources\serial\VehicleStorageLocationSerialization.cpp.obj -c C:\Projects\fsoft2025_1DA_2\Project\FleetManager\sources\serial\VehicleStorageLocationSerialization.cpp
 
 CMakeFiles/runTests.dir/C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/serial/VehicleStorageLocationSerialization.cpp.i: cmake_force
@@ -735,7 +765,7 @@ CMakeFiles/runTests.dir/C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources
 CMakeFiles/runTests.dir/C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/serial/DataContainer.cpp.obj: CMakeFiles/runTests.dir/includes_CXX.rsp
 CMakeFiles/runTests.dir/C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/serial/DataContainer.cpp.obj: C:/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/serial/DataContainer.cpp
 CMakeFiles/runTests.dir/C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/serial/DataContainer.cpp.obj: CMakeFiles/runTests.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Projects\fsoft2025_1DA_2\ProjectTester\FleetManagerTest\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_45) "Building CXX object CMakeFiles/runTests.dir/C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/serial/DataContainer.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Projects\fsoft2025_1DA_2\ProjectTester\FleetManagerTest\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_47) "Building CXX object CMakeFiles/runTests.dir/C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/serial/DataContainer.cpp.obj"
 	C:\msys64\ucrt64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/runTests.dir/C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/serial/DataContainer.cpp.obj -MF CMakeFiles\runTests.dir\C_\Projects\fsoft2025_1DA_2\Project\FleetManager\sources\serial\DataContainer.cpp.obj.d -o CMakeFiles\runTests.dir\C_\Projects\fsoft2025_1DA_2\Project\FleetManager\sources\serial\DataContainer.cpp.obj -c C:\Projects\fsoft2025_1DA_2\Project\FleetManager\sources\serial\DataContainer.cpp
 
 CMakeFiles/runTests.dir/C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/serial/DataContainer.cpp.i: cmake_force
@@ -748,9 +778,11 @@ CMakeFiles/runTests.dir/C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources
 
 # Object files for target runTests
 runTests_OBJECTS = \
+"CMakeFiles/runTests.dir/order_test.cpp.obj" \
 "CMakeFiles/runTests.dir/date_test.cpp.obj" \
 "CMakeFiles/runTests.dir/trip_test.cpp.obj" \
 "CMakeFiles/runTests.dir/driver_test.cpp.obj" \
+"CMakeFiles/runTests.dir/financial_test.cpp.obj" \
 "CMakeFiles/runTests.dir/C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/controllers/Controller.cpp.obj" \
 "CMakeFiles/runTests.dir/C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/exceptions/NonExistingDataException.cpp.obj" \
 "CMakeFiles/runTests.dir/C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/exceptions/DuplicatedDataException.cpp.obj" \
@@ -797,9 +829,11 @@ runTests_OBJECTS = \
 # External object files for target runTests
 runTests_EXTERNAL_OBJECTS =
 
+runTests.exe: CMakeFiles/runTests.dir/order_test.cpp.obj
 runTests.exe: CMakeFiles/runTests.dir/date_test.cpp.obj
 runTests.exe: CMakeFiles/runTests.dir/trip_test.cpp.obj
 runTests.exe: CMakeFiles/runTests.dir/driver_test.cpp.obj
+runTests.exe: CMakeFiles/runTests.dir/financial_test.cpp.obj
 runTests.exe: CMakeFiles/runTests.dir/C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/controllers/Controller.cpp.obj
 runTests.exe: CMakeFiles/runTests.dir/C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/exceptions/NonExistingDataException.cpp.obj
 runTests.exe: CMakeFiles/runTests.dir/C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/exceptions/DuplicatedDataException.cpp.obj
@@ -848,7 +882,7 @@ runTests.exe: lib/libgtest.a
 runTests.exe: CMakeFiles/runTests.dir/linkLibs.rsp
 runTests.exe: CMakeFiles/runTests.dir/objects1.rsp
 runTests.exe: CMakeFiles/runTests.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=C:\Projects\fsoft2025_1DA_2\ProjectTester\FleetManagerTest\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_46) "Linking CXX executable runTests.exe"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=C:\Projects\fsoft2025_1DA_2\ProjectTester\FleetManagerTest\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_48) "Linking CXX executable runTests.exe"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles\runTests.dir\link.txt --verbose=$(VERBOSE)
 	"C:\Program Files\JetBrains\CLion 2024.3.3\bin\cmake\win\aarch64\bin\cmake.exe" -D TEST_TARGET=runTests -D TEST_EXECUTABLE=C:/Projects/fsoft2025_1DA_2/ProjectTester/FleetManagerTest/cmake-build-debug/runTests.exe -D TEST_EXECUTOR= -D TEST_WORKING_DIR=C:/Projects/fsoft2025_1DA_2/ProjectTester/FleetManagerTest/cmake-build-debug -D TEST_EXTRA_ARGS= -D TEST_PROPERTIES= -D TEST_PREFIX= -D TEST_SUFFIX= -D TEST_FILTER= -D NO_PRETTY_TYPES=FALSE -D NO_PRETTY_VALUES=FALSE -D TEST_LIST=runTests_TESTS -D CTEST_FILE=C:/Projects/fsoft2025_1DA_2/ProjectTester/FleetManagerTest/cmake-build-debug/runTests[1]_tests.cmake -D TEST_DISCOVERY_TIMEOUT=5 -D TEST_DISCOVERY_EXTRA_ARGS= -D TEST_XML_OUTPUT_DIR= -P "C:/Program Files/JetBrains/CLion 2024.3.3/bin/cmake/win/aarch64/share/cmake-3.31/Modules/GoogleTestAddTests.cmake"
 

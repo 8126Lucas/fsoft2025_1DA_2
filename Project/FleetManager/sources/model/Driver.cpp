@@ -12,7 +12,7 @@
 #include "InvalidDataException.h"
 #include "Vacation.h"
 
-Driver::Driver() : id(), available(true), license('\0') {}
+Driver::Driver() : id(0), age(0), available(true), license('\0') {}
 
 Driver::Driver(int id, char &license, int age) : available(true) {
     this->id = id;

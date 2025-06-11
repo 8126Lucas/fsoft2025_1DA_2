@@ -65,6 +65,7 @@ add_executable(runTests
         date_test.cpp
         trip_test.cpp
         driver_test.cpp
+        financial_test.cpp
         ${APP_SOURCES}
 )
 

@@ -1291,6 +1291,54 @@ driver_test.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\runTests.dir\build.make CMakeFiles/runTests.dir/driver_test.cpp.s
 .PHONY : driver_test.cpp.s
 
+financial_test.obj: financial_test.cpp.obj
+.PHONY : financial_test.obj
+
+# target to build an object file
+financial_test.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\runTests.dir\build.make CMakeFiles/runTests.dir/financial_test.cpp.obj
+.PHONY : financial_test.cpp.obj
+
+financial_test.i: financial_test.cpp.i
+.PHONY : financial_test.i
+
+# target to preprocess a source file
+financial_test.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\runTests.dir\build.make CMakeFiles/runTests.dir/financial_test.cpp.i
+.PHONY : financial_test.cpp.i
+
+financial_test.s: financial_test.cpp.s
+.PHONY : financial_test.s
+
+# target to generate assembly for a file
+financial_test.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\runTests.dir\build.make CMakeFiles/runTests.dir/financial_test.cpp.s
+.PHONY : financial_test.cpp.s
+
+order_test.obj: order_test.cpp.obj
+.PHONY : order_test.obj
+
+# target to build an object file
+order_test.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\runTests.dir\build.make CMakeFiles/runTests.dir/order_test.cpp.obj
+.PHONY : order_test.cpp.obj
+
+order_test.i: order_test.cpp.i
+.PHONY : order_test.i
+
+# target to preprocess a source file
+order_test.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\runTests.dir\build.make CMakeFiles/runTests.dir/order_test.cpp.i
+.PHONY : order_test.cpp.i
+
+order_test.s: order_test.cpp.s
+.PHONY : order_test.s
+
+# target to generate assembly for a file
+order_test.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\runTests.dir\build.make CMakeFiles/runTests.dir/order_test.cpp.s
+.PHONY : order_test.cpp.s
+
 trip_test.obj: trip_test.cpp.obj
 .PHONY : trip_test.obj
 
@@ -1465,6 +1513,12 @@ help:
 	@echo ... driver_test.obj
 	@echo ... driver_test.i
 	@echo ... driver_test.s
+	@echo ... financial_test.obj
+	@echo ... financial_test.i
+	@echo ... financial_test.s
+	@echo ... order_test.obj
+	@echo ... order_test.i
+	@echo ... order_test.s
 	@echo ... trip_test.obj
 	@echo ... trip_test.i
 	@echo ... trip_test.s
