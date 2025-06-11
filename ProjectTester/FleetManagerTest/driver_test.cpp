@@ -4,37 +4,36 @@
 #include "Driver.h"
 #include "gtest/gtest.h"
 #include "NonExistingDataException.h"
-#include "DuplicateDataException.h"
+#include "DuplicatedDataException.h"
 #include "Date.h"
 #include "Vacation.h"
 
 class driverTest : public ::testing::Test {
 protected:
     void SetUp() override {
-        int id = 1;
-        char license = 'C';
-        int age = 30;
-        driver = new Driver(id, license, age);
+        //int id = 1;
+        //char license = 'C';
+        //int age = 30;
+        driver = new Driver();
     }
 
     void TearDown() override {
         delete driver;
         driver = nullptr;
     }
-
     Driver* driver;
-}
+};
 
-TEST_F(DriverTest, ConstructorAndInicialization) {
-    EXPECT_EQ(driver->getID(), id);
-    EXPECT_EQ(driver->getLicense(), license);
-    EXPECT_EQ(driver->getAge(), age);
+TEST_F(driverTest, ConstructorAndInicialization) {
+    EXPECT_EQ(driver->getID(), 0);
+    EXPECT_EQ(driver->getLicense(), '\0');
+    EXPECT_EQ(driver->getAge(), 0);
     EXPECT_TRUE(driver->getAvailability());
     EXPECT_TRUE(driver->getVacations().empty());
-    EXPECT_EQ(driver->getTimeToRetire(), 65 - age);
+    EXPECT_EQ(driver->getTimeToRetire(), 65);
 }
 
-TEST_F(DriverTest, TestSetDriver) {
+TEST_F(driverTest, TestSetDriver) {
     int newId = 100;
     char newLicense = 'B';
     int newAge = 40;
