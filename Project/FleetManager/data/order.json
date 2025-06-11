@@ -1,5 +1,26 @@
 {
     "orders": [
-
+        {
+            "cargoSpace": 4.0,
+            "cargoWeight": 400.0,
+            "client": 3,
+            "date": "6/12/2000",
+            "destinationAddress": "Contomil",
+            "id": 2,
+            "shippingValue": 128.99,
+            "sourceAddress": "Ermesinde",
+            "status": "IN_PROGRESS"
+        },
+        {
+            "cargoSpace": 0.5,
+            "cargoWeight": 35.0,
+            "client": 1,
+            "date": "1/3/2005",
+            "destinationAddress": "FCUP",
+            "id": 1,
+            "shippingValue": 41.99,
+            "sourceAddress": "ISEP",
+            "status": "COMPLETED"
+        }
     ]
 }

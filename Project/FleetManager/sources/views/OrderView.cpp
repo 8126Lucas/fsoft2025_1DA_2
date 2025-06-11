@@ -74,12 +74,16 @@ void OrderView::printOrder(Order *order) {
     } while (flag_error);
 }
 
-void OrderView::printOrders(list<Order> &orders) {
-  list<Order>::iterator it = orders.begin();
-  for (; it != orders.end(); ++it) {
-    printOrder(&*it);
-  }
 
+void OrderView::printOrders(list<Order> &orders) {
+    if (orders.empty()) {
+        cout << "\nTHERE ARE NO ORDERS IN THE RECORDS!\n";
+        return;
+    }
+    list<Order>::iterator it = orders.begin();
+    for (; it != orders.end(); ++it) {
+        printOrder(&*it);
+    }
 }
 
 void OrderView::completeOrder(Order *order) {
@@ -87,6 +91,10 @@ void OrderView::completeOrder(Order *order) {
     do {
         try {
             flag_error = false;
+            if (order->getStatus() == COMPLETED) {
+                cout << "ORDER ALREADY COMPLETED\n";
+                return;
+            }
             order->setStatus(COMPLETED);
         }catch (InvalidDataException &error) {
             cout << error.what() << endl;
@@ -94,4 +102,37 @@ void OrderView::completeOrder(Order *order) {
         }
     }while (flag_error);
 
+}
+
+void OrderView::printCompletedOrders(list<Order> &orders) {
+    if (orders.empty()) {
+        cout << "\nTHERE ARE NO COMPLETED ORDERS IN THE RECORDS!\n";
+        return;
+    }
+    list<Order>::iterator it = orders.begin();
+    for (; it != orders.end(); ++it) {
+        printOrder(&*it);
+    }
+}
+
+void OrderView::printUncompletedOrders(list<Order> &orders) {
+    if (orders.empty()) {
+        cout << "\nTHERE ARE NO UNCOMPLETED ORDERS IN THE RECORDS!\n";
+        return;
+    }
+    list<Order>::iterator it = orders.begin();
+    for (; it != orders.end(); ++it) {
+        printOrder(&*it);
+    }
+}
+
+void OrderView::printOrdersByClient(list<Order> &orders) {
+    if (orders.empty()) {
+        cout << "\nTHERE ARE NO ORDERS BY THIS CLIENT IN THE RECORDS!\n";
+        return;
+    }
+    list<Order>::iterator it = orders.begin();
+    for (; it != orders.end(); ++it) {
+        printOrder(&*it);
+    }
 }

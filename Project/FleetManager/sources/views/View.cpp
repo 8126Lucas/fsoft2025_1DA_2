@@ -118,11 +118,12 @@ int View::menuOrder() {
     cout << "1. Add Order\n";
     cout << "2. Remove Order\n";
     cout << "3. Complete Order\n";
-    cout << "4. List Uncompleted Orders\n";
-    cout << "5. List Completed Orders\n";
-    cout << "6. List Orders By Type\n\n";
+    cout << "4. List Orders\n";
+    cout << "5. List Uncompleted Orders\n";
+    cout << "6. List Completed Orders\n";
+    cout << "7. List Orders By Client\n\n";
     cout << "0. Go Back\n\n";
     op = Utils::getInt("Your Option");
-  } while(op < 0 || op > 6);
+  } while(op < 0 || op > 7);
   return op;
 }

@@ -43,8 +43,8 @@ void Vacation::setID(int id) {
     this->id = id;
 }
 
-void Vacation::setDriver(Driver &driver) {
-    this->driver = &driver;
+void Vacation::setDriver(Driver *driver) {
+    this->driver = driver;
 }
 
 void Vacation::setStartDate(Date startDate) {

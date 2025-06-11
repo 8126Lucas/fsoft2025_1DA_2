@@ -24,7 +24,7 @@ public:
     list<Driver> listDrivers();
     list<Driver> listAvailableDrivers(bool available);
 
-    void update(int id, Vacation vacation);
+    void update(int id, Vacation *vacation);
     void updateAvailability(int id, bool available);
 };
 

@@ -1,3 +1,20 @@
 {
-    "drivers": []
+    "drivers": [
+        {
+            "age": 18,
+            "available": true,
+            "id": 1,
+            "license": "B",
+            "timeToRetire": 47,
+            "vacations": [
+                {
+                    "driverID": 0,
+                    "endDate": "1/7/2025",
+                    "id": 1,
+                    "startDate": "1/6/2025",
+                    "status": true
+                }
+            ]
+        }
+    ]
 }

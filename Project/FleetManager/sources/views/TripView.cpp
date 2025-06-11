@@ -90,7 +90,7 @@ void TripView::startTrip(Trip *trip, DriverContainer &containerDriver, VehicleCo
             trip->setDriver(driver);
             driver->setAvailability(false);
             trip->setVehicle(vehicle);
-            vehicle->setAvailability(true);
+            vehicle->setAvailability(false);
         }catch (InvalidDataException &error) {
             cout << error.what() << endl;
             flag_error = true;
