@@ -79,21 +79,21 @@
 			"compileCommandFragments" : 
 			[
 				{
-					"fragment" : "-g -std=c++17 -fdiagnostics-color=always"
+					"fragment" : "-g -std=c++17 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX15.5.sdk -mmacosx-version-min=15.3 -fcolor-diagnostics"
 				},
 				{
-					"fragment" : "-Wall -Wshadow -Wundef -Wno-error=dangling-else -DGTEST_HAS_PTHREAD=1 -fexceptions -Wextra -Wno-unused-parameter -Wno-missing-field-initializers"
+					"fragment" : " -DGTEST_HAS_PTHREAD=1  "
 				}
 			],
 			"includes" : 
 			[
 				{
 					"backtrace" : 6,
-					"path" : "/home/dinis/CLionProjects/fsoft2025_1DA_2_definitivo/ProjectTester/FleetManagerTest/googleTestLib/googletest-main/googletest/include"
+					"path" : "/Users/vitorteixeira/Desktop/FSOFT/PL3/fsoft2025_1DA_2/ProjectTester/FleetManagerTest/googleTestLib/googletest-main/googletest/include"
 				},
 				{
 					"backtrace" : 6,
-					"path" : "/home/dinis/CLionProjects/fsoft2025_1DA_2_definitivo/ProjectTester/FleetManagerTest/googleTestLib/googletest-main/googletest"
+					"path" : "/Users/vitorteixeira/Desktop/FSOFT/PL3/fsoft2025_1DA_2/ProjectTester/FleetManagerTest/googleTestLib/googletest-main/googletest"
 				}
 			],
 			"language" : "CXX",

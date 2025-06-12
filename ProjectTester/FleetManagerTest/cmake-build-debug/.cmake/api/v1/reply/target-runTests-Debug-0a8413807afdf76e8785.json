@@ -49,40 +49,40 @@
 			"compileCommandFragments" : 
 			[
 				{
-					"fragment" : "-g -std=gnu++17 -fdiagnostics-color=always"
+					"fragment" : "-g -std=gnu++17 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX15.5.sdk -mmacosx-version-min=15.3 -fcolor-diagnostics"
 				}
 			],
 			"includes" : 
 			[
 				{
 					"backtrace" : 3,
-					"path" : "/home/dinis/CLionProjects/fsoft2025_1DA_2_definitivo/ProjectTester/FleetManagerTest/../../Project/FleetManager/headers/controllers"
+					"path" : "/Users/vitorteixeira/Desktop/FSOFT/PL3/fsoft2025_1DA_2/ProjectTester/FleetManagerTest/../../Project/FleetManager/headers/controllers"
 				},
 				{
 					"backtrace" : 3,
-					"path" : "/home/dinis/CLionProjects/fsoft2025_1DA_2_definitivo/ProjectTester/FleetManagerTest/../../Project/FleetManager/headers/exceptions"
+					"path" : "/Users/vitorteixeira/Desktop/FSOFT/PL3/fsoft2025_1DA_2/ProjectTester/FleetManagerTest/../../Project/FleetManager/headers/exceptions"
 				},
 				{
 					"backtrace" : 3,
-					"path" : "/home/dinis/CLionProjects/fsoft2025_1DA_2_definitivo/ProjectTester/FleetManagerTest/../../Project/FleetManager/headers/model"
+					"path" : "/Users/vitorteixeira/Desktop/FSOFT/PL3/fsoft2025_1DA_2/ProjectTester/FleetManagerTest/../../Project/FleetManager/headers/model"
 				},
 				{
 					"backtrace" : 3,
-					"path" : "/home/dinis/CLionProjects/fsoft2025_1DA_2_definitivo/ProjectTester/FleetManagerTest/../../Project/FleetManager/headers/views"
+					"path" : "/Users/vitorteixeira/Desktop/FSOFT/PL3/fsoft2025_1DA_2/ProjectTester/FleetManagerTest/../../Project/FleetManager/headers/views"
 				},
 				{
 					"backtrace" : 3,
-					"path" : "/home/dinis/CLionProjects/fsoft2025_1DA_2_definitivo/ProjectTester/FleetManagerTest/../../Project/FleetManager/headers/serial"
+					"path" : "/Users/vitorteixeira/Desktop/FSOFT/PL3/fsoft2025_1DA_2/ProjectTester/FleetManagerTest/../../Project/FleetManager/headers/serial"
 				},
 				{
 					"backtrace" : 3,
 					"isSystem" : true,
-					"path" : "/home/dinis/CLionProjects/fsoft2025_1DA_2_definitivo/ProjectTester/FleetManagerTest/googleTestLib/googletest-main/googletest/include"
+					"path" : "/Users/vitorteixeira/Desktop/FSOFT/PL3/fsoft2025_1DA_2/ProjectTester/FleetManagerTest/googleTestLib/googletest-main/googletest/include"
 				},
 				{
 					"backtrace" : 2,
 					"isSystem" : true,
-					"path" : "/home/dinis/CLionProjects/fsoft2025_1DA_2_definitivo/ProjectTester/FleetManagerTest/googleTestLib/googletest-main/googletest"
+					"path" : "/Users/vitorteixeira/Desktop/FSOFT/PL3/fsoft2025_1DA_2/ProjectTester/FleetManagerTest/googleTestLib/googletest-main/googletest"
 				}
 			],
 			"language" : "CXX",
@@ -149,7 +149,8 @@
 				50,
 				51,
 				52,
-				53
+				53,
+				54
 			]
 		}
 	],
@@ -261,7 +262,8 @@
 				50,
 				51,
 				52,
-				53
+				53,
+				54
 			]
 		}
 	],
@@ -324,6 +326,12 @@
 		{
 			"backtrace" : 1,
 			"compileGroupIndex" : 0,
+			"path" : "orderContainer_test.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
 			"path" : "driverContainer_test.cpp",
 			"sourceGroupIndex" : 0
 		},
@@ -342,253 +350,253 @@
 		{
 			"backtrace" : 1,
 			"compileGroupIndex" : 0,
-			"path" : "/home/dinis/CLionProjects/fsoft2025_1DA_2_definitivo/Project/FleetManager/sources/controllers/Controller.cpp",
+			"path" : "/Users/vitorteixeira/Desktop/FSOFT/PL3/fsoft2025_1DA_2/Project/FleetManager/sources/controllers/Controller.cpp",
 			"sourceGroupIndex" : 0
 		},
 		{
 			"backtrace" : 1,
 			"compileGroupIndex" : 0,
-			"path" : "/home/dinis/CLionProjects/fsoft2025_1DA_2_definitivo/Project/FleetManager/sources/exceptions/NonExistingDataException.cpp",
+			"path" : "/Users/vitorteixeira/Desktop/FSOFT/PL3/fsoft2025_1DA_2/Project/FleetManager/sources/exceptions/NonExistingDataException.cpp",
 			"sourceGroupIndex" : 0
 		},
 		{
 			"backtrace" : 1,
 			"compileGroupIndex" : 0,
-			"path" : "/home/dinis/CLionProjects/fsoft2025_1DA_2_definitivo/Project/FleetManager/sources/exceptions/DuplicatedDataException.cpp",
+			"path" : "/Users/vitorteixeira/Desktop/FSOFT/PL3/fsoft2025_1DA_2/Project/FleetManager/sources/exceptions/DuplicatedDataException.cpp",
 			"sourceGroupIndex" : 0
 		},
 		{
 			"backtrace" : 1,
 			"compileGroupIndex" : 0,
-			"path" : "/home/dinis/CLionProjects/fsoft2025_1DA_2_definitivo/Project/FleetManager/sources/exceptions/InvalidDataException.cpp",
+			"path" : "/Users/vitorteixeira/Desktop/FSOFT/PL3/fsoft2025_1DA_2/Project/FleetManager/sources/exceptions/InvalidDataException.cpp",
 			"sourceGroupIndex" : 0
 		},
 		{
 			"backtrace" : 1,
 			"compileGroupIndex" : 0,
-			"path" : "/home/dinis/CLionProjects/fsoft2025_1DA_2_definitivo/Project/FleetManager/sources/model/Vehicle.cpp",
+			"path" : "/Users/vitorteixeira/Desktop/FSOFT/PL3/fsoft2025_1DA_2/Project/FleetManager/sources/model/Vehicle.cpp",
 			"sourceGroupIndex" : 0
 		},
 		{
 			"backtrace" : 1,
 			"compileGroupIndex" : 0,
-			"path" : "/home/dinis/CLionProjects/fsoft2025_1DA_2_definitivo/Project/FleetManager/sources/model/Date.cpp",
+			"path" : "/Users/vitorteixeira/Desktop/FSOFT/PL3/fsoft2025_1DA_2/Project/FleetManager/sources/model/Date.cpp",
 			"sourceGroupIndex" : 0
 		},
 		{
 			"backtrace" : 1,
 			"compileGroupIndex" : 0,
-			"path" : "/home/dinis/CLionProjects/fsoft2025_1DA_2_definitivo/Project/FleetManager/sources/model/Driver.cpp",
+			"path" : "/Users/vitorteixeira/Desktop/FSOFT/PL3/fsoft2025_1DA_2/Project/FleetManager/sources/model/Driver.cpp",
 			"sourceGroupIndex" : 0
 		},
 		{
 			"backtrace" : 1,
 			"compileGroupIndex" : 0,
-			"path" : "/home/dinis/CLionProjects/fsoft2025_1DA_2_definitivo/Project/FleetManager/sources/model/DriverContainer.cpp",
+			"path" : "/Users/vitorteixeira/Desktop/FSOFT/PL3/fsoft2025_1DA_2/Project/FleetManager/sources/model/DriverContainer.cpp",
 			"sourceGroupIndex" : 0
 		},
 		{
 			"backtrace" : 1,
 			"compileGroupIndex" : 0,
-			"path" : "/home/dinis/CLionProjects/fsoft2025_1DA_2_definitivo/Project/FleetManager/sources/model/Enterprise.cpp",
+			"path" : "/Users/vitorteixeira/Desktop/FSOFT/PL3/fsoft2025_1DA_2/Project/FleetManager/sources/model/Enterprise.cpp",
 			"sourceGroupIndex" : 0
 		},
 		{
 			"backtrace" : 1,
 			"compileGroupIndex" : 0,
-			"path" : "/home/dinis/CLionProjects/fsoft2025_1DA_2_definitivo/Project/FleetManager/sources/model/Expense.cpp",
+			"path" : "/Users/vitorteixeira/Desktop/FSOFT/PL3/fsoft2025_1DA_2/Project/FleetManager/sources/model/Expense.cpp",
 			"sourceGroupIndex" : 0
 		},
 		{
 			"backtrace" : 1,
 			"compileGroupIndex" : 0,
-			"path" : "/home/dinis/CLionProjects/fsoft2025_1DA_2_definitivo/Project/FleetManager/sources/model/FinancialContainer.cpp",
+			"path" : "/Users/vitorteixeira/Desktop/FSOFT/PL3/fsoft2025_1DA_2/Project/FleetManager/sources/model/FinancialContainer.cpp",
 			"sourceGroupIndex" : 0
 		},
 		{
 			"backtrace" : 1,
 			"compileGroupIndex" : 0,
-			"path" : "/home/dinis/CLionProjects/fsoft2025_1DA_2_definitivo/Project/FleetManager/sources/model/Inspection.cpp",
+			"path" : "/Users/vitorteixeira/Desktop/FSOFT/PL3/fsoft2025_1DA_2/Project/FleetManager/sources/model/Inspection.cpp",
 			"sourceGroupIndex" : 0
 		},
 		{
 			"backtrace" : 1,
 			"compileGroupIndex" : 0,
-			"path" : "/home/dinis/CLionProjects/fsoft2025_1DA_2_definitivo/Project/FleetManager/sources/model/Insurance.cpp",
+			"path" : "/Users/vitorteixeira/Desktop/FSOFT/PL3/fsoft2025_1DA_2/Project/FleetManager/sources/model/Insurance.cpp",
 			"sourceGroupIndex" : 0
 		},
 		{
 			"backtrace" : 1,
 			"compileGroupIndex" : 0,
-			"path" : "/home/dinis/CLionProjects/fsoft2025_1DA_2_definitivo/Project/FleetManager/sources/model/Order.cpp",
+			"path" : "/Users/vitorteixeira/Desktop/FSOFT/PL3/fsoft2025_1DA_2/Project/FleetManager/sources/model/Order.cpp",
 			"sourceGroupIndex" : 0
 		},
 		{
 			"backtrace" : 1,
 			"compileGroupIndex" : 0,
-			"path" : "/home/dinis/CLionProjects/fsoft2025_1DA_2_definitivo/Project/FleetManager/sources/model/OrderContainer.cpp",
+			"path" : "/Users/vitorteixeira/Desktop/FSOFT/PL3/fsoft2025_1DA_2/Project/FleetManager/sources/model/OrderContainer.cpp",
 			"sourceGroupIndex" : 0
 		},
 		{
 			"backtrace" : 1,
 			"compileGroupIndex" : 0,
-			"path" : "/home/dinis/CLionProjects/fsoft2025_1DA_2_definitivo/Project/FleetManager/sources/model/Revenue.cpp",
+			"path" : "/Users/vitorteixeira/Desktop/FSOFT/PL3/fsoft2025_1DA_2/Project/FleetManager/sources/model/Revenue.cpp",
 			"sourceGroupIndex" : 0
 		},
 		{
 			"backtrace" : 1,
 			"compileGroupIndex" : 0,
-			"path" : "/home/dinis/CLionProjects/fsoft2025_1DA_2_definitivo/Project/FleetManager/sources/model/Trip.cpp",
+			"path" : "/Users/vitorteixeira/Desktop/FSOFT/PL3/fsoft2025_1DA_2/Project/FleetManager/sources/model/Trip.cpp",
 			"sourceGroupIndex" : 0
 		},
 		{
 			"backtrace" : 1,
 			"compileGroupIndex" : 0,
-			"path" : "/home/dinis/CLionProjects/fsoft2025_1DA_2_definitivo/Project/FleetManager/sources/model/TripContainer.cpp",
+			"path" : "/Users/vitorteixeira/Desktop/FSOFT/PL3/fsoft2025_1DA_2/Project/FleetManager/sources/model/TripContainer.cpp",
 			"sourceGroupIndex" : 0
 		},
 		{
 			"backtrace" : 1,
 			"compileGroupIndex" : 0,
-			"path" : "/home/dinis/CLionProjects/fsoft2025_1DA_2_definitivo/Project/FleetManager/sources/model/Truck.cpp",
+			"path" : "/Users/vitorteixeira/Desktop/FSOFT/PL3/fsoft2025_1DA_2/Project/FleetManager/sources/model/Truck.cpp",
 			"sourceGroupIndex" : 0
 		},
 		{
 			"backtrace" : 1,
 			"compileGroupIndex" : 0,
-			"path" : "/home/dinis/CLionProjects/fsoft2025_1DA_2_definitivo/Project/FleetManager/sources/model/Vacation.cpp",
+			"path" : "/Users/vitorteixeira/Desktop/FSOFT/PL3/fsoft2025_1DA_2/Project/FleetManager/sources/model/Vacation.cpp",
 			"sourceGroupIndex" : 0
 		},
 		{
 			"backtrace" : 1,
 			"compileGroupIndex" : 0,
-			"path" : "/home/dinis/CLionProjects/fsoft2025_1DA_2_definitivo/Project/FleetManager/sources/model/Van.cpp",
+			"path" : "/Users/vitorteixeira/Desktop/FSOFT/PL3/fsoft2025_1DA_2/Project/FleetManager/sources/model/Van.cpp",
 			"sourceGroupIndex" : 0
 		},
 		{
 			"backtrace" : 1,
 			"compileGroupIndex" : 0,
-			"path" : "/home/dinis/CLionProjects/fsoft2025_1DA_2_definitivo/Project/FleetManager/sources/model/VehicleContainer.cpp",
+			"path" : "/Users/vitorteixeira/Desktop/FSOFT/PL3/fsoft2025_1DA_2/Project/FleetManager/sources/model/VehicleContainer.cpp",
 			"sourceGroupIndex" : 0
 		},
 		{
 			"backtrace" : 1,
 			"compileGroupIndex" : 0,
-			"path" : "/home/dinis/CLionProjects/fsoft2025_1DA_2_definitivo/Project/FleetManager/sources/model/VehicleStorageLocation.cpp",
+			"path" : "/Users/vitorteixeira/Desktop/FSOFT/PL3/fsoft2025_1DA_2/Project/FleetManager/sources/model/VehicleStorageLocation.cpp",
 			"sourceGroupIndex" : 0
 		},
 		{
 			"backtrace" : 1,
 			"compileGroupIndex" : 0,
-			"path" : "/home/dinis/CLionProjects/fsoft2025_1DA_2_definitivo/Project/FleetManager/sources/model/VSLContainer.cpp",
+			"path" : "/Users/vitorteixeira/Desktop/FSOFT/PL3/fsoft2025_1DA_2/Project/FleetManager/sources/model/VSLContainer.cpp",
 			"sourceGroupIndex" : 0
 		},
 		{
 			"backtrace" : 1,
 			"compileGroupIndex" : 0,
-			"path" : "/home/dinis/CLionProjects/fsoft2025_1DA_2_definitivo/Project/FleetManager/sources/views/DriverView.cpp",
+			"path" : "/Users/vitorteixeira/Desktop/FSOFT/PL3/fsoft2025_1DA_2/Project/FleetManager/sources/views/DriverView.cpp",
 			"sourceGroupIndex" : 0
 		},
 		{
 			"backtrace" : 1,
 			"compileGroupIndex" : 0,
-			"path" : "/home/dinis/CLionProjects/fsoft2025_1DA_2_definitivo/Project/FleetManager/sources/views/FinancialView.cpp",
+			"path" : "/Users/vitorteixeira/Desktop/FSOFT/PL3/fsoft2025_1DA_2/Project/FleetManager/sources/views/FinancialView.cpp",
 			"sourceGroupIndex" : 0
 		},
 		{
 			"backtrace" : 1,
 			"compileGroupIndex" : 0,
-			"path" : "/home/dinis/CLionProjects/fsoft2025_1DA_2_definitivo/Project/FleetManager/sources/views/InspectionView.cpp",
+			"path" : "/Users/vitorteixeira/Desktop/FSOFT/PL3/fsoft2025_1DA_2/Project/FleetManager/sources/views/InspectionView.cpp",
 			"sourceGroupIndex" : 0
 		},
 		{
 			"backtrace" : 1,
 			"compileGroupIndex" : 0,
-			"path" : "/home/dinis/CLionProjects/fsoft2025_1DA_2_definitivo/Project/FleetManager/sources/views/InsuranceView.cpp",
+			"path" : "/Users/vitorteixeira/Desktop/FSOFT/PL3/fsoft2025_1DA_2/Project/FleetManager/sources/views/InsuranceView.cpp",
 			"sourceGroupIndex" : 0
 		},
 		{
 			"backtrace" : 1,
 			"compileGroupIndex" : 0,
-			"path" : "/home/dinis/CLionProjects/fsoft2025_1DA_2_definitivo/Project/FleetManager/sources/views/OrderView.cpp",
+			"path" : "/Users/vitorteixeira/Desktop/FSOFT/PL3/fsoft2025_1DA_2/Project/FleetManager/sources/views/OrderView.cpp",
 			"sourceGroupIndex" : 0
 		},
 		{
 			"backtrace" : 1,
 			"compileGroupIndex" : 0,
-			"path" : "/home/dinis/CLionProjects/fsoft2025_1DA_2_definitivo/Project/FleetManager/sources/views/TripView.cpp",
+			"path" : "/Users/vitorteixeira/Desktop/FSOFT/PL3/fsoft2025_1DA_2/Project/FleetManager/sources/views/TripView.cpp",
 			"sourceGroupIndex" : 0
 		},
 		{
 			"backtrace" : 1,
 			"compileGroupIndex" : 0,
-			"path" : "/home/dinis/CLionProjects/fsoft2025_1DA_2_definitivo/Project/FleetManager/sources/views/Utils.cpp",
+			"path" : "/Users/vitorteixeira/Desktop/FSOFT/PL3/fsoft2025_1DA_2/Project/FleetManager/sources/views/Utils.cpp",
 			"sourceGroupIndex" : 0
 		},
 		{
 			"backtrace" : 1,
 			"compileGroupIndex" : 0,
-			"path" : "/home/dinis/CLionProjects/fsoft2025_1DA_2_definitivo/Project/FleetManager/sources/views/VacationView.cpp",
+			"path" : "/Users/vitorteixeira/Desktop/FSOFT/PL3/fsoft2025_1DA_2/Project/FleetManager/sources/views/VacationView.cpp",
 			"sourceGroupIndex" : 0
 		},
 		{
 			"backtrace" : 1,
 			"compileGroupIndex" : 0,
-			"path" : "/home/dinis/CLionProjects/fsoft2025_1DA_2_definitivo/Project/FleetManager/sources/views/VehicleStorageLocationView.cpp",
+			"path" : "/Users/vitorteixeira/Desktop/FSOFT/PL3/fsoft2025_1DA_2/Project/FleetManager/sources/views/VehicleStorageLocationView.cpp",
 			"sourceGroupIndex" : 0
 		},
 		{
 			"backtrace" : 1,
 			"compileGroupIndex" : 0,
-			"path" : "/home/dinis/CLionProjects/fsoft2025_1DA_2_definitivo/Project/FleetManager/sources/views/VehicleView.cpp",
+			"path" : "/Users/vitorteixeira/Desktop/FSOFT/PL3/fsoft2025_1DA_2/Project/FleetManager/sources/views/VehicleView.cpp",
 			"sourceGroupIndex" : 0
 		},
 		{
 			"backtrace" : 1,
 			"compileGroupIndex" : 0,
-			"path" : "/home/dinis/CLionProjects/fsoft2025_1DA_2_definitivo/Project/FleetManager/sources/views/View.cpp",
+			"path" : "/Users/vitorteixeira/Desktop/FSOFT/PL3/fsoft2025_1DA_2/Project/FleetManager/sources/views/View.cpp",
 			"sourceGroupIndex" : 0
 		},
 		{
 			"backtrace" : 1,
 			"compileGroupIndex" : 0,
-			"path" : "/home/dinis/CLionProjects/fsoft2025_1DA_2_definitivo/Project/FleetManager/sources/serial/DriverSerialization.cpp",
+			"path" : "/Users/vitorteixeira/Desktop/FSOFT/PL3/fsoft2025_1DA_2/Project/FleetManager/sources/serial/DriverSerialization.cpp",
 			"sourceGroupIndex" : 0
 		},
 		{
 			"backtrace" : 1,
 			"compileGroupIndex" : 0,
-			"path" : "/home/dinis/CLionProjects/fsoft2025_1DA_2_definitivo/Project/FleetManager/sources/serial/FinancialSerialization.cpp",
+			"path" : "/Users/vitorteixeira/Desktop/FSOFT/PL3/fsoft2025_1DA_2/Project/FleetManager/sources/serial/FinancialSerialization.cpp",
 			"sourceGroupIndex" : 0
 		},
 		{
 			"backtrace" : 1,
 			"compileGroupIndex" : 0,
-			"path" : "/home/dinis/CLionProjects/fsoft2025_1DA_2_definitivo/Project/FleetManager/sources/serial/OrderSerialization.cpp",
+			"path" : "/Users/vitorteixeira/Desktop/FSOFT/PL3/fsoft2025_1DA_2/Project/FleetManager/sources/serial/OrderSerialization.cpp",
 			"sourceGroupIndex" : 0
 		},
 		{
 			"backtrace" : 1,
 			"compileGroupIndex" : 0,
-			"path" : "/home/dinis/CLionProjects/fsoft2025_1DA_2_definitivo/Project/FleetManager/sources/serial/TripSerialization.cpp",
+			"path" : "/Users/vitorteixeira/Desktop/FSOFT/PL3/fsoft2025_1DA_2/Project/FleetManager/sources/serial/TripSerialization.cpp",
 			"sourceGroupIndex" : 0
 		},
 		{
 			"backtrace" : 1,
 			"compileGroupIndex" : 0,
-			"path" : "/home/dinis/CLionProjects/fsoft2025_1DA_2_definitivo/Project/FleetManager/sources/serial/VehicleSerialization.cpp",
+			"path" : "/Users/vitorteixeira/Desktop/FSOFT/PL3/fsoft2025_1DA_2/Project/FleetManager/sources/serial/VehicleSerialization.cpp",
 			"sourceGroupIndex" : 0
 		},
 		{
 			"backtrace" : 1,
 			"compileGroupIndex" : 0,
-			"path" : "/home/dinis/CLionProjects/fsoft2025_1DA_2_definitivo/Project/FleetManager/sources/serial/VehicleStorageLocationSerialization.cpp",
+			"path" : "/Users/vitorteixeira/Desktop/FSOFT/PL3/fsoft2025_1DA_2/Project/FleetManager/sources/serial/VehicleStorageLocationSerialization.cpp",
 			"sourceGroupIndex" : 0
 		},
 		{
 			"backtrace" : 1,
 			"compileGroupIndex" : 0,
-			"path" : "/home/dinis/CLionProjects/fsoft2025_1DA_2_definitivo/Project/FleetManager/sources/serial/DataContainer.cpp",
+			"path" : "/Users/vitorteixeira/Desktop/FSOFT/PL3/fsoft2025_1DA_2/Project/FleetManager/sources/serial/DataContainer.cpp",
 			"sourceGroupIndex" : 0
 		}
 	],
