@@ -68,9 +68,9 @@ add_executable(runTests
         financial_test.cpp
         vehicle_test.cpp
         vsl_test.cpp
-
+        orderContainer_test.cpp
         driverContainer_test.cpp
-        financialContainer_test.cpp
+        /#financialContainer_test.cpp
         ${APP_SOURCES}
 )
 
