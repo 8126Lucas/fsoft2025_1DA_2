@@ -1,4 +1,4 @@
-/home/dinis/Downloads/clion/clion-2024.3.4/bin/cmake/linux/x64/bin/cmake -DCMAKE_BUILD_TYPE=Debug -G "Unix Makefiles" -S /home/dinis/CLionProjects/fsoft2025_1DA_2_definitivo/ProjectTester/FleetManagerTest -B /home/dinis/CLionProjects/fsoft2025_1DA_2_definitivo/ProjectTester/FleetManagerTest/cmake-build-debug
--- Configuring done (0.0s)
--- Generating done (0.0s)
--- Build files have been written to: /home/dinis/CLionProjects/fsoft2025_1DA_2_definitivo/ProjectTester/FleetManagerTest/cmake-build-debug
+"C:\Program Files (x86)\JetBrains\CLion 2024.3.4\bin\cmake\win\x64\bin\cmake.exe" -DCMAKE_BUILD_TYPE=Debug -G "MinGW Makefiles" -S C:\Users\lucas\Desktop\fsoft2025_1DA_2\ProjectTester\FleetManagerTest -B C:\Users\lucas\Desktop\fsoft2025_1DA_2\ProjectTester\FleetManagerTest\cmake-build-debug
+-- Configuring done (0.8s)
+-- Generating done (0.7s)
+-- Build files have been written to: C:/Users/lucas/Desktop/fsoft2025_1DA_2/ProjectTester/FleetManagerTest/cmake-build-debug

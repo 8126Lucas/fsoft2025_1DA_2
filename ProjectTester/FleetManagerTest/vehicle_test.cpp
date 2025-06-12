@@ -3,8 +3,6 @@
 //
 
 #include "Vehicle.h"
-#include "Truck.h"
-#include "Van.h"
 #include "Insurance.h"
 #include "Inspection.h"
 #include "Trip.h"
@@ -22,31 +20,6 @@ protected:
     Vehicle *vehicle;
 };
 
-class TruckTest : public testing::Test {
-protected:
-    void SetUp() override {
-        truck = new Truck;
-    }
-    void TearDown() override {
-        delete truck;
-        truck = nullptr;
-    }
-    Truck *truck;
-};
-
-class VanTest : public testing::Test {
-protected:
-    void SetUp() override {
-        van = new Van;
-    }
-    void TearDown() override {
-        delete van;
-        van = nullptr;
-    }
-    Van *van;
-};
-
-// Vehicle
 TEST_F(VehicleTest, FuelVehicle) {
     vehicle->setFuel(20);
     EXPECT_EQ(vehicle->getFuel(), 20);
@@ -158,84 +131,4 @@ TEST_F(VehicleTest, InspectionRemainingDays) {
     EXPECT_EQ(testInspection->getRemainingDays(), 0);
 
     delete testInspection;
-}
-
-// Truck
-TEST_F(TruckTest, EmptyConstructorInicialization) {
-    EXPECT_EQ(truck->getCategory(), CATEGORY::TRUCK);
-    EXPECT_EQ(truck->getBrand(), "");
-    EXPECT_EQ(truck->getModel(), "");
-    EXPECT_EQ(truck->getYear(), 0);
-    EXPECT_EQ(truck->getLicensePlate(), "");
-    EXPECT_EQ(truck->getMileage(), 0);
-    EXPECT_EQ(truck->getFuel(), 0);
-    EXPECT_TRUE(truck->getAvailability());
-    EXPECT_EQ(truck->getWeightCapacity(), 0);
-    EXPECT_EQ(truck->getInsurance(), nullptr);
-    EXPECT_EQ(truck->getInspection(), nullptr);
-    EXPECT_EQ(truck->getVSL(), nullptr);
-}
-
-TEST_F(TruckTest, CreateTruck) {
-    truck->setCategory(TRUCK);
-    truck->setBrand("Dacia");
-    truck->setModel("Duster");
-    truck->setYear(2025);
-    truck->setLicensePlate("AA-00-BB");
-    truck->setMileage(15.8);
-    truck->setFuel(76.35);
-    truck->setWeightCapacity(27.87);
-
-    EXPECT_EQ(truck->getCategory(), TRUCK);
-    EXPECT_EQ(truck->getBrand(), "Dacia");
-    EXPECT_EQ(truck->getModel(), "Duster");
-    EXPECT_EQ(truck->getYear(), 2025);
-    EXPECT_EQ(truck->getLicensePlate(), "AA-00-BB");
-    EXPECT_EQ(truck->getMileage(), 15.8);
-    EXPECT_EQ(truck->getFuel(), 76.35);
-    EXPECT_TRUE(truck->getAvailability());
-    EXPECT_EQ(truck->getWeightCapacity(), 27.87);
-    EXPECT_EQ(truck->getInsurance(), nullptr);
-    EXPECT_EQ(truck->getInspection(), nullptr);
-    EXPECT_EQ(truck->getVSL(), nullptr);
-}
-
-// Van
-TEST_F(VanTest, EmptyConstructorInicialization) {
-    EXPECT_EQ(van->getCategory(), CATEGORY::VAN);
-    EXPECT_EQ(van->getBrand(), "");
-    EXPECT_EQ(van->getModel(), "");
-    EXPECT_EQ(van->getYear(), 0);
-    EXPECT_EQ(van->getLicensePlate(), "");
-    EXPECT_EQ(van->getMileage(), 0);
-    EXPECT_EQ(van->getFuel(), 0);
-    EXPECT_TRUE(van->getAvailability());
-    EXPECT_EQ(van->getSpaceCapacity(), 0);
-    EXPECT_EQ(van->getInsurance(), nullptr);
-    EXPECT_EQ(van->getInspection(), nullptr);
-    EXPECT_EQ(van->getVSL(), nullptr);
-}
-
-TEST_F(VanTest, CreateVan) {
-    van->setCategory(VAN);
-    van->setBrand("Fiat");
-    van->setModel("Punto");
-    van->setYear(2006);
-    van->setLicensePlate("65-7U-TY");
-    van->setMileage(876543);
-    van->setFuel(45.7);
-    van->setSpaceCapacity(0.764);
-
-    EXPECT_EQ(van->getCategory(), VAN);
-    EXPECT_EQ(van->getBrand(), "Fiat");
-    EXPECT_EQ(van->getModel(), "Punto");
-    EXPECT_EQ(van->getYear(), 2006);
-    EXPECT_EQ(van->getLicensePlate(), "65-7U-TY");
-    EXPECT_EQ(van->getMileage(), 876543);
-    EXPECT_EQ(van->getFuel(), 45.7);
-    EXPECT_TRUE(van->getAvailability());
-    EXPECT_EQ(van->getSpaceCapacity(), 0.764);
-    EXPECT_EQ(van->getInsurance(), nullptr);
-    EXPECT_EQ(van->getInspection(), nullptr);
-    EXPECT_EQ(van->getVSL(), nullptr);
 }
