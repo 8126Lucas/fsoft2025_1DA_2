@@ -9,7 +9,7 @@
 #include "DuplicatedDataException.h"
 #include "Date.h"
 
-class expenseTest : public ::testing::Test {
+class ExpenseTest : public ::testing::Test {
 protected:
     void SetUp() override {
         expense = new Expense;
@@ -21,7 +21,7 @@ protected:
     Expense* expense;
 };
 
-TEST_F(expenseTest, ConstructorAndInicialization) {
+TEST_F(ExpenseTest, ConstructorAndInicialization) {
     EXPECT_EQ(expense->getID(), 0);
     EXPECT_EQ(expense->getTrip(), nullptr);
     Date emptyDate;
@@ -30,7 +30,7 @@ TEST_F(expenseTest, ConstructorAndInicialization) {
     EXPECT_EQ(expense->getType(), FUEL);
 }
 
-TEST_F(expenseTest, testSetExpense) {
+TEST_F(ExpenseTest, testSetExpense) {
     int newId = 100;
     Trip* testTrip = new Trip();
     Date newDate(1, 1, 2025);
@@ -52,7 +52,7 @@ TEST_F(expenseTest, testSetExpense) {
     delete testTrip;
 }
 
-TEST_F(expenseTest, TestAllExpenseTypes) {
+TEST_F(ExpenseTest, TestAllExpenseTypes) {
     expense->setType(FUEL);
     EXPECT_EQ(expense->getType(), FUEL);
 
@@ -69,7 +69,31 @@ TEST_F(expenseTest, TestAllExpenseTypes) {
     EXPECT_EQ(expense->getType(), FINE);
 }
 
-class revenueTest : public ::testing::Test {
+//recordExpense
+
+TEST_F(ExpenseTest, TestRecordExpense) {
+
+}
+
+//removeExpense
+
+TEST_F(ExpenseTest, TestRemoveExpense) {
+
+}
+
+//listExpenses
+
+TEST_F(ExpenseTest, TestListExpenses) {
+
+}
+
+//listExpensesByType
+
+TEST_F(ExpenseTest, TestListExpensesByType) {
+
+}
+
+class RevenueTest : public ::testing::Test {
 protected:
     void SetUp() override {
         revenue = new Revenue;
@@ -81,7 +105,7 @@ protected:
     Revenue* revenue;
 };
 
-TEST_F(revenueTest, ConstructorAndInicialization) {
+TEST_F(RevenueTest, ConstructorAndInicialization) {
     EXPECT_EQ(revenue->getID(), 0);
     EXPECT_EQ(revenue->getOrder(), nullptr);
     Date emptyDate;
@@ -89,7 +113,7 @@ TEST_F(revenueTest, ConstructorAndInicialization) {
     EXPECT_EQ(revenue->getAmount(), 0.0);
 }
 
-TEST_F(revenueTest, testSetRevenue) {
+TEST_F(RevenueTest, testSetRevenue) {
     int newId = 100;
     Order* testOrder = new Order();
     Date newDate(1, 1, 2025);
@@ -106,4 +130,34 @@ TEST_F(revenueTest, testSetRevenue) {
     EXPECT_DOUBLE_EQ(revenue->getAmount(), newAmount);
 
     delete testOrder;
+}
+
+//recordRevenue
+
+TEST_F(RevenueTest, testRecordRevenue) {
+
+}
+
+//removeRevenue
+
+TEST_F(RevenueTest, testRemoveRevenue) {
+
+}
+
+//listRevenues
+
+TEST_F(RevenueTest, testListRevenues) {
+
+}
+
+//listTransactions
+
+TEST_F(RevenueTest, testListTransactions) {
+
+}
+
+//showBalance
+
+TEST_F(RevenueTest, testShowBalance) {
+
 }

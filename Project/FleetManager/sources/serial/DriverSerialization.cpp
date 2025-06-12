@@ -16,8 +16,10 @@ void DriverSerialization::toJSON(json &j, const Driver &driver) {
     j["available"] = driver.getAvailability();
 
     j["vacations"] = json::array();
-    for(Vacation *vacation : driver.getVacations()) {
-        json vacationJSON;
+    const list<Vacation*>& driverVacations = driver.getVacations();
+    for(const Vacation* vacation : driverVacations) {
+        if (vacation != nullptr) {
+            json vacationJSON;
 
         vacationJSON["id"] = vacation->getID();
         vacationJSON["driverID"] = vacation->getDriver()->getID();
@@ -26,6 +28,7 @@ void DriverSerialization::toJSON(json &j, const Driver &driver) {
         vacationJSON["status"] = vacation->getStatus();
 
         j["vacations"].push_back(vacationJSON);
+        }
     }
 }
 
@@ -37,6 +40,8 @@ void DriverSerialization::fromJSON(const json &j, Driver &driver) {
     driver.setAge(j["age"]);
     driver.setTimeToRetire(j["timeToRetire"]);
     driver.setAvailability(j["available"]);
+
+    driver.getVacations().clear();
 
     if (j["vacations"].is_array() && !j["vacations"].empty()) {
         for(const basic_json<> &vacationJSON : j["vacations"]) {

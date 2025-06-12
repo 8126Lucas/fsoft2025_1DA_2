@@ -29,14 +29,12 @@ public:
 
     ~Driver();
 
-    // void addDriver();
-    // void removeDriver();
-
     int getID() const;
     char getLicense() const;
     int getAge() const;
     int getTimeToRetire() const;
-    list<Vacation *> getVacations() const;
+    const list<Vacation*>& getVacations() const;
+    list<Vacation*>& getVacations();
     Vacation *getVacation();
     bool getAvailability() const;
     int getVacationID();

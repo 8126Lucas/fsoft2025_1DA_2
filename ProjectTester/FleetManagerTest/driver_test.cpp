@@ -2,13 +2,14 @@
 // Created by ruben on 10/06/2025.
 //
 #include "Driver.h"
+#include "DriverContainer.h"
 #include "gtest/gtest.h"
 #include "NonExistingDataException.h"
 #include "DuplicatedDataException.h"
 #include "Date.h"
 #include "Vacation.h"
 
-class driverTest : public ::testing::Test {
+class DriverTest : public ::testing::Test {
 protected:
     void SetUp() override {
         driver = new Driver();
@@ -20,7 +21,7 @@ protected:
     Driver* driver;
 };
 
-TEST_F(driverTest, ConstructorAndInicialization) {
+TEST_F(DriverTest, ConstructorAndInicialization) {
     EXPECT_EQ(driver->getID(), 0);
     EXPECT_EQ(driver->getLicense(), '\0');
     EXPECT_EQ(driver->getAge(), 0);
@@ -29,7 +30,7 @@ TEST_F(driverTest, ConstructorAndInicialization) {
     EXPECT_EQ(driver->getTimeToRetire(), 65);
 }
 
-TEST_F(driverTest, TestSetDriver) {
+TEST_F(DriverTest, TestSetDriver) {
     int newId = 100;
     char newLicense = 'B';
     int newAge = 30;
@@ -49,7 +50,7 @@ TEST_F(driverTest, TestSetDriver) {
     EXPECT_FALSE(driver->getAvailability());
 }
 
-class vacationTest : public ::testing::Test {
+class VacationTest : public ::testing::Test {
 protected:
     void SetUp() override {
         vacation = new Vacation;
@@ -61,7 +62,7 @@ protected:
     Vacation *vacation;
 };
 
-TEST_F(vacationTest, ConstructorAndInicialization) {
+TEST_F(VacationTest, ConstructorAndInicialization) {
     EXPECT_EQ(vacation->getID(), 0);
     EXPECT_EQ(vacation->getDriver(), nullptr);
     Date emptyDate;
@@ -70,7 +71,7 @@ TEST_F(vacationTest, ConstructorAndInicialization) {
     EXPECT_FALSE(vacation->getStatus());
 }
 
-TEST_F(vacationTest, TestSetVacation) {
+TEST_F(VacationTest, TestSetVacation) {
     int newId = 100;
     Driver* testDriver = new Driver();
     Date newStartDate;

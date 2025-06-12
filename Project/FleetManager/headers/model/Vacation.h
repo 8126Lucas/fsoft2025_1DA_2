@@ -19,7 +19,7 @@ private:
 
 public:
     Vacation();
-    Vacation(int id, Driver *driver, Date startDate, Date endDate, bool status);
+    Vacation(int id, Driver *driver, Date startDate, Date endDate);
     ~Vacation();
 
     int getID() const;

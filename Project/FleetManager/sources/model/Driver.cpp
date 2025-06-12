@@ -20,7 +20,12 @@ Driver::Driver(int id, char &license, int age) : available(true) {
     this->age= age;
 }
 
-Driver::~Driver() {}
+Driver::~Driver() {
+    for (Vacation* vacation : vacations) {
+        delete vacation;
+    }
+    vacations.clear();
+}
 
 int Driver::getID() const {
     return id;
@@ -38,7 +43,11 @@ bool Driver::getAvailability() const {
     return available;
 }
 
-list<Vacation *> Driver::getVacations() const {
+const list<Vacation*>& Driver::getVacations() const {
+    return vacations;
+}
+
+list<Vacation*>& Driver::getVacations() {
     return vacations;
 }
 
@@ -104,16 +113,19 @@ void Driver::setTimeToRetire(int age) {
     this->timeToRetire = 65 - age;
 }
 
-void Driver::setVacation(Vacation *vacation) {
-    this->vacations.push_back(vacation);
-}
-
 void Driver::setAvailability(bool available) {
     this->available = available;
 }
 
+void Driver::setVacation(Vacation* vacation) {
+    if (vacation != nullptr) {
+        vacations.push_back(vacation);
+    }
+}
+
 void Driver::vacationAlert() {
-    if (this->getVacation()->isOnVacation()) {
+    Vacation* vacation = this->getVacation();
+    if (vacation != nullptr && vacation->isOnVacation()) {
         DriverView::vacationAlert(*this);
     }
 }

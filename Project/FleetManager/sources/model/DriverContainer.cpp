@@ -4,6 +4,7 @@
 
 #include "DriverContainer.h"
 #include "DuplicatedDataException.h"
+#include "InvalidDataException.h"
 #include "NonExistingDataException.h"
 #include "Utils.h"
 
@@ -27,6 +28,9 @@ Driver *DriverContainer::get(int id) {
 
 void DriverContainer::add(Driver &driver) {
   try {
+    if (driver.getID() < 0 || driver.getID() == 0) {
+      throw InvalidDataException("Driver (id): " + to_string(driver.getID()));
+    }
     list<Driver>::iterator it = search(driver.getID());
     if (it != this->drivers.end()) {
       throw DuplicatedDataException("Driver (id): " + to_string(driver.getID()));
@@ -41,6 +45,9 @@ void DriverContainer::add(Driver &driver) {
 void DriverContainer::remove(int id) {
   try
   {
+      if (id <= 0) {
+        throw InvalidDataException("Driver (id): " + to_string(id));
+      }
       list<Driver>::iterator it = search(id);
       if (it != this->drivers.end()) {
         this->drivers.erase(it);
@@ -69,10 +76,42 @@ list<Driver> DriverContainer::listAvailableDrivers(bool available) {
   return newList;
 }
 
+void DriverContainer::addVacation(Vacation *vacation) {
+  try {
+    if (vacation->getID() <= 0) {
+      throw InvalidDataException("Vacation (id): " + to_string(vacation->getID()));
+    }
+
+    Driver* vacationDriver = vacation->getDriver();
+    if (vacationDriver == nullptr) {
+      throw InvalidDataException("Vacation (id): " + to_string(vacation->getID()));
+    }
+
+    list<Driver>::iterator driverIt = search(vacationDriver->getID());
+    if (driverIt == drivers.end()) {
+      throw NonExistingDataException("Driver (id): " + to_string(vacationDriver->getID()));
+    }
+
+    list<Vacation*>::const_iterator it = driverIt->getVacations().begin();
+    for (; it != driverIt->getVacations().end(); ++it) {
+      if (*it != nullptr) {
+        if ((*it)->getID() == vacation->getID()) {
+          throw DuplicatedDataException("Vacation (id): " + to_string(vacation->getID()));
+        }
+      }
+    }
+
+    driverIt->setVacation(vacation);
+
+  } catch (DuplicatedDataException &error) {
+    cout << error.what() << endl;
+  }
+}
+
 void DriverContainer::update(int id, Vacation *vacation) {
   list<Driver>::iterator it = search(id);
   if (it != this->drivers.end()) {
-    it->setVacation(vacation);
+    it->getVacations().push_back(vacation);
   } else {
     throw NonExistingDataException("Driver(id): " + to_string(id));
   }

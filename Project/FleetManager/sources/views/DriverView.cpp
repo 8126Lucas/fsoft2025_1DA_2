@@ -41,7 +41,6 @@ Driver DriverView::addDriver() {
             driver.setLicense(license);
             driver.setAge(age);
             driver.setTimeToRetire(age);
-            driver.setVacation(nullptr);
             driver.setAvailability(true);
 
         } catch (InvalidDataException &error) {

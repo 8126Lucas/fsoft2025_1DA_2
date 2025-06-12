@@ -6,7 +6,7 @@
 
 Vacation::Vacation() : id(), driver(nullptr), status(false) {}
 
-Vacation::Vacation(int id, Driver *driver, Date startDate, Date endDate, bool status) : status(true) {
+Vacation::Vacation(int id, Driver *driver, Date startDate, Date endDate) : status(true) {
   this->id = id;
   this->driver = driver;
   this->startDate = startDate;
