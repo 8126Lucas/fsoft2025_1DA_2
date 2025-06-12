@@ -70,7 +70,7 @@ add_executable(runTests
         van_test.cpp
         truck_test.cpp
         vsl_test.cpp
-
+        orderContainer_test.cpp
         driverContainer_test.cpp
         # financialContainer_test.cpp
         vehicleContainer_test.cpp
