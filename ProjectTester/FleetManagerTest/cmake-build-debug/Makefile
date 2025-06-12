@@ -47,19 +47,19 @@ cmake_force:
 SHELL = cmd.exe
 
 # The CMake executable.
-CMAKE_COMMAND = "C:\Program Files\JetBrains\CLion 2024.3.3\bin\cmake\win\aarch64\bin\cmake.exe"
+CMAKE_COMMAND = "C:\Program Files (x86)\JetBrains\CLion 2024.3.4\bin\cmake\win\x64\bin\cmake.exe"
 
 # The command to remove a file.
-RM = "C:\Program Files\JetBrains\CLion 2024.3.3\bin\cmake\win\aarch64\bin\cmake.exe" -E rm -f
+RM = "C:\Program Files (x86)\JetBrains\CLion 2024.3.4\bin\cmake\win\x64\bin\cmake.exe" -E rm -f
 
 # Escaping for special characters.
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = C:\Projects\fsoft2025_1DA_2\ProjectTester\FleetManagerTest
+CMAKE_SOURCE_DIR = C:\Users\lucas\Desktop\fsoft2025_1DA_2\ProjectTester\FleetManagerTest
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = C:\Projects\fsoft2025_1DA_2\ProjectTester\FleetManagerTest\cmake-build-debug
+CMAKE_BINARY_DIR = C:\Users\lucas\Desktop\fsoft2025_1DA_2\ProjectTester\FleetManagerTest\cmake-build-debug
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -67,7 +67,7 @@ CMAKE_BINARY_DIR = C:\Projects\fsoft2025_1DA_2\ProjectTester\FleetManagerTest\cm
 # Special rule for the target test
 test:
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --cyan "Running tests..."
-	"C:\Program Files\JetBrains\CLion 2024.3.3\bin\cmake\win\aarch64\bin\ctest.exe" --force-new-ctest-process $(ARGS)
+	"C:\Program Files (x86)\JetBrains\CLion 2024.3.4\bin\cmake\win\x64\bin\ctest.exe" --force-new-ctest-process $(ARGS)
 .PHONY : test
 
 # Special rule for the target test
@@ -77,7 +77,7 @@ test/fast: test
 # Special rule for the target edit_cache
 edit_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --cyan "No interactive CMake dialog available..."
-	"C:\Program Files\JetBrains\CLion 2024.3.3\bin\cmake\win\aarch64\bin\cmake.exe" -E echo "No interactive CMake dialog available."
+	"C:\Program Files (x86)\JetBrains\CLion 2024.3.4\bin\cmake\win\x64\bin\cmake.exe" -E echo "No interactive CMake dialog available."
 .PHONY : edit_cache
 
 # Special rule for the target edit_cache
@@ -87,7 +87,7 @@ edit_cache/fast: edit_cache
 # Special rule for the target rebuild_cache
 rebuild_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --cyan "Running CMake to regenerate build system..."
-	"C:\Program Files\JetBrains\CLion 2024.3.3\bin\cmake\win\aarch64\bin\cmake.exe" --regenerate-during-build -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
+	"C:\Program Files (x86)\JetBrains\CLion 2024.3.4\bin\cmake\win\x64\bin\cmake.exe" --regenerate-during-build -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
 .PHONY : rebuild_cache
 
 # Special rule for the target rebuild_cache
@@ -106,44 +106,44 @@ list_install_components/fast: list_install_components
 # Special rule for the target install
 install: preinstall
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --cyan "Install the project..."
-	"C:\Program Files\JetBrains\CLion 2024.3.3\bin\cmake\win\aarch64\bin\cmake.exe" -P cmake_install.cmake
+	"C:\Program Files (x86)\JetBrains\CLion 2024.3.4\bin\cmake\win\x64\bin\cmake.exe" -P cmake_install.cmake
 .PHONY : install
 
 # Special rule for the target install
 install/fast: preinstall/fast
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --cyan "Install the project..."
-	"C:\Program Files\JetBrains\CLion 2024.3.3\bin\cmake\win\aarch64\bin\cmake.exe" -P cmake_install.cmake
+	"C:\Program Files (x86)\JetBrains\CLion 2024.3.4\bin\cmake\win\x64\bin\cmake.exe" -P cmake_install.cmake
 .PHONY : install/fast
 
 # Special rule for the target install/local
 install/local: preinstall
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --cyan "Installing only the local directory..."
-	"C:\Program Files\JetBrains\CLion 2024.3.3\bin\cmake\win\aarch64\bin\cmake.exe" -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
+	"C:\Program Files (x86)\JetBrains\CLion 2024.3.4\bin\cmake\win\x64\bin\cmake.exe" -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
 .PHONY : install/local
 
 # Special rule for the target install/local
 install/local/fast: preinstall/fast
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --cyan "Installing only the local directory..."
-	"C:\Program Files\JetBrains\CLion 2024.3.3\bin\cmake\win\aarch64\bin\cmake.exe" -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
+	"C:\Program Files (x86)\JetBrains\CLion 2024.3.4\bin\cmake\win\x64\bin\cmake.exe" -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
 .PHONY : install/local/fast
 
 # Special rule for the target install/strip
 install/strip: preinstall
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --cyan "Installing the project stripped..."
-	"C:\Program Files\JetBrains\CLion 2024.3.3\bin\cmake\win\aarch64\bin\cmake.exe" -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
+	"C:\Program Files (x86)\JetBrains\CLion 2024.3.4\bin\cmake\win\x64\bin\cmake.exe" -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
 .PHONY : install/strip
 
 # Special rule for the target install/strip
 install/strip/fast: preinstall/fast
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --cyan "Installing the project stripped..."
-	"C:\Program Files\JetBrains\CLion 2024.3.3\bin\cmake\win\aarch64\bin\cmake.exe" -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
+	"C:\Program Files (x86)\JetBrains\CLion 2024.3.4\bin\cmake\win\x64\bin\cmake.exe" -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
 .PHONY : install/strip/fast
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start C:\Projects\fsoft2025_1DA_2\ProjectTester\FleetManagerTest\cmake-build-debug\CMakeFiles C:\Projects\fsoft2025_1DA_2\ProjectTester\FleetManagerTest\cmake-build-debug\\CMakeFiles\progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\lucas\Desktop\fsoft2025_1DA_2\ProjectTester\FleetManagerTest\cmake-build-debug\CMakeFiles C:\Users\lucas\Desktop\fsoft2025_1DA_2\ProjectTester\FleetManagerTest\cmake-build-debug\\CMakeFiles\progress.marks
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start C:\Projects\fsoft2025_1DA_2\ProjectTester\FleetManagerTest\cmake-build-debug\CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\lucas\Desktop\fsoft2025_1DA_2\ProjectTester\FleetManagerTest\cmake-build-debug\CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -235,1013 +235,1013 @@ gtest_main/fast:
 	$(MAKE) $(MAKESILENT) -f googleTestLib\googletest-main\googletest\CMakeFiles\gtest_main.dir\build.make googleTestLib/googletest-main/googletest/CMakeFiles/gtest_main.dir/build
 .PHONY : gtest_main/fast
 
-C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/controllers/Controller.obj: C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/controllers/Controller.cpp.obj
-.PHONY : C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/controllers/Controller.obj
+C_/Users/lucas/Desktop/fsoft2025_1DA_2/Project/FleetManager/sources/controllers/Controller.obj: C_/Users/lucas/Desktop/fsoft2025_1DA_2/Project/FleetManager/sources/controllers/Controller.cpp.obj
+.PHONY : C_/Users/lucas/Desktop/fsoft2025_1DA_2/Project/FleetManager/sources/controllers/Controller.obj
 
 # target to build an object file
-C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/controllers/Controller.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\runTests.dir\build.make CMakeFiles/runTests.dir/C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/controllers/Controller.cpp.obj
-.PHONY : C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/controllers/Controller.cpp.obj
+C_/Users/lucas/Desktop/fsoft2025_1DA_2/Project/FleetManager/sources/controllers/Controller.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\runTests.dir\build.make CMakeFiles/runTests.dir/C_/Users/lucas/Desktop/fsoft2025_1DA_2/Project/FleetManager/sources/controllers/Controller.cpp.obj
+.PHONY : C_/Users/lucas/Desktop/fsoft2025_1DA_2/Project/FleetManager/sources/controllers/Controller.cpp.obj
 
-C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/controllers/Controller.i: C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/controllers/Controller.cpp.i
-.PHONY : C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/controllers/Controller.i
+C_/Users/lucas/Desktop/fsoft2025_1DA_2/Project/FleetManager/sources/controllers/Controller.i: C_/Users/lucas/Desktop/fsoft2025_1DA_2/Project/FleetManager/sources/controllers/Controller.cpp.i
+.PHONY : C_/Users/lucas/Desktop/fsoft2025_1DA_2/Project/FleetManager/sources/controllers/Controller.i
 
 # target to preprocess a source file
-C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/controllers/Controller.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\runTests.dir\build.make CMakeFiles/runTests.dir/C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/controllers/Controller.cpp.i
-.PHONY : C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/controllers/Controller.cpp.i
+C_/Users/lucas/Desktop/fsoft2025_1DA_2/Project/FleetManager/sources/controllers/Controller.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\runTests.dir\build.make CMakeFiles/runTests.dir/C_/Users/lucas/Desktop/fsoft2025_1DA_2/Project/FleetManager/sources/controllers/Controller.cpp.i
+.PHONY : C_/Users/lucas/Desktop/fsoft2025_1DA_2/Project/FleetManager/sources/controllers/Controller.cpp.i
 
-C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/controllers/Controller.s: C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/controllers/Controller.cpp.s
-.PHONY : C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/controllers/Controller.s
+C_/Users/lucas/Desktop/fsoft2025_1DA_2/Project/FleetManager/sources/controllers/Controller.s: C_/Users/lucas/Desktop/fsoft2025_1DA_2/Project/FleetManager/sources/controllers/Controller.cpp.s
+.PHONY : C_/Users/lucas/Desktop/fsoft2025_1DA_2/Project/FleetManager/sources/controllers/Controller.s
 
 # target to generate assembly for a file
-C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/controllers/Controller.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\runTests.dir\build.make CMakeFiles/runTests.dir/C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/controllers/Controller.cpp.s
-.PHONY : C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/controllers/Controller.cpp.s
+C_/Users/lucas/Desktop/fsoft2025_1DA_2/Project/FleetManager/sources/controllers/Controller.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\runTests.dir\build.make CMakeFiles/runTests.dir/C_/Users/lucas/Desktop/fsoft2025_1DA_2/Project/FleetManager/sources/controllers/Controller.cpp.s
+.PHONY : C_/Users/lucas/Desktop/fsoft2025_1DA_2/Project/FleetManager/sources/controllers/Controller.cpp.s
 
-C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/exceptions/DuplicatedDataException.obj: C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/exceptions/DuplicatedDataException.cpp.obj
-.PHONY : C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/exceptions/DuplicatedDataException.obj
+C_/Users/lucas/Desktop/fsoft2025_1DA_2/Project/FleetManager/sources/exceptions/DuplicatedDataException.obj: C_/Users/lucas/Desktop/fsoft2025_1DA_2/Project/FleetManager/sources/exceptions/DuplicatedDataException.cpp.obj
+.PHONY : C_/Users/lucas/Desktop/fsoft2025_1DA_2/Project/FleetManager/sources/exceptions/DuplicatedDataException.obj
 
 # target to build an object file
-C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/exceptions/DuplicatedDataException.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\runTests.dir\build.make CMakeFiles/runTests.dir/C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/exceptions/DuplicatedDataException.cpp.obj
-.PHONY : C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/exceptions/DuplicatedDataException.cpp.obj
+C_/Users/lucas/Desktop/fsoft2025_1DA_2/Project/FleetManager/sources/exceptions/DuplicatedDataException.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\runTests.dir\build.make CMakeFiles/runTests.dir/C_/Users/lucas/Desktop/fsoft2025_1DA_2/Project/FleetManager/sources/exceptions/DuplicatedDataException.cpp.obj
+.PHONY : C_/Users/lucas/Desktop/fsoft2025_1DA_2/Project/FleetManager/sources/exceptions/DuplicatedDataException.cpp.obj
 
-C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/exceptions/DuplicatedDataException.i: C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/exceptions/DuplicatedDataException.cpp.i
-.PHONY : C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/exceptions/DuplicatedDataException.i
+C_/Users/lucas/Desktop/fsoft2025_1DA_2/Project/FleetManager/sources/exceptions/DuplicatedDataException.i: C_/Users/lucas/Desktop/fsoft2025_1DA_2/Project/FleetManager/sources/exceptions/DuplicatedDataException.cpp.i
+.PHONY : C_/Users/lucas/Desktop/fsoft2025_1DA_2/Project/FleetManager/sources/exceptions/DuplicatedDataException.i
 
 # target to preprocess a source file
-C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/exceptions/DuplicatedDataException.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\runTests.dir\build.make CMakeFiles/runTests.dir/C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/exceptions/DuplicatedDataException.cpp.i
-.PHONY : C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/exceptions/DuplicatedDataException.cpp.i
+C_/Users/lucas/Desktop/fsoft2025_1DA_2/Project/FleetManager/sources/exceptions/DuplicatedDataException.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\runTests.dir\build.make CMakeFiles/runTests.dir/C_/Users/lucas/Desktop/fsoft2025_1DA_2/Project/FleetManager/sources/exceptions/DuplicatedDataException.cpp.i
+.PHONY : C_/Users/lucas/Desktop/fsoft2025_1DA_2/Project/FleetManager/sources/exceptions/DuplicatedDataException.cpp.i
 
-C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/exceptions/DuplicatedDataException.s: C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/exceptions/DuplicatedDataException.cpp.s
-.PHONY : C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/exceptions/DuplicatedDataException.s
+C_/Users/lucas/Desktop/fsoft2025_1DA_2/Project/FleetManager/sources/exceptions/DuplicatedDataException.s: C_/Users/lucas/Desktop/fsoft2025_1DA_2/Project/FleetManager/sources/exceptions/DuplicatedDataException.cpp.s
+.PHONY : C_/Users/lucas/Desktop/fsoft2025_1DA_2/Project/FleetManager/sources/exceptions/DuplicatedDataException.s
 
 # target to generate assembly for a file
-C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/exceptions/DuplicatedDataException.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\runTests.dir\build.make CMakeFiles/runTests.dir/C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/exceptions/DuplicatedDataException.cpp.s
-.PHONY : C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/exceptions/DuplicatedDataException.cpp.s
+C_/Users/lucas/Desktop/fsoft2025_1DA_2/Project/FleetManager/sources/exceptions/DuplicatedDataException.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\runTests.dir\build.make CMakeFiles/runTests.dir/C_/Users/lucas/Desktop/fsoft2025_1DA_2/Project/FleetManager/sources/exceptions/DuplicatedDataException.cpp.s
+.PHONY : C_/Users/lucas/Desktop/fsoft2025_1DA_2/Project/FleetManager/sources/exceptions/DuplicatedDataException.cpp.s
 
-C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/exceptions/InvalidDataException.obj: C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/exceptions/InvalidDataException.cpp.obj
-.PHONY : C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/exceptions/InvalidDataException.obj
+C_/Users/lucas/Desktop/fsoft2025_1DA_2/Project/FleetManager/sources/exceptions/InvalidDataException.obj: C_/Users/lucas/Desktop/fsoft2025_1DA_2/Project/FleetManager/sources/exceptions/InvalidDataException.cpp.obj
+.PHONY : C_/Users/lucas/Desktop/fsoft2025_1DA_2/Project/FleetManager/sources/exceptions/InvalidDataException.obj
 
 # target to build an object file
-C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/exceptions/InvalidDataException.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\runTests.dir\build.make CMakeFiles/runTests.dir/C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/exceptions/InvalidDataException.cpp.obj
-.PHONY : C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/exceptions/InvalidDataException.cpp.obj
+C_/Users/lucas/Desktop/fsoft2025_1DA_2/Project/FleetManager/sources/exceptions/InvalidDataException.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\runTests.dir\build.make CMakeFiles/runTests.dir/C_/Users/lucas/Desktop/fsoft2025_1DA_2/Project/FleetManager/sources/exceptions/InvalidDataException.cpp.obj
+.PHONY : C_/Users/lucas/Desktop/fsoft2025_1DA_2/Project/FleetManager/sources/exceptions/InvalidDataException.cpp.obj
 
-C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/exceptions/InvalidDataException.i: C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/exceptions/InvalidDataException.cpp.i
-.PHONY : C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/exceptions/InvalidDataException.i
+C_/Users/lucas/Desktop/fsoft2025_1DA_2/Project/FleetManager/sources/exceptions/InvalidDataException.i: C_/Users/lucas/Desktop/fsoft2025_1DA_2/Project/FleetManager/sources/exceptions/InvalidDataException.cpp.i
+.PHONY : C_/Users/lucas/Desktop/fsoft2025_1DA_2/Project/FleetManager/sources/exceptions/InvalidDataException.i
 
 # target to preprocess a source file
-C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/exceptions/InvalidDataException.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\runTests.dir\build.make CMakeFiles/runTests.dir/C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/exceptions/InvalidDataException.cpp.i
-.PHONY : C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/exceptions/InvalidDataException.cpp.i
+C_/Users/lucas/Desktop/fsoft2025_1DA_2/Project/FleetManager/sources/exceptions/InvalidDataException.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\runTests.dir\build.make CMakeFiles/runTests.dir/C_/Users/lucas/Desktop/fsoft2025_1DA_2/Project/FleetManager/sources/exceptions/InvalidDataException.cpp.i
+.PHONY : C_/Users/lucas/Desktop/fsoft2025_1DA_2/Project/FleetManager/sources/exceptions/InvalidDataException.cpp.i
 
-C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/exceptions/InvalidDataException.s: C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/exceptions/InvalidDataException.cpp.s
-.PHONY : C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/exceptions/InvalidDataException.s
+C_/Users/lucas/Desktop/fsoft2025_1DA_2/Project/FleetManager/sources/exceptions/InvalidDataException.s: C_/Users/lucas/Desktop/fsoft2025_1DA_2/Project/FleetManager/sources/exceptions/InvalidDataException.cpp.s
+.PHONY : C_/Users/lucas/Desktop/fsoft2025_1DA_2/Project/FleetManager/sources/exceptions/InvalidDataException.s
 
 # target to generate assembly for a file
-C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/exceptions/InvalidDataException.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\runTests.dir\build.make CMakeFiles/runTests.dir/C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/exceptions/InvalidDataException.cpp.s
-.PHONY : C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/exceptions/InvalidDataException.cpp.s
+C_/Users/lucas/Desktop/fsoft2025_1DA_2/Project/FleetManager/sources/exceptions/InvalidDataException.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\runTests.dir\build.make CMakeFiles/runTests.dir/C_/Users/lucas/Desktop/fsoft2025_1DA_2/Project/FleetManager/sources/exceptions/InvalidDataException.cpp.s
+.PHONY : C_/Users/lucas/Desktop/fsoft2025_1DA_2/Project/FleetManager/sources/exceptions/InvalidDataException.cpp.s
 
-C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/exceptions/NonExistingDataException.obj: C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/exceptions/NonExistingDataException.cpp.obj
-.PHONY : C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/exceptions/NonExistingDataException.obj
+C_/Users/lucas/Desktop/fsoft2025_1DA_2/Project/FleetManager/sources/exceptions/NonExistingDataException.obj: C_/Users/lucas/Desktop/fsoft2025_1DA_2/Project/FleetManager/sources/exceptions/NonExistingDataException.cpp.obj
+.PHONY : C_/Users/lucas/Desktop/fsoft2025_1DA_2/Project/FleetManager/sources/exceptions/NonExistingDataException.obj
 
 # target to build an object file
-C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/exceptions/NonExistingDataException.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\runTests.dir\build.make CMakeFiles/runTests.dir/C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/exceptions/NonExistingDataException.cpp.obj
-.PHONY : C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/exceptions/NonExistingDataException.cpp.obj
+C_/Users/lucas/Desktop/fsoft2025_1DA_2/Project/FleetManager/sources/exceptions/NonExistingDataException.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\runTests.dir\build.make CMakeFiles/runTests.dir/C_/Users/lucas/Desktop/fsoft2025_1DA_2/Project/FleetManager/sources/exceptions/NonExistingDataException.cpp.obj
+.PHONY : C_/Users/lucas/Desktop/fsoft2025_1DA_2/Project/FleetManager/sources/exceptions/NonExistingDataException.cpp.obj
 
-C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/exceptions/NonExistingDataException.i: C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/exceptions/NonExistingDataException.cpp.i
-.PHONY : C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/exceptions/NonExistingDataException.i
+C_/Users/lucas/Desktop/fsoft2025_1DA_2/Project/FleetManager/sources/exceptions/NonExistingDataException.i: C_/Users/lucas/Desktop/fsoft2025_1DA_2/Project/FleetManager/sources/exceptions/NonExistingDataException.cpp.i
+.PHONY : C_/Users/lucas/Desktop/fsoft2025_1DA_2/Project/FleetManager/sources/exceptions/NonExistingDataException.i
 
 # target to preprocess a source file
-C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/exceptions/NonExistingDataException.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\runTests.dir\build.make CMakeFiles/runTests.dir/C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/exceptions/NonExistingDataException.cpp.i
-.PHONY : C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/exceptions/NonExistingDataException.cpp.i
+C_/Users/lucas/Desktop/fsoft2025_1DA_2/Project/FleetManager/sources/exceptions/NonExistingDataException.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\runTests.dir\build.make CMakeFiles/runTests.dir/C_/Users/lucas/Desktop/fsoft2025_1DA_2/Project/FleetManager/sources/exceptions/NonExistingDataException.cpp.i
+.PHONY : C_/Users/lucas/Desktop/fsoft2025_1DA_2/Project/FleetManager/sources/exceptions/NonExistingDataException.cpp.i
 
-C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/exceptions/NonExistingDataException.s: C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/exceptions/NonExistingDataException.cpp.s
-.PHONY : C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/exceptions/NonExistingDataException.s
+C_/Users/lucas/Desktop/fsoft2025_1DA_2/Project/FleetManager/sources/exceptions/NonExistingDataException.s: C_/Users/lucas/Desktop/fsoft2025_1DA_2/Project/FleetManager/sources/exceptions/NonExistingDataException.cpp.s
+.PHONY : C_/Users/lucas/Desktop/fsoft2025_1DA_2/Project/FleetManager/sources/exceptions/NonExistingDataException.s
 
 # target to generate assembly for a file
-C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/exceptions/NonExistingDataException.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\runTests.dir\build.make CMakeFiles/runTests.dir/C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/exceptions/NonExistingDataException.cpp.s
-.PHONY : C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/exceptions/NonExistingDataException.cpp.s
+C_/Users/lucas/Desktop/fsoft2025_1DA_2/Project/FleetManager/sources/exceptions/NonExistingDataException.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\runTests.dir\build.make CMakeFiles/runTests.dir/C_/Users/lucas/Desktop/fsoft2025_1DA_2/Project/FleetManager/sources/exceptions/NonExistingDataException.cpp.s
+.PHONY : C_/Users/lucas/Desktop/fsoft2025_1DA_2/Project/FleetManager/sources/exceptions/NonExistingDataException.cpp.s
 
-C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/model/Date.obj: C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/model/Date.cpp.obj
-.PHONY : C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/model/Date.obj
+C_/Users/lucas/Desktop/fsoft2025_1DA_2/Project/FleetManager/sources/model/Date.obj: C_/Users/lucas/Desktop/fsoft2025_1DA_2/Project/FleetManager/sources/model/Date.cpp.obj
+.PHONY : C_/Users/lucas/Desktop/fsoft2025_1DA_2/Project/FleetManager/sources/model/Date.obj
 
 # target to build an object file
-C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/model/Date.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\runTests.dir\build.make CMakeFiles/runTests.dir/C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/model/Date.cpp.obj
-.PHONY : C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/model/Date.cpp.obj
+C_/Users/lucas/Desktop/fsoft2025_1DA_2/Project/FleetManager/sources/model/Date.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\runTests.dir\build.make CMakeFiles/runTests.dir/C_/Users/lucas/Desktop/fsoft2025_1DA_2/Project/FleetManager/sources/model/Date.cpp.obj
+.PHONY : C_/Users/lucas/Desktop/fsoft2025_1DA_2/Project/FleetManager/sources/model/Date.cpp.obj
 
-C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/model/Date.i: C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/model/Date.cpp.i
-.PHONY : C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/model/Date.i
+C_/Users/lucas/Desktop/fsoft2025_1DA_2/Project/FleetManager/sources/model/Date.i: C_/Users/lucas/Desktop/fsoft2025_1DA_2/Project/FleetManager/sources/model/Date.cpp.i
+.PHONY : C_/Users/lucas/Desktop/fsoft2025_1DA_2/Project/FleetManager/sources/model/Date.i
 
 # target to preprocess a source file
-C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/model/Date.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\runTests.dir\build.make CMakeFiles/runTests.dir/C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/model/Date.cpp.i
-.PHONY : C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/model/Date.cpp.i
+C_/Users/lucas/Desktop/fsoft2025_1DA_2/Project/FleetManager/sources/model/Date.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\runTests.dir\build.make CMakeFiles/runTests.dir/C_/Users/lucas/Desktop/fsoft2025_1DA_2/Project/FleetManager/sources/model/Date.cpp.i
+.PHONY : C_/Users/lucas/Desktop/fsoft2025_1DA_2/Project/FleetManager/sources/model/Date.cpp.i
 
-C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/model/Date.s: C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/model/Date.cpp.s
-.PHONY : C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/model/Date.s
+C_/Users/lucas/Desktop/fsoft2025_1DA_2/Project/FleetManager/sources/model/Date.s: C_/Users/lucas/Desktop/fsoft2025_1DA_2/Project/FleetManager/sources/model/Date.cpp.s
+.PHONY : C_/Users/lucas/Desktop/fsoft2025_1DA_2/Project/FleetManager/sources/model/Date.s
 
 # target to generate assembly for a file
-C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/model/Date.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\runTests.dir\build.make CMakeFiles/runTests.dir/C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/model/Date.cpp.s
-.PHONY : C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/model/Date.cpp.s
+C_/Users/lucas/Desktop/fsoft2025_1DA_2/Project/FleetManager/sources/model/Date.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\runTests.dir\build.make CMakeFiles/runTests.dir/C_/Users/lucas/Desktop/fsoft2025_1DA_2/Project/FleetManager/sources/model/Date.cpp.s
+.PHONY : C_/Users/lucas/Desktop/fsoft2025_1DA_2/Project/FleetManager/sources/model/Date.cpp.s
 
-C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/model/Driver.obj: C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/model/Driver.cpp.obj
-.PHONY : C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/model/Driver.obj
+C_/Users/lucas/Desktop/fsoft2025_1DA_2/Project/FleetManager/sources/model/Driver.obj: C_/Users/lucas/Desktop/fsoft2025_1DA_2/Project/FleetManager/sources/model/Driver.cpp.obj
+.PHONY : C_/Users/lucas/Desktop/fsoft2025_1DA_2/Project/FleetManager/sources/model/Driver.obj
 
 # target to build an object file
-C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/model/Driver.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\runTests.dir\build.make CMakeFiles/runTests.dir/C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/model/Driver.cpp.obj
-.PHONY : C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/model/Driver.cpp.obj
+C_/Users/lucas/Desktop/fsoft2025_1DA_2/Project/FleetManager/sources/model/Driver.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\runTests.dir\build.make CMakeFiles/runTests.dir/C_/Users/lucas/Desktop/fsoft2025_1DA_2/Project/FleetManager/sources/model/Driver.cpp.obj
+.PHONY : C_/Users/lucas/Desktop/fsoft2025_1DA_2/Project/FleetManager/sources/model/Driver.cpp.obj
 
-C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/model/Driver.i: C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/model/Driver.cpp.i
-.PHONY : C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/model/Driver.i
+C_/Users/lucas/Desktop/fsoft2025_1DA_2/Project/FleetManager/sources/model/Driver.i: C_/Users/lucas/Desktop/fsoft2025_1DA_2/Project/FleetManager/sources/model/Driver.cpp.i
+.PHONY : C_/Users/lucas/Desktop/fsoft2025_1DA_2/Project/FleetManager/sources/model/Driver.i
 
 # target to preprocess a source file
-C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/model/Driver.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\runTests.dir\build.make CMakeFiles/runTests.dir/C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/model/Driver.cpp.i
-.PHONY : C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/model/Driver.cpp.i
+C_/Users/lucas/Desktop/fsoft2025_1DA_2/Project/FleetManager/sources/model/Driver.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\runTests.dir\build.make CMakeFiles/runTests.dir/C_/Users/lucas/Desktop/fsoft2025_1DA_2/Project/FleetManager/sources/model/Driver.cpp.i
+.PHONY : C_/Users/lucas/Desktop/fsoft2025_1DA_2/Project/FleetManager/sources/model/Driver.cpp.i
 
-C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/model/Driver.s: C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/model/Driver.cpp.s
-.PHONY : C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/model/Driver.s
+C_/Users/lucas/Desktop/fsoft2025_1DA_2/Project/FleetManager/sources/model/Driver.s: C_/Users/lucas/Desktop/fsoft2025_1DA_2/Project/FleetManager/sources/model/Driver.cpp.s
+.PHONY : C_/Users/lucas/Desktop/fsoft2025_1DA_2/Project/FleetManager/sources/model/Driver.s
 
 # target to generate assembly for a file
-C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/model/Driver.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\runTests.dir\build.make CMakeFiles/runTests.dir/C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/model/Driver.cpp.s
-.PHONY : C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/model/Driver.cpp.s
+C_/Users/lucas/Desktop/fsoft2025_1DA_2/Project/FleetManager/sources/model/Driver.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\runTests.dir\build.make CMakeFiles/runTests.dir/C_/Users/lucas/Desktop/fsoft2025_1DA_2/Project/FleetManager/sources/model/Driver.cpp.s
+.PHONY : C_/Users/lucas/Desktop/fsoft2025_1DA_2/Project/FleetManager/sources/model/Driver.cpp.s
 
-C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/model/DriverContainer.obj: C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/model/DriverContainer.cpp.obj
-.PHONY : C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/model/DriverContainer.obj
+C_/Users/lucas/Desktop/fsoft2025_1DA_2/Project/FleetManager/sources/model/DriverContainer.obj: C_/Users/lucas/Desktop/fsoft2025_1DA_2/Project/FleetManager/sources/model/DriverContainer.cpp.obj
+.PHONY : C_/Users/lucas/Desktop/fsoft2025_1DA_2/Project/FleetManager/sources/model/DriverContainer.obj
 
 # target to build an object file
-C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/model/DriverContainer.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\runTests.dir\build.make CMakeFiles/runTests.dir/C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/model/DriverContainer.cpp.obj
-.PHONY : C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/model/DriverContainer.cpp.obj
+C_/Users/lucas/Desktop/fsoft2025_1DA_2/Project/FleetManager/sources/model/DriverContainer.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\runTests.dir\build.make CMakeFiles/runTests.dir/C_/Users/lucas/Desktop/fsoft2025_1DA_2/Project/FleetManager/sources/model/DriverContainer.cpp.obj
+.PHONY : C_/Users/lucas/Desktop/fsoft2025_1DA_2/Project/FleetManager/sources/model/DriverContainer.cpp.obj
 
-C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/model/DriverContainer.i: C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/model/DriverContainer.cpp.i
-.PHONY : C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/model/DriverContainer.i
+C_/Users/lucas/Desktop/fsoft2025_1DA_2/Project/FleetManager/sources/model/DriverContainer.i: C_/Users/lucas/Desktop/fsoft2025_1DA_2/Project/FleetManager/sources/model/DriverContainer.cpp.i
+.PHONY : C_/Users/lucas/Desktop/fsoft2025_1DA_2/Project/FleetManager/sources/model/DriverContainer.i
 
 # target to preprocess a source file
-C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/model/DriverContainer.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\runTests.dir\build.make CMakeFiles/runTests.dir/C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/model/DriverContainer.cpp.i
-.PHONY : C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/model/DriverContainer.cpp.i
+C_/Users/lucas/Desktop/fsoft2025_1DA_2/Project/FleetManager/sources/model/DriverContainer.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\runTests.dir\build.make CMakeFiles/runTests.dir/C_/Users/lucas/Desktop/fsoft2025_1DA_2/Project/FleetManager/sources/model/DriverContainer.cpp.i
+.PHONY : C_/Users/lucas/Desktop/fsoft2025_1DA_2/Project/FleetManager/sources/model/DriverContainer.cpp.i
 
-C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/model/DriverContainer.s: C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/model/DriverContainer.cpp.s
-.PHONY : C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/model/DriverContainer.s
+C_/Users/lucas/Desktop/fsoft2025_1DA_2/Project/FleetManager/sources/model/DriverContainer.s: C_/Users/lucas/Desktop/fsoft2025_1DA_2/Project/FleetManager/sources/model/DriverContainer.cpp.s
+.PHONY : C_/Users/lucas/Desktop/fsoft2025_1DA_2/Project/FleetManager/sources/model/DriverContainer.s
 
 # target to generate assembly for a file
-C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/model/DriverContainer.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\runTests.dir\build.make CMakeFiles/runTests.dir/C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/model/DriverContainer.cpp.s
-.PHONY : C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/model/DriverContainer.cpp.s
+C_/Users/lucas/Desktop/fsoft2025_1DA_2/Project/FleetManager/sources/model/DriverContainer.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\runTests.dir\build.make CMakeFiles/runTests.dir/C_/Users/lucas/Desktop/fsoft2025_1DA_2/Project/FleetManager/sources/model/DriverContainer.cpp.s
+.PHONY : C_/Users/lucas/Desktop/fsoft2025_1DA_2/Project/FleetManager/sources/model/DriverContainer.cpp.s
 
-C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/model/Enterprise.obj: C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/model/Enterprise.cpp.obj
-.PHONY : C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/model/Enterprise.obj
+C_/Users/lucas/Desktop/fsoft2025_1DA_2/Project/FleetManager/sources/model/Enterprise.obj: C_/Users/lucas/Desktop/fsoft2025_1DA_2/Project/FleetManager/sources/model/Enterprise.cpp.obj
+.PHONY : C_/Users/lucas/Desktop/fsoft2025_1DA_2/Project/FleetManager/sources/model/Enterprise.obj
 
 # target to build an object file
-C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/model/Enterprise.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\runTests.dir\build.make CMakeFiles/runTests.dir/C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/model/Enterprise.cpp.obj
-.PHONY : C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/model/Enterprise.cpp.obj
+C_/Users/lucas/Desktop/fsoft2025_1DA_2/Project/FleetManager/sources/model/Enterprise.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\runTests.dir\build.make CMakeFiles/runTests.dir/C_/Users/lucas/Desktop/fsoft2025_1DA_2/Project/FleetManager/sources/model/Enterprise.cpp.obj
+.PHONY : C_/Users/lucas/Desktop/fsoft2025_1DA_2/Project/FleetManager/sources/model/Enterprise.cpp.obj
 
-C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/model/Enterprise.i: C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/model/Enterprise.cpp.i
-.PHONY : C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/model/Enterprise.i
+C_/Users/lucas/Desktop/fsoft2025_1DA_2/Project/FleetManager/sources/model/Enterprise.i: C_/Users/lucas/Desktop/fsoft2025_1DA_2/Project/FleetManager/sources/model/Enterprise.cpp.i
+.PHONY : C_/Users/lucas/Desktop/fsoft2025_1DA_2/Project/FleetManager/sources/model/Enterprise.i
 
 # target to preprocess a source file
-C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/model/Enterprise.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\runTests.dir\build.make CMakeFiles/runTests.dir/C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/model/Enterprise.cpp.i
-.PHONY : C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/model/Enterprise.cpp.i
+C_/Users/lucas/Desktop/fsoft2025_1DA_2/Project/FleetManager/sources/model/Enterprise.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\runTests.dir\build.make CMakeFiles/runTests.dir/C_/Users/lucas/Desktop/fsoft2025_1DA_2/Project/FleetManager/sources/model/Enterprise.cpp.i
+.PHONY : C_/Users/lucas/Desktop/fsoft2025_1DA_2/Project/FleetManager/sources/model/Enterprise.cpp.i
 
-C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/model/Enterprise.s: C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/model/Enterprise.cpp.s
-.PHONY : C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/model/Enterprise.s
+C_/Users/lucas/Desktop/fsoft2025_1DA_2/Project/FleetManager/sources/model/Enterprise.s: C_/Users/lucas/Desktop/fsoft2025_1DA_2/Project/FleetManager/sources/model/Enterprise.cpp.s
+.PHONY : C_/Users/lucas/Desktop/fsoft2025_1DA_2/Project/FleetManager/sources/model/Enterprise.s
 
 # target to generate assembly for a file
-C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/model/Enterprise.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\runTests.dir\build.make CMakeFiles/runTests.dir/C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/model/Enterprise.cpp.s
-.PHONY : C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/model/Enterprise.cpp.s
+C_/Users/lucas/Desktop/fsoft2025_1DA_2/Project/FleetManager/sources/model/Enterprise.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\runTests.dir\build.make CMakeFiles/runTests.dir/C_/Users/lucas/Desktop/fsoft2025_1DA_2/Project/FleetManager/sources/model/Enterprise.cpp.s
+.PHONY : C_/Users/lucas/Desktop/fsoft2025_1DA_2/Project/FleetManager/sources/model/Enterprise.cpp.s
 
-C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/model/Expense.obj: C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/model/Expense.cpp.obj
-.PHONY : C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/model/Expense.obj
+C_/Users/lucas/Desktop/fsoft2025_1DA_2/Project/FleetManager/sources/model/Expense.obj: C_/Users/lucas/Desktop/fsoft2025_1DA_2/Project/FleetManager/sources/model/Expense.cpp.obj
+.PHONY : C_/Users/lucas/Desktop/fsoft2025_1DA_2/Project/FleetManager/sources/model/Expense.obj
 
 # target to build an object file
-C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/model/Expense.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\runTests.dir\build.make CMakeFiles/runTests.dir/C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/model/Expense.cpp.obj
-.PHONY : C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/model/Expense.cpp.obj
+C_/Users/lucas/Desktop/fsoft2025_1DA_2/Project/FleetManager/sources/model/Expense.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\runTests.dir\build.make CMakeFiles/runTests.dir/C_/Users/lucas/Desktop/fsoft2025_1DA_2/Project/FleetManager/sources/model/Expense.cpp.obj
+.PHONY : C_/Users/lucas/Desktop/fsoft2025_1DA_2/Project/FleetManager/sources/model/Expense.cpp.obj
 
-C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/model/Expense.i: C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/model/Expense.cpp.i
-.PHONY : C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/model/Expense.i
+C_/Users/lucas/Desktop/fsoft2025_1DA_2/Project/FleetManager/sources/model/Expense.i: C_/Users/lucas/Desktop/fsoft2025_1DA_2/Project/FleetManager/sources/model/Expense.cpp.i
+.PHONY : C_/Users/lucas/Desktop/fsoft2025_1DA_2/Project/FleetManager/sources/model/Expense.i
 
 # target to preprocess a source file
-C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/model/Expense.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\runTests.dir\build.make CMakeFiles/runTests.dir/C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/model/Expense.cpp.i
-.PHONY : C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/model/Expense.cpp.i
+C_/Users/lucas/Desktop/fsoft2025_1DA_2/Project/FleetManager/sources/model/Expense.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\runTests.dir\build.make CMakeFiles/runTests.dir/C_/Users/lucas/Desktop/fsoft2025_1DA_2/Project/FleetManager/sources/model/Expense.cpp.i
+.PHONY : C_/Users/lucas/Desktop/fsoft2025_1DA_2/Project/FleetManager/sources/model/Expense.cpp.i
 
-C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/model/Expense.s: C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/model/Expense.cpp.s
-.PHONY : C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/model/Expense.s
+C_/Users/lucas/Desktop/fsoft2025_1DA_2/Project/FleetManager/sources/model/Expense.s: C_/Users/lucas/Desktop/fsoft2025_1DA_2/Project/FleetManager/sources/model/Expense.cpp.s
+.PHONY : C_/Users/lucas/Desktop/fsoft2025_1DA_2/Project/FleetManager/sources/model/Expense.s
 
 # target to generate assembly for a file
-C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/model/Expense.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\runTests.dir\build.make CMakeFiles/runTests.dir/C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/model/Expense.cpp.s
-.PHONY : C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/model/Expense.cpp.s
+C_/Users/lucas/Desktop/fsoft2025_1DA_2/Project/FleetManager/sources/model/Expense.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\runTests.dir\build.make CMakeFiles/runTests.dir/C_/Users/lucas/Desktop/fsoft2025_1DA_2/Project/FleetManager/sources/model/Expense.cpp.s
+.PHONY : C_/Users/lucas/Desktop/fsoft2025_1DA_2/Project/FleetManager/sources/model/Expense.cpp.s
 
-C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/model/FinancialContainer.obj: C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/model/FinancialContainer.cpp.obj
-.PHONY : C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/model/FinancialContainer.obj
+C_/Users/lucas/Desktop/fsoft2025_1DA_2/Project/FleetManager/sources/model/FinancialContainer.obj: C_/Users/lucas/Desktop/fsoft2025_1DA_2/Project/FleetManager/sources/model/FinancialContainer.cpp.obj
+.PHONY : C_/Users/lucas/Desktop/fsoft2025_1DA_2/Project/FleetManager/sources/model/FinancialContainer.obj
 
 # target to build an object file
-C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/model/FinancialContainer.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\runTests.dir\build.make CMakeFiles/runTests.dir/C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/model/FinancialContainer.cpp.obj
-.PHONY : C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/model/FinancialContainer.cpp.obj
+C_/Users/lucas/Desktop/fsoft2025_1DA_2/Project/FleetManager/sources/model/FinancialContainer.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\runTests.dir\build.make CMakeFiles/runTests.dir/C_/Users/lucas/Desktop/fsoft2025_1DA_2/Project/FleetManager/sources/model/FinancialContainer.cpp.obj
+.PHONY : C_/Users/lucas/Desktop/fsoft2025_1DA_2/Project/FleetManager/sources/model/FinancialContainer.cpp.obj
 
-C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/model/FinancialContainer.i: C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/model/FinancialContainer.cpp.i
-.PHONY : C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/model/FinancialContainer.i
+C_/Users/lucas/Desktop/fsoft2025_1DA_2/Project/FleetManager/sources/model/FinancialContainer.i: C_/Users/lucas/Desktop/fsoft2025_1DA_2/Project/FleetManager/sources/model/FinancialContainer.cpp.i
+.PHONY : C_/Users/lucas/Desktop/fsoft2025_1DA_2/Project/FleetManager/sources/model/FinancialContainer.i
 
 # target to preprocess a source file
-C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/model/FinancialContainer.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\runTests.dir\build.make CMakeFiles/runTests.dir/C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/model/FinancialContainer.cpp.i
-.PHONY : C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/model/FinancialContainer.cpp.i
+C_/Users/lucas/Desktop/fsoft2025_1DA_2/Project/FleetManager/sources/model/FinancialContainer.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\runTests.dir\build.make CMakeFiles/runTests.dir/C_/Users/lucas/Desktop/fsoft2025_1DA_2/Project/FleetManager/sources/model/FinancialContainer.cpp.i
+.PHONY : C_/Users/lucas/Desktop/fsoft2025_1DA_2/Project/FleetManager/sources/model/FinancialContainer.cpp.i
 
-C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/model/FinancialContainer.s: C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/model/FinancialContainer.cpp.s
-.PHONY : C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/model/FinancialContainer.s
+C_/Users/lucas/Desktop/fsoft2025_1DA_2/Project/FleetManager/sources/model/FinancialContainer.s: C_/Users/lucas/Desktop/fsoft2025_1DA_2/Project/FleetManager/sources/model/FinancialContainer.cpp.s
+.PHONY : C_/Users/lucas/Desktop/fsoft2025_1DA_2/Project/FleetManager/sources/model/FinancialContainer.s
 
 # target to generate assembly for a file
-C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/model/FinancialContainer.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\runTests.dir\build.make CMakeFiles/runTests.dir/C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/model/FinancialContainer.cpp.s
-.PHONY : C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/model/FinancialContainer.cpp.s
+C_/Users/lucas/Desktop/fsoft2025_1DA_2/Project/FleetManager/sources/model/FinancialContainer.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\runTests.dir\build.make CMakeFiles/runTests.dir/C_/Users/lucas/Desktop/fsoft2025_1DA_2/Project/FleetManager/sources/model/FinancialContainer.cpp.s
+.PHONY : C_/Users/lucas/Desktop/fsoft2025_1DA_2/Project/FleetManager/sources/model/FinancialContainer.cpp.s
 
-C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/model/Inspection.obj: C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/model/Inspection.cpp.obj
-.PHONY : C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/model/Inspection.obj
+C_/Users/lucas/Desktop/fsoft2025_1DA_2/Project/FleetManager/sources/model/Inspection.obj: C_/Users/lucas/Desktop/fsoft2025_1DA_2/Project/FleetManager/sources/model/Inspection.cpp.obj
+.PHONY : C_/Users/lucas/Desktop/fsoft2025_1DA_2/Project/FleetManager/sources/model/Inspection.obj
 
 # target to build an object file
-C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/model/Inspection.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\runTests.dir\build.make CMakeFiles/runTests.dir/C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/model/Inspection.cpp.obj
-.PHONY : C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/model/Inspection.cpp.obj
+C_/Users/lucas/Desktop/fsoft2025_1DA_2/Project/FleetManager/sources/model/Inspection.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\runTests.dir\build.make CMakeFiles/runTests.dir/C_/Users/lucas/Desktop/fsoft2025_1DA_2/Project/FleetManager/sources/model/Inspection.cpp.obj
+.PHONY : C_/Users/lucas/Desktop/fsoft2025_1DA_2/Project/FleetManager/sources/model/Inspection.cpp.obj
 
-C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/model/Inspection.i: C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/model/Inspection.cpp.i
-.PHONY : C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/model/Inspection.i
+C_/Users/lucas/Desktop/fsoft2025_1DA_2/Project/FleetManager/sources/model/Inspection.i: C_/Users/lucas/Desktop/fsoft2025_1DA_2/Project/FleetManager/sources/model/Inspection.cpp.i
+.PHONY : C_/Users/lucas/Desktop/fsoft2025_1DA_2/Project/FleetManager/sources/model/Inspection.i
 
 # target to preprocess a source file
-C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/model/Inspection.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\runTests.dir\build.make CMakeFiles/runTests.dir/C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/model/Inspection.cpp.i
-.PHONY : C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/model/Inspection.cpp.i
+C_/Users/lucas/Desktop/fsoft2025_1DA_2/Project/FleetManager/sources/model/Inspection.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\runTests.dir\build.make CMakeFiles/runTests.dir/C_/Users/lucas/Desktop/fsoft2025_1DA_2/Project/FleetManager/sources/model/Inspection.cpp.i
+.PHONY : C_/Users/lucas/Desktop/fsoft2025_1DA_2/Project/FleetManager/sources/model/Inspection.cpp.i
 
-C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/model/Inspection.s: C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/model/Inspection.cpp.s
-.PHONY : C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/model/Inspection.s
+C_/Users/lucas/Desktop/fsoft2025_1DA_2/Project/FleetManager/sources/model/Inspection.s: C_/Users/lucas/Desktop/fsoft2025_1DA_2/Project/FleetManager/sources/model/Inspection.cpp.s
+.PHONY : C_/Users/lucas/Desktop/fsoft2025_1DA_2/Project/FleetManager/sources/model/Inspection.s
 
 # target to generate assembly for a file
-C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/model/Inspection.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\runTests.dir\build.make CMakeFiles/runTests.dir/C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/model/Inspection.cpp.s
-.PHONY : C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/model/Inspection.cpp.s
+C_/Users/lucas/Desktop/fsoft2025_1DA_2/Project/FleetManager/sources/model/Inspection.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\runTests.dir\build.make CMakeFiles/runTests.dir/C_/Users/lucas/Desktop/fsoft2025_1DA_2/Project/FleetManager/sources/model/Inspection.cpp.s
+.PHONY : C_/Users/lucas/Desktop/fsoft2025_1DA_2/Project/FleetManager/sources/model/Inspection.cpp.s
 
-C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/model/Insurance.obj: C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/model/Insurance.cpp.obj
-.PHONY : C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/model/Insurance.obj
+C_/Users/lucas/Desktop/fsoft2025_1DA_2/Project/FleetManager/sources/model/Insurance.obj: C_/Users/lucas/Desktop/fsoft2025_1DA_2/Project/FleetManager/sources/model/Insurance.cpp.obj
+.PHONY : C_/Users/lucas/Desktop/fsoft2025_1DA_2/Project/FleetManager/sources/model/Insurance.obj
 
 # target to build an object file
-C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/model/Insurance.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\runTests.dir\build.make CMakeFiles/runTests.dir/C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/model/Insurance.cpp.obj
-.PHONY : C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/model/Insurance.cpp.obj
+C_/Users/lucas/Desktop/fsoft2025_1DA_2/Project/FleetManager/sources/model/Insurance.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\runTests.dir\build.make CMakeFiles/runTests.dir/C_/Users/lucas/Desktop/fsoft2025_1DA_2/Project/FleetManager/sources/model/Insurance.cpp.obj
+.PHONY : C_/Users/lucas/Desktop/fsoft2025_1DA_2/Project/FleetManager/sources/model/Insurance.cpp.obj
 
-C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/model/Insurance.i: C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/model/Insurance.cpp.i
-.PHONY : C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/model/Insurance.i
+C_/Users/lucas/Desktop/fsoft2025_1DA_2/Project/FleetManager/sources/model/Insurance.i: C_/Users/lucas/Desktop/fsoft2025_1DA_2/Project/FleetManager/sources/model/Insurance.cpp.i
+.PHONY : C_/Users/lucas/Desktop/fsoft2025_1DA_2/Project/FleetManager/sources/model/Insurance.i
 
 # target to preprocess a source file
-C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/model/Insurance.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\runTests.dir\build.make CMakeFiles/runTests.dir/C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/model/Insurance.cpp.i
-.PHONY : C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/model/Insurance.cpp.i
+C_/Users/lucas/Desktop/fsoft2025_1DA_2/Project/FleetManager/sources/model/Insurance.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\runTests.dir\build.make CMakeFiles/runTests.dir/C_/Users/lucas/Desktop/fsoft2025_1DA_2/Project/FleetManager/sources/model/Insurance.cpp.i
+.PHONY : C_/Users/lucas/Desktop/fsoft2025_1DA_2/Project/FleetManager/sources/model/Insurance.cpp.i
 
-C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/model/Insurance.s: C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/model/Insurance.cpp.s
-.PHONY : C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/model/Insurance.s
+C_/Users/lucas/Desktop/fsoft2025_1DA_2/Project/FleetManager/sources/model/Insurance.s: C_/Users/lucas/Desktop/fsoft2025_1DA_2/Project/FleetManager/sources/model/Insurance.cpp.s
+.PHONY : C_/Users/lucas/Desktop/fsoft2025_1DA_2/Project/FleetManager/sources/model/Insurance.s
 
 # target to generate assembly for a file
-C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/model/Insurance.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\runTests.dir\build.make CMakeFiles/runTests.dir/C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/model/Insurance.cpp.s
-.PHONY : C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/model/Insurance.cpp.s
+C_/Users/lucas/Desktop/fsoft2025_1DA_2/Project/FleetManager/sources/model/Insurance.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\runTests.dir\build.make CMakeFiles/runTests.dir/C_/Users/lucas/Desktop/fsoft2025_1DA_2/Project/FleetManager/sources/model/Insurance.cpp.s
+.PHONY : C_/Users/lucas/Desktop/fsoft2025_1DA_2/Project/FleetManager/sources/model/Insurance.cpp.s
 
-C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/model/Order.obj: C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/model/Order.cpp.obj
-.PHONY : C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/model/Order.obj
+C_/Users/lucas/Desktop/fsoft2025_1DA_2/Project/FleetManager/sources/model/Order.obj: C_/Users/lucas/Desktop/fsoft2025_1DA_2/Project/FleetManager/sources/model/Order.cpp.obj
+.PHONY : C_/Users/lucas/Desktop/fsoft2025_1DA_2/Project/FleetManager/sources/model/Order.obj
 
 # target to build an object file
-C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/model/Order.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\runTests.dir\build.make CMakeFiles/runTests.dir/C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/model/Order.cpp.obj
-.PHONY : C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/model/Order.cpp.obj
+C_/Users/lucas/Desktop/fsoft2025_1DA_2/Project/FleetManager/sources/model/Order.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\runTests.dir\build.make CMakeFiles/runTests.dir/C_/Users/lucas/Desktop/fsoft2025_1DA_2/Project/FleetManager/sources/model/Order.cpp.obj
+.PHONY : C_/Users/lucas/Desktop/fsoft2025_1DA_2/Project/FleetManager/sources/model/Order.cpp.obj
 
-C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/model/Order.i: C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/model/Order.cpp.i
-.PHONY : C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/model/Order.i
+C_/Users/lucas/Desktop/fsoft2025_1DA_2/Project/FleetManager/sources/model/Order.i: C_/Users/lucas/Desktop/fsoft2025_1DA_2/Project/FleetManager/sources/model/Order.cpp.i
+.PHONY : C_/Users/lucas/Desktop/fsoft2025_1DA_2/Project/FleetManager/sources/model/Order.i
 
 # target to preprocess a source file
-C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/model/Order.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\runTests.dir\build.make CMakeFiles/runTests.dir/C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/model/Order.cpp.i
-.PHONY : C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/model/Order.cpp.i
+C_/Users/lucas/Desktop/fsoft2025_1DA_2/Project/FleetManager/sources/model/Order.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\runTests.dir\build.make CMakeFiles/runTests.dir/C_/Users/lucas/Desktop/fsoft2025_1DA_2/Project/FleetManager/sources/model/Order.cpp.i
+.PHONY : C_/Users/lucas/Desktop/fsoft2025_1DA_2/Project/FleetManager/sources/model/Order.cpp.i
 
-C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/model/Order.s: C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/model/Order.cpp.s
-.PHONY : C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/model/Order.s
+C_/Users/lucas/Desktop/fsoft2025_1DA_2/Project/FleetManager/sources/model/Order.s: C_/Users/lucas/Desktop/fsoft2025_1DA_2/Project/FleetManager/sources/model/Order.cpp.s
+.PHONY : C_/Users/lucas/Desktop/fsoft2025_1DA_2/Project/FleetManager/sources/model/Order.s
 
 # target to generate assembly for a file
-C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/model/Order.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\runTests.dir\build.make CMakeFiles/runTests.dir/C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/model/Order.cpp.s
-.PHONY : C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/model/Order.cpp.s
+C_/Users/lucas/Desktop/fsoft2025_1DA_2/Project/FleetManager/sources/model/Order.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\runTests.dir\build.make CMakeFiles/runTests.dir/C_/Users/lucas/Desktop/fsoft2025_1DA_2/Project/FleetManager/sources/model/Order.cpp.s
+.PHONY : C_/Users/lucas/Desktop/fsoft2025_1DA_2/Project/FleetManager/sources/model/Order.cpp.s
 
-C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/model/OrderContainer.obj: C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/model/OrderContainer.cpp.obj
-.PHONY : C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/model/OrderContainer.obj
+C_/Users/lucas/Desktop/fsoft2025_1DA_2/Project/FleetManager/sources/model/OrderContainer.obj: C_/Users/lucas/Desktop/fsoft2025_1DA_2/Project/FleetManager/sources/model/OrderContainer.cpp.obj
+.PHONY : C_/Users/lucas/Desktop/fsoft2025_1DA_2/Project/FleetManager/sources/model/OrderContainer.obj
 
 # target to build an object file
-C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/model/OrderContainer.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\runTests.dir\build.make CMakeFiles/runTests.dir/C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/model/OrderContainer.cpp.obj
-.PHONY : C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/model/OrderContainer.cpp.obj
+C_/Users/lucas/Desktop/fsoft2025_1DA_2/Project/FleetManager/sources/model/OrderContainer.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\runTests.dir\build.make CMakeFiles/runTests.dir/C_/Users/lucas/Desktop/fsoft2025_1DA_2/Project/FleetManager/sources/model/OrderContainer.cpp.obj
+.PHONY : C_/Users/lucas/Desktop/fsoft2025_1DA_2/Project/FleetManager/sources/model/OrderContainer.cpp.obj
 
-C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/model/OrderContainer.i: C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/model/OrderContainer.cpp.i
-.PHONY : C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/model/OrderContainer.i
+C_/Users/lucas/Desktop/fsoft2025_1DA_2/Project/FleetManager/sources/model/OrderContainer.i: C_/Users/lucas/Desktop/fsoft2025_1DA_2/Project/FleetManager/sources/model/OrderContainer.cpp.i
+.PHONY : C_/Users/lucas/Desktop/fsoft2025_1DA_2/Project/FleetManager/sources/model/OrderContainer.i
 
 # target to preprocess a source file
-C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/model/OrderContainer.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\runTests.dir\build.make CMakeFiles/runTests.dir/C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/model/OrderContainer.cpp.i
-.PHONY : C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/model/OrderContainer.cpp.i
+C_/Users/lucas/Desktop/fsoft2025_1DA_2/Project/FleetManager/sources/model/OrderContainer.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\runTests.dir\build.make CMakeFiles/runTests.dir/C_/Users/lucas/Desktop/fsoft2025_1DA_2/Project/FleetManager/sources/model/OrderContainer.cpp.i
+.PHONY : C_/Users/lucas/Desktop/fsoft2025_1DA_2/Project/FleetManager/sources/model/OrderContainer.cpp.i
 
-C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/model/OrderContainer.s: C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/model/OrderContainer.cpp.s
-.PHONY : C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/model/OrderContainer.s
+C_/Users/lucas/Desktop/fsoft2025_1DA_2/Project/FleetManager/sources/model/OrderContainer.s: C_/Users/lucas/Desktop/fsoft2025_1DA_2/Project/FleetManager/sources/model/OrderContainer.cpp.s
+.PHONY : C_/Users/lucas/Desktop/fsoft2025_1DA_2/Project/FleetManager/sources/model/OrderContainer.s
 
 # target to generate assembly for a file
-C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/model/OrderContainer.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\runTests.dir\build.make CMakeFiles/runTests.dir/C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/model/OrderContainer.cpp.s
-.PHONY : C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/model/OrderContainer.cpp.s
+C_/Users/lucas/Desktop/fsoft2025_1DA_2/Project/FleetManager/sources/model/OrderContainer.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\runTests.dir\build.make CMakeFiles/runTests.dir/C_/Users/lucas/Desktop/fsoft2025_1DA_2/Project/FleetManager/sources/model/OrderContainer.cpp.s
+.PHONY : C_/Users/lucas/Desktop/fsoft2025_1DA_2/Project/FleetManager/sources/model/OrderContainer.cpp.s
 
-C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/model/Revenue.obj: C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/model/Revenue.cpp.obj
-.PHONY : C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/model/Revenue.obj
+C_/Users/lucas/Desktop/fsoft2025_1DA_2/Project/FleetManager/sources/model/Revenue.obj: C_/Users/lucas/Desktop/fsoft2025_1DA_2/Project/FleetManager/sources/model/Revenue.cpp.obj
+.PHONY : C_/Users/lucas/Desktop/fsoft2025_1DA_2/Project/FleetManager/sources/model/Revenue.obj
 
 # target to build an object file
-C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/model/Revenue.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\runTests.dir\build.make CMakeFiles/runTests.dir/C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/model/Revenue.cpp.obj
-.PHONY : C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/model/Revenue.cpp.obj
+C_/Users/lucas/Desktop/fsoft2025_1DA_2/Project/FleetManager/sources/model/Revenue.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\runTests.dir\build.make CMakeFiles/runTests.dir/C_/Users/lucas/Desktop/fsoft2025_1DA_2/Project/FleetManager/sources/model/Revenue.cpp.obj
+.PHONY : C_/Users/lucas/Desktop/fsoft2025_1DA_2/Project/FleetManager/sources/model/Revenue.cpp.obj
 
-C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/model/Revenue.i: C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/model/Revenue.cpp.i
-.PHONY : C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/model/Revenue.i
+C_/Users/lucas/Desktop/fsoft2025_1DA_2/Project/FleetManager/sources/model/Revenue.i: C_/Users/lucas/Desktop/fsoft2025_1DA_2/Project/FleetManager/sources/model/Revenue.cpp.i
+.PHONY : C_/Users/lucas/Desktop/fsoft2025_1DA_2/Project/FleetManager/sources/model/Revenue.i
 
 # target to preprocess a source file
-C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/model/Revenue.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\runTests.dir\build.make CMakeFiles/runTests.dir/C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/model/Revenue.cpp.i
-.PHONY : C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/model/Revenue.cpp.i
+C_/Users/lucas/Desktop/fsoft2025_1DA_2/Project/FleetManager/sources/model/Revenue.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\runTests.dir\build.make CMakeFiles/runTests.dir/C_/Users/lucas/Desktop/fsoft2025_1DA_2/Project/FleetManager/sources/model/Revenue.cpp.i
+.PHONY : C_/Users/lucas/Desktop/fsoft2025_1DA_2/Project/FleetManager/sources/model/Revenue.cpp.i
 
-C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/model/Revenue.s: C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/model/Revenue.cpp.s
-.PHONY : C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/model/Revenue.s
+C_/Users/lucas/Desktop/fsoft2025_1DA_2/Project/FleetManager/sources/model/Revenue.s: C_/Users/lucas/Desktop/fsoft2025_1DA_2/Project/FleetManager/sources/model/Revenue.cpp.s
+.PHONY : C_/Users/lucas/Desktop/fsoft2025_1DA_2/Project/FleetManager/sources/model/Revenue.s
 
 # target to generate assembly for a file
-C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/model/Revenue.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\runTests.dir\build.make CMakeFiles/runTests.dir/C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/model/Revenue.cpp.s
-.PHONY : C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/model/Revenue.cpp.s
+C_/Users/lucas/Desktop/fsoft2025_1DA_2/Project/FleetManager/sources/model/Revenue.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\runTests.dir\build.make CMakeFiles/runTests.dir/C_/Users/lucas/Desktop/fsoft2025_1DA_2/Project/FleetManager/sources/model/Revenue.cpp.s
+.PHONY : C_/Users/lucas/Desktop/fsoft2025_1DA_2/Project/FleetManager/sources/model/Revenue.cpp.s
 
-C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/model/Trip.obj: C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/model/Trip.cpp.obj
-.PHONY : C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/model/Trip.obj
+C_/Users/lucas/Desktop/fsoft2025_1DA_2/Project/FleetManager/sources/model/Trip.obj: C_/Users/lucas/Desktop/fsoft2025_1DA_2/Project/FleetManager/sources/model/Trip.cpp.obj
+.PHONY : C_/Users/lucas/Desktop/fsoft2025_1DA_2/Project/FleetManager/sources/model/Trip.obj
 
 # target to build an object file
-C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/model/Trip.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\runTests.dir\build.make CMakeFiles/runTests.dir/C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/model/Trip.cpp.obj
-.PHONY : C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/model/Trip.cpp.obj
+C_/Users/lucas/Desktop/fsoft2025_1DA_2/Project/FleetManager/sources/model/Trip.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\runTests.dir\build.make CMakeFiles/runTests.dir/C_/Users/lucas/Desktop/fsoft2025_1DA_2/Project/FleetManager/sources/model/Trip.cpp.obj
+.PHONY : C_/Users/lucas/Desktop/fsoft2025_1DA_2/Project/FleetManager/sources/model/Trip.cpp.obj
 
-C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/model/Trip.i: C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/model/Trip.cpp.i
-.PHONY : C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/model/Trip.i
+C_/Users/lucas/Desktop/fsoft2025_1DA_2/Project/FleetManager/sources/model/Trip.i: C_/Users/lucas/Desktop/fsoft2025_1DA_2/Project/FleetManager/sources/model/Trip.cpp.i
+.PHONY : C_/Users/lucas/Desktop/fsoft2025_1DA_2/Project/FleetManager/sources/model/Trip.i
 
 # target to preprocess a source file
-C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/model/Trip.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\runTests.dir\build.make CMakeFiles/runTests.dir/C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/model/Trip.cpp.i
-.PHONY : C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/model/Trip.cpp.i
+C_/Users/lucas/Desktop/fsoft2025_1DA_2/Project/FleetManager/sources/model/Trip.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\runTests.dir\build.make CMakeFiles/runTests.dir/C_/Users/lucas/Desktop/fsoft2025_1DA_2/Project/FleetManager/sources/model/Trip.cpp.i
+.PHONY : C_/Users/lucas/Desktop/fsoft2025_1DA_2/Project/FleetManager/sources/model/Trip.cpp.i
 
-C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/model/Trip.s: C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/model/Trip.cpp.s
-.PHONY : C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/model/Trip.s
+C_/Users/lucas/Desktop/fsoft2025_1DA_2/Project/FleetManager/sources/model/Trip.s: C_/Users/lucas/Desktop/fsoft2025_1DA_2/Project/FleetManager/sources/model/Trip.cpp.s
+.PHONY : C_/Users/lucas/Desktop/fsoft2025_1DA_2/Project/FleetManager/sources/model/Trip.s
 
 # target to generate assembly for a file
-C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/model/Trip.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\runTests.dir\build.make CMakeFiles/runTests.dir/C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/model/Trip.cpp.s
-.PHONY : C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/model/Trip.cpp.s
+C_/Users/lucas/Desktop/fsoft2025_1DA_2/Project/FleetManager/sources/model/Trip.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\runTests.dir\build.make CMakeFiles/runTests.dir/C_/Users/lucas/Desktop/fsoft2025_1DA_2/Project/FleetManager/sources/model/Trip.cpp.s
+.PHONY : C_/Users/lucas/Desktop/fsoft2025_1DA_2/Project/FleetManager/sources/model/Trip.cpp.s
 
-C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/model/TripContainer.obj: C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/model/TripContainer.cpp.obj
-.PHONY : C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/model/TripContainer.obj
+C_/Users/lucas/Desktop/fsoft2025_1DA_2/Project/FleetManager/sources/model/TripContainer.obj: C_/Users/lucas/Desktop/fsoft2025_1DA_2/Project/FleetManager/sources/model/TripContainer.cpp.obj
+.PHONY : C_/Users/lucas/Desktop/fsoft2025_1DA_2/Project/FleetManager/sources/model/TripContainer.obj
 
 # target to build an object file
-C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/model/TripContainer.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\runTests.dir\build.make CMakeFiles/runTests.dir/C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/model/TripContainer.cpp.obj
-.PHONY : C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/model/TripContainer.cpp.obj
+C_/Users/lucas/Desktop/fsoft2025_1DA_2/Project/FleetManager/sources/model/TripContainer.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\runTests.dir\build.make CMakeFiles/runTests.dir/C_/Users/lucas/Desktop/fsoft2025_1DA_2/Project/FleetManager/sources/model/TripContainer.cpp.obj
+.PHONY : C_/Users/lucas/Desktop/fsoft2025_1DA_2/Project/FleetManager/sources/model/TripContainer.cpp.obj
 
-C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/model/TripContainer.i: C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/model/TripContainer.cpp.i
-.PHONY : C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/model/TripContainer.i
+C_/Users/lucas/Desktop/fsoft2025_1DA_2/Project/FleetManager/sources/model/TripContainer.i: C_/Users/lucas/Desktop/fsoft2025_1DA_2/Project/FleetManager/sources/model/TripContainer.cpp.i
+.PHONY : C_/Users/lucas/Desktop/fsoft2025_1DA_2/Project/FleetManager/sources/model/TripContainer.i
 
 # target to preprocess a source file
-C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/model/TripContainer.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\runTests.dir\build.make CMakeFiles/runTests.dir/C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/model/TripContainer.cpp.i
-.PHONY : C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/model/TripContainer.cpp.i
+C_/Users/lucas/Desktop/fsoft2025_1DA_2/Project/FleetManager/sources/model/TripContainer.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\runTests.dir\build.make CMakeFiles/runTests.dir/C_/Users/lucas/Desktop/fsoft2025_1DA_2/Project/FleetManager/sources/model/TripContainer.cpp.i
+.PHONY : C_/Users/lucas/Desktop/fsoft2025_1DA_2/Project/FleetManager/sources/model/TripContainer.cpp.i
 
-C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/model/TripContainer.s: C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/model/TripContainer.cpp.s
-.PHONY : C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/model/TripContainer.s
+C_/Users/lucas/Desktop/fsoft2025_1DA_2/Project/FleetManager/sources/model/TripContainer.s: C_/Users/lucas/Desktop/fsoft2025_1DA_2/Project/FleetManager/sources/model/TripContainer.cpp.s
+.PHONY : C_/Users/lucas/Desktop/fsoft2025_1DA_2/Project/FleetManager/sources/model/TripContainer.s
 
 # target to generate assembly for a file
-C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/model/TripContainer.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\runTests.dir\build.make CMakeFiles/runTests.dir/C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/model/TripContainer.cpp.s
-.PHONY : C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/model/TripContainer.cpp.s
+C_/Users/lucas/Desktop/fsoft2025_1DA_2/Project/FleetManager/sources/model/TripContainer.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\runTests.dir\build.make CMakeFiles/runTests.dir/C_/Users/lucas/Desktop/fsoft2025_1DA_2/Project/FleetManager/sources/model/TripContainer.cpp.s
+.PHONY : C_/Users/lucas/Desktop/fsoft2025_1DA_2/Project/FleetManager/sources/model/TripContainer.cpp.s
 
-C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/model/Truck.obj: C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/model/Truck.cpp.obj
-.PHONY : C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/model/Truck.obj
+C_/Users/lucas/Desktop/fsoft2025_1DA_2/Project/FleetManager/sources/model/Truck.obj: C_/Users/lucas/Desktop/fsoft2025_1DA_2/Project/FleetManager/sources/model/Truck.cpp.obj
+.PHONY : C_/Users/lucas/Desktop/fsoft2025_1DA_2/Project/FleetManager/sources/model/Truck.obj
 
 # target to build an object file
-C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/model/Truck.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\runTests.dir\build.make CMakeFiles/runTests.dir/C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/model/Truck.cpp.obj
-.PHONY : C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/model/Truck.cpp.obj
+C_/Users/lucas/Desktop/fsoft2025_1DA_2/Project/FleetManager/sources/model/Truck.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\runTests.dir\build.make CMakeFiles/runTests.dir/C_/Users/lucas/Desktop/fsoft2025_1DA_2/Project/FleetManager/sources/model/Truck.cpp.obj
+.PHONY : C_/Users/lucas/Desktop/fsoft2025_1DA_2/Project/FleetManager/sources/model/Truck.cpp.obj
 
-C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/model/Truck.i: C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/model/Truck.cpp.i
-.PHONY : C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/model/Truck.i
+C_/Users/lucas/Desktop/fsoft2025_1DA_2/Project/FleetManager/sources/model/Truck.i: C_/Users/lucas/Desktop/fsoft2025_1DA_2/Project/FleetManager/sources/model/Truck.cpp.i
+.PHONY : C_/Users/lucas/Desktop/fsoft2025_1DA_2/Project/FleetManager/sources/model/Truck.i
 
 # target to preprocess a source file
-C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/model/Truck.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\runTests.dir\build.make CMakeFiles/runTests.dir/C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/model/Truck.cpp.i
-.PHONY : C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/model/Truck.cpp.i
+C_/Users/lucas/Desktop/fsoft2025_1DA_2/Project/FleetManager/sources/model/Truck.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\runTests.dir\build.make CMakeFiles/runTests.dir/C_/Users/lucas/Desktop/fsoft2025_1DA_2/Project/FleetManager/sources/model/Truck.cpp.i
+.PHONY : C_/Users/lucas/Desktop/fsoft2025_1DA_2/Project/FleetManager/sources/model/Truck.cpp.i
 
-C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/model/Truck.s: C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/model/Truck.cpp.s
-.PHONY : C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/model/Truck.s
+C_/Users/lucas/Desktop/fsoft2025_1DA_2/Project/FleetManager/sources/model/Truck.s: C_/Users/lucas/Desktop/fsoft2025_1DA_2/Project/FleetManager/sources/model/Truck.cpp.s
+.PHONY : C_/Users/lucas/Desktop/fsoft2025_1DA_2/Project/FleetManager/sources/model/Truck.s
 
 # target to generate assembly for a file
-C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/model/Truck.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\runTests.dir\build.make CMakeFiles/runTests.dir/C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/model/Truck.cpp.s
-.PHONY : C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/model/Truck.cpp.s
+C_/Users/lucas/Desktop/fsoft2025_1DA_2/Project/FleetManager/sources/model/Truck.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\runTests.dir\build.make CMakeFiles/runTests.dir/C_/Users/lucas/Desktop/fsoft2025_1DA_2/Project/FleetManager/sources/model/Truck.cpp.s
+.PHONY : C_/Users/lucas/Desktop/fsoft2025_1DA_2/Project/FleetManager/sources/model/Truck.cpp.s
 
-C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/model/VSLContainer.obj: C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/model/VSLContainer.cpp.obj
-.PHONY : C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/model/VSLContainer.obj
+C_/Users/lucas/Desktop/fsoft2025_1DA_2/Project/FleetManager/sources/model/VSLContainer.obj: C_/Users/lucas/Desktop/fsoft2025_1DA_2/Project/FleetManager/sources/model/VSLContainer.cpp.obj
+.PHONY : C_/Users/lucas/Desktop/fsoft2025_1DA_2/Project/FleetManager/sources/model/VSLContainer.obj
 
 # target to build an object file
-C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/model/VSLContainer.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\runTests.dir\build.make CMakeFiles/runTests.dir/C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/model/VSLContainer.cpp.obj
-.PHONY : C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/model/VSLContainer.cpp.obj
+C_/Users/lucas/Desktop/fsoft2025_1DA_2/Project/FleetManager/sources/model/VSLContainer.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\runTests.dir\build.make CMakeFiles/runTests.dir/C_/Users/lucas/Desktop/fsoft2025_1DA_2/Project/FleetManager/sources/model/VSLContainer.cpp.obj
+.PHONY : C_/Users/lucas/Desktop/fsoft2025_1DA_2/Project/FleetManager/sources/model/VSLContainer.cpp.obj
 
-C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/model/VSLContainer.i: C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/model/VSLContainer.cpp.i
-.PHONY : C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/model/VSLContainer.i
+C_/Users/lucas/Desktop/fsoft2025_1DA_2/Project/FleetManager/sources/model/VSLContainer.i: C_/Users/lucas/Desktop/fsoft2025_1DA_2/Project/FleetManager/sources/model/VSLContainer.cpp.i
+.PHONY : C_/Users/lucas/Desktop/fsoft2025_1DA_2/Project/FleetManager/sources/model/VSLContainer.i
 
 # target to preprocess a source file
-C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/model/VSLContainer.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\runTests.dir\build.make CMakeFiles/runTests.dir/C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/model/VSLContainer.cpp.i
-.PHONY : C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/model/VSLContainer.cpp.i
+C_/Users/lucas/Desktop/fsoft2025_1DA_2/Project/FleetManager/sources/model/VSLContainer.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\runTests.dir\build.make CMakeFiles/runTests.dir/C_/Users/lucas/Desktop/fsoft2025_1DA_2/Project/FleetManager/sources/model/VSLContainer.cpp.i
+.PHONY : C_/Users/lucas/Desktop/fsoft2025_1DA_2/Project/FleetManager/sources/model/VSLContainer.cpp.i
 
-C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/model/VSLContainer.s: C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/model/VSLContainer.cpp.s
-.PHONY : C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/model/VSLContainer.s
+C_/Users/lucas/Desktop/fsoft2025_1DA_2/Project/FleetManager/sources/model/VSLContainer.s: C_/Users/lucas/Desktop/fsoft2025_1DA_2/Project/FleetManager/sources/model/VSLContainer.cpp.s
+.PHONY : C_/Users/lucas/Desktop/fsoft2025_1DA_2/Project/FleetManager/sources/model/VSLContainer.s
 
 # target to generate assembly for a file
-C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/model/VSLContainer.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\runTests.dir\build.make CMakeFiles/runTests.dir/C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/model/VSLContainer.cpp.s
-.PHONY : C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/model/VSLContainer.cpp.s
+C_/Users/lucas/Desktop/fsoft2025_1DA_2/Project/FleetManager/sources/model/VSLContainer.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\runTests.dir\build.make CMakeFiles/runTests.dir/C_/Users/lucas/Desktop/fsoft2025_1DA_2/Project/FleetManager/sources/model/VSLContainer.cpp.s
+.PHONY : C_/Users/lucas/Desktop/fsoft2025_1DA_2/Project/FleetManager/sources/model/VSLContainer.cpp.s
 
-C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/model/Vacation.obj: C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/model/Vacation.cpp.obj
-.PHONY : C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/model/Vacation.obj
+C_/Users/lucas/Desktop/fsoft2025_1DA_2/Project/FleetManager/sources/model/Vacation.obj: C_/Users/lucas/Desktop/fsoft2025_1DA_2/Project/FleetManager/sources/model/Vacation.cpp.obj
+.PHONY : C_/Users/lucas/Desktop/fsoft2025_1DA_2/Project/FleetManager/sources/model/Vacation.obj
 
 # target to build an object file
-C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/model/Vacation.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\runTests.dir\build.make CMakeFiles/runTests.dir/C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/model/Vacation.cpp.obj
-.PHONY : C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/model/Vacation.cpp.obj
+C_/Users/lucas/Desktop/fsoft2025_1DA_2/Project/FleetManager/sources/model/Vacation.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\runTests.dir\build.make CMakeFiles/runTests.dir/C_/Users/lucas/Desktop/fsoft2025_1DA_2/Project/FleetManager/sources/model/Vacation.cpp.obj
+.PHONY : C_/Users/lucas/Desktop/fsoft2025_1DA_2/Project/FleetManager/sources/model/Vacation.cpp.obj
 
-C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/model/Vacation.i: C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/model/Vacation.cpp.i
-.PHONY : C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/model/Vacation.i
+C_/Users/lucas/Desktop/fsoft2025_1DA_2/Project/FleetManager/sources/model/Vacation.i: C_/Users/lucas/Desktop/fsoft2025_1DA_2/Project/FleetManager/sources/model/Vacation.cpp.i
+.PHONY : C_/Users/lucas/Desktop/fsoft2025_1DA_2/Project/FleetManager/sources/model/Vacation.i
 
 # target to preprocess a source file
-C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/model/Vacation.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\runTests.dir\build.make CMakeFiles/runTests.dir/C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/model/Vacation.cpp.i
-.PHONY : C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/model/Vacation.cpp.i
+C_/Users/lucas/Desktop/fsoft2025_1DA_2/Project/FleetManager/sources/model/Vacation.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\runTests.dir\build.make CMakeFiles/runTests.dir/C_/Users/lucas/Desktop/fsoft2025_1DA_2/Project/FleetManager/sources/model/Vacation.cpp.i
+.PHONY : C_/Users/lucas/Desktop/fsoft2025_1DA_2/Project/FleetManager/sources/model/Vacation.cpp.i
 
-C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/model/Vacation.s: C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/model/Vacation.cpp.s
-.PHONY : C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/model/Vacation.s
+C_/Users/lucas/Desktop/fsoft2025_1DA_2/Project/FleetManager/sources/model/Vacation.s: C_/Users/lucas/Desktop/fsoft2025_1DA_2/Project/FleetManager/sources/model/Vacation.cpp.s
+.PHONY : C_/Users/lucas/Desktop/fsoft2025_1DA_2/Project/FleetManager/sources/model/Vacation.s
 
 # target to generate assembly for a file
-C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/model/Vacation.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\runTests.dir\build.make CMakeFiles/runTests.dir/C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/model/Vacation.cpp.s
-.PHONY : C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/model/Vacation.cpp.s
+C_/Users/lucas/Desktop/fsoft2025_1DA_2/Project/FleetManager/sources/model/Vacation.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\runTests.dir\build.make CMakeFiles/runTests.dir/C_/Users/lucas/Desktop/fsoft2025_1DA_2/Project/FleetManager/sources/model/Vacation.cpp.s
+.PHONY : C_/Users/lucas/Desktop/fsoft2025_1DA_2/Project/FleetManager/sources/model/Vacation.cpp.s
 
-C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/model/Van.obj: C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/model/Van.cpp.obj
-.PHONY : C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/model/Van.obj
+C_/Users/lucas/Desktop/fsoft2025_1DA_2/Project/FleetManager/sources/model/Van.obj: C_/Users/lucas/Desktop/fsoft2025_1DA_2/Project/FleetManager/sources/model/Van.cpp.obj
+.PHONY : C_/Users/lucas/Desktop/fsoft2025_1DA_2/Project/FleetManager/sources/model/Van.obj
 
 # target to build an object file
-C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/model/Van.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\runTests.dir\build.make CMakeFiles/runTests.dir/C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/model/Van.cpp.obj
-.PHONY : C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/model/Van.cpp.obj
+C_/Users/lucas/Desktop/fsoft2025_1DA_2/Project/FleetManager/sources/model/Van.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\runTests.dir\build.make CMakeFiles/runTests.dir/C_/Users/lucas/Desktop/fsoft2025_1DA_2/Project/FleetManager/sources/model/Van.cpp.obj
+.PHONY : C_/Users/lucas/Desktop/fsoft2025_1DA_2/Project/FleetManager/sources/model/Van.cpp.obj
 
-C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/model/Van.i: C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/model/Van.cpp.i
-.PHONY : C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/model/Van.i
+C_/Users/lucas/Desktop/fsoft2025_1DA_2/Project/FleetManager/sources/model/Van.i: C_/Users/lucas/Desktop/fsoft2025_1DA_2/Project/FleetManager/sources/model/Van.cpp.i
+.PHONY : C_/Users/lucas/Desktop/fsoft2025_1DA_2/Project/FleetManager/sources/model/Van.i
 
 # target to preprocess a source file
-C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/model/Van.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\runTests.dir\build.make CMakeFiles/runTests.dir/C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/model/Van.cpp.i
-.PHONY : C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/model/Van.cpp.i
+C_/Users/lucas/Desktop/fsoft2025_1DA_2/Project/FleetManager/sources/model/Van.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\runTests.dir\build.make CMakeFiles/runTests.dir/C_/Users/lucas/Desktop/fsoft2025_1DA_2/Project/FleetManager/sources/model/Van.cpp.i
+.PHONY : C_/Users/lucas/Desktop/fsoft2025_1DA_2/Project/FleetManager/sources/model/Van.cpp.i
 
-C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/model/Van.s: C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/model/Van.cpp.s
-.PHONY : C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/model/Van.s
+C_/Users/lucas/Desktop/fsoft2025_1DA_2/Project/FleetManager/sources/model/Van.s: C_/Users/lucas/Desktop/fsoft2025_1DA_2/Project/FleetManager/sources/model/Van.cpp.s
+.PHONY : C_/Users/lucas/Desktop/fsoft2025_1DA_2/Project/FleetManager/sources/model/Van.s
 
 # target to generate assembly for a file
-C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/model/Van.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\runTests.dir\build.make CMakeFiles/runTests.dir/C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/model/Van.cpp.s
-.PHONY : C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/model/Van.cpp.s
+C_/Users/lucas/Desktop/fsoft2025_1DA_2/Project/FleetManager/sources/model/Van.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\runTests.dir\build.make CMakeFiles/runTests.dir/C_/Users/lucas/Desktop/fsoft2025_1DA_2/Project/FleetManager/sources/model/Van.cpp.s
+.PHONY : C_/Users/lucas/Desktop/fsoft2025_1DA_2/Project/FleetManager/sources/model/Van.cpp.s
 
-C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/model/Vehicle.obj: C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/model/Vehicle.cpp.obj
-.PHONY : C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/model/Vehicle.obj
+C_/Users/lucas/Desktop/fsoft2025_1DA_2/Project/FleetManager/sources/model/Vehicle.obj: C_/Users/lucas/Desktop/fsoft2025_1DA_2/Project/FleetManager/sources/model/Vehicle.cpp.obj
+.PHONY : C_/Users/lucas/Desktop/fsoft2025_1DA_2/Project/FleetManager/sources/model/Vehicle.obj
 
 # target to build an object file
-C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/model/Vehicle.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\runTests.dir\build.make CMakeFiles/runTests.dir/C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/model/Vehicle.cpp.obj
-.PHONY : C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/model/Vehicle.cpp.obj
+C_/Users/lucas/Desktop/fsoft2025_1DA_2/Project/FleetManager/sources/model/Vehicle.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\runTests.dir\build.make CMakeFiles/runTests.dir/C_/Users/lucas/Desktop/fsoft2025_1DA_2/Project/FleetManager/sources/model/Vehicle.cpp.obj
+.PHONY : C_/Users/lucas/Desktop/fsoft2025_1DA_2/Project/FleetManager/sources/model/Vehicle.cpp.obj
 
-C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/model/Vehicle.i: C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/model/Vehicle.cpp.i
-.PHONY : C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/model/Vehicle.i
+C_/Users/lucas/Desktop/fsoft2025_1DA_2/Project/FleetManager/sources/model/Vehicle.i: C_/Users/lucas/Desktop/fsoft2025_1DA_2/Project/FleetManager/sources/model/Vehicle.cpp.i
+.PHONY : C_/Users/lucas/Desktop/fsoft2025_1DA_2/Project/FleetManager/sources/model/Vehicle.i
 
 # target to preprocess a source file
-C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/model/Vehicle.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\runTests.dir\build.make CMakeFiles/runTests.dir/C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/model/Vehicle.cpp.i
-.PHONY : C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/model/Vehicle.cpp.i
+C_/Users/lucas/Desktop/fsoft2025_1DA_2/Project/FleetManager/sources/model/Vehicle.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\runTests.dir\build.make CMakeFiles/runTests.dir/C_/Users/lucas/Desktop/fsoft2025_1DA_2/Project/FleetManager/sources/model/Vehicle.cpp.i
+.PHONY : C_/Users/lucas/Desktop/fsoft2025_1DA_2/Project/FleetManager/sources/model/Vehicle.cpp.i
 
-C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/model/Vehicle.s: C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/model/Vehicle.cpp.s
-.PHONY : C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/model/Vehicle.s
+C_/Users/lucas/Desktop/fsoft2025_1DA_2/Project/FleetManager/sources/model/Vehicle.s: C_/Users/lucas/Desktop/fsoft2025_1DA_2/Project/FleetManager/sources/model/Vehicle.cpp.s
+.PHONY : C_/Users/lucas/Desktop/fsoft2025_1DA_2/Project/FleetManager/sources/model/Vehicle.s
 
 # target to generate assembly for a file
-C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/model/Vehicle.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\runTests.dir\build.make CMakeFiles/runTests.dir/C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/model/Vehicle.cpp.s
-.PHONY : C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/model/Vehicle.cpp.s
+C_/Users/lucas/Desktop/fsoft2025_1DA_2/Project/FleetManager/sources/model/Vehicle.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\runTests.dir\build.make CMakeFiles/runTests.dir/C_/Users/lucas/Desktop/fsoft2025_1DA_2/Project/FleetManager/sources/model/Vehicle.cpp.s
+.PHONY : C_/Users/lucas/Desktop/fsoft2025_1DA_2/Project/FleetManager/sources/model/Vehicle.cpp.s
 
-C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/model/VehicleContainer.obj: C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/model/VehicleContainer.cpp.obj
-.PHONY : C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/model/VehicleContainer.obj
+C_/Users/lucas/Desktop/fsoft2025_1DA_2/Project/FleetManager/sources/model/VehicleContainer.obj: C_/Users/lucas/Desktop/fsoft2025_1DA_2/Project/FleetManager/sources/model/VehicleContainer.cpp.obj
+.PHONY : C_/Users/lucas/Desktop/fsoft2025_1DA_2/Project/FleetManager/sources/model/VehicleContainer.obj
 
 # target to build an object file
-C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/model/VehicleContainer.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\runTests.dir\build.make CMakeFiles/runTests.dir/C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/model/VehicleContainer.cpp.obj
-.PHONY : C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/model/VehicleContainer.cpp.obj
+C_/Users/lucas/Desktop/fsoft2025_1DA_2/Project/FleetManager/sources/model/VehicleContainer.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\runTests.dir\build.make CMakeFiles/runTests.dir/C_/Users/lucas/Desktop/fsoft2025_1DA_2/Project/FleetManager/sources/model/VehicleContainer.cpp.obj
+.PHONY : C_/Users/lucas/Desktop/fsoft2025_1DA_2/Project/FleetManager/sources/model/VehicleContainer.cpp.obj
 
-C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/model/VehicleContainer.i: C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/model/VehicleContainer.cpp.i
-.PHONY : C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/model/VehicleContainer.i
+C_/Users/lucas/Desktop/fsoft2025_1DA_2/Project/FleetManager/sources/model/VehicleContainer.i: C_/Users/lucas/Desktop/fsoft2025_1DA_2/Project/FleetManager/sources/model/VehicleContainer.cpp.i
+.PHONY : C_/Users/lucas/Desktop/fsoft2025_1DA_2/Project/FleetManager/sources/model/VehicleContainer.i
 
 # target to preprocess a source file
-C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/model/VehicleContainer.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\runTests.dir\build.make CMakeFiles/runTests.dir/C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/model/VehicleContainer.cpp.i
-.PHONY : C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/model/VehicleContainer.cpp.i
+C_/Users/lucas/Desktop/fsoft2025_1DA_2/Project/FleetManager/sources/model/VehicleContainer.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\runTests.dir\build.make CMakeFiles/runTests.dir/C_/Users/lucas/Desktop/fsoft2025_1DA_2/Project/FleetManager/sources/model/VehicleContainer.cpp.i
+.PHONY : C_/Users/lucas/Desktop/fsoft2025_1DA_2/Project/FleetManager/sources/model/VehicleContainer.cpp.i
 
-C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/model/VehicleContainer.s: C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/model/VehicleContainer.cpp.s
-.PHONY : C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/model/VehicleContainer.s
+C_/Users/lucas/Desktop/fsoft2025_1DA_2/Project/FleetManager/sources/model/VehicleContainer.s: C_/Users/lucas/Desktop/fsoft2025_1DA_2/Project/FleetManager/sources/model/VehicleContainer.cpp.s
+.PHONY : C_/Users/lucas/Desktop/fsoft2025_1DA_2/Project/FleetManager/sources/model/VehicleContainer.s
 
 # target to generate assembly for a file
-C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/model/VehicleContainer.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\runTests.dir\build.make CMakeFiles/runTests.dir/C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/model/VehicleContainer.cpp.s
-.PHONY : C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/model/VehicleContainer.cpp.s
+C_/Users/lucas/Desktop/fsoft2025_1DA_2/Project/FleetManager/sources/model/VehicleContainer.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\runTests.dir\build.make CMakeFiles/runTests.dir/C_/Users/lucas/Desktop/fsoft2025_1DA_2/Project/FleetManager/sources/model/VehicleContainer.cpp.s
+.PHONY : C_/Users/lucas/Desktop/fsoft2025_1DA_2/Project/FleetManager/sources/model/VehicleContainer.cpp.s
 
-C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/model/VehicleStorageLocation.obj: C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/model/VehicleStorageLocation.cpp.obj
-.PHONY : C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/model/VehicleStorageLocation.obj
+C_/Users/lucas/Desktop/fsoft2025_1DA_2/Project/FleetManager/sources/model/VehicleStorageLocation.obj: C_/Users/lucas/Desktop/fsoft2025_1DA_2/Project/FleetManager/sources/model/VehicleStorageLocation.cpp.obj
+.PHONY : C_/Users/lucas/Desktop/fsoft2025_1DA_2/Project/FleetManager/sources/model/VehicleStorageLocation.obj
 
 # target to build an object file
-C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/model/VehicleStorageLocation.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\runTests.dir\build.make CMakeFiles/runTests.dir/C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/model/VehicleStorageLocation.cpp.obj
-.PHONY : C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/model/VehicleStorageLocation.cpp.obj
+C_/Users/lucas/Desktop/fsoft2025_1DA_2/Project/FleetManager/sources/model/VehicleStorageLocation.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\runTests.dir\build.make CMakeFiles/runTests.dir/C_/Users/lucas/Desktop/fsoft2025_1DA_2/Project/FleetManager/sources/model/VehicleStorageLocation.cpp.obj
+.PHONY : C_/Users/lucas/Desktop/fsoft2025_1DA_2/Project/FleetManager/sources/model/VehicleStorageLocation.cpp.obj
 
-C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/model/VehicleStorageLocation.i: C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/model/VehicleStorageLocation.cpp.i
-.PHONY : C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/model/VehicleStorageLocation.i
+C_/Users/lucas/Desktop/fsoft2025_1DA_2/Project/FleetManager/sources/model/VehicleStorageLocation.i: C_/Users/lucas/Desktop/fsoft2025_1DA_2/Project/FleetManager/sources/model/VehicleStorageLocation.cpp.i
+.PHONY : C_/Users/lucas/Desktop/fsoft2025_1DA_2/Project/FleetManager/sources/model/VehicleStorageLocation.i
 
 # target to preprocess a source file
-C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/model/VehicleStorageLocation.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\runTests.dir\build.make CMakeFiles/runTests.dir/C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/model/VehicleStorageLocation.cpp.i
-.PHONY : C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/model/VehicleStorageLocation.cpp.i
+C_/Users/lucas/Desktop/fsoft2025_1DA_2/Project/FleetManager/sources/model/VehicleStorageLocation.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\runTests.dir\build.make CMakeFiles/runTests.dir/C_/Users/lucas/Desktop/fsoft2025_1DA_2/Project/FleetManager/sources/model/VehicleStorageLocation.cpp.i
+.PHONY : C_/Users/lucas/Desktop/fsoft2025_1DA_2/Project/FleetManager/sources/model/VehicleStorageLocation.cpp.i
 
-C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/model/VehicleStorageLocation.s: C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/model/VehicleStorageLocation.cpp.s
-.PHONY : C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/model/VehicleStorageLocation.s
+C_/Users/lucas/Desktop/fsoft2025_1DA_2/Project/FleetManager/sources/model/VehicleStorageLocation.s: C_/Users/lucas/Desktop/fsoft2025_1DA_2/Project/FleetManager/sources/model/VehicleStorageLocation.cpp.s
+.PHONY : C_/Users/lucas/Desktop/fsoft2025_1DA_2/Project/FleetManager/sources/model/VehicleStorageLocation.s
 
 # target to generate assembly for a file
-C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/model/VehicleStorageLocation.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\runTests.dir\build.make CMakeFiles/runTests.dir/C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/model/VehicleStorageLocation.cpp.s
-.PHONY : C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/model/VehicleStorageLocation.cpp.s
+C_/Users/lucas/Desktop/fsoft2025_1DA_2/Project/FleetManager/sources/model/VehicleStorageLocation.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\runTests.dir\build.make CMakeFiles/runTests.dir/C_/Users/lucas/Desktop/fsoft2025_1DA_2/Project/FleetManager/sources/model/VehicleStorageLocation.cpp.s
+.PHONY : C_/Users/lucas/Desktop/fsoft2025_1DA_2/Project/FleetManager/sources/model/VehicleStorageLocation.cpp.s
 
-C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/serial/DataContainer.obj: C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/serial/DataContainer.cpp.obj
-.PHONY : C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/serial/DataContainer.obj
+C_/Users/lucas/Desktop/fsoft2025_1DA_2/Project/FleetManager/sources/serial/DataContainer.obj: C_/Users/lucas/Desktop/fsoft2025_1DA_2/Project/FleetManager/sources/serial/DataContainer.cpp.obj
+.PHONY : C_/Users/lucas/Desktop/fsoft2025_1DA_2/Project/FleetManager/sources/serial/DataContainer.obj
 
 # target to build an object file
-C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/serial/DataContainer.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\runTests.dir\build.make CMakeFiles/runTests.dir/C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/serial/DataContainer.cpp.obj
-.PHONY : C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/serial/DataContainer.cpp.obj
+C_/Users/lucas/Desktop/fsoft2025_1DA_2/Project/FleetManager/sources/serial/DataContainer.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\runTests.dir\build.make CMakeFiles/runTests.dir/C_/Users/lucas/Desktop/fsoft2025_1DA_2/Project/FleetManager/sources/serial/DataContainer.cpp.obj
+.PHONY : C_/Users/lucas/Desktop/fsoft2025_1DA_2/Project/FleetManager/sources/serial/DataContainer.cpp.obj
 
-C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/serial/DataContainer.i: C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/serial/DataContainer.cpp.i
-.PHONY : C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/serial/DataContainer.i
+C_/Users/lucas/Desktop/fsoft2025_1DA_2/Project/FleetManager/sources/serial/DataContainer.i: C_/Users/lucas/Desktop/fsoft2025_1DA_2/Project/FleetManager/sources/serial/DataContainer.cpp.i
+.PHONY : C_/Users/lucas/Desktop/fsoft2025_1DA_2/Project/FleetManager/sources/serial/DataContainer.i
 
 # target to preprocess a source file
-C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/serial/DataContainer.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\runTests.dir\build.make CMakeFiles/runTests.dir/C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/serial/DataContainer.cpp.i
-.PHONY : C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/serial/DataContainer.cpp.i
+C_/Users/lucas/Desktop/fsoft2025_1DA_2/Project/FleetManager/sources/serial/DataContainer.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\runTests.dir\build.make CMakeFiles/runTests.dir/C_/Users/lucas/Desktop/fsoft2025_1DA_2/Project/FleetManager/sources/serial/DataContainer.cpp.i
+.PHONY : C_/Users/lucas/Desktop/fsoft2025_1DA_2/Project/FleetManager/sources/serial/DataContainer.cpp.i
 
-C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/serial/DataContainer.s: C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/serial/DataContainer.cpp.s
-.PHONY : C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/serial/DataContainer.s
+C_/Users/lucas/Desktop/fsoft2025_1DA_2/Project/FleetManager/sources/serial/DataContainer.s: C_/Users/lucas/Desktop/fsoft2025_1DA_2/Project/FleetManager/sources/serial/DataContainer.cpp.s
+.PHONY : C_/Users/lucas/Desktop/fsoft2025_1DA_2/Project/FleetManager/sources/serial/DataContainer.s
 
 # target to generate assembly for a file
-C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/serial/DataContainer.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\runTests.dir\build.make CMakeFiles/runTests.dir/C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/serial/DataContainer.cpp.s
-.PHONY : C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/serial/DataContainer.cpp.s
+C_/Users/lucas/Desktop/fsoft2025_1DA_2/Project/FleetManager/sources/serial/DataContainer.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\runTests.dir\build.make CMakeFiles/runTests.dir/C_/Users/lucas/Desktop/fsoft2025_1DA_2/Project/FleetManager/sources/serial/DataContainer.cpp.s
+.PHONY : C_/Users/lucas/Desktop/fsoft2025_1DA_2/Project/FleetManager/sources/serial/DataContainer.cpp.s
 
-C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/serial/DriverSerialization.obj: C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/serial/DriverSerialization.cpp.obj
-.PHONY : C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/serial/DriverSerialization.obj
+C_/Users/lucas/Desktop/fsoft2025_1DA_2/Project/FleetManager/sources/serial/DriverSerialization.obj: C_/Users/lucas/Desktop/fsoft2025_1DA_2/Project/FleetManager/sources/serial/DriverSerialization.cpp.obj
+.PHONY : C_/Users/lucas/Desktop/fsoft2025_1DA_2/Project/FleetManager/sources/serial/DriverSerialization.obj
 
 # target to build an object file
-C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/serial/DriverSerialization.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\runTests.dir\build.make CMakeFiles/runTests.dir/C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/serial/DriverSerialization.cpp.obj
-.PHONY : C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/serial/DriverSerialization.cpp.obj
+C_/Users/lucas/Desktop/fsoft2025_1DA_2/Project/FleetManager/sources/serial/DriverSerialization.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\runTests.dir\build.make CMakeFiles/runTests.dir/C_/Users/lucas/Desktop/fsoft2025_1DA_2/Project/FleetManager/sources/serial/DriverSerialization.cpp.obj
+.PHONY : C_/Users/lucas/Desktop/fsoft2025_1DA_2/Project/FleetManager/sources/serial/DriverSerialization.cpp.obj
 
-C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/serial/DriverSerialization.i: C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/serial/DriverSerialization.cpp.i
-.PHONY : C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/serial/DriverSerialization.i
+C_/Users/lucas/Desktop/fsoft2025_1DA_2/Project/FleetManager/sources/serial/DriverSerialization.i: C_/Users/lucas/Desktop/fsoft2025_1DA_2/Project/FleetManager/sources/serial/DriverSerialization.cpp.i
+.PHONY : C_/Users/lucas/Desktop/fsoft2025_1DA_2/Project/FleetManager/sources/serial/DriverSerialization.i
 
 # target to preprocess a source file
-C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/serial/DriverSerialization.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\runTests.dir\build.make CMakeFiles/runTests.dir/C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/serial/DriverSerialization.cpp.i
-.PHONY : C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/serial/DriverSerialization.cpp.i
+C_/Users/lucas/Desktop/fsoft2025_1DA_2/Project/FleetManager/sources/serial/DriverSerialization.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\runTests.dir\build.make CMakeFiles/runTests.dir/C_/Users/lucas/Desktop/fsoft2025_1DA_2/Project/FleetManager/sources/serial/DriverSerialization.cpp.i
+.PHONY : C_/Users/lucas/Desktop/fsoft2025_1DA_2/Project/FleetManager/sources/serial/DriverSerialization.cpp.i
 
-C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/serial/DriverSerialization.s: C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/serial/DriverSerialization.cpp.s
-.PHONY : C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/serial/DriverSerialization.s
+C_/Users/lucas/Desktop/fsoft2025_1DA_2/Project/FleetManager/sources/serial/DriverSerialization.s: C_/Users/lucas/Desktop/fsoft2025_1DA_2/Project/FleetManager/sources/serial/DriverSerialization.cpp.s
+.PHONY : C_/Users/lucas/Desktop/fsoft2025_1DA_2/Project/FleetManager/sources/serial/DriverSerialization.s
 
 # target to generate assembly for a file
-C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/serial/DriverSerialization.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\runTests.dir\build.make CMakeFiles/runTests.dir/C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/serial/DriverSerialization.cpp.s
-.PHONY : C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/serial/DriverSerialization.cpp.s
+C_/Users/lucas/Desktop/fsoft2025_1DA_2/Project/FleetManager/sources/serial/DriverSerialization.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\runTests.dir\build.make CMakeFiles/runTests.dir/C_/Users/lucas/Desktop/fsoft2025_1DA_2/Project/FleetManager/sources/serial/DriverSerialization.cpp.s
+.PHONY : C_/Users/lucas/Desktop/fsoft2025_1DA_2/Project/FleetManager/sources/serial/DriverSerialization.cpp.s
 
-C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/serial/FinancialSerialization.obj: C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/serial/FinancialSerialization.cpp.obj
-.PHONY : C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/serial/FinancialSerialization.obj
+C_/Users/lucas/Desktop/fsoft2025_1DA_2/Project/FleetManager/sources/serial/FinancialSerialization.obj: C_/Users/lucas/Desktop/fsoft2025_1DA_2/Project/FleetManager/sources/serial/FinancialSerialization.cpp.obj
+.PHONY : C_/Users/lucas/Desktop/fsoft2025_1DA_2/Project/FleetManager/sources/serial/FinancialSerialization.obj
 
 # target to build an object file
-C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/serial/FinancialSerialization.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\runTests.dir\build.make CMakeFiles/runTests.dir/C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/serial/FinancialSerialization.cpp.obj
-.PHONY : C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/serial/FinancialSerialization.cpp.obj
+C_/Users/lucas/Desktop/fsoft2025_1DA_2/Project/FleetManager/sources/serial/FinancialSerialization.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\runTests.dir\build.make CMakeFiles/runTests.dir/C_/Users/lucas/Desktop/fsoft2025_1DA_2/Project/FleetManager/sources/serial/FinancialSerialization.cpp.obj
+.PHONY : C_/Users/lucas/Desktop/fsoft2025_1DA_2/Project/FleetManager/sources/serial/FinancialSerialization.cpp.obj
 
-C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/serial/FinancialSerialization.i: C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/serial/FinancialSerialization.cpp.i
-.PHONY : C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/serial/FinancialSerialization.i
+C_/Users/lucas/Desktop/fsoft2025_1DA_2/Project/FleetManager/sources/serial/FinancialSerialization.i: C_/Users/lucas/Desktop/fsoft2025_1DA_2/Project/FleetManager/sources/serial/FinancialSerialization.cpp.i
+.PHONY : C_/Users/lucas/Desktop/fsoft2025_1DA_2/Project/FleetManager/sources/serial/FinancialSerialization.i
 
 # target to preprocess a source file
-C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/serial/FinancialSerialization.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\runTests.dir\build.make CMakeFiles/runTests.dir/C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/serial/FinancialSerialization.cpp.i
-.PHONY : C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/serial/FinancialSerialization.cpp.i
+C_/Users/lucas/Desktop/fsoft2025_1DA_2/Project/FleetManager/sources/serial/FinancialSerialization.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\runTests.dir\build.make CMakeFiles/runTests.dir/C_/Users/lucas/Desktop/fsoft2025_1DA_2/Project/FleetManager/sources/serial/FinancialSerialization.cpp.i
+.PHONY : C_/Users/lucas/Desktop/fsoft2025_1DA_2/Project/FleetManager/sources/serial/FinancialSerialization.cpp.i
 
-C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/serial/FinancialSerialization.s: C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/serial/FinancialSerialization.cpp.s
-.PHONY : C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/serial/FinancialSerialization.s
+C_/Users/lucas/Desktop/fsoft2025_1DA_2/Project/FleetManager/sources/serial/FinancialSerialization.s: C_/Users/lucas/Desktop/fsoft2025_1DA_2/Project/FleetManager/sources/serial/FinancialSerialization.cpp.s
+.PHONY : C_/Users/lucas/Desktop/fsoft2025_1DA_2/Project/FleetManager/sources/serial/FinancialSerialization.s
 
 # target to generate assembly for a file
-C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/serial/FinancialSerialization.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\runTests.dir\build.make CMakeFiles/runTests.dir/C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/serial/FinancialSerialization.cpp.s
-.PHONY : C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/serial/FinancialSerialization.cpp.s
+C_/Users/lucas/Desktop/fsoft2025_1DA_2/Project/FleetManager/sources/serial/FinancialSerialization.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\runTests.dir\build.make CMakeFiles/runTests.dir/C_/Users/lucas/Desktop/fsoft2025_1DA_2/Project/FleetManager/sources/serial/FinancialSerialization.cpp.s
+.PHONY : C_/Users/lucas/Desktop/fsoft2025_1DA_2/Project/FleetManager/sources/serial/FinancialSerialization.cpp.s
 
-C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/serial/OrderSerialization.obj: C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/serial/OrderSerialization.cpp.obj
-.PHONY : C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/serial/OrderSerialization.obj
+C_/Users/lucas/Desktop/fsoft2025_1DA_2/Project/FleetManager/sources/serial/OrderSerialization.obj: C_/Users/lucas/Desktop/fsoft2025_1DA_2/Project/FleetManager/sources/serial/OrderSerialization.cpp.obj
+.PHONY : C_/Users/lucas/Desktop/fsoft2025_1DA_2/Project/FleetManager/sources/serial/OrderSerialization.obj
 
 # target to build an object file
-C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/serial/OrderSerialization.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\runTests.dir\build.make CMakeFiles/runTests.dir/C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/serial/OrderSerialization.cpp.obj
-.PHONY : C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/serial/OrderSerialization.cpp.obj
+C_/Users/lucas/Desktop/fsoft2025_1DA_2/Project/FleetManager/sources/serial/OrderSerialization.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\runTests.dir\build.make CMakeFiles/runTests.dir/C_/Users/lucas/Desktop/fsoft2025_1DA_2/Project/FleetManager/sources/serial/OrderSerialization.cpp.obj
+.PHONY : C_/Users/lucas/Desktop/fsoft2025_1DA_2/Project/FleetManager/sources/serial/OrderSerialization.cpp.obj
 
-C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/serial/OrderSerialization.i: C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/serial/OrderSerialization.cpp.i
-.PHONY : C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/serial/OrderSerialization.i
+C_/Users/lucas/Desktop/fsoft2025_1DA_2/Project/FleetManager/sources/serial/OrderSerialization.i: C_/Users/lucas/Desktop/fsoft2025_1DA_2/Project/FleetManager/sources/serial/OrderSerialization.cpp.i
+.PHONY : C_/Users/lucas/Desktop/fsoft2025_1DA_2/Project/FleetManager/sources/serial/OrderSerialization.i
 
 # target to preprocess a source file
-C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/serial/OrderSerialization.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\runTests.dir\build.make CMakeFiles/runTests.dir/C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/serial/OrderSerialization.cpp.i
-.PHONY : C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/serial/OrderSerialization.cpp.i
+C_/Users/lucas/Desktop/fsoft2025_1DA_2/Project/FleetManager/sources/serial/OrderSerialization.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\runTests.dir\build.make CMakeFiles/runTests.dir/C_/Users/lucas/Desktop/fsoft2025_1DA_2/Project/FleetManager/sources/serial/OrderSerialization.cpp.i
+.PHONY : C_/Users/lucas/Desktop/fsoft2025_1DA_2/Project/FleetManager/sources/serial/OrderSerialization.cpp.i
 
-C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/serial/OrderSerialization.s: C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/serial/OrderSerialization.cpp.s
-.PHONY : C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/serial/OrderSerialization.s
+C_/Users/lucas/Desktop/fsoft2025_1DA_2/Project/FleetManager/sources/serial/OrderSerialization.s: C_/Users/lucas/Desktop/fsoft2025_1DA_2/Project/FleetManager/sources/serial/OrderSerialization.cpp.s
+.PHONY : C_/Users/lucas/Desktop/fsoft2025_1DA_2/Project/FleetManager/sources/serial/OrderSerialization.s
 
 # target to generate assembly for a file
-C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/serial/OrderSerialization.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\runTests.dir\build.make CMakeFiles/runTests.dir/C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/serial/OrderSerialization.cpp.s
-.PHONY : C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/serial/OrderSerialization.cpp.s
+C_/Users/lucas/Desktop/fsoft2025_1DA_2/Project/FleetManager/sources/serial/OrderSerialization.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\runTests.dir\build.make CMakeFiles/runTests.dir/C_/Users/lucas/Desktop/fsoft2025_1DA_2/Project/FleetManager/sources/serial/OrderSerialization.cpp.s
+.PHONY : C_/Users/lucas/Desktop/fsoft2025_1DA_2/Project/FleetManager/sources/serial/OrderSerialization.cpp.s
 
-C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/serial/TripSerialization.obj: C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/serial/TripSerialization.cpp.obj
-.PHONY : C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/serial/TripSerialization.obj
+C_/Users/lucas/Desktop/fsoft2025_1DA_2/Project/FleetManager/sources/serial/TripSerialization.obj: C_/Users/lucas/Desktop/fsoft2025_1DA_2/Project/FleetManager/sources/serial/TripSerialization.cpp.obj
+.PHONY : C_/Users/lucas/Desktop/fsoft2025_1DA_2/Project/FleetManager/sources/serial/TripSerialization.obj
 
 # target to build an object file
-C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/serial/TripSerialization.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\runTests.dir\build.make CMakeFiles/runTests.dir/C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/serial/TripSerialization.cpp.obj
-.PHONY : C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/serial/TripSerialization.cpp.obj
+C_/Users/lucas/Desktop/fsoft2025_1DA_2/Project/FleetManager/sources/serial/TripSerialization.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\runTests.dir\build.make CMakeFiles/runTests.dir/C_/Users/lucas/Desktop/fsoft2025_1DA_2/Project/FleetManager/sources/serial/TripSerialization.cpp.obj
+.PHONY : C_/Users/lucas/Desktop/fsoft2025_1DA_2/Project/FleetManager/sources/serial/TripSerialization.cpp.obj
 
-C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/serial/TripSerialization.i: C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/serial/TripSerialization.cpp.i
-.PHONY : C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/serial/TripSerialization.i
+C_/Users/lucas/Desktop/fsoft2025_1DA_2/Project/FleetManager/sources/serial/TripSerialization.i: C_/Users/lucas/Desktop/fsoft2025_1DA_2/Project/FleetManager/sources/serial/TripSerialization.cpp.i
+.PHONY : C_/Users/lucas/Desktop/fsoft2025_1DA_2/Project/FleetManager/sources/serial/TripSerialization.i
 
 # target to preprocess a source file
-C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/serial/TripSerialization.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\runTests.dir\build.make CMakeFiles/runTests.dir/C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/serial/TripSerialization.cpp.i
-.PHONY : C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/serial/TripSerialization.cpp.i
+C_/Users/lucas/Desktop/fsoft2025_1DA_2/Project/FleetManager/sources/serial/TripSerialization.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\runTests.dir\build.make CMakeFiles/runTests.dir/C_/Users/lucas/Desktop/fsoft2025_1DA_2/Project/FleetManager/sources/serial/TripSerialization.cpp.i
+.PHONY : C_/Users/lucas/Desktop/fsoft2025_1DA_2/Project/FleetManager/sources/serial/TripSerialization.cpp.i
 
-C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/serial/TripSerialization.s: C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/serial/TripSerialization.cpp.s
-.PHONY : C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/serial/TripSerialization.s
+C_/Users/lucas/Desktop/fsoft2025_1DA_2/Project/FleetManager/sources/serial/TripSerialization.s: C_/Users/lucas/Desktop/fsoft2025_1DA_2/Project/FleetManager/sources/serial/TripSerialization.cpp.s
+.PHONY : C_/Users/lucas/Desktop/fsoft2025_1DA_2/Project/FleetManager/sources/serial/TripSerialization.s
 
 # target to generate assembly for a file
-C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/serial/TripSerialization.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\runTests.dir\build.make CMakeFiles/runTests.dir/C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/serial/TripSerialization.cpp.s
-.PHONY : C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/serial/TripSerialization.cpp.s
+C_/Users/lucas/Desktop/fsoft2025_1DA_2/Project/FleetManager/sources/serial/TripSerialization.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\runTests.dir\build.make CMakeFiles/runTests.dir/C_/Users/lucas/Desktop/fsoft2025_1DA_2/Project/FleetManager/sources/serial/TripSerialization.cpp.s
+.PHONY : C_/Users/lucas/Desktop/fsoft2025_1DA_2/Project/FleetManager/sources/serial/TripSerialization.cpp.s
 
-C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/serial/VehicleSerialization.obj: C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/serial/VehicleSerialization.cpp.obj
-.PHONY : C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/serial/VehicleSerialization.obj
+C_/Users/lucas/Desktop/fsoft2025_1DA_2/Project/FleetManager/sources/serial/VehicleSerialization.obj: C_/Users/lucas/Desktop/fsoft2025_1DA_2/Project/FleetManager/sources/serial/VehicleSerialization.cpp.obj
+.PHONY : C_/Users/lucas/Desktop/fsoft2025_1DA_2/Project/FleetManager/sources/serial/VehicleSerialization.obj
 
 # target to build an object file
-C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/serial/VehicleSerialization.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\runTests.dir\build.make CMakeFiles/runTests.dir/C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/serial/VehicleSerialization.cpp.obj
-.PHONY : C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/serial/VehicleSerialization.cpp.obj
+C_/Users/lucas/Desktop/fsoft2025_1DA_2/Project/FleetManager/sources/serial/VehicleSerialization.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\runTests.dir\build.make CMakeFiles/runTests.dir/C_/Users/lucas/Desktop/fsoft2025_1DA_2/Project/FleetManager/sources/serial/VehicleSerialization.cpp.obj
+.PHONY : C_/Users/lucas/Desktop/fsoft2025_1DA_2/Project/FleetManager/sources/serial/VehicleSerialization.cpp.obj
 
-C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/serial/VehicleSerialization.i: C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/serial/VehicleSerialization.cpp.i
-.PHONY : C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/serial/VehicleSerialization.i
+C_/Users/lucas/Desktop/fsoft2025_1DA_2/Project/FleetManager/sources/serial/VehicleSerialization.i: C_/Users/lucas/Desktop/fsoft2025_1DA_2/Project/FleetManager/sources/serial/VehicleSerialization.cpp.i
+.PHONY : C_/Users/lucas/Desktop/fsoft2025_1DA_2/Project/FleetManager/sources/serial/VehicleSerialization.i
 
 # target to preprocess a source file
-C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/serial/VehicleSerialization.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\runTests.dir\build.make CMakeFiles/runTests.dir/C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/serial/VehicleSerialization.cpp.i
-.PHONY : C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/serial/VehicleSerialization.cpp.i
+C_/Users/lucas/Desktop/fsoft2025_1DA_2/Project/FleetManager/sources/serial/VehicleSerialization.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\runTests.dir\build.make CMakeFiles/runTests.dir/C_/Users/lucas/Desktop/fsoft2025_1DA_2/Project/FleetManager/sources/serial/VehicleSerialization.cpp.i
+.PHONY : C_/Users/lucas/Desktop/fsoft2025_1DA_2/Project/FleetManager/sources/serial/VehicleSerialization.cpp.i
 
-C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/serial/VehicleSerialization.s: C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/serial/VehicleSerialization.cpp.s
-.PHONY : C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/serial/VehicleSerialization.s
+C_/Users/lucas/Desktop/fsoft2025_1DA_2/Project/FleetManager/sources/serial/VehicleSerialization.s: C_/Users/lucas/Desktop/fsoft2025_1DA_2/Project/FleetManager/sources/serial/VehicleSerialization.cpp.s
+.PHONY : C_/Users/lucas/Desktop/fsoft2025_1DA_2/Project/FleetManager/sources/serial/VehicleSerialization.s
 
 # target to generate assembly for a file
-C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/serial/VehicleSerialization.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\runTests.dir\build.make CMakeFiles/runTests.dir/C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/serial/VehicleSerialization.cpp.s
-.PHONY : C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/serial/VehicleSerialization.cpp.s
+C_/Users/lucas/Desktop/fsoft2025_1DA_2/Project/FleetManager/sources/serial/VehicleSerialization.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\runTests.dir\build.make CMakeFiles/runTests.dir/C_/Users/lucas/Desktop/fsoft2025_1DA_2/Project/FleetManager/sources/serial/VehicleSerialization.cpp.s
+.PHONY : C_/Users/lucas/Desktop/fsoft2025_1DA_2/Project/FleetManager/sources/serial/VehicleSerialization.cpp.s
 
-C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/serial/VehicleStorageLocationSerialization.obj: C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/serial/VehicleStorageLocationSerialization.cpp.obj
-.PHONY : C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/serial/VehicleStorageLocationSerialization.obj
+C_/Users/lucas/Desktop/fsoft2025_1DA_2/Project/FleetManager/sources/serial/VehicleStorageLocationSerialization.obj: C_/Users/lucas/Desktop/fsoft2025_1DA_2/Project/FleetManager/sources/serial/VehicleStorageLocationSerialization.cpp.obj
+.PHONY : C_/Users/lucas/Desktop/fsoft2025_1DA_2/Project/FleetManager/sources/serial/VehicleStorageLocationSerialization.obj
 
 # target to build an object file
-C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/serial/VehicleStorageLocationSerialization.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\runTests.dir\build.make CMakeFiles/runTests.dir/C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/serial/VehicleStorageLocationSerialization.cpp.obj
-.PHONY : C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/serial/VehicleStorageLocationSerialization.cpp.obj
+C_/Users/lucas/Desktop/fsoft2025_1DA_2/Project/FleetManager/sources/serial/VehicleStorageLocationSerialization.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\runTests.dir\build.make CMakeFiles/runTests.dir/C_/Users/lucas/Desktop/fsoft2025_1DA_2/Project/FleetManager/sources/serial/VehicleStorageLocationSerialization.cpp.obj
+.PHONY : C_/Users/lucas/Desktop/fsoft2025_1DA_2/Project/FleetManager/sources/serial/VehicleStorageLocationSerialization.cpp.obj
 
-C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/serial/VehicleStorageLocationSerialization.i: C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/serial/VehicleStorageLocationSerialization.cpp.i
-.PHONY : C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/serial/VehicleStorageLocationSerialization.i
+C_/Users/lucas/Desktop/fsoft2025_1DA_2/Project/FleetManager/sources/serial/VehicleStorageLocationSerialization.i: C_/Users/lucas/Desktop/fsoft2025_1DA_2/Project/FleetManager/sources/serial/VehicleStorageLocationSerialization.cpp.i
+.PHONY : C_/Users/lucas/Desktop/fsoft2025_1DA_2/Project/FleetManager/sources/serial/VehicleStorageLocationSerialization.i
 
 # target to preprocess a source file
-C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/serial/VehicleStorageLocationSerialization.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\runTests.dir\build.make CMakeFiles/runTests.dir/C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/serial/VehicleStorageLocationSerialization.cpp.i
-.PHONY : C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/serial/VehicleStorageLocationSerialization.cpp.i
+C_/Users/lucas/Desktop/fsoft2025_1DA_2/Project/FleetManager/sources/serial/VehicleStorageLocationSerialization.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\runTests.dir\build.make CMakeFiles/runTests.dir/C_/Users/lucas/Desktop/fsoft2025_1DA_2/Project/FleetManager/sources/serial/VehicleStorageLocationSerialization.cpp.i
+.PHONY : C_/Users/lucas/Desktop/fsoft2025_1DA_2/Project/FleetManager/sources/serial/VehicleStorageLocationSerialization.cpp.i
 
-C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/serial/VehicleStorageLocationSerialization.s: C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/serial/VehicleStorageLocationSerialization.cpp.s
-.PHONY : C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/serial/VehicleStorageLocationSerialization.s
+C_/Users/lucas/Desktop/fsoft2025_1DA_2/Project/FleetManager/sources/serial/VehicleStorageLocationSerialization.s: C_/Users/lucas/Desktop/fsoft2025_1DA_2/Project/FleetManager/sources/serial/VehicleStorageLocationSerialization.cpp.s
+.PHONY : C_/Users/lucas/Desktop/fsoft2025_1DA_2/Project/FleetManager/sources/serial/VehicleStorageLocationSerialization.s
 
 # target to generate assembly for a file
-C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/serial/VehicleStorageLocationSerialization.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\runTests.dir\build.make CMakeFiles/runTests.dir/C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/serial/VehicleStorageLocationSerialization.cpp.s
-.PHONY : C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/serial/VehicleStorageLocationSerialization.cpp.s
+C_/Users/lucas/Desktop/fsoft2025_1DA_2/Project/FleetManager/sources/serial/VehicleStorageLocationSerialization.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\runTests.dir\build.make CMakeFiles/runTests.dir/C_/Users/lucas/Desktop/fsoft2025_1DA_2/Project/FleetManager/sources/serial/VehicleStorageLocationSerialization.cpp.s
+.PHONY : C_/Users/lucas/Desktop/fsoft2025_1DA_2/Project/FleetManager/sources/serial/VehicleStorageLocationSerialization.cpp.s
 
-C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/views/DriverView.obj: C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/views/DriverView.cpp.obj
-.PHONY : C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/views/DriverView.obj
+C_/Users/lucas/Desktop/fsoft2025_1DA_2/Project/FleetManager/sources/views/DriverView.obj: C_/Users/lucas/Desktop/fsoft2025_1DA_2/Project/FleetManager/sources/views/DriverView.cpp.obj
+.PHONY : C_/Users/lucas/Desktop/fsoft2025_1DA_2/Project/FleetManager/sources/views/DriverView.obj
 
 # target to build an object file
-C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/views/DriverView.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\runTests.dir\build.make CMakeFiles/runTests.dir/C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/views/DriverView.cpp.obj
-.PHONY : C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/views/DriverView.cpp.obj
+C_/Users/lucas/Desktop/fsoft2025_1DA_2/Project/FleetManager/sources/views/DriverView.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\runTests.dir\build.make CMakeFiles/runTests.dir/C_/Users/lucas/Desktop/fsoft2025_1DA_2/Project/FleetManager/sources/views/DriverView.cpp.obj
+.PHONY : C_/Users/lucas/Desktop/fsoft2025_1DA_2/Project/FleetManager/sources/views/DriverView.cpp.obj
 
-C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/views/DriverView.i: C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/views/DriverView.cpp.i
-.PHONY : C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/views/DriverView.i
+C_/Users/lucas/Desktop/fsoft2025_1DA_2/Project/FleetManager/sources/views/DriverView.i: C_/Users/lucas/Desktop/fsoft2025_1DA_2/Project/FleetManager/sources/views/DriverView.cpp.i
+.PHONY : C_/Users/lucas/Desktop/fsoft2025_1DA_2/Project/FleetManager/sources/views/DriverView.i
 
 # target to preprocess a source file
-C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/views/DriverView.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\runTests.dir\build.make CMakeFiles/runTests.dir/C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/views/DriverView.cpp.i
-.PHONY : C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/views/DriverView.cpp.i
+C_/Users/lucas/Desktop/fsoft2025_1DA_2/Project/FleetManager/sources/views/DriverView.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\runTests.dir\build.make CMakeFiles/runTests.dir/C_/Users/lucas/Desktop/fsoft2025_1DA_2/Project/FleetManager/sources/views/DriverView.cpp.i
+.PHONY : C_/Users/lucas/Desktop/fsoft2025_1DA_2/Project/FleetManager/sources/views/DriverView.cpp.i
 
-C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/views/DriverView.s: C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/views/DriverView.cpp.s
-.PHONY : C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/views/DriverView.s
+C_/Users/lucas/Desktop/fsoft2025_1DA_2/Project/FleetManager/sources/views/DriverView.s: C_/Users/lucas/Desktop/fsoft2025_1DA_2/Project/FleetManager/sources/views/DriverView.cpp.s
+.PHONY : C_/Users/lucas/Desktop/fsoft2025_1DA_2/Project/FleetManager/sources/views/DriverView.s
 
 # target to generate assembly for a file
-C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/views/DriverView.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\runTests.dir\build.make CMakeFiles/runTests.dir/C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/views/DriverView.cpp.s
-.PHONY : C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/views/DriverView.cpp.s
+C_/Users/lucas/Desktop/fsoft2025_1DA_2/Project/FleetManager/sources/views/DriverView.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\runTests.dir\build.make CMakeFiles/runTests.dir/C_/Users/lucas/Desktop/fsoft2025_1DA_2/Project/FleetManager/sources/views/DriverView.cpp.s
+.PHONY : C_/Users/lucas/Desktop/fsoft2025_1DA_2/Project/FleetManager/sources/views/DriverView.cpp.s
 
-C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/views/FinancialView.obj: C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/views/FinancialView.cpp.obj
-.PHONY : C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/views/FinancialView.obj
+C_/Users/lucas/Desktop/fsoft2025_1DA_2/Project/FleetManager/sources/views/FinancialView.obj: C_/Users/lucas/Desktop/fsoft2025_1DA_2/Project/FleetManager/sources/views/FinancialView.cpp.obj
+.PHONY : C_/Users/lucas/Desktop/fsoft2025_1DA_2/Project/FleetManager/sources/views/FinancialView.obj
 
 # target to build an object file
-C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/views/FinancialView.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\runTests.dir\build.make CMakeFiles/runTests.dir/C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/views/FinancialView.cpp.obj
-.PHONY : C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/views/FinancialView.cpp.obj
+C_/Users/lucas/Desktop/fsoft2025_1DA_2/Project/FleetManager/sources/views/FinancialView.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\runTests.dir\build.make CMakeFiles/runTests.dir/C_/Users/lucas/Desktop/fsoft2025_1DA_2/Project/FleetManager/sources/views/FinancialView.cpp.obj
+.PHONY : C_/Users/lucas/Desktop/fsoft2025_1DA_2/Project/FleetManager/sources/views/FinancialView.cpp.obj
 
-C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/views/FinancialView.i: C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/views/FinancialView.cpp.i
-.PHONY : C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/views/FinancialView.i
+C_/Users/lucas/Desktop/fsoft2025_1DA_2/Project/FleetManager/sources/views/FinancialView.i: C_/Users/lucas/Desktop/fsoft2025_1DA_2/Project/FleetManager/sources/views/FinancialView.cpp.i
+.PHONY : C_/Users/lucas/Desktop/fsoft2025_1DA_2/Project/FleetManager/sources/views/FinancialView.i
 
 # target to preprocess a source file
-C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/views/FinancialView.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\runTests.dir\build.make CMakeFiles/runTests.dir/C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/views/FinancialView.cpp.i
-.PHONY : C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/views/FinancialView.cpp.i
+C_/Users/lucas/Desktop/fsoft2025_1DA_2/Project/FleetManager/sources/views/FinancialView.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\runTests.dir\build.make CMakeFiles/runTests.dir/C_/Users/lucas/Desktop/fsoft2025_1DA_2/Project/FleetManager/sources/views/FinancialView.cpp.i
+.PHONY : C_/Users/lucas/Desktop/fsoft2025_1DA_2/Project/FleetManager/sources/views/FinancialView.cpp.i
 
-C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/views/FinancialView.s: C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/views/FinancialView.cpp.s
-.PHONY : C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/views/FinancialView.s
+C_/Users/lucas/Desktop/fsoft2025_1DA_2/Project/FleetManager/sources/views/FinancialView.s: C_/Users/lucas/Desktop/fsoft2025_1DA_2/Project/FleetManager/sources/views/FinancialView.cpp.s
+.PHONY : C_/Users/lucas/Desktop/fsoft2025_1DA_2/Project/FleetManager/sources/views/FinancialView.s
 
 # target to generate assembly for a file
-C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/views/FinancialView.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\runTests.dir\build.make CMakeFiles/runTests.dir/C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/views/FinancialView.cpp.s
-.PHONY : C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/views/FinancialView.cpp.s
+C_/Users/lucas/Desktop/fsoft2025_1DA_2/Project/FleetManager/sources/views/FinancialView.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\runTests.dir\build.make CMakeFiles/runTests.dir/C_/Users/lucas/Desktop/fsoft2025_1DA_2/Project/FleetManager/sources/views/FinancialView.cpp.s
+.PHONY : C_/Users/lucas/Desktop/fsoft2025_1DA_2/Project/FleetManager/sources/views/FinancialView.cpp.s
 
-C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/views/InspectionView.obj: C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/views/InspectionView.cpp.obj
-.PHONY : C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/views/InspectionView.obj
+C_/Users/lucas/Desktop/fsoft2025_1DA_2/Project/FleetManager/sources/views/InspectionView.obj: C_/Users/lucas/Desktop/fsoft2025_1DA_2/Project/FleetManager/sources/views/InspectionView.cpp.obj
+.PHONY : C_/Users/lucas/Desktop/fsoft2025_1DA_2/Project/FleetManager/sources/views/InspectionView.obj
 
 # target to build an object file
-C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/views/InspectionView.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\runTests.dir\build.make CMakeFiles/runTests.dir/C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/views/InspectionView.cpp.obj
-.PHONY : C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/views/InspectionView.cpp.obj
+C_/Users/lucas/Desktop/fsoft2025_1DA_2/Project/FleetManager/sources/views/InspectionView.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\runTests.dir\build.make CMakeFiles/runTests.dir/C_/Users/lucas/Desktop/fsoft2025_1DA_2/Project/FleetManager/sources/views/InspectionView.cpp.obj
+.PHONY : C_/Users/lucas/Desktop/fsoft2025_1DA_2/Project/FleetManager/sources/views/InspectionView.cpp.obj
 
-C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/views/InspectionView.i: C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/views/InspectionView.cpp.i
-.PHONY : C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/views/InspectionView.i
+C_/Users/lucas/Desktop/fsoft2025_1DA_2/Project/FleetManager/sources/views/InspectionView.i: C_/Users/lucas/Desktop/fsoft2025_1DA_2/Project/FleetManager/sources/views/InspectionView.cpp.i
+.PHONY : C_/Users/lucas/Desktop/fsoft2025_1DA_2/Project/FleetManager/sources/views/InspectionView.i
 
 # target to preprocess a source file
-C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/views/InspectionView.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\runTests.dir\build.make CMakeFiles/runTests.dir/C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/views/InspectionView.cpp.i
-.PHONY : C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/views/InspectionView.cpp.i
+C_/Users/lucas/Desktop/fsoft2025_1DA_2/Project/FleetManager/sources/views/InspectionView.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\runTests.dir\build.make CMakeFiles/runTests.dir/C_/Users/lucas/Desktop/fsoft2025_1DA_2/Project/FleetManager/sources/views/InspectionView.cpp.i
+.PHONY : C_/Users/lucas/Desktop/fsoft2025_1DA_2/Project/FleetManager/sources/views/InspectionView.cpp.i
 
-C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/views/InspectionView.s: C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/views/InspectionView.cpp.s
-.PHONY : C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/views/InspectionView.s
+C_/Users/lucas/Desktop/fsoft2025_1DA_2/Project/FleetManager/sources/views/InspectionView.s: C_/Users/lucas/Desktop/fsoft2025_1DA_2/Project/FleetManager/sources/views/InspectionView.cpp.s
+.PHONY : C_/Users/lucas/Desktop/fsoft2025_1DA_2/Project/FleetManager/sources/views/InspectionView.s
 
 # target to generate assembly for a file
-C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/views/InspectionView.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\runTests.dir\build.make CMakeFiles/runTests.dir/C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/views/InspectionView.cpp.s
-.PHONY : C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/views/InspectionView.cpp.s
+C_/Users/lucas/Desktop/fsoft2025_1DA_2/Project/FleetManager/sources/views/InspectionView.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\runTests.dir\build.make CMakeFiles/runTests.dir/C_/Users/lucas/Desktop/fsoft2025_1DA_2/Project/FleetManager/sources/views/InspectionView.cpp.s
+.PHONY : C_/Users/lucas/Desktop/fsoft2025_1DA_2/Project/FleetManager/sources/views/InspectionView.cpp.s
 
-C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/views/InsuranceView.obj: C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/views/InsuranceView.cpp.obj
-.PHONY : C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/views/InsuranceView.obj
+C_/Users/lucas/Desktop/fsoft2025_1DA_2/Project/FleetManager/sources/views/InsuranceView.obj: C_/Users/lucas/Desktop/fsoft2025_1DA_2/Project/FleetManager/sources/views/InsuranceView.cpp.obj
+.PHONY : C_/Users/lucas/Desktop/fsoft2025_1DA_2/Project/FleetManager/sources/views/InsuranceView.obj
 
 # target to build an object file
-C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/views/InsuranceView.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\runTests.dir\build.make CMakeFiles/runTests.dir/C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/views/InsuranceView.cpp.obj
-.PHONY : C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/views/InsuranceView.cpp.obj
+C_/Users/lucas/Desktop/fsoft2025_1DA_2/Project/FleetManager/sources/views/InsuranceView.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\runTests.dir\build.make CMakeFiles/runTests.dir/C_/Users/lucas/Desktop/fsoft2025_1DA_2/Project/FleetManager/sources/views/InsuranceView.cpp.obj
+.PHONY : C_/Users/lucas/Desktop/fsoft2025_1DA_2/Project/FleetManager/sources/views/InsuranceView.cpp.obj
 
-C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/views/InsuranceView.i: C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/views/InsuranceView.cpp.i
-.PHONY : C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/views/InsuranceView.i
+C_/Users/lucas/Desktop/fsoft2025_1DA_2/Project/FleetManager/sources/views/InsuranceView.i: C_/Users/lucas/Desktop/fsoft2025_1DA_2/Project/FleetManager/sources/views/InsuranceView.cpp.i
+.PHONY : C_/Users/lucas/Desktop/fsoft2025_1DA_2/Project/FleetManager/sources/views/InsuranceView.i
 
 # target to preprocess a source file
-C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/views/InsuranceView.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\runTests.dir\build.make CMakeFiles/runTests.dir/C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/views/InsuranceView.cpp.i
-.PHONY : C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/views/InsuranceView.cpp.i
+C_/Users/lucas/Desktop/fsoft2025_1DA_2/Project/FleetManager/sources/views/InsuranceView.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\runTests.dir\build.make CMakeFiles/runTests.dir/C_/Users/lucas/Desktop/fsoft2025_1DA_2/Project/FleetManager/sources/views/InsuranceView.cpp.i
+.PHONY : C_/Users/lucas/Desktop/fsoft2025_1DA_2/Project/FleetManager/sources/views/InsuranceView.cpp.i
 
-C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/views/InsuranceView.s: C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/views/InsuranceView.cpp.s
-.PHONY : C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/views/InsuranceView.s
+C_/Users/lucas/Desktop/fsoft2025_1DA_2/Project/FleetManager/sources/views/InsuranceView.s: C_/Users/lucas/Desktop/fsoft2025_1DA_2/Project/FleetManager/sources/views/InsuranceView.cpp.s
+.PHONY : C_/Users/lucas/Desktop/fsoft2025_1DA_2/Project/FleetManager/sources/views/InsuranceView.s
 
 # target to generate assembly for a file
-C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/views/InsuranceView.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\runTests.dir\build.make CMakeFiles/runTests.dir/C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/views/InsuranceView.cpp.s
-.PHONY : C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/views/InsuranceView.cpp.s
+C_/Users/lucas/Desktop/fsoft2025_1DA_2/Project/FleetManager/sources/views/InsuranceView.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\runTests.dir\build.make CMakeFiles/runTests.dir/C_/Users/lucas/Desktop/fsoft2025_1DA_2/Project/FleetManager/sources/views/InsuranceView.cpp.s
+.PHONY : C_/Users/lucas/Desktop/fsoft2025_1DA_2/Project/FleetManager/sources/views/InsuranceView.cpp.s
 
-C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/views/OrderView.obj: C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/views/OrderView.cpp.obj
-.PHONY : C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/views/OrderView.obj
+C_/Users/lucas/Desktop/fsoft2025_1DA_2/Project/FleetManager/sources/views/OrderView.obj: C_/Users/lucas/Desktop/fsoft2025_1DA_2/Project/FleetManager/sources/views/OrderView.cpp.obj
+.PHONY : C_/Users/lucas/Desktop/fsoft2025_1DA_2/Project/FleetManager/sources/views/OrderView.obj
 
 # target to build an object file
-C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/views/OrderView.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\runTests.dir\build.make CMakeFiles/runTests.dir/C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/views/OrderView.cpp.obj
-.PHONY : C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/views/OrderView.cpp.obj
+C_/Users/lucas/Desktop/fsoft2025_1DA_2/Project/FleetManager/sources/views/OrderView.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\runTests.dir\build.make CMakeFiles/runTests.dir/C_/Users/lucas/Desktop/fsoft2025_1DA_2/Project/FleetManager/sources/views/OrderView.cpp.obj
+.PHONY : C_/Users/lucas/Desktop/fsoft2025_1DA_2/Project/FleetManager/sources/views/OrderView.cpp.obj
 
-C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/views/OrderView.i: C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/views/OrderView.cpp.i
-.PHONY : C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/views/OrderView.i
+C_/Users/lucas/Desktop/fsoft2025_1DA_2/Project/FleetManager/sources/views/OrderView.i: C_/Users/lucas/Desktop/fsoft2025_1DA_2/Project/FleetManager/sources/views/OrderView.cpp.i
+.PHONY : C_/Users/lucas/Desktop/fsoft2025_1DA_2/Project/FleetManager/sources/views/OrderView.i
 
 # target to preprocess a source file
-C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/views/OrderView.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\runTests.dir\build.make CMakeFiles/runTests.dir/C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/views/OrderView.cpp.i
-.PHONY : C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/views/OrderView.cpp.i
+C_/Users/lucas/Desktop/fsoft2025_1DA_2/Project/FleetManager/sources/views/OrderView.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\runTests.dir\build.make CMakeFiles/runTests.dir/C_/Users/lucas/Desktop/fsoft2025_1DA_2/Project/FleetManager/sources/views/OrderView.cpp.i
+.PHONY : C_/Users/lucas/Desktop/fsoft2025_1DA_2/Project/FleetManager/sources/views/OrderView.cpp.i
 
-C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/views/OrderView.s: C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/views/OrderView.cpp.s
-.PHONY : C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/views/OrderView.s
+C_/Users/lucas/Desktop/fsoft2025_1DA_2/Project/FleetManager/sources/views/OrderView.s: C_/Users/lucas/Desktop/fsoft2025_1DA_2/Project/FleetManager/sources/views/OrderView.cpp.s
+.PHONY : C_/Users/lucas/Desktop/fsoft2025_1DA_2/Project/FleetManager/sources/views/OrderView.s
 
 # target to generate assembly for a file
-C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/views/OrderView.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\runTests.dir\build.make CMakeFiles/runTests.dir/C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/views/OrderView.cpp.s
-.PHONY : C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/views/OrderView.cpp.s
+C_/Users/lucas/Desktop/fsoft2025_1DA_2/Project/FleetManager/sources/views/OrderView.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\runTests.dir\build.make CMakeFiles/runTests.dir/C_/Users/lucas/Desktop/fsoft2025_1DA_2/Project/FleetManager/sources/views/OrderView.cpp.s
+.PHONY : C_/Users/lucas/Desktop/fsoft2025_1DA_2/Project/FleetManager/sources/views/OrderView.cpp.s
 
-C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/views/TripView.obj: C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/views/TripView.cpp.obj
-.PHONY : C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/views/TripView.obj
+C_/Users/lucas/Desktop/fsoft2025_1DA_2/Project/FleetManager/sources/views/TripView.obj: C_/Users/lucas/Desktop/fsoft2025_1DA_2/Project/FleetManager/sources/views/TripView.cpp.obj
+.PHONY : C_/Users/lucas/Desktop/fsoft2025_1DA_2/Project/FleetManager/sources/views/TripView.obj
 
 # target to build an object file
-C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/views/TripView.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\runTests.dir\build.make CMakeFiles/runTests.dir/C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/views/TripView.cpp.obj
-.PHONY : C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/views/TripView.cpp.obj
+C_/Users/lucas/Desktop/fsoft2025_1DA_2/Project/FleetManager/sources/views/TripView.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\runTests.dir\build.make CMakeFiles/runTests.dir/C_/Users/lucas/Desktop/fsoft2025_1DA_2/Project/FleetManager/sources/views/TripView.cpp.obj
+.PHONY : C_/Users/lucas/Desktop/fsoft2025_1DA_2/Project/FleetManager/sources/views/TripView.cpp.obj
 
-C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/views/TripView.i: C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/views/TripView.cpp.i
-.PHONY : C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/views/TripView.i
+C_/Users/lucas/Desktop/fsoft2025_1DA_2/Project/FleetManager/sources/views/TripView.i: C_/Users/lucas/Desktop/fsoft2025_1DA_2/Project/FleetManager/sources/views/TripView.cpp.i
+.PHONY : C_/Users/lucas/Desktop/fsoft2025_1DA_2/Project/FleetManager/sources/views/TripView.i
 
 # target to preprocess a source file
-C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/views/TripView.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\runTests.dir\build.make CMakeFiles/runTests.dir/C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/views/TripView.cpp.i
-.PHONY : C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/views/TripView.cpp.i
+C_/Users/lucas/Desktop/fsoft2025_1DA_2/Project/FleetManager/sources/views/TripView.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\runTests.dir\build.make CMakeFiles/runTests.dir/C_/Users/lucas/Desktop/fsoft2025_1DA_2/Project/FleetManager/sources/views/TripView.cpp.i
+.PHONY : C_/Users/lucas/Desktop/fsoft2025_1DA_2/Project/FleetManager/sources/views/TripView.cpp.i
 
-C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/views/TripView.s: C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/views/TripView.cpp.s
-.PHONY : C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/views/TripView.s
+C_/Users/lucas/Desktop/fsoft2025_1DA_2/Project/FleetManager/sources/views/TripView.s: C_/Users/lucas/Desktop/fsoft2025_1DA_2/Project/FleetManager/sources/views/TripView.cpp.s
+.PHONY : C_/Users/lucas/Desktop/fsoft2025_1DA_2/Project/FleetManager/sources/views/TripView.s
 
 # target to generate assembly for a file
-C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/views/TripView.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\runTests.dir\build.make CMakeFiles/runTests.dir/C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/views/TripView.cpp.s
-.PHONY : C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/views/TripView.cpp.s
+C_/Users/lucas/Desktop/fsoft2025_1DA_2/Project/FleetManager/sources/views/TripView.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\runTests.dir\build.make CMakeFiles/runTests.dir/C_/Users/lucas/Desktop/fsoft2025_1DA_2/Project/FleetManager/sources/views/TripView.cpp.s
+.PHONY : C_/Users/lucas/Desktop/fsoft2025_1DA_2/Project/FleetManager/sources/views/TripView.cpp.s
 
-C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/views/Utils.obj: C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/views/Utils.cpp.obj
-.PHONY : C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/views/Utils.obj
+C_/Users/lucas/Desktop/fsoft2025_1DA_2/Project/FleetManager/sources/views/Utils.obj: C_/Users/lucas/Desktop/fsoft2025_1DA_2/Project/FleetManager/sources/views/Utils.cpp.obj
+.PHONY : C_/Users/lucas/Desktop/fsoft2025_1DA_2/Project/FleetManager/sources/views/Utils.obj
 
 # target to build an object file
-C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/views/Utils.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\runTests.dir\build.make CMakeFiles/runTests.dir/C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/views/Utils.cpp.obj
-.PHONY : C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/views/Utils.cpp.obj
+C_/Users/lucas/Desktop/fsoft2025_1DA_2/Project/FleetManager/sources/views/Utils.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\runTests.dir\build.make CMakeFiles/runTests.dir/C_/Users/lucas/Desktop/fsoft2025_1DA_2/Project/FleetManager/sources/views/Utils.cpp.obj
+.PHONY : C_/Users/lucas/Desktop/fsoft2025_1DA_2/Project/FleetManager/sources/views/Utils.cpp.obj
 
-C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/views/Utils.i: C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/views/Utils.cpp.i
-.PHONY : C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/views/Utils.i
+C_/Users/lucas/Desktop/fsoft2025_1DA_2/Project/FleetManager/sources/views/Utils.i: C_/Users/lucas/Desktop/fsoft2025_1DA_2/Project/FleetManager/sources/views/Utils.cpp.i
+.PHONY : C_/Users/lucas/Desktop/fsoft2025_1DA_2/Project/FleetManager/sources/views/Utils.i
 
 # target to preprocess a source file
-C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/views/Utils.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\runTests.dir\build.make CMakeFiles/runTests.dir/C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/views/Utils.cpp.i
-.PHONY : C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/views/Utils.cpp.i
+C_/Users/lucas/Desktop/fsoft2025_1DA_2/Project/FleetManager/sources/views/Utils.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\runTests.dir\build.make CMakeFiles/runTests.dir/C_/Users/lucas/Desktop/fsoft2025_1DA_2/Project/FleetManager/sources/views/Utils.cpp.i
+.PHONY : C_/Users/lucas/Desktop/fsoft2025_1DA_2/Project/FleetManager/sources/views/Utils.cpp.i
 
-C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/views/Utils.s: C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/views/Utils.cpp.s
-.PHONY : C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/views/Utils.s
+C_/Users/lucas/Desktop/fsoft2025_1DA_2/Project/FleetManager/sources/views/Utils.s: C_/Users/lucas/Desktop/fsoft2025_1DA_2/Project/FleetManager/sources/views/Utils.cpp.s
+.PHONY : C_/Users/lucas/Desktop/fsoft2025_1DA_2/Project/FleetManager/sources/views/Utils.s
 
 # target to generate assembly for a file
-C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/views/Utils.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\runTests.dir\build.make CMakeFiles/runTests.dir/C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/views/Utils.cpp.s
-.PHONY : C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/views/Utils.cpp.s
+C_/Users/lucas/Desktop/fsoft2025_1DA_2/Project/FleetManager/sources/views/Utils.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\runTests.dir\build.make CMakeFiles/runTests.dir/C_/Users/lucas/Desktop/fsoft2025_1DA_2/Project/FleetManager/sources/views/Utils.cpp.s
+.PHONY : C_/Users/lucas/Desktop/fsoft2025_1DA_2/Project/FleetManager/sources/views/Utils.cpp.s
 
-C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/views/VacationView.obj: C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/views/VacationView.cpp.obj
-.PHONY : C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/views/VacationView.obj
+C_/Users/lucas/Desktop/fsoft2025_1DA_2/Project/FleetManager/sources/views/VacationView.obj: C_/Users/lucas/Desktop/fsoft2025_1DA_2/Project/FleetManager/sources/views/VacationView.cpp.obj
+.PHONY : C_/Users/lucas/Desktop/fsoft2025_1DA_2/Project/FleetManager/sources/views/VacationView.obj
 
 # target to build an object file
-C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/views/VacationView.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\runTests.dir\build.make CMakeFiles/runTests.dir/C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/views/VacationView.cpp.obj
-.PHONY : C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/views/VacationView.cpp.obj
+C_/Users/lucas/Desktop/fsoft2025_1DA_2/Project/FleetManager/sources/views/VacationView.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\runTests.dir\build.make CMakeFiles/runTests.dir/C_/Users/lucas/Desktop/fsoft2025_1DA_2/Project/FleetManager/sources/views/VacationView.cpp.obj
+.PHONY : C_/Users/lucas/Desktop/fsoft2025_1DA_2/Project/FleetManager/sources/views/VacationView.cpp.obj
 
-C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/views/VacationView.i: C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/views/VacationView.cpp.i
-.PHONY : C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/views/VacationView.i
+C_/Users/lucas/Desktop/fsoft2025_1DA_2/Project/FleetManager/sources/views/VacationView.i: C_/Users/lucas/Desktop/fsoft2025_1DA_2/Project/FleetManager/sources/views/VacationView.cpp.i
+.PHONY : C_/Users/lucas/Desktop/fsoft2025_1DA_2/Project/FleetManager/sources/views/VacationView.i
 
 # target to preprocess a source file
-C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/views/VacationView.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\runTests.dir\build.make CMakeFiles/runTests.dir/C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/views/VacationView.cpp.i
-.PHONY : C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/views/VacationView.cpp.i
+C_/Users/lucas/Desktop/fsoft2025_1DA_2/Project/FleetManager/sources/views/VacationView.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\runTests.dir\build.make CMakeFiles/runTests.dir/C_/Users/lucas/Desktop/fsoft2025_1DA_2/Project/FleetManager/sources/views/VacationView.cpp.i
+.PHONY : C_/Users/lucas/Desktop/fsoft2025_1DA_2/Project/FleetManager/sources/views/VacationView.cpp.i
 
-C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/views/VacationView.s: C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/views/VacationView.cpp.s
-.PHONY : C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/views/VacationView.s
+C_/Users/lucas/Desktop/fsoft2025_1DA_2/Project/FleetManager/sources/views/VacationView.s: C_/Users/lucas/Desktop/fsoft2025_1DA_2/Project/FleetManager/sources/views/VacationView.cpp.s
+.PHONY : C_/Users/lucas/Desktop/fsoft2025_1DA_2/Project/FleetManager/sources/views/VacationView.s
 
 # target to generate assembly for a file
-C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/views/VacationView.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\runTests.dir\build.make CMakeFiles/runTests.dir/C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/views/VacationView.cpp.s
-.PHONY : C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/views/VacationView.cpp.s
+C_/Users/lucas/Desktop/fsoft2025_1DA_2/Project/FleetManager/sources/views/VacationView.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\runTests.dir\build.make CMakeFiles/runTests.dir/C_/Users/lucas/Desktop/fsoft2025_1DA_2/Project/FleetManager/sources/views/VacationView.cpp.s
+.PHONY : C_/Users/lucas/Desktop/fsoft2025_1DA_2/Project/FleetManager/sources/views/VacationView.cpp.s
 
-C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/views/VehicleStorageLocationView.obj: C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/views/VehicleStorageLocationView.cpp.obj
-.PHONY : C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/views/VehicleStorageLocationView.obj
+C_/Users/lucas/Desktop/fsoft2025_1DA_2/Project/FleetManager/sources/views/VehicleStorageLocationView.obj: C_/Users/lucas/Desktop/fsoft2025_1DA_2/Project/FleetManager/sources/views/VehicleStorageLocationView.cpp.obj
+.PHONY : C_/Users/lucas/Desktop/fsoft2025_1DA_2/Project/FleetManager/sources/views/VehicleStorageLocationView.obj
 
 # target to build an object file
-C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/views/VehicleStorageLocationView.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\runTests.dir\build.make CMakeFiles/runTests.dir/C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/views/VehicleStorageLocationView.cpp.obj
-.PHONY : C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/views/VehicleStorageLocationView.cpp.obj
+C_/Users/lucas/Desktop/fsoft2025_1DA_2/Project/FleetManager/sources/views/VehicleStorageLocationView.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\runTests.dir\build.make CMakeFiles/runTests.dir/C_/Users/lucas/Desktop/fsoft2025_1DA_2/Project/FleetManager/sources/views/VehicleStorageLocationView.cpp.obj
+.PHONY : C_/Users/lucas/Desktop/fsoft2025_1DA_2/Project/FleetManager/sources/views/VehicleStorageLocationView.cpp.obj
 
-C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/views/VehicleStorageLocationView.i: C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/views/VehicleStorageLocationView.cpp.i
-.PHONY : C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/views/VehicleStorageLocationView.i
+C_/Users/lucas/Desktop/fsoft2025_1DA_2/Project/FleetManager/sources/views/VehicleStorageLocationView.i: C_/Users/lucas/Desktop/fsoft2025_1DA_2/Project/FleetManager/sources/views/VehicleStorageLocationView.cpp.i
+.PHONY : C_/Users/lucas/Desktop/fsoft2025_1DA_2/Project/FleetManager/sources/views/VehicleStorageLocationView.i
 
 # target to preprocess a source file
-C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/views/VehicleStorageLocationView.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\runTests.dir\build.make CMakeFiles/runTests.dir/C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/views/VehicleStorageLocationView.cpp.i
-.PHONY : C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/views/VehicleStorageLocationView.cpp.i
+C_/Users/lucas/Desktop/fsoft2025_1DA_2/Project/FleetManager/sources/views/VehicleStorageLocationView.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\runTests.dir\build.make CMakeFiles/runTests.dir/C_/Users/lucas/Desktop/fsoft2025_1DA_2/Project/FleetManager/sources/views/VehicleStorageLocationView.cpp.i
+.PHONY : C_/Users/lucas/Desktop/fsoft2025_1DA_2/Project/FleetManager/sources/views/VehicleStorageLocationView.cpp.i
 
-C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/views/VehicleStorageLocationView.s: C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/views/VehicleStorageLocationView.cpp.s
-.PHONY : C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/views/VehicleStorageLocationView.s
+C_/Users/lucas/Desktop/fsoft2025_1DA_2/Project/FleetManager/sources/views/VehicleStorageLocationView.s: C_/Users/lucas/Desktop/fsoft2025_1DA_2/Project/FleetManager/sources/views/VehicleStorageLocationView.cpp.s
+.PHONY : C_/Users/lucas/Desktop/fsoft2025_1DA_2/Project/FleetManager/sources/views/VehicleStorageLocationView.s
 
 # target to generate assembly for a file
-C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/views/VehicleStorageLocationView.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\runTests.dir\build.make CMakeFiles/runTests.dir/C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/views/VehicleStorageLocationView.cpp.s
-.PHONY : C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/views/VehicleStorageLocationView.cpp.s
+C_/Users/lucas/Desktop/fsoft2025_1DA_2/Project/FleetManager/sources/views/VehicleStorageLocationView.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\runTests.dir\build.make CMakeFiles/runTests.dir/C_/Users/lucas/Desktop/fsoft2025_1DA_2/Project/FleetManager/sources/views/VehicleStorageLocationView.cpp.s
+.PHONY : C_/Users/lucas/Desktop/fsoft2025_1DA_2/Project/FleetManager/sources/views/VehicleStorageLocationView.cpp.s
 
-C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/views/VehicleView.obj: C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/views/VehicleView.cpp.obj
-.PHONY : C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/views/VehicleView.obj
+C_/Users/lucas/Desktop/fsoft2025_1DA_2/Project/FleetManager/sources/views/VehicleView.obj: C_/Users/lucas/Desktop/fsoft2025_1DA_2/Project/FleetManager/sources/views/VehicleView.cpp.obj
+.PHONY : C_/Users/lucas/Desktop/fsoft2025_1DA_2/Project/FleetManager/sources/views/VehicleView.obj
 
 # target to build an object file
-C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/views/VehicleView.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\runTests.dir\build.make CMakeFiles/runTests.dir/C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/views/VehicleView.cpp.obj
-.PHONY : C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/views/VehicleView.cpp.obj
+C_/Users/lucas/Desktop/fsoft2025_1DA_2/Project/FleetManager/sources/views/VehicleView.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\runTests.dir\build.make CMakeFiles/runTests.dir/C_/Users/lucas/Desktop/fsoft2025_1DA_2/Project/FleetManager/sources/views/VehicleView.cpp.obj
+.PHONY : C_/Users/lucas/Desktop/fsoft2025_1DA_2/Project/FleetManager/sources/views/VehicleView.cpp.obj
 
-C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/views/VehicleView.i: C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/views/VehicleView.cpp.i
-.PHONY : C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/views/VehicleView.i
+C_/Users/lucas/Desktop/fsoft2025_1DA_2/Project/FleetManager/sources/views/VehicleView.i: C_/Users/lucas/Desktop/fsoft2025_1DA_2/Project/FleetManager/sources/views/VehicleView.cpp.i
+.PHONY : C_/Users/lucas/Desktop/fsoft2025_1DA_2/Project/FleetManager/sources/views/VehicleView.i
 
 # target to preprocess a source file
-C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/views/VehicleView.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\runTests.dir\build.make CMakeFiles/runTests.dir/C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/views/VehicleView.cpp.i
-.PHONY : C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/views/VehicleView.cpp.i
+C_/Users/lucas/Desktop/fsoft2025_1DA_2/Project/FleetManager/sources/views/VehicleView.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\runTests.dir\build.make CMakeFiles/runTests.dir/C_/Users/lucas/Desktop/fsoft2025_1DA_2/Project/FleetManager/sources/views/VehicleView.cpp.i
+.PHONY : C_/Users/lucas/Desktop/fsoft2025_1DA_2/Project/FleetManager/sources/views/VehicleView.cpp.i
 
-C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/views/VehicleView.s: C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/views/VehicleView.cpp.s
-.PHONY : C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/views/VehicleView.s
+C_/Users/lucas/Desktop/fsoft2025_1DA_2/Project/FleetManager/sources/views/VehicleView.s: C_/Users/lucas/Desktop/fsoft2025_1DA_2/Project/FleetManager/sources/views/VehicleView.cpp.s
+.PHONY : C_/Users/lucas/Desktop/fsoft2025_1DA_2/Project/FleetManager/sources/views/VehicleView.s
 
 # target to generate assembly for a file
-C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/views/VehicleView.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\runTests.dir\build.make CMakeFiles/runTests.dir/C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/views/VehicleView.cpp.s
-.PHONY : C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/views/VehicleView.cpp.s
+C_/Users/lucas/Desktop/fsoft2025_1DA_2/Project/FleetManager/sources/views/VehicleView.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\runTests.dir\build.make CMakeFiles/runTests.dir/C_/Users/lucas/Desktop/fsoft2025_1DA_2/Project/FleetManager/sources/views/VehicleView.cpp.s
+.PHONY : C_/Users/lucas/Desktop/fsoft2025_1DA_2/Project/FleetManager/sources/views/VehicleView.cpp.s
 
-C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/views/View.obj: C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/views/View.cpp.obj
-.PHONY : C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/views/View.obj
+C_/Users/lucas/Desktop/fsoft2025_1DA_2/Project/FleetManager/sources/views/View.obj: C_/Users/lucas/Desktop/fsoft2025_1DA_2/Project/FleetManager/sources/views/View.cpp.obj
+.PHONY : C_/Users/lucas/Desktop/fsoft2025_1DA_2/Project/FleetManager/sources/views/View.obj
 
 # target to build an object file
-C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/views/View.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\runTests.dir\build.make CMakeFiles/runTests.dir/C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/views/View.cpp.obj
-.PHONY : C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/views/View.cpp.obj
+C_/Users/lucas/Desktop/fsoft2025_1DA_2/Project/FleetManager/sources/views/View.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\runTests.dir\build.make CMakeFiles/runTests.dir/C_/Users/lucas/Desktop/fsoft2025_1DA_2/Project/FleetManager/sources/views/View.cpp.obj
+.PHONY : C_/Users/lucas/Desktop/fsoft2025_1DA_2/Project/FleetManager/sources/views/View.cpp.obj
 
-C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/views/View.i: C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/views/View.cpp.i
-.PHONY : C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/views/View.i
+C_/Users/lucas/Desktop/fsoft2025_1DA_2/Project/FleetManager/sources/views/View.i: C_/Users/lucas/Desktop/fsoft2025_1DA_2/Project/FleetManager/sources/views/View.cpp.i
+.PHONY : C_/Users/lucas/Desktop/fsoft2025_1DA_2/Project/FleetManager/sources/views/View.i
 
 # target to preprocess a source file
-C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/views/View.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\runTests.dir\build.make CMakeFiles/runTests.dir/C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/views/View.cpp.i
-.PHONY : C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/views/View.cpp.i
+C_/Users/lucas/Desktop/fsoft2025_1DA_2/Project/FleetManager/sources/views/View.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\runTests.dir\build.make CMakeFiles/runTests.dir/C_/Users/lucas/Desktop/fsoft2025_1DA_2/Project/FleetManager/sources/views/View.cpp.i
+.PHONY : C_/Users/lucas/Desktop/fsoft2025_1DA_2/Project/FleetManager/sources/views/View.cpp.i
 
-C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/views/View.s: C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/views/View.cpp.s
-.PHONY : C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/views/View.s
+C_/Users/lucas/Desktop/fsoft2025_1DA_2/Project/FleetManager/sources/views/View.s: C_/Users/lucas/Desktop/fsoft2025_1DA_2/Project/FleetManager/sources/views/View.cpp.s
+.PHONY : C_/Users/lucas/Desktop/fsoft2025_1DA_2/Project/FleetManager/sources/views/View.s
 
 # target to generate assembly for a file
-C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/views/View.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\runTests.dir\build.make CMakeFiles/runTests.dir/C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/views/View.cpp.s
-.PHONY : C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/views/View.cpp.s
+C_/Users/lucas/Desktop/fsoft2025_1DA_2/Project/FleetManager/sources/views/View.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\runTests.dir\build.make CMakeFiles/runTests.dir/C_/Users/lucas/Desktop/fsoft2025_1DA_2/Project/FleetManager/sources/views/View.cpp.s
+.PHONY : C_/Users/lucas/Desktop/fsoft2025_1DA_2/Project/FleetManager/sources/views/View.cpp.s
 
 date_test.obj: date_test.cpp.obj
 .PHONY : date_test.obj
@@ -1266,6 +1266,30 @@ date_test.s: date_test.cpp.s
 date_test.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\runTests.dir\build.make CMakeFiles/runTests.dir/date_test.cpp.s
 .PHONY : date_test.cpp.s
+
+driverContainer_test.obj: driverContainer_test.cpp.obj
+.PHONY : driverContainer_test.obj
+
+# target to build an object file
+driverContainer_test.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\runTests.dir\build.make CMakeFiles/runTests.dir/driverContainer_test.cpp.obj
+.PHONY : driverContainer_test.cpp.obj
+
+driverContainer_test.i: driverContainer_test.cpp.i
+.PHONY : driverContainer_test.i
+
+# target to preprocess a source file
+driverContainer_test.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\runTests.dir\build.make CMakeFiles/runTests.dir/driverContainer_test.cpp.i
+.PHONY : driverContainer_test.cpp.i
+
+driverContainer_test.s: driverContainer_test.cpp.s
+.PHONY : driverContainer_test.s
+
+# target to generate assembly for a file
+driverContainer_test.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\runTests.dir\build.make CMakeFiles/runTests.dir/driverContainer_test.cpp.s
+.PHONY : driverContainer_test.cpp.s
 
 driver_test.obj: driver_test.cpp.obj
 .PHONY : driver_test.obj
@@ -1363,6 +1387,78 @@ trip_test.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\runTests.dir\build.make CMakeFiles/runTests.dir/trip_test.cpp.s
 .PHONY : trip_test.cpp.s
 
+truck_test.obj: truck_test.cpp.obj
+.PHONY : truck_test.obj
+
+# target to build an object file
+truck_test.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\runTests.dir\build.make CMakeFiles/runTests.dir/truck_test.cpp.obj
+.PHONY : truck_test.cpp.obj
+
+truck_test.i: truck_test.cpp.i
+.PHONY : truck_test.i
+
+# target to preprocess a source file
+truck_test.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\runTests.dir\build.make CMakeFiles/runTests.dir/truck_test.cpp.i
+.PHONY : truck_test.cpp.i
+
+truck_test.s: truck_test.cpp.s
+.PHONY : truck_test.s
+
+# target to generate assembly for a file
+truck_test.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\runTests.dir\build.make CMakeFiles/runTests.dir/truck_test.cpp.s
+.PHONY : truck_test.cpp.s
+
+van_test.obj: van_test.cpp.obj
+.PHONY : van_test.obj
+
+# target to build an object file
+van_test.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\runTests.dir\build.make CMakeFiles/runTests.dir/van_test.cpp.obj
+.PHONY : van_test.cpp.obj
+
+van_test.i: van_test.cpp.i
+.PHONY : van_test.i
+
+# target to preprocess a source file
+van_test.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\runTests.dir\build.make CMakeFiles/runTests.dir/van_test.cpp.i
+.PHONY : van_test.cpp.i
+
+van_test.s: van_test.cpp.s
+.PHONY : van_test.s
+
+# target to generate assembly for a file
+van_test.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\runTests.dir\build.make CMakeFiles/runTests.dir/van_test.cpp.s
+.PHONY : van_test.cpp.s
+
+vehicleContainer_test.obj: vehicleContainer_test.cpp.obj
+.PHONY : vehicleContainer_test.obj
+
+# target to build an object file
+vehicleContainer_test.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\runTests.dir\build.make CMakeFiles/runTests.dir/vehicleContainer_test.cpp.obj
+.PHONY : vehicleContainer_test.cpp.obj
+
+vehicleContainer_test.i: vehicleContainer_test.cpp.i
+.PHONY : vehicleContainer_test.i
+
+# target to preprocess a source file
+vehicleContainer_test.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\runTests.dir\build.make CMakeFiles/runTests.dir/vehicleContainer_test.cpp.i
+.PHONY : vehicleContainer_test.cpp.i
+
+vehicleContainer_test.s: vehicleContainer_test.cpp.s
+.PHONY : vehicleContainer_test.s
+
+# target to generate assembly for a file
+vehicleContainer_test.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\runTests.dir\build.make CMakeFiles/runTests.dir/vehicleContainer_test.cpp.s
+.PHONY : vehicleContainer_test.cpp.s
+
 vehicle_test.obj: vehicle_test.cpp.obj
 .PHONY : vehicle_test.obj
 
@@ -1386,6 +1482,30 @@ vehicle_test.s: vehicle_test.cpp.s
 vehicle_test.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\runTests.dir\build.make CMakeFiles/runTests.dir/vehicle_test.cpp.s
 .PHONY : vehicle_test.cpp.s
+
+vslContainer_test.obj: vslContainer_test.cpp.obj
+.PHONY : vslContainer_test.obj
+
+# target to build an object file
+vslContainer_test.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\runTests.dir\build.make CMakeFiles/runTests.dir/vslContainer_test.cpp.obj
+.PHONY : vslContainer_test.cpp.obj
+
+vslContainer_test.i: vslContainer_test.cpp.i
+.PHONY : vslContainer_test.i
+
+# target to preprocess a source file
+vslContainer_test.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\runTests.dir\build.make CMakeFiles/runTests.dir/vslContainer_test.cpp.i
+.PHONY : vslContainer_test.cpp.i
+
+vslContainer_test.s: vslContainer_test.cpp.s
+.PHONY : vslContainer_test.s
+
+# target to generate assembly for a file
+vslContainer_test.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\runTests.dir\build.make CMakeFiles/runTests.dir/vslContainer_test.cpp.s
+.PHONY : vslContainer_test.cpp.s
 
 vsl_test.obj: vsl_test.cpp.obj
 .PHONY : vsl_test.obj
@@ -1429,135 +1549,138 @@ help:
 	@echo ... gtest
 	@echo ... gtest_main
 	@echo ... runTests
-	@echo ... C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/controllers/Controller.obj
-	@echo ... C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/controllers/Controller.i
-	@echo ... C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/controllers/Controller.s
-	@echo ... C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/exceptions/DuplicatedDataException.obj
-	@echo ... C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/exceptions/DuplicatedDataException.i
-	@echo ... C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/exceptions/DuplicatedDataException.s
-	@echo ... C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/exceptions/InvalidDataException.obj
-	@echo ... C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/exceptions/InvalidDataException.i
-	@echo ... C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/exceptions/InvalidDataException.s
-	@echo ... C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/exceptions/NonExistingDataException.obj
-	@echo ... C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/exceptions/NonExistingDataException.i
-	@echo ... C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/exceptions/NonExistingDataException.s
-	@echo ... C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/model/Date.obj
-	@echo ... C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/model/Date.i
-	@echo ... C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/model/Date.s
-	@echo ... C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/model/Driver.obj
-	@echo ... C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/model/Driver.i
-	@echo ... C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/model/Driver.s
-	@echo ... C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/model/DriverContainer.obj
-	@echo ... C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/model/DriverContainer.i
-	@echo ... C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/model/DriverContainer.s
-	@echo ... C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/model/Enterprise.obj
-	@echo ... C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/model/Enterprise.i
-	@echo ... C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/model/Enterprise.s
-	@echo ... C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/model/Expense.obj
-	@echo ... C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/model/Expense.i
-	@echo ... C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/model/Expense.s
-	@echo ... C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/model/FinancialContainer.obj
-	@echo ... C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/model/FinancialContainer.i
-	@echo ... C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/model/FinancialContainer.s
-	@echo ... C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/model/Inspection.obj
-	@echo ... C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/model/Inspection.i
-	@echo ... C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/model/Inspection.s
-	@echo ... C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/model/Insurance.obj
-	@echo ... C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/model/Insurance.i
-	@echo ... C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/model/Insurance.s
-	@echo ... C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/model/Order.obj
-	@echo ... C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/model/Order.i
-	@echo ... C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/model/Order.s
-	@echo ... C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/model/OrderContainer.obj
-	@echo ... C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/model/OrderContainer.i
-	@echo ... C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/model/OrderContainer.s
-	@echo ... C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/model/Revenue.obj
-	@echo ... C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/model/Revenue.i
-	@echo ... C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/model/Revenue.s
-	@echo ... C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/model/Trip.obj
-	@echo ... C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/model/Trip.i
-	@echo ... C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/model/Trip.s
-	@echo ... C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/model/TripContainer.obj
-	@echo ... C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/model/TripContainer.i
-	@echo ... C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/model/TripContainer.s
-	@echo ... C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/model/Truck.obj
-	@echo ... C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/model/Truck.i
-	@echo ... C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/model/Truck.s
-	@echo ... C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/model/VSLContainer.obj
-	@echo ... C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/model/VSLContainer.i
-	@echo ... C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/model/VSLContainer.s
-	@echo ... C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/model/Vacation.obj
-	@echo ... C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/model/Vacation.i
-	@echo ... C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/model/Vacation.s
-	@echo ... C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/model/Van.obj
-	@echo ... C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/model/Van.i
-	@echo ... C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/model/Van.s
-	@echo ... C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/model/Vehicle.obj
-	@echo ... C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/model/Vehicle.i
-	@echo ... C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/model/Vehicle.s
-	@echo ... C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/model/VehicleContainer.obj
-	@echo ... C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/model/VehicleContainer.i
-	@echo ... C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/model/VehicleContainer.s
-	@echo ... C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/model/VehicleStorageLocation.obj
-	@echo ... C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/model/VehicleStorageLocation.i
-	@echo ... C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/model/VehicleStorageLocation.s
-	@echo ... C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/serial/DataContainer.obj
-	@echo ... C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/serial/DataContainer.i
-	@echo ... C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/serial/DataContainer.s
-	@echo ... C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/serial/DriverSerialization.obj
-	@echo ... C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/serial/DriverSerialization.i
-	@echo ... C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/serial/DriverSerialization.s
-	@echo ... C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/serial/FinancialSerialization.obj
-	@echo ... C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/serial/FinancialSerialization.i
-	@echo ... C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/serial/FinancialSerialization.s
-	@echo ... C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/serial/OrderSerialization.obj
-	@echo ... C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/serial/OrderSerialization.i
-	@echo ... C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/serial/OrderSerialization.s
-	@echo ... C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/serial/TripSerialization.obj
-	@echo ... C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/serial/TripSerialization.i
-	@echo ... C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/serial/TripSerialization.s
-	@echo ... C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/serial/VehicleSerialization.obj
-	@echo ... C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/serial/VehicleSerialization.i
-	@echo ... C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/serial/VehicleSerialization.s
-	@echo ... C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/serial/VehicleStorageLocationSerialization.obj
-	@echo ... C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/serial/VehicleStorageLocationSerialization.i
-	@echo ... C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/serial/VehicleStorageLocationSerialization.s
-	@echo ... C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/views/DriverView.obj
-	@echo ... C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/views/DriverView.i
-	@echo ... C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/views/DriverView.s
-	@echo ... C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/views/FinancialView.obj
-	@echo ... C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/views/FinancialView.i
-	@echo ... C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/views/FinancialView.s
-	@echo ... C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/views/InspectionView.obj
-	@echo ... C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/views/InspectionView.i
-	@echo ... C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/views/InspectionView.s
-	@echo ... C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/views/InsuranceView.obj
-	@echo ... C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/views/InsuranceView.i
-	@echo ... C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/views/InsuranceView.s
-	@echo ... C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/views/OrderView.obj
-	@echo ... C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/views/OrderView.i
-	@echo ... C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/views/OrderView.s
-	@echo ... C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/views/TripView.obj
-	@echo ... C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/views/TripView.i
-	@echo ... C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/views/TripView.s
-	@echo ... C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/views/Utils.obj
-	@echo ... C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/views/Utils.i
-	@echo ... C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/views/Utils.s
-	@echo ... C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/views/VacationView.obj
-	@echo ... C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/views/VacationView.i
-	@echo ... C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/views/VacationView.s
-	@echo ... C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/views/VehicleStorageLocationView.obj
-	@echo ... C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/views/VehicleStorageLocationView.i
-	@echo ... C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/views/VehicleStorageLocationView.s
-	@echo ... C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/views/VehicleView.obj
-	@echo ... C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/views/VehicleView.i
-	@echo ... C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/views/VehicleView.s
-	@echo ... C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/views/View.obj
-	@echo ... C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/views/View.i
-	@echo ... C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/views/View.s
+	@echo ... C_/Users/lucas/Desktop/fsoft2025_1DA_2/Project/FleetManager/sources/controllers/Controller.obj
+	@echo ... C_/Users/lucas/Desktop/fsoft2025_1DA_2/Project/FleetManager/sources/controllers/Controller.i
+	@echo ... C_/Users/lucas/Desktop/fsoft2025_1DA_2/Project/FleetManager/sources/controllers/Controller.s
+	@echo ... C_/Users/lucas/Desktop/fsoft2025_1DA_2/Project/FleetManager/sources/exceptions/DuplicatedDataException.obj
+	@echo ... C_/Users/lucas/Desktop/fsoft2025_1DA_2/Project/FleetManager/sources/exceptions/DuplicatedDataException.i
+	@echo ... C_/Users/lucas/Desktop/fsoft2025_1DA_2/Project/FleetManager/sources/exceptions/DuplicatedDataException.s
+	@echo ... C_/Users/lucas/Desktop/fsoft2025_1DA_2/Project/FleetManager/sources/exceptions/InvalidDataException.obj
+	@echo ... C_/Users/lucas/Desktop/fsoft2025_1DA_2/Project/FleetManager/sources/exceptions/InvalidDataException.i
+	@echo ... C_/Users/lucas/Desktop/fsoft2025_1DA_2/Project/FleetManager/sources/exceptions/InvalidDataException.s
+	@echo ... C_/Users/lucas/Desktop/fsoft2025_1DA_2/Project/FleetManager/sources/exceptions/NonExistingDataException.obj
+	@echo ... C_/Users/lucas/Desktop/fsoft2025_1DA_2/Project/FleetManager/sources/exceptions/NonExistingDataException.i
+	@echo ... C_/Users/lucas/Desktop/fsoft2025_1DA_2/Project/FleetManager/sources/exceptions/NonExistingDataException.s
+	@echo ... C_/Users/lucas/Desktop/fsoft2025_1DA_2/Project/FleetManager/sources/model/Date.obj
+	@echo ... C_/Users/lucas/Desktop/fsoft2025_1DA_2/Project/FleetManager/sources/model/Date.i
+	@echo ... C_/Users/lucas/Desktop/fsoft2025_1DA_2/Project/FleetManager/sources/model/Date.s
+	@echo ... C_/Users/lucas/Desktop/fsoft2025_1DA_2/Project/FleetManager/sources/model/Driver.obj
+	@echo ... C_/Users/lucas/Desktop/fsoft2025_1DA_2/Project/FleetManager/sources/model/Driver.i
+	@echo ... C_/Users/lucas/Desktop/fsoft2025_1DA_2/Project/FleetManager/sources/model/Driver.s
+	@echo ... C_/Users/lucas/Desktop/fsoft2025_1DA_2/Project/FleetManager/sources/model/DriverContainer.obj
+	@echo ... C_/Users/lucas/Desktop/fsoft2025_1DA_2/Project/FleetManager/sources/model/DriverContainer.i
+	@echo ... C_/Users/lucas/Desktop/fsoft2025_1DA_2/Project/FleetManager/sources/model/DriverContainer.s
+	@echo ... C_/Users/lucas/Desktop/fsoft2025_1DA_2/Project/FleetManager/sources/model/Enterprise.obj
+	@echo ... C_/Users/lucas/Desktop/fsoft2025_1DA_2/Project/FleetManager/sources/model/Enterprise.i
+	@echo ... C_/Users/lucas/Desktop/fsoft2025_1DA_2/Project/FleetManager/sources/model/Enterprise.s
+	@echo ... C_/Users/lucas/Desktop/fsoft2025_1DA_2/Project/FleetManager/sources/model/Expense.obj
+	@echo ... C_/Users/lucas/Desktop/fsoft2025_1DA_2/Project/FleetManager/sources/model/Expense.i
+	@echo ... C_/Users/lucas/Desktop/fsoft2025_1DA_2/Project/FleetManager/sources/model/Expense.s
+	@echo ... C_/Users/lucas/Desktop/fsoft2025_1DA_2/Project/FleetManager/sources/model/FinancialContainer.obj
+	@echo ... C_/Users/lucas/Desktop/fsoft2025_1DA_2/Project/FleetManager/sources/model/FinancialContainer.i
+	@echo ... C_/Users/lucas/Desktop/fsoft2025_1DA_2/Project/FleetManager/sources/model/FinancialContainer.s
+	@echo ... C_/Users/lucas/Desktop/fsoft2025_1DA_2/Project/FleetManager/sources/model/Inspection.obj
+	@echo ... C_/Users/lucas/Desktop/fsoft2025_1DA_2/Project/FleetManager/sources/model/Inspection.i
+	@echo ... C_/Users/lucas/Desktop/fsoft2025_1DA_2/Project/FleetManager/sources/model/Inspection.s
+	@echo ... C_/Users/lucas/Desktop/fsoft2025_1DA_2/Project/FleetManager/sources/model/Insurance.obj
+	@echo ... C_/Users/lucas/Desktop/fsoft2025_1DA_2/Project/FleetManager/sources/model/Insurance.i
+	@echo ... C_/Users/lucas/Desktop/fsoft2025_1DA_2/Project/FleetManager/sources/model/Insurance.s
+	@echo ... C_/Users/lucas/Desktop/fsoft2025_1DA_2/Project/FleetManager/sources/model/Order.obj
+	@echo ... C_/Users/lucas/Desktop/fsoft2025_1DA_2/Project/FleetManager/sources/model/Order.i
+	@echo ... C_/Users/lucas/Desktop/fsoft2025_1DA_2/Project/FleetManager/sources/model/Order.s
+	@echo ... C_/Users/lucas/Desktop/fsoft2025_1DA_2/Project/FleetManager/sources/model/OrderContainer.obj
+	@echo ... C_/Users/lucas/Desktop/fsoft2025_1DA_2/Project/FleetManager/sources/model/OrderContainer.i
+	@echo ... C_/Users/lucas/Desktop/fsoft2025_1DA_2/Project/FleetManager/sources/model/OrderContainer.s
+	@echo ... C_/Users/lucas/Desktop/fsoft2025_1DA_2/Project/FleetManager/sources/model/Revenue.obj
+	@echo ... C_/Users/lucas/Desktop/fsoft2025_1DA_2/Project/FleetManager/sources/model/Revenue.i
+	@echo ... C_/Users/lucas/Desktop/fsoft2025_1DA_2/Project/FleetManager/sources/model/Revenue.s
+	@echo ... C_/Users/lucas/Desktop/fsoft2025_1DA_2/Project/FleetManager/sources/model/Trip.obj
+	@echo ... C_/Users/lucas/Desktop/fsoft2025_1DA_2/Project/FleetManager/sources/model/Trip.i
+	@echo ... C_/Users/lucas/Desktop/fsoft2025_1DA_2/Project/FleetManager/sources/model/Trip.s
+	@echo ... C_/Users/lucas/Desktop/fsoft2025_1DA_2/Project/FleetManager/sources/model/TripContainer.obj
+	@echo ... C_/Users/lucas/Desktop/fsoft2025_1DA_2/Project/FleetManager/sources/model/TripContainer.i
+	@echo ... C_/Users/lucas/Desktop/fsoft2025_1DA_2/Project/FleetManager/sources/model/TripContainer.s
+	@echo ... C_/Users/lucas/Desktop/fsoft2025_1DA_2/Project/FleetManager/sources/model/Truck.obj
+	@echo ... C_/Users/lucas/Desktop/fsoft2025_1DA_2/Project/FleetManager/sources/model/Truck.i
+	@echo ... C_/Users/lucas/Desktop/fsoft2025_1DA_2/Project/FleetManager/sources/model/Truck.s
+	@echo ... C_/Users/lucas/Desktop/fsoft2025_1DA_2/Project/FleetManager/sources/model/VSLContainer.obj
+	@echo ... C_/Users/lucas/Desktop/fsoft2025_1DA_2/Project/FleetManager/sources/model/VSLContainer.i
+	@echo ... C_/Users/lucas/Desktop/fsoft2025_1DA_2/Project/FleetManager/sources/model/VSLContainer.s
+	@echo ... C_/Users/lucas/Desktop/fsoft2025_1DA_2/Project/FleetManager/sources/model/Vacation.obj
+	@echo ... C_/Users/lucas/Desktop/fsoft2025_1DA_2/Project/FleetManager/sources/model/Vacation.i
+	@echo ... C_/Users/lucas/Desktop/fsoft2025_1DA_2/Project/FleetManager/sources/model/Vacation.s
+	@echo ... C_/Users/lucas/Desktop/fsoft2025_1DA_2/Project/FleetManager/sources/model/Van.obj
+	@echo ... C_/Users/lucas/Desktop/fsoft2025_1DA_2/Project/FleetManager/sources/model/Van.i
+	@echo ... C_/Users/lucas/Desktop/fsoft2025_1DA_2/Project/FleetManager/sources/model/Van.s
+	@echo ... C_/Users/lucas/Desktop/fsoft2025_1DA_2/Project/FleetManager/sources/model/Vehicle.obj
+	@echo ... C_/Users/lucas/Desktop/fsoft2025_1DA_2/Project/FleetManager/sources/model/Vehicle.i
+	@echo ... C_/Users/lucas/Desktop/fsoft2025_1DA_2/Project/FleetManager/sources/model/Vehicle.s
+	@echo ... C_/Users/lucas/Desktop/fsoft2025_1DA_2/Project/FleetManager/sources/model/VehicleContainer.obj
+	@echo ... C_/Users/lucas/Desktop/fsoft2025_1DA_2/Project/FleetManager/sources/model/VehicleContainer.i
+	@echo ... C_/Users/lucas/Desktop/fsoft2025_1DA_2/Project/FleetManager/sources/model/VehicleContainer.s
+	@echo ... C_/Users/lucas/Desktop/fsoft2025_1DA_2/Project/FleetManager/sources/model/VehicleStorageLocation.obj
+	@echo ... C_/Users/lucas/Desktop/fsoft2025_1DA_2/Project/FleetManager/sources/model/VehicleStorageLocation.i
+	@echo ... C_/Users/lucas/Desktop/fsoft2025_1DA_2/Project/FleetManager/sources/model/VehicleStorageLocation.s
+	@echo ... C_/Users/lucas/Desktop/fsoft2025_1DA_2/Project/FleetManager/sources/serial/DataContainer.obj
+	@echo ... C_/Users/lucas/Desktop/fsoft2025_1DA_2/Project/FleetManager/sources/serial/DataContainer.i
+	@echo ... C_/Users/lucas/Desktop/fsoft2025_1DA_2/Project/FleetManager/sources/serial/DataContainer.s
+	@echo ... C_/Users/lucas/Desktop/fsoft2025_1DA_2/Project/FleetManager/sources/serial/DriverSerialization.obj
+	@echo ... C_/Users/lucas/Desktop/fsoft2025_1DA_2/Project/FleetManager/sources/serial/DriverSerialization.i
+	@echo ... C_/Users/lucas/Desktop/fsoft2025_1DA_2/Project/FleetManager/sources/serial/DriverSerialization.s
+	@echo ... C_/Users/lucas/Desktop/fsoft2025_1DA_2/Project/FleetManager/sources/serial/FinancialSerialization.obj
+	@echo ... C_/Users/lucas/Desktop/fsoft2025_1DA_2/Project/FleetManager/sources/serial/FinancialSerialization.i
+	@echo ... C_/Users/lucas/Desktop/fsoft2025_1DA_2/Project/FleetManager/sources/serial/FinancialSerialization.s
+	@echo ... C_/Users/lucas/Desktop/fsoft2025_1DA_2/Project/FleetManager/sources/serial/OrderSerialization.obj
+	@echo ... C_/Users/lucas/Desktop/fsoft2025_1DA_2/Project/FleetManager/sources/serial/OrderSerialization.i
+	@echo ... C_/Users/lucas/Desktop/fsoft2025_1DA_2/Project/FleetManager/sources/serial/OrderSerialization.s
+	@echo ... C_/Users/lucas/Desktop/fsoft2025_1DA_2/Project/FleetManager/sources/serial/TripSerialization.obj
+	@echo ... C_/Users/lucas/Desktop/fsoft2025_1DA_2/Project/FleetManager/sources/serial/TripSerialization.i
+	@echo ... C_/Users/lucas/Desktop/fsoft2025_1DA_2/Project/FleetManager/sources/serial/TripSerialization.s
+	@echo ... C_/Users/lucas/Desktop/fsoft2025_1DA_2/Project/FleetManager/sources/serial/VehicleSerialization.obj
+	@echo ... C_/Users/lucas/Desktop/fsoft2025_1DA_2/Project/FleetManager/sources/serial/VehicleSerialization.i
+	@echo ... C_/Users/lucas/Desktop/fsoft2025_1DA_2/Project/FleetManager/sources/serial/VehicleSerialization.s
+	@echo ... C_/Users/lucas/Desktop/fsoft2025_1DA_2/Project/FleetManager/sources/serial/VehicleStorageLocationSerialization.obj
+	@echo ... C_/Users/lucas/Desktop/fsoft2025_1DA_2/Project/FleetManager/sources/serial/VehicleStorageLocationSerialization.i
+	@echo ... C_/Users/lucas/Desktop/fsoft2025_1DA_2/Project/FleetManager/sources/serial/VehicleStorageLocationSerialization.s
+	@echo ... C_/Users/lucas/Desktop/fsoft2025_1DA_2/Project/FleetManager/sources/views/DriverView.obj
+	@echo ... C_/Users/lucas/Desktop/fsoft2025_1DA_2/Project/FleetManager/sources/views/DriverView.i
+	@echo ... C_/Users/lucas/Desktop/fsoft2025_1DA_2/Project/FleetManager/sources/views/DriverView.s
+	@echo ... C_/Users/lucas/Desktop/fsoft2025_1DA_2/Project/FleetManager/sources/views/FinancialView.obj
+	@echo ... C_/Users/lucas/Desktop/fsoft2025_1DA_2/Project/FleetManager/sources/views/FinancialView.i
+	@echo ... C_/Users/lucas/Desktop/fsoft2025_1DA_2/Project/FleetManager/sources/views/FinancialView.s
+	@echo ... C_/Users/lucas/Desktop/fsoft2025_1DA_2/Project/FleetManager/sources/views/InspectionView.obj
+	@echo ... C_/Users/lucas/Desktop/fsoft2025_1DA_2/Project/FleetManager/sources/views/InspectionView.i
+	@echo ... C_/Users/lucas/Desktop/fsoft2025_1DA_2/Project/FleetManager/sources/views/InspectionView.s
+	@echo ... C_/Users/lucas/Desktop/fsoft2025_1DA_2/Project/FleetManager/sources/views/InsuranceView.obj
+	@echo ... C_/Users/lucas/Desktop/fsoft2025_1DA_2/Project/FleetManager/sources/views/InsuranceView.i
+	@echo ... C_/Users/lucas/Desktop/fsoft2025_1DA_2/Project/FleetManager/sources/views/InsuranceView.s
+	@echo ... C_/Users/lucas/Desktop/fsoft2025_1DA_2/Project/FleetManager/sources/views/OrderView.obj
+	@echo ... C_/Users/lucas/Desktop/fsoft2025_1DA_2/Project/FleetManager/sources/views/OrderView.i
+	@echo ... C_/Users/lucas/Desktop/fsoft2025_1DA_2/Project/FleetManager/sources/views/OrderView.s
+	@echo ... C_/Users/lucas/Desktop/fsoft2025_1DA_2/Project/FleetManager/sources/views/TripView.obj
+	@echo ... C_/Users/lucas/Desktop/fsoft2025_1DA_2/Project/FleetManager/sources/views/TripView.i
+	@echo ... C_/Users/lucas/Desktop/fsoft2025_1DA_2/Project/FleetManager/sources/views/TripView.s
+	@echo ... C_/Users/lucas/Desktop/fsoft2025_1DA_2/Project/FleetManager/sources/views/Utils.obj
+	@echo ... C_/Users/lucas/Desktop/fsoft2025_1DA_2/Project/FleetManager/sources/views/Utils.i
+	@echo ... C_/Users/lucas/Desktop/fsoft2025_1DA_2/Project/FleetManager/sources/views/Utils.s
+	@echo ... C_/Users/lucas/Desktop/fsoft2025_1DA_2/Project/FleetManager/sources/views/VacationView.obj
+	@echo ... C_/Users/lucas/Desktop/fsoft2025_1DA_2/Project/FleetManager/sources/views/VacationView.i
+	@echo ... C_/Users/lucas/Desktop/fsoft2025_1DA_2/Project/FleetManager/sources/views/VacationView.s
+	@echo ... C_/Users/lucas/Desktop/fsoft2025_1DA_2/Project/FleetManager/sources/views/VehicleStorageLocationView.obj
+	@echo ... C_/Users/lucas/Desktop/fsoft2025_1DA_2/Project/FleetManager/sources/views/VehicleStorageLocationView.i
+	@echo ... C_/Users/lucas/Desktop/fsoft2025_1DA_2/Project/FleetManager/sources/views/VehicleStorageLocationView.s
+	@echo ... C_/Users/lucas/Desktop/fsoft2025_1DA_2/Project/FleetManager/sources/views/VehicleView.obj
+	@echo ... C_/Users/lucas/Desktop/fsoft2025_1DA_2/Project/FleetManager/sources/views/VehicleView.i
+	@echo ... C_/Users/lucas/Desktop/fsoft2025_1DA_2/Project/FleetManager/sources/views/VehicleView.s
+	@echo ... C_/Users/lucas/Desktop/fsoft2025_1DA_2/Project/FleetManager/sources/views/View.obj
+	@echo ... C_/Users/lucas/Desktop/fsoft2025_1DA_2/Project/FleetManager/sources/views/View.i
+	@echo ... C_/Users/lucas/Desktop/fsoft2025_1DA_2/Project/FleetManager/sources/views/View.s
 	@echo ... date_test.obj
 	@echo ... date_test.i
 	@echo ... date_test.s
+	@echo ... driverContainer_test.obj
+	@echo ... driverContainer_test.i
+	@echo ... driverContainer_test.s
 	@echo ... driver_test.obj
 	@echo ... driver_test.i
 	@echo ... driver_test.s
@@ -1570,9 +1693,21 @@ help:
 	@echo ... trip_test.obj
 	@echo ... trip_test.i
 	@echo ... trip_test.s
+	@echo ... truck_test.obj
+	@echo ... truck_test.i
+	@echo ... truck_test.s
+	@echo ... van_test.obj
+	@echo ... van_test.i
+	@echo ... van_test.s
+	@echo ... vehicleContainer_test.obj
+	@echo ... vehicleContainer_test.i
+	@echo ... vehicleContainer_test.s
 	@echo ... vehicle_test.obj
 	@echo ... vehicle_test.i
 	@echo ... vehicle_test.s
+	@echo ... vslContainer_test.obj
+	@echo ... vslContainer_test.i
+	@echo ... vslContainer_test.s
 	@echo ... vsl_test.obj
 	@echo ... vsl_test.i
 	@echo ... vsl_test.s
