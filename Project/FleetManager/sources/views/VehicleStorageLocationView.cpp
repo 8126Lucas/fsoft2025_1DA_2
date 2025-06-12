@@ -64,10 +64,10 @@ void VehicleStorageLocationView::printVSL(VehicleStorageLocation *vsl) {
     } while (flag_error);
 }
 
-void VehicleStorageLocationView::printListVSL(list<VehicleStorageLocation> &listVSL) {
-    list<VehicleStorageLocation>::iterator it = listVSL.begin();
+void VehicleStorageLocationView::printListVSL(list<VehicleStorageLocation*> &listVSL) {
+    list<VehicleStorageLocation*>::iterator it = listVSL.begin();
     for (; it != listVSL.end(); ++it) {
-        printVSL(&*it);
+        printVSL(*it);
     }
 }
 

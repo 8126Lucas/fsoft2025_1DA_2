@@ -1,3 +1,19 @@
 {
-    "vsls": []
+    "vsls": [
+        {
+            "address": "Rua da VSL 1",
+            "capacity": 4,
+            "currentVehicleCount": 2,
+            "id": 1,
+            "name": "VSL 1",
+            "vehicles": [
+                {
+                    "vehicleLicensePlate": "00-00-01"
+                },
+                {
+                    "vehicleLicensePlate": "25-qi-56"
+                }
+            ]
+        }
+    ]
 }

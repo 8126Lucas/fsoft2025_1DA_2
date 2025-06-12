@@ -40,8 +40,10 @@ class VehicleStorageLocation {
     string getAddress() const;
     int getCapacity() const;
     int getVehicleCount() const;
-    unordered_map<int, list<Vehicle *>> getVehicles() const;
-    list<Vehicle *> getStoredVehicles(int id) const;
+    const unordered_map<int, list<Vehicle *>> &getVehicles() const;
+    unordered_map<int, list<Vehicle *>> &getVehicles();
+    const list<Vehicle *> &getStoredVehicles(int id) const;
+    list<Vehicle *> &getStoredVehicles(int id);
 
     void setID(int id);
     void setName(string name);

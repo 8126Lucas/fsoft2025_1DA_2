@@ -1,3 +1,0 @@
-/Users/vitorteixeira/Desktop/FSOFT/PL3/fsoft2025_1DA_2/Project/FleetManager/cmake-build-debug/CMakeFiles/FleetManager.dir
-/Users/vitorteixeira/Desktop/FSOFT/PL3/fsoft2025_1DA_2/Project/FleetManager/cmake-build-debug/CMakeFiles/edit_cache.dir
-/Users/vitorteixeira/Desktop/FSOFT/PL3/fsoft2025_1DA_2/Project/FleetManager/cmake-build-debug/CMakeFiles/rebuild_cache.dir

@@ -18,23 +18,25 @@ using namespace std;
 
 class VehicleContainer {
 private:
-    list<Truck> trucks;
-    list<Van> vans;
-    list<Truck>::iterator searchTruck(const string &licensePlate);
-    list<Van>::iterator searchVan(const string &licensePlate);
+    list<Truck*> trucks;
+    list<Van*> vans;
+    list<Truck*>::iterator searchTruck(const string &licensePlate);
+    list<Van*>::iterator searchVan(const string &licensePlate);
 
 public:
+    ~VehicleContainer();
+
     Vehicle *get(string &licensePlate);
     Truck *getTruck(string &licensePlate);
     Van *getVan(string &licensePlate);
 
-    void add(Truck &truck);
-    void add(Van &van);
+    void add(Truck *truck);
+    void add(Van *van);
     void remove(const string &licensePlate);
-    list<Truck> listTrucks();
-    list<Truck> listTrucks(bool available);
-    list<Van> listVans();
-    list<Van> listVans(bool available);
+    const list<Truck*> &listTrucks() const;
+    const list<Truck*> &listTrucks(bool available) const;
+    const list<Van*> &listVans() const;
+    const list<Van*> &listVans(bool available) const;
     void update(string &licensePlate, Insurance *insurance);
     void update(string &licensePlate, Inspection *inspection);
     void update(string &licensePlate, VehicleStorageLocation *vsl);

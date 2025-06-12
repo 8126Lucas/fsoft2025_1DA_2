@@ -8,24 +8,35 @@
 #include "Utils.h"
 
 
-list<Truck>::iterator VehicleContainer::searchTruck(const string &licensePlate) {
-    list<Truck>::iterator it = this->trucks.begin();
+list<Truck*>::iterator VehicleContainer::searchTruck(const string &licensePlate) {
+    list<Truck*>::iterator it = this->trucks.begin();
     for (; it != this->trucks.end(); ++it) {
-        if (it->getLicensePlate() == licensePlate) {
+        if ((*it)->getLicensePlate() == licensePlate) {
             return it;
         }
     }
     return trucks.end();
 }
 
-list<Van>::iterator VehicleContainer::searchVan(const string &licensePlate) {
-    list<Van>::iterator it = this->vans.begin();
+list<Van*>::iterator VehicleContainer::searchVan(const string &licensePlate) {
+    list<Van*>::iterator it = this->vans.begin();
     for (; it != this->vans.end(); ++it) {
-        if (it->getLicensePlate() == licensePlate) {
+        if ((*it)->getLicensePlate() == licensePlate) {
             return it;
         }
     }
     return vans.end();
+}
+
+VehicleContainer::~VehicleContainer() {
+    for (Truck *truck : trucks) {
+        delete truck;
+    }
+    trucks.clear();
+    for (Van *van : vans) {
+        delete van;
+    }
+    vans.clear();
 }
 
 Vehicle *VehicleContainer::get(string &licensePlate){
@@ -42,30 +53,30 @@ Vehicle *VehicleContainer::get(string &licensePlate){
 }
 
 Truck *VehicleContainer::getTruck(string &licensePlate) {
-    list<Truck>::iterator it = searchTruck(licensePlate);
+    list<Truck*>::iterator it = searchTruck(licensePlate);
     if (it != this->trucks.end()) {
-        return &(*it);
+        return *it;
     }
     return nullptr;
 }
 
 Van *VehicleContainer::getVan(string &licensePlate) {
-    list<Van>::iterator it = searchVan(licensePlate);
+    list<Van*>::iterator it = searchVan(licensePlate);
     if (it != this->vans.end()) {
-        return &(*it);
+        return *it;
     }
     return nullptr;
 }
 
 
-void VehicleContainer::add(Truck &truck) {
+void VehicleContainer::add(Truck *truck) {
     try {
-        list<Truck>::iterator it = searchTruck(truck.getLicensePlate());
+        list<Truck*>::iterator it = searchTruck(truck->getLicensePlate());
         if (it == this->trucks.end()) {
             this->trucks.push_back(truck);
         }
         else {
-            string msg = "Vehicle (Truck): " + truck.getLicensePlate();
+            string msg = "Vehicle (Truck): " + truck->getLicensePlate();
             throw DuplicatedDataException(msg);
         }
     } catch (DuplicatedDataException &error) {
@@ -73,14 +84,14 @@ void VehicleContainer::add(Truck &truck) {
     }
 }
 
-void VehicleContainer::add(Van &van) {
+void VehicleContainer::add(Van *van) {
     try {
-        list<Van>::iterator it = searchVan(van.getLicensePlate());
+        list<Van*>::iterator it = searchVan(van->getLicensePlate());
         if (it == this->vans.end()) {
             this->vans.push_back(van);
         }
         else {
-            string msg = "Vehicle (Van): " + van.getLicensePlate();
+            string msg = "Vehicle (Van): " + van->getLicensePlate();
             throw DuplicatedDataException(msg);
         }
     } catch (DuplicatedDataException &error) {
@@ -90,8 +101,8 @@ void VehicleContainer::add(Van &van) {
 
 void VehicleContainer::remove(const string &licensePlate) {
     try {
-        const list<Truck>::iterator truckIT = searchTruck(licensePlate);
-        const list<Van>::iterator vanIT = searchVan(licensePlate);
+        const list<Truck*>::iterator truckIT = searchTruck(licensePlate);
+        const list<Van*>::iterator vanIT = searchVan(licensePlate);
         if (truckIT != this->trucks.end()) {
             this->trucks.erase(truckIT);
         }
@@ -107,32 +118,30 @@ void VehicleContainer::remove(const string &licensePlate) {
 
 }
 
-list<Truck> VehicleContainer::listTrucks() {
-    list<Truck> newList(this->trucks);
-    return newList;
+const list<Truck*> &VehicleContainer::listTrucks() const {
+    return this->trucks;
 }
 
-list<Truck> VehicleContainer::listTrucks(const bool available) {
-    list<Truck> newList;
-    list<Truck>::iterator it = this->trucks.begin();
+const list<Truck*> &VehicleContainer::listTrucks(const bool available) const {
+    list<Truck*> newList;
+    list<Truck*>::const_iterator it = this->trucks.begin();
     for (; it != this->trucks.end(); ++it) {
-        if (it->getAvailability() == available) {
+        if ((*it)->getAvailability() == available) {
             newList.push_back(*it);
         }
     }
     return newList;
 }
 
-list<Van> VehicleContainer::listVans() {
-    list<Van> newList(this->vans);
-    return newList;
+const list<Van*> &VehicleContainer::listVans() const {
+    return this->vans;
 }
 
-list<Van> VehicleContainer::listVans(bool available) {
-    list<Van> newList;
-    list<Van>::iterator it = this->vans.begin();
+const list<Van*> &VehicleContainer::listVans(bool available) const {
+    list<Van*> newList;
+    list<Van*>::const_iterator it = this->vans.begin();
     for (; it != this->vans.end(); ++it) {
-        if (it->getAvailability() == available) {
+        if ((*it)->getAvailability() == available) {
             newList.push_back(*it);
         }
     }
@@ -141,13 +150,13 @@ list<Van> VehicleContainer::listVans(bool available) {
 
 void VehicleContainer::update(string &licensePlate, Insurance *insurance) {
     try {
-        list<Truck>::iterator truckIT = searchTruck(licensePlate);
-        list<Van>::iterator vanIT = searchVan(licensePlate);
+        list<Truck*>::iterator truckIT = searchTruck(licensePlate);
+        list<Van*>::iterator vanIT = searchVan(licensePlate);
         if (truckIT != this->trucks.end()) {
-            truckIT->setInsurance(insurance);
+            (*truckIT)->setInsurance(insurance);
         }
         else if (vanIT != this->vans.end()) {
-            vanIT->setInsurance(insurance);
+            (*vanIT)->setInsurance(insurance);
         }
         else {
             string msg = "Vehicle (insurance): " + licensePlate;
@@ -160,13 +169,13 @@ void VehicleContainer::update(string &licensePlate, Insurance *insurance) {
 
 void VehicleContainer::update(string &licensePlate, Inspection *inspection) {
     try {
-        list<Truck>::iterator truckIT = searchTruck(licensePlate);
-        list<Van>::iterator vanIT = searchVan(licensePlate);
+        list<Truck*>::iterator truckIT = searchTruck(licensePlate);
+        list<Van*>::iterator vanIT = searchVan(licensePlate);
         if (truckIT != this->trucks.end()) {
-            truckIT->setInspection(inspection);
+            (*truckIT)->setInspection(inspection);
         }
         else if (vanIT != this->vans.end()) {
-            vanIT->setInspection(inspection);
+            (*vanIT)->setInspection(inspection);
         }
         else {
             string msg = "Vehicle (inspection): " + licensePlate;
@@ -179,13 +188,13 @@ void VehicleContainer::update(string &licensePlate, Inspection *inspection) {
 
 void VehicleContainer::update(string &licensePlate, VehicleStorageLocation *vsl) {
     try {
-        list<Truck>::iterator truckIT = searchTruck(licensePlate);
-        list<Van>::iterator vanIT = searchVan(licensePlate);
+        list<Truck*>::iterator truckIT = searchTruck(licensePlate);
+        list<Van*>::iterator vanIT = searchVan(licensePlate);
         if (truckIT != this->trucks.end()) {
-            truckIT->setVSL(vsl);
+            (*truckIT)->setVSL(vsl);
         }
         else if (vanIT != this->vans.end()) {
-            vanIT->setVSL(vsl);
+            (*vanIT)->setVSL(vsl);
         }
         else {
             string msg = "Vehicle (VSL): " + licensePlate;
@@ -199,13 +208,13 @@ void VehicleContainer::update(string &licensePlate, VehicleStorageLocation *vsl)
 
 void VehicleContainer::updateFuel(string &licensePlate, double addedFuel) {
     try {
-        list<Truck>::iterator truckIT = searchTruck(licensePlate);
-        list<Van>::iterator vanIT = searchVan(licensePlate);
+        list<Truck*>::iterator truckIT = searchTruck(licensePlate);
+        list<Van*>::iterator vanIT = searchVan(licensePlate);
         if (truckIT != this->trucks.end()) {
-            truckIT->addFuel(addedFuel);
+            (*truckIT)->addFuel(addedFuel);
         }
         else if (vanIT != this->vans.end()) {
-            vanIT->addFuel(addedFuel);
+            (*vanIT)->addFuel(addedFuel);
         }
         else {
             string msg = "Vehicle (fuel): " + licensePlate;
@@ -218,13 +227,13 @@ void VehicleContainer::updateFuel(string &licensePlate, double addedFuel) {
 
 void VehicleContainer::updateMileage(string &licensePlate, Trip &trip) {
     try {
-        list<Truck>::iterator truckIT = searchTruck(licensePlate);
-        list<Van>::iterator vanIT = searchVan(licensePlate);
+        list<Truck*>::iterator truckIT = searchTruck(licensePlate);
+        list<Van*>::iterator vanIT = searchVan(licensePlate);
         if (truckIT != this->trucks.end()) {
-            truckIT->updateMileage(trip);
+            (*truckIT)->updateMileage(trip);
         }
         else if (vanIT != this->vans.end()) {
-            vanIT->updateMileage(trip);
+            (*vanIT)->updateMileage(trip);
         }
         else {
             string msg = "Vehicle (mileage): " + licensePlate;
@@ -237,13 +246,13 @@ void VehicleContainer::updateMileage(string &licensePlate, Trip &trip) {
 
 void VehicleContainer::updateAvailability(string &licensePlate, bool available) {
     try {
-        list<Truck>::iterator truckIT = searchTruck(licensePlate);
-        list<Van>::iterator vanIT = searchVan(licensePlate);
+        list<Truck*>::iterator truckIT = searchTruck(licensePlate);
+        list<Van*>::iterator vanIT = searchVan(licensePlate);
         if (truckIT != this->trucks.end()) {
-            truckIT->setAvailability(available);
+            (*truckIT)->setAvailability(available);
         }
         else if (vanIT != this->vans.end()) {
-            vanIT->setAvailability(available);
+            (*vanIT)->setAvailability(available);
         }
         else {
             string msg = "Vehicle (availability): " + licensePlate;

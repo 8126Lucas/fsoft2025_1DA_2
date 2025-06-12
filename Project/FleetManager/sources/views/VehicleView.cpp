@@ -15,8 +15,8 @@
 
 using namespace std;
 
-Truck VehicleView::addTruck() {
-    Truck truck = Truck();
+Truck *VehicleView::addTruck() {
+    Truck *truck = new Truck();
     bool flag_error = false;
     do {
         try {
@@ -29,19 +29,19 @@ Truck VehicleView::addTruck() {
             double fuel = Utils::getDouble("Fuel");
             double weightCapacity = Utils::getDouble("Weight Capacity");
 
-            truck.setCategory(TRUCK);
-            truck.setBrand(brand);
-            truck.setModel(model);
-            truck.setYear(year);
-            truck.setLicensePlate(licensePlate);
-            truck.setMileage(mileage);
-            truck.setFuel(fuel);
-            truck.setWeightCapacity(weightCapacity);
-            truck.setAvailability(true);
+            truck->setCategory(TRUCK);
+            truck->setBrand(brand);
+            truck->setModel(model);
+            truck->setYear(year);
+            truck->setLicensePlate(licensePlate);
+            truck->setMileage(mileage);
+            truck->setFuel(fuel);
+            truck->setWeightCapacity(weightCapacity);
+            truck->setAvailability(true);
 
-            truck.setInspection(nullptr);
-            truck.setInsurance(nullptr);
-            truck.setVSL(nullptr);
+            truck->setInspection(nullptr);
+            truck->setInsurance(nullptr);
+            truck->setVSL(nullptr);
         } catch (InvalidDataException &error) {
             cout << error.what() << endl;
             flag_error = true;
@@ -50,8 +50,8 @@ Truck VehicleView::addTruck() {
     return truck;
 }
 
-Van VehicleView::addVan() {
-    Van van = Van();
+Van *VehicleView::addVan() {
+    Van *van = new Van();
     bool flag_error = false;
     do {
         try {
@@ -64,19 +64,19 @@ Van VehicleView::addVan() {
             double fuel = Utils::getDouble("Fuel (%)");
             double spaceCapacity = Utils::getDouble("Space Capacity");
 
-            van.setCategory(VAN);
-            van.setBrand(brand);
-            van.setModel(model);
-            van.setYear(year);
-            van.setLicensePlate(licensePlate);
-            van.setMileage(mileage);
-            van.setFuel(fuel);
-            van.setSpaceCapacity(spaceCapacity);
-            van.setAvailability(true);
+            van->setCategory(VAN);
+            van->setBrand(brand);
+            van->setModel(model);
+            van->setYear(year);
+            van->setLicensePlate(licensePlate);
+            van->setMileage(mileage);
+            van->setFuel(fuel);
+            van->setSpaceCapacity(spaceCapacity);
+            van->setAvailability(true);
 
-            van.setInspection(nullptr);
-            van.setInsurance(nullptr);
-            van.setVSL(nullptr);
+            van->setInspection(nullptr);
+            van->setInsurance(nullptr);
+            van->setVSL(nullptr);
         } catch (InvalidDataException &error) {
             cout << error.what() << endl;
             flag_error = true;
@@ -204,20 +204,20 @@ void VehicleView::printVan(const Van *van) {
     } while (flag_error);
 }
 
-void VehicleView::printListTrucks(list<Truck> &trucks) {
+void VehicleView::printListTrucks(list<Truck*> &trucks) {
     cout << "\n*** List of Trucks: " << trucks.size() << " ***\n\n";
-    list<Truck>::iterator it = trucks.begin();
+    list<Truck*>::iterator it = trucks.begin();
     for (; it != trucks.end(); ++it) {
-        printTruck(&*it);
+        printTruck(*it);
     }
     cout <<"**********************************\n\n";
 }
 
-void VehicleView::printListVans(list<Van> &vans) {
+void VehicleView::printListVans(list<Van*> &vans) {
     cout << "\n*** List of Vans: " << vans.size() << " ***\n\n";
-    list<Van>::iterator it = vans.begin();
+    list<Van*>::iterator it = vans.begin();
     for (; it != vans.end(); ++it) {
-        printVan(&*it);
+        printVan(*it);
     }
     cout <<"**********************************\n\n";
 }

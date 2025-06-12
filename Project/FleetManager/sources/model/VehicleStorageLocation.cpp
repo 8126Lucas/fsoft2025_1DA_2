@@ -54,12 +54,22 @@ int VehicleStorageLocation::getVehicleCount() const {
     return currentVehicleCount;
 }
 
-unordered_map<int, list<Vehicle *>> VehicleStorageLocation::getVehicles() const {
+const unordered_map<int, list<Vehicle *>> &VehicleStorageLocation::getVehicles() const {
     return vehicles;
 }
 
-list<Vehicle *> VehicleStorageLocation::getStoredVehicles(int id) const {
+unordered_map<int, list<Vehicle *>> &VehicleStorageLocation::getVehicles() {
+    return vehicles;
+}
+
+const list<Vehicle *> &VehicleStorageLocation::getStoredVehicles(int id) const {
     unordered_map<int, list<Vehicle *>>::const_iterator it = vehicles.find(id);
+    if (it != vehicles.end()) {return it->second;}
+    throw NonExistingDataException("VSL ID");
+}
+
+list<Vehicle *> &VehicleStorageLocation::getStoredVehicles(int id) {
+    unordered_map<int, list<Vehicle *>>::iterator it = vehicles.find(id);
     if (it != vehicles.end()) {return it->second;}
     throw NonExistingDataException("VSL ID");
 }

@@ -49,15 +49,15 @@ void DataContainer::loadVehicles() {
     VehicleSerialization serializer;
     if (j.contains("trucks")) {
         for (const basic_json<> &truckJSON : j["trucks"]) {
-            Truck truck;
-            serializer.fromJSON(truckJSON, truck);
+            Truck *truck = new Truck();
+            serializer.fromJSON(truckJSON, *truck);
             containerVehicle->add(truck);
         }
     }
     if (j.contains("vans")) {
         for (const basic_json<> &vanJSON : j["vans"]) {
-            Van van;
-            serializer.fromJSON(vanJSON, van);
+            Van *van = new Van();
+            serializer.fromJSON(vanJSON, *van);
             containerVehicle->add(van);
         }
     }
@@ -77,8 +77,8 @@ void DataContainer::loadVSLs() {
     VehicleStorageLocationSerialization serializer;
     if (j.contains("vsls")) {
         for (const basic_json<> &vslJSON : j["vsls"]) {
-            VehicleStorageLocation vsl;
-            serializer.fromJSON(vslJSON, vsl);
+            VehicleStorageLocation *vsl = new VehicleStorageLocation();
+            serializer.fromJSON(vslJSON, *vsl);
             containerVSL->add(vsl);
         }
     }
@@ -182,13 +182,13 @@ void DataContainer::linkVehicleAndVSL() {
     vehicleInputFile >> j;
     if (j.contains("trucks")) {
         int i = 0;
-        for (Truck &truck : containerVehicle->listTrucks()) {
+        for (Truck *truck : containerVehicle->listTrucks()) {
             int vslID = j["trucks"][i]["vslID"];
             if (vslID != -1) {
                 VehicleStorageLocation *vsl = containerVSL->get(vslID);
                 if (vsl != nullptr) {
-                    truck.setVSL(vsl);
-                    vsl->getVehicles()[vsl->getID()].push_back(&truck);
+                    truck->setVSL(vsl);
+                    vsl->getVehicles()[vsl->getID()].push_back(truck);
                 }
             }
             i++;
@@ -196,13 +196,13 @@ void DataContainer::linkVehicleAndVSL() {
     }
     if (j.contains("vans")) {
         int i = 0;
-        for (Van &van : containerVehicle->listVans()) {
+        for (Van *van : containerVehicle->listVans()) {
             int vslID = j["vans"][i]["vslID"];
             if (vslID != -1) {
                 VehicleStorageLocation *vsl = containerVSL->get(vslID);
                 if (vsl != nullptr) {
-                    van.setVSL(vsl);
-                    vsl->getVehicles()[vsl->getID()].push_back(&van);
+                    van->setVSL(vsl);
+                    vsl->getVehicles()[vsl->getID()].push_back(van);
                 }
             }
             i++;
@@ -231,16 +231,16 @@ void DataContainer::saveAllData() {
 
     json dataVehicle;
     json truckArray = json::array();
-    for (const Truck &truck : containerVehicle->listTrucks()) {
+    for (const Truck *truck : containerVehicle->listTrucks()) {
         json truckJSON;
-        serializerVehicle.toJSON(truckJSON, truck);
+        serializerVehicle.toJSON(truckJSON, *truck);
         truckArray.push_back(truckJSON);
     }
     dataVehicle["trucks"] = truckArray;
     json vanArray = json::array();
-    for (const Van &van : containerVehicle->listVans()) {
+    for (const Van *van : containerVehicle->listVans()) {
         json vanJSON;
-        serializerVehicle.toJSON(vanJSON, van);
+        serializerVehicle.toJSON(vanJSON, *van);
         vanArray.push_back(vanJSON);
     }
     dataVehicle["vans"] = vanArray;
@@ -258,9 +258,9 @@ void DataContainer::saveAllData() {
 
     json dataVSL;
     json vslArray = json::array();
-    for (const VehicleStorageLocation &vsl : containerVSL->listVSL()) {
+    for (const VehicleStorageLocation *vsl : containerVSL->listVSL()) {
         json vslJSON;
-        serializerVSL.toJSON(vslJSON, vsl);
+        serializerVSL.toJSON(vslJSON, *vsl);
         vslArray.push_back(vslJSON);
     }
     dataVSL["vsls"] = vslArray;

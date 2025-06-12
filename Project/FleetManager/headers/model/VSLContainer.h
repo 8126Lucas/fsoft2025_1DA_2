@@ -13,14 +13,16 @@ using namespace std;
 
 class VSLContainer {
 private:
-    list<VehicleStorageLocation> locations;
-    list<VehicleStorageLocation>::iterator search(int id);
+    list<VehicleStorageLocation*> locations;
+    list<VehicleStorageLocation*>::iterator search(int id);
 
 public:
-    void add(const VehicleStorageLocation &location);
+    ~VSLContainer();
+
+    void add(VehicleStorageLocation *location);
     void remove(int id);
-    void update(const VehicleStorageLocation &location);
-    list<VehicleStorageLocation> listVSL();
+    void update(VehicleStorageLocation *location);
+    const list<VehicleStorageLocation*> &listVSL() const;
 
     VehicleStorageLocation *get(int id);
 };

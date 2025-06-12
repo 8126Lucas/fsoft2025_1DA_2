@@ -16,7 +16,7 @@ public:
     int removeVSL();
     static int getID();
     void printVSL(VehicleStorageLocation *vsl);
-    void printListVSL(list<VehicleStorageLocation> &listVSL);
+    void printListVSL(list<VehicleStorageLocation*> &listVSL);
     void printListStoredVehicles(const VehicleStorageLocation &vsl);
     static VehicleStorageLocation *getVSL(VSLContainer *container);
 

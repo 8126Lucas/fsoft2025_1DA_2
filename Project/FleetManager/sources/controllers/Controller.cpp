@@ -45,12 +45,12 @@ void Controller::runVehicle() {
             case 1: {
                 int category = Utils::getInt("Category (Truck - 1 / Van - 2)");
                 if (category == 1) {
-                    Truck truck = this->vehicleView.addTruck();
+                    Truck *truck = this->vehicleView.addTruck();
                     VehicleContainer &container = this->model.getVehicleContainer();
                     container.add(truck);
                 }
                 if (category == 2) {
-                    Van van = this->vehicleView.addVan();
+                    Van *van = this->vehicleView.addVan();
                     VehicleContainer &container = this->model.getVehicleContainer();
                     container.add(van);
                 }
@@ -64,8 +64,8 @@ void Controller::runVehicle() {
                 break;
             case 3: {
                 VehicleContainer &container = this->model.getVehicleContainer();
-                list<Truck> trucks = container.listTrucks();
-                list<Van> vans = container.listVans();
+                list<Truck*> trucks = container.listTrucks();
+                list<Van*> vans = container.listVans();
                 if (trucks.empty() && vans.empty()) {
                     cout << "\nTHERE ARE NO VEHICLES IN THE RECORDS!\n";
                 }
@@ -75,8 +75,8 @@ void Controller::runVehicle() {
                 break;
             case 4: {
                 VehicleContainer &container = this->model.getVehicleContainer();
-                list<Truck> trucks = container.listTrucks(true);
-                list<Van> vans = container.listVans(true);
+                list<Truck*> trucks = container.listTrucks(true);
+                list<Van*> vans = container.listVans(true);
                 if (trucks.empty() && vans.empty()) {
                     cout << "\nTHERE ARE NO AVAILABLE VEHICLES IN THE RECORDS!\n";
                 }
@@ -86,8 +86,8 @@ void Controller::runVehicle() {
                 break;
             case 5: {
                 VehicleContainer &container = this->model.getVehicleContainer();
-                list<Truck> trucks = container.listTrucks(false);
-                list<Van> vans = container.listVans(false);
+                list<Truck*> trucks = container.listTrucks(false);
+                list<Van*> vans = container.listVans(false);
                 if (trucks.empty() && vans.empty()) {
                     cout << "\nTHERE ARE NO UNAVAILABLE VEHICLES IN THE RECORDS!\n";
                 }
@@ -134,7 +134,7 @@ void Controller::runVehicle() {
             case 11: {
                 VehicleStorageLocation *vsl = this->vslView.addVSL();
                 VSLContainer &container = this->model.getVSLContainer();
-                container.add(*vsl);
+                container.add(vsl);
             }
                 break;
             case 12: {
@@ -145,7 +145,7 @@ void Controller::runVehicle() {
                 break;
             case 13: {
                 VSLContainer &container = this->model.getVSLContainer();
-                list<VehicleStorageLocation> locations = container.listVSL();
+                list<VehicleStorageLocation*> locations = container.listVSL();
                 if (!locations.empty()) {
                     this->vslView.printListVSL(locations);
                 }

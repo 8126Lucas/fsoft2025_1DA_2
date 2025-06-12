@@ -16,8 +16,8 @@ using namespace std;
 
 class VehicleView {
 public:
-    Truck addTruck();
-    Van addVan();
+    Truck *addTruck();
+    Van *addVan();
     string removeVehicle();
 
     static Vehicle *getVehicle(VehicleContainer *container);
@@ -27,8 +27,8 @@ public:
 
     void printTruck(const Truck *truck);
     void printVan(const Van *van);
-    void printListTrucks(list<Truck> &trucks);
-    void printListVans(list<Van> &vans);
+    void printListTrucks(list<Truck*> &trucks);
+    void printListVans(list<Van*> &vans);
 
     double addFuel(Vehicle *vehicle);
     static void insuranceAlert(const Truck *truck);
