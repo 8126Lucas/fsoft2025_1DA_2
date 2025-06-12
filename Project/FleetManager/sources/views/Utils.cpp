@@ -132,7 +132,7 @@ Date Utils::getDate(const string &label) {
 }
 
 Vehicle *Utils::getVehicle(VehicleContainer &container, const string &label) {
-  Vehicle *vehicle = nullptr;
+  Vehicle *vehicle = new Vehicle();
   bool valid = false;
   do {
     try {
@@ -149,7 +149,7 @@ Vehicle *Utils::getVehicle(VehicleContainer &container, const string &label) {
 }
 
 Order *Utils::getOrder(OrderContainer &container, const string &label) {
-  Order *order = nullptr;
+  Order *order = new Order();
   bool valid = false;
   do {
     try {
@@ -166,7 +166,7 @@ Order *Utils::getOrder(OrderContainer &container, const string &label) {
 }
 
 Driver *Utils::getDriver(DriverContainer &container, const string &label) {
-  Driver *driver = nullptr;
+  Driver *driver = new Driver();
   bool valid = false;
   do {
     try {
@@ -183,7 +183,7 @@ Driver *Utils::getDriver(DriverContainer &container, const string &label) {
 }
 
 Trip *Utils::getTrip(TripContainer &container, const string &label) {
-  Trip *trip = nullptr;
+  Trip *trip = new Trip();
   bool valid = false;
   do {
     try {

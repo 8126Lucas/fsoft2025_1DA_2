@@ -112,6 +112,6 @@ TEST_F(TripTest, TripDeliveredState){
 }
 
 TEST_F(TripTest, TripFailedState){
-  trip->setState(STATE::FAILED);
+  trip->setState(FAILED);
   EXPECT_EQ(trip->getState(), STATE::FAILED);
 }

@@ -36,8 +36,6 @@ void TripContainer::add(Trip &trip) {
   }
 }
 
-
-
 list<Trip> TripContainer::listTrips(){
   std::list<Trip> newList(this->trips);
   return newList;

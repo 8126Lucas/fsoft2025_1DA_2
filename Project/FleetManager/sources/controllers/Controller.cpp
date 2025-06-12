@@ -198,21 +198,19 @@ void Controller::runTrip() {
             }
                 break;
             case 2: {
+                TripContainer &containerTrip = this->model.getTripContainer();
                 DriverContainer &containerDriver = this->model.getDriverContainer();
                 VehicleContainer &containerVehicle = this->model.getVehicleContainer();
-                TripContainer &containerTrip = this->model.getTripContainer();
-                Trip *trip = this->tripView.getTrip(&containerTrip);
-                this->tripView.startTrip(trip, containerDriver, containerVehicle);
-                containerTrip.update(*trip);
+                this->tripView.startTrip(containerTrip, containerDriver, containerVehicle);
             }
                 break;
             case 3: {
                 DriverContainer &containerDriver = this->model.getDriverContainer();
                 VehicleContainer &containerVehicle = this->model.getVehicleContainer();
                 TripContainer &containerTrip = this->model.getTripContainer();
-                Trip *trip = this->tripView.getTrip(&containerTrip);
-                this->tripView.endTrip(trip, containerDriver, containerVehicle);
-                containerTrip.update(*trip);
+
+                this->tripView.endTrip(containerTrip, containerDriver, containerVehicle);
+
             }
                 break;
             case 4: {

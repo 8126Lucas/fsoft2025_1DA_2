@@ -79,11 +79,12 @@ void TripView::printListTrips(list<Trip> &trips) {
 
 
 
-void TripView::startTrip(Trip *trip, DriverContainer &containerDriver, VehicleContainer &containerVehicle) {
+void TripView::startTrip(TripContainer &containerTrip, DriverContainer &containerDriver, VehicleContainer &containerVehicle) {
     bool flag_error = false;
     do {
         try {
             flag_error = false;
+            Trip *trip = Utils::getTrip(containerTrip, "Trip ID");
             Driver *driver = Utils::getDriver(containerDriver , "Driver ID");
             Vehicle *vehicle = Utils::getVehicle(containerVehicle , "Vehicle's License Plate");
             trip->setState(INCOMING);
@@ -98,11 +99,12 @@ void TripView::startTrip(Trip *trip, DriverContainer &containerDriver, VehicleCo
     }while (flag_error);
 }
 
-void TripView::endTrip(Trip *trip, DriverContainer &containerDriver, VehicleContainer &containerVehicle) {
+void TripView::endTrip(TripContainer &containerTrip, DriverContainer &containerDriver, VehicleContainer &containerVehicle) {
     bool flag_error = false;
     do {
         try {
             flag_error = false;
+            Trip *trip = Utils::getTrip(containerTrip, "Trip ID");
             double km = Utils::getDouble("Kilometers: ");
             double fuel = Utils::getDouble("Fuel Spent (%): ");
             double fuelCost = Utils::getDouble("Fuel Cost (€): ");

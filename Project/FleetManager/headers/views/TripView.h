@@ -16,8 +16,8 @@ class TripView {
 public:
     Trip addTrip(OrderContainer &containerOrder);
     Trip removeTrip();
-    void startTrip(Trip *trip, DriverContainer &containerDriver, VehicleContainer &containerVehicle);
-    void endTrip(Trip *trip, DriverContainer &containerDriver, VehicleContainer &containerVehicle);
+    void startTrip(TripContainer &containerTrip, DriverContainer &containerDriver, VehicleContainer &containerVehicle);
+    void endTrip(TripContainer &containerTrip, DriverContainer &containerDriver, VehicleContainer &containerVehicle);
     void failTrip(Trip *trip);
     // static void listTripsByDriver(Trip *trip); Acho que para já não vai ser necessario
     void printTrip(Trip *trip);
