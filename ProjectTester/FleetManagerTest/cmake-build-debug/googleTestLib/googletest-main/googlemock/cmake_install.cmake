@@ -1,4 +1,4 @@
-# Install script for directory: /Users/vitorteixeira/Desktop/FSOFT/PL3/fsoft2025_1DA_2/ProjectTester/FleetManagerTest/googleTestLib/googletest-main/googlemock
+# Install script for directory: /home/dinis/CLionProjects/fsoft2025_1DA_2_definitivo/ProjectTester/FleetManagerTest/googleTestLib/googletest-main/googlemock
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -27,6 +27,11 @@ if(NOT CMAKE_INSTALL_COMPONENT)
   endif()
 endif()
 
+# Install shared libraries without execute permission?
+if(NOT DEFINED CMAKE_INSTALL_SO_NO_EXE)
+  set(CMAKE_INSTALL_SO_NO_EXE "1")
+endif()
+
 # Is this installation the result of a crosscompile?
 if(NOT DEFINED CMAKE_CROSSCOMPILING)
   set(CMAKE_CROSSCOMPILING "FALSE")
@@ -34,40 +39,32 @@ endif()
 
 # Set path to fallback-tool for dependency-resolution.
 if(NOT DEFINED CMAKE_OBJDUMP)
-  set(CMAKE_OBJDUMP "/Library/Developer/CommandLineTools/usr/bin/objdump")
+  set(CMAKE_OBJDUMP "/usr/bin/objdump")
 endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "gmock" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include" TYPE DIRECTORY FILES "/Users/vitorteixeira/Desktop/FSOFT/PL3/fsoft2025_1DA_2/ProjectTester/FleetManagerTest/googleTestLib/googletest-main/googlemock/include/")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include" TYPE DIRECTORY FILES "/home/dinis/CLionProjects/fsoft2025_1DA_2_definitivo/ProjectTester/FleetManagerTest/googleTestLib/googletest-main/googlemock/include/")
 endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "gmock" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib" TYPE STATIC_LIBRARY FILES "/Users/vitorteixeira/Desktop/FSOFT/PL3/fsoft2025_1DA_2/ProjectTester/FleetManagerTest/cmake-build-debug/lib/libgmock.a")
-  if(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libgmock.a" AND
-     NOT IS_SYMLINK "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libgmock.a")
-    execute_process(COMMAND "/Library/Developer/CommandLineTools/usr/bin/ranlib" "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libgmock.a")
-  endif()
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib" TYPE STATIC_LIBRARY FILES "/home/dinis/CLionProjects/fsoft2025_1DA_2_definitivo/ProjectTester/FleetManagerTest/cmake-build-debug/lib/libgmock.a")
 endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "gmock" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib" TYPE STATIC_LIBRARY FILES "/Users/vitorteixeira/Desktop/FSOFT/PL3/fsoft2025_1DA_2/ProjectTester/FleetManagerTest/cmake-build-debug/lib/libgmock_main.a")
-  if(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libgmock_main.a" AND
-     NOT IS_SYMLINK "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libgmock_main.a")
-    execute_process(COMMAND "/Library/Developer/CommandLineTools/usr/bin/ranlib" "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libgmock_main.a")
-  endif()
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib" TYPE STATIC_LIBRARY FILES "/home/dinis/CLionProjects/fsoft2025_1DA_2_definitivo/ProjectTester/FleetManagerTest/cmake-build-debug/lib/libgmock_main.a")
 endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "gmock" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/pkgconfig" TYPE FILE FILES "/Users/vitorteixeira/Desktop/FSOFT/PL3/fsoft2025_1DA_2/ProjectTester/FleetManagerTest/cmake-build-debug/googleTestLib/googletest-main/googletest/generated/gmock.pc")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/pkgconfig" TYPE FILE FILES "/home/dinis/CLionProjects/fsoft2025_1DA_2_definitivo/ProjectTester/FleetManagerTest/cmake-build-debug/googleTestLib/googletest-main/googletest/generated/gmock.pc")
 endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "gmock" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/pkgconfig" TYPE FILE FILES "/Users/vitorteixeira/Desktop/FSOFT/PL3/fsoft2025_1DA_2/ProjectTester/FleetManagerTest/cmake-build-debug/googleTestLib/googletest-main/googletest/generated/gmock_main.pc")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/pkgconfig" TYPE FILE FILES "/home/dinis/CLionProjects/fsoft2025_1DA_2_definitivo/ProjectTester/FleetManagerTest/cmake-build-debug/googleTestLib/googletest-main/googletest/generated/gmock_main.pc")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
-  include("/Users/vitorteixeira/Desktop/FSOFT/PL3/fsoft2025_1DA_2/ProjectTester/FleetManagerTest/cmake-build-debug/googleTestLib/googletest-main/googletest/cmake_install.cmake")
+  include("/home/dinis/CLionProjects/fsoft2025_1DA_2_definitivo/ProjectTester/FleetManagerTest/cmake-build-debug/googleTestLib/googletest-main/googletest/cmake_install.cmake")
 
 endif()
 

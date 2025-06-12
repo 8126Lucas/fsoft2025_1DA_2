@@ -8,7 +8,7 @@
 #include "OrderView.h"
 #include "Date.h"
 
-Order::Order() : orderID(), clientID(), status(IN_PROGRESS) {}
+Order::Order() : orderID(),cargoSpace(0),cargoWeight(0),shippingValue(0), clientID(), status(IN_PROGRESS) {}
 
 Order::Order(const int orderId, const int clientId,const Date date,const string sourceAddress,const string destinationAddress,
              const double cargoSpace,const double cargoWeight,const double ShippingValue,const STATUS status) {
