@@ -1,3 +1,44 @@
 {
-    "drivers": []
+    "drivers": [
+        {
+            "age": 67,
+            "available": true,
+            "id": 1,
+            "license": "B",
+            "timeToRetire": 0,
+            "vacations": [
+                {
+                    "driverID": 0,
+                    "endDate": "1/1/2021",
+                    "id": 1,
+                    "startDate": "1/1/2020",
+                    "status": false
+                }
+            ]
+        },
+        {
+            "age": 25,
+            "available": true,
+            "id": 2,
+            "license": "C",
+            "timeToRetire": 40,
+            "vacations": []
+        },
+        {
+            "age": 34,
+            "available": true,
+            "id": 3,
+            "license": "C",
+            "timeToRetire": 31,
+            "vacations": []
+        },
+        {
+            "age": 49,
+            "available": true,
+            "id": 4,
+            "license": "B",
+            "timeToRetire": 16,
+            "vacations": []
+        }
+    ]
 }

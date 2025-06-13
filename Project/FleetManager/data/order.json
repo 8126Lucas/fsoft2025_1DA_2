@@ -21,6 +21,28 @@
             "shippingValue": 41.99,
             "sourceAddress": "ISEP",
             "status": "COMPLETED"
+        },
+        {
+            "cargoSpace": 0.5,
+            "cargoWeight": 50.0,
+            "client": 1,
+            "date": "14/6/2025",
+            "destinationAddress": "Lisboa",
+            "id": 3,
+            "shippingValue": 350.0,
+            "sourceAddress": "Ermesinde",
+            "status": "IN_PROGRESS"
+        },
+        {
+            "cargoSpace": 3.0,
+            "cargoWeight": 15.0,
+            "client": 2,
+            "date": "22/1/1960",
+            "destinationAddress": "Ermesinde",
+            "id": 4,
+            "shippingValue": 87.99,
+            "sourceAddress": "Amarante",
+            "status": "IN_PROGRESS"
         }
     ]
 }

@@ -1,17 +1,43 @@
 {
     "trips": [
         {
-            "cost": 130.0,
-            "driverID": 1,
-            "fines": 10.0,
-            "fuel": 10.0,
-            "fuelCost": 10.0,
+            "cost": 120.99,
+            "driverID": -1,
+            "fines": 0.0,
+            "fuel": 0.0,
+            "fuelCost": 0.0,
             "id": 1,
-            "km": 100.0,
+            "km": 0.0,
+            "orderID": 4,
+            "state": "SUPRESSED",
+            "tolls": 0.0,
+            "vehicleLicensePlate": "No Vehicle"
+        },
+        {
+            "cost": 129.99,
+            "driverID": 1,
+            "fines": 0.0,
+            "fuel": 0.0,
+            "fuelCost": 0.0,
+            "id": 2,
+            "km": 0.0,
+            "orderID": 1,
+            "state": "INCOMING",
+            "tolls": 0.0,
+            "vehicleLicensePlate": "LU-65-CA"
+        },
+        {
+            "cost": 130.0,
+            "driverID": -1,
+            "fines": 0.0,
+            "fuel": 0.0,
+            "fuelCost": 0.0,
+            "id": 3,
+            "km": 0.0,
             "orderID": 2,
-            "state": "DELIVERED",
-            "tolls": 10.0,
-            "vehicleLicensePlate": "25-qi-56"
+            "state": "SUPRESSED",
+            "tolls": 0.0,
+            "vehicleLicensePlate": "No Vehicle"
         }
     ]
 }

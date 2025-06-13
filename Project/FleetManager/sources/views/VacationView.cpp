@@ -24,8 +24,10 @@ Vacation *VacationView::addVacation(DriverContainer &container) {
             vacation->setEndDate(endDate);
             if (startDate > today || endDate < today) {
                 vacation->setStatus(false);
+                vacation->getDriver()->setAvailability(true);
             } else {
                 vacation->setStatus(true);
+                vacation->getDriver()->setAvailability(false);
             }
         } catch (InvalidDataException &error) {
             cout << error.what() << endl;

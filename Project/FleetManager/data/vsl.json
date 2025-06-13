@@ -8,12 +8,65 @@
             "name": "VSL 1",
             "vehicles": [
                 {
-                    "vehicleLicensePlate": "00-00-01"
-                },
-                {
                     "vehicleLicensePlate": "25-qi-56"
                 }
             ]
+        },
+        {
+            "address": "Rua do Renato",
+            "capacity": 5,
+            "currentVehicleCount": 0,
+            "id": 2,
+            "name": "Renato",
+            "vehicles": []
+        },
+        {
+            "address": "Rua da Graça",
+            "capacity": 9,
+            "currentVehicleCount": 0,
+            "id": 3,
+            "name": "Graça",
+            "vehicles": []
+        },
+        {
+            "address": "Rua do Pedro",
+            "capacity": 5,
+            "currentVehicleCount": 0,
+            "id": 4,
+            "name": "Pedro",
+            "vehicles": []
+        },
+        {
+            "address": "Rua do Pedro",
+            "capacity": 6,
+            "currentVehicleCount": 0,
+            "id": 11,
+            "name": "Miguel",
+            "vehicles": []
+        },
+        {
+            "address": "Rua do Rui",
+            "capacity": 15,
+            "currentVehicleCount": 0,
+            "id": 13,
+            "name": "Rui",
+            "vehicles": []
+        },
+        {
+            "address": "Rua do Lucas",
+            "capacity": 3,
+            "currentVehicleCount": 0,
+            "id": 57,
+            "name": "Lucas",
+            "vehicles": []
+        },
+        {
+            "address": "Rua do Eduardo",
+            "capacity": 5,
+            "currentVehicleCount": 0,
+            "id": 10,
+            "name": "Eduardo",
+            "vehicles": []
         }
     ]
 }
