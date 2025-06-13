@@ -87,6 +87,11 @@ void TripView::startTrip(TripContainer &containerTrip, DriverContainer &containe
             Trip *trip = Utils::getTrip(containerTrip, "Trip ID");
             Driver *driver = Utils::getDriver(containerDriver , "Driver ID");
             Vehicle *vehicle = Utils::getVehicle(containerVehicle , "Vehicle's License Plate");
+
+            if (driver->getLicense() == 'B' && vehicle->getCategory() == TRUCK || driver->getLicense() == 'C' && vehicle->getCategory() == VAN) {
+                throw InvalidDataException("Driver is not equipped for this Trip. License");
+            }
+
             trip->setState(INCOMING);
             trip->setDriver(driver);
             driver->setAvailability(false);

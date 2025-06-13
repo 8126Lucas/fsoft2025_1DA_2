@@ -19,11 +19,41 @@ Expense FinancialView::recordExpense(TripContainer &containerTrip) {
     do {
         try {
             flag_error = false;
-            int id = Utils::getInt("ID");
+
+            int id;
+            bool flag_error_id = false;
+            do {
+                try {
+                    flag_error_id = false;
+                    id = Utils::getInt("ID");
+                    if (id <= 0) {
+                        throw InvalidDataException("Expense (id): " + to_string(id));
+                    }
+                } catch (const InvalidDataException &error) {
+                    flag_error_id = true;
+                    cout << error.what() << endl;
+                }
+            } while (flag_error_id);
+
             Trip *trip = Utils::getTrip(containerTrip, "Trip ID");
             Date date = Utils::getDate("Date");
             double amount = Utils::getDouble("Amount");
-            TYPE type = static_cast<TYPE>(Utils::getInt("Type (FUEL/INSPECTION/INSURANCE/TOLL/FINE - 1->5)"));
+
+            TYPE type;
+            bool flag_error_type = false;
+            do {
+                try {
+                    flag_error_type = false;
+                    int typeInt = Utils::getInt("Type (FUEL/INSPECTION/INSURANCE/TOLL/FINE - 1->5)");
+                    if (typeInt < 1 || typeInt > 5) {
+                        throw InvalidDataException("Expense Type: " + to_string(typeInt));
+                    }
+                    type = static_cast<TYPE>(typeInt);
+                } catch (const InvalidDataException &error) {
+                    flag_error_type = true;
+                    cout << error.what() << endl;
+                }
+            } while (flag_error_type);
 
             expense.setID(id);
             expense.setTrip(trip);
@@ -49,7 +79,22 @@ Revenue FinancialView::recordRevenue(OrderContainer &containerOrder) {
     do {
         try {
             flag_error = false;
-            int id = Utils::getInt("ID");
+
+            int id;
+            bool flag_error_id = false;
+            do {
+                try {
+                    flag_error_id = false;
+                    id = Utils::getInt("ID");
+                    if (id <= 0) {
+                        throw InvalidDataException("Revenue (id): " + to_string(id));
+                    }
+                } catch (const InvalidDataException &error) {
+                    flag_error_id = true;
+                    cout << error.what() << endl;
+                }
+            } while (flag_error_id);
+
             Order *order = Utils::getOrder(containerOrder, "Order ID");
             Date date = Utils::getDate("Date");
             double amount = Utils::getDouble("Amount");

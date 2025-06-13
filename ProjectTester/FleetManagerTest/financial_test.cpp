@@ -69,30 +69,6 @@ TEST_F(ExpenseTest, TestAllExpenseTypes) {
     EXPECT_EQ(expense->getType(), FINE);
 }
 
-//recordExpense
-
-TEST_F(ExpenseTest, TestRecordExpense) {
-
-}
-
-//removeExpense
-
-TEST_F(ExpenseTest, TestRemoveExpense) {
-
-}
-
-//listExpenses
-
-TEST_F(ExpenseTest, TestListExpenses) {
-
-}
-
-//listExpensesByType
-
-TEST_F(ExpenseTest, TestListExpensesByType) {
-
-}
-
 class RevenueTest : public ::testing::Test {
 protected:
     void SetUp() override {
@@ -130,34 +106,4 @@ TEST_F(RevenueTest, testSetRevenue) {
     EXPECT_DOUBLE_EQ(revenue->getAmount(), newAmount);
 
     delete testOrder;
-}
-
-//recordRevenue
-
-TEST_F(RevenueTest, testRecordRevenue) {
-
-}
-
-//removeRevenue
-
-TEST_F(RevenueTest, testRemoveRevenue) {
-
-}
-
-//listRevenues
-
-TEST_F(RevenueTest, testListRevenues) {
-
-}
-
-//listTransactions
-
-TEST_F(RevenueTest, testListTransactions) {
-
-}
-
-//showBalance
-
-TEST_F(RevenueTest, testShowBalance) {
-
 }

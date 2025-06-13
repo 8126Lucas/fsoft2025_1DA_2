@@ -47,7 +47,7 @@ void FinancialContainer::addExpense(Expense &expense) {
             throw DuplicatedDataException("Expense (id): " + to_string(expense.getID()));
         }
         this->expenses.push_back(expense);
-    } catch (NonExistingDataException &error) {
+    } catch (DuplicatedDataException &error) {
         cout << error.what() << endl;
     }
 }

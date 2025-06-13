@@ -1,0 +1,5 @@
+if(EXISTS "C:/Projects/fsoft2025_1DA_2/ProjectTester/FleetManagerTest/cmake-build-debug/runTests[1]_tests.cmake")
+  include("C:/Projects/fsoft2025_1DA_2/ProjectTester/FleetManagerTest/cmake-build-debug/runTests[1]_tests.cmake")
+else()
+  add_test(runTests_NOT_BUILT runTests_NOT_BUILT)
+endif()

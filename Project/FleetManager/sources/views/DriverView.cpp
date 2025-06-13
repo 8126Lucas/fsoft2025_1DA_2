@@ -18,7 +18,22 @@ Driver DriverView::addDriver() {
     do {
         try {
             flag_error = false;
-            int id = Utils::getInt("ID");
+
+            int id;
+            bool flag_error_id = false;
+            do {
+                try {
+                    flag_error_id = false;
+                    id = Utils::getInt("ID");
+                    if (id <= 0) {
+                        throw InvalidDataException("Driver (id): " + to_string(id));
+                    }
+                } catch (const InvalidDataException &error) {
+                    flag_error_id = true;
+                    cout << error.what() << endl;
+                }
+            } while (flag_error_id);
+
             char license;
             bool flag_error2 = false;
             do {
@@ -26,14 +41,13 @@ Driver DriverView::addDriver() {
                     flag_error2 = false;
                     license = Utils::getChar("License");
                     if (license != 'B' && license != 'C') {
-                        throw InvalidDataException("Only B or C are allowed. License is not allowed.");
+                        throw InvalidDataException(string(1, license));
                     }
                 } catch (const InvalidDataException &error) {
                     flag_error2 = true;
                     cout << error.what() << endl;
                 }
             } while (flag_error2);
-
 
             int age = Utils::getInt("Age");
 

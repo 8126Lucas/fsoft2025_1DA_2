@@ -72,7 +72,7 @@ add_executable(runTests
         vsl_test.cpp
         orderContainer_test.cpp
         driverContainer_test.cpp
-        # financialContainer_test.cpp
+        financialContainer_test.cpp
         vehicleContainer_test.cpp
         vslContainer_test.cpp
         ${APP_SOURCES}

@@ -14,10 +14,26 @@ Vacation *VacationView::addVacation(DriverContainer &container) {
         try {
             flag_error = false;
             Date today = Date::getToday();
-            int id = Utils::getInt("Vacation ID");
+
+            int id;
+            bool flag_error_id = false;
+            do {
+                try {
+                    flag_error_id = false;
+                    id = Utils::getInt("Vacation ID");
+                    if (id <= 0) {
+                        throw InvalidDataException("Vacation (id): " + to_string(id));
+                    }
+                } catch (const InvalidDataException &error) {
+                    flag_error_id = true;
+                    cout << error.what() << endl;
+                }
+            } while (flag_error_id);
+
             Driver *driver = Utils::getDriver(container, "Driver's ID");
             Date startDate = Utils::getDate("Start Date");
             Date endDate = Utils::getDate("End Date");
+
             vacation->setID(id);
             vacation->setDriver(driver);
             vacation->setStartDate(startDate);
