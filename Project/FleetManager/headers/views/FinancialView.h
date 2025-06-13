@@ -22,12 +22,16 @@ public:
     // static void *getRevenue(FinancialContainer *container);
     static int getExpenseID();
     static int getRevenueID();
+
     static void printExpense(Expense *expense);
     static void printRevenue(const Revenue *revenue);
     static void printExpenses(list<Expense> &expenses);
+    void printExpensesByType(list<Expense> &expenses, TYPE type);
     static void printRevenues(list<Revenue> &revenues);
+    void printAllFinancialRecords(list<Expense> &expenses, list<Revenue> &revenues);
 
     void printBalance(FinancialContainer &containerFinancial, Date startDate, Date endDate);
+    void printInvalidTypeError();
 };
 
 #endif //HEADERS_VIEWS_FINANCIALVIEW_H

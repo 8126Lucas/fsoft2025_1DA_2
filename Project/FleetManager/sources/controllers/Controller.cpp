@@ -320,39 +320,21 @@ void Controller::runFinancial() {
             case 3: {
                 FinancialContainer &containerFinancial = this->model.getFinancialContainer();
                 list<Expense> listExpenses = containerFinancial.listExpense();
-                if (listExpenses.empty()) {cout << "THERE ARE NO EXPENSES IN THE RECORDS" << endl;}
-                else {this->financialView.printExpenses(listExpenses);}
+                this->financialView.printExpenses(listExpenses);
             }
                 break;
             case 4: {
                 FinancialContainer &containerFinancial = this->model.getFinancialContainer();
                 int type = Utils::getInt("Type (FUEL/INSPECTION/INSURANCE/TOLL/FINE)");
-                if (type == 1) {
-                    list<Expense> listExpenses = containerFinancial.listExpensesByType(FUEL);
-                    if (listExpenses.empty()) {cout << "THERE ARE NO FUEL EXPENSES" << endl;}
-                    else {this->financialView.printExpenses(listExpenses);}
+                TYPE expenseType;
+                if (type >= 1 && type <= 5) {
+                    expenseType = static_cast<TYPE>(type);
+                    list<Expense> listExpenses = containerFinancial.listExpensesByType(expenseType);
+                    this->financialView.printExpensesByType(listExpenses, expenseType);
                 }
-                else if (type == 2) {
-                    list<Expense> listExpenses = containerFinancial.listExpensesByType(INSPECTION);
-                    if (listExpenses.empty()) {cout << "THERE ARE NO INSPECTION EXPENSES" << endl;}
-                    else {this->financialView.printExpenses(listExpenses);}
+                else {
+                    this->financialView.printInvalidTypeError();
                 }
-                else if (type == 3) {
-                    list<Expense> listExpenses = containerFinancial.listExpensesByType(INSURANCE);
-                    if (listExpenses.empty()) {cout << "THERE ARE NO INSURANCE EXPENSES" << endl;}
-                    else {this->financialView.printExpenses(listExpenses);}
-                }
-                else if (type == 4) {
-                    list<Expense> listExpenses = containerFinancial.listExpensesByType(TOLL);
-                    if (listExpenses.empty()) {cout << "THERE ARE NO TOLL EXPENSES" << endl;}
-                    else {this->financialView.printExpenses(listExpenses);}
-                }
-                else if (type == 5) {
-                    list<Expense> listExpenses = containerFinancial.listExpensesByType(FINE);
-                    if (listExpenses.empty()) {cout << "THERE ARE NO FINE EXPENSES" << endl;}
-                    else {this->financialView.printExpenses(listExpenses);}
-                }
-                else {cout << "!!! Type does not exist !!!";}
             }
                 break;
             case 5: {
@@ -371,18 +353,14 @@ void Controller::runFinancial() {
             case 7: {
                 FinancialContainer &containerFinancial = this->model.getFinancialContainer();
                 list<Revenue> listRevenues = containerFinancial.listRevenue();
-                if (listRevenues.empty()) {cout << "THERE ARE NO REVENUES IN THE RECORDS" << endl;}
-                else {this->financialView.printRevenues(listRevenues);}
+                this->financialView.printRevenues(listRevenues);
             }
                 break;
             case 8: {
                 FinancialContainer &containerFinancial = this->model.getFinancialContainer();
                 list<Expense> listExpenses = containerFinancial.listExpense();
                 list<Revenue> listRevenues = containerFinancial.listRevenue();
-                cout << "\n******* Expenses: " + to_string(listExpenses.size()) + " *******\n";
-                this->financialView.printExpenses(listExpenses);
-                cout << "\n\n******* Revenues: " + to_string(listRevenues.size()) + " *******\n";
-                this->financialView.printRevenues(listRevenues);
+                this->financialView.printAllFinancialRecords(listExpenses, listRevenues);
             }
                 break;
             case 9: {

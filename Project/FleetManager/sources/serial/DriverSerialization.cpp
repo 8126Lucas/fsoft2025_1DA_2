@@ -47,12 +47,15 @@ void DriverSerialization::fromJSON(const json &j, Driver &driver) {
             Date startDate;
             Date endDate;
             vacation->setID(vacationJSON["id"]);
-            vacation->setDriver(&driver);
-            vacation->setStartDate(startDate.stringToDate(vacationJSON["startDate"]));
-            vacation->setEndDate(endDate.stringToDate(vacationJSON["endDate"]));
-            vacation->setStatus(vacationJSON["status"]);
 
-            driver.setVacation(vacation);
+            if (vacationJSON["driverID"] == driver.getID()) {
+                vacation->setDriver(&driver);
+                vacation->setStartDate(startDate.stringToDate(vacationJSON["startDate"]));
+                vacation->setEndDate(endDate.stringToDate(vacationJSON["endDate"]));
+                vacation->setStatus(vacationJSON["status"]);
+
+                driver.setVacation(vacation);
+            }
         }
     }
 }

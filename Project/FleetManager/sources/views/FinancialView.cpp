@@ -71,21 +71,6 @@ int FinancialView::removeRevenue() {
     return id;
 }
 
-// Expense *FinancialView::getExpense(FinancialContainer *container) {
-//     int id = getExpenseID();
-//     // Expense *expense = container->getExpense(id);
-//     Expense expense = Expense();
-//     return expense;
-// }
-
-
-// void *FinancialView::getRevenue(FinancialContainer *container) {
-//     int id = getRevenueID();
-//     // Revenue *revenue = container->getRevenue(id);
-//     // Revenue revenue = Revenue();
-//     // return &revenue;
-// }
-
 int FinancialView::getExpenseID() {
     int id = Utils::getInt("ID");
     return id;
@@ -140,17 +125,48 @@ void FinancialView::printRevenue(const Revenue *revenue) {
 }
 
 void FinancialView::printExpenses(list<Expense> &expenses) {
+    if (expenses.empty()) {
+        cout << "THERE ARE NO EXPENSES IN THE RECORDS" << endl;
+        return;
+    }
     list<Expense>::iterator it = expenses.begin();
     for (; it != expenses.end(); ++it) {
         printExpense(&*it);
     }
 }
 
+void FinancialView::printExpensesByType(list<Expense> &expenses, TYPE type) {
+    if (expenses.empty()) {
+        string typeString;
+        switch(type) {
+            case FUEL: typeString = "FUEL"; break;
+            case INSPECTION: typeString = "INSPECTION"; break;
+            case INSURANCE: typeString = "INSURANCE"; break;
+            case TOLL: typeString = "TOLL"; break;
+            case FINE: typeString = "FINE"; break;
+        }
+        cout << "THERE ARE NO " << typeString << " EXPENSES" << endl;
+        return;
+    }
+    printExpenses(expenses);
+}
+
 void FinancialView::printRevenues(list<Revenue> &revenues) {
+    if (revenues.empty()) {
+        cout << "THERE ARE NO REVENUES IN THE RECORDS" << endl;
+        return;
+    }
     list<Revenue>::iterator it = revenues.begin();
     for (; it != revenues.end(); ++it) {
         printRevenue(&*it);
     }
+}
+
+void FinancialView::printAllFinancialRecords(list<Expense> &expenses, list<Revenue> &revenues) {
+    cout << "\n******* Expenses: " << expenses.size() << " *******\n";
+    printExpenses(expenses);
+    cout << "\n\n******* Revenues: " << revenues.size() << " *******\n";
+    printRevenues(revenues);
 }
 
 void FinancialView::printBalance(FinancialContainer &containerFinancial, Date startDate, Date endDate) {
@@ -160,4 +176,8 @@ void FinancialView::printBalance(FinancialContainer &containerFinancial, Date st
     cout << "\nTotal Expenses (" << startDate << "-" << endDate << "): " << totalExpenses << endl;
     cout << "Total Revenues (" << startDate << "-" << endDate << "): " << totalRevenues << endl;
     cout << "Balance (" << startDate << "-" << endDate << "): " << balance << endl;
+}
+
+void FinancialView::printInvalidTypeError() {
+    cout << "!!! Type does not exist !!!" << endl;
 }

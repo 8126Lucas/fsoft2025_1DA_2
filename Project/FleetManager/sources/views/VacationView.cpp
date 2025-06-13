@@ -22,12 +22,12 @@ Vacation *VacationView::addVacation(DriverContainer &container) {
             vacation->setDriver(driver);
             vacation->setStartDate(startDate);
             vacation->setEndDate(endDate);
-            if (startDate > today || endDate < today) {
-                vacation->setStatus(false);
-                vacation->getDriver()->setAvailability(true);
-            } else {
+            if ((startDate < today || startDate == today) && (endDate > today || endDate == today)) {
                 vacation->setStatus(true);
                 vacation->getDriver()->setAvailability(false);
+            } else {
+                vacation->setStatus(false);
+                vacation->getDriver()->setAvailability(true);
             }
         } catch (InvalidDataException &error) {
             cout << error.what() << endl;
