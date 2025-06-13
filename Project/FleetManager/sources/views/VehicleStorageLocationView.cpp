@@ -65,9 +65,14 @@ void VehicleStorageLocationView::printVSL(VehicleStorageLocation *vsl) {
 }
 
 void VehicleStorageLocationView::printListVSL(list<VehicleStorageLocation*> &listVSL) {
-    list<VehicleStorageLocation*>::iterator it = listVSL.begin();
-    for (; it != listVSL.end(); ++it) {
-        printVSL(*it);
+    if (listVSL.empty()) {
+        cout << "\nTHERE ARE NO STORAGE LOCATIONS RECORDED!\n";
+    }
+    else {
+        list<VehicleStorageLocation*>::iterator it = listVSL.begin();
+        for (; it != listVSL.end(); ++it) {
+            printVSL(*it);
+        }
     }
 }
 
@@ -77,7 +82,7 @@ void VehicleStorageLocationView::printListStoredVehicles(const VehicleStorageLoc
             list<Vehicle *> vehicles = vsl.getStoredVehicles(vsl.getID());
             list<Vehicle *>::iterator it = vehicles.begin();
             if (vehicles.empty()) {
-                cout << "There are no stored Vehicles at this Storage Location!\n";
+                cout << "THERE ARE NO STORED VEHICLES AT THIS STORAGE LOCATION!\n";
                 return;
             }
             for (; it != vehicles.end(); ++it) {

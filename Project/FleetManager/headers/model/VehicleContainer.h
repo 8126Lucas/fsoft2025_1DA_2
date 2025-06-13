@@ -26,6 +26,9 @@ private:
 public:
     ~VehicleContainer();
 
+    bool searchInsurance(int insuranceID);
+    bool searchInspection(int inspectionID);
+
     Vehicle *get(string &licensePlate);
     Truck *getTruck(string &licensePlate);
     Van *getVan(string &licensePlate);

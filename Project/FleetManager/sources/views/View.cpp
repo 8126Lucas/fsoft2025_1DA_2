@@ -15,7 +15,7 @@ View::View() {}
 int View::menuEnterprise() {
   int op = -1;
   do {
-    cout << "******* Login Menu *******\n\n";
+    cout << "\n******* Login Menu *******\n\n";
     cout << "1. Fleet Manager\n";
     cout << "2. Driver Manager\n";
     cout << "3. Trip Manager\n";
@@ -30,7 +30,7 @@ int View::menuEnterprise() {
 int View::menuVehicle() {
   int op = -1;
   do {
-    cout << "******* Fleet Manager's Menu *******\n\n";
+    cout << "\n******* Fleet Manager's Menu *******\n\n";
     cout << "1. Add Vehicle\n";
     cout << "2. Remove Vehicle\n";
     cout << "3. List Vehicles\n";
@@ -59,7 +59,7 @@ int View::menuVehicle() {
 int View::menuDriver() {
   int op = -1;
   do {
-    cout << "******* Driver Manager's Menu *******\n\n";
+    cout << "\n******* Driver Manager's Menu *******\n\n";
     cout << "1. Add Driver\n";
     cout << "2. Remove Driver\n";
     cout << "3. List Drivers\n";
@@ -75,7 +75,7 @@ int View::menuDriver() {
 int View::menuTrip() {
   int op = -1;
   do {
-    cout << "******* Trip Manager's Menu *******\n\n";
+    cout << "\n******* Trip Manager's Menu *******\n\n";
     cout << "1. Create Trip\n";
     cout << "2. Start Trip\n";
     cout << "3. Complete Trip\n";
@@ -93,7 +93,7 @@ int View::menuTrip() {
 int View::menuFinancial() {
   int op = -1;
   do {
-    cout << "******* Financial Manager's Menu *******\n\n";
+    cout << "\n******* Financial Manager's Menu *******\n\n";
     cout << "1. Record Expense\n";
     cout << "2. Remove Expense\n";
     cout << "3. List Expenses\n";
@@ -114,7 +114,7 @@ int View::menuFinancial() {
 int View::menuOrder() {
   int op = -1;
   do {
-    cout << "******* Order Manager's Menu *******\n\n";
+    cout << "\n******* Order Manager's Menu *******\n\n";
     cout << "1. Add Order\n";
     cout << "2. Remove Order\n";
     cout << "3. Complete Order\n";

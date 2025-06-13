@@ -28,19 +28,28 @@ list<Revenue>::iterator FinancialContainer::searchRevenue(int id) {
 }
 
 Expense *FinancialContainer::getExpense(int id) {
-    list<Expense>::iterator it = searchExpense(id);
-    if(it != this->expenses.end()) {
-        return &(*it);
+    try {
+        list<Expense>::iterator it = searchExpense(id);
+        if(it != this->expenses.end()) {
+            return &(*it);
+        }
+        throw NonExistingDataException("Expense ID");
+    } catch (NonExistingDataException &error) {
+        cout << error.what() << endl;
     }
-    throw NonExistingDataException("Expense ID");
+    return nullptr;
 }
 
 void FinancialContainer::addExpense(Expense &expense) {
-    list<Expense>::iterator it = searchExpense(expense.getID());
-    if (it != this->expenses.end()) {
-        throw DuplicatedDataException("Expense (id): " + to_string(expense.getID()));
+    try {
+        list<Expense>::iterator it = searchExpense(expense.getID());
+        if (it != this->expenses.end()) {
+            throw DuplicatedDataException("Expense (id): " + to_string(expense.getID()));
+        }
+        this->expenses.push_back(expense);
+    } catch (NonExistingDataException &error) {
+        cout << error.what() << endl;
     }
-    this->expenses.push_back(expense);
 }
 
 void FinancialContainer::removeExpense(int id) {
@@ -76,19 +85,27 @@ list<Expense> FinancialContainer::listExpensesByType(TYPE type) {
 }
 
 Revenue *FinancialContainer::getRevenue(int id) {
-    list<Revenue>::iterator it = searchRevenue(id);
-    if(it != this->revenues.end()) {
-        return &(*it);
+    try {
+        list<Revenue>::iterator it = searchRevenue(id);
+        if(it != this->revenues.end()) {
+            return &(*it);
+        }
+        throw NonExistingDataException("Revenue ID" + to_string(id));
+    } catch (NonExistingDataException &error) {
+        cout << error.what() << endl;
     }
-    throw NonExistingDataException("Revenue ID" + to_string(id) + " is not associated to any Revenue");
 }
 
 void FinancialContainer::addRevenue(Revenue &revenue) {
-    list<Revenue>::iterator it = searchRevenue(revenue.getID());
-    if (it != this->revenues.end()) {
-        throw DuplicatedDataException("Revenue (id): " + to_string(revenue.getID()));
+    try {
+        list<Revenue>::iterator it = searchRevenue(revenue.getID());
+        if (it != this->revenues.end()) {
+            throw DuplicatedDataException("Revenue (id): " + to_string(revenue.getID()));
+        }
+        this->revenues.push_back(revenue);
+    } catch (DuplicatedDataException &error) {
+        cout << error.what() << endl;
     }
-    this->revenues.push_back(revenue);
 }
 
 void FinancialContainer::removeRevenue(int id) {

@@ -66,9 +66,6 @@ void Controller::runVehicle() {
                 VehicleContainer &container = this->model.getVehicleContainer();
                 list<Truck*> trucks = container.listTrucks();
                 list<Van*> vans = container.listVans();
-                if (trucks.empty() && vans.empty()) {
-                    cout << "\nTHERE ARE NO VEHICLES IN THE RECORDS!\n";
-                }
                 this->vehicleView.printListTrucks(trucks);
                 this->vehicleView.printListVans(vans);
             }
@@ -77,9 +74,6 @@ void Controller::runVehicle() {
                 VehicleContainer &container = this->model.getVehicleContainer();
                 list<Truck*> trucks = container.listTrucks(true);
                 list<Van*> vans = container.listVans(true);
-                if (trucks.empty() && vans.empty()) {
-                    cout << "\nTHERE ARE NO AVAILABLE VEHICLES IN THE RECORDS!\n";
-                }
                 this->vehicleView.printListTrucks(trucks);
                 this->vehicleView.printListVans(vans);
             }
@@ -88,9 +82,6 @@ void Controller::runVehicle() {
                 VehicleContainer &container = this->model.getVehicleContainer();
                 list<Truck*> trucks = container.listTrucks(false);
                 list<Van*> vans = container.listVans(false);
-                if (trucks.empty() && vans.empty()) {
-                    cout << "\nTHERE ARE NO UNAVAILABLE VEHICLES IN THE RECORDS!\n";
-                }
                 this->vehicleView.printListTrucks(trucks);
                 this->vehicleView.printListVans(vans);
             }
@@ -146,10 +137,7 @@ void Controller::runVehicle() {
             case 13: {
                 VSLContainer &container = this->model.getVSLContainer();
                 list<VehicleStorageLocation*> locations = container.listVSL();
-                if (!locations.empty()) {
-                    this->vslView.printListVSL(locations);
-                }
-                else {cout << "\nTHERE ARE NO STORAGE LOCATIONS RECORDED!\n";}
+                this->vslView.printListVSL(locations);
             }
                 break;
             case 14: {
@@ -430,7 +418,6 @@ void Controller::runOrder() {
                 int id = Utils::getInt("Order ID");
                 Order *order = containerOrder.get(id);
                 this->orderView.completeOrder(order);
-                containerOrder.update(order);
             }
                 break;
             case 4: {

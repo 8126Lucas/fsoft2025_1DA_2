@@ -205,21 +205,31 @@ void VehicleView::printVan(const Van *van) {
 }
 
 void VehicleView::printListTrucks(list<Truck*> &trucks) {
-    cout << "\n*** List of Trucks: " << trucks.size() << " ***\n\n";
-    list<Truck*>::iterator it = trucks.begin();
-    for (; it != trucks.end(); ++it) {
-        printTruck(*it);
+    if (trucks.empty()) {
+        cout << "\nTHERE ARE NO TRUCKS (WITH SUCH CONDITIONS) IN THE RECORDS!\n";
     }
-    cout <<"**********************************\n\n";
+    else {
+        cout << "\n*** List of Trucks: " << trucks.size() << " ***\n\n";
+        list<Truck*>::iterator it = trucks.begin();
+        for (; it != trucks.end(); ++it) {
+            printTruck(*it);
+        }
+        cout <<"**********************************\n\n";
+    }
 }
 
 void VehicleView::printListVans(list<Van*> &vans) {
-    cout << "\n*** List of Vans: " << vans.size() << " ***\n\n";
-    list<Van*>::iterator it = vans.begin();
-    for (; it != vans.end(); ++it) {
-        printVan(*it);
+    if (vans.empty()) {
+        cout << "\nTHERE ARE NO VANS (WITH SUCH CONDITIONS) IN THE RECORDS!\n";
     }
-    cout <<"**********************************\n\n";
+    else {
+        cout << "\n*** List of Vans: " << vans.size() << " ***\n\n";
+        list<Van*>::iterator it = vans.begin();
+        for (; it != vans.end(); ++it) {
+            printVan(*it);
+        }
+        cout <<"**********************************\n\n";
+    }
 }
 
 double VehicleView::addFuel(Vehicle *vehicle) {

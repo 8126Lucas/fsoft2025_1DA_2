@@ -21,10 +21,10 @@ Driver::Driver(int id, char &license, int age) : available(true) {
 }
 
 Driver::~Driver() {
-    for (Vacation* vacation : vacations) {
-        delete vacation;
-    }
-    vacations.clear();
+    // for (Vacation* vacation : vacations) {
+    //     delete vacation;
+    // }
+    // vacations.clear();
 }
 
 int Driver::getID() const {

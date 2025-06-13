@@ -19,11 +19,16 @@ list<Driver>::iterator DriverContainer::search(int id) {
 }
 
 Driver *DriverContainer::get(int id) {
-  list<Driver>::iterator it = search(id);
-  if(it != this->drivers.end()) {
-    return &(*it);
+  try {
+    list<Driver>::iterator it = search(id);
+    if(it != this->drivers.end()) {
+      return &(*it);
+    }
+    throw NonExistingDataException("Driver ID" + to_string(id));
+  } catch (NonExistingDataException &error) {
+    cout << error.what() << endl;
   }
-  throw NonExistingDataException("Driver ID");
+  return nullptr;
 }
 
 void DriverContainer::add(Driver &driver) {
@@ -105,23 +110,35 @@ void DriverContainer::addVacation(Vacation *vacation) {
 
   } catch (DuplicatedDataException &error) {
     cout << error.what() << endl;
+  } catch (InvalidDataException &error) {
+    cout << error.what() << endl;
+  } catch (NonExistingDataException &error) {
+    cout << error.what() << endl;
   }
 }
 
 void DriverContainer::update(int id, Vacation *vacation) {
-  list<Driver>::iterator it = search(id);
-  if (it != this->drivers.end()) {
-    it->getVacations().push_back(vacation);
-  } else {
-    throw NonExistingDataException("Driver(id): " + to_string(id));
+  try {
+    list<Driver>::iterator it = search(id);
+    if (it != this->drivers.end()) {
+      it->getVacations().push_back(vacation);
+    } else {
+      throw NonExistingDataException("Driver(id): " + to_string(id));
+    }
+  } catch (NonExistingDataException &error) {
+    cout << error.what() << endl;
   }
 }
 
 void DriverContainer::updateAvailability(int id, bool available) {
-  list<Driver>::iterator it = search(id);
-  if (it != this->drivers.end()) {
-    it->setAvailability(available);
-  } else {
-    throw NonExistingDataException("Driver (id): " + id);
+  try {
+    list<Driver>::iterator it = search(id);
+    if (it != this->drivers.end()) {
+      it->setAvailability(available);
+    } else {
+      throw NonExistingDataException("Driver (id): " + id);
+    }
+  } catch (NonExistingDataException &error) {
+    cout << error.what() << endl;
   }
 }

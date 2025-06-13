@@ -80,7 +80,7 @@ void TripSerialization::fromJSON(const json &j, Trip &trip, DriverContainer& dri
 
 
 
-  if (j["vehicleLicensePlate"] != -1) {
+  if (j["vehicleLicensePlate"] != "No Vehicle") {
     string vehicleLicensePlate = j["vehicleLicensePlate"].get<string>();
     Vehicle* vehicle = vehicleContainer.get(vehicleLicensePlate);           
     trip.setVehicle(vehicle);

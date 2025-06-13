@@ -112,12 +112,13 @@ void Vehicle::setFuel(const double fuel) {
 }
 
 void Vehicle::setInsurance(Insurance *insurance) {
-    this->insurance = insurance;
+    if (this->insurance) {delete this->insurance;}
+    else {this->insurance = insurance;}
 }
 
 void Vehicle::setInspection(Inspection *inspection) {
-    this->inspection = inspection;
-
+    if (this->inspection) {delete this->inspection;}
+    else {this->inspection = inspection;}
 }
 
 void Vehicle::setVSL(VehicleStorageLocation *vsl) {

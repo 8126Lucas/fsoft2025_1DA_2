@@ -21,11 +21,16 @@ list<Order>::iterator OrderContainer::search(int orderID) {
 }
 
 Order *OrderContainer::get(int orderID) {
-    list<Order>::iterator it = search(orderID);
-    if (it != this->orders.end()) {
-        return &(*it);
+    try {
+        list<Order>::iterator it = search(orderID);
+        if (it != this->orders.end()) {
+            return &(*it);
+        }
+        throw NonExistingDataException("Order ID");
+    } catch (NonExistingDataException &error) {
+        cout << error.what() << endl;
     }
-    throw NonExistingDataException("Order ID");
+    return nullptr;
 }
 
 void OrderContainer::add(Order &order) {

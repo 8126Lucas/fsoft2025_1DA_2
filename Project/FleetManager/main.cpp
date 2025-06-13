@@ -14,7 +14,7 @@ int main() {
         Controller controller(enterprise);
         controller.run();
 
-        cout << "Closing FleetManager..." << endl;
+        cout << "\nClosing FleetManager..." << endl;
 
         return 0;
     }

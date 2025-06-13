@@ -28,39 +28,51 @@ VSLContainer::~VSLContainer() {
 }
 
 void VSLContainer::add(VehicleStorageLocation *location) {
-    list<VehicleStorageLocation*>::iterator it = search(location->getID());
-    if (it == this->locations.end()) {
-        this->locations.push_back(location);
-    }
-    else {
-        delete location;
-        string msg = "Storage Location: " + to_string(location->getID());
-        throw DuplicatedDataException(msg);
+    try {
+        list<VehicleStorageLocation*>::iterator it = search(location->getID());
+        if (it == this->locations.end()) {
+            this->locations.push_back(location);
+        }
+        else {
+            delete location;
+            string msg = "Storage Location";
+            throw DuplicatedDataException(msg);
+        }
+    } catch (DuplicatedDataException &error) {
+        cout << error.what() << endl;
     }
 }
 
 void VSLContainer::remove(int id) {
-    list<VehicleStorageLocation*>::iterator it = search(id);
-    if (it != this->locations.end()) {
-        delete *it;
-        this->locations.erase(it);
-    }
-    else {
-        string msg = "Storage Location: " + to_string(id);
-        throw NonExistingDataException(msg);
+    try {
+        list<VehicleStorageLocation*>::iterator it = search(id);
+        if (it != this->locations.end()) {
+            delete *it;
+            this->locations.erase(it);
+        }
+        else {
+            string msg = "Storage Location: " + to_string(id);
+            throw NonExistingDataException(msg);
+        }
+    } catch (NonExistingDataException &error) {
+        cout << error.what() << endl;
     }
 }
 
 void VSLContainer::update(VehicleStorageLocation *location) {
-    list<VehicleStorageLocation*>::iterator it = search(location->getID());
-    if (it != this->locations.end()) {
-        delete *it;
-        this->locations.erase(it);
-        this->locations.push_back(location);
-    }
-    else {
-        string msg = "Storage Location: " + to_string(location->getID());
-        throw NonExistingDataException(msg);
+    try {
+        list<VehicleStorageLocation*>::iterator it = search(location->getID());
+        if (it != this->locations.end()) {
+            delete *it;
+            this->locations.erase(it);
+            this->locations.push_back(location);
+        }
+        else {
+            string msg = "Storage Location: " + to_string(location->getID());
+            throw NonExistingDataException(msg);
+        }
+    } catch (NonExistingDataException &error) {
+        cout << error.what() << endl;
     }
 }
 

@@ -81,14 +81,18 @@ Trip *TripContainer::getTrip(const int id)
 }
 
 void TripContainer::update(Trip &trip) {
-  list<Trip>::iterator it = search(trip.getID());
-  if (it != this->trips.end()) {
-    this->trips.erase(it);
-    this->trips.push_back(trip);
-  }
-  else {
-    string msg = "Trip: " + to_string(trip.getID());
-    throw NonExistingDataException(msg);
+  try {
+    list<Trip>::iterator it = search(trip.getID());
+    if (it != this->trips.end()) {
+      this->trips.erase(it);
+      this->trips.push_back(trip);
+    }
+    else {
+      string msg = "Trip: " + to_string(trip.getID());
+      throw NonExistingDataException(msg);
+    }
+  } catch (NonExistingDataException &error) {
+    cout << error.what() << endl;
   }
 }
 

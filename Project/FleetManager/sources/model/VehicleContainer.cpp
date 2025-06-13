@@ -28,6 +28,34 @@ list<Van*>::iterator VehicleContainer::searchVan(const string &licensePlate) {
     return vans.end();
 }
 
+bool VehicleContainer::searchInspection(int inspectionID) {
+    for (const Truck *truck : trucks) {
+        if (truck->getInspection() && truck->getInspectionID() == inspectionID) {
+            return true;
+        }
+    }
+    for (const Van *van : vans) {
+        if (van->getInspection() && van->getInspectionID() == inspectionID) {
+            return true;
+        }
+    }
+    return false;
+}
+
+bool VehicleContainer::searchInsurance(int insuranceID) {
+    for (const Truck *truck : trucks) {
+        if (truck->getInsurance() && truck->getInsuranceID() == insuranceID) {
+            return true;
+        }
+    }
+    for (const Van *van : vans) {
+        if (van->getInsurance() && van->getInsuranceID() == insuranceID) {
+            return true;
+        }
+    }
+    return false;
+}
+
 VehicleContainer::~VehicleContainer() {
     for (Truck *truck : trucks) {
         delete truck;
