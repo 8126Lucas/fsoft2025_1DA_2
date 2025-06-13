@@ -57,7 +57,7 @@ TEST_F(VehicleTest, AddInsurance) {
     EXPECT_EQ(testInsurance->getStartDate(), startDate);
     EXPECT_EQ(testInsurance->getEndDate(), endDate);
     EXPECT_EQ(testInsurance->getMonthlyCost(), 100.99);
-    EXPECT_NE(vehicle->getInsurance(), nullptr);
+    EXPECT_EQ(vehicle->getInsurance(), testInsurance);
 
     delete testInsurance;
 }
@@ -103,7 +103,7 @@ TEST_F(VehicleTest, AddInspection) {
     EXPECT_EQ(testInspection->getID(), 1);
     EXPECT_EQ(testInspection->getDate(), date);
     EXPECT_EQ(testInspection->getCost(), 10.99);
-    EXPECT_NE(vehicle->getInspection(), nullptr);
+    EXPECT_EQ(vehicle->getInspection(), testInspection);
 
     delete testInspection;
 }

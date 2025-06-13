@@ -6,15 +6,7 @@
             "id": 1,
             "license": "B",
             "timeToRetire": 0,
-            "vacations": [
-                {
-                    "driverID": 0,
-                    "endDate": "1/1/2021",
-                    "id": 1,
-                    "startDate": "1/1/2020",
-                    "status": false
-                }
-            ]
+            "vacations": []
         },
         {
             "age": 25,
