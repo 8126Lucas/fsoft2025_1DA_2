@@ -69,10 +69,6 @@ TEST_F(FinancialContainerTest, RecordDuplicatedExpense) {
     delete expense;
 }
 
-//recordInvalidExpense
-
-//removeExpense
-
 TEST_F(FinancialContainerTest, RemoveValidExpense) {
     Order* order = new Order(1, 1, Date(1,1,2025), "Porto", "Lisboa", 10, 15, 100, IN_PROGRESS);
     char driverLicense = 'B';
@@ -96,9 +92,21 @@ TEST_F(FinancialContainerTest, RemoveValidExpense) {
     delete expense;
 }
 
+TEST_F(FinancialContainerTest, RemoveNonExistingExpense) {
+    testing::internal::CaptureStdout();
+    financialContainer->removeExpense(1);
+    string output = testing::internal::GetCapturedStdout();
+    EXPECT_EQ(output, "!! Error: \"Expense (id): 1\" does not exist !!\n");
+    EXPECT_EQ(financialContainer->listExpense().size(), 0);
+}
+
 //listExpenses
 
+
+
 //listExpensesByType
+
+
 
 TEST_F(FinancialContainerTest, RecordValidRevenue) {
     Order *order = new Order(1, 1, Date(1,1,2025),"Porto", "Lisboa", 10, 15, 100, IN_PROGRESS);
@@ -126,10 +134,6 @@ TEST_F(FinancialContainerTest, RecordDuplicatedRevenue) {
     delete revenue;
 }
 
-//recordInvalidRevenue
-
-//removeRevenue
-
 TEST_F(FinancialContainerTest, RemoveValidRevenue) {
     Order *order = new Order(1, 1, Date(1,1,2025),"Porto", "Lisboa", 10, 15, 100, IN_PROGRESS);
     Revenue *revenue = new Revenue(1, order, Date(1,1,2025), 100);
@@ -144,8 +148,21 @@ TEST_F(FinancialContainerTest, RemoveValidRevenue) {
     delete revenue;
 }
 
+TEST_F(FinancialContainerTest, RemoveNonExistingRevenue) {
+    testing::internal::CaptureStdout();
+    financialContainer->removeRevenue(1);
+    string output = testing::internal::GetCapturedStdout();
+    EXPECT_EQ(output, "!! Error: \"Revenue (id): 1\" does not exist !!\n");
+    EXPECT_EQ(financialContainer->listRevenue().size(), 0);
+}
+
 //listRevenues
+
+
 
 //listTransactions
 
+
+
 //showBalance
+
