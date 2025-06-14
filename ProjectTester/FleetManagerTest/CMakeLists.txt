@@ -75,6 +75,7 @@ add_executable(runTests
         financialContainer_test.cpp
         vehicleContainer_test.cpp
         vslContainer_test.cpp
+        tripContainer_test.cpp
         ${APP_SOURCES}
 )
 

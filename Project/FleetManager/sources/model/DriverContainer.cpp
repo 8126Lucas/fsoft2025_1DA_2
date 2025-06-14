@@ -19,18 +19,17 @@ list<Driver>::iterator DriverContainer::search(int id) {
 }
 
 Driver *DriverContainer::get(int id) {
-  try {
-    list<Driver>::iterator it = search(id);
-    if(it != this->drivers.end()) {
-      return &(*it);
+    try {
+      list<Driver>::iterator it = search(id);
+      if(it != this->drivers.end()) {
+        return &(*it);
+      }
+      throw NonExistingDataException("Driver ID");
+    } catch (NonExistingDataException &error) {
+      cout << error.what() << endl;
     }
-    throw NonExistingDataException("Driver ID" + to_string(id));
-  } catch (NonExistingDataException &error) {
-    cout << error.what() << endl;
-  }
   return nullptr;
 }
-
 void DriverContainer::add(Driver &driver) {
   try {
     if (driver.getID() < 0 || driver.getID() == 0) {

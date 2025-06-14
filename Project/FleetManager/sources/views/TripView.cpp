@@ -69,12 +69,17 @@ void TripView::printTrip(Trip *trip){
 }
 
 void TripView::printListTrips(list<Trip> &trips) {
-    cout << "\n*** List of Trips: " << trips.size() << " ***\n\n";
-    list<Trip>::iterator it = trips.begin();
-    for (; it != trips.end(); ++it) {
-        printTrip(&*it);
+    if (trips.empty()) {
+        cout << "Trip list is empty.\n";
+    }else {
+        cout << "\n*** List of Trips: " << trips.size() << " ***\n\n";
+        list<Trip>::iterator it = trips.begin();
+        for (; it != trips.end(); ++it) {
+            printTrip(&*it);
+        }
+        cout << "\n\n";
     }
-    cout << "\n\n";
+
 }
 
 
@@ -85,19 +90,40 @@ void TripView::startTrip(TripContainer &containerTrip, DriverContainer &containe
         try {
             flag_error = false;
             Trip *trip = Utils::getTrip(containerTrip, "Trip ID");
+            if (trip == nullptr) {
+                throw NonExistingDataException();
+            }
             Driver *driver = Utils::getDriver(containerDriver , "Driver ID");
+            if (driver == nullptr) {
+                throw NonExistingDataException();
+            }
+            if (driver != nullptr && driver->getAvailability() == false) {
+                throw InvalidDataException("Driver is not available. ID");
+            }
+            double fuel = Utils::getDouble("Fuel Spent (%)");
             Vehicle *vehicle = Utils::getVehicle(containerVehicle , "Vehicle's License Plate");
 
-            if (driver->getLicense() == 'B' && vehicle->getCategory() == TRUCK || driver->getLicense() == 'C' && vehicle->getCategory() == VAN) {
+            if (vehicle != nullptr && fuel > vehicle->getFuel()) {
+                throw InvalidDataException("Vehicle does not have enough fuel. License Plate");
+            }
+            if (driver != nullptr && vehicle != nullptr && (driver->getLicense() == 'B' && vehicle->getCategory() == TRUCK
+                || driver->getLicense() == 'C' && vehicle->getCategory() == VAN)) {
                 throw InvalidDataException("Driver is not equipped for this Trip. License");
+            }
+            if (vehicle != nullptr && vehicle->getAvailability() == false ) {
+                throw InvalidDataException("Vehicle is not available. License Plate");
             }
 
             trip->setState(INCOMING);
+            trip->setFuel(fuel);
+            trip->setVehicle(vehicle);
             trip->setDriver(driver);
             driver->setAvailability(false);
-            trip->setVehicle(vehicle);
             vehicle->setAvailability(false);
         }catch (InvalidDataException &error) {
+            cout << error.what() << endl;
+            flag_error = true;
+        }catch (NonExistingDataException &error) {
             cout << error.what() << endl;
             flag_error = true;
         }
@@ -110,14 +136,13 @@ void TripView::endTrip(TripContainer &containerTrip, DriverContainer &containerD
         try {
             flag_error = false;
             Trip *trip = Utils::getTrip(containerTrip, "Trip ID");
-            double km = Utils::getDouble("Kilometers: ");
-            double fuel = Utils::getDouble("Fuel Spent (%): ");
-            double fuelCost = Utils::getDouble("Fuel Cost (€): ");
-            double fines = Utils::getDouble("Fines (€): ");
-            double tolls = Utils::getDouble("Tolls (€): ");
+            double km = Utils::getDouble("Kilometers");
+
+            double fuelCost = Utils::getDouble("Fuel Cost (€)");
+            double fines = Utils::getDouble("Fines (€)");
+            double tolls = Utils::getDouble("Tolls (€)");
             trip->setState(DELIVERED);
             trip->setKM(km);
-            trip->setFuel(fuel);
             trip->setFuelCost(fuelCost);
             trip->setFines(fines);
             trip->setTolls(tolls);
@@ -137,8 +162,10 @@ void TripView::failTrip(Trip *trip) {
         try {
             trip->setState(FAILED);
             trip->setCost(trip->getCost() * 1.05);
-            trip->getVehicle()->setAvailability(true);
-            trip->getDriver()->setAvailability(true);
+            if (trip->getVehicle() != nullptr && trip->getDriver() != nullptr) {
+                trip->getVehicle()->setAvailability(true);
+                trip->getDriver()->setAvailability(true);
+            }
         }catch (InvalidDataException &error) {
             cout << error.what() << endl;
             flag_error = true;

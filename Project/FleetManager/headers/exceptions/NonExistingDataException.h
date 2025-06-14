@@ -12,6 +12,7 @@ using namespace std;
 class NonExistingDataException : public runtime_error {
 public:
     NonExistingDataException(const string &data);
+    NonExistingDataException();
     const char *what() const noexcept override;
 };
 
