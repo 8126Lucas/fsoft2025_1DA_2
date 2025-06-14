@@ -3,7 +3,7 @@
 	"artifacts" : 
 	[
 		{
-			"path" : "lib/libgmock.a"
+			"path" : "lib/libgtest_main.a"
 		}
 	],
 	"backtrace" : 3,
@@ -23,7 +23,7 @@
 		"files" : 
 		[
 			"googleTestLib/googletest-main/googletest/cmake/internal_utils.cmake",
-			"googleTestLib/googletest-main/googlemock/CMakeLists.txt"
+			"googleTestLib/googletest-main/googletest/CMakeLists.txt"
 		],
 		"nodes" : 
 		[
@@ -33,7 +33,7 @@
 			{
 				"command" : 2,
 				"file" : 1,
-				"line" : 97,
+				"line" : 138,
 				"parent" : 0
 			},
 			{
@@ -51,7 +51,7 @@
 			{
 				"command" : 4,
 				"file" : 1,
-				"line" : 116,
+				"line" : 155,
 				"parent" : 0
 			},
 			{
@@ -63,13 +63,13 @@
 			{
 				"command" : 5,
 				"file" : 1,
-				"line" : 98,
+				"line" : 150,
 				"parent" : 0
 			},
 			{
 				"command" : 6,
 				"file" : 1,
-				"line" : 75,
+				"line" : 113,
 				"parent" : 0
 			},
 			{
@@ -86,31 +86,23 @@
 			"compileCommandFragments" : 
 			[
 				{
-					"fragment" : "-g -std=c++17 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX15.5.sdk -fcolor-diagnostics"
+					"fragment" : "-g -std=c++17 -fdiagnostics-color=always"
 				},
 				{
-					"fragment" : " -DGTEST_HAS_PTHREAD=1  "
+					"fragment" : "-Wall -Wshadow -Wundef -Wno-error=dangling-else -DGTEST_HAS_PTHREAD=0 -fexceptions -Wextra -Wno-unused-parameter -Wno-missing-field-initializers"
 				}
 			],
 			"includes" : 
 			[
 				{
 					"backtrace" : 7,
-					"path" : "/Users/vitorteixeira/Desktop/FSOFT/PL3/fsoft2025_1DA_2/ProjectTester/FleetManagerTest/googleTestLib/googletest-main/googlemock/include"
-				},
-				{
-					"backtrace" : 7,
-					"path" : "/Users/vitorteixeira/Desktop/FSOFT/PL3/fsoft2025_1DA_2/ProjectTester/FleetManagerTest/googleTestLib/googletest-main/googlemock"
+					"isSystem" : true,
+					"path" : "C:/Projects/fsoft2025_1DA_2/ProjectTester/FleetManagerTest/googleTestLib/googletest-main/googletest/include"
 				},
 				{
 					"backtrace" : 7,
 					"isSystem" : true,
-					"path" : "/Users/vitorteixeira/Desktop/FSOFT/PL3/fsoft2025_1DA_2/ProjectTester/FleetManagerTest/googleTestLib/googletest-main/googletest/include"
-				},
-				{
-					"backtrace" : 7,
-					"isSystem" : true,
-					"path" : "/Users/vitorteixeira/Desktop/FSOFT/PL3/fsoft2025_1DA_2/ProjectTester/FleetManagerTest/googleTestLib/googletest-main/googletest"
+					"path" : "C:/Projects/fsoft2025_1DA_2/ProjectTester/FleetManagerTest/googleTestLib/googletest-main/googletest"
 				}
 			],
 			"language" : "CXX",
@@ -135,7 +127,7 @@
 			"id" : "gtest::@79732f80372d91d4dab1"
 		}
 	],
-	"id" : "gmock::@0c852b0791967df3fc09",
+	"id" : "gtest_main::@79732f80372d91d4dab1",
 	"install" : 
 	{
 		"destinations" : 
@@ -147,15 +139,15 @@
 		],
 		"prefix" : 
 		{
-			"path" : "/usr/local"
+			"path" : "C:/Program Files (x86)/FleetManagerTest"
 		}
 	},
-	"name" : "gmock",
-	"nameOnDisk" : "libgmock.a",
+	"name" : "gtest_main",
+	"nameOnDisk" : "libgtest_main.a",
 	"paths" : 
 	{
-		"build" : "googleTestLib/googletest-main/googlemock",
-		"source" : "googleTestLib/googletest-main/googlemock"
+		"build" : "googleTestLib/googletest-main/googletest",
+		"source" : "googleTestLib/googletest-main/googletest"
 	},
 	"sourceGroups" : 
 	[
@@ -172,7 +164,7 @@
 		{
 			"backtrace" : 3,
 			"compileGroupIndex" : 0,
-			"path" : "googleTestLib/googletest-main/googlemock/src/gmock-all.cc",
+			"path" : "googleTestLib/googletest-main/googletest/src/gtest_main.cc",
 			"sourceGroupIndex" : 0
 		}
 	],
