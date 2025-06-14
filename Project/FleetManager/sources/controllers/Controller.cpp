@@ -184,14 +184,14 @@ void Controller::runTrip() {
                 TripContainer &containerTrip = this->model.getTripContainer();
                 containerTrip.add(trip);
             }
-                break;
+            break;
             case 2: {
                 TripContainer &containerTrip = this->model.getTripContainer();
                 DriverContainer &containerDriver = this->model.getDriverContainer();
                 VehicleContainer &containerVehicle = this->model.getVehicleContainer();
                 this->tripView.startTrip(containerTrip, containerDriver, containerVehicle);
             }
-                break;
+            break;
             case 3: {
                 DriverContainer &containerDriver = this->model.getDriverContainer();
                 VehicleContainer &containerVehicle = this->model.getVehicleContainer();
@@ -200,21 +200,21 @@ void Controller::runTrip() {
                 this->tripView.endTrip(containerTrip, containerDriver, containerVehicle);
 
             }
-                break;
+            break;
             case 4: {
                 TripContainer &containerTrip = this->model.getTripContainer();
                 int id = Utils::getInt("Trip ID");
                 Trip *trip = containerTrip.getTrip(id);
                 this->tripView.failTrip(trip);
-                containerTrip.update(*trip);
+
             }
-                break;
+            break;
             case 5: {
                 TripContainer &containerTrip = this->model.getTripContainer();
                 list<Trip> listTrips = containerTrip.listTrips();
                 this->tripView.printListTrips(listTrips);
             }
-                break;
+            break;
             case 6: {
                 DriverContainer &containerDriver = this->model.getDriverContainer();
                 TripContainer &containerTrip = this->model.getTripContainer();
@@ -222,7 +222,7 @@ void Controller::runTrip() {
                 list<Trip> listTrips = containerTrip.listTripsByDriver(*driver);
                 this->tripView.printListTrips(listTrips);
             }
-                break;
+            break;
             case 7: {
                 TripContainer &containerTrip = this->model.getTripContainer();
                 list<Trip> listFailed = containerTrip.listTripsByState(FAILED);
@@ -237,20 +237,14 @@ void Controller::runTrip() {
                 if (!listIncoming.empty()) {
                     this->tripView.printListTrips(listIncoming);
                 }
-                if (!listFailed.empty() && !listSupressed.empty() && !listIncoming.empty()) {
-                    cout << "\nTHERE ARE NO UNCOMPLETED TRIPS IN THE RECORDS!\n";
-                }
             }
-                break;
+            break;
             case 8: {
                 TripContainer &containerTrip = this->model.getTripContainer();
                 list<Trip> listDelivered = containerTrip.listTripsByState(DELIVERED);
-                if (!listDelivered.empty()) {
-                    this->tripView.printListTrips(listDelivered);
-                }
-                else {cout << "\nTHERE ARE NO COMPLETED TRIPS IN THE RECORDS!\n";}
+                this->tripView.printListTrips(listDelivered);
             }
-                break;
+            break;
         }
     } while (op != 0);
 }

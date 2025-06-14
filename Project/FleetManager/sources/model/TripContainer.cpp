@@ -28,7 +28,7 @@ void TripContainer::add(Trip &trip) {
     if (it == this->trips.end()) {
       this->trips.push_back(trip);
     }else{
-      string msg = "Trip already exists.";
+      string msg = "Trip " + to_string(trip.getID()) ;
       throw DuplicatedDataException(msg);
     }
   }catch(DuplicatedDataException &error) {

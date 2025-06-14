@@ -12,7 +12,9 @@ using namespace std;
 class InvalidDataException : public runtime_error {
 public:
     InvalidDataException(const string &data);
+    InvalidDataException();
     const char *what() const noexcept override;
+
 };
 
 
