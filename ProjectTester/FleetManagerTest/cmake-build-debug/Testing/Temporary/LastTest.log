@@ -1,3 +1,3166 @@
-Start testing: Jun 14 21:46 Hora de Ver�o de GMT
+Start testing: Jun 14 22:42 WEST
 ----------------------------------------------------------
-End testing: Jun 14 21:46 Hora de Ver�o de GMT
+1/117 Testing: DataTest.LoadAllData
+1/117 Test: DataTest.LoadAllData
+Command: "/home/dinis/CLionProjects/fsoft2025_1DA_2_definitivo/ProjectTester/FleetManagerTest/cmake-build-debug/runTests" "--gtest_filter=DataTest.LoadAllData" "--gtest_also_run_disabled_tests"
+Directory: /home/dinis/CLionProjects/fsoft2025_1DA_2_definitivo/ProjectTester/FleetManagerTest/cmake-build-debug
+"DataTest.LoadAllData" start time: Jun 14 22:42 WEST
+Output:
+----------------------------------------------------------
+Running main() from /home/dinis/CLionProjects/fsoft2025_1DA_2_definitivo/ProjectTester/FleetManagerTest/googleTestLib/googletest-main/googletest/src/gtest_main.cc
+Note: Google Test filter = DataTest.LoadAllData
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from DataTest
+[ RUN      ] DataTest.LoadAllData
+runTests: /home/dinis/CLionProjects/fsoft2025_1DA_2_definitivo/ProjectTester/FleetManagerTest/../../Project/FleetManager/headers/serial/nlohmann/json.hpp:17944: const nlohmann::basic_json<ObjectType, ArrayType, StringType, BooleanType, NumberIntegerType, NumberUnsignedType, NumberFloatType, AllocatorType, JSONSerializer>::value_type& nlohmann::basic_json<ObjectType, ArrayType, StringType, BooleanType, NumberIntegerType, NumberUnsignedType, NumberFloatType, AllocatorType, JSONSerializer>::operator[](T*) const [with T = const char; ObjectType = std::map; ArrayType = std::vector; StringType = std::__cxx11::basic_string<char>; BooleanType = bool; NumberIntegerType = long int; NumberUnsignedType = long unsigned int; NumberFloatType = double; AllocatorType = std::allocator; JSONSerializer = nlohmann::adl_serializer; const_reference = const nlohmann::basic_json<>&]: Assertion `m_value.object->find(key) != m_value.object->end()' failed.
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Failed.
+"DataTest.LoadAllData" end time: Jun 14 22:42 WEST
+"DataTest.LoadAllData" time elapsed: 00:00:00
+----------------------------------------------------------
+
+2/117 Testing: DataTest.SaveAllData
+2/117 Test: DataTest.SaveAllData
+Command: "/home/dinis/CLionProjects/fsoft2025_1DA_2_definitivo/ProjectTester/FleetManagerTest/cmake-build-debug/runTests" "--gtest_filter=DataTest.SaveAllData" "--gtest_also_run_disabled_tests"
+Directory: /home/dinis/CLionProjects/fsoft2025_1DA_2_definitivo/ProjectTester/FleetManagerTest/cmake-build-debug
+"DataTest.SaveAllData" start time: Jun 14 22:42 WEST
+Output:
+----------------------------------------------------------
+Running main() from /home/dinis/CLionProjects/fsoft2025_1DA_2_definitivo/ProjectTester/FleetManagerTest/googleTestLib/googletest-main/googletest/src/gtest_main.cc
+Note: Google Test filter = DataTest.SaveAllData
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from DataTest
+[ RUN      ] DataTest.SaveAllData
+
+Saving into "vehicle.json"... ✅
+Saving into "vsl.json"... ✅
+Saving into "driver.json"... ✅
+Saving into "financial.json"... ✅
+Saving into "trip.json"... ✅
+Saving into "order.json"... ✅
+Loading "order.json"...  ✅
+Loading "vehicle.json"...  ✅
+Loading "vsl.json"...  ✅
+Loading "driver.json"...  ✅
+Loading "trip.json"...  ✅
+Loading "financial.json"...  ✅
+runTests: /home/dinis/CLionProjects/fsoft2025_1DA_2_definitivo/ProjectTester/FleetManagerTest/../../Project/FleetManager/headers/serial/nlohmann/json.hpp:17944: const nlohmann::basic_json<ObjectType, ArrayType, StringType, BooleanType, NumberIntegerType, NumberUnsignedType, NumberFloatType, AllocatorType, JSONSerializer>::value_type& nlohmann::basic_json<ObjectType, ArrayType, StringType, BooleanType, NumberIntegerType, NumberUnsignedType, NumberFloatType, AllocatorType, JSONSerializer>::operator[](T*) const [with T = const char; ObjectType = std::map; ArrayType = std::vector; StringType = std::__cxx11::basic_string<char>; BooleanType = bool; NumberIntegerType = long int; NumberUnsignedType = long unsigned int; NumberFloatType = double; AllocatorType = std::allocator; JSONSerializer = nlohmann::adl_serializer; const_reference = const nlohmann::basic_json<>&]: Assertion `m_value.object->find(key) != m_value.object->end()' failed.
+<end of output>
+Test time =   0.01 sec
+----------------------------------------------------------
+Test Failed.
+"DataTest.SaveAllData" end time: Jun 14 22:42 WEST
+"DataTest.SaveAllData" time elapsed: 00:00:00
+----------------------------------------------------------
+
+3/117 Testing: OrderTest.ConstructorAndInicialization
+3/117 Test: OrderTest.ConstructorAndInicialization
+Command: "/home/dinis/CLionProjects/fsoft2025_1DA_2_definitivo/ProjectTester/FleetManagerTest/cmake-build-debug/runTests" "--gtest_filter=OrderTest.ConstructorAndInicialization" "--gtest_also_run_disabled_tests"
+Directory: /home/dinis/CLionProjects/fsoft2025_1DA_2_definitivo/ProjectTester/FleetManagerTest/cmake-build-debug
+"OrderTest.ConstructorAndInicialization" start time: Jun 14 22:42 WEST
+Output:
+----------------------------------------------------------
+Running main() from /home/dinis/CLionProjects/fsoft2025_1DA_2_definitivo/ProjectTester/FleetManagerTest/googleTestLib/googletest-main/googletest/src/gtest_main.cc
+Note: Google Test filter = OrderTest.ConstructorAndInicialization
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from OrderTest
+[ RUN      ] OrderTest.ConstructorAndInicialization
+[       OK ] OrderTest.ConstructorAndInicialization (0 ms)
+[----------] 1 test from OrderTest (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"OrderTest.ConstructorAndInicialization" end time: Jun 14 22:42 WEST
+"OrderTest.ConstructorAndInicialization" time elapsed: 00:00:00
+----------------------------------------------------------
+
+4/117 Testing: OrderTest.TestSetOrder
+4/117 Test: OrderTest.TestSetOrder
+Command: "/home/dinis/CLionProjects/fsoft2025_1DA_2_definitivo/ProjectTester/FleetManagerTest/cmake-build-debug/runTests" "--gtest_filter=OrderTest.TestSetOrder" "--gtest_also_run_disabled_tests"
+Directory: /home/dinis/CLionProjects/fsoft2025_1DA_2_definitivo/ProjectTester/FleetManagerTest/cmake-build-debug
+"OrderTest.TestSetOrder" start time: Jun 14 22:42 WEST
+Output:
+----------------------------------------------------------
+Running main() from /home/dinis/CLionProjects/fsoft2025_1DA_2_definitivo/ProjectTester/FleetManagerTest/googleTestLib/googletest-main/googletest/src/gtest_main.cc
+Note: Google Test filter = OrderTest.TestSetOrder
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from OrderTest
+[ RUN      ] OrderTest.TestSetOrder
+[       OK ] OrderTest.TestSetOrder (0 ms)
+[----------] 1 test from OrderTest (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"OrderTest.TestSetOrder" end time: Jun 14 22:42 WEST
+"OrderTest.TestSetOrder" time elapsed: 00:00:00
+----------------------------------------------------------
+
+5/117 Testing: OrderTest.TestOrderStatusDefault
+5/117 Test: OrderTest.TestOrderStatusDefault
+Command: "/home/dinis/CLionProjects/fsoft2025_1DA_2_definitivo/ProjectTester/FleetManagerTest/cmake-build-debug/runTests" "--gtest_filter=OrderTest.TestOrderStatusDefault" "--gtest_also_run_disabled_tests"
+Directory: /home/dinis/CLionProjects/fsoft2025_1DA_2_definitivo/ProjectTester/FleetManagerTest/cmake-build-debug
+"OrderTest.TestOrderStatusDefault" start time: Jun 14 22:42 WEST
+Output:
+----------------------------------------------------------
+Running main() from /home/dinis/CLionProjects/fsoft2025_1DA_2_definitivo/ProjectTester/FleetManagerTest/googleTestLib/googletest-main/googletest/src/gtest_main.cc
+Note: Google Test filter = OrderTest.TestOrderStatusDefault
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from OrderTest
+[ RUN      ] OrderTest.TestOrderStatusDefault
+[       OK ] OrderTest.TestOrderStatusDefault (0 ms)
+[----------] 1 test from OrderTest (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"OrderTest.TestOrderStatusDefault" end time: Jun 14 22:42 WEST
+"OrderTest.TestOrderStatusDefault" time elapsed: 00:00:00
+----------------------------------------------------------
+
+6/117 Testing: OrderTest.TestOrderStatusChange
+6/117 Test: OrderTest.TestOrderStatusChange
+Command: "/home/dinis/CLionProjects/fsoft2025_1DA_2_definitivo/ProjectTester/FleetManagerTest/cmake-build-debug/runTests" "--gtest_filter=OrderTest.TestOrderStatusChange" "--gtest_also_run_disabled_tests"
+Directory: /home/dinis/CLionProjects/fsoft2025_1DA_2_definitivo/ProjectTester/FleetManagerTest/cmake-build-debug
+"OrderTest.TestOrderStatusChange" start time: Jun 14 22:42 WEST
+Output:
+----------------------------------------------------------
+Running main() from /home/dinis/CLionProjects/fsoft2025_1DA_2_definitivo/ProjectTester/FleetManagerTest/googleTestLib/googletest-main/googletest/src/gtest_main.cc
+Note: Google Test filter = OrderTest.TestOrderStatusChange
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from OrderTest
+[ RUN      ] OrderTest.TestOrderStatusChange
+[       OK ] OrderTest.TestOrderStatusChange (0 ms)
+[----------] 1 test from OrderTest (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"OrderTest.TestOrderStatusChange" end time: Jun 14 22:42 WEST
+"OrderTest.TestOrderStatusChange" time elapsed: 00:00:00
+----------------------------------------------------------
+
+7/117 Testing: DateConstructorTest.ValidDate
+7/117 Test: DateConstructorTest.ValidDate
+Command: "/home/dinis/CLionProjects/fsoft2025_1DA_2_definitivo/ProjectTester/FleetManagerTest/cmake-build-debug/runTests" "--gtest_filter=DateConstructorTest.ValidDate" "--gtest_also_run_disabled_tests"
+Directory: /home/dinis/CLionProjects/fsoft2025_1DA_2_definitivo/ProjectTester/FleetManagerTest/cmake-build-debug
+"DateConstructorTest.ValidDate" start time: Jun 14 22:42 WEST
+Output:
+----------------------------------------------------------
+Running main() from /home/dinis/CLionProjects/fsoft2025_1DA_2_definitivo/ProjectTester/FleetManagerTest/googleTestLib/googletest-main/googletest/src/gtest_main.cc
+Note: Google Test filter = DateConstructorTest.ValidDate
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from DateConstructorTest
+[ RUN      ] DateConstructorTest.ValidDate
+[       OK ] DateConstructorTest.ValidDate (0 ms)
+[----------] 1 test from DateConstructorTest (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"DateConstructorTest.ValidDate" end time: Jun 14 22:42 WEST
+"DateConstructorTest.ValidDate" time elapsed: 00:00:00
+----------------------------------------------------------
+
+8/117 Testing: DateConstructorTest.InvalidDate
+8/117 Test: DateConstructorTest.InvalidDate
+Command: "/home/dinis/CLionProjects/fsoft2025_1DA_2_definitivo/ProjectTester/FleetManagerTest/cmake-build-debug/runTests" "--gtest_filter=DateConstructorTest.InvalidDate" "--gtest_also_run_disabled_tests"
+Directory: /home/dinis/CLionProjects/fsoft2025_1DA_2_definitivo/ProjectTester/FleetManagerTest/cmake-build-debug
+"DateConstructorTest.InvalidDate" start time: Jun 14 22:42 WEST
+Output:
+----------------------------------------------------------
+Running main() from /home/dinis/CLionProjects/fsoft2025_1DA_2_definitivo/ProjectTester/FleetManagerTest/googleTestLib/googletest-main/googletest/src/gtest_main.cc
+Note: Google Test filter = DateConstructorTest.InvalidDate
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from DateConstructorTest
+[ RUN      ] DateConstructorTest.InvalidDate
+[       OK ] DateConstructorTest.InvalidDate (0 ms)
+[----------] 1 test from DateConstructorTest (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"DateConstructorTest.InvalidDate" end time: Jun 14 22:42 WEST
+"DateConstructorTest.InvalidDate" time elapsed: 00:00:00
+----------------------------------------------------------
+
+9/117 Testing: DateSetTest.ValidDate
+9/117 Test: DateSetTest.ValidDate
+Command: "/home/dinis/CLionProjects/fsoft2025_1DA_2_definitivo/ProjectTester/FleetManagerTest/cmake-build-debug/runTests" "--gtest_filter=DateSetTest.ValidDate" "--gtest_also_run_disabled_tests"
+Directory: /home/dinis/CLionProjects/fsoft2025_1DA_2_definitivo/ProjectTester/FleetManagerTest/cmake-build-debug
+"DateSetTest.ValidDate" start time: Jun 14 22:42 WEST
+Output:
+----------------------------------------------------------
+Running main() from /home/dinis/CLionProjects/fsoft2025_1DA_2_definitivo/ProjectTester/FleetManagerTest/googleTestLib/googletest-main/googletest/src/gtest_main.cc
+Note: Google Test filter = DateSetTest.ValidDate
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from DateSetTest
+[ RUN      ] DateSetTest.ValidDate
+[       OK ] DateSetTest.ValidDate (0 ms)
+[----------] 1 test from DateSetTest (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"DateSetTest.ValidDate" end time: Jun 14 22:42 WEST
+"DateSetTest.ValidDate" time elapsed: 00:00:00
+----------------------------------------------------------
+
+10/117 Testing: DateSetTest.InvalidDate
+10/117 Test: DateSetTest.InvalidDate
+Command: "/home/dinis/CLionProjects/fsoft2025_1DA_2_definitivo/ProjectTester/FleetManagerTest/cmake-build-debug/runTests" "--gtest_filter=DateSetTest.InvalidDate" "--gtest_also_run_disabled_tests"
+Directory: /home/dinis/CLionProjects/fsoft2025_1DA_2_definitivo/ProjectTester/FleetManagerTest/cmake-build-debug
+"DateSetTest.InvalidDate" start time: Jun 14 22:42 WEST
+Output:
+----------------------------------------------------------
+Running main() from /home/dinis/CLionProjects/fsoft2025_1DA_2_definitivo/ProjectTester/FleetManagerTest/googleTestLib/googletest-main/googletest/src/gtest_main.cc
+Note: Google Test filter = DateSetTest.InvalidDate
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from DateSetTest
+[ RUN      ] DateSetTest.InvalidDate
+[       OK ] DateSetTest.InvalidDate (0 ms)
+[----------] 1 test from DateSetTest (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"DateSetTest.InvalidDate" end time: Jun 14 22:42 WEST
+"DateSetTest.InvalidDate" time elapsed: 00:00:00
+----------------------------------------------------------
+
+11/117 Testing: DateEqualTest.EqualDate
+11/117 Test: DateEqualTest.EqualDate
+Command: "/home/dinis/CLionProjects/fsoft2025_1DA_2_definitivo/ProjectTester/FleetManagerTest/cmake-build-debug/runTests" "--gtest_filter=DateEqualTest.EqualDate" "--gtest_also_run_disabled_tests"
+Directory: /home/dinis/CLionProjects/fsoft2025_1DA_2_definitivo/ProjectTester/FleetManagerTest/cmake-build-debug
+"DateEqualTest.EqualDate" start time: Jun 14 22:42 WEST
+Output:
+----------------------------------------------------------
+Running main() from /home/dinis/CLionProjects/fsoft2025_1DA_2_definitivo/ProjectTester/FleetManagerTest/googleTestLib/googletest-main/googletest/src/gtest_main.cc
+Note: Google Test filter = DateEqualTest.EqualDate
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from DateEqualTest
+[ RUN      ] DateEqualTest.EqualDate
+[       OK ] DateEqualTest.EqualDate (0 ms)
+[----------] 1 test from DateEqualTest (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"DateEqualTest.EqualDate" end time: Jun 14 22:42 WEST
+"DateEqualTest.EqualDate" time elapsed: 00:00:00
+----------------------------------------------------------
+
+12/117 Testing: DateOperatorHigherTest.HigherDate
+12/117 Test: DateOperatorHigherTest.HigherDate
+Command: "/home/dinis/CLionProjects/fsoft2025_1DA_2_definitivo/ProjectTester/FleetManagerTest/cmake-build-debug/runTests" "--gtest_filter=DateOperatorHigherTest.HigherDate" "--gtest_also_run_disabled_tests"
+Directory: /home/dinis/CLionProjects/fsoft2025_1DA_2_definitivo/ProjectTester/FleetManagerTest/cmake-build-debug
+"DateOperatorHigherTest.HigherDate" start time: Jun 14 22:42 WEST
+Output:
+----------------------------------------------------------
+Running main() from /home/dinis/CLionProjects/fsoft2025_1DA_2_definitivo/ProjectTester/FleetManagerTest/googleTestLib/googletest-main/googletest/src/gtest_main.cc
+Note: Google Test filter = DateOperatorHigherTest.HigherDate
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from DateOperatorHigherTest
+[ RUN      ] DateOperatorHigherTest.HigherDate
+[       OK ] DateOperatorHigherTest.HigherDate (0 ms)
+[----------] 1 test from DateOperatorHigherTest (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"DateOperatorHigherTest.HigherDate" end time: Jun 14 22:42 WEST
+"DateOperatorHigherTest.HigherDate" time elapsed: 00:00:00
+----------------------------------------------------------
+
+13/117 Testing: DateOperatorHigherTest.LowerDate
+13/117 Test: DateOperatorHigherTest.LowerDate
+Command: "/home/dinis/CLionProjects/fsoft2025_1DA_2_definitivo/ProjectTester/FleetManagerTest/cmake-build-debug/runTests" "--gtest_filter=DateOperatorHigherTest.LowerDate" "--gtest_also_run_disabled_tests"
+Directory: /home/dinis/CLionProjects/fsoft2025_1DA_2_definitivo/ProjectTester/FleetManagerTest/cmake-build-debug
+"DateOperatorHigherTest.LowerDate" start time: Jun 14 22:42 WEST
+Output:
+----------------------------------------------------------
+Running main() from /home/dinis/CLionProjects/fsoft2025_1DA_2_definitivo/ProjectTester/FleetManagerTest/googleTestLib/googletest-main/googletest/src/gtest_main.cc
+Note: Google Test filter = DateOperatorHigherTest.LowerDate
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from DateOperatorHigherTest
+[ RUN      ] DateOperatorHigherTest.LowerDate
+[       OK ] DateOperatorHigherTest.LowerDate (0 ms)
+[----------] 1 test from DateOperatorHigherTest (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"DateOperatorHigherTest.LowerDate" end time: Jun 14 22:42 WEST
+"DateOperatorHigherTest.LowerDate" time elapsed: 00:00:00
+----------------------------------------------------------
+
+14/117 Testing: DateOperatorLowerTest.HigherDate
+14/117 Test: DateOperatorLowerTest.HigherDate
+Command: "/home/dinis/CLionProjects/fsoft2025_1DA_2_definitivo/ProjectTester/FleetManagerTest/cmake-build-debug/runTests" "--gtest_filter=DateOperatorLowerTest.HigherDate" "--gtest_also_run_disabled_tests"
+Directory: /home/dinis/CLionProjects/fsoft2025_1DA_2_definitivo/ProjectTester/FleetManagerTest/cmake-build-debug
+"DateOperatorLowerTest.HigherDate" start time: Jun 14 22:42 WEST
+Output:
+----------------------------------------------------------
+Running main() from /home/dinis/CLionProjects/fsoft2025_1DA_2_definitivo/ProjectTester/FleetManagerTest/googleTestLib/googletest-main/googletest/src/gtest_main.cc
+Note: Google Test filter = DateOperatorLowerTest.HigherDate
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from DateOperatorLowerTest
+[ RUN      ] DateOperatorLowerTest.HigherDate
+[       OK ] DateOperatorLowerTest.HigherDate (0 ms)
+[----------] 1 test from DateOperatorLowerTest (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"DateOperatorLowerTest.HigherDate" end time: Jun 14 22:42 WEST
+"DateOperatorLowerTest.HigherDate" time elapsed: 00:00:00
+----------------------------------------------------------
+
+15/117 Testing: DateOperatorLowerTest.LowerDate
+15/117 Test: DateOperatorLowerTest.LowerDate
+Command: "/home/dinis/CLionProjects/fsoft2025_1DA_2_definitivo/ProjectTester/FleetManagerTest/cmake-build-debug/runTests" "--gtest_filter=DateOperatorLowerTest.LowerDate" "--gtest_also_run_disabled_tests"
+Directory: /home/dinis/CLionProjects/fsoft2025_1DA_2_definitivo/ProjectTester/FleetManagerTest/cmake-build-debug
+"DateOperatorLowerTest.LowerDate" start time: Jun 14 22:42 WEST
+Output:
+----------------------------------------------------------
+Running main() from /home/dinis/CLionProjects/fsoft2025_1DA_2_definitivo/ProjectTester/FleetManagerTest/googleTestLib/googletest-main/googletest/src/gtest_main.cc
+Note: Google Test filter = DateOperatorLowerTest.LowerDate
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from DateOperatorLowerTest
+[ RUN      ] DateOperatorLowerTest.LowerDate
+[       OK ] DateOperatorLowerTest.LowerDate (0 ms)
+[----------] 1 test from DateOperatorLowerTest (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"DateOperatorLowerTest.LowerDate" end time: Jun 14 22:42 WEST
+"DateOperatorLowerTest.LowerDate" time elapsed: 00:00:00
+----------------------------------------------------------
+
+16/117 Testing: TripTest.ConstructorAndInicialization
+16/117 Test: TripTest.ConstructorAndInicialization
+Command: "/home/dinis/CLionProjects/fsoft2025_1DA_2_definitivo/ProjectTester/FleetManagerTest/cmake-build-debug/runTests" "--gtest_filter=TripTest.ConstructorAndInicialization" "--gtest_also_run_disabled_tests"
+Directory: /home/dinis/CLionProjects/fsoft2025_1DA_2_definitivo/ProjectTester/FleetManagerTest/cmake-build-debug
+"TripTest.ConstructorAndInicialization" start time: Jun 14 22:42 WEST
+Output:
+----------------------------------------------------------
+Running main() from /home/dinis/CLionProjects/fsoft2025_1DA_2_definitivo/ProjectTester/FleetManagerTest/googleTestLib/googletest-main/googletest/src/gtest_main.cc
+Note: Google Test filter = TripTest.ConstructorAndInicialization
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from TripTest
+[ RUN      ] TripTest.ConstructorAndInicialization
+[       OK ] TripTest.ConstructorAndInicialization (0 ms)
+[----------] 1 test from TripTest (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"TripTest.ConstructorAndInicialization" end time: Jun 14 22:42 WEST
+"TripTest.ConstructorAndInicialization" time elapsed: 00:00:00
+----------------------------------------------------------
+
+17/117 Testing: TripTest.TestSetTrip
+17/117 Test: TripTest.TestSetTrip
+Command: "/home/dinis/CLionProjects/fsoft2025_1DA_2_definitivo/ProjectTester/FleetManagerTest/cmake-build-debug/runTests" "--gtest_filter=TripTest.TestSetTrip" "--gtest_also_run_disabled_tests"
+Directory: /home/dinis/CLionProjects/fsoft2025_1DA_2_definitivo/ProjectTester/FleetManagerTest/cmake-build-debug
+"TripTest.TestSetTrip" start time: Jun 14 22:42 WEST
+Output:
+----------------------------------------------------------
+Running main() from /home/dinis/CLionProjects/fsoft2025_1DA_2_definitivo/ProjectTester/FleetManagerTest/googleTestLib/googletest-main/googletest/src/gtest_main.cc
+Note: Google Test filter = TripTest.TestSetTrip
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from TripTest
+[ RUN      ] TripTest.TestSetTrip
+[       OK ] TripTest.TestSetTrip (0 ms)
+[----------] 1 test from TripTest (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"TripTest.TestSetTrip" end time: Jun 14 22:42 WEST
+"TripTest.TestSetTrip" time elapsed: 00:00:00
+----------------------------------------------------------
+
+18/117 Testing: TripTest.TripSuppressedState
+18/117 Test: TripTest.TripSuppressedState
+Command: "/home/dinis/CLionProjects/fsoft2025_1DA_2_definitivo/ProjectTester/FleetManagerTest/cmake-build-debug/runTests" "--gtest_filter=TripTest.TripSuppressedState" "--gtest_also_run_disabled_tests"
+Directory: /home/dinis/CLionProjects/fsoft2025_1DA_2_definitivo/ProjectTester/FleetManagerTest/cmake-build-debug
+"TripTest.TripSuppressedState" start time: Jun 14 22:42 WEST
+Output:
+----------------------------------------------------------
+Running main() from /home/dinis/CLionProjects/fsoft2025_1DA_2_definitivo/ProjectTester/FleetManagerTest/googleTestLib/googletest-main/googletest/src/gtest_main.cc
+Note: Google Test filter = TripTest.TripSuppressedState
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from TripTest
+[ RUN      ] TripTest.TripSuppressedState
+[       OK ] TripTest.TripSuppressedState (0 ms)
+[----------] 1 test from TripTest (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"TripTest.TripSuppressedState" end time: Jun 14 22:42 WEST
+"TripTest.TripSuppressedState" time elapsed: 00:00:00
+----------------------------------------------------------
+
+19/117 Testing: TripTest.TripIncomingState
+19/117 Test: TripTest.TripIncomingState
+Command: "/home/dinis/CLionProjects/fsoft2025_1DA_2_definitivo/ProjectTester/FleetManagerTest/cmake-build-debug/runTests" "--gtest_filter=TripTest.TripIncomingState" "--gtest_also_run_disabled_tests"
+Directory: /home/dinis/CLionProjects/fsoft2025_1DA_2_definitivo/ProjectTester/FleetManagerTest/cmake-build-debug
+"TripTest.TripIncomingState" start time: Jun 14 22:42 WEST
+Output:
+----------------------------------------------------------
+Running main() from /home/dinis/CLionProjects/fsoft2025_1DA_2_definitivo/ProjectTester/FleetManagerTest/googleTestLib/googletest-main/googletest/src/gtest_main.cc
+Note: Google Test filter = TripTest.TripIncomingState
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from TripTest
+[ RUN      ] TripTest.TripIncomingState
+[       OK ] TripTest.TripIncomingState (0 ms)
+[----------] 1 test from TripTest (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"TripTest.TripIncomingState" end time: Jun 14 22:42 WEST
+"TripTest.TripIncomingState" time elapsed: 00:00:00
+----------------------------------------------------------
+
+20/117 Testing: TripTest.TripDeliveredState
+20/117 Test: TripTest.TripDeliveredState
+Command: "/home/dinis/CLionProjects/fsoft2025_1DA_2_definitivo/ProjectTester/FleetManagerTest/cmake-build-debug/runTests" "--gtest_filter=TripTest.TripDeliveredState" "--gtest_also_run_disabled_tests"
+Directory: /home/dinis/CLionProjects/fsoft2025_1DA_2_definitivo/ProjectTester/FleetManagerTest/cmake-build-debug
+"TripTest.TripDeliveredState" start time: Jun 14 22:42 WEST
+Output:
+----------------------------------------------------------
+Running main() from /home/dinis/CLionProjects/fsoft2025_1DA_2_definitivo/ProjectTester/FleetManagerTest/googleTestLib/googletest-main/googletest/src/gtest_main.cc
+Note: Google Test filter = TripTest.TripDeliveredState
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from TripTest
+[ RUN      ] TripTest.TripDeliveredState
+[       OK ] TripTest.TripDeliveredState (0 ms)
+[----------] 1 test from TripTest (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"TripTest.TripDeliveredState" end time: Jun 14 22:42 WEST
+"TripTest.TripDeliveredState" time elapsed: 00:00:00
+----------------------------------------------------------
+
+21/117 Testing: TripTest.TripFailedState
+21/117 Test: TripTest.TripFailedState
+Command: "/home/dinis/CLionProjects/fsoft2025_1DA_2_definitivo/ProjectTester/FleetManagerTest/cmake-build-debug/runTests" "--gtest_filter=TripTest.TripFailedState" "--gtest_also_run_disabled_tests"
+Directory: /home/dinis/CLionProjects/fsoft2025_1DA_2_definitivo/ProjectTester/FleetManagerTest/cmake-build-debug
+"TripTest.TripFailedState" start time: Jun 14 22:42 WEST
+Output:
+----------------------------------------------------------
+Running main() from /home/dinis/CLionProjects/fsoft2025_1DA_2_definitivo/ProjectTester/FleetManagerTest/googleTestLib/googletest-main/googletest/src/gtest_main.cc
+Note: Google Test filter = TripTest.TripFailedState
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from TripTest
+[ RUN      ] TripTest.TripFailedState
+[       OK ] TripTest.TripFailedState (0 ms)
+[----------] 1 test from TripTest (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"TripTest.TripFailedState" end time: Jun 14 22:42 WEST
+"TripTest.TripFailedState" time elapsed: 00:00:00
+----------------------------------------------------------
+
+22/117 Testing: DriverTest.ConstructorAndInicialization
+22/117 Test: DriverTest.ConstructorAndInicialization
+Command: "/home/dinis/CLionProjects/fsoft2025_1DA_2_definitivo/ProjectTester/FleetManagerTest/cmake-build-debug/runTests" "--gtest_filter=DriverTest.ConstructorAndInicialization" "--gtest_also_run_disabled_tests"
+Directory: /home/dinis/CLionProjects/fsoft2025_1DA_2_definitivo/ProjectTester/FleetManagerTest/cmake-build-debug
+"DriverTest.ConstructorAndInicialization" start time: Jun 14 22:42 WEST
+Output:
+----------------------------------------------------------
+Running main() from /home/dinis/CLionProjects/fsoft2025_1DA_2_definitivo/ProjectTester/FleetManagerTest/googleTestLib/googletest-main/googletest/src/gtest_main.cc
+Note: Google Test filter = DriverTest.ConstructorAndInicialization
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from DriverTest
+[ RUN      ] DriverTest.ConstructorAndInicialization
+[       OK ] DriverTest.ConstructorAndInicialization (0 ms)
+[----------] 1 test from DriverTest (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"DriverTest.ConstructorAndInicialization" end time: Jun 14 22:42 WEST
+"DriverTest.ConstructorAndInicialization" time elapsed: 00:00:00
+----------------------------------------------------------
+
+23/117 Testing: DriverTest.TestSetDriver
+23/117 Test: DriverTest.TestSetDriver
+Command: "/home/dinis/CLionProjects/fsoft2025_1DA_2_definitivo/ProjectTester/FleetManagerTest/cmake-build-debug/runTests" "--gtest_filter=DriverTest.TestSetDriver" "--gtest_also_run_disabled_tests"
+Directory: /home/dinis/CLionProjects/fsoft2025_1DA_2_definitivo/ProjectTester/FleetManagerTest/cmake-build-debug
+"DriverTest.TestSetDriver" start time: Jun 14 22:42 WEST
+Output:
+----------------------------------------------------------
+Running main() from /home/dinis/CLionProjects/fsoft2025_1DA_2_definitivo/ProjectTester/FleetManagerTest/googleTestLib/googletest-main/googletest/src/gtest_main.cc
+Note: Google Test filter = DriverTest.TestSetDriver
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from DriverTest
+[ RUN      ] DriverTest.TestSetDriver
+[       OK ] DriverTest.TestSetDriver (0 ms)
+[----------] 1 test from DriverTest (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"DriverTest.TestSetDriver" end time: Jun 14 22:42 WEST
+"DriverTest.TestSetDriver" time elapsed: 00:00:00
+----------------------------------------------------------
+
+24/117 Testing: VacationTest.ConstructorAndInicialization
+24/117 Test: VacationTest.ConstructorAndInicialization
+Command: "/home/dinis/CLionProjects/fsoft2025_1DA_2_definitivo/ProjectTester/FleetManagerTest/cmake-build-debug/runTests" "--gtest_filter=VacationTest.ConstructorAndInicialization" "--gtest_also_run_disabled_tests"
+Directory: /home/dinis/CLionProjects/fsoft2025_1DA_2_definitivo/ProjectTester/FleetManagerTest/cmake-build-debug
+"VacationTest.ConstructorAndInicialization" start time: Jun 14 22:42 WEST
+Output:
+----------------------------------------------------------
+Running main() from /home/dinis/CLionProjects/fsoft2025_1DA_2_definitivo/ProjectTester/FleetManagerTest/googleTestLib/googletest-main/googletest/src/gtest_main.cc
+Note: Google Test filter = VacationTest.ConstructorAndInicialization
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from VacationTest
+[ RUN      ] VacationTest.ConstructorAndInicialization
+[       OK ] VacationTest.ConstructorAndInicialization (0 ms)
+[----------] 1 test from VacationTest (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"VacationTest.ConstructorAndInicialization" end time: Jun 14 22:42 WEST
+"VacationTest.ConstructorAndInicialization" time elapsed: 00:00:00
+----------------------------------------------------------
+
+25/117 Testing: VacationTest.TestSetVacation
+25/117 Test: VacationTest.TestSetVacation
+Command: "/home/dinis/CLionProjects/fsoft2025_1DA_2_definitivo/ProjectTester/FleetManagerTest/cmake-build-debug/runTests" "--gtest_filter=VacationTest.TestSetVacation" "--gtest_also_run_disabled_tests"
+Directory: /home/dinis/CLionProjects/fsoft2025_1DA_2_definitivo/ProjectTester/FleetManagerTest/cmake-build-debug
+"VacationTest.TestSetVacation" start time: Jun 14 22:42 WEST
+Output:
+----------------------------------------------------------
+Running main() from /home/dinis/CLionProjects/fsoft2025_1DA_2_definitivo/ProjectTester/FleetManagerTest/googleTestLib/googletest-main/googletest/src/gtest_main.cc
+Note: Google Test filter = VacationTest.TestSetVacation
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from VacationTest
+[ RUN      ] VacationTest.TestSetVacation
+[       OK ] VacationTest.TestSetVacation (0 ms)
+[----------] 1 test from VacationTest (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"VacationTest.TestSetVacation" end time: Jun 14 22:42 WEST
+"VacationTest.TestSetVacation" time elapsed: 00:00:00
+----------------------------------------------------------
+
+26/117 Testing: ExpenseTest.ConstructorAndInicialization
+26/117 Test: ExpenseTest.ConstructorAndInicialization
+Command: "/home/dinis/CLionProjects/fsoft2025_1DA_2_definitivo/ProjectTester/FleetManagerTest/cmake-build-debug/runTests" "--gtest_filter=ExpenseTest.ConstructorAndInicialization" "--gtest_also_run_disabled_tests"
+Directory: /home/dinis/CLionProjects/fsoft2025_1DA_2_definitivo/ProjectTester/FleetManagerTest/cmake-build-debug
+"ExpenseTest.ConstructorAndInicialization" start time: Jun 14 22:42 WEST
+Output:
+----------------------------------------------------------
+Running main() from /home/dinis/CLionProjects/fsoft2025_1DA_2_definitivo/ProjectTester/FleetManagerTest/googleTestLib/googletest-main/googletest/src/gtest_main.cc
+Note: Google Test filter = ExpenseTest.ConstructorAndInicialization
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from ExpenseTest
+[ RUN      ] ExpenseTest.ConstructorAndInicialization
+[       OK ] ExpenseTest.ConstructorAndInicialization (0 ms)
+[----------] 1 test from ExpenseTest (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"ExpenseTest.ConstructorAndInicialization" end time: Jun 14 22:42 WEST
+"ExpenseTest.ConstructorAndInicialization" time elapsed: 00:00:00
+----------------------------------------------------------
+
+27/117 Testing: ExpenseTest.testSetExpense
+27/117 Test: ExpenseTest.testSetExpense
+Command: "/home/dinis/CLionProjects/fsoft2025_1DA_2_definitivo/ProjectTester/FleetManagerTest/cmake-build-debug/runTests" "--gtest_filter=ExpenseTest.testSetExpense" "--gtest_also_run_disabled_tests"
+Directory: /home/dinis/CLionProjects/fsoft2025_1DA_2_definitivo/ProjectTester/FleetManagerTest/cmake-build-debug
+"ExpenseTest.testSetExpense" start time: Jun 14 22:42 WEST
+Output:
+----------------------------------------------------------
+Running main() from /home/dinis/CLionProjects/fsoft2025_1DA_2_definitivo/ProjectTester/FleetManagerTest/googleTestLib/googletest-main/googletest/src/gtest_main.cc
+Note: Google Test filter = ExpenseTest.testSetExpense
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from ExpenseTest
+[ RUN      ] ExpenseTest.testSetExpense
+[       OK ] ExpenseTest.testSetExpense (0 ms)
+[----------] 1 test from ExpenseTest (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"ExpenseTest.testSetExpense" end time: Jun 14 22:42 WEST
+"ExpenseTest.testSetExpense" time elapsed: 00:00:00
+----------------------------------------------------------
+
+28/117 Testing: ExpenseTest.TestAllExpenseTypes
+28/117 Test: ExpenseTest.TestAllExpenseTypes
+Command: "/home/dinis/CLionProjects/fsoft2025_1DA_2_definitivo/ProjectTester/FleetManagerTest/cmake-build-debug/runTests" "--gtest_filter=ExpenseTest.TestAllExpenseTypes" "--gtest_also_run_disabled_tests"
+Directory: /home/dinis/CLionProjects/fsoft2025_1DA_2_definitivo/ProjectTester/FleetManagerTest/cmake-build-debug
+"ExpenseTest.TestAllExpenseTypes" start time: Jun 14 22:42 WEST
+Output:
+----------------------------------------------------------
+Running main() from /home/dinis/CLionProjects/fsoft2025_1DA_2_definitivo/ProjectTester/FleetManagerTest/googleTestLib/googletest-main/googletest/src/gtest_main.cc
+Note: Google Test filter = ExpenseTest.TestAllExpenseTypes
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from ExpenseTest
+[ RUN      ] ExpenseTest.TestAllExpenseTypes
+[       OK ] ExpenseTest.TestAllExpenseTypes (0 ms)
+[----------] 1 test from ExpenseTest (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"ExpenseTest.TestAllExpenseTypes" end time: Jun 14 22:42 WEST
+"ExpenseTest.TestAllExpenseTypes" time elapsed: 00:00:00
+----------------------------------------------------------
+
+29/117 Testing: RevenueTest.ConstructorAndInicialization
+29/117 Test: RevenueTest.ConstructorAndInicialization
+Command: "/home/dinis/CLionProjects/fsoft2025_1DA_2_definitivo/ProjectTester/FleetManagerTest/cmake-build-debug/runTests" "--gtest_filter=RevenueTest.ConstructorAndInicialization" "--gtest_also_run_disabled_tests"
+Directory: /home/dinis/CLionProjects/fsoft2025_1DA_2_definitivo/ProjectTester/FleetManagerTest/cmake-build-debug
+"RevenueTest.ConstructorAndInicialization" start time: Jun 14 22:42 WEST
+Output:
+----------------------------------------------------------
+Running main() from /home/dinis/CLionProjects/fsoft2025_1DA_2_definitivo/ProjectTester/FleetManagerTest/googleTestLib/googletest-main/googletest/src/gtest_main.cc
+Note: Google Test filter = RevenueTest.ConstructorAndInicialization
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from RevenueTest
+[ RUN      ] RevenueTest.ConstructorAndInicialization
+[       OK ] RevenueTest.ConstructorAndInicialization (0 ms)
+[----------] 1 test from RevenueTest (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"RevenueTest.ConstructorAndInicialization" end time: Jun 14 22:42 WEST
+"RevenueTest.ConstructorAndInicialization" time elapsed: 00:00:00
+----------------------------------------------------------
+
+30/117 Testing: RevenueTest.testSetRevenue
+30/117 Test: RevenueTest.testSetRevenue
+Command: "/home/dinis/CLionProjects/fsoft2025_1DA_2_definitivo/ProjectTester/FleetManagerTest/cmake-build-debug/runTests" "--gtest_filter=RevenueTest.testSetRevenue" "--gtest_also_run_disabled_tests"
+Directory: /home/dinis/CLionProjects/fsoft2025_1DA_2_definitivo/ProjectTester/FleetManagerTest/cmake-build-debug
+"RevenueTest.testSetRevenue" start time: Jun 14 22:42 WEST
+Output:
+----------------------------------------------------------
+Running main() from /home/dinis/CLionProjects/fsoft2025_1DA_2_definitivo/ProjectTester/FleetManagerTest/googleTestLib/googletest-main/googletest/src/gtest_main.cc
+Note: Google Test filter = RevenueTest.testSetRevenue
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from RevenueTest
+[ RUN      ] RevenueTest.testSetRevenue
+[       OK ] RevenueTest.testSetRevenue (0 ms)
+[----------] 1 test from RevenueTest (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"RevenueTest.testSetRevenue" end time: Jun 14 22:42 WEST
+"RevenueTest.testSetRevenue" time elapsed: 00:00:00
+----------------------------------------------------------
+
+31/117 Testing: VehicleTest.FuelVehicle
+31/117 Test: VehicleTest.FuelVehicle
+Command: "/home/dinis/CLionProjects/fsoft2025_1DA_2_definitivo/ProjectTester/FleetManagerTest/cmake-build-debug/runTests" "--gtest_filter=VehicleTest.FuelVehicle" "--gtest_also_run_disabled_tests"
+Directory: /home/dinis/CLionProjects/fsoft2025_1DA_2_definitivo/ProjectTester/FleetManagerTest/cmake-build-debug
+"VehicleTest.FuelVehicle" start time: Jun 14 22:42 WEST
+Output:
+----------------------------------------------------------
+Running main() from /home/dinis/CLionProjects/fsoft2025_1DA_2_definitivo/ProjectTester/FleetManagerTest/googleTestLib/googletest-main/googletest/src/gtest_main.cc
+Note: Google Test filter = VehicleTest.FuelVehicle
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from VehicleTest
+[ RUN      ] VehicleTest.FuelVehicle
+[       OK ] VehicleTest.FuelVehicle (0 ms)
+[----------] 1 test from VehicleTest (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"VehicleTest.FuelVehicle" end time: Jun 14 22:42 WEST
+"VehicleTest.FuelVehicle" time elapsed: 00:00:00
+----------------------------------------------------------
+
+32/117 Testing: VehicleTest.UpdateMileage
+32/117 Test: VehicleTest.UpdateMileage
+Command: "/home/dinis/CLionProjects/fsoft2025_1DA_2_definitivo/ProjectTester/FleetManagerTest/cmake-build-debug/runTests" "--gtest_filter=VehicleTest.UpdateMileage" "--gtest_also_run_disabled_tests"
+Directory: /home/dinis/CLionProjects/fsoft2025_1DA_2_definitivo/ProjectTester/FleetManagerTest/cmake-build-debug
+"VehicleTest.UpdateMileage" start time: Jun 14 22:42 WEST
+Output:
+----------------------------------------------------------
+Running main() from /home/dinis/CLionProjects/fsoft2025_1DA_2_definitivo/ProjectTester/FleetManagerTest/googleTestLib/googletest-main/googletest/src/gtest_main.cc
+Note: Google Test filter = VehicleTest.UpdateMileage
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from VehicleTest
+[ RUN      ] VehicleTest.UpdateMileage
+[       OK ] VehicleTest.UpdateMileage (0 ms)
+[----------] 1 test from VehicleTest (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"VehicleTest.UpdateMileage" end time: Jun 14 22:42 WEST
+"VehicleTest.UpdateMileage" time elapsed: 00:00:00
+----------------------------------------------------------
+
+33/117 Testing: VehicleTest.IsAvailable
+33/117 Test: VehicleTest.IsAvailable
+Command: "/home/dinis/CLionProjects/fsoft2025_1DA_2_definitivo/ProjectTester/FleetManagerTest/cmake-build-debug/runTests" "--gtest_filter=VehicleTest.IsAvailable" "--gtest_also_run_disabled_tests"
+Directory: /home/dinis/CLionProjects/fsoft2025_1DA_2_definitivo/ProjectTester/FleetManagerTest/cmake-build-debug
+"VehicleTest.IsAvailable" start time: Jun 14 22:42 WEST
+Output:
+----------------------------------------------------------
+Running main() from /home/dinis/CLionProjects/fsoft2025_1DA_2_definitivo/ProjectTester/FleetManagerTest/googleTestLib/googletest-main/googletest/src/gtest_main.cc
+Note: Google Test filter = VehicleTest.IsAvailable
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from VehicleTest
+[ RUN      ] VehicleTest.IsAvailable
+[       OK ] VehicleTest.IsAvailable (0 ms)
+[----------] 1 test from VehicleTest (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"VehicleTest.IsAvailable" end time: Jun 14 22:42 WEST
+"VehicleTest.IsAvailable" time elapsed: 00:00:00
+----------------------------------------------------------
+
+34/117 Testing: VehicleTest.FuelIsEnough
+34/117 Test: VehicleTest.FuelIsEnough
+Command: "/home/dinis/CLionProjects/fsoft2025_1DA_2_definitivo/ProjectTester/FleetManagerTest/cmake-build-debug/runTests" "--gtest_filter=VehicleTest.FuelIsEnough" "--gtest_also_run_disabled_tests"
+Directory: /home/dinis/CLionProjects/fsoft2025_1DA_2_definitivo/ProjectTester/FleetManagerTest/cmake-build-debug
+"VehicleTest.FuelIsEnough" start time: Jun 14 22:42 WEST
+Output:
+----------------------------------------------------------
+Running main() from /home/dinis/CLionProjects/fsoft2025_1DA_2_definitivo/ProjectTester/FleetManagerTest/googleTestLib/googletest-main/googletest/src/gtest_main.cc
+Note: Google Test filter = VehicleTest.FuelIsEnough
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from VehicleTest
+[ RUN      ] VehicleTest.FuelIsEnough
+[       OK ] VehicleTest.FuelIsEnough (0 ms)
+[----------] 1 test from VehicleTest (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"VehicleTest.FuelIsEnough" end time: Jun 14 22:42 WEST
+"VehicleTest.FuelIsEnough" time elapsed: 00:00:00
+----------------------------------------------------------
+
+35/117 Testing: VehicleTest.FuelIsNotEnough
+35/117 Test: VehicleTest.FuelIsNotEnough
+Command: "/home/dinis/CLionProjects/fsoft2025_1DA_2_definitivo/ProjectTester/FleetManagerTest/cmake-build-debug/runTests" "--gtest_filter=VehicleTest.FuelIsNotEnough" "--gtest_also_run_disabled_tests"
+Directory: /home/dinis/CLionProjects/fsoft2025_1DA_2_definitivo/ProjectTester/FleetManagerTest/cmake-build-debug
+"VehicleTest.FuelIsNotEnough" start time: Jun 14 22:42 WEST
+Output:
+----------------------------------------------------------
+Running main() from /home/dinis/CLionProjects/fsoft2025_1DA_2_definitivo/ProjectTester/FleetManagerTest/googleTestLib/googletest-main/googletest/src/gtest_main.cc
+Note: Google Test filter = VehicleTest.FuelIsNotEnough
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from VehicleTest
+[ RUN      ] VehicleTest.FuelIsNotEnough
+[       OK ] VehicleTest.FuelIsNotEnough (0 ms)
+[----------] 1 test from VehicleTest (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"VehicleTest.FuelIsNotEnough" end time: Jun 14 22:42 WEST
+"VehicleTest.FuelIsNotEnough" time elapsed: 00:00:00
+----------------------------------------------------------
+
+36/117 Testing: VehicleTest.AddInsurance
+36/117 Test: VehicleTest.AddInsurance
+Command: "/home/dinis/CLionProjects/fsoft2025_1DA_2_definitivo/ProjectTester/FleetManagerTest/cmake-build-debug/runTests" "--gtest_filter=VehicleTest.AddInsurance" "--gtest_also_run_disabled_tests"
+Directory: /home/dinis/CLionProjects/fsoft2025_1DA_2_definitivo/ProjectTester/FleetManagerTest/cmake-build-debug
+"VehicleTest.AddInsurance" start time: Jun 14 22:42 WEST
+Output:
+----------------------------------------------------------
+Running main() from /home/dinis/CLionProjects/fsoft2025_1DA_2_definitivo/ProjectTester/FleetManagerTest/googleTestLib/googletest-main/googletest/src/gtest_main.cc
+Note: Google Test filter = VehicleTest.AddInsurance
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from VehicleTest
+[ RUN      ] VehicleTest.AddInsurance
+[       OK ] VehicleTest.AddInsurance (0 ms)
+[----------] 1 test from VehicleTest (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"VehicleTest.AddInsurance" end time: Jun 14 22:42 WEST
+"VehicleTest.AddInsurance" time elapsed: 00:00:00
+----------------------------------------------------------
+
+37/117 Testing: VehicleTest.InsuranceExpiredMinus
+37/117 Test: VehicleTest.InsuranceExpiredMinus
+Command: "/home/dinis/CLionProjects/fsoft2025_1DA_2_definitivo/ProjectTester/FleetManagerTest/cmake-build-debug/runTests" "--gtest_filter=VehicleTest.InsuranceExpiredMinus" "--gtest_also_run_disabled_tests"
+Directory: /home/dinis/CLionProjects/fsoft2025_1DA_2_definitivo/ProjectTester/FleetManagerTest/cmake-build-debug
+"VehicleTest.InsuranceExpiredMinus" start time: Jun 14 22:42 WEST
+Output:
+----------------------------------------------------------
+Running main() from /home/dinis/CLionProjects/fsoft2025_1DA_2_definitivo/ProjectTester/FleetManagerTest/googleTestLib/googletest-main/googletest/src/gtest_main.cc
+Note: Google Test filter = VehicleTest.InsuranceExpiredMinus
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from VehicleTest
+[ RUN      ] VehicleTest.InsuranceExpiredMinus
+[       OK ] VehicleTest.InsuranceExpiredMinus (0 ms)
+[----------] 1 test from VehicleTest (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"VehicleTest.InsuranceExpiredMinus" end time: Jun 14 22:42 WEST
+"VehicleTest.InsuranceExpiredMinus" time elapsed: 00:00:00
+----------------------------------------------------------
+
+38/117 Testing: VehicleTest.InsuranceExpiredToday
+38/117 Test: VehicleTest.InsuranceExpiredToday
+Command: "/home/dinis/CLionProjects/fsoft2025_1DA_2_definitivo/ProjectTester/FleetManagerTest/cmake-build-debug/runTests" "--gtest_filter=VehicleTest.InsuranceExpiredToday" "--gtest_also_run_disabled_tests"
+Directory: /home/dinis/CLionProjects/fsoft2025_1DA_2_definitivo/ProjectTester/FleetManagerTest/cmake-build-debug
+"VehicleTest.InsuranceExpiredToday" start time: Jun 14 22:42 WEST
+Output:
+----------------------------------------------------------
+Running main() from /home/dinis/CLionProjects/fsoft2025_1DA_2_definitivo/ProjectTester/FleetManagerTest/googleTestLib/googletest-main/googletest/src/gtest_main.cc
+Note: Google Test filter = VehicleTest.InsuranceExpiredToday
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from VehicleTest
+[ RUN      ] VehicleTest.InsuranceExpiredToday
+[       OK ] VehicleTest.InsuranceExpiredToday (0 ms)
+[----------] 1 test from VehicleTest (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"VehicleTest.InsuranceExpiredToday" end time: Jun 14 22:42 WEST
+"VehicleTest.InsuranceExpiredToday" time elapsed: 00:00:00
+----------------------------------------------------------
+
+39/117 Testing: VehicleTest.InsuranceRemainingDays
+39/117 Test: VehicleTest.InsuranceRemainingDays
+Command: "/home/dinis/CLionProjects/fsoft2025_1DA_2_definitivo/ProjectTester/FleetManagerTest/cmake-build-debug/runTests" "--gtest_filter=VehicleTest.InsuranceRemainingDays" "--gtest_also_run_disabled_tests"
+Directory: /home/dinis/CLionProjects/fsoft2025_1DA_2_definitivo/ProjectTester/FleetManagerTest/cmake-build-debug
+"VehicleTest.InsuranceRemainingDays" start time: Jun 14 22:42 WEST
+Output:
+----------------------------------------------------------
+Running main() from /home/dinis/CLionProjects/fsoft2025_1DA_2_definitivo/ProjectTester/FleetManagerTest/googleTestLib/googletest-main/googletest/src/gtest_main.cc
+Note: Google Test filter = VehicleTest.InsuranceRemainingDays
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from VehicleTest
+[ RUN      ] VehicleTest.InsuranceRemainingDays
+[       OK ] VehicleTest.InsuranceRemainingDays (0 ms)
+[----------] 1 test from VehicleTest (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.01 sec
+----------------------------------------------------------
+Test Passed.
+"VehicleTest.InsuranceRemainingDays" end time: Jun 14 22:42 WEST
+"VehicleTest.InsuranceRemainingDays" time elapsed: 00:00:00
+----------------------------------------------------------
+
+40/117 Testing: VehicleTest.AddInspection
+40/117 Test: VehicleTest.AddInspection
+Command: "/home/dinis/CLionProjects/fsoft2025_1DA_2_definitivo/ProjectTester/FleetManagerTest/cmake-build-debug/runTests" "--gtest_filter=VehicleTest.AddInspection" "--gtest_also_run_disabled_tests"
+Directory: /home/dinis/CLionProjects/fsoft2025_1DA_2_definitivo/ProjectTester/FleetManagerTest/cmake-build-debug
+"VehicleTest.AddInspection" start time: Jun 14 22:42 WEST
+Output:
+----------------------------------------------------------
+Running main() from /home/dinis/CLionProjects/fsoft2025_1DA_2_definitivo/ProjectTester/FleetManagerTest/googleTestLib/googletest-main/googletest/src/gtest_main.cc
+Note: Google Test filter = VehicleTest.AddInspection
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from VehicleTest
+[ RUN      ] VehicleTest.AddInspection
+[       OK ] VehicleTest.AddInspection (0 ms)
+[----------] 1 test from VehicleTest (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"VehicleTest.AddInspection" end time: Jun 14 22:42 WEST
+"VehicleTest.AddInspection" time elapsed: 00:00:00
+----------------------------------------------------------
+
+41/117 Testing: VehicleTest.InspectionDuedMinus
+41/117 Test: VehicleTest.InspectionDuedMinus
+Command: "/home/dinis/CLionProjects/fsoft2025_1DA_2_definitivo/ProjectTester/FleetManagerTest/cmake-build-debug/runTests" "--gtest_filter=VehicleTest.InspectionDuedMinus" "--gtest_also_run_disabled_tests"
+Directory: /home/dinis/CLionProjects/fsoft2025_1DA_2_definitivo/ProjectTester/FleetManagerTest/cmake-build-debug
+"VehicleTest.InspectionDuedMinus" start time: Jun 14 22:42 WEST
+Output:
+----------------------------------------------------------
+Running main() from /home/dinis/CLionProjects/fsoft2025_1DA_2_definitivo/ProjectTester/FleetManagerTest/googleTestLib/googletest-main/googletest/src/gtest_main.cc
+Note: Google Test filter = VehicleTest.InspectionDuedMinus
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from VehicleTest
+[ RUN      ] VehicleTest.InspectionDuedMinus
+[       OK ] VehicleTest.InspectionDuedMinus (0 ms)
+[----------] 1 test from VehicleTest (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"VehicleTest.InspectionDuedMinus" end time: Jun 14 22:42 WEST
+"VehicleTest.InspectionDuedMinus" time elapsed: 00:00:00
+----------------------------------------------------------
+
+42/117 Testing: VehicleTest.InspectionExpiredToday
+42/117 Test: VehicleTest.InspectionExpiredToday
+Command: "/home/dinis/CLionProjects/fsoft2025_1DA_2_definitivo/ProjectTester/FleetManagerTest/cmake-build-debug/runTests" "--gtest_filter=VehicleTest.InspectionExpiredToday" "--gtest_also_run_disabled_tests"
+Directory: /home/dinis/CLionProjects/fsoft2025_1DA_2_definitivo/ProjectTester/FleetManagerTest/cmake-build-debug
+"VehicleTest.InspectionExpiredToday" start time: Jun 14 22:42 WEST
+Output:
+----------------------------------------------------------
+Running main() from /home/dinis/CLionProjects/fsoft2025_1DA_2_definitivo/ProjectTester/FleetManagerTest/googleTestLib/googletest-main/googletest/src/gtest_main.cc
+Note: Google Test filter = VehicleTest.InspectionExpiredToday
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from VehicleTest
+[ RUN      ] VehicleTest.InspectionExpiredToday
+[       OK ] VehicleTest.InspectionExpiredToday (0 ms)
+[----------] 1 test from VehicleTest (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"VehicleTest.InspectionExpiredToday" end time: Jun 14 22:42 WEST
+"VehicleTest.InspectionExpiredToday" time elapsed: 00:00:00
+----------------------------------------------------------
+
+43/117 Testing: VehicleTest.InspectionRemainingDays
+43/117 Test: VehicleTest.InspectionRemainingDays
+Command: "/home/dinis/CLionProjects/fsoft2025_1DA_2_definitivo/ProjectTester/FleetManagerTest/cmake-build-debug/runTests" "--gtest_filter=VehicleTest.InspectionRemainingDays" "--gtest_also_run_disabled_tests"
+Directory: /home/dinis/CLionProjects/fsoft2025_1DA_2_definitivo/ProjectTester/FleetManagerTest/cmake-build-debug
+"VehicleTest.InspectionRemainingDays" start time: Jun 14 22:42 WEST
+Output:
+----------------------------------------------------------
+Running main() from /home/dinis/CLionProjects/fsoft2025_1DA_2_definitivo/ProjectTester/FleetManagerTest/googleTestLib/googletest-main/googletest/src/gtest_main.cc
+Note: Google Test filter = VehicleTest.InspectionRemainingDays
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from VehicleTest
+[ RUN      ] VehicleTest.InspectionRemainingDays
+[       OK ] VehicleTest.InspectionRemainingDays (0 ms)
+[----------] 1 test from VehicleTest (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"VehicleTest.InspectionRemainingDays" end time: Jun 14 22:42 WEST
+"VehicleTest.InspectionRemainingDays" time elapsed: 00:00:00
+----------------------------------------------------------
+
+44/117 Testing: VanTest.EmptyConstructorInicialization
+44/117 Test: VanTest.EmptyConstructorInicialization
+Command: "/home/dinis/CLionProjects/fsoft2025_1DA_2_definitivo/ProjectTester/FleetManagerTest/cmake-build-debug/runTests" "--gtest_filter=VanTest.EmptyConstructorInicialization" "--gtest_also_run_disabled_tests"
+Directory: /home/dinis/CLionProjects/fsoft2025_1DA_2_definitivo/ProjectTester/FleetManagerTest/cmake-build-debug
+"VanTest.EmptyConstructorInicialization" start time: Jun 14 22:42 WEST
+Output:
+----------------------------------------------------------
+Running main() from /home/dinis/CLionProjects/fsoft2025_1DA_2_definitivo/ProjectTester/FleetManagerTest/googleTestLib/googletest-main/googletest/src/gtest_main.cc
+Note: Google Test filter = VanTest.EmptyConstructorInicialization
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from VanTest
+[ RUN      ] VanTest.EmptyConstructorInicialization
+[       OK ] VanTest.EmptyConstructorInicialization (0 ms)
+[----------] 1 test from VanTest (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"VanTest.EmptyConstructorInicialization" end time: Jun 14 22:42 WEST
+"VanTest.EmptyConstructorInicialization" time elapsed: 00:00:00
+----------------------------------------------------------
+
+45/117 Testing: VanTest.CreateVan
+45/117 Test: VanTest.CreateVan
+Command: "/home/dinis/CLionProjects/fsoft2025_1DA_2_definitivo/ProjectTester/FleetManagerTest/cmake-build-debug/runTests" "--gtest_filter=VanTest.CreateVan" "--gtest_also_run_disabled_tests"
+Directory: /home/dinis/CLionProjects/fsoft2025_1DA_2_definitivo/ProjectTester/FleetManagerTest/cmake-build-debug
+"VanTest.CreateVan" start time: Jun 14 22:42 WEST
+Output:
+----------------------------------------------------------
+Running main() from /home/dinis/CLionProjects/fsoft2025_1DA_2_definitivo/ProjectTester/FleetManagerTest/googleTestLib/googletest-main/googletest/src/gtest_main.cc
+Note: Google Test filter = VanTest.CreateVan
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from VanTest
+[ RUN      ] VanTest.CreateVan
+[       OK ] VanTest.CreateVan (0 ms)
+[----------] 1 test from VanTest (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"VanTest.CreateVan" end time: Jun 14 22:42 WEST
+"VanTest.CreateVan" time elapsed: 00:00:00
+----------------------------------------------------------
+
+46/117 Testing: TruckTest.EmptyConstructorInicialization
+46/117 Test: TruckTest.EmptyConstructorInicialization
+Command: "/home/dinis/CLionProjects/fsoft2025_1DA_2_definitivo/ProjectTester/FleetManagerTest/cmake-build-debug/runTests" "--gtest_filter=TruckTest.EmptyConstructorInicialization" "--gtest_also_run_disabled_tests"
+Directory: /home/dinis/CLionProjects/fsoft2025_1DA_2_definitivo/ProjectTester/FleetManagerTest/cmake-build-debug
+"TruckTest.EmptyConstructorInicialization" start time: Jun 14 22:42 WEST
+Output:
+----------------------------------------------------------
+Running main() from /home/dinis/CLionProjects/fsoft2025_1DA_2_definitivo/ProjectTester/FleetManagerTest/googleTestLib/googletest-main/googletest/src/gtest_main.cc
+Note: Google Test filter = TruckTest.EmptyConstructorInicialization
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from TruckTest
+[ RUN      ] TruckTest.EmptyConstructorInicialization
+[       OK ] TruckTest.EmptyConstructorInicialization (0 ms)
+[----------] 1 test from TruckTest (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"TruckTest.EmptyConstructorInicialization" end time: Jun 14 22:42 WEST
+"TruckTest.EmptyConstructorInicialization" time elapsed: 00:00:00
+----------------------------------------------------------
+
+47/117 Testing: TruckTest.CreateTruck
+47/117 Test: TruckTest.CreateTruck
+Command: "/home/dinis/CLionProjects/fsoft2025_1DA_2_definitivo/ProjectTester/FleetManagerTest/cmake-build-debug/runTests" "--gtest_filter=TruckTest.CreateTruck" "--gtest_also_run_disabled_tests"
+Directory: /home/dinis/CLionProjects/fsoft2025_1DA_2_definitivo/ProjectTester/FleetManagerTest/cmake-build-debug
+"TruckTest.CreateTruck" start time: Jun 14 22:42 WEST
+Output:
+----------------------------------------------------------
+Running main() from /home/dinis/CLionProjects/fsoft2025_1DA_2_definitivo/ProjectTester/FleetManagerTest/googleTestLib/googletest-main/googletest/src/gtest_main.cc
+Note: Google Test filter = TruckTest.CreateTruck
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from TruckTest
+[ RUN      ] TruckTest.CreateTruck
+[       OK ] TruckTest.CreateTruck (0 ms)
+[----------] 1 test from TruckTest (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"TruckTest.CreateTruck" end time: Jun 14 22:42 WEST
+"TruckTest.CreateTruck" time elapsed: 00:00:00
+----------------------------------------------------------
+
+48/117 Testing: VSLTest.EmptyConstructorInitialization
+48/117 Test: VSLTest.EmptyConstructorInitialization
+Command: "/home/dinis/CLionProjects/fsoft2025_1DA_2_definitivo/ProjectTester/FleetManagerTest/cmake-build-debug/runTests" "--gtest_filter=VSLTest.EmptyConstructorInitialization" "--gtest_also_run_disabled_tests"
+Directory: /home/dinis/CLionProjects/fsoft2025_1DA_2_definitivo/ProjectTester/FleetManagerTest/cmake-build-debug
+"VSLTest.EmptyConstructorInitialization" start time: Jun 14 22:42 WEST
+Output:
+----------------------------------------------------------
+Running main() from /home/dinis/CLionProjects/fsoft2025_1DA_2_definitivo/ProjectTester/FleetManagerTest/googleTestLib/googletest-main/googletest/src/gtest_main.cc
+Note: Google Test filter = VSLTest.EmptyConstructorInitialization
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from VSLTest
+[ RUN      ] VSLTest.EmptyConstructorInitialization
+[       OK ] VSLTest.EmptyConstructorInitialization (0 ms)
+[----------] 1 test from VSLTest (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"VSLTest.EmptyConstructorInitialization" end time: Jun 14 22:42 WEST
+"VSLTest.EmptyConstructorInitialization" time elapsed: 00:00:00
+----------------------------------------------------------
+
+49/117 Testing: VSLTest.IncrementVehicleCount
+49/117 Test: VSLTest.IncrementVehicleCount
+Command: "/home/dinis/CLionProjects/fsoft2025_1DA_2_definitivo/ProjectTester/FleetManagerTest/cmake-build-debug/runTests" "--gtest_filter=VSLTest.IncrementVehicleCount" "--gtest_also_run_disabled_tests"
+Directory: /home/dinis/CLionProjects/fsoft2025_1DA_2_definitivo/ProjectTester/FleetManagerTest/cmake-build-debug
+"VSLTest.IncrementVehicleCount" start time: Jun 14 22:42 WEST
+Output:
+----------------------------------------------------------
+Running main() from /home/dinis/CLionProjects/fsoft2025_1DA_2_definitivo/ProjectTester/FleetManagerTest/googleTestLib/googletest-main/googletest/src/gtest_main.cc
+Note: Google Test filter = VSLTest.IncrementVehicleCount
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from VSLTest
+[ RUN      ] VSLTest.IncrementVehicleCount
+[       OK ] VSLTest.IncrementVehicleCount (0 ms)
+[----------] 1 test from VSLTest (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"VSLTest.IncrementVehicleCount" end time: Jun 14 22:42 WEST
+"VSLTest.IncrementVehicleCount" time elapsed: 00:00:00
+----------------------------------------------------------
+
+50/117 Testing: VSLTest.DecrementVehicleCount
+50/117 Test: VSLTest.DecrementVehicleCount
+Command: "/home/dinis/CLionProjects/fsoft2025_1DA_2_definitivo/ProjectTester/FleetManagerTest/cmake-build-debug/runTests" "--gtest_filter=VSLTest.DecrementVehicleCount" "--gtest_also_run_disabled_tests"
+Directory: /home/dinis/CLionProjects/fsoft2025_1DA_2_definitivo/ProjectTester/FleetManagerTest/cmake-build-debug
+"VSLTest.DecrementVehicleCount" start time: Jun 14 22:42 WEST
+Output:
+----------------------------------------------------------
+Running main() from /home/dinis/CLionProjects/fsoft2025_1DA_2_definitivo/ProjectTester/FleetManagerTest/googleTestLib/googletest-main/googletest/src/gtest_main.cc
+Note: Google Test filter = VSLTest.DecrementVehicleCount
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from VSLTest
+[ RUN      ] VSLTest.DecrementVehicleCount
+[       OK ] VSLTest.DecrementVehicleCount (0 ms)
+[----------] 1 test from VSLTest (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"VSLTest.DecrementVehicleCount" end time: Jun 14 22:42 WEST
+"VSLTest.DecrementVehicleCount" time elapsed: 00:00:00
+----------------------------------------------------------
+
+51/117 Testing: VSLTest.AddTruckToStorageLocation
+51/117 Test: VSLTest.AddTruckToStorageLocation
+Command: "/home/dinis/CLionProjects/fsoft2025_1DA_2_definitivo/ProjectTester/FleetManagerTest/cmake-build-debug/runTests" "--gtest_filter=VSLTest.AddTruckToStorageLocation" "--gtest_also_run_disabled_tests"
+Directory: /home/dinis/CLionProjects/fsoft2025_1DA_2_definitivo/ProjectTester/FleetManagerTest/cmake-build-debug
+"VSLTest.AddTruckToStorageLocation" start time: Jun 14 22:42 WEST
+Output:
+----------------------------------------------------------
+Running main() from /home/dinis/CLionProjects/fsoft2025_1DA_2_definitivo/ProjectTester/FleetManagerTest/googleTestLib/googletest-main/googletest/src/gtest_main.cc
+Note: Google Test filter = VSLTest.AddTruckToStorageLocation
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from VSLTest
+[ RUN      ] VSLTest.AddTruckToStorageLocation
+[       OK ] VSLTest.AddTruckToStorageLocation (0 ms)
+[----------] 1 test from VSLTest (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"VSLTest.AddTruckToStorageLocation" end time: Jun 14 22:42 WEST
+"VSLTest.AddTruckToStorageLocation" time elapsed: 00:00:00
+----------------------------------------------------------
+
+52/117 Testing: VSLTest.AddVanToStorageLocation
+52/117 Test: VSLTest.AddVanToStorageLocation
+Command: "/home/dinis/CLionProjects/fsoft2025_1DA_2_definitivo/ProjectTester/FleetManagerTest/cmake-build-debug/runTests" "--gtest_filter=VSLTest.AddVanToStorageLocation" "--gtest_also_run_disabled_tests"
+Directory: /home/dinis/CLionProjects/fsoft2025_1DA_2_definitivo/ProjectTester/FleetManagerTest/cmake-build-debug
+"VSLTest.AddVanToStorageLocation" start time: Jun 14 22:42 WEST
+Output:
+----------------------------------------------------------
+Running main() from /home/dinis/CLionProjects/fsoft2025_1DA_2_definitivo/ProjectTester/FleetManagerTest/googleTestLib/googletest-main/googletest/src/gtest_main.cc
+Note: Google Test filter = VSLTest.AddVanToStorageLocation
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from VSLTest
+[ RUN      ] VSLTest.AddVanToStorageLocation
+[       OK ] VSLTest.AddVanToStorageLocation (0 ms)
+[----------] 1 test from VSLTest (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"VSLTest.AddVanToStorageLocation" end time: Jun 14 22:42 WEST
+"VSLTest.AddVanToStorageLocation" time elapsed: 00:00:00
+----------------------------------------------------------
+
+53/117 Testing: VSLTest.RemoveTruckFromStorageLocation
+53/117 Test: VSLTest.RemoveTruckFromStorageLocation
+Command: "/home/dinis/CLionProjects/fsoft2025_1DA_2_definitivo/ProjectTester/FleetManagerTest/cmake-build-debug/runTests" "--gtest_filter=VSLTest.RemoveTruckFromStorageLocation" "--gtest_also_run_disabled_tests"
+Directory: /home/dinis/CLionProjects/fsoft2025_1DA_2_definitivo/ProjectTester/FleetManagerTest/cmake-build-debug
+"VSLTest.RemoveTruckFromStorageLocation" start time: Jun 14 22:42 WEST
+Output:
+----------------------------------------------------------
+Running main() from /home/dinis/CLionProjects/fsoft2025_1DA_2_definitivo/ProjectTester/FleetManagerTest/googleTestLib/googletest-main/googletest/src/gtest_main.cc
+Note: Google Test filter = VSLTest.RemoveTruckFromStorageLocation
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from VSLTest
+[ RUN      ] VSLTest.RemoveTruckFromStorageLocation
+[       OK ] VSLTest.RemoveTruckFromStorageLocation (0 ms)
+[----------] 1 test from VSLTest (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"VSLTest.RemoveTruckFromStorageLocation" end time: Jun 14 22:42 WEST
+"VSLTest.RemoveTruckFromStorageLocation" time elapsed: 00:00:00
+----------------------------------------------------------
+
+54/117 Testing: VSLTest.RemoveVanFromStorageLocation
+54/117 Test: VSLTest.RemoveVanFromStorageLocation
+Command: "/home/dinis/CLionProjects/fsoft2025_1DA_2_definitivo/ProjectTester/FleetManagerTest/cmake-build-debug/runTests" "--gtest_filter=VSLTest.RemoveVanFromStorageLocation" "--gtest_also_run_disabled_tests"
+Directory: /home/dinis/CLionProjects/fsoft2025_1DA_2_definitivo/ProjectTester/FleetManagerTest/cmake-build-debug
+"VSLTest.RemoveVanFromStorageLocation" start time: Jun 14 22:42 WEST
+Output:
+----------------------------------------------------------
+Running main() from /home/dinis/CLionProjects/fsoft2025_1DA_2_definitivo/ProjectTester/FleetManagerTest/googleTestLib/googletest-main/googletest/src/gtest_main.cc
+Note: Google Test filter = VSLTest.RemoveVanFromStorageLocation
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from VSLTest
+[ RUN      ] VSLTest.RemoveVanFromStorageLocation
+[       OK ] VSLTest.RemoveVanFromStorageLocation (0 ms)
+[----------] 1 test from VSLTest (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"VSLTest.RemoveVanFromStorageLocation" end time: Jun 14 22:42 WEST
+"VSLTest.RemoveVanFromStorageLocation" time elapsed: 00:00:00
+----------------------------------------------------------
+
+55/117 Testing: OrderContainerTest.AddValidOrder
+55/117 Test: OrderContainerTest.AddValidOrder
+Command: "/home/dinis/CLionProjects/fsoft2025_1DA_2_definitivo/ProjectTester/FleetManagerTest/cmake-build-debug/runTests" "--gtest_filter=OrderContainerTest.AddValidOrder" "--gtest_also_run_disabled_tests"
+Directory: /home/dinis/CLionProjects/fsoft2025_1DA_2_definitivo/ProjectTester/FleetManagerTest/cmake-build-debug
+"OrderContainerTest.AddValidOrder" start time: Jun 14 22:42 WEST
+Output:
+----------------------------------------------------------
+Running main() from /home/dinis/CLionProjects/fsoft2025_1DA_2_definitivo/ProjectTester/FleetManagerTest/googleTestLib/googletest-main/googletest/src/gtest_main.cc
+Note: Google Test filter = OrderContainerTest.AddValidOrder
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from OrderContainerTest
+[ RUN      ] OrderContainerTest.AddValidOrder
+[       OK ] OrderContainerTest.AddValidOrder (0 ms)
+[----------] 1 test from OrderContainerTest (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"OrderContainerTest.AddValidOrder" end time: Jun 14 22:42 WEST
+"OrderContainerTest.AddValidOrder" time elapsed: 00:00:00
+----------------------------------------------------------
+
+56/117 Testing: OrderContainerTest.AddDuplicatedOrder
+56/117 Test: OrderContainerTest.AddDuplicatedOrder
+Command: "/home/dinis/CLionProjects/fsoft2025_1DA_2_definitivo/ProjectTester/FleetManagerTest/cmake-build-debug/runTests" "--gtest_filter=OrderContainerTest.AddDuplicatedOrder" "--gtest_also_run_disabled_tests"
+Directory: /home/dinis/CLionProjects/fsoft2025_1DA_2_definitivo/ProjectTester/FleetManagerTest/cmake-build-debug
+"OrderContainerTest.AddDuplicatedOrder" start time: Jun 14 22:42 WEST
+Output:
+----------------------------------------------------------
+Running main() from /home/dinis/CLionProjects/fsoft2025_1DA_2_definitivo/ProjectTester/FleetManagerTest/googleTestLib/googletest-main/googletest/src/gtest_main.cc
+Note: Google Test filter = OrderContainerTest.AddDuplicatedOrder
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from OrderContainerTest
+[ RUN      ] OrderContainerTest.AddDuplicatedOrder
+[       OK ] OrderContainerTest.AddDuplicatedOrder (0 ms)
+[----------] 1 test from OrderContainerTest (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"OrderContainerTest.AddDuplicatedOrder" end time: Jun 14 22:42 WEST
+"OrderContainerTest.AddDuplicatedOrder" time elapsed: 00:00:00
+----------------------------------------------------------
+
+57/117 Testing: OrderContainerTest.RemoveValidOrder
+57/117 Test: OrderContainerTest.RemoveValidOrder
+Command: "/home/dinis/CLionProjects/fsoft2025_1DA_2_definitivo/ProjectTester/FleetManagerTest/cmake-build-debug/runTests" "--gtest_filter=OrderContainerTest.RemoveValidOrder" "--gtest_also_run_disabled_tests"
+Directory: /home/dinis/CLionProjects/fsoft2025_1DA_2_definitivo/ProjectTester/FleetManagerTest/cmake-build-debug
+"OrderContainerTest.RemoveValidOrder" start time: Jun 14 22:42 WEST
+Output:
+----------------------------------------------------------
+Running main() from /home/dinis/CLionProjects/fsoft2025_1DA_2_definitivo/ProjectTester/FleetManagerTest/googleTestLib/googletest-main/googletest/src/gtest_main.cc
+Note: Google Test filter = OrderContainerTest.RemoveValidOrder
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from OrderContainerTest
+[ RUN      ] OrderContainerTest.RemoveValidOrder
+[       OK ] OrderContainerTest.RemoveValidOrder (0 ms)
+[----------] 1 test from OrderContainerTest (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"OrderContainerTest.RemoveValidOrder" end time: Jun 14 22:42 WEST
+"OrderContainerTest.RemoveValidOrder" time elapsed: 00:00:00
+----------------------------------------------------------
+
+58/117 Testing: OrderContainerTest.RemoveNonExistingOrder
+58/117 Test: OrderContainerTest.RemoveNonExistingOrder
+Command: "/home/dinis/CLionProjects/fsoft2025_1DA_2_definitivo/ProjectTester/FleetManagerTest/cmake-build-debug/runTests" "--gtest_filter=OrderContainerTest.RemoveNonExistingOrder" "--gtest_also_run_disabled_tests"
+Directory: /home/dinis/CLionProjects/fsoft2025_1DA_2_definitivo/ProjectTester/FleetManagerTest/cmake-build-debug
+"OrderContainerTest.RemoveNonExistingOrder" start time: Jun 14 22:42 WEST
+Output:
+----------------------------------------------------------
+Running main() from /home/dinis/CLionProjects/fsoft2025_1DA_2_definitivo/ProjectTester/FleetManagerTest/googleTestLib/googletest-main/googletest/src/gtest_main.cc
+Note: Google Test filter = OrderContainerTest.RemoveNonExistingOrder
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from OrderContainerTest
+[ RUN      ] OrderContainerTest.RemoveNonExistingOrder
+[       OK ] OrderContainerTest.RemoveNonExistingOrder (0 ms)
+[----------] 1 test from OrderContainerTest (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"OrderContainerTest.RemoveNonExistingOrder" end time: Jun 14 22:42 WEST
+"OrderContainerTest.RemoveNonExistingOrder" time elapsed: 00:00:00
+----------------------------------------------------------
+
+59/117 Testing: OrderContainerTest.TestListOrders
+59/117 Test: OrderContainerTest.TestListOrders
+Command: "/home/dinis/CLionProjects/fsoft2025_1DA_2_definitivo/ProjectTester/FleetManagerTest/cmake-build-debug/runTests" "--gtest_filter=OrderContainerTest.TestListOrders" "--gtest_also_run_disabled_tests"
+Directory: /home/dinis/CLionProjects/fsoft2025_1DA_2_definitivo/ProjectTester/FleetManagerTest/cmake-build-debug
+"OrderContainerTest.TestListOrders" start time: Jun 14 22:42 WEST
+Output:
+----------------------------------------------------------
+Running main() from /home/dinis/CLionProjects/fsoft2025_1DA_2_definitivo/ProjectTester/FleetManagerTest/googleTestLib/googletest-main/googletest/src/gtest_main.cc
+Note: Google Test filter = OrderContainerTest.TestListOrders
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from OrderContainerTest
+[ RUN      ] OrderContainerTest.TestListOrders
+[       OK ] OrderContainerTest.TestListOrders (0 ms)
+[----------] 1 test from OrderContainerTest (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"OrderContainerTest.TestListOrders" end time: Jun 14 22:42 WEST
+"OrderContainerTest.TestListOrders" time elapsed: 00:00:00
+----------------------------------------------------------
+
+60/117 Testing: OrderContainerTest.TestUncompletedOrders
+60/117 Test: OrderContainerTest.TestUncompletedOrders
+Command: "/home/dinis/CLionProjects/fsoft2025_1DA_2_definitivo/ProjectTester/FleetManagerTest/cmake-build-debug/runTests" "--gtest_filter=OrderContainerTest.TestUncompletedOrders" "--gtest_also_run_disabled_tests"
+Directory: /home/dinis/CLionProjects/fsoft2025_1DA_2_definitivo/ProjectTester/FleetManagerTest/cmake-build-debug
+"OrderContainerTest.TestUncompletedOrders" start time: Jun 14 22:42 WEST
+Output:
+----------------------------------------------------------
+Running main() from /home/dinis/CLionProjects/fsoft2025_1DA_2_definitivo/ProjectTester/FleetManagerTest/googleTestLib/googletest-main/googletest/src/gtest_main.cc
+Note: Google Test filter = OrderContainerTest.TestUncompletedOrders
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from OrderContainerTest
+[ RUN      ] OrderContainerTest.TestUncompletedOrders
+[       OK ] OrderContainerTest.TestUncompletedOrders (0 ms)
+[----------] 1 test from OrderContainerTest (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"OrderContainerTest.TestUncompletedOrders" end time: Jun 14 22:42 WEST
+"OrderContainerTest.TestUncompletedOrders" time elapsed: 00:00:00
+----------------------------------------------------------
+
+61/117 Testing: OrderContainerTest.TestCompletedOrders
+61/117 Test: OrderContainerTest.TestCompletedOrders
+Command: "/home/dinis/CLionProjects/fsoft2025_1DA_2_definitivo/ProjectTester/FleetManagerTest/cmake-build-debug/runTests" "--gtest_filter=OrderContainerTest.TestCompletedOrders" "--gtest_also_run_disabled_tests"
+Directory: /home/dinis/CLionProjects/fsoft2025_1DA_2_definitivo/ProjectTester/FleetManagerTest/cmake-build-debug
+"OrderContainerTest.TestCompletedOrders" start time: Jun 14 22:42 WEST
+Output:
+----------------------------------------------------------
+Running main() from /home/dinis/CLionProjects/fsoft2025_1DA_2_definitivo/ProjectTester/FleetManagerTest/googleTestLib/googletest-main/googletest/src/gtest_main.cc
+Note: Google Test filter = OrderContainerTest.TestCompletedOrders
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from OrderContainerTest
+[ RUN      ] OrderContainerTest.TestCompletedOrders
+[       OK ] OrderContainerTest.TestCompletedOrders (0 ms)
+[----------] 1 test from OrderContainerTest (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"OrderContainerTest.TestCompletedOrders" end time: Jun 14 22:42 WEST
+"OrderContainerTest.TestCompletedOrders" time elapsed: 00:00:00
+----------------------------------------------------------
+
+62/117 Testing: OrderContainerTest.TestOrdersByClient
+62/117 Test: OrderContainerTest.TestOrdersByClient
+Command: "/home/dinis/CLionProjects/fsoft2025_1DA_2_definitivo/ProjectTester/FleetManagerTest/cmake-build-debug/runTests" "--gtest_filter=OrderContainerTest.TestOrdersByClient" "--gtest_also_run_disabled_tests"
+Directory: /home/dinis/CLionProjects/fsoft2025_1DA_2_definitivo/ProjectTester/FleetManagerTest/cmake-build-debug
+"OrderContainerTest.TestOrdersByClient" start time: Jun 14 22:42 WEST
+Output:
+----------------------------------------------------------
+Running main() from /home/dinis/CLionProjects/fsoft2025_1DA_2_definitivo/ProjectTester/FleetManagerTest/googleTestLib/googletest-main/googletest/src/gtest_main.cc
+Note: Google Test filter = OrderContainerTest.TestOrdersByClient
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from OrderContainerTest
+[ RUN      ] OrderContainerTest.TestOrdersByClient
+[       OK ] OrderContainerTest.TestOrdersByClient (0 ms)
+[----------] 1 test from OrderContainerTest (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"OrderContainerTest.TestOrdersByClient" end time: Jun 14 22:42 WEST
+"OrderContainerTest.TestOrdersByClient" time elapsed: 00:00:00
+----------------------------------------------------------
+
+63/117 Testing: DriverContainerTest.AddValidDriver
+63/117 Test: DriverContainerTest.AddValidDriver
+Command: "/home/dinis/CLionProjects/fsoft2025_1DA_2_definitivo/ProjectTester/FleetManagerTest/cmake-build-debug/runTests" "--gtest_filter=DriverContainerTest.AddValidDriver" "--gtest_also_run_disabled_tests"
+Directory: /home/dinis/CLionProjects/fsoft2025_1DA_2_definitivo/ProjectTester/FleetManagerTest/cmake-build-debug
+"DriverContainerTest.AddValidDriver" start time: Jun 14 22:42 WEST
+Output:
+----------------------------------------------------------
+Running main() from /home/dinis/CLionProjects/fsoft2025_1DA_2_definitivo/ProjectTester/FleetManagerTest/googleTestLib/googletest-main/googletest/src/gtest_main.cc
+Note: Google Test filter = DriverContainerTest.AddValidDriver
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from DriverContainerTest
+[ RUN      ] DriverContainerTest.AddValidDriver
+[       OK ] DriverContainerTest.AddValidDriver (0 ms)
+[----------] 1 test from DriverContainerTest (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"DriverContainerTest.AddValidDriver" end time: Jun 14 22:42 WEST
+"DriverContainerTest.AddValidDriver" time elapsed: 00:00:00
+----------------------------------------------------------
+
+64/117 Testing: DriverContainerTest.AddDuplicatedDriver
+64/117 Test: DriverContainerTest.AddDuplicatedDriver
+Command: "/home/dinis/CLionProjects/fsoft2025_1DA_2_definitivo/ProjectTester/FleetManagerTest/cmake-build-debug/runTests" "--gtest_filter=DriverContainerTest.AddDuplicatedDriver" "--gtest_also_run_disabled_tests"
+Directory: /home/dinis/CLionProjects/fsoft2025_1DA_2_definitivo/ProjectTester/FleetManagerTest/cmake-build-debug
+"DriverContainerTest.AddDuplicatedDriver" start time: Jun 14 22:42 WEST
+Output:
+----------------------------------------------------------
+Running main() from /home/dinis/CLionProjects/fsoft2025_1DA_2_definitivo/ProjectTester/FleetManagerTest/googleTestLib/googletest-main/googletest/src/gtest_main.cc
+Note: Google Test filter = DriverContainerTest.AddDuplicatedDriver
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from DriverContainerTest
+[ RUN      ] DriverContainerTest.AddDuplicatedDriver
+[       OK ] DriverContainerTest.AddDuplicatedDriver (0 ms)
+[----------] 1 test from DriverContainerTest (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"DriverContainerTest.AddDuplicatedDriver" end time: Jun 14 22:42 WEST
+"DriverContainerTest.AddDuplicatedDriver" time elapsed: 00:00:00
+----------------------------------------------------------
+
+65/117 Testing: DriverContainerTest.RemoveValidDriver
+65/117 Test: DriverContainerTest.RemoveValidDriver
+Command: "/home/dinis/CLionProjects/fsoft2025_1DA_2_definitivo/ProjectTester/FleetManagerTest/cmake-build-debug/runTests" "--gtest_filter=DriverContainerTest.RemoveValidDriver" "--gtest_also_run_disabled_tests"
+Directory: /home/dinis/CLionProjects/fsoft2025_1DA_2_definitivo/ProjectTester/FleetManagerTest/cmake-build-debug
+"DriverContainerTest.RemoveValidDriver" start time: Jun 14 22:42 WEST
+Output:
+----------------------------------------------------------
+Running main() from /home/dinis/CLionProjects/fsoft2025_1DA_2_definitivo/ProjectTester/FleetManagerTest/googleTestLib/googletest-main/googletest/src/gtest_main.cc
+Note: Google Test filter = DriverContainerTest.RemoveValidDriver
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from DriverContainerTest
+[ RUN      ] DriverContainerTest.RemoveValidDriver
+[       OK ] DriverContainerTest.RemoveValidDriver (0 ms)
+[----------] 1 test from DriverContainerTest (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"DriverContainerTest.RemoveValidDriver" end time: Jun 14 22:42 WEST
+"DriverContainerTest.RemoveValidDriver" time elapsed: 00:00:00
+----------------------------------------------------------
+
+66/117 Testing: DriverContainerTest.RemoveNonExistingDriver
+66/117 Test: DriverContainerTest.RemoveNonExistingDriver
+Command: "/home/dinis/CLionProjects/fsoft2025_1DA_2_definitivo/ProjectTester/FleetManagerTest/cmake-build-debug/runTests" "--gtest_filter=DriverContainerTest.RemoveNonExistingDriver" "--gtest_also_run_disabled_tests"
+Directory: /home/dinis/CLionProjects/fsoft2025_1DA_2_definitivo/ProjectTester/FleetManagerTest/cmake-build-debug
+"DriverContainerTest.RemoveNonExistingDriver" start time: Jun 14 22:42 WEST
+Output:
+----------------------------------------------------------
+Running main() from /home/dinis/CLionProjects/fsoft2025_1DA_2_definitivo/ProjectTester/FleetManagerTest/googleTestLib/googletest-main/googletest/src/gtest_main.cc
+Note: Google Test filter = DriverContainerTest.RemoveNonExistingDriver
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from DriverContainerTest
+[ RUN      ] DriverContainerTest.RemoveNonExistingDriver
+[       OK ] DriverContainerTest.RemoveNonExistingDriver (0 ms)
+[----------] 1 test from DriverContainerTest (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"DriverContainerTest.RemoveNonExistingDriver" end time: Jun 14 22:42 WEST
+"DriverContainerTest.RemoveNonExistingDriver" time elapsed: 00:00:00
+----------------------------------------------------------
+
+67/117 Testing: DriverContainerTest.TestListDrivers
+67/117 Test: DriverContainerTest.TestListDrivers
+Command: "/home/dinis/CLionProjects/fsoft2025_1DA_2_definitivo/ProjectTester/FleetManagerTest/cmake-build-debug/runTests" "--gtest_filter=DriverContainerTest.TestListDrivers" "--gtest_also_run_disabled_tests"
+Directory: /home/dinis/CLionProjects/fsoft2025_1DA_2_definitivo/ProjectTester/FleetManagerTest/cmake-build-debug
+"DriverContainerTest.TestListDrivers" start time: Jun 14 22:42 WEST
+Output:
+----------------------------------------------------------
+Running main() from /home/dinis/CLionProjects/fsoft2025_1DA_2_definitivo/ProjectTester/FleetManagerTest/googleTestLib/googletest-main/googletest/src/gtest_main.cc
+Note: Google Test filter = DriverContainerTest.TestListDrivers
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from DriverContainerTest
+[ RUN      ] DriverContainerTest.TestListDrivers
+[       OK ] DriverContainerTest.TestListDrivers (0 ms)
+[----------] 1 test from DriverContainerTest (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"DriverContainerTest.TestListDrivers" end time: Jun 14 22:42 WEST
+"DriverContainerTest.TestListDrivers" time elapsed: 00:00:00
+----------------------------------------------------------
+
+68/117 Testing: DriverContainerTest.TestListAvailableDrivers
+68/117 Test: DriverContainerTest.TestListAvailableDrivers
+Command: "/home/dinis/CLionProjects/fsoft2025_1DA_2_definitivo/ProjectTester/FleetManagerTest/cmake-build-debug/runTests" "--gtest_filter=DriverContainerTest.TestListAvailableDrivers" "--gtest_also_run_disabled_tests"
+Directory: /home/dinis/CLionProjects/fsoft2025_1DA_2_definitivo/ProjectTester/FleetManagerTest/cmake-build-debug
+"DriverContainerTest.TestListAvailableDrivers" start time: Jun 14 22:42 WEST
+Output:
+----------------------------------------------------------
+Running main() from /home/dinis/CLionProjects/fsoft2025_1DA_2_definitivo/ProjectTester/FleetManagerTest/googleTestLib/googletest-main/googletest/src/gtest_main.cc
+Note: Google Test filter = DriverContainerTest.TestListAvailableDrivers
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from DriverContainerTest
+[ RUN      ] DriverContainerTest.TestListAvailableDrivers
+[       OK ] DriverContainerTest.TestListAvailableDrivers (0 ms)
+[----------] 1 test from DriverContainerTest (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"DriverContainerTest.TestListAvailableDrivers" end time: Jun 14 22:42 WEST
+"DriverContainerTest.TestListAvailableDrivers" time elapsed: 00:00:00
+----------------------------------------------------------
+
+69/117 Testing: DriverContainerTest.TestListUnavailableDrivers
+69/117 Test: DriverContainerTest.TestListUnavailableDrivers
+Command: "/home/dinis/CLionProjects/fsoft2025_1DA_2_definitivo/ProjectTester/FleetManagerTest/cmake-build-debug/runTests" "--gtest_filter=DriverContainerTest.TestListUnavailableDrivers" "--gtest_also_run_disabled_tests"
+Directory: /home/dinis/CLionProjects/fsoft2025_1DA_2_definitivo/ProjectTester/FleetManagerTest/cmake-build-debug
+"DriverContainerTest.TestListUnavailableDrivers" start time: Jun 14 22:42 WEST
+Output:
+----------------------------------------------------------
+Running main() from /home/dinis/CLionProjects/fsoft2025_1DA_2_definitivo/ProjectTester/FleetManagerTest/googleTestLib/googletest-main/googletest/src/gtest_main.cc
+Note: Google Test filter = DriverContainerTest.TestListUnavailableDrivers
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from DriverContainerTest
+[ RUN      ] DriverContainerTest.TestListUnavailableDrivers
+[       OK ] DriverContainerTest.TestListUnavailableDrivers (0 ms)
+[----------] 1 test from DriverContainerTest (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"DriverContainerTest.TestListUnavailableDrivers" end time: Jun 14 22:42 WEST
+"DriverContainerTest.TestListUnavailableDrivers" time elapsed: 00:00:00
+----------------------------------------------------------
+
+70/117 Testing: DriverContainerTest.AddVacationToDriver
+70/117 Test: DriverContainerTest.AddVacationToDriver
+Command: "/home/dinis/CLionProjects/fsoft2025_1DA_2_definitivo/ProjectTester/FleetManagerTest/cmake-build-debug/runTests" "--gtest_filter=DriverContainerTest.AddVacationToDriver" "--gtest_also_run_disabled_tests"
+Directory: /home/dinis/CLionProjects/fsoft2025_1DA_2_definitivo/ProjectTester/FleetManagerTest/cmake-build-debug
+"DriverContainerTest.AddVacationToDriver" start time: Jun 14 22:42 WEST
+Output:
+----------------------------------------------------------
+Running main() from /home/dinis/CLionProjects/fsoft2025_1DA_2_definitivo/ProjectTester/FleetManagerTest/googleTestLib/googletest-main/googletest/src/gtest_main.cc
+Note: Google Test filter = DriverContainerTest.AddVacationToDriver
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from DriverContainerTest
+[ RUN      ] DriverContainerTest.AddVacationToDriver
+[       OK ] DriverContainerTest.AddVacationToDriver (0 ms)
+[----------] 1 test from DriverContainerTest (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"DriverContainerTest.AddVacationToDriver" end time: Jun 14 22:42 WEST
+"DriverContainerTest.AddVacationToDriver" time elapsed: 00:00:00
+----------------------------------------------------------
+
+71/117 Testing: DriverContainerTest.AddDuplicatedVacationToDriver
+71/117 Test: DriverContainerTest.AddDuplicatedVacationToDriver
+Command: "/home/dinis/CLionProjects/fsoft2025_1DA_2_definitivo/ProjectTester/FleetManagerTest/cmake-build-debug/runTests" "--gtest_filter=DriverContainerTest.AddDuplicatedVacationToDriver" "--gtest_also_run_disabled_tests"
+Directory: /home/dinis/CLionProjects/fsoft2025_1DA_2_definitivo/ProjectTester/FleetManagerTest/cmake-build-debug
+"DriverContainerTest.AddDuplicatedVacationToDriver" start time: Jun 14 22:42 WEST
+Output:
+----------------------------------------------------------
+Running main() from /home/dinis/CLionProjects/fsoft2025_1DA_2_definitivo/ProjectTester/FleetManagerTest/googleTestLib/googletest-main/googletest/src/gtest_main.cc
+Note: Google Test filter = DriverContainerTest.AddDuplicatedVacationToDriver
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from DriverContainerTest
+[ RUN      ] DriverContainerTest.AddDuplicatedVacationToDriver
+[       OK ] DriverContainerTest.AddDuplicatedVacationToDriver (0 ms)
+[----------] 1 test from DriverContainerTest (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"DriverContainerTest.AddDuplicatedVacationToDriver" end time: Jun 14 22:42 WEST
+"DriverContainerTest.AddDuplicatedVacationToDriver" time elapsed: 00:00:00
+----------------------------------------------------------
+
+72/117 Testing: FinancialContainerTest.RecordValidExpense
+72/117 Test: FinancialContainerTest.RecordValidExpense
+Command: "/home/dinis/CLionProjects/fsoft2025_1DA_2_definitivo/ProjectTester/FleetManagerTest/cmake-build-debug/runTests" "--gtest_filter=FinancialContainerTest.RecordValidExpense" "--gtest_also_run_disabled_tests"
+Directory: /home/dinis/CLionProjects/fsoft2025_1DA_2_definitivo/ProjectTester/FleetManagerTest/cmake-build-debug
+"FinancialContainerTest.RecordValidExpense" start time: Jun 14 22:42 WEST
+Output:
+----------------------------------------------------------
+Running main() from /home/dinis/CLionProjects/fsoft2025_1DA_2_definitivo/ProjectTester/FleetManagerTest/googleTestLib/googletest-main/googletest/src/gtest_main.cc
+Note: Google Test filter = FinancialContainerTest.RecordValidExpense
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from FinancialContainerTest
+[ RUN      ] FinancialContainerTest.RecordValidExpense
+[       OK ] FinancialContainerTest.RecordValidExpense (0 ms)
+[----------] 1 test from FinancialContainerTest (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"FinancialContainerTest.RecordValidExpense" end time: Jun 14 22:42 WEST
+"FinancialContainerTest.RecordValidExpense" time elapsed: 00:00:00
+----------------------------------------------------------
+
+73/117 Testing: FinancialContainerTest.RecordDuplicatedExpense
+73/117 Test: FinancialContainerTest.RecordDuplicatedExpense
+Command: "/home/dinis/CLionProjects/fsoft2025_1DA_2_definitivo/ProjectTester/FleetManagerTest/cmake-build-debug/runTests" "--gtest_filter=FinancialContainerTest.RecordDuplicatedExpense" "--gtest_also_run_disabled_tests"
+Directory: /home/dinis/CLionProjects/fsoft2025_1DA_2_definitivo/ProjectTester/FleetManagerTest/cmake-build-debug
+"FinancialContainerTest.RecordDuplicatedExpense" start time: Jun 14 22:42 WEST
+Output:
+----------------------------------------------------------
+Running main() from /home/dinis/CLionProjects/fsoft2025_1DA_2_definitivo/ProjectTester/FleetManagerTest/googleTestLib/googletest-main/googletest/src/gtest_main.cc
+Note: Google Test filter = FinancialContainerTest.RecordDuplicatedExpense
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from FinancialContainerTest
+[ RUN      ] FinancialContainerTest.RecordDuplicatedExpense
+[       OK ] FinancialContainerTest.RecordDuplicatedExpense (0 ms)
+[----------] 1 test from FinancialContainerTest (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"FinancialContainerTest.RecordDuplicatedExpense" end time: Jun 14 22:42 WEST
+"FinancialContainerTest.RecordDuplicatedExpense" time elapsed: 00:00:00
+----------------------------------------------------------
+
+74/117 Testing: FinancialContainerTest.RemoveValidExpense
+74/117 Test: FinancialContainerTest.RemoveValidExpense
+Command: "/home/dinis/CLionProjects/fsoft2025_1DA_2_definitivo/ProjectTester/FleetManagerTest/cmake-build-debug/runTests" "--gtest_filter=FinancialContainerTest.RemoveValidExpense" "--gtest_also_run_disabled_tests"
+Directory: /home/dinis/CLionProjects/fsoft2025_1DA_2_definitivo/ProjectTester/FleetManagerTest/cmake-build-debug
+"FinancialContainerTest.RemoveValidExpense" start time: Jun 14 22:42 WEST
+Output:
+----------------------------------------------------------
+Running main() from /home/dinis/CLionProjects/fsoft2025_1DA_2_definitivo/ProjectTester/FleetManagerTest/googleTestLib/googletest-main/googletest/src/gtest_main.cc
+Note: Google Test filter = FinancialContainerTest.RemoveValidExpense
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from FinancialContainerTest
+[ RUN      ] FinancialContainerTest.RemoveValidExpense
+[       OK ] FinancialContainerTest.RemoveValidExpense (0 ms)
+[----------] 1 test from FinancialContainerTest (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"FinancialContainerTest.RemoveValidExpense" end time: Jun 14 22:42 WEST
+"FinancialContainerTest.RemoveValidExpense" time elapsed: 00:00:00
+----------------------------------------------------------
+
+75/117 Testing: FinancialContainerTest.RemoveNonExistingExpense
+75/117 Test: FinancialContainerTest.RemoveNonExistingExpense
+Command: "/home/dinis/CLionProjects/fsoft2025_1DA_2_definitivo/ProjectTester/FleetManagerTest/cmake-build-debug/runTests" "--gtest_filter=FinancialContainerTest.RemoveNonExistingExpense" "--gtest_also_run_disabled_tests"
+Directory: /home/dinis/CLionProjects/fsoft2025_1DA_2_definitivo/ProjectTester/FleetManagerTest/cmake-build-debug
+"FinancialContainerTest.RemoveNonExistingExpense" start time: Jun 14 22:42 WEST
+Output:
+----------------------------------------------------------
+Running main() from /home/dinis/CLionProjects/fsoft2025_1DA_2_definitivo/ProjectTester/FleetManagerTest/googleTestLib/googletest-main/googletest/src/gtest_main.cc
+Note: Google Test filter = FinancialContainerTest.RemoveNonExistingExpense
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from FinancialContainerTest
+[ RUN      ] FinancialContainerTest.RemoveNonExistingExpense
+[       OK ] FinancialContainerTest.RemoveNonExistingExpense (0 ms)
+[----------] 1 test from FinancialContainerTest (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"FinancialContainerTest.RemoveNonExistingExpense" end time: Jun 14 22:42 WEST
+"FinancialContainerTest.RemoveNonExistingExpense" time elapsed: 00:00:00
+----------------------------------------------------------
+
+76/117 Testing: FinancialContainerTest.TestListExpenses
+76/117 Test: FinancialContainerTest.TestListExpenses
+Command: "/home/dinis/CLionProjects/fsoft2025_1DA_2_definitivo/ProjectTester/FleetManagerTest/cmake-build-debug/runTests" "--gtest_filter=FinancialContainerTest.TestListExpenses" "--gtest_also_run_disabled_tests"
+Directory: /home/dinis/CLionProjects/fsoft2025_1DA_2_definitivo/ProjectTester/FleetManagerTest/cmake-build-debug
+"FinancialContainerTest.TestListExpenses" start time: Jun 14 22:42 WEST
+Output:
+----------------------------------------------------------
+Running main() from /home/dinis/CLionProjects/fsoft2025_1DA_2_definitivo/ProjectTester/FleetManagerTest/googleTestLib/googletest-main/googletest/src/gtest_main.cc
+Note: Google Test filter = FinancialContainerTest.TestListExpenses
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from FinancialContainerTest
+[ RUN      ] FinancialContainerTest.TestListExpenses
+[       OK ] FinancialContainerTest.TestListExpenses (0 ms)
+[----------] 1 test from FinancialContainerTest (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"FinancialContainerTest.TestListExpenses" end time: Jun 14 22:42 WEST
+"FinancialContainerTest.TestListExpenses" time elapsed: 00:00:00
+----------------------------------------------------------
+
+77/117 Testing: FinancialContainerTest.TestListExpensesByType
+77/117 Test: FinancialContainerTest.TestListExpensesByType
+Command: "/home/dinis/CLionProjects/fsoft2025_1DA_2_definitivo/ProjectTester/FleetManagerTest/cmake-build-debug/runTests" "--gtest_filter=FinancialContainerTest.TestListExpensesByType" "--gtest_also_run_disabled_tests"
+Directory: /home/dinis/CLionProjects/fsoft2025_1DA_2_definitivo/ProjectTester/FleetManagerTest/cmake-build-debug
+"FinancialContainerTest.TestListExpensesByType" start time: Jun 14 22:42 WEST
+Output:
+----------------------------------------------------------
+Running main() from /home/dinis/CLionProjects/fsoft2025_1DA_2_definitivo/ProjectTester/FleetManagerTest/googleTestLib/googletest-main/googletest/src/gtest_main.cc
+Note: Google Test filter = FinancialContainerTest.TestListExpensesByType
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from FinancialContainerTest
+[ RUN      ] FinancialContainerTest.TestListExpensesByType
+[       OK ] FinancialContainerTest.TestListExpensesByType (0 ms)
+[----------] 1 test from FinancialContainerTest (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"FinancialContainerTest.TestListExpensesByType" end time: Jun 14 22:42 WEST
+"FinancialContainerTest.TestListExpensesByType" time elapsed: 00:00:00
+----------------------------------------------------------
+
+78/117 Testing: FinancialContainerTest.RecordValidRevenue
+78/117 Test: FinancialContainerTest.RecordValidRevenue
+Command: "/home/dinis/CLionProjects/fsoft2025_1DA_2_definitivo/ProjectTester/FleetManagerTest/cmake-build-debug/runTests" "--gtest_filter=FinancialContainerTest.RecordValidRevenue" "--gtest_also_run_disabled_tests"
+Directory: /home/dinis/CLionProjects/fsoft2025_1DA_2_definitivo/ProjectTester/FleetManagerTest/cmake-build-debug
+"FinancialContainerTest.RecordValidRevenue" start time: Jun 14 22:42 WEST
+Output:
+----------------------------------------------------------
+Running main() from /home/dinis/CLionProjects/fsoft2025_1DA_2_definitivo/ProjectTester/FleetManagerTest/googleTestLib/googletest-main/googletest/src/gtest_main.cc
+Note: Google Test filter = FinancialContainerTest.RecordValidRevenue
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from FinancialContainerTest
+[ RUN      ] FinancialContainerTest.RecordValidRevenue
+[       OK ] FinancialContainerTest.RecordValidRevenue (0 ms)
+[----------] 1 test from FinancialContainerTest (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"FinancialContainerTest.RecordValidRevenue" end time: Jun 14 22:42 WEST
+"FinancialContainerTest.RecordValidRevenue" time elapsed: 00:00:00
+----------------------------------------------------------
+
+79/117 Testing: FinancialContainerTest.RecordDuplicatedRevenue
+79/117 Test: FinancialContainerTest.RecordDuplicatedRevenue
+Command: "/home/dinis/CLionProjects/fsoft2025_1DA_2_definitivo/ProjectTester/FleetManagerTest/cmake-build-debug/runTests" "--gtest_filter=FinancialContainerTest.RecordDuplicatedRevenue" "--gtest_also_run_disabled_tests"
+Directory: /home/dinis/CLionProjects/fsoft2025_1DA_2_definitivo/ProjectTester/FleetManagerTest/cmake-build-debug
+"FinancialContainerTest.RecordDuplicatedRevenue" start time: Jun 14 22:42 WEST
+Output:
+----------------------------------------------------------
+Running main() from /home/dinis/CLionProjects/fsoft2025_1DA_2_definitivo/ProjectTester/FleetManagerTest/googleTestLib/googletest-main/googletest/src/gtest_main.cc
+Note: Google Test filter = FinancialContainerTest.RecordDuplicatedRevenue
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from FinancialContainerTest
+[ RUN      ] FinancialContainerTest.RecordDuplicatedRevenue
+[       OK ] FinancialContainerTest.RecordDuplicatedRevenue (0 ms)
+[----------] 1 test from FinancialContainerTest (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"FinancialContainerTest.RecordDuplicatedRevenue" end time: Jun 14 22:42 WEST
+"FinancialContainerTest.RecordDuplicatedRevenue" time elapsed: 00:00:00
+----------------------------------------------------------
+
+80/117 Testing: FinancialContainerTest.RemoveValidRevenue
+80/117 Test: FinancialContainerTest.RemoveValidRevenue
+Command: "/home/dinis/CLionProjects/fsoft2025_1DA_2_definitivo/ProjectTester/FleetManagerTest/cmake-build-debug/runTests" "--gtest_filter=FinancialContainerTest.RemoveValidRevenue" "--gtest_also_run_disabled_tests"
+Directory: /home/dinis/CLionProjects/fsoft2025_1DA_2_definitivo/ProjectTester/FleetManagerTest/cmake-build-debug
+"FinancialContainerTest.RemoveValidRevenue" start time: Jun 14 22:42 WEST
+Output:
+----------------------------------------------------------
+Running main() from /home/dinis/CLionProjects/fsoft2025_1DA_2_definitivo/ProjectTester/FleetManagerTest/googleTestLib/googletest-main/googletest/src/gtest_main.cc
+Note: Google Test filter = FinancialContainerTest.RemoveValidRevenue
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from FinancialContainerTest
+[ RUN      ] FinancialContainerTest.RemoveValidRevenue
+[       OK ] FinancialContainerTest.RemoveValidRevenue (0 ms)
+[----------] 1 test from FinancialContainerTest (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"FinancialContainerTest.RemoveValidRevenue" end time: Jun 14 22:42 WEST
+"FinancialContainerTest.RemoveValidRevenue" time elapsed: 00:00:00
+----------------------------------------------------------
+
+81/117 Testing: FinancialContainerTest.RemoveNonExistingRevenue
+81/117 Test: FinancialContainerTest.RemoveNonExistingRevenue
+Command: "/home/dinis/CLionProjects/fsoft2025_1DA_2_definitivo/ProjectTester/FleetManagerTest/cmake-build-debug/runTests" "--gtest_filter=FinancialContainerTest.RemoveNonExistingRevenue" "--gtest_also_run_disabled_tests"
+Directory: /home/dinis/CLionProjects/fsoft2025_1DA_2_definitivo/ProjectTester/FleetManagerTest/cmake-build-debug
+"FinancialContainerTest.RemoveNonExistingRevenue" start time: Jun 14 22:42 WEST
+Output:
+----------------------------------------------------------
+Running main() from /home/dinis/CLionProjects/fsoft2025_1DA_2_definitivo/ProjectTester/FleetManagerTest/googleTestLib/googletest-main/googletest/src/gtest_main.cc
+Note: Google Test filter = FinancialContainerTest.RemoveNonExistingRevenue
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from FinancialContainerTest
+[ RUN      ] FinancialContainerTest.RemoveNonExistingRevenue
+[       OK ] FinancialContainerTest.RemoveNonExistingRevenue (0 ms)
+[----------] 1 test from FinancialContainerTest (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"FinancialContainerTest.RemoveNonExistingRevenue" end time: Jun 14 22:42 WEST
+"FinancialContainerTest.RemoveNonExistingRevenue" time elapsed: 00:00:00
+----------------------------------------------------------
+
+82/117 Testing: FinancialContainerTest.TestListRevenues
+82/117 Test: FinancialContainerTest.TestListRevenues
+Command: "/home/dinis/CLionProjects/fsoft2025_1DA_2_definitivo/ProjectTester/FleetManagerTest/cmake-build-debug/runTests" "--gtest_filter=FinancialContainerTest.TestListRevenues" "--gtest_also_run_disabled_tests"
+Directory: /home/dinis/CLionProjects/fsoft2025_1DA_2_definitivo/ProjectTester/FleetManagerTest/cmake-build-debug
+"FinancialContainerTest.TestListRevenues" start time: Jun 14 22:42 WEST
+Output:
+----------------------------------------------------------
+Running main() from /home/dinis/CLionProjects/fsoft2025_1DA_2_definitivo/ProjectTester/FleetManagerTest/googleTestLib/googletest-main/googletest/src/gtest_main.cc
+Note: Google Test filter = FinancialContainerTest.TestListRevenues
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from FinancialContainerTest
+[ RUN      ] FinancialContainerTest.TestListRevenues
+[       OK ] FinancialContainerTest.TestListRevenues (0 ms)
+[----------] 1 test from FinancialContainerTest (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"FinancialContainerTest.TestListRevenues" end time: Jun 14 22:42 WEST
+"FinancialContainerTest.TestListRevenues" time elapsed: 00:00:00
+----------------------------------------------------------
+
+83/117 Testing: FinancialContainerTest.TestListTransactions
+83/117 Test: FinancialContainerTest.TestListTransactions
+Command: "/home/dinis/CLionProjects/fsoft2025_1DA_2_definitivo/ProjectTester/FleetManagerTest/cmake-build-debug/runTests" "--gtest_filter=FinancialContainerTest.TestListTransactions" "--gtest_also_run_disabled_tests"
+Directory: /home/dinis/CLionProjects/fsoft2025_1DA_2_definitivo/ProjectTester/FleetManagerTest/cmake-build-debug
+"FinancialContainerTest.TestListTransactions" start time: Jun 14 22:42 WEST
+Output:
+----------------------------------------------------------
+Running main() from /home/dinis/CLionProjects/fsoft2025_1DA_2_definitivo/ProjectTester/FleetManagerTest/googleTestLib/googletest-main/googletest/src/gtest_main.cc
+Note: Google Test filter = FinancialContainerTest.TestListTransactions
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from FinancialContainerTest
+[ RUN      ] FinancialContainerTest.TestListTransactions
+[       OK ] FinancialContainerTest.TestListTransactions (0 ms)
+[----------] 1 test from FinancialContainerTest (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"FinancialContainerTest.TestListTransactions" end time: Jun 14 22:42 WEST
+"FinancialContainerTest.TestListTransactions" time elapsed: 00:00:00
+----------------------------------------------------------
+
+84/117 Testing: FinancialContainerTest.TestShowBalance
+84/117 Test: FinancialContainerTest.TestShowBalance
+Command: "/home/dinis/CLionProjects/fsoft2025_1DA_2_definitivo/ProjectTester/FleetManagerTest/cmake-build-debug/runTests" "--gtest_filter=FinancialContainerTest.TestShowBalance" "--gtest_also_run_disabled_tests"
+Directory: /home/dinis/CLionProjects/fsoft2025_1DA_2_definitivo/ProjectTester/FleetManagerTest/cmake-build-debug
+"FinancialContainerTest.TestShowBalance" start time: Jun 14 22:42 WEST
+Output:
+----------------------------------------------------------
+Running main() from /home/dinis/CLionProjects/fsoft2025_1DA_2_definitivo/ProjectTester/FleetManagerTest/googleTestLib/googletest-main/googletest/src/gtest_main.cc
+Note: Google Test filter = FinancialContainerTest.TestShowBalance
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from FinancialContainerTest
+[ RUN      ] FinancialContainerTest.TestShowBalance
+[       OK ] FinancialContainerTest.TestShowBalance (0 ms)
+[----------] 1 test from FinancialContainerTest (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"FinancialContainerTest.TestShowBalance" end time: Jun 14 22:42 WEST
+"FinancialContainerTest.TestShowBalance" time elapsed: 00:00:00
+----------------------------------------------------------
+
+85/117 Testing: VehicleContainerTest.AddValidTruck
+85/117 Test: VehicleContainerTest.AddValidTruck
+Command: "/home/dinis/CLionProjects/fsoft2025_1DA_2_definitivo/ProjectTester/FleetManagerTest/cmake-build-debug/runTests" "--gtest_filter=VehicleContainerTest.AddValidTruck" "--gtest_also_run_disabled_tests"
+Directory: /home/dinis/CLionProjects/fsoft2025_1DA_2_definitivo/ProjectTester/FleetManagerTest/cmake-build-debug
+"VehicleContainerTest.AddValidTruck" start time: Jun 14 22:42 WEST
+Output:
+----------------------------------------------------------
+Running main() from /home/dinis/CLionProjects/fsoft2025_1DA_2_definitivo/ProjectTester/FleetManagerTest/googleTestLib/googletest-main/googletest/src/gtest_main.cc
+Note: Google Test filter = VehicleContainerTest.AddValidTruck
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from VehicleContainerTest
+[ RUN      ] VehicleContainerTest.AddValidTruck
+[       OK ] VehicleContainerTest.AddValidTruck (0 ms)
+[----------] 1 test from VehicleContainerTest (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"VehicleContainerTest.AddValidTruck" end time: Jun 14 22:42 WEST
+"VehicleContainerTest.AddValidTruck" time elapsed: 00:00:00
+----------------------------------------------------------
+
+86/117 Testing: VehicleContainerTest.AddValidVan
+86/117 Test: VehicleContainerTest.AddValidVan
+Command: "/home/dinis/CLionProjects/fsoft2025_1DA_2_definitivo/ProjectTester/FleetManagerTest/cmake-build-debug/runTests" "--gtest_filter=VehicleContainerTest.AddValidVan" "--gtest_also_run_disabled_tests"
+Directory: /home/dinis/CLionProjects/fsoft2025_1DA_2_definitivo/ProjectTester/FleetManagerTest/cmake-build-debug
+"VehicleContainerTest.AddValidVan" start time: Jun 14 22:42 WEST
+Output:
+----------------------------------------------------------
+Running main() from /home/dinis/CLionProjects/fsoft2025_1DA_2_definitivo/ProjectTester/FleetManagerTest/googleTestLib/googletest-main/googletest/src/gtest_main.cc
+Note: Google Test filter = VehicleContainerTest.AddValidVan
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from VehicleContainerTest
+[ RUN      ] VehicleContainerTest.AddValidVan
+[       OK ] VehicleContainerTest.AddValidVan (0 ms)
+[----------] 1 test from VehicleContainerTest (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"VehicleContainerTest.AddValidVan" end time: Jun 14 22:42 WEST
+"VehicleContainerTest.AddValidVan" time elapsed: 00:00:00
+----------------------------------------------------------
+
+87/117 Testing: VehicleContainerTest.AddDuplicatedTruck
+87/117 Test: VehicleContainerTest.AddDuplicatedTruck
+Command: "/home/dinis/CLionProjects/fsoft2025_1DA_2_definitivo/ProjectTester/FleetManagerTest/cmake-build-debug/runTests" "--gtest_filter=VehicleContainerTest.AddDuplicatedTruck" "--gtest_also_run_disabled_tests"
+Directory: /home/dinis/CLionProjects/fsoft2025_1DA_2_definitivo/ProjectTester/FleetManagerTest/cmake-build-debug
+"VehicleContainerTest.AddDuplicatedTruck" start time: Jun 14 22:42 WEST
+Output:
+----------------------------------------------------------
+Running main() from /home/dinis/CLionProjects/fsoft2025_1DA_2_definitivo/ProjectTester/FleetManagerTest/googleTestLib/googletest-main/googletest/src/gtest_main.cc
+Note: Google Test filter = VehicleContainerTest.AddDuplicatedTruck
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from VehicleContainerTest
+[ RUN      ] VehicleContainerTest.AddDuplicatedTruck
+[       OK ] VehicleContainerTest.AddDuplicatedTruck (0 ms)
+[----------] 1 test from VehicleContainerTest (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"VehicleContainerTest.AddDuplicatedTruck" end time: Jun 14 22:42 WEST
+"VehicleContainerTest.AddDuplicatedTruck" time elapsed: 00:00:00
+----------------------------------------------------------
+
+88/117 Testing: VehicleContainerTest.AddDuplicatedVan
+88/117 Test: VehicleContainerTest.AddDuplicatedVan
+Command: "/home/dinis/CLionProjects/fsoft2025_1DA_2_definitivo/ProjectTester/FleetManagerTest/cmake-build-debug/runTests" "--gtest_filter=VehicleContainerTest.AddDuplicatedVan" "--gtest_also_run_disabled_tests"
+Directory: /home/dinis/CLionProjects/fsoft2025_1DA_2_definitivo/ProjectTester/FleetManagerTest/cmake-build-debug
+"VehicleContainerTest.AddDuplicatedVan" start time: Jun 14 22:42 WEST
+Output:
+----------------------------------------------------------
+Running main() from /home/dinis/CLionProjects/fsoft2025_1DA_2_definitivo/ProjectTester/FleetManagerTest/googleTestLib/googletest-main/googletest/src/gtest_main.cc
+Note: Google Test filter = VehicleContainerTest.AddDuplicatedVan
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from VehicleContainerTest
+[ RUN      ] VehicleContainerTest.AddDuplicatedVan
+[       OK ] VehicleContainerTest.AddDuplicatedVan (0 ms)
+[----------] 1 test from VehicleContainerTest (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"VehicleContainerTest.AddDuplicatedVan" end time: Jun 14 22:42 WEST
+"VehicleContainerTest.AddDuplicatedVan" time elapsed: 00:00:00
+----------------------------------------------------------
+
+89/117 Testing: VehicleContainerTest.RemoveValidTruck
+89/117 Test: VehicleContainerTest.RemoveValidTruck
+Command: "/home/dinis/CLionProjects/fsoft2025_1DA_2_definitivo/ProjectTester/FleetManagerTest/cmake-build-debug/runTests" "--gtest_filter=VehicleContainerTest.RemoveValidTruck" "--gtest_also_run_disabled_tests"
+Directory: /home/dinis/CLionProjects/fsoft2025_1DA_2_definitivo/ProjectTester/FleetManagerTest/cmake-build-debug
+"VehicleContainerTest.RemoveValidTruck" start time: Jun 14 22:42 WEST
+Output:
+----------------------------------------------------------
+Running main() from /home/dinis/CLionProjects/fsoft2025_1DA_2_definitivo/ProjectTester/FleetManagerTest/googleTestLib/googletest-main/googletest/src/gtest_main.cc
+Note: Google Test filter = VehicleContainerTest.RemoveValidTruck
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from VehicleContainerTest
+[ RUN      ] VehicleContainerTest.RemoveValidTruck
+[       OK ] VehicleContainerTest.RemoveValidTruck (0 ms)
+[----------] 1 test from VehicleContainerTest (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"VehicleContainerTest.RemoveValidTruck" end time: Jun 14 22:42 WEST
+"VehicleContainerTest.RemoveValidTruck" time elapsed: 00:00:00
+----------------------------------------------------------
+
+90/117 Testing: VehicleContainerTest.RemoveValidVan
+90/117 Test: VehicleContainerTest.RemoveValidVan
+Command: "/home/dinis/CLionProjects/fsoft2025_1DA_2_definitivo/ProjectTester/FleetManagerTest/cmake-build-debug/runTests" "--gtest_filter=VehicleContainerTest.RemoveValidVan" "--gtest_also_run_disabled_tests"
+Directory: /home/dinis/CLionProjects/fsoft2025_1DA_2_definitivo/ProjectTester/FleetManagerTest/cmake-build-debug
+"VehicleContainerTest.RemoveValidVan" start time: Jun 14 22:42 WEST
+Output:
+----------------------------------------------------------
+Running main() from /home/dinis/CLionProjects/fsoft2025_1DA_2_definitivo/ProjectTester/FleetManagerTest/googleTestLib/googletest-main/googletest/src/gtest_main.cc
+Note: Google Test filter = VehicleContainerTest.RemoveValidVan
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from VehicleContainerTest
+[ RUN      ] VehicleContainerTest.RemoveValidVan
+[       OK ] VehicleContainerTest.RemoveValidVan (0 ms)
+[----------] 1 test from VehicleContainerTest (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"VehicleContainerTest.RemoveValidVan" end time: Jun 14 22:42 WEST
+"VehicleContainerTest.RemoveValidVan" time elapsed: 00:00:00
+----------------------------------------------------------
+
+91/117 Testing: VehicleContainerTest.RemoveNonExistingVehicle
+91/117 Test: VehicleContainerTest.RemoveNonExistingVehicle
+Command: "/home/dinis/CLionProjects/fsoft2025_1DA_2_definitivo/ProjectTester/FleetManagerTest/cmake-build-debug/runTests" "--gtest_filter=VehicleContainerTest.RemoveNonExistingVehicle" "--gtest_also_run_disabled_tests"
+Directory: /home/dinis/CLionProjects/fsoft2025_1DA_2_definitivo/ProjectTester/FleetManagerTest/cmake-build-debug
+"VehicleContainerTest.RemoveNonExistingVehicle" start time: Jun 14 22:42 WEST
+Output:
+----------------------------------------------------------
+Running main() from /home/dinis/CLionProjects/fsoft2025_1DA_2_definitivo/ProjectTester/FleetManagerTest/googleTestLib/googletest-main/googletest/src/gtest_main.cc
+Note: Google Test filter = VehicleContainerTest.RemoveNonExistingVehicle
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from VehicleContainerTest
+[ RUN      ] VehicleContainerTest.RemoveNonExistingVehicle
+[       OK ] VehicleContainerTest.RemoveNonExistingVehicle (0 ms)
+[----------] 1 test from VehicleContainerTest (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"VehicleContainerTest.RemoveNonExistingVehicle" end time: Jun 14 22:42 WEST
+"VehicleContainerTest.RemoveNonExistingVehicle" time elapsed: 00:00:00
+----------------------------------------------------------
+
+92/117 Testing: VehicleContainerTest.RemoveTruckInVSL
+92/117 Test: VehicleContainerTest.RemoveTruckInVSL
+Command: "/home/dinis/CLionProjects/fsoft2025_1DA_2_definitivo/ProjectTester/FleetManagerTest/cmake-build-debug/runTests" "--gtest_filter=VehicleContainerTest.RemoveTruckInVSL" "--gtest_also_run_disabled_tests"
+Directory: /home/dinis/CLionProjects/fsoft2025_1DA_2_definitivo/ProjectTester/FleetManagerTest/cmake-build-debug
+"VehicleContainerTest.RemoveTruckInVSL" start time: Jun 14 22:42 WEST
+Output:
+----------------------------------------------------------
+Running main() from /home/dinis/CLionProjects/fsoft2025_1DA_2_definitivo/ProjectTester/FleetManagerTest/googleTestLib/googletest-main/googletest/src/gtest_main.cc
+Note: Google Test filter = VehicleContainerTest.RemoveTruckInVSL
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from VehicleContainerTest
+[ RUN      ] VehicleContainerTest.RemoveTruckInVSL
+[       OK ] VehicleContainerTest.RemoveTruckInVSL (0 ms)
+[----------] 1 test from VehicleContainerTest (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"VehicleContainerTest.RemoveTruckInVSL" end time: Jun 14 22:42 WEST
+"VehicleContainerTest.RemoveTruckInVSL" time elapsed: 00:00:00
+----------------------------------------------------------
+
+93/117 Testing: VehicleContainerTest.RemoveVanInVSL
+93/117 Test: VehicleContainerTest.RemoveVanInVSL
+Command: "/home/dinis/CLionProjects/fsoft2025_1DA_2_definitivo/ProjectTester/FleetManagerTest/cmake-build-debug/runTests" "--gtest_filter=VehicleContainerTest.RemoveVanInVSL" "--gtest_also_run_disabled_tests"
+Directory: /home/dinis/CLionProjects/fsoft2025_1DA_2_definitivo/ProjectTester/FleetManagerTest/cmake-build-debug
+"VehicleContainerTest.RemoveVanInVSL" start time: Jun 14 22:42 WEST
+Output:
+----------------------------------------------------------
+Running main() from /home/dinis/CLionProjects/fsoft2025_1DA_2_definitivo/ProjectTester/FleetManagerTest/googleTestLib/googletest-main/googletest/src/gtest_main.cc
+Note: Google Test filter = VehicleContainerTest.RemoveVanInVSL
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from VehicleContainerTest
+[ RUN      ] VehicleContainerTest.RemoveVanInVSL
+[       OK ] VehicleContainerTest.RemoveVanInVSL (0 ms)
+[----------] 1 test from VehicleContainerTest (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"VehicleContainerTest.RemoveVanInVSL" end time: Jun 14 22:42 WEST
+"VehicleContainerTest.RemoveVanInVSL" time elapsed: 00:00:00
+----------------------------------------------------------
+
+94/117 Testing: VehicleContainerTest.RemoveTruckWithInsurance
+94/117 Test: VehicleContainerTest.RemoveTruckWithInsurance
+Command: "/home/dinis/CLionProjects/fsoft2025_1DA_2_definitivo/ProjectTester/FleetManagerTest/cmake-build-debug/runTests" "--gtest_filter=VehicleContainerTest.RemoveTruckWithInsurance" "--gtest_also_run_disabled_tests"
+Directory: /home/dinis/CLionProjects/fsoft2025_1DA_2_definitivo/ProjectTester/FleetManagerTest/cmake-build-debug
+"VehicleContainerTest.RemoveTruckWithInsurance" start time: Jun 14 22:42 WEST
+Output:
+----------------------------------------------------------
+Running main() from /home/dinis/CLionProjects/fsoft2025_1DA_2_definitivo/ProjectTester/FleetManagerTest/googleTestLib/googletest-main/googletest/src/gtest_main.cc
+Note: Google Test filter = VehicleContainerTest.RemoveTruckWithInsurance
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from VehicleContainerTest
+[ RUN      ] VehicleContainerTest.RemoveTruckWithInsurance
+[       OK ] VehicleContainerTest.RemoveTruckWithInsurance (0 ms)
+[----------] 1 test from VehicleContainerTest (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"VehicleContainerTest.RemoveTruckWithInsurance" end time: Jun 14 22:42 WEST
+"VehicleContainerTest.RemoveTruckWithInsurance" time elapsed: 00:00:00
+----------------------------------------------------------
+
+95/117 Testing: VehicleContainerTest.RemoveVanWithInsurance
+95/117 Test: VehicleContainerTest.RemoveVanWithInsurance
+Command: "/home/dinis/CLionProjects/fsoft2025_1DA_2_definitivo/ProjectTester/FleetManagerTest/cmake-build-debug/runTests" "--gtest_filter=VehicleContainerTest.RemoveVanWithInsurance" "--gtest_also_run_disabled_tests"
+Directory: /home/dinis/CLionProjects/fsoft2025_1DA_2_definitivo/ProjectTester/FleetManagerTest/cmake-build-debug
+"VehicleContainerTest.RemoveVanWithInsurance" start time: Jun 14 22:42 WEST
+Output:
+----------------------------------------------------------
+Running main() from /home/dinis/CLionProjects/fsoft2025_1DA_2_definitivo/ProjectTester/FleetManagerTest/googleTestLib/googletest-main/googletest/src/gtest_main.cc
+Note: Google Test filter = VehicleContainerTest.RemoveVanWithInsurance
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from VehicleContainerTest
+[ RUN      ] VehicleContainerTest.RemoveVanWithInsurance
+[       OK ] VehicleContainerTest.RemoveVanWithInsurance (0 ms)
+[----------] 1 test from VehicleContainerTest (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"VehicleContainerTest.RemoveVanWithInsurance" end time: Jun 14 22:42 WEST
+"VehicleContainerTest.RemoveVanWithInsurance" time elapsed: 00:00:00
+----------------------------------------------------------
+
+96/117 Testing: VehicleContainerTest.RemoveTruckWithInspection
+96/117 Test: VehicleContainerTest.RemoveTruckWithInspection
+Command: "/home/dinis/CLionProjects/fsoft2025_1DA_2_definitivo/ProjectTester/FleetManagerTest/cmake-build-debug/runTests" "--gtest_filter=VehicleContainerTest.RemoveTruckWithInspection" "--gtest_also_run_disabled_tests"
+Directory: /home/dinis/CLionProjects/fsoft2025_1DA_2_definitivo/ProjectTester/FleetManagerTest/cmake-build-debug
+"VehicleContainerTest.RemoveTruckWithInspection" start time: Jun 14 22:42 WEST
+Output:
+----------------------------------------------------------
+Running main() from /home/dinis/CLionProjects/fsoft2025_1DA_2_definitivo/ProjectTester/FleetManagerTest/googleTestLib/googletest-main/googletest/src/gtest_main.cc
+Note: Google Test filter = VehicleContainerTest.RemoveTruckWithInspection
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from VehicleContainerTest
+[ RUN      ] VehicleContainerTest.RemoveTruckWithInspection
+[       OK ] VehicleContainerTest.RemoveTruckWithInspection (0 ms)
+[----------] 1 test from VehicleContainerTest (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"VehicleContainerTest.RemoveTruckWithInspection" end time: Jun 14 22:42 WEST
+"VehicleContainerTest.RemoveTruckWithInspection" time elapsed: 00:00:00
+----------------------------------------------------------
+
+97/117 Testing: VehicleContainerTest.RemoveVanWithInspection
+97/117 Test: VehicleContainerTest.RemoveVanWithInspection
+Command: "/home/dinis/CLionProjects/fsoft2025_1DA_2_definitivo/ProjectTester/FleetManagerTest/cmake-build-debug/runTests" "--gtest_filter=VehicleContainerTest.RemoveVanWithInspection" "--gtest_also_run_disabled_tests"
+Directory: /home/dinis/CLionProjects/fsoft2025_1DA_2_definitivo/ProjectTester/FleetManagerTest/cmake-build-debug
+"VehicleContainerTest.RemoveVanWithInspection" start time: Jun 14 22:42 WEST
+Output:
+----------------------------------------------------------
+Running main() from /home/dinis/CLionProjects/fsoft2025_1DA_2_definitivo/ProjectTester/FleetManagerTest/googleTestLib/googletest-main/googletest/src/gtest_main.cc
+Note: Google Test filter = VehicleContainerTest.RemoveVanWithInspection
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from VehicleContainerTest
+[ RUN      ] VehicleContainerTest.RemoveVanWithInspection
+[       OK ] VehicleContainerTest.RemoveVanWithInspection (0 ms)
+[----------] 1 test from VehicleContainerTest (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"VehicleContainerTest.RemoveVanWithInspection" end time: Jun 14 22:42 WEST
+"VehicleContainerTest.RemoveVanWithInspection" time elapsed: 00:00:00
+----------------------------------------------------------
+
+98/117 Testing: VehicleContainerTest.AddInsuranceToTruck
+98/117 Test: VehicleContainerTest.AddInsuranceToTruck
+Command: "/home/dinis/CLionProjects/fsoft2025_1DA_2_definitivo/ProjectTester/FleetManagerTest/cmake-build-debug/runTests" "--gtest_filter=VehicleContainerTest.AddInsuranceToTruck" "--gtest_also_run_disabled_tests"
+Directory: /home/dinis/CLionProjects/fsoft2025_1DA_2_definitivo/ProjectTester/FleetManagerTest/cmake-build-debug
+"VehicleContainerTest.AddInsuranceToTruck" start time: Jun 14 22:42 WEST
+Output:
+----------------------------------------------------------
+Running main() from /home/dinis/CLionProjects/fsoft2025_1DA_2_definitivo/ProjectTester/FleetManagerTest/googleTestLib/googletest-main/googletest/src/gtest_main.cc
+Note: Google Test filter = VehicleContainerTest.AddInsuranceToTruck
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from VehicleContainerTest
+[ RUN      ] VehicleContainerTest.AddInsuranceToTruck
+[       OK ] VehicleContainerTest.AddInsuranceToTruck (0 ms)
+[----------] 1 test from VehicleContainerTest (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"VehicleContainerTest.AddInsuranceToTruck" end time: Jun 14 22:42 WEST
+"VehicleContainerTest.AddInsuranceToTruck" time elapsed: 00:00:00
+----------------------------------------------------------
+
+99/117 Testing: VehicleContainerTest.AddInsuranceToVan
+99/117 Test: VehicleContainerTest.AddInsuranceToVan
+Command: "/home/dinis/CLionProjects/fsoft2025_1DA_2_definitivo/ProjectTester/FleetManagerTest/cmake-build-debug/runTests" "--gtest_filter=VehicleContainerTest.AddInsuranceToVan" "--gtest_also_run_disabled_tests"
+Directory: /home/dinis/CLionProjects/fsoft2025_1DA_2_definitivo/ProjectTester/FleetManagerTest/cmake-build-debug
+"VehicleContainerTest.AddInsuranceToVan" start time: Jun 14 22:42 WEST
+Output:
+----------------------------------------------------------
+Running main() from /home/dinis/CLionProjects/fsoft2025_1DA_2_definitivo/ProjectTester/FleetManagerTest/googleTestLib/googletest-main/googletest/src/gtest_main.cc
+Note: Google Test filter = VehicleContainerTest.AddInsuranceToVan
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from VehicleContainerTest
+[ RUN      ] VehicleContainerTest.AddInsuranceToVan
+[       OK ] VehicleContainerTest.AddInsuranceToVan (0 ms)
+[----------] 1 test from VehicleContainerTest (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"VehicleContainerTest.AddInsuranceToVan" end time: Jun 14 22:42 WEST
+"VehicleContainerTest.AddInsuranceToVan" time elapsed: 00:00:00
+----------------------------------------------------------
+
+100/117 Testing: VehicleContainerTest.RemoveInsuranceToTruck
+100/117 Test: VehicleContainerTest.RemoveInsuranceToTruck
+Command: "/home/dinis/CLionProjects/fsoft2025_1DA_2_definitivo/ProjectTester/FleetManagerTest/cmake-build-debug/runTests" "--gtest_filter=VehicleContainerTest.RemoveInsuranceToTruck" "--gtest_also_run_disabled_tests"
+Directory: /home/dinis/CLionProjects/fsoft2025_1DA_2_definitivo/ProjectTester/FleetManagerTest/cmake-build-debug
+"VehicleContainerTest.RemoveInsuranceToTruck" start time: Jun 14 22:42 WEST
+Output:
+----------------------------------------------------------
+Running main() from /home/dinis/CLionProjects/fsoft2025_1DA_2_definitivo/ProjectTester/FleetManagerTest/googleTestLib/googletest-main/googletest/src/gtest_main.cc
+Note: Google Test filter = VehicleContainerTest.RemoveInsuranceToTruck
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from VehicleContainerTest
+[ RUN      ] VehicleContainerTest.RemoveInsuranceToTruck
+[       OK ] VehicleContainerTest.RemoveInsuranceToTruck (0 ms)
+[----------] 1 test from VehicleContainerTest (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"VehicleContainerTest.RemoveInsuranceToTruck" end time: Jun 14 22:42 WEST
+"VehicleContainerTest.RemoveInsuranceToTruck" time elapsed: 00:00:00
+----------------------------------------------------------
+
+101/117 Testing: VehicleContainerTest.RemoveInsuranceToVan
+101/117 Test: VehicleContainerTest.RemoveInsuranceToVan
+Command: "/home/dinis/CLionProjects/fsoft2025_1DA_2_definitivo/ProjectTester/FleetManagerTest/cmake-build-debug/runTests" "--gtest_filter=VehicleContainerTest.RemoveInsuranceToVan" "--gtest_also_run_disabled_tests"
+Directory: /home/dinis/CLionProjects/fsoft2025_1DA_2_definitivo/ProjectTester/FleetManagerTest/cmake-build-debug
+"VehicleContainerTest.RemoveInsuranceToVan" start time: Jun 14 22:42 WEST
+Output:
+----------------------------------------------------------
+Running main() from /home/dinis/CLionProjects/fsoft2025_1DA_2_definitivo/ProjectTester/FleetManagerTest/googleTestLib/googletest-main/googletest/src/gtest_main.cc
+Note: Google Test filter = VehicleContainerTest.RemoveInsuranceToVan
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from VehicleContainerTest
+[ RUN      ] VehicleContainerTest.RemoveInsuranceToVan
+[       OK ] VehicleContainerTest.RemoveInsuranceToVan (0 ms)
+[----------] 1 test from VehicleContainerTest (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"VehicleContainerTest.RemoveInsuranceToVan" end time: Jun 14 22:42 WEST
+"VehicleContainerTest.RemoveInsuranceToVan" time elapsed: 00:00:00
+----------------------------------------------------------
+
+102/117 Testing: VehicleContainerTest.ListTrucks
+102/117 Test: VehicleContainerTest.ListTrucks
+Command: "/home/dinis/CLionProjects/fsoft2025_1DA_2_definitivo/ProjectTester/FleetManagerTest/cmake-build-debug/runTests" "--gtest_filter=VehicleContainerTest.ListTrucks" "--gtest_also_run_disabled_tests"
+Directory: /home/dinis/CLionProjects/fsoft2025_1DA_2_definitivo/ProjectTester/FleetManagerTest/cmake-build-debug
+"VehicleContainerTest.ListTrucks" start time: Jun 14 22:42 WEST
+Output:
+----------------------------------------------------------
+Running main() from /home/dinis/CLionProjects/fsoft2025_1DA_2_definitivo/ProjectTester/FleetManagerTest/googleTestLib/googletest-main/googletest/src/gtest_main.cc
+Note: Google Test filter = VehicleContainerTest.ListTrucks
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from VehicleContainerTest
+[ RUN      ] VehicleContainerTest.ListTrucks
+[       OK ] VehicleContainerTest.ListTrucks (0 ms)
+[----------] 1 test from VehicleContainerTest (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"VehicleContainerTest.ListTrucks" end time: Jun 14 22:42 WEST
+"VehicleContainerTest.ListTrucks" time elapsed: 00:00:00
+----------------------------------------------------------
+
+103/117 Testing: VehicleContainerTest.ListVans
+103/117 Test: VehicleContainerTest.ListVans
+Command: "/home/dinis/CLionProjects/fsoft2025_1DA_2_definitivo/ProjectTester/FleetManagerTest/cmake-build-debug/runTests" "--gtest_filter=VehicleContainerTest.ListVans" "--gtest_also_run_disabled_tests"
+Directory: /home/dinis/CLionProjects/fsoft2025_1DA_2_definitivo/ProjectTester/FleetManagerTest/cmake-build-debug
+"VehicleContainerTest.ListVans" start time: Jun 14 22:42 WEST
+Output:
+----------------------------------------------------------
+Running main() from /home/dinis/CLionProjects/fsoft2025_1DA_2_definitivo/ProjectTester/FleetManagerTest/googleTestLib/googletest-main/googletest/src/gtest_main.cc
+Note: Google Test filter = VehicleContainerTest.ListVans
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from VehicleContainerTest
+[ RUN      ] VehicleContainerTest.ListVans
+[       OK ] VehicleContainerTest.ListVans (0 ms)
+[----------] 1 test from VehicleContainerTest (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"VehicleContainerTest.ListVans" end time: Jun 14 22:42 WEST
+"VehicleContainerTest.ListVans" time elapsed: 00:00:00
+----------------------------------------------------------
+
+104/117 Testing: VehicleContainerTest.ListAvailableTrucks
+104/117 Test: VehicleContainerTest.ListAvailableTrucks
+Command: "/home/dinis/CLionProjects/fsoft2025_1DA_2_definitivo/ProjectTester/FleetManagerTest/cmake-build-debug/runTests" "--gtest_filter=VehicleContainerTest.ListAvailableTrucks" "--gtest_also_run_disabled_tests"
+Directory: /home/dinis/CLionProjects/fsoft2025_1DA_2_definitivo/ProjectTester/FleetManagerTest/cmake-build-debug
+"VehicleContainerTest.ListAvailableTrucks" start time: Jun 14 22:42 WEST
+Output:
+----------------------------------------------------------
+Running main() from /home/dinis/CLionProjects/fsoft2025_1DA_2_definitivo/ProjectTester/FleetManagerTest/googleTestLib/googletest-main/googletest/src/gtest_main.cc
+Note: Google Test filter = VehicleContainerTest.ListAvailableTrucks
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from VehicleContainerTest
+[ RUN      ] VehicleContainerTest.ListAvailableTrucks
+[       OK ] VehicleContainerTest.ListAvailableTrucks (0 ms)
+[----------] 1 test from VehicleContainerTest (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"VehicleContainerTest.ListAvailableTrucks" end time: Jun 14 22:42 WEST
+"VehicleContainerTest.ListAvailableTrucks" time elapsed: 00:00:00
+----------------------------------------------------------
+
+105/117 Testing: VehicleContainerTest.ListAvailableVans
+105/117 Test: VehicleContainerTest.ListAvailableVans
+Command: "/home/dinis/CLionProjects/fsoft2025_1DA_2_definitivo/ProjectTester/FleetManagerTest/cmake-build-debug/runTests" "--gtest_filter=VehicleContainerTest.ListAvailableVans" "--gtest_also_run_disabled_tests"
+Directory: /home/dinis/CLionProjects/fsoft2025_1DA_2_definitivo/ProjectTester/FleetManagerTest/cmake-build-debug
+"VehicleContainerTest.ListAvailableVans" start time: Jun 14 22:42 WEST
+Output:
+----------------------------------------------------------
+Running main() from /home/dinis/CLionProjects/fsoft2025_1DA_2_definitivo/ProjectTester/FleetManagerTest/googleTestLib/googletest-main/googletest/src/gtest_main.cc
+Note: Google Test filter = VehicleContainerTest.ListAvailableVans
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from VehicleContainerTest
+[ RUN      ] VehicleContainerTest.ListAvailableVans
+[       OK ] VehicleContainerTest.ListAvailableVans (0 ms)
+[----------] 1 test from VehicleContainerTest (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"VehicleContainerTest.ListAvailableVans" end time: Jun 14 22:42 WEST
+"VehicleContainerTest.ListAvailableVans" time elapsed: 00:00:00
+----------------------------------------------------------
+
+106/117 Testing: VehicleContainerTest.ListUnavailableTrucks
+106/117 Test: VehicleContainerTest.ListUnavailableTrucks
+Command: "/home/dinis/CLionProjects/fsoft2025_1DA_2_definitivo/ProjectTester/FleetManagerTest/cmake-build-debug/runTests" "--gtest_filter=VehicleContainerTest.ListUnavailableTrucks" "--gtest_also_run_disabled_tests"
+Directory: /home/dinis/CLionProjects/fsoft2025_1DA_2_definitivo/ProjectTester/FleetManagerTest/cmake-build-debug
+"VehicleContainerTest.ListUnavailableTrucks" start time: Jun 14 22:42 WEST
+Output:
+----------------------------------------------------------
+Running main() from /home/dinis/CLionProjects/fsoft2025_1DA_2_definitivo/ProjectTester/FleetManagerTest/googleTestLib/googletest-main/googletest/src/gtest_main.cc
+Note: Google Test filter = VehicleContainerTest.ListUnavailableTrucks
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from VehicleContainerTest
+[ RUN      ] VehicleContainerTest.ListUnavailableTrucks
+[       OK ] VehicleContainerTest.ListUnavailableTrucks (0 ms)
+[----------] 1 test from VehicleContainerTest (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"VehicleContainerTest.ListUnavailableTrucks" end time: Jun 14 22:42 WEST
+"VehicleContainerTest.ListUnavailableTrucks" time elapsed: 00:00:00
+----------------------------------------------------------
+
+107/117 Testing: VehicleContainerTest.ListUnavailableVans
+107/117 Test: VehicleContainerTest.ListUnavailableVans
+Command: "/home/dinis/CLionProjects/fsoft2025_1DA_2_definitivo/ProjectTester/FleetManagerTest/cmake-build-debug/runTests" "--gtest_filter=VehicleContainerTest.ListUnavailableVans" "--gtest_also_run_disabled_tests"
+Directory: /home/dinis/CLionProjects/fsoft2025_1DA_2_definitivo/ProjectTester/FleetManagerTest/cmake-build-debug
+"VehicleContainerTest.ListUnavailableVans" start time: Jun 14 22:42 WEST
+Output:
+----------------------------------------------------------
+Running main() from /home/dinis/CLionProjects/fsoft2025_1DA_2_definitivo/ProjectTester/FleetManagerTest/googleTestLib/googletest-main/googletest/src/gtest_main.cc
+Note: Google Test filter = VehicleContainerTest.ListUnavailableVans
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from VehicleContainerTest
+[ RUN      ] VehicleContainerTest.ListUnavailableVans
+[       OK ] VehicleContainerTest.ListUnavailableVans (0 ms)
+[----------] 1 test from VehicleContainerTest (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"VehicleContainerTest.ListUnavailableVans" end time: Jun 14 22:42 WEST
+"VehicleContainerTest.ListUnavailableVans" time elapsed: 00:00:00
+----------------------------------------------------------
+
+108/117 Testing: VSLContainerTest.AddValidVSL
+108/117 Test: VSLContainerTest.AddValidVSL
+Command: "/home/dinis/CLionProjects/fsoft2025_1DA_2_definitivo/ProjectTester/FleetManagerTest/cmake-build-debug/runTests" "--gtest_filter=VSLContainerTest.AddValidVSL" "--gtest_also_run_disabled_tests"
+Directory: /home/dinis/CLionProjects/fsoft2025_1DA_2_definitivo/ProjectTester/FleetManagerTest/cmake-build-debug
+"VSLContainerTest.AddValidVSL" start time: Jun 14 22:42 WEST
+Output:
+----------------------------------------------------------
+Running main() from /home/dinis/CLionProjects/fsoft2025_1DA_2_definitivo/ProjectTester/FleetManagerTest/googleTestLib/googletest-main/googletest/src/gtest_main.cc
+Note: Google Test filter = VSLContainerTest.AddValidVSL
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from VSLContainerTest
+[ RUN      ] VSLContainerTest.AddValidVSL
+[       OK ] VSLContainerTest.AddValidVSL (0 ms)
+[----------] 1 test from VSLContainerTest (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"VSLContainerTest.AddValidVSL" end time: Jun 14 22:42 WEST
+"VSLContainerTest.AddValidVSL" time elapsed: 00:00:00
+----------------------------------------------------------
+
+109/117 Testing: VSLContainerTest.AddDuplicatedVSL
+109/117 Test: VSLContainerTest.AddDuplicatedVSL
+Command: "/home/dinis/CLionProjects/fsoft2025_1DA_2_definitivo/ProjectTester/FleetManagerTest/cmake-build-debug/runTests" "--gtest_filter=VSLContainerTest.AddDuplicatedVSL" "--gtest_also_run_disabled_tests"
+Directory: /home/dinis/CLionProjects/fsoft2025_1DA_2_definitivo/ProjectTester/FleetManagerTest/cmake-build-debug
+"VSLContainerTest.AddDuplicatedVSL" start time: Jun 14 22:42 WEST
+Output:
+----------------------------------------------------------
+Running main() from /home/dinis/CLionProjects/fsoft2025_1DA_2_definitivo/ProjectTester/FleetManagerTest/googleTestLib/googletest-main/googletest/src/gtest_main.cc
+Note: Google Test filter = VSLContainerTest.AddDuplicatedVSL
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from VSLContainerTest
+[ RUN      ] VSLContainerTest.AddDuplicatedVSL
+[       OK ] VSLContainerTest.AddDuplicatedVSL (0 ms)
+[----------] 1 test from VSLContainerTest (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"VSLContainerTest.AddDuplicatedVSL" end time: Jun 14 22:42 WEST
+"VSLContainerTest.AddDuplicatedVSL" time elapsed: 00:00:00
+----------------------------------------------------------
+
+110/117 Testing: VSLContainerTest.RemoveValidVSL
+110/117 Test: VSLContainerTest.RemoveValidVSL
+Command: "/home/dinis/CLionProjects/fsoft2025_1DA_2_definitivo/ProjectTester/FleetManagerTest/cmake-build-debug/runTests" "--gtest_filter=VSLContainerTest.RemoveValidVSL" "--gtest_also_run_disabled_tests"
+Directory: /home/dinis/CLionProjects/fsoft2025_1DA_2_definitivo/ProjectTester/FleetManagerTest/cmake-build-debug
+"VSLContainerTest.RemoveValidVSL" start time: Jun 14 22:42 WEST
+Output:
+----------------------------------------------------------
+Running main() from /home/dinis/CLionProjects/fsoft2025_1DA_2_definitivo/ProjectTester/FleetManagerTest/googleTestLib/googletest-main/googletest/src/gtest_main.cc
+Note: Google Test filter = VSLContainerTest.RemoveValidVSL
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from VSLContainerTest
+[ RUN      ] VSLContainerTest.RemoveValidVSL
+[       OK ] VSLContainerTest.RemoveValidVSL (0 ms)
+[----------] 1 test from VSLContainerTest (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"VSLContainerTest.RemoveValidVSL" end time: Jun 14 22:42 WEST
+"VSLContainerTest.RemoveValidVSL" time elapsed: 00:00:00
+----------------------------------------------------------
+
+111/117 Testing: VSLContainerTest.RemoveVSLWithTruck
+111/117 Test: VSLContainerTest.RemoveVSLWithTruck
+Command: "/home/dinis/CLionProjects/fsoft2025_1DA_2_definitivo/ProjectTester/FleetManagerTest/cmake-build-debug/runTests" "--gtest_filter=VSLContainerTest.RemoveVSLWithTruck" "--gtest_also_run_disabled_tests"
+Directory: /home/dinis/CLionProjects/fsoft2025_1DA_2_definitivo/ProjectTester/FleetManagerTest/cmake-build-debug
+"VSLContainerTest.RemoveVSLWithTruck" start time: Jun 14 22:42 WEST
+Output:
+----------------------------------------------------------
+Running main() from /home/dinis/CLionProjects/fsoft2025_1DA_2_definitivo/ProjectTester/FleetManagerTest/googleTestLib/googletest-main/googletest/src/gtest_main.cc
+Note: Google Test filter = VSLContainerTest.RemoveVSLWithTruck
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from VSLContainerTest
+[ RUN      ] VSLContainerTest.RemoveVSLWithTruck
+[       OK ] VSLContainerTest.RemoveVSLWithTruck (0 ms)
+[----------] 1 test from VSLContainerTest (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"VSLContainerTest.RemoveVSLWithTruck" end time: Jun 14 22:42 WEST
+"VSLContainerTest.RemoveVSLWithTruck" time elapsed: 00:00:00
+----------------------------------------------------------
+
+112/117 Testing: VSLContainerTest.ListVSLs
+112/117 Test: VSLContainerTest.ListVSLs
+Command: "/home/dinis/CLionProjects/fsoft2025_1DA_2_definitivo/ProjectTester/FleetManagerTest/cmake-build-debug/runTests" "--gtest_filter=VSLContainerTest.ListVSLs" "--gtest_also_run_disabled_tests"
+Directory: /home/dinis/CLionProjects/fsoft2025_1DA_2_definitivo/ProjectTester/FleetManagerTest/cmake-build-debug
+"VSLContainerTest.ListVSLs" start time: Jun 14 22:42 WEST
+Output:
+----------------------------------------------------------
+Running main() from /home/dinis/CLionProjects/fsoft2025_1DA_2_definitivo/ProjectTester/FleetManagerTest/googleTestLib/googletest-main/googletest/src/gtest_main.cc
+Note: Google Test filter = VSLContainerTest.ListVSLs
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from VSLContainerTest
+[ RUN      ] VSLContainerTest.ListVSLs
+[       OK ] VSLContainerTest.ListVSLs (0 ms)
+[----------] 1 test from VSLContainerTest (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"VSLContainerTest.ListVSLs" end time: Jun 14 22:42 WEST
+"VSLContainerTest.ListVSLs" time elapsed: 00:00:00
+----------------------------------------------------------
+
+113/117 Testing: TripContainerTest.addValidTrip
+113/117 Test: TripContainerTest.addValidTrip
+Command: "/home/dinis/CLionProjects/fsoft2025_1DA_2_definitivo/ProjectTester/FleetManagerTest/cmake-build-debug/runTests" "--gtest_filter=TripContainerTest.addValidTrip" "--gtest_also_run_disabled_tests"
+Directory: /home/dinis/CLionProjects/fsoft2025_1DA_2_definitivo/ProjectTester/FleetManagerTest/cmake-build-debug
+"TripContainerTest.addValidTrip" start time: Jun 14 22:42 WEST
+Output:
+----------------------------------------------------------
+Running main() from /home/dinis/CLionProjects/fsoft2025_1DA_2_definitivo/ProjectTester/FleetManagerTest/googleTestLib/googletest-main/googletest/src/gtest_main.cc
+Note: Google Test filter = TripContainerTest.addValidTrip
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from TripContainerTest
+[ RUN      ] TripContainerTest.addValidTrip
+[       OK ] TripContainerTest.addValidTrip (0 ms)
+[----------] 1 test from TripContainerTest (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"TripContainerTest.addValidTrip" end time: Jun 14 22:42 WEST
+"TripContainerTest.addValidTrip" time elapsed: 00:00:00
+----------------------------------------------------------
+
+114/117 Testing: TripContainerTest.duplicatedTrip
+114/117 Test: TripContainerTest.duplicatedTrip
+Command: "/home/dinis/CLionProjects/fsoft2025_1DA_2_definitivo/ProjectTester/FleetManagerTest/cmake-build-debug/runTests" "--gtest_filter=TripContainerTest.duplicatedTrip" "--gtest_also_run_disabled_tests"
+Directory: /home/dinis/CLionProjects/fsoft2025_1DA_2_definitivo/ProjectTester/FleetManagerTest/cmake-build-debug
+"TripContainerTest.duplicatedTrip" start time: Jun 14 22:42 WEST
+Output:
+----------------------------------------------------------
+Running main() from /home/dinis/CLionProjects/fsoft2025_1DA_2_definitivo/ProjectTester/FleetManagerTest/googleTestLib/googletest-main/googletest/src/gtest_main.cc
+Note: Google Test filter = TripContainerTest.duplicatedTrip
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from TripContainerTest
+[ RUN      ] TripContainerTest.duplicatedTrip
+!! Error: "Trip 1" duplicated !!
+[       OK ] TripContainerTest.duplicatedTrip (0 ms)
+[----------] 1 test from TripContainerTest (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"TripContainerTest.duplicatedTrip" end time: Jun 14 22:42 WEST
+"TripContainerTest.duplicatedTrip" time elapsed: 00:00:00
+----------------------------------------------------------
+
+115/117 Testing: TripContainerTest.updateTrip
+115/117 Test: TripContainerTest.updateTrip
+Command: "/home/dinis/CLionProjects/fsoft2025_1DA_2_definitivo/ProjectTester/FleetManagerTest/cmake-build-debug/runTests" "--gtest_filter=TripContainerTest.updateTrip" "--gtest_also_run_disabled_tests"
+Directory: /home/dinis/CLionProjects/fsoft2025_1DA_2_definitivo/ProjectTester/FleetManagerTest/cmake-build-debug
+"TripContainerTest.updateTrip" start time: Jun 14 22:42 WEST
+Output:
+----------------------------------------------------------
+Running main() from /home/dinis/CLionProjects/fsoft2025_1DA_2_definitivo/ProjectTester/FleetManagerTest/googleTestLib/googletest-main/googletest/src/gtest_main.cc
+Note: Google Test filter = TripContainerTest.updateTrip
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from TripContainerTest
+[ RUN      ] TripContainerTest.updateTrip
+[       OK ] TripContainerTest.updateTrip (0 ms)
+[----------] 1 test from TripContainerTest (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"TripContainerTest.updateTrip" end time: Jun 14 22:42 WEST
+"TripContainerTest.updateTrip" time elapsed: 00:00:00
+----------------------------------------------------------
+
+116/117 Testing: TripContainerTest.listTrips
+116/117 Test: TripContainerTest.listTrips
+Command: "/home/dinis/CLionProjects/fsoft2025_1DA_2_definitivo/ProjectTester/FleetManagerTest/cmake-build-debug/runTests" "--gtest_filter=TripContainerTest.listTrips" "--gtest_also_run_disabled_tests"
+Directory: /home/dinis/CLionProjects/fsoft2025_1DA_2_definitivo/ProjectTester/FleetManagerTest/cmake-build-debug
+"TripContainerTest.listTrips" start time: Jun 14 22:42 WEST
+Output:
+----------------------------------------------------------
+Running main() from /home/dinis/CLionProjects/fsoft2025_1DA_2_definitivo/ProjectTester/FleetManagerTest/googleTestLib/googletest-main/googletest/src/gtest_main.cc
+Note: Google Test filter = TripContainerTest.listTrips
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from TripContainerTest
+[ RUN      ] TripContainerTest.listTrips
+[       OK ] TripContainerTest.listTrips (0 ms)
+[----------] 1 test from TripContainerTest (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"TripContainerTest.listTrips" end time: Jun 14 22:42 WEST
+"TripContainerTest.listTrips" time elapsed: 00:00:00
+----------------------------------------------------------
+
+117/117 Testing: TripContainerTest.listTripsByState
+117/117 Test: TripContainerTest.listTripsByState
+Command: "/home/dinis/CLionProjects/fsoft2025_1DA_2_definitivo/ProjectTester/FleetManagerTest/cmake-build-debug/runTests" "--gtest_filter=TripContainerTest.listTripsByState" "--gtest_also_run_disabled_tests"
+Directory: /home/dinis/CLionProjects/fsoft2025_1DA_2_definitivo/ProjectTester/FleetManagerTest/cmake-build-debug
+"TripContainerTest.listTripsByState" start time: Jun 14 22:42 WEST
+Output:
+----------------------------------------------------------
+Running main() from /home/dinis/CLionProjects/fsoft2025_1DA_2_definitivo/ProjectTester/FleetManagerTest/googleTestLib/googletest-main/googletest/src/gtest_main.cc
+Note: Google Test filter = TripContainerTest.listTripsByState
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from TripContainerTest
+[ RUN      ] TripContainerTest.listTripsByState
+[       OK ] TripContainerTest.listTripsByState (0 ms)
+[----------] 1 test from TripContainerTest (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"TripContainerTest.listTripsByState" end time: Jun 14 22:42 WEST
+"TripContainerTest.listTripsByState" time elapsed: 00:00:00
+----------------------------------------------------------
+
+End testing: Jun 14 22:42 WEST

@@ -37,7 +37,7 @@ void OrderContainer::add(Order &order) {
     try {
         list<Order>::iterator it = search(order.getOrderID());
         if (it != this->orders.end()) {
-            string msg = "Order: " + to_string(order.getOrderID());
+            string msg = "Order (id): " + to_string(order.getOrderID());
             throw DuplicatedDataException(msg);
         }
         this->orders.push_back(order);
@@ -53,7 +53,7 @@ void OrderContainer::remove(int orderId) {
             this->orders.erase(it);
         }
         else {
-            string msg = "Order: " + to_string(orderId);
+            string msg = "Order (id): " + to_string(orderId);
             throw NonExistingDataException(msg);
         }
     }catch (NonExistingDataException &error) {
