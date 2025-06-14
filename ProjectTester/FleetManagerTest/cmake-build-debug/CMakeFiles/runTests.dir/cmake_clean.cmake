@@ -83,6 +83,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/runTests.dir/C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/views/VehicleView.cpp.obj.d"
   "CMakeFiles/runTests.dir/C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/views/View.cpp.obj"
   "CMakeFiles/runTests.dir/C_/Projects/fsoft2025_1DA_2/Project/FleetManager/sources/views/View.cpp.obj.d"
+  "CMakeFiles/runTests.dir/data_test.cpp.obj"
+  "CMakeFiles/runTests.dir/data_test.cpp.obj.d"
   "CMakeFiles/runTests.dir/date_test.cpp.obj"
   "CMakeFiles/runTests.dir/date_test.cpp.obj.d"
   "CMakeFiles/runTests.dir/driverContainer_test.cpp.obj"
