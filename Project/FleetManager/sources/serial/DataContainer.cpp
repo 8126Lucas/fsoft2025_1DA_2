@@ -246,12 +246,14 @@ void DataContainer::saveAllData() {
     dataVehicle["vans"] = vanArray;
 
     ofstream vehicleOutputFile(vehicleFilePath);
+    cout << "\nSaving into \"vehicle.json\"...";
     try {
         if (!vehicleOutputFile.is_open()) {
             throw NonExistingDataException("Vehicle JSON File");
         }
         vehicleOutputFile << setw(4) << dataVehicle << endl;
         vehicleOutputFile.close();
+        cout << " ✅" << endl;
     } catch (NonExistingDataException &error) {
         cout << error.what() << endl;
     }
@@ -266,12 +268,14 @@ void DataContainer::saveAllData() {
     dataVSL["vsls"] = vslArray;
 
     ofstream vslOutputFile(vslFilePath);
+    cout << "Saving into \"vsl.json\"...";
     try {
         if (!vslOutputFile.is_open()) {
             throw NonExistingDataException("Vehicle Storage Location JSON File");
         }
         vslOutputFile << setw(4) << dataVSL << endl;
         vslOutputFile.close();
+        cout << " ✅" << endl;
     } catch (NonExistingDataException &error) {
         cout << error.what() << endl;
     }
@@ -286,12 +290,14 @@ void DataContainer::saveAllData() {
     dataDriver["drivers"] = driverArray;
 
     ofstream driverOutputFile(driverFilePath);
+    cout << "Saving into \"driver.json\"...";
     try {
         if (!driverOutputFile.is_open()) {
             throw NonExistingDataException("Driver JSON File");
         }
         driverOutputFile << setw(4) << dataDriver << endl;
         driverOutputFile.close();
+        cout << " ✅" << endl;
     } catch (NonExistingDataException &error) {
         cout << error.what() << endl;
     }
@@ -313,12 +319,14 @@ void DataContainer::saveAllData() {
     dataFinancial["revenues"] = revenueArray;
 
     ofstream financialOutputFile(financialFilePath);
+    cout << "Saving into \"financial.json\"...";
     try {
         if (!financialOutputFile.is_open()) {
             throw NonExistingDataException("Financial JSON File");
         }
         financialOutputFile << setw(4) << dataFinancial << endl;
         financialOutputFile.close();
+        cout << " ✅" << endl;
     } catch (NonExistingDataException &error) {
         cout << error.what() << endl;
     }
@@ -333,12 +341,14 @@ void DataContainer::saveAllData() {
     dataTrip["trips"] = tripArray;
 
     ofstream tripOutputFile(tripFilePath);
+    cout << "Saving into \"trip.json\"...";
     try {
         if (!tripOutputFile.is_open()) {
             throw NonExistingDataException("Trip JSON File");
         }
         tripOutputFile << setw(4) << dataTrip << endl;
         tripOutputFile.close();
+        cout << " ✅" << endl;
     } catch (NonExistingDataException &error) {
         cout << error.what() << endl;
     }
@@ -353,12 +363,14 @@ void DataContainer::saveAllData() {
     dataOrder["orders"] = orderArray;
 
     ofstream orderOutputFile(orderFilePath);
+    cout << "Saving into \"order.json\"...";
     try {
         if (!orderOutputFile.is_open()) {
             throw NonExistingDataException("Order JSON File");
         }
         orderOutputFile << setw(4) << dataOrder << endl;
         orderOutputFile.close();
+        cout << " ✅" << endl;
     } catch (NonExistingDataException &error) {
         cout << error.what() << endl;
     }

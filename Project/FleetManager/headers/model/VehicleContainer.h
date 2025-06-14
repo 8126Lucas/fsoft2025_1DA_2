@@ -37,9 +37,9 @@ public:
     void add(Van *van);
     void remove(const string &licensePlate);
     const list<Truck*> &listTrucks() const;
-    const list<Truck*> &listTrucks(bool available) const;
+    list<Truck*> listTrucks(bool available) const;
     const list<Van*> &listVans() const;
-    const list<Van*> &listVans(bool available) const;
+    list<Van*> listVans(bool available) const;
     void update(string &licensePlate, Insurance *insurance);
     void update(string &licensePlate, Inspection *inspection);
     void update(string &licensePlate, VehicleStorageLocation *vsl);

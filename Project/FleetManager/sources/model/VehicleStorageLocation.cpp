@@ -98,3 +98,18 @@ void VehicleStorageLocation::addVehicle(Vehicle *vehicle) {
     this->getVehicles()[this->getID()].push_back(vehicle);
     this->incrementVehicleCount();
 }
+
+void VehicleStorageLocation::removeVehicle(Vehicle *vehicle) {
+    list<Vehicle*> &vehicles = this->getVehicles()[this->getID()];
+    list<Vehicle *>::iterator it = vehicles.begin();
+    for (; it != vehicles.end(); ++it) {
+        if (*it == vehicle) {
+            vehicles.erase(it);
+            this->decrementVehicleCount();
+            return;
+        }
+    }
+    string msg = "Vehicle " + vehicle->getLicensePlate() + " is not at Vehicle Storage Location "
+                                + to_string(this->getID()) +"!\n";
+    throw NonExistingDataException(msg);
+}

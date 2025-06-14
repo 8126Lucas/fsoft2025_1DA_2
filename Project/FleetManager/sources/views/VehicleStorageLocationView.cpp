@@ -128,18 +128,7 @@ void VehicleStorageLocationView::removeVehicleFromStorage(VehicleStorageLocation
                 cout << "The Storage Location is empty!\n";
                 return;
             }
-            list<Vehicle *>::iterator it = vsl->getVehicles()[vsl->getID()].begin();
-            for (; it != vsl->getVehicles()[vsl->getID()].end(); ++it) {
-                if ((*it) == vehicle) {
-                    vsl->getVehicles()[vsl->getID()].erase(it);
-                    vsl->decrementVehicleCount();
-                }
-                else {
-                    string msg = "Vehicle " + vehicle->getLicensePlate() + " is not at Vehicle Storage Location "
-                                + to_string(vsl->getID()) +"!\n";
-                    throw NonExistingDataException(msg);
-                }
-            }
+            vsl->removeVehicle(vehicle);
         } catch (NonExistingDataException &error) {
             cout << error.what() << endl;
             flag_error = true;

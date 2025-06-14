@@ -29,8 +29,8 @@ int Utils::getInt(const string &label) {
     cout << label << ": ";
     flag_error = false;
     cin >> number;
-    if(cin.fail()) {
-      cout << "That's not a number! Please enter a number.\n";
+    if(cin.fail() || number < 0) {
+      cout << "That's not a valid number! Please enter a valid number.\n";
       cin.clear();
       cin.ignore(std::numeric_limits<std::streamsize>::max(), '\n');
       flag_error = true;
@@ -48,8 +48,8 @@ double Utils::getDouble(const string &label) {
     cout << label << ": ";
     flag_error = false;
     cin >> number;
-    if(cin.fail()) {
-      cout << "That's not a number! Please enter a number.\n";
+    if(cin.fail() || number < 0.0) {
+      cout << "That's not a valid number! Please enter a valid number.\n";
       cin.clear();
       cin.ignore(std::numeric_limits<std::streamsize>::max(), '\n');
       flag_error = true;
@@ -121,7 +121,7 @@ Date Utils::getDate(const string &label) {
       if (numbers.size() == 3) {
         if (!date.setDate(numbers[0], numbers[1], numbers[2])) {
           flag_error = true;
-          throw(InvalidDataException("Invalid data input!"));
+          throw(InvalidDataException("Date"));
         }
       }
       else {flag_error = true;}

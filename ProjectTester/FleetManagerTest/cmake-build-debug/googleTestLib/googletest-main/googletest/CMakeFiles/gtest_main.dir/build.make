@@ -43,19 +43,19 @@ cmake_force:
 SHELL = cmd.exe
 
 # The CMake executable.
-CMAKE_COMMAND = "C:\Program Files\JetBrains\CLion 2024.3.3\bin\cmake\win\aarch64\bin\cmake.exe"
+CMAKE_COMMAND = "C:\Program Files (x86)\JetBrains\CLion 2024.3.4\bin\cmake\win\x64\bin\cmake.exe"
 
 # The command to remove a file.
-RM = "C:\Program Files\JetBrains\CLion 2024.3.3\bin\cmake\win\aarch64\bin\cmake.exe" -E rm -f
+RM = "C:\Program Files (x86)\JetBrains\CLion 2024.3.4\bin\cmake\win\x64\bin\cmake.exe" -E rm -f
 
 # Escaping for special characters.
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = C:\Projects\fsoft2025_1DA_2\ProjectTester\FleetManagerTest
+CMAKE_SOURCE_DIR = C:\Users\lucas\Desktop\fsoft2025_1DA_2\ProjectTester\FleetManagerTest
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = C:\Projects\fsoft2025_1DA_2\ProjectTester\FleetManagerTest\cmake-build-debug
+CMAKE_BINARY_DIR = C:\Users\lucas\Desktop\fsoft2025_1DA_2\ProjectTester\FleetManagerTest\cmake-build-debug
 
 # Include any dependencies generated for this target.
 include googleTestLib/googletest-main/googletest/CMakeFiles/gtest_main.dir/depend.make
@@ -73,18 +73,18 @@ googleTestLib/googletest-main/googletest/CMakeFiles/gtest_main.dir/codegen:
 
 googleTestLib/googletest-main/googletest/CMakeFiles/gtest_main.dir/src/gtest_main.cc.obj: googleTestLib/googletest-main/googletest/CMakeFiles/gtest_main.dir/flags.make
 googleTestLib/googletest-main/googletest/CMakeFiles/gtest_main.dir/src/gtest_main.cc.obj: googleTestLib/googletest-main/googletest/CMakeFiles/gtest_main.dir/includes_CXX.rsp
-googleTestLib/googletest-main/googletest/CMakeFiles/gtest_main.dir/src/gtest_main.cc.obj: C:/Projects/fsoft2025_1DA_2/ProjectTester/FleetManagerTest/googleTestLib/googletest-main/googletest/src/gtest_main.cc
+googleTestLib/googletest-main/googletest/CMakeFiles/gtest_main.dir/src/gtest_main.cc.obj: C:/Users/lucas/Desktop/fsoft2025_1DA_2/ProjectTester/FleetManagerTest/googleTestLib/googletest-main/googletest/src/gtest_main.cc
 googleTestLib/googletest-main/googletest/CMakeFiles/gtest_main.dir/src/gtest_main.cc.obj: googleTestLib/googletest-main/googletest/CMakeFiles/gtest_main.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Projects\fsoft2025_1DA_2\ProjectTester\FleetManagerTest\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object googleTestLib/googletest-main/googletest/CMakeFiles/gtest_main.dir/src/gtest_main.cc.obj"
-	cd /d C:\Projects\fsoft2025_1DA_2\ProjectTester\FleetManagerTest\cmake-build-debug\googleTestLib\googletest-main\googletest && C:\msys64\ucrt64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT googleTestLib/googletest-main/googletest/CMakeFiles/gtest_main.dir/src/gtest_main.cc.obj -MF CMakeFiles\gtest_main.dir\src\gtest_main.cc.obj.d -o CMakeFiles\gtest_main.dir\src\gtest_main.cc.obj -c C:\Projects\fsoft2025_1DA_2\ProjectTester\FleetManagerTest\googleTestLib\googletest-main\googletest\src\gtest_main.cc
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\lucas\Desktop\fsoft2025_1DA_2\ProjectTester\FleetManagerTest\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object googleTestLib/googletest-main/googletest/CMakeFiles/gtest_main.dir/src/gtest_main.cc.obj"
+	cd /d C:\Users\lucas\Desktop\fsoft2025_1DA_2\ProjectTester\FleetManagerTest\cmake-build-debug\googleTestLib\googletest-main\googletest && C:\PROGRA~2\JETBRA~1\CLION2~1.4\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT googleTestLib/googletest-main/googletest/CMakeFiles/gtest_main.dir/src/gtest_main.cc.obj -MF CMakeFiles\gtest_main.dir\src\gtest_main.cc.obj.d -o CMakeFiles\gtest_main.dir\src\gtest_main.cc.obj -c C:\Users\lucas\Desktop\fsoft2025_1DA_2\ProjectTester\FleetManagerTest\googleTestLib\googletest-main\googletest\src\gtest_main.cc
 
 googleTestLib/googletest-main/googletest/CMakeFiles/gtest_main.dir/src/gtest_main.cc.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/gtest_main.dir/src/gtest_main.cc.i"
-	cd /d C:\Projects\fsoft2025_1DA_2\ProjectTester\FleetManagerTest\cmake-build-debug\googleTestLib\googletest-main\googletest && C:\msys64\ucrt64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Projects\fsoft2025_1DA_2\ProjectTester\FleetManagerTest\googleTestLib\googletest-main\googletest\src\gtest_main.cc > CMakeFiles\gtest_main.dir\src\gtest_main.cc.i
+	cd /d C:\Users\lucas\Desktop\fsoft2025_1DA_2\ProjectTester\FleetManagerTest\cmake-build-debug\googleTestLib\googletest-main\googletest && C:\PROGRA~2\JETBRA~1\CLION2~1.4\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\lucas\Desktop\fsoft2025_1DA_2\ProjectTester\FleetManagerTest\googleTestLib\googletest-main\googletest\src\gtest_main.cc > CMakeFiles\gtest_main.dir\src\gtest_main.cc.i
 
 googleTestLib/googletest-main/googletest/CMakeFiles/gtest_main.dir/src/gtest_main.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/gtest_main.dir/src/gtest_main.cc.s"
-	cd /d C:\Projects\fsoft2025_1DA_2\ProjectTester\FleetManagerTest\cmake-build-debug\googleTestLib\googletest-main\googletest && C:\msys64\ucrt64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Projects\fsoft2025_1DA_2\ProjectTester\FleetManagerTest\googleTestLib\googletest-main\googletest\src\gtest_main.cc -o CMakeFiles\gtest_main.dir\src\gtest_main.cc.s
+	cd /d C:\Users\lucas\Desktop\fsoft2025_1DA_2\ProjectTester\FleetManagerTest\cmake-build-debug\googleTestLib\googletest-main\googletest && C:\PROGRA~2\JETBRA~1\CLION2~1.4\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\lucas\Desktop\fsoft2025_1DA_2\ProjectTester\FleetManagerTest\googleTestLib\googletest-main\googletest\src\gtest_main.cc -o CMakeFiles\gtest_main.dir\src\gtest_main.cc.s
 
 # Object files for target gtest_main
 gtest_main_OBJECTS = \
@@ -96,19 +96,19 @@ gtest_main_EXTERNAL_OBJECTS =
 lib/libgtest_main.a: googleTestLib/googletest-main/googletest/CMakeFiles/gtest_main.dir/src/gtest_main.cc.obj
 lib/libgtest_main.a: googleTestLib/googletest-main/googletest/CMakeFiles/gtest_main.dir/build.make
 lib/libgtest_main.a: googleTestLib/googletest-main/googletest/CMakeFiles/gtest_main.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=C:\Projects\fsoft2025_1DA_2\ProjectTester\FleetManagerTest\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX static library ..\..\..\lib\libgtest_main.a"
-	cd /d C:\Projects\fsoft2025_1DA_2\ProjectTester\FleetManagerTest\cmake-build-debug\googleTestLib\googletest-main\googletest && $(CMAKE_COMMAND) -P CMakeFiles\gtest_main.dir\cmake_clean_target.cmake
-	cd /d C:\Projects\fsoft2025_1DA_2\ProjectTester\FleetManagerTest\cmake-build-debug\googleTestLib\googletest-main\googletest && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles\gtest_main.dir\link.txt --verbose=$(VERBOSE)
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=C:\Users\lucas\Desktop\fsoft2025_1DA_2\ProjectTester\FleetManagerTest\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX static library ..\..\..\lib\libgtest_main.a"
+	cd /d C:\Users\lucas\Desktop\fsoft2025_1DA_2\ProjectTester\FleetManagerTest\cmake-build-debug\googleTestLib\googletest-main\googletest && $(CMAKE_COMMAND) -P CMakeFiles\gtest_main.dir\cmake_clean_target.cmake
+	cd /d C:\Users\lucas\Desktop\fsoft2025_1DA_2\ProjectTester\FleetManagerTest\cmake-build-debug\googleTestLib\googletest-main\googletest && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles\gtest_main.dir\link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
 googleTestLib/googletest-main/googletest/CMakeFiles/gtest_main.dir/build: lib/libgtest_main.a
 .PHONY : googleTestLib/googletest-main/googletest/CMakeFiles/gtest_main.dir/build
 
 googleTestLib/googletest-main/googletest/CMakeFiles/gtest_main.dir/clean:
-	cd /d C:\Projects\fsoft2025_1DA_2\ProjectTester\FleetManagerTest\cmake-build-debug\googleTestLib\googletest-main\googletest && $(CMAKE_COMMAND) -P CMakeFiles\gtest_main.dir\cmake_clean.cmake
+	cd /d C:\Users\lucas\Desktop\fsoft2025_1DA_2\ProjectTester\FleetManagerTest\cmake-build-debug\googleTestLib\googletest-main\googletest && $(CMAKE_COMMAND) -P CMakeFiles\gtest_main.dir\cmake_clean.cmake
 .PHONY : googleTestLib/googletest-main/googletest/CMakeFiles/gtest_main.dir/clean
 
 googleTestLib/googletest-main/googletest/CMakeFiles/gtest_main.dir/depend:
-	$(CMAKE_COMMAND) -E cmake_depends "MinGW Makefiles" C:\Projects\fsoft2025_1DA_2\ProjectTester\FleetManagerTest C:\Projects\fsoft2025_1DA_2\ProjectTester\FleetManagerTest\googleTestLib\googletest-main\googletest C:\Projects\fsoft2025_1DA_2\ProjectTester\FleetManagerTest\cmake-build-debug C:\Projects\fsoft2025_1DA_2\ProjectTester\FleetManagerTest\cmake-build-debug\googleTestLib\googletest-main\googletest C:\Projects\fsoft2025_1DA_2\ProjectTester\FleetManagerTest\cmake-build-debug\googleTestLib\googletest-main\googletest\CMakeFiles\gtest_main.dir\DependInfo.cmake "--color=$(COLOR)"
+	$(CMAKE_COMMAND) -E cmake_depends "MinGW Makefiles" C:\Users\lucas\Desktop\fsoft2025_1DA_2\ProjectTester\FleetManagerTest C:\Users\lucas\Desktop\fsoft2025_1DA_2\ProjectTester\FleetManagerTest\googleTestLib\googletest-main\googletest C:\Users\lucas\Desktop\fsoft2025_1DA_2\ProjectTester\FleetManagerTest\cmake-build-debug C:\Users\lucas\Desktop\fsoft2025_1DA_2\ProjectTester\FleetManagerTest\cmake-build-debug\googleTestLib\googletest-main\googletest C:\Users\lucas\Desktop\fsoft2025_1DA_2\ProjectTester\FleetManagerTest\cmake-build-debug\googleTestLib\googletest-main\googletest\CMakeFiles\gtest_main.dir\DependInfo.cmake "--color=$(COLOR)"
 .PHONY : googleTestLib/googletest-main/googletest/CMakeFiles/gtest_main.dir/depend
 

@@ -1,16 +1,16 @@
-"C:\Program Files\JetBrains\CLion 2024.3.3\bin\cmake\win\aarch64\bin\cmake.exe" -DCMAKE_BUILD_TYPE=Debug -DCMAKE_MAKE_PROGRAM=C:/msys64/ucrt64/bin/mingw32-make.exe -DCMAKE_C_COMPILER=C:/msys64/ucrt64/bin/gcc.exe -DCMAKE_CXX_COMPILER=C:/msys64/ucrt64/bin/g++.exe -G "MinGW Makefiles" -S C:\Projects\fsoft2025_1DA_2\ProjectTester\FleetManagerTest -B C:\Projects\fsoft2025_1DA_2\ProjectTester\FleetManagerTest\cmake-build-debug
--- The C compiler identification is GNU 13.2.0
--- The CXX compiler identification is GNU 13.2.0
+"C:\Program Files (x86)\JetBrains\CLion 2024.3.4\bin\cmake\win\x64\bin\cmake.exe" -DCMAKE_BUILD_TYPE=Debug -G "MinGW Makefiles" -S C:\Users\lucas\Desktop\fsoft2025_1DA_2\ProjectTester\FleetManagerTest -B C:\Users\lucas\Desktop\fsoft2025_1DA_2\ProjectTester\FleetManagerTest\cmake-build-debug
+-- The C compiler identification is GNU 13.1.0
+-- The CXX compiler identification is GNU 13.1.0
 -- Detecting C compiler ABI info
 -- Detecting C compiler ABI info - done
--- Check for working C compiler: C:/msys64/ucrt64/bin/gcc.exe - skipped
+-- Check for working C compiler: C:/Program Files (x86)/JetBrains/CLion 2024.3.4/bin/mingw/bin/gcc.exe - skipped
 -- Detecting C compile features
 -- Detecting C compile features - done
 -- Detecting CXX compiler ABI info
 -- Detecting CXX compiler ABI info - done
--- Check for working CXX compiler: C:/msys64/ucrt64/bin/g++.exe - skipped
+-- Check for working CXX compiler: C:/Program Files (x86)/JetBrains/CLion 2024.3.4/bin/mingw/bin/g++.exe - skipped
 -- Detecting CXX compile features
 -- Detecting CXX compile features - done
--- Configuring done (2.0s)
--- Generating done (0.1s)
--- Build files have been written to: C:/Projects/fsoft2025_1DA_2/ProjectTester/FleetManagerTest/cmake-build-debug
+-- Configuring done (5.2s)
+-- Generating done (2.8s)
+-- Build files have been written to: C:/Users/lucas/Desktop/fsoft2025_1DA_2/ProjectTester/FleetManagerTest/cmake-build-debug

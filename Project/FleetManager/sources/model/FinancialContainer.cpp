@@ -94,6 +94,7 @@ Revenue *FinancialContainer::getRevenue(int id) {
     } catch (NonExistingDataException &error) {
         cout << error.what() << endl;
     }
+    return nullptr;
 }
 
 void FinancialContainer::addRevenue(Revenue &revenue) {

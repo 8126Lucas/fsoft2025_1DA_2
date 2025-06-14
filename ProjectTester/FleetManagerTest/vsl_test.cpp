@@ -3,6 +3,7 @@
 //
 
 #include <Truck.h>
+#include <Van.h>
 
 #include "VehicleStorageLocation.h"
 #include "Vehicle.h"
@@ -41,7 +42,7 @@ TEST_F(VSLTest, DecrementVehicleCount) {
 
 // TEST_F(VSLTest, GetStoredVehicles) {}
 
-TEST_F(VSLTest, AddVehicleToStorageLocation) {
+TEST_F(VSLTest, AddTruckToStorageLocation) {
     Truck *testTruck = new Truck(TRUCK, "BMW", "Serie 4", 2023, "6E-UT-U9", 109, 79, 4000, true);
     vsl->setID(1);
     vsl->setName("Nome");
@@ -49,4 +50,36 @@ TEST_F(VSLTest, AddVehicleToStorageLocation) {
     vsl->setCapacity(1);
     vsl->addVehicle(testTruck);
     EXPECT_EQ(vsl->getStoredVehicles(vsl->getID()).size(), 1);
+}
+
+TEST_F(VSLTest, AddVanToStorageLocation) {
+    Van *testVan = new Van(VAN, "BMW", "Serie 4", 2023, "6E-UT-U9", 109, 79, 4000, true);
+    vsl->setID(1);
+    vsl->setName("Nome");
+    vsl->setAddress("Morada");
+    vsl->setCapacity(1);
+    vsl->addVehicle(testVan);
+    EXPECT_EQ(vsl->getStoredVehicles(vsl->getID()).size(), 1);
+}
+
+TEST_F(VSLTest, RemoveTruckFromStorageLocation) {
+    Truck *testTruck = new Truck(TRUCK, "BMW", "Serie 4", 2023, "6E-UT-U9", 109, 79, 4000, true);
+    vsl->setID(1);
+    vsl->setName("Nome");
+    vsl->setAddress("Morada");
+    vsl->setCapacity(1);
+    vsl->addVehicle(testTruck);
+    vsl->removeVehicle(testTruck);
+    EXPECT_EQ(vsl->getStoredVehicles(vsl->getID()).size(), 0);
+}
+
+TEST_F(VSLTest, RemoveVanFromStorageLocation) {
+    Van *testVan = new Van(VAN, "BMW", "Serie 4", 2023, "6E-UT-U9", 109, 79, 4000, true);
+    vsl->setID(1);
+    vsl->setName("Nome");
+    vsl->setAddress("Morada");
+    vsl->setCapacity(1);
+    vsl->addVehicle(testVan);
+    vsl->removeVehicle(testVan);
+    EXPECT_EQ(vsl->getStoredVehicles(vsl->getID()).size(), 0);
 }

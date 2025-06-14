@@ -43,19 +43,19 @@ cmake_force:
 SHELL = cmd.exe
 
 # The CMake executable.
-CMAKE_COMMAND = "C:\Program Files\JetBrains\CLion 2024.3.3\bin\cmake\win\aarch64\bin\cmake.exe"
+CMAKE_COMMAND = "C:\Program Files (x86)\JetBrains\CLion 2024.3.4\bin\cmake\win\x64\bin\cmake.exe"
 
 # The command to remove a file.
-RM = "C:\Program Files\JetBrains\CLion 2024.3.3\bin\cmake\win\aarch64\bin\cmake.exe" -E rm -f
+RM = "C:\Program Files (x86)\JetBrains\CLion 2024.3.4\bin\cmake\win\x64\bin\cmake.exe" -E rm -f
 
 # Escaping for special characters.
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = C:\Projects\fsoft2025_1DA_2\ProjectTester\FleetManagerTest
+CMAKE_SOURCE_DIR = C:\Users\lucas\Desktop\fsoft2025_1DA_2\ProjectTester\FleetManagerTest
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = C:\Projects\fsoft2025_1DA_2\ProjectTester\FleetManagerTest\cmake-build-debug
+CMAKE_BINARY_DIR = C:\Users\lucas\Desktop\fsoft2025_1DA_2\ProjectTester\FleetManagerTest\cmake-build-debug
 
 # Include any dependencies generated for this target.
 include googleTestLib/googletest-main/googlemock/CMakeFiles/gmock.dir/depend.make
@@ -73,18 +73,18 @@ googleTestLib/googletest-main/googlemock/CMakeFiles/gmock.dir/codegen:
 
 googleTestLib/googletest-main/googlemock/CMakeFiles/gmock.dir/src/gmock-all.cc.obj: googleTestLib/googletest-main/googlemock/CMakeFiles/gmock.dir/flags.make
 googleTestLib/googletest-main/googlemock/CMakeFiles/gmock.dir/src/gmock-all.cc.obj: googleTestLib/googletest-main/googlemock/CMakeFiles/gmock.dir/includes_CXX.rsp
-googleTestLib/googletest-main/googlemock/CMakeFiles/gmock.dir/src/gmock-all.cc.obj: C:/Projects/fsoft2025_1DA_2/ProjectTester/FleetManagerTest/googleTestLib/googletest-main/googlemock/src/gmock-all.cc
+googleTestLib/googletest-main/googlemock/CMakeFiles/gmock.dir/src/gmock-all.cc.obj: C:/Users/lucas/Desktop/fsoft2025_1DA_2/ProjectTester/FleetManagerTest/googleTestLib/googletest-main/googlemock/src/gmock-all.cc
 googleTestLib/googletest-main/googlemock/CMakeFiles/gmock.dir/src/gmock-all.cc.obj: googleTestLib/googletest-main/googlemock/CMakeFiles/gmock.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Projects\fsoft2025_1DA_2\ProjectTester\FleetManagerTest\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object googleTestLib/googletest-main/googlemock/CMakeFiles/gmock.dir/src/gmock-all.cc.obj"
-	cd /d C:\Projects\fsoft2025_1DA_2\ProjectTester\FleetManagerTest\cmake-build-debug\googleTestLib\googletest-main\googlemock && C:\msys64\ucrt64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT googleTestLib/googletest-main/googlemock/CMakeFiles/gmock.dir/src/gmock-all.cc.obj -MF CMakeFiles\gmock.dir\src\gmock-all.cc.obj.d -o CMakeFiles\gmock.dir\src\gmock-all.cc.obj -c C:\Projects\fsoft2025_1DA_2\ProjectTester\FleetManagerTest\googleTestLib\googletest-main\googlemock\src\gmock-all.cc
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\lucas\Desktop\fsoft2025_1DA_2\ProjectTester\FleetManagerTest\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object googleTestLib/googletest-main/googlemock/CMakeFiles/gmock.dir/src/gmock-all.cc.obj"
+	cd /d C:\Users\lucas\Desktop\fsoft2025_1DA_2\ProjectTester\FleetManagerTest\cmake-build-debug\googleTestLib\googletest-main\googlemock && C:\PROGRA~2\JETBRA~1\CLION2~1.4\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT googleTestLib/googletest-main/googlemock/CMakeFiles/gmock.dir/src/gmock-all.cc.obj -MF CMakeFiles\gmock.dir\src\gmock-all.cc.obj.d -o CMakeFiles\gmock.dir\src\gmock-all.cc.obj -c C:\Users\lucas\Desktop\fsoft2025_1DA_2\ProjectTester\FleetManagerTest\googleTestLib\googletest-main\googlemock\src\gmock-all.cc
 
 googleTestLib/googletest-main/googlemock/CMakeFiles/gmock.dir/src/gmock-all.cc.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/gmock.dir/src/gmock-all.cc.i"
-	cd /d C:\Projects\fsoft2025_1DA_2\ProjectTester\FleetManagerTest\cmake-build-debug\googleTestLib\googletest-main\googlemock && C:\msys64\ucrt64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Projects\fsoft2025_1DA_2\ProjectTester\FleetManagerTest\googleTestLib\googletest-main\googlemock\src\gmock-all.cc > CMakeFiles\gmock.dir\src\gmock-all.cc.i
+	cd /d C:\Users\lucas\Desktop\fsoft2025_1DA_2\ProjectTester\FleetManagerTest\cmake-build-debug\googleTestLib\googletest-main\googlemock && C:\PROGRA~2\JETBRA~1\CLION2~1.4\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\lucas\Desktop\fsoft2025_1DA_2\ProjectTester\FleetManagerTest\googleTestLib\googletest-main\googlemock\src\gmock-all.cc > CMakeFiles\gmock.dir\src\gmock-all.cc.i
 
 googleTestLib/googletest-main/googlemock/CMakeFiles/gmock.dir/src/gmock-all.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/gmock.dir/src/gmock-all.cc.s"
-	cd /d C:\Projects\fsoft2025_1DA_2\ProjectTester\FleetManagerTest\cmake-build-debug\googleTestLib\googletest-main\googlemock && C:\msys64\ucrt64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Projects\fsoft2025_1DA_2\ProjectTester\FleetManagerTest\googleTestLib\googletest-main\googlemock\src\gmock-all.cc -o CMakeFiles\gmock.dir\src\gmock-all.cc.s
+	cd /d C:\Users\lucas\Desktop\fsoft2025_1DA_2\ProjectTester\FleetManagerTest\cmake-build-debug\googleTestLib\googletest-main\googlemock && C:\PROGRA~2\JETBRA~1\CLION2~1.4\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\lucas\Desktop\fsoft2025_1DA_2\ProjectTester\FleetManagerTest\googleTestLib\googletest-main\googlemock\src\gmock-all.cc -o CMakeFiles\gmock.dir\src\gmock-all.cc.s
 
 # Object files for target gmock
 gmock_OBJECTS = \
@@ -96,19 +96,19 @@ gmock_EXTERNAL_OBJECTS =
 lib/libgmock.a: googleTestLib/googletest-main/googlemock/CMakeFiles/gmock.dir/src/gmock-all.cc.obj
 lib/libgmock.a: googleTestLib/googletest-main/googlemock/CMakeFiles/gmock.dir/build.make
 lib/libgmock.a: googleTestLib/googletest-main/googlemock/CMakeFiles/gmock.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=C:\Projects\fsoft2025_1DA_2\ProjectTester\FleetManagerTest\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX static library ..\..\..\lib\libgmock.a"
-	cd /d C:\Projects\fsoft2025_1DA_2\ProjectTester\FleetManagerTest\cmake-build-debug\googleTestLib\googletest-main\googlemock && $(CMAKE_COMMAND) -P CMakeFiles\gmock.dir\cmake_clean_target.cmake
-	cd /d C:\Projects\fsoft2025_1DA_2\ProjectTester\FleetManagerTest\cmake-build-debug\googleTestLib\googletest-main\googlemock && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles\gmock.dir\link.txt --verbose=$(VERBOSE)
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=C:\Users\lucas\Desktop\fsoft2025_1DA_2\ProjectTester\FleetManagerTest\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX static library ..\..\..\lib\libgmock.a"
+	cd /d C:\Users\lucas\Desktop\fsoft2025_1DA_2\ProjectTester\FleetManagerTest\cmake-build-debug\googleTestLib\googletest-main\googlemock && $(CMAKE_COMMAND) -P CMakeFiles\gmock.dir\cmake_clean_target.cmake
+	cd /d C:\Users\lucas\Desktop\fsoft2025_1DA_2\ProjectTester\FleetManagerTest\cmake-build-debug\googleTestLib\googletest-main\googlemock && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles\gmock.dir\link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
 googleTestLib/googletest-main/googlemock/CMakeFiles/gmock.dir/build: lib/libgmock.a
 .PHONY : googleTestLib/googletest-main/googlemock/CMakeFiles/gmock.dir/build
 
 googleTestLib/googletest-main/googlemock/CMakeFiles/gmock.dir/clean:
-	cd /d C:\Projects\fsoft2025_1DA_2\ProjectTester\FleetManagerTest\cmake-build-debug\googleTestLib\googletest-main\googlemock && $(CMAKE_COMMAND) -P CMakeFiles\gmock.dir\cmake_clean.cmake
+	cd /d C:\Users\lucas\Desktop\fsoft2025_1DA_2\ProjectTester\FleetManagerTest\cmake-build-debug\googleTestLib\googletest-main\googlemock && $(CMAKE_COMMAND) -P CMakeFiles\gmock.dir\cmake_clean.cmake
 .PHONY : googleTestLib/googletest-main/googlemock/CMakeFiles/gmock.dir/clean
 
 googleTestLib/googletest-main/googlemock/CMakeFiles/gmock.dir/depend:
-	$(CMAKE_COMMAND) -E cmake_depends "MinGW Makefiles" C:\Projects\fsoft2025_1DA_2\ProjectTester\FleetManagerTest C:\Projects\fsoft2025_1DA_2\ProjectTester\FleetManagerTest\googleTestLib\googletest-main\googlemock C:\Projects\fsoft2025_1DA_2\ProjectTester\FleetManagerTest\cmake-build-debug C:\Projects\fsoft2025_1DA_2\ProjectTester\FleetManagerTest\cmake-build-debug\googleTestLib\googletest-main\googlemock C:\Projects\fsoft2025_1DA_2\ProjectTester\FleetManagerTest\cmake-build-debug\googleTestLib\googletest-main\googlemock\CMakeFiles\gmock.dir\DependInfo.cmake "--color=$(COLOR)"
+	$(CMAKE_COMMAND) -E cmake_depends "MinGW Makefiles" C:\Users\lucas\Desktop\fsoft2025_1DA_2\ProjectTester\FleetManagerTest C:\Users\lucas\Desktop\fsoft2025_1DA_2\ProjectTester\FleetManagerTest\googleTestLib\googletest-main\googlemock C:\Users\lucas\Desktop\fsoft2025_1DA_2\ProjectTester\FleetManagerTest\cmake-build-debug C:\Users\lucas\Desktop\fsoft2025_1DA_2\ProjectTester\FleetManagerTest\cmake-build-debug\googleTestLib\googletest-main\googlemock C:\Users\lucas\Desktop\fsoft2025_1DA_2\ProjectTester\FleetManagerTest\cmake-build-debug\googleTestLib\googletest-main\googlemock\CMakeFiles\gmock.dir\DependInfo.cmake "--color=$(COLOR)"
 .PHONY : googleTestLib/googletest-main/googlemock/CMakeFiles/gmock.dir/depend
 

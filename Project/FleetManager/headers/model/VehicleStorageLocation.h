@@ -53,6 +53,8 @@ class VehicleStorageLocation {
 
     void addVehicle(Vehicle *vehicle);
 
+    void removeVehicle(Vehicle *vehicle);
+
     bool operator== (int id) const;
 };
 

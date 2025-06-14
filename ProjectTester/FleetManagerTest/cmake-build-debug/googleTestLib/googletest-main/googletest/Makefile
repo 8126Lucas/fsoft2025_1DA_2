@@ -47,19 +47,19 @@ cmake_force:
 SHELL = cmd.exe
 
 # The CMake executable.
-CMAKE_COMMAND = "C:\Program Files\JetBrains\CLion 2024.3.3\bin\cmake\win\aarch64\bin\cmake.exe"
+CMAKE_COMMAND = "C:\Program Files (x86)\JetBrains\CLion 2024.3.4\bin\cmake\win\x64\bin\cmake.exe"
 
 # The command to remove a file.
-RM = "C:\Program Files\JetBrains\CLion 2024.3.3\bin\cmake\win\aarch64\bin\cmake.exe" -E rm -f
+RM = "C:\Program Files (x86)\JetBrains\CLion 2024.3.4\bin\cmake\win\x64\bin\cmake.exe" -E rm -f
 
 # Escaping for special characters.
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = C:\Projects\fsoft2025_1DA_2\ProjectTester\FleetManagerTest
+CMAKE_SOURCE_DIR = C:\Users\lucas\Desktop\fsoft2025_1DA_2\ProjectTester\FleetManagerTest
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = C:\Projects\fsoft2025_1DA_2\ProjectTester\FleetManagerTest\cmake-build-debug
+CMAKE_BINARY_DIR = C:\Users\lucas\Desktop\fsoft2025_1DA_2\ProjectTester\FleetManagerTest\cmake-build-debug
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -67,7 +67,7 @@ CMAKE_BINARY_DIR = C:\Projects\fsoft2025_1DA_2\ProjectTester\FleetManagerTest\cm
 # Special rule for the target test
 test:
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --cyan "Running tests..."
-	"C:\Program Files\JetBrains\CLion 2024.3.3\bin\cmake\win\aarch64\bin\ctest.exe" --force-new-ctest-process $(ARGS)
+	"C:\Program Files (x86)\JetBrains\CLion 2024.3.4\bin\cmake\win\x64\bin\ctest.exe" --force-new-ctest-process $(ARGS)
 .PHONY : test
 
 # Special rule for the target test
@@ -77,7 +77,7 @@ test/fast: test
 # Special rule for the target edit_cache
 edit_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --cyan "No interactive CMake dialog available..."
-	"C:\Program Files\JetBrains\CLion 2024.3.3\bin\cmake\win\aarch64\bin\cmake.exe" -E echo "No interactive CMake dialog available."
+	"C:\Program Files (x86)\JetBrains\CLion 2024.3.4\bin\cmake\win\x64\bin\cmake.exe" -E echo "No interactive CMake dialog available."
 .PHONY : edit_cache
 
 # Special rule for the target edit_cache
@@ -87,7 +87,7 @@ edit_cache/fast: edit_cache
 # Special rule for the target rebuild_cache
 rebuild_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --cyan "Running CMake to regenerate build system..."
-	"C:\Program Files\JetBrains\CLion 2024.3.3\bin\cmake\win\aarch64\bin\cmake.exe" --regenerate-during-build -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
+	"C:\Program Files (x86)\JetBrains\CLion 2024.3.4\bin\cmake\win\x64\bin\cmake.exe" --regenerate-during-build -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
 .PHONY : rebuild_cache
 
 # Special rule for the target rebuild_cache
@@ -106,49 +106,49 @@ list_install_components/fast: list_install_components
 # Special rule for the target install
 install: preinstall
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --cyan "Install the project..."
-	"C:\Program Files\JetBrains\CLion 2024.3.3\bin\cmake\win\aarch64\bin\cmake.exe" -P cmake_install.cmake
+	"C:\Program Files (x86)\JetBrains\CLion 2024.3.4\bin\cmake\win\x64\bin\cmake.exe" -P cmake_install.cmake
 .PHONY : install
 
 # Special rule for the target install
 install/fast: preinstall/fast
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --cyan "Install the project..."
-	"C:\Program Files\JetBrains\CLion 2024.3.3\bin\cmake\win\aarch64\bin\cmake.exe" -P cmake_install.cmake
+	"C:\Program Files (x86)\JetBrains\CLion 2024.3.4\bin\cmake\win\x64\bin\cmake.exe" -P cmake_install.cmake
 .PHONY : install/fast
 
 # Special rule for the target install/local
 install/local: preinstall
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --cyan "Installing only the local directory..."
-	"C:\Program Files\JetBrains\CLion 2024.3.3\bin\cmake\win\aarch64\bin\cmake.exe" -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
+	"C:\Program Files (x86)\JetBrains\CLion 2024.3.4\bin\cmake\win\x64\bin\cmake.exe" -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
 .PHONY : install/local
 
 # Special rule for the target install/local
 install/local/fast: preinstall/fast
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --cyan "Installing only the local directory..."
-	"C:\Program Files\JetBrains\CLion 2024.3.3\bin\cmake\win\aarch64\bin\cmake.exe" -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
+	"C:\Program Files (x86)\JetBrains\CLion 2024.3.4\bin\cmake\win\x64\bin\cmake.exe" -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
 .PHONY : install/local/fast
 
 # Special rule for the target install/strip
 install/strip: preinstall
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --cyan "Installing the project stripped..."
-	"C:\Program Files\JetBrains\CLion 2024.3.3\bin\cmake\win\aarch64\bin\cmake.exe" -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
+	"C:\Program Files (x86)\JetBrains\CLion 2024.3.4\bin\cmake\win\x64\bin\cmake.exe" -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
 .PHONY : install/strip
 
 # Special rule for the target install/strip
 install/strip/fast: preinstall/fast
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --cyan "Installing the project stripped..."
-	"C:\Program Files\JetBrains\CLion 2024.3.3\bin\cmake\win\aarch64\bin\cmake.exe" -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
+	"C:\Program Files (x86)\JetBrains\CLion 2024.3.4\bin\cmake\win\x64\bin\cmake.exe" -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
 .PHONY : install/strip/fast
 
 # The main all target
 all: cmake_check_build_system
-	cd /d C:\Projects\fsoft2025_1DA_2\ProjectTester\FleetManagerTest\cmake-build-debug && $(CMAKE_COMMAND) -E cmake_progress_start C:\Projects\fsoft2025_1DA_2\ProjectTester\FleetManagerTest\cmake-build-debug\CMakeFiles C:\Projects\fsoft2025_1DA_2\ProjectTester\FleetManagerTest\cmake-build-debug\googleTestLib\googletest-main\googletest\\CMakeFiles\progress.marks
-	cd /d C:\Projects\fsoft2025_1DA_2\ProjectTester\FleetManagerTest\cmake-build-debug && $(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 googleTestLib/googletest-main/googletest/all
-	$(CMAKE_COMMAND) -E cmake_progress_start C:\Projects\fsoft2025_1DA_2\ProjectTester\FleetManagerTest\cmake-build-debug\CMakeFiles 0
+	cd /d C:\Users\lucas\Desktop\fsoft2025_1DA_2\ProjectTester\FleetManagerTest\cmake-build-debug && $(CMAKE_COMMAND) -E cmake_progress_start C:\Users\lucas\Desktop\fsoft2025_1DA_2\ProjectTester\FleetManagerTest\cmake-build-debug\CMakeFiles C:\Users\lucas\Desktop\fsoft2025_1DA_2\ProjectTester\FleetManagerTest\cmake-build-debug\googleTestLib\googletest-main\googletest\\CMakeFiles\progress.marks
+	cd /d C:\Users\lucas\Desktop\fsoft2025_1DA_2\ProjectTester\FleetManagerTest\cmake-build-debug && $(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 googleTestLib/googletest-main/googletest/all
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\lucas\Desktop\fsoft2025_1DA_2\ProjectTester\FleetManagerTest\cmake-build-debug\CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /d C:\Projects\fsoft2025_1DA_2\ProjectTester\FleetManagerTest\cmake-build-debug && $(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 googleTestLib/googletest-main/googletest/clean
+	cd /d C:\Users\lucas\Desktop\fsoft2025_1DA_2\ProjectTester\FleetManagerTest\cmake-build-debug && $(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 googleTestLib/googletest-main/googletest/clean
 .PHONY : clean
 
 # The main clean target
@@ -157,22 +157,22 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /d C:\Projects\fsoft2025_1DA_2\ProjectTester\FleetManagerTest\cmake-build-debug && $(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 googleTestLib/googletest-main/googletest/preinstall
+	cd /d C:\Users\lucas\Desktop\fsoft2025_1DA_2\ProjectTester\FleetManagerTest\cmake-build-debug && $(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 googleTestLib/googletest-main/googletest/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /d C:\Projects\fsoft2025_1DA_2\ProjectTester\FleetManagerTest\cmake-build-debug && $(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 googleTestLib/googletest-main/googletest/preinstall
+	cd /d C:\Users\lucas\Desktop\fsoft2025_1DA_2\ProjectTester\FleetManagerTest\cmake-build-debug && $(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 googleTestLib/googletest-main/googletest/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /d C:\Projects\fsoft2025_1DA_2\ProjectTester\FleetManagerTest\cmake-build-debug && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles\Makefile.cmake 1
+	cd /d C:\Users\lucas\Desktop\fsoft2025_1DA_2\ProjectTester\FleetManagerTest\cmake-build-debug && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles\Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
 googleTestLib/googletest-main/googletest/CMakeFiles/gtest.dir/rule:
-	cd /d C:\Projects\fsoft2025_1DA_2\ProjectTester\FleetManagerTest\cmake-build-debug && $(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 googleTestLib/googletest-main/googletest/CMakeFiles/gtest.dir/rule
+	cd /d C:\Users\lucas\Desktop\fsoft2025_1DA_2\ProjectTester\FleetManagerTest\cmake-build-debug && $(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 googleTestLib/googletest-main/googletest/CMakeFiles/gtest.dir/rule
 .PHONY : googleTestLib/googletest-main/googletest/CMakeFiles/gtest.dir/rule
 
 # Convenience name for target.
@@ -181,12 +181,12 @@ gtest: googleTestLib/googletest-main/googletest/CMakeFiles/gtest.dir/rule
 
 # fast build rule for target.
 gtest/fast:
-	cd /d C:\Projects\fsoft2025_1DA_2\ProjectTester\FleetManagerTest\cmake-build-debug && $(MAKE) $(MAKESILENT) -f googleTestLib\googletest-main\googletest\CMakeFiles\gtest.dir\build.make googleTestLib/googletest-main/googletest/CMakeFiles/gtest.dir/build
+	cd /d C:\Users\lucas\Desktop\fsoft2025_1DA_2\ProjectTester\FleetManagerTest\cmake-build-debug && $(MAKE) $(MAKESILENT) -f googleTestLib\googletest-main\googletest\CMakeFiles\gtest.dir\build.make googleTestLib/googletest-main/googletest/CMakeFiles/gtest.dir/build
 .PHONY : gtest/fast
 
 # Convenience name for target.
 googleTestLib/googletest-main/googletest/CMakeFiles/gtest_main.dir/rule:
-	cd /d C:\Projects\fsoft2025_1DA_2\ProjectTester\FleetManagerTest\cmake-build-debug && $(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 googleTestLib/googletest-main/googletest/CMakeFiles/gtest_main.dir/rule
+	cd /d C:\Users\lucas\Desktop\fsoft2025_1DA_2\ProjectTester\FleetManagerTest\cmake-build-debug && $(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 googleTestLib/googletest-main/googletest/CMakeFiles/gtest_main.dir/rule
 .PHONY : googleTestLib/googletest-main/googletest/CMakeFiles/gtest_main.dir/rule
 
 # Convenience name for target.
@@ -195,7 +195,7 @@ gtest_main: googleTestLib/googletest-main/googletest/CMakeFiles/gtest_main.dir/r
 
 # fast build rule for target.
 gtest_main/fast:
-	cd /d C:\Projects\fsoft2025_1DA_2\ProjectTester\FleetManagerTest\cmake-build-debug && $(MAKE) $(MAKESILENT) -f googleTestLib\googletest-main\googletest\CMakeFiles\gtest_main.dir\build.make googleTestLib/googletest-main/googletest/CMakeFiles/gtest_main.dir/build
+	cd /d C:\Users\lucas\Desktop\fsoft2025_1DA_2\ProjectTester\FleetManagerTest\cmake-build-debug && $(MAKE) $(MAKESILENT) -f googleTestLib\googletest-main\googletest\CMakeFiles\gtest_main.dir\build.make googleTestLib/googletest-main/googletest/CMakeFiles/gtest_main.dir/build
 .PHONY : gtest_main/fast
 
 src/gtest-all.obj: src/gtest-all.cc.obj
@@ -203,7 +203,7 @@ src/gtest-all.obj: src/gtest-all.cc.obj
 
 # target to build an object file
 src/gtest-all.cc.obj:
-	cd /d C:\Projects\fsoft2025_1DA_2\ProjectTester\FleetManagerTest\cmake-build-debug && $(MAKE) $(MAKESILENT) -f googleTestLib\googletest-main\googletest\CMakeFiles\gtest.dir\build.make googleTestLib/googletest-main/googletest/CMakeFiles/gtest.dir/src/gtest-all.cc.obj
+	cd /d C:\Users\lucas\Desktop\fsoft2025_1DA_2\ProjectTester\FleetManagerTest\cmake-build-debug && $(MAKE) $(MAKESILENT) -f googleTestLib\googletest-main\googletest\CMakeFiles\gtest.dir\build.make googleTestLib/googletest-main/googletest/CMakeFiles/gtest.dir/src/gtest-all.cc.obj
 .PHONY : src/gtest-all.cc.obj
 
 src/gtest-all.i: src/gtest-all.cc.i
@@ -211,7 +211,7 @@ src/gtest-all.i: src/gtest-all.cc.i
 
 # target to preprocess a source file
 src/gtest-all.cc.i:
-	cd /d C:\Projects\fsoft2025_1DA_2\ProjectTester\FleetManagerTest\cmake-build-debug && $(MAKE) $(MAKESILENT) -f googleTestLib\googletest-main\googletest\CMakeFiles\gtest.dir\build.make googleTestLib/googletest-main/googletest/CMakeFiles/gtest.dir/src/gtest-all.cc.i
+	cd /d C:\Users\lucas\Desktop\fsoft2025_1DA_2\ProjectTester\FleetManagerTest\cmake-build-debug && $(MAKE) $(MAKESILENT) -f googleTestLib\googletest-main\googletest\CMakeFiles\gtest.dir\build.make googleTestLib/googletest-main/googletest/CMakeFiles/gtest.dir/src/gtest-all.cc.i
 .PHONY : src/gtest-all.cc.i
 
 src/gtest-all.s: src/gtest-all.cc.s
@@ -219,7 +219,7 @@ src/gtest-all.s: src/gtest-all.cc.s
 
 # target to generate assembly for a file
 src/gtest-all.cc.s:
-	cd /d C:\Projects\fsoft2025_1DA_2\ProjectTester\FleetManagerTest\cmake-build-debug && $(MAKE) $(MAKESILENT) -f googleTestLib\googletest-main\googletest\CMakeFiles\gtest.dir\build.make googleTestLib/googletest-main/googletest/CMakeFiles/gtest.dir/src/gtest-all.cc.s
+	cd /d C:\Users\lucas\Desktop\fsoft2025_1DA_2\ProjectTester\FleetManagerTest\cmake-build-debug && $(MAKE) $(MAKESILENT) -f googleTestLib\googletest-main\googletest\CMakeFiles\gtest.dir\build.make googleTestLib/googletest-main/googletest/CMakeFiles/gtest.dir/src/gtest-all.cc.s
 .PHONY : src/gtest-all.cc.s
 
 src/gtest_main.obj: src/gtest_main.cc.obj
@@ -227,7 +227,7 @@ src/gtest_main.obj: src/gtest_main.cc.obj
 
 # target to build an object file
 src/gtest_main.cc.obj:
-	cd /d C:\Projects\fsoft2025_1DA_2\ProjectTester\FleetManagerTest\cmake-build-debug && $(MAKE) $(MAKESILENT) -f googleTestLib\googletest-main\googletest\CMakeFiles\gtest_main.dir\build.make googleTestLib/googletest-main/googletest/CMakeFiles/gtest_main.dir/src/gtest_main.cc.obj
+	cd /d C:\Users\lucas\Desktop\fsoft2025_1DA_2\ProjectTester\FleetManagerTest\cmake-build-debug && $(MAKE) $(MAKESILENT) -f googleTestLib\googletest-main\googletest\CMakeFiles\gtest_main.dir\build.make googleTestLib/googletest-main/googletest/CMakeFiles/gtest_main.dir/src/gtest_main.cc.obj
 .PHONY : src/gtest_main.cc.obj
 
 src/gtest_main.i: src/gtest_main.cc.i
@@ -235,7 +235,7 @@ src/gtest_main.i: src/gtest_main.cc.i
 
 # target to preprocess a source file
 src/gtest_main.cc.i:
-	cd /d C:\Projects\fsoft2025_1DA_2\ProjectTester\FleetManagerTest\cmake-build-debug && $(MAKE) $(MAKESILENT) -f googleTestLib\googletest-main\googletest\CMakeFiles\gtest_main.dir\build.make googleTestLib/googletest-main/googletest/CMakeFiles/gtest_main.dir/src/gtest_main.cc.i
+	cd /d C:\Users\lucas\Desktop\fsoft2025_1DA_2\ProjectTester\FleetManagerTest\cmake-build-debug && $(MAKE) $(MAKESILENT) -f googleTestLib\googletest-main\googletest\CMakeFiles\gtest_main.dir\build.make googleTestLib/googletest-main/googletest/CMakeFiles/gtest_main.dir/src/gtest_main.cc.i
 .PHONY : src/gtest_main.cc.i
 
 src/gtest_main.s: src/gtest_main.cc.s
@@ -243,7 +243,7 @@ src/gtest_main.s: src/gtest_main.cc.s
 
 # target to generate assembly for a file
 src/gtest_main.cc.s:
-	cd /d C:\Projects\fsoft2025_1DA_2\ProjectTester\FleetManagerTest\cmake-build-debug && $(MAKE) $(MAKESILENT) -f googleTestLib\googletest-main\googletest\CMakeFiles\gtest_main.dir\build.make googleTestLib/googletest-main/googletest/CMakeFiles/gtest_main.dir/src/gtest_main.cc.s
+	cd /d C:\Users\lucas\Desktop\fsoft2025_1DA_2\ProjectTester\FleetManagerTest\cmake-build-debug && $(MAKE) $(MAKESILENT) -f googleTestLib\googletest-main\googletest\CMakeFiles\gtest_main.dir\build.make googleTestLib/googletest-main/googletest/CMakeFiles/gtest_main.dir/src/gtest_main.cc.s
 .PHONY : src/gtest_main.cc.s
 
 # Help Target
@@ -278,6 +278,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /d C:\Projects\fsoft2025_1DA_2\ProjectTester\FleetManagerTest\cmake-build-debug && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles\Makefile.cmake 0
+	cd /d C:\Users\lucas\Desktop\fsoft2025_1DA_2\ProjectTester\FleetManagerTest\cmake-build-debug && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles\Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

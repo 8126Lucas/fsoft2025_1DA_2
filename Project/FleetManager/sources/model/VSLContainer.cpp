@@ -7,6 +7,7 @@
 
 
 #include "DuplicatedDataException.h"
+#include "InvalidDataException.h"
 #include "NonExistingDataException.h"
 #include "Utils.h"
 
@@ -47,14 +48,19 @@ void VSLContainer::remove(int id) {
     try {
         list<VehicleStorageLocation*>::iterator it = search(id);
         if (it != this->locations.end()) {
-            delete *it;
-            this->locations.erase(it);
+            if ((*it)->getVehicleCount() == 0) {
+                delete *it;
+                this->locations.erase(it);
+            }
+            else {throw InvalidDataException("Storage Location still has Vehicles. Therefore, ID");}
         }
         else {
             string msg = "Storage Location: " + to_string(id);
             throw NonExistingDataException(msg);
         }
     } catch (NonExistingDataException &error) {
+        cout << error.what() << endl;
+    } catch (InvalidDataException &error) {
         cout << error.what() << endl;
     }
 }

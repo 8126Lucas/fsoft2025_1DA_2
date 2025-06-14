@@ -4,6 +4,7 @@
 
 #include "VehicleContainer.h"
 #include "DuplicatedDataException.h"
+#include "InvalidDataException.h"
 #include "NonExistingDataException.h"
 #include "Utils.h"
 
@@ -132,30 +133,36 @@ void VehicleContainer::remove(const string &licensePlate) {
         const list<Truck*>::iterator truckIT = searchTruck(licensePlate);
         const list<Van*>::iterator vanIT = searchVan(licensePlate);
         if (truckIT != this->trucks.end()) {
+            if ((*truckIT)->getVSL() != nullptr) {throw InvalidDataException("Truck is still in a Storage Location. Therefore, License Plate");}
+            if ((*truckIT)->getInsurance() != nullptr) {throw InvalidDataException("Truck still has Insurance. Therefore, License Plate");}
+            if ((*truckIT)->getInspection() != nullptr) {throw InvalidDataException("Truck still has Inspection. Therefore, License Plate");}
             this->trucks.erase(truckIT);
         }
         else if (vanIT != this->vans.end()) {
+            if ((*vanIT)->getVSL() != nullptr) {throw InvalidDataException("Van is still in a Storage Location. Therefore, License Plate");}
+            if ((*vanIT)->getInsurance() != nullptr) {throw InvalidDataException("Van still has Insurance. Therefore, License Plate");}
+            if ((*vanIT)->getInspection() != nullptr) {throw InvalidDataException("Van still has Inspection. Therefore, License Plate");}
             this->vans.erase(vanIT);
         }
         else {
             throw(NonExistingDataException("Vehicle " + licensePlate));
         }
     } catch (NonExistingDataException &error) {
-            cout << error.what() << endl;
-        }
-
+        cout << error.what() << endl;
+    } catch (InvalidDataException &error) {
+        cout << error.what() << endl;
+    }
 }
 
 const list<Truck*> &VehicleContainer::listTrucks() const {
     return this->trucks;
 }
 
-const list<Truck*> &VehicleContainer::listTrucks(const bool available) const {
+list<Truck*> VehicleContainer::listTrucks(const bool available) const {
     list<Truck*> newList;
-    list<Truck*>::const_iterator it = this->trucks.begin();
-    for (; it != this->trucks.end(); ++it) {
-        if ((*it)->getAvailability() == available) {
-            newList.push_back(*it);
+    for (Truck *truck : this->trucks) {
+        if (truck->getAvailability() == available) {
+            newList.push_back(truck);
         }
     }
     return newList;
@@ -165,12 +172,11 @@ const list<Van*> &VehicleContainer::listVans() const {
     return this->vans;
 }
 
-const list<Van*> &VehicleContainer::listVans(bool available) const {
+list<Van*> VehicleContainer::listVans(bool available) const {
     list<Van*> newList;
-    list<Van*>::const_iterator it = this->vans.begin();
-    for (; it != this->vans.end(); ++it) {
-        if ((*it)->getAvailability() == available) {
-            newList.push_back(*it);
+    for (Van *van : this->vans) {
+        if (van->getAvailability() == available) {
+            newList.push_back(van);
         }
     }
     return newList;
