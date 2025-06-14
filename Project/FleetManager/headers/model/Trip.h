@@ -19,14 +19,14 @@ private:
   STATE state;
   int id;
   Order *order;
-  Driver *driver;
-  Vehicle *vehicle;
-  double kilometers;
-  double fuel;
-  double fuelCost;
-  double fines;
+  Driver *driver{};
+  Vehicle *vehicle{};
+  double kilometers{};
+  double fuel{};
+  double fuelCost{};
+  double fines{};
   double cost;
-  double tolls;
+  double tolls{};
 
 
 public:

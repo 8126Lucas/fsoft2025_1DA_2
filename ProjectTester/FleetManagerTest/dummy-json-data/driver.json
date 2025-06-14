@@ -1,0 +1,12 @@
+{
+    "drivers": [
+        {
+            "age": 20,
+            "available": true,
+            "id": 999,
+            "license": "C",
+            "timeToRetire": 45,
+            "vacations": []
+        }
+    ]
+}

@@ -14,6 +14,20 @@ Trip::Trip() : state(SUPRESSED), id(), order(nullptr), driver(nullptr), vehicle(
                tolls(0) {
 }
 
+Trip::Trip(STATE state, int id, Order *order, double cost) {
+  this->state = state;
+  this->id = id;
+  this->order = order;
+  this->driver = nullptr;
+  this->vehicle = nullptr;
+  this->kilometers = 0;
+  this->fuel = 0;
+  this->fuelCost = 0;
+  this->fines = 0;
+  this->cost = cost;
+  this->tolls = 0;
+}
+
 Trip::Trip(Order *order, double kilometers, double fuel, double fuelCost,double fines, double cost,
            double tolls){
 

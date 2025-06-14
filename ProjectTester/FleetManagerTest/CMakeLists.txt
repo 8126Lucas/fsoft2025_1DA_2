@@ -61,6 +61,7 @@ enable_testing()
 
 
 add_executable(runTests
+        data_test.cpp
         order_test.cpp
         date_test.cpp
         trip_test.cpp

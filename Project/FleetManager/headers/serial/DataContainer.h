@@ -24,12 +24,12 @@ using namespace nlohmann;
 
 class DataContainer {
 private:
-    VehicleContainer *containerVehicle;
-    VSLContainer *containerVSL;
-    DriverContainer *containerDriver;
-    FinancialContainer *containerFinancial;
-    TripContainer *containerTrip;
-    OrderContainer *containerOrder;
+    VehicleContainer *containerVehicle{};
+    VSLContainer *containerVSL{};
+    DriverContainer *containerDriver{};
+    FinancialContainer *containerFinancial{};
+    TripContainer *containerTrip{};
+    OrderContainer *containerOrder{};
 
     string vehicleFilePath;
     string vslFilePath;

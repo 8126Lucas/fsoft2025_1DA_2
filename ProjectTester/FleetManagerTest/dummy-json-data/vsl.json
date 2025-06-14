@@ -1,0 +1,12 @@
+{
+    "vsls": [
+        {
+            "address": "Morada",
+            "capacity": 999,
+            "currentVehicleCount": 0,
+            "id": 999,
+            "name": "Nome",
+            "vehicles": []
+        }
+    ]
+}

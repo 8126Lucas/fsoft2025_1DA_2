@@ -1243,6 +1243,30 @@ C_/Users/lucas/Desktop/fsoft2025_1DA_2/Project/FleetManager/sources/views/View.c
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\runTests.dir\build.make CMakeFiles/runTests.dir/C_/Users/lucas/Desktop/fsoft2025_1DA_2/Project/FleetManager/sources/views/View.cpp.s
 .PHONY : C_/Users/lucas/Desktop/fsoft2025_1DA_2/Project/FleetManager/sources/views/View.cpp.s
 
+data_test.obj: data_test.cpp.obj
+.PHONY : data_test.obj
+
+# target to build an object file
+data_test.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\runTests.dir\build.make CMakeFiles/runTests.dir/data_test.cpp.obj
+.PHONY : data_test.cpp.obj
+
+data_test.i: data_test.cpp.i
+.PHONY : data_test.i
+
+# target to preprocess a source file
+data_test.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\runTests.dir\build.make CMakeFiles/runTests.dir/data_test.cpp.i
+.PHONY : data_test.cpp.i
+
+data_test.s: data_test.cpp.s
+.PHONY : data_test.s
+
+# target to generate assembly for a file
+data_test.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\runTests.dir\build.make CMakeFiles/runTests.dir/data_test.cpp.s
+.PHONY : data_test.cpp.s
+
 date_test.obj: date_test.cpp.obj
 .PHONY : date_test.obj
 
@@ -1723,6 +1747,9 @@ help:
 	@echo ... C_/Users/lucas/Desktop/fsoft2025_1DA_2/Project/FleetManager/sources/views/View.obj
 	@echo ... C_/Users/lucas/Desktop/fsoft2025_1DA_2/Project/FleetManager/sources/views/View.i
 	@echo ... C_/Users/lucas/Desktop/fsoft2025_1DA_2/Project/FleetManager/sources/views/View.s
+	@echo ... data_test.obj
+	@echo ... data_test.i
+	@echo ... data_test.s
 	@echo ... date_test.obj
 	@echo ... date_test.i
 	@echo ... date_test.s

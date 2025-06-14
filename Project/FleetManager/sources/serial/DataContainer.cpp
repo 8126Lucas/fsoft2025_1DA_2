@@ -38,12 +38,13 @@ DataContainer::DataContainer(
 
 void DataContainer::loadVehicles() {
     ifstream file(vehicleFilePath);
-    cout << filesystem::absolute(vehicleFilePath) << endl;
+    cout << "Loading \"vehicle.json\"... ";
     try {
         if (!file.is_open()) {throw NonExistingDataException("Vehicle JSON File");}
     } catch (NonExistingDataException &error) {
-        cout << error.what() << endl;
+        cout << "\n" << error.what() << endl;
     }
+    cout << " ✅" << endl;
     json j;
     file >> j;
     VehicleSerialization serializer;
@@ -66,12 +67,13 @@ void DataContainer::loadVehicles() {
 
 void DataContainer::loadVSLs() {
     ifstream file(vslFilePath);
-    cout << filesystem::absolute(vslFilePath) << endl;
+    cout << "Loading \"vsl.json\"... ";
     try {
         if (!file.is_open()) {throw NonExistingDataException("Vehicle Storage Location JSON File");}
     } catch (NonExistingDataException &error) {
-        cout << error.what() << endl;
+        cout << "\n" << error.what() << endl;
     }
+    cout << " ✅" << endl;
     json j;
     file >> j;
     VehicleStorageLocationSerialization serializer;
@@ -87,12 +89,13 @@ void DataContainer::loadVSLs() {
 
 void DataContainer::loadDrivers() {
     ifstream file(driverFilePath);
-    cout << filesystem::absolute(driverFilePath) << endl;
+    cout << "Loading \"driver.json\"... ";
     try {
         if (!file.is_open()) {throw NonExistingDataException("Driver JSON File");}
     } catch (NonExistingDataException &error) {
-        cout << error.what() << endl;
+        cout << "\n" << error.what() << endl;
     }
+    cout << " ✅" << endl;
     json j;
     file >> j;
     DriverSerialization serializer;
@@ -108,12 +111,13 @@ void DataContainer::loadDrivers() {
 
 void DataContainer::loadFinancials() {
     ifstream file(financialFilePath);
-    cout << filesystem::absolute(financialFilePath) << endl;
+    cout << "Loading \"financial.json\"... ";;
     try {
         if (!file.is_open()) {throw NonExistingDataException("Financial JSON File");}
     } catch (NonExistingDataException &error) {
-        cout << error.what() << endl;
+        cout << "\n" << error.what() << endl;
     }
+    cout << " ✅" << endl;
     json j;
     file >> j;
     FinancialSerialization serializer;
@@ -136,12 +140,13 @@ void DataContainer::loadFinancials() {
 
 void DataContainer::loadTrips() {
     ifstream file(tripFilePath);
-    cout << filesystem::absolute(tripFilePath) << endl;
+    cout << "Loading \"trip.json\"... ";;
     try {
         if (!file.is_open()) {throw NonExistingDataException("Trip JSON File");}
     } catch (NonExistingDataException &error) {
-        cout << error.what() << endl;
+        cout << "\n" << error.what() << endl;
     }
+    cout << " ✅" << endl;
     json j;
     file >> j;
     TripSerialization serializer;
@@ -157,12 +162,13 @@ void DataContainer::loadTrips() {
 
 void DataContainer::loadOrders() {
     ifstream file(orderFilePath);
-    cout << filesystem::absolute(orderFilePath) << endl;
+    cout << "Loading \"order.json\"... ";;
     try {
         if (!file.is_open()) {throw NonExistingDataException("Order JSON File");}
     } catch (NonExistingDataException &error) {
-        cout << error.what() << endl;
+        cout << "\n" << error.what() << endl;
     }
+    cout << " ✅" << endl;
     json j;
     file >> j;
     OrderSerialization serializer;
