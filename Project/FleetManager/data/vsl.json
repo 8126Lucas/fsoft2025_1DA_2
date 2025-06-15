@@ -67,6 +67,18 @@
             "id": 10,
             "name": "Eduardo",
             "vehicles": []
+        },
+        {
+            "address": "Rua dos cabeçudos, Nº36, 4405-924 Vila Nova de Gaia",
+            "capacity": 30,
+            "currentVehicleCount": 1,
+            "id": 6,
+            "name": "Casa do Vítor",
+            "vehicles": [
+                {
+                    "vehicleLicensePlate": "L3-V0-CU"
+                }
+            ]
         }
     ]
 }

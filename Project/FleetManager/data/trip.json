@@ -15,16 +15,16 @@
         },
         {
             "cost": 136.48950000000002,
-            "driverID": 1,
+            "driverID": 2,
             "fines": 0.0,
-            "fuel": 0.0,
+            "fuel": 40.0,
             "fuelCost": 0.0,
             "id": 2,
             "km": 0.0,
             "orderID": 1,
-            "state": "FAILED",
+            "state": "INCOMING",
             "tolls": 0.0,
-            "vehicleLicensePlate": "LU-65-CA"
+            "vehicleLicensePlate": "00-00-05"
         },
         {
             "cost": 130.0,
@@ -35,6 +35,19 @@
             "id": 3,
             "km": 0.0,
             "orderID": 2,
+            "state": "SUPRESSED",
+            "tolls": 0.0,
+            "vehicleLicensePlate": "No Vehicle"
+        },
+        {
+            "cost": 100.0,
+            "driverID": -1,
+            "fines": 0.0,
+            "fuel": 0.0,
+            "fuelCost": 0.0,
+            "id": 4,
+            "km": 0.0,
+            "orderID": 3,
             "state": "SUPRESSED",
             "tolls": 0.0,
             "vehicleLicensePlate": "No Vehicle"

@@ -43,7 +43,7 @@
             "year": 2018
         },
         {
-            "available": true,
+            "available": false,
             "brand": "ROBUST",
             "category": "TRUCK",
             "fuel": 79.0,
@@ -83,6 +83,27 @@
             "vslID": -1,
             "weightCapacity": 1.0,
             "year": 1
+        },
+        {
+            "available": true,
+            "brand": "Ford",
+            "category": "TRUCK",
+            "fuel": 70.0,
+            "inspectionCost": -1,
+            "inspectionDate": "no date",
+            "inspectionID": -1,
+            "inspectionToday": "no date",
+            "insuranceEndDate": "no date",
+            "insuranceID": -1,
+            "insuranceMonthlyCost": -1,
+            "insuranceStartDate": "no date",
+            "insuranceToday": "no date",
+            "licensePlate": "PI-10-PE",
+            "mileage": 69.37,
+            "model": "Transit",
+            "vslID": -1,
+            "weightCapacity": 1000.0,
+            "year": 2024
         }
     ],
     "vans": [
@@ -115,12 +136,12 @@
             "inspectionCost": 30.0,
             "inspectionDate": "10/6/2025",
             "inspectionID": 2,
-            "inspectionToday": "14/6/2025",
+            "inspectionToday": "15/6/2025",
             "insuranceEndDate": "11/6/2026",
             "insuranceID": 2,
             "insuranceMonthlyCost": 30.0,
             "insuranceStartDate": "11/6/2025",
-            "insuranceToday": "14/6/2025",
+            "insuranceToday": "15/6/2025",
             "licensePlate": "25-qi-56",
             "mileage": 140000.0,
             "model": "Serie1",
@@ -157,7 +178,7 @@
             "inspectionCost": 39.99,
             "inspectionDate": "1/7/2025",
             "inspectionID": 3,
-            "inspectionToday": "14/6/2025",
+            "inspectionToday": "15/6/2025",
             "insuranceEndDate": "no date",
             "insuranceID": -1,
             "insuranceMonthlyCost": -1,
@@ -169,6 +190,27 @@
             "spaceCapacity": 12.9,
             "vslID": -1,
             "year": 2009
+        },
+        {
+            "available": true,
+            "brand": "Ford",
+            "category": "VAN",
+            "fuel": 53.0,
+            "inspectionCost": 0.03,
+            "inspectionDate": "15/6/2025",
+            "inspectionID": 1,
+            "inspectionToday": "15/6/2025",
+            "insuranceEndDate": "15/6/2026",
+            "insuranceID": 1,
+            "insuranceMonthlyCost": 32.3,
+            "insuranceStartDate": "15/6/2025",
+            "insuranceToday": "15/6/2025",
+            "licensePlate": "L3-V0-CU",
+            "mileage": 1500.0,
+            "model": "Transit",
+            "spaceCapacity": 750.0,
+            "vslID": 6,
+            "year": 1999
         }
     ]
 }

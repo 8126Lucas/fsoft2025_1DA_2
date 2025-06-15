@@ -1,4 +1,39 @@
 {
-    "expenses": [],
-    "revenues": []
+    "expenses": [
+        {
+            "amount": 300.0,
+            "expenseDate": "15/6/2025",
+            "id": 1,
+            "trip": 1,
+            "type": "FUEL"
+        },
+        {
+            "amount": 0.5,
+            "expenseDate": "10/6/2025",
+            "id": 2,
+            "trip": 2,
+            "type": "TOLL"
+        },
+        {
+            "amount": 3e-09,
+            "expenseDate": "16/6/2025",
+            "id": 3,
+            "trip": 1,
+            "type": "FINE"
+        }
+    ],
+    "revenues": [
+        {
+            "amount": 100000.0,
+            "id": 1,
+            "order": 1,
+            "revenueDate": "15/6/2025"
+        },
+        {
+            "amount": 304938.20394,
+            "id": 2,
+            "order": 3,
+            "revenueDate": "15/6/2025"
+        }
+    ]
 }
