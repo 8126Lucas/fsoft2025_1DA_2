@@ -1,5 +1,0 @@
-if(EXISTS "/home/dinis/CLionProjects/fsoft2025_1DA_2_definitivo/ProjectTester/FleetManagerTest/cmake-build-debug/runTests[1]_tests.cmake")
-  include("/home/dinis/CLionProjects/fsoft2025_1DA_2_definitivo/ProjectTester/FleetManagerTest/cmake-build-debug/runTests[1]_tests.cmake")
-else()
-  add_test(runTests_NOT_BUILT runTests_NOT_BUILT)
-endif()

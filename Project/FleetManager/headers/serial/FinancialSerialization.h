@@ -15,7 +15,7 @@ using namespace nlohmann;
 class FinancialSerialization {
 public:
     void toJSON(json &j, const TYPE &type);
-    void fromJSON(const json &j, TYPE &type);
+    TYPE fromJSON(const json &j);
     void toJSON(json &j, const Expense &expense);
     void fromJSON(const json &j, Expense &expense, TripContainer &tripContainer);
     void toJSON(json &j, const Revenue &revenue);

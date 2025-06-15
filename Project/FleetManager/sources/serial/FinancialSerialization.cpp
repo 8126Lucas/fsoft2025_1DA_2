@@ -26,13 +26,13 @@ void FinancialSerialization::toJSON(json &j, const TYPE &type) {
     }
 }
 
-void FinancialSerialization::fromJSON(const json &j, TYPE &type) {
+TYPE FinancialSerialization::fromJSON(const json &j) {
     string stringType = j.get<string>();
-    if (stringType == "FUEL") {type = FUEL;}
-    if (stringType == "INSPECTION") {type = INSPECTION;}
-    if (stringType == "INSURANCE") {type = INSURANCE;}
-    if (stringType == "TOLL") {type = TOLL;}
-    if (stringType == "FINE") {type = FINE;}
+    if (stringType == "FUEL") {return FUEL;}
+    if (stringType == "INSPECTION") {return INSPECTION;}
+    if (stringType == "INSURANCE") {return INSURANCE;}
+    if (stringType == "TOLL") {return TOLL;}
+    if (stringType == "FINE") {return FINE;}
 }
 
 void FinancialSerialization::toJSON(json &j, const Expense &expense) {
@@ -41,18 +41,18 @@ void FinancialSerialization::toJSON(json &j, const Expense &expense) {
     string string_date = expense.getDate().dateToString();
     j["expenseDate"] = string_date;
     j["amount"] = expense.getAmount();
-    j["type"] = expense.getType();
+    toJSON(j["type"], expense.getType());
 }
 
 void FinancialSerialization::fromJSON(const json &j, Expense &expense, TripContainer &tripContainer) {
     expense.setID(j["id"]);
-    const int tripID = j["tripID"].get<int>();
+    const int tripID = j["trip"].get<int>();
     Trip* trip = tripContainer.getTrip(tripID);
     expense.setTrip(trip);
     Date date = date.stringToDate(j["expenseDate"]);
     expense.setDate(date);
     expense.setAmount(j["amount"]);
-    expense.setType(j["type"]);
+    expense.setType(fromJSON(j["type"]));
 }
 
 void FinancialSerialization::toJSON(json &j, const Revenue &revenue) {
@@ -65,7 +65,7 @@ void FinancialSerialization::toJSON(json &j, const Revenue &revenue) {
 
 void FinancialSerialization::fromJSON(const json &j, Revenue &revenue, OrderContainer &orderContainer) {
     revenue.setID(j["id"]);
-    const int orderID = j["orderID"].get<int>();
+    const int orderID = j["order"].get<int>();
     Order* order = orderContainer.get(orderID);
     revenue.setOrder(order);
     Date date = date.stringToDate(j["revenueDate"]);
