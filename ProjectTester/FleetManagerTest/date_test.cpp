@@ -56,7 +56,7 @@ TEST(DateEqualTest, EqualDate){
   Date date1(2, 5, 1996);
   Date date2(2, 5, 1996);
 
-  bool flag = date1 == date2;
+  bool flag = (date1 == date2);
   EXPECT_TRUE(flag);
 }
 
@@ -64,7 +64,7 @@ TEST(DateOperatorHigherTest, HigherDate){
   Date date1(8, 6, 2025);
   Date date2(2, 5, 1996);
 
-  bool flag = date1 > date2;
+  bool flag = (date1 > date2);
   EXPECT_TRUE(flag);
 }
 
@@ -72,7 +72,7 @@ TEST(DateOperatorHigherTest, LowerDate){
   Date date1(2, 5, 1996);
   Date date2(8, 6, 2025);
 
-  bool flag = date1 > date2;
+  bool flag = (date1 > date2);
   EXPECT_FALSE(flag);
 }
 
@@ -80,7 +80,7 @@ TEST(DateOperatorLowerTest, HigherDate){
   Date date1(2, 5, 1996);
   Date date2(8, 6, 2025);
 
-  bool flag = date1 < date2;
+  bool flag = (date1 < date2);
   EXPECT_TRUE(flag);
 }
 
@@ -88,6 +88,6 @@ TEST(DateOperatorLowerTest, LowerDate){
   Date date1(8, 6, 2025);
   Date date2(2, 5, 1996);
 
-  bool flag = date1 < date2;
+  bool flag = (date1 < date2);
   EXPECT_FALSE(flag);
 }
