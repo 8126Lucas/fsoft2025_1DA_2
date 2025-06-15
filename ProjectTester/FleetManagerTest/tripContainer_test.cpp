@@ -33,6 +33,7 @@ TEST_F(TripContainerTest, addValidTrip){
   string success_mesage;
   EXPECT_EQ(output, success_mesage);
   delete order;
+  delete trip;
 }
 
 TEST_F(TripContainerTest, duplicatedTrip) {
@@ -55,6 +56,9 @@ TEST_F(TripContainerTest, duplicatedTrip) {
   string success_mesage2;
   EXPECT_EQ(tripContainer->listTrips().size(), 1);
   EXPECT_EQ(output, success_mesage);
+
+  delete order;
+  delete trip;
 }
 
 TEST_F(TripContainerTest, updateTrip) {
@@ -69,6 +73,9 @@ TEST_F(TripContainerTest, updateTrip) {
   string output = testing::internal::GetCapturedStdout();
   string success_mesage;
   EXPECT_EQ(output, success_mesage);
+
+  delete order;
+  delete trip;
 }
 
 TEST_F(TripContainerTest, listTrips) {
@@ -89,6 +96,11 @@ TEST_F(TripContainerTest, listTrips) {
   string output = testing::internal::GetCapturedStdout();
   string success_mesage;
   EXPECT_EQ(tripContainer->listTrips().size(), 3);
+
+  delete order;
+  delete trip;
+  delete trip2;
+  delete trip3;
 }
 
 TEST_F(TripContainerTest, listTripsByState) {
@@ -108,4 +120,9 @@ TEST_F(TripContainerTest, listTripsByState) {
   std::list<Trip> trips = tripContainer->listTripsByState(SUPRESSED);
   EXPECT_EQ(trips.size(), 2);
   EXPECT_EQ(trip->getState(), SUPRESSED);
+
+  delete order;
+  delete trip;
+  delete trip2;
+  delete trip3;
 }
