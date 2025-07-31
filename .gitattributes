@@ -1,2 +1,4 @@
 *.cpp linguist-language=C++
 *.h linguist-language=C++
+*.i linguist-language=ignore
+*.swg linguist-language=ignore
